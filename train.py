@@ -3,7 +3,7 @@ from baseline_models.lstm.lstm_model import LSTMModel
 import pickle as pkl
 import numpy as np
 import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior() 
+tf.disable_v2_behavior()
 import argparse
 
 def get_train_data():
@@ -53,7 +53,7 @@ def train(args):
     print(np.array(train_out[0]).shape)
 
     model = LSTMModel(args)
-    
+    print("alo")
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         saver = tf.train.Saver()
