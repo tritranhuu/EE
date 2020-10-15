@@ -1,8 +1,5 @@
 import tensorflow.compat.v1 as tf
-<<<<<<< HEAD
-=======
 tf.disable_v2_behavior() 
->>>>>>> d7d1b27e8bd373e81cb2ce33567498dd13765847
 import numpy as np
 
 class LSTMModel():

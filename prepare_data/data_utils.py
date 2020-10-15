@@ -22,6 +22,8 @@ class DataProcessor():
                 words = []
                 labels = []
                 for w in sent.words:
+                    if w.form in ",;():-@#$%^&*<>":
+                        continue
                     words.append(w.form)
                     anno = w.annotations
                     entity = 'O'
@@ -35,11 +37,19 @@ class DataProcessor():
                     else:
                         labels.append('O')
                     entities.append(entity)
-                label_set = list(set(labels))
-                if len(label_set) > 1:
-                    self.sentences.append({'words': words, 'entities': entities, 'labels': labels})
+                # label_set = list(set(labels))
+                # if len(label_set) > 1:
+                self.sentences.append({'words': words, 'entities': entities, 'labels': labels})
         return self.sentences
 
+    def format_to_file(self, file_path):
+        f = open(file_path, 'w')
+        for sent in self.sentences:
+            for i in range(len(sent['words'])):
+                line = '%s\t%s\t%s\n'%(sent['words'][i], sent['entities'][i], sent['labels'][i])
+                
+                f.write(line)
+        f.close
 
     def get_train_examples(self):
         pass
