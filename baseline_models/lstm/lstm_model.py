@@ -30,7 +30,11 @@ class LSTMModel():
 
         self.prediction = tf.reshape(prediction, [-1, args.sentence_length, args.class_size])
 
-        self.loss = self
+        self.loss = self.cost()
+        optimizer = tf.train.AdamOptimizer(0.003)
+        tvars = tf.trainable_variables()
+        grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars), 10)
+        self.train_op = optimizer.apply_gradients(zip(grads, tvars))
     
     def lstm_cell(self):
         cell = tf.nn.rnn_cell.LSTMCell(self.args.rnn_size)
