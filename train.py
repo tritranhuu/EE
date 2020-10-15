@@ -2,7 +2,9 @@ from baseline_models.lstm.lstm_model import LSTMModel
 
 import pickle as pkl
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior() 
+import argparse
 
 def get_train_data():
     emb = pkl.load(open('data/train_embed.pkl', 'rb'))
@@ -79,3 +81,15 @@ def train(args):
                 #                                                            model.output_data: test_b_out})
                 # print("test_b score:")
                 # f1(args, pred, test_b_out, length)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--word_dim', type=int, default=300, help='dimension of word vector')
+    parser.add_argument('--sentence_length', type=int, default=40, help='max sentence length')
+    parser.add_argument('--class_size', type=int, default=34, help='number of classes')
+    parser.add_argument('--rnn_size', type=int, default=256, help='hidden dimension of rnn')
+    parser.add_argument('--num_layers', type=int, default=2, help='number of layers in rnn')
+    parser.add_argument('--batch_size', type=int, default=128, help='batch size of training')
+    parser.add_argument('--epoch', type=int, default=50, help='number of epochs')
+    parser.add_argument('--restore', type=str, default=None, help="path of saved model")
+    train(parser.parse_args())
