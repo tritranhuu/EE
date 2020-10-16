@@ -72,7 +72,7 @@ def capital(word):
         return np.array([0])
 
 
-def get_input(model, word_dim, input_data, output_embed, output_tag, sentence_length = -1):  
+def get_input(model, word_dim, input_data, output_embed, output_tag, sentence_length = 30):  
     
     event_labels = get_event_tags()
     label_encoder = LabelEncoder()
@@ -103,7 +103,7 @@ def get_input(model, word_dim, input_data, output_embed, output_tag, sentence_le
                 tag_one_hot = onehot_encoder.transform([label_encoder.transform([sent['labels'][i]])]).toarray()[0]
                 tag.append(tag_one_hot)
             else:
-                temp = np.array([0 for _ in range(word_dim + 1)])
+                temp = np.array([0 for _ in range(word_dim + 15)])
                 word.append(temp)
                 tag.append(np.array([0] * 34))
         sentence.append(word)
