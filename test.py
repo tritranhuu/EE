@@ -20,10 +20,11 @@ if __name__ == "__main__":
     test = pd.read_csv('data/test.txt', sep='\t', header=None)
     
     X_train = train.drop(train.columns[len(train.columns)-1], axis=1)
-    y_train = train[train.columns[len(train.columns)-1]]
+    y_train = train[train.columns[len(train.columns)-1]].values
     X_test = test.drop(test.columns[len(test.columns)-1], axis=1)
-    y_test = test[test.columns[len(test.columns)-1]]
+    y_test = test[test.columns[len(test.columns)-1]].values
     v = DictVectorizer(sparse=False)
-    X_train = v.fit_transform(X_train.to_dict('records'))
-    X_test = v.fit_transform(X_test.to_dict('records'))
+    v.fit(pd.concat([X_train, X_test]))
+    X_train = v.transform(X_train.to_dict('records'))
+    X_test = v.transform(X_test.to_dict('records'))
     train_and_test_with_perceptron(X_train, y_train, X_test, y_test)
