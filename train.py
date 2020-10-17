@@ -33,7 +33,7 @@ def f1(args, prediction, target, length):
             else:
                 fp[target[i, j]] += 1
                 fn[prediction[i, j]] += 1
-    unnamed_entity = args.class_size - 1
+    unnamed_entity = 22
     for i in range(args.class_size):
         if i != unnamed_entity:
             tp[args.class_size] += tp[i]
@@ -46,6 +46,8 @@ def f1(args, prediction, target, length):
         precision.append(tp[i] * 1.0 / (tp[i] + fp[i]))
         recall.append(tp[i] * 1.0 / (tp[i] + fn[i]))
         fscore.append(2.0 * precision[i] * recall[i] / (precision[i] + recall[i]))
+    print(fscore[args.class_size])
+    print("\n")
     print(fscore)
     return fscore[args.class_size]
 
@@ -65,6 +67,7 @@ def f1(args, prediction, target, length):
 #             saver.restore(sess, 'model.ckpt')
 #             print("model restored")
 
+<<<<<<< HEAD
 #         for e in range(args.epoch):
 #             for ptr in range(0, len(train_inp), args.batch_size):
 #                 sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
@@ -81,6 +84,24 @@ def f1(args, prediction, target, length):
 #                 maximum = m
 #                 save_path = saver.save(sess, "output/model_max.ckpt")
 #                 print("max model saved in file: %s" % save_path)
+=======
+        for e in range(args.epoch):
+            for ptr in range(0, len(train_inp), args.batch_size):
+                sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
+                                          model.output_data: train_out[ptr:ptr + args.batch_size]})
+            # if e % 10 == 0:
+            #     save_path = saver.save(sess, "output/lstm/model.ckpt")
+            #     print("model saved in file: %s" % save_path)
+            pred, length = sess.run([model.prediction, model.length], {model.input_data: dev_inp,
+                                                                       model.output_data: dev_out})
+            print("epoch %d:" % e)
+            print('test_a score:')
+            m = f1(args, pred, dev_out, length)
+            # if m > maximum:
+            #     maximum = m
+            #     save_path = saver.save(sess, "output/model_max.ckpt")
+            #     print("max model saved in file: %s" % save_path)
+>>>>>>> 8ed1ab37fb22b1ed4559ce111e22d8630f9b4528
                 # pred, length = sess.run([model.prediction, model.length], {model.input_data: test_b_inp,
                 #                                                            model.output_data: test_b_out})
                 # print("test_b score:")
@@ -99,8 +120,8 @@ def train(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--word_dim', type=int, default=300, help='dimension of word vector')
-    parser.add_argument('--sentence_length', type=int, default=40, help='max sentence length')
+    parser.add_argument('--word_dim', type=int, default=315, help='dimension of word vector')
+    parser.add_argument('--sentence_length', type=int, default=30, help='max sentence length')
     parser.add_argument('--class_size', type=int, default=34, help='number of classes')
     parser.add_argument('--rnn_size', type=int, default=256, help='hidden dimension of rnn')
     parser.add_argument('--num_layers', type=int, default=2, help='number of layers in rnn')
