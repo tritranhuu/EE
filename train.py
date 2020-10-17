@@ -1,9 +1,12 @@
 from baseline_models.lstm.lstm_model import LSTMModel
+from baseline_models.bilstm_crf.blc import train_one_step
+from baseline_models.bilstm_crf.bilstm_crf import BiLstmModel
 
 import pickle as pkl
 import numpy as np
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
+import tensorflow as tf
+# import tensorflow.compat.v1 as tf
+# tf.disable_v2_behavior()
 import argparse
 
 def get_train_data():
@@ -51,44 +54,53 @@ def f1(args, prediction, target, length):
     print(fscore)
     return fscore[args.class_size]
 
-def train(args):
-    train_inp, train_out = get_train_data()
-    dev_inp, dev_out = get_dev_data()
-    # print(np.array(train_inp[0]).shape)
-    # print(np.array(train_out[0]).shape)
-    # print((np.argmax(train_out,2)==22).sum(), (np.argmax(train_out,2)!=22).sum())
 
-    model = LSTMModel(args)
-    print("alo")
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
-        saver = tf.train.Saver()
-        if args.restore is not None:
-            saver.restore(sess, 'model.ckpt')
-            print("model restored")
-        
-        for e in range(args.epoch):
-            for ptr in range(0, len(train_inp), args.batch_size):
-                print(ptr)
-                sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
-                                          model.output_data: train_out[ptr:ptr + args.batch_size]})
-            # if e % 10 == 0:
-            #     save_path = saver.save(sess, "output/lstm/model.ckpt")
-            #     print("model saved in file: %s" % save_path)
-            pred, length = sess.run([model.prediction, model.length], {model.input_data: dev_inp,
-                                                                       model.output_data: dev_out})
-            print("epoch %d:" % e)
-            print('f1_score:')
-            # print(pred[0])
-            m = f1(args, pred, dev_out, length)
-            # if m > maximum:
-            #     maximum = m
-            #     save_path = saver.save(sess, "output/model_max.ckpt")
-            #     print("max model saved in file: %s" % save_path)
+# LSTM
+# def train(args):
+#     train_inp, train_out = get_train_data()
+#     dev_inp, dev_out = get_dev_data()
+#     print(np.array(train_inp[0]).shape)
+#     print(np.array(train_out[0]).shape)
+
+#     model = LSTMModel(args)
+#     print("alo")
+#     with tf.Session() as sess:
+#         sess.run(tf.global_variables_initializer())
+#         saver = tf.train.Saver()
+#         if args.restore is not None:
+#             saver.restore(sess, 'model.ckpt')
+#             print("model restored")
+#         for e in range(args.epoch):
+#             for ptr in range(0, len(train_inp), args.batch_size):
+#                 sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
+#                                           model.output_data: train_out[ptr:ptr + args.batch_size]})
+#             if e % 10 == 0:
+#                 save_path = saver.save(sess, "output/lstm/model.ckpt")
+#                 print("model saved in file: %s" % save_path)
+#             pred, length = sess.run([model.prediction, model.length], {model.input_data: dev_inp,
+#                                                                        model.output_data: dev_out})
+#             print("epoch %d:" % e)
+#             print('test_a score:')
+#             m = f1(args, pred, dev_inp, length)
+#             if m > maximum:
+#                 maximum = m
+#                 save_path = saver.save(sess, "output/model_max.ckpt")
+#                 print("max model saved in file: %s" % save_path)
                 # pred, length = sess.run([model.prediction, model.length], {model.input_data: test_b_inp,
                 #                                                            model.output_data: test_b_out})
                 # print("test_b score:")
                 # f1(args, pred, test_b_out, length)
+
+def train(args):
+    train_inp, train_out = get_train_data()
+    dev_inp, dev_out = get_dev_data()
+    model = BiLstmModel(args)
+    optimizer = tf.keras.optimizers.Adam(args.lr)
+    for e in range(args.epoch):
+        for ptr in range(0, len(train_inp), args.batch_size):
+            loss, logits, text_lens = train_one_step(model, optimizer, train_inp[ptr:ptr + args.batch_size], train_out[ptr:ptr + args.batch_size])
+            print(logits[0])
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -100,4 +112,9 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=128, help='batch size of training')
     parser.add_argument('--epoch', type=int, default=100, help='number of epochs')
     parser.add_argument('--restore', type=str, default=None, help="path of saved model")
+    parser.add_argument('--lr', type=float, default=0.01)
+    parser.add_argument('--num_hidden', type=int, default=256)
+    parser.add_argument('--lr', type=float, default=0.01)
+    
+    
     train(parser.parse_args())
