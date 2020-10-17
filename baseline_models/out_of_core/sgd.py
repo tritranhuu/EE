@@ -4,7 +4,7 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import classification_report
 
 def train_and_test_with_sgd(X_train, y_train, X_test, y_test):
-    classes = np.unique(y_train+y_test)
+    classes = np.unique(y_train)
     classes = classes.tolist()
     print(classes)
 

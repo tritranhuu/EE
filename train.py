@@ -18,11 +18,13 @@ def get_dev_data():
 
 
 def f1(args, prediction, target, length):
-    tp = np.array([0] * (args.class_size + 1))
-    fp = np.array([0] * (args.class_size + 1))
-    fn = np.array([0] * (args.class_size + 1))
+    tp = np.zeros(args.class_size + 1)
+    fp = np.zeros(args.class_size + 1)
+    fn = np.zeros(args.class_size + 1)
     target = np.argmax(target, 2)
+    # print((target!=22).sum())
     prediction = np.argmax(prediction, 2)
+    # print((prediction!=22).sum())
     for i in range(len(target)):
         for j in range(length[i]):
             if target[i, j] == prediction[i, j]:
@@ -30,6 +32,7 @@ def f1(args, prediction, target, length):
             else:
                 fp[target[i, j]] += 1
                 fn[prediction[i, j]] += 1
+    # print(tp)
     unnamed_entity = 22
     for i in range(args.class_size):
         if i != unnamed_entity:
@@ -51,8 +54,9 @@ def f1(args, prediction, target, length):
 def train(args):
     train_inp, train_out = get_train_data()
     dev_inp, dev_out = get_dev_data()
-    print(np.array(train_inp[0]).shape)
-    print(np.array(train_out[0]).shape)
+    # print(np.array(train_inp[0]).shape)
+    # print(np.array(train_out[0]).shape)
+    # print((np.argmax(train_out,2)==22).sum(), (np.argmax(train_out,2)!=22).sum())
 
     model = LSTMModel(args)
     print("alo")
@@ -62,9 +66,10 @@ def train(args):
         if args.restore is not None:
             saver.restore(sess, 'model.ckpt')
             print("model restored")
-
+        
         for e in range(args.epoch):
             for ptr in range(0, len(train_inp), args.batch_size):
+                print(ptr)
                 sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
                                           model.output_data: train_out[ptr:ptr + args.batch_size]})
             # if e % 10 == 0:
@@ -73,7 +78,8 @@ def train(args):
             pred, length = sess.run([model.prediction, model.length], {model.input_data: dev_inp,
                                                                        model.output_data: dev_out})
             print("epoch %d:" % e)
-            print('test_a score:')
+            print('f1_score:')
+            # print(pred[0])
             m = f1(args, pred, dev_out, length)
             # if m > maximum:
             #     maximum = m
@@ -86,12 +92,12 @@ def train(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--word_dim', type=int, default=315, help='dimension of word vector')
+    parser.add_argument('--word_dim', type=int, default=314, help='dimension of word vector')
     parser.add_argument('--sentence_length', type=int, default=30, help='max sentence length')
     parser.add_argument('--class_size', type=int, default=34, help='number of classes')
     parser.add_argument('--rnn_size', type=int, default=256, help='hidden dimension of rnn')
     parser.add_argument('--num_layers', type=int, default=2, help='number of layers in rnn')
     parser.add_argument('--batch_size', type=int, default=128, help='batch size of training')
-    parser.add_argument('--epoch', type=int, default=50, help='number of epochs')
+    parser.add_argument('--epoch', type=int, default=100, help='number of epochs')
     parser.add_argument('--restore', type=str, default=None, help="path of saved model")
     train(parser.parse_args())

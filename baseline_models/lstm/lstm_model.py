@@ -27,12 +27,12 @@ class LSTMModel():
         weight, bias = self.weight_and_bias(2*args.rnn_size, args.class_size)
 
         output = tf.reshape(output, [-1, 2*args.rnn_size])
-        prediction = tf.nn.softmax(tf.matmul(output, weight) + bias)
+        prediction = tf.matmul(output, weight) + bias
 
         self.prediction = tf.reshape(prediction, [-1, args.sentence_length, args.class_size])
 
         self.loss = self.cost()
-        optimizer = tf.train.AdamOptimizer(0.003)
+        optimizer = tf.train.AdamOptimizer(0.01)
         tvars = tf.trainable_variables()
         grads, _ = tf.clip_by_global_norm(tf.gradients(self.loss, tvars), 10)
         self.train_op = optimizer.apply_gradients(zip(grads, tvars))
@@ -43,12 +43,13 @@ class LSTMModel():
         return cell
 
     def cost(self):
-        cross_entropy = self.output_data * tf.log(self.prediction)
-        cross_entropy = -tf.reduce_sum(cross_entropy, reduction_indices=2)
-        mask = tf.sign(tf.reduce_max(tf.abs(self.output_data), reduction_indices=2))
-        cross_entropy *= mask
-        cross_entropy = tf.reduce_sum(cross_entropy, reduction_indices=1)
-        cross_entropy /= tf.cast(self.length, tf.float32)
+        # cross_entropy = self.output_data * tf.log(self.prediction)
+        # cross_entropy = -tf.reduce_sum(cross_entropy, reduction_indices=2)
+        # mask = tf.sign(tf.reduce_max(tf.abs(self.output_data), reduction_indices=2))
+        # cross_entropy *= mask
+        # cross_entropy = tf.reduce_sum(cross_entropy, reduction_indices=1)
+        # cross_entropy /= tf.cast(self.length, tf.float32)
+        cross_entropy = - tf.nn.sigmoid_cross_entropy_with_logits(labels=self.output_data, logits=self.prediction)
         return tf.reduce_mean(cross_entropy)
         
 
