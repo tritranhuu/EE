@@ -19,7 +19,7 @@ from baseline_models.bilstm_crf.bilstm_crf import BiLstmModel
 
 def train_one_step(model, optimizer, inp_batch, out_batch):
     with tf.GradientTape() as tape:
-        logits, text_lens, log_likelihood = model(inp_batch, out_batch, training=True)
+        logits, text_lens, log_likelihood = model(inp_batch, labels=out_batch, training=True)
         loss = - tf.reduce_mean(log_likelihood)
     gradients = tape.gradient(loss, model.trainable_variables)
     optimizer.apply_gradients(zip(gradients, model.trainable_variables))

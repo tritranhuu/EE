@@ -13,4 +13,5 @@ def train_and_test_with_perceptron(X_train, y_train, X_test, y_test):
 
     new_class = list(set(classes)- set(['O']))
     print(new_class)
+    
     print(classification_report(y_pred=per.predict(X_test), y_true=y_test, labels=new_class))
