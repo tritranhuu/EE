@@ -98,14 +98,15 @@ def get_input(model, word_dim, input_data, output_embed, output_tag, sentence_le
             if i < sentence_length:
                 temp = model[sent['words'][i]]
                 temp = np.append(temp, entity(sent['entities'][i]))
-                temp = np.append(temp, capital(sent['words'][i]))
+                # temp = np.append(temp, capital(sent['words'][i]))
                 word.append(temp)
                 tag_one_hot = onehot_encoder.transform([label_encoder.transform([sent['labels'][i]])]).toarray()[0]
                 tag.append(tag_one_hot)
             else:
-                temp = np.array([0 for _ in range(word_dim + 15)])
+                temp = np.array([0 for _ in range(word_dim + 14)])
                 word.append(temp)
-                tag.append(np.array([0] * 34))
+                x = np.zeros(34)
+                tag.append(x)
         sentence.append(word)
         sentence_tag.append(tag)
         word = []

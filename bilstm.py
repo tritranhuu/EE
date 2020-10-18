@@ -77,7 +77,7 @@ class SentenceGetter(object):
 getter = SentenceGetter(data_train, data_dev, data_test)
 
 input_ = tf.keras.Input(shape=(30,))
-model = keras.layers.embeddings.Embedding(input_dim=len(getter.words)+2, output_dim=50, input_length=30, mask_zero=True)(input)
+model = keras.layers.Embedding(input_dim=len(getter.words)+2, output_dim=50, input_length=30, mask_zero=True)(input)
 
 lstm_layer = keras.layers.LSTM(units=50, return_sequences=True, recurrent_dropout=0.1)
 model = keras.layers.Bidirectional(lstm_layer(model))
@@ -90,5 +90,5 @@ out = keras.layers.TimeDistributed(dense_layer_2(model))
 
 
 model = keras.models.Model(input_, out)
-model.compile(optimizer="rmsprop",loss=keras.losses.CategoricalCrossentropy)
+model.compile(optimizer="rmsprop",loss=tf.keras.losses.CategoricalCrossentropy)
 model.fit(getter.X_train, np.array(getter.y_train),batch_size=32, epochs=5, validation_data=(getter.X_dev, np.array(getter.y_dev)), verbose=2)

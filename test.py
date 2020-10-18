@@ -1,7 +1,11 @@
 from prepare_data.data_utils import DataProcessor
 from sklearn.feature_extraction import DictVectorizer
 # from baseline_models.crf.crf_model import CRFModel
+<<<<<<< HEAD
 # from baseline_models.perceptron.perceptron import train_and_test_with_perceptron
+=======
+from baseline_models.out_of_core.naive_bayes import train_and_test_with_nb
+>>>>>>> ee1bc165ba849780a8b14dccf4c3eb2d13eb8ed1
 
 import pandas as pd
 
@@ -27,6 +31,12 @@ if __name__ == "__main__":
     # v = DictVectorizer(sparse=True)
     # v.fit(pd.concat([X_train, X_test]).to_dict('records'))
 
+<<<<<<< HEAD
     # X_train = v.transform(X_train.to_dict('records'))
     # X_test = v.transform(X_test.to_dict('records'))
     # train_and_test_with_perceptron(X_train, y_train, X_test, y_test)
+=======
+    X_train = v.transform(X_train.to_dict('records'))
+    X_test = v.transform(X_test.to_dict('records'))
+    train_and_test_with_nb(X_train, y_train, X_test, y_test)
+>>>>>>> ee1bc165ba849780a8b14dccf4c3eb2d13eb8ed1

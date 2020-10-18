@@ -21,11 +21,13 @@ def get_dev_data():
 
 
 def f1(args, prediction, target, length):
-    tp = np.array([0] * (args.class_size + 1))
-    fp = np.array([0] * (args.class_size + 1))
-    fn = np.array([0] * (args.class_size + 1))
+    tp = np.zeros(args.class_size + 1)
+    fp = np.zeros(args.class_size + 1)
+    fn = np.zeros(args.class_size + 1)
     target = np.argmax(target, 2)
+    # print((target!=22).sum())
     prediction = np.argmax(prediction, 2)
+    # print((prediction!=22).sum())
     for i in range(len(target)):
         for j in range(length[i]):
             if target[i, j] == prediction[i, j]:
@@ -33,6 +35,7 @@ def f1(args, prediction, target, length):
             else:
                 fp[target[i, j]] += 1
                 fn[prediction[i, j]] += 1
+    # print(tp)
     unnamed_entity = 22
     for i in range(args.class_size):
         if i != unnamed_entity:
@@ -51,6 +54,7 @@ def f1(args, prediction, target, length):
     print(fscore)
     return fscore[args.class_size]
 
+
 # LSTM
 # def train(args):
 #     train_inp, train_out = get_train_data()
@@ -66,7 +70,6 @@ def f1(args, prediction, target, length):
 #         if args.restore is not None:
 #             saver.restore(sess, 'model.ckpt')
 #             print("model restored")
-
 #         for e in range(args.epoch):
 #             for ptr in range(0, len(train_inp), args.batch_size):
 #                 sess.run(model.train_op, {model.input_data: train_inp[ptr:ptr + args.batch_size],
@@ -101,13 +104,13 @@ def train(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--word_dim', type=int, default=315, help='dimension of word vector')
+    parser.add_argument('--word_dim', type=int, default=314, help='dimension of word vector')
     parser.add_argument('--sentence_length', type=int, default=30, help='max sentence length')
     parser.add_argument('--class_size', type=int, default=34, help='number of classes')
     parser.add_argument('--rnn_size', type=int, default=256, help='hidden dimension of rnn')
     parser.add_argument('--num_layers', type=int, default=2, help='number of layers in rnn')
     parser.add_argument('--batch_size', type=int, default=128, help='batch size of training')
-    parser.add_argument('--epoch', type=int, default=50, help='number of epochs')
+    parser.add_argument('--epoch', type=int, default=100, help='number of epochs')
     parser.add_argument('--restore', type=str, default=None, help="path of saved model")
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--num_hidden', type=int, default=256)
