@@ -44,11 +44,12 @@ class DataProcessor():
 
     def format_to_file(self, file_path):
         f = open(file_path, 'w')
+        num_sent = 1
         for sent in self.sentences:
             for i in range(len(sent['words'])):
-                line = '%s\t%s\t%s\n'%(sent['words'][i], sent['entities'][i], sent['labels'][i])
-                
+                line = '%s\t%s\t%s\t%s\n'%(str(num_sent),sent['words'][i], sent['entities'][i], sent['labels'][i])              
                 f.write(line)
+            num_sent += 1
         f.close
 
     def get_train_examples(self):
