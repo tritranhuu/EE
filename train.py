@@ -1,5 +1,4 @@
 from baseline_models.lstm.lstm_model import LSTMModel
-from baseline_models.bilstm_crf.blc import train_one_step
 from baseline_models.bilstm_crf.bilstm_crf import BiLstmModel
 
 import pickle as pkl
@@ -95,10 +94,9 @@ def train(args):
     train_inp, train_out = get_train_data()
     dev_inp, dev_out = get_dev_data()
     model = BiLstmModel(args)
-    optimizer = tf.keras.optimizers.Adam(args.lr)
     for e in range(args.epoch):
         for ptr in range(0, len(train_inp), args.batch_size):
-            loss, logits, text_lens = train_one_step(model, optimizer, train_inp[ptr:ptr + args.batch_size], train_out[ptr:ptr + args.batch_size])
+            loss, logits, text_lens = model.train_one_step(train_inp[ptr:ptr + args.batch_size], train_out[ptr:ptr + args.batch_size])
             print(logits[0])
 
 
