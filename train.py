@@ -112,7 +112,7 @@ if __name__ == "__main__":
     parser.add_argument('--restore', type=str, default=None, help="path of saved model")
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--num_hidden', type=int, default=256)
-    parser.add_argument('--lr', type=float, default=0.01)
+    # parser.add_argument('--lr', type=float, default=0.01)
     
     
     train(parser.parse_args())

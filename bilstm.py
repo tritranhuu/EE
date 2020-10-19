@@ -8,6 +8,7 @@ from baseline_models.bilstm_crf.bilstm_crf import BiLstmModel
 import pickle as pkl
 import numpy as np
 import tensorflow as tf
+import tensorflow_addons as tf_ad
 # import tensorflow.compat.v1 as tf
 # tf.disable_v2_behavior()
 import argparse
@@ -61,19 +62,19 @@ class SentenceGetter(object):
         self.X_train = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=X_train, padding='post', value=self.word2idx['PAD'])
         y_train = [[self.tag2idx[w[2]] for w in s] for s in self.sentences_train]
         self.y_train = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=y_train, padding='post', value=self.tag2idx['PAD'])
-        self.y_train = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_train]
+        # self.y_train = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_train]
         
         X_dev = [[self.word2idx[w[0]] for w in s] for s in self.sentences_dev]
         self.X_dev = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=X_dev, padding='post', value=self.word2idx['PAD'])
         y_dev = [[self.tag2idx[w[2]] for w in s] for s in self.sentences_dev]
         self.y_dev = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=y_dev, padding='post', value=self.tag2idx['PAD'])
-        self.y_dev = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_dev]
+        # self.y_dev = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_dev]
         
         X_test = [[self.word2idx[w[0]] for w in s] for s in self.sentences_test]
         self.X_test = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=X_test, padding='post', value=self.word2idx['PAD'])
         y_test = [[self.tag2idx[w[2]] for w in s] for s in self.sentences_test]
         self.y_test = tf.keras.preprocessing.sequence.pad_sequences(maxlen=30, sequences=y_test, padding='post', value=self.tag2idx['PAD'])
-        self.y_test = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_test]
+        # self.y_test = [tf.keras.utils.to_categorical(i, num_classes=len(self.tags)+1) for i in self.y_test]
 
 
 
@@ -85,12 +86,33 @@ def train(args):
     dev_inp = getter.X_dev
     dev_out = getter.y_dev
     # dev_inp, dev_out = get_dev_data()
-    model = BiLstmModel(args)
+    model = BiLstmModel(args, len(getter.words)+2)
     for e in range(args.epoch):
         for ptr in range(0, len(train_inp), args.batch_size):
             loss, logits, text_lens = model.train_one_step(train_inp[ptr:ptr + args.batch_size], train_out[ptr:ptr + args.batch_size])
-            print(logits[0])
+            # print(get_acc_one_step(model, logits, text_lens, train_out[ptr:ptr + args.batch_size]))
+            print(logits.eval(session=tf.compat.v1.Session()))
 
+def get_acc_one_step(model, logits, text_lens, labels_batch):
+    paths = []
+    accuracy = 0
+    for i in range(128):
+        logit = logits[i]
+        text_len = text_lens[i]
+        labels = labels_batch[i]
+    # for logit, text_len, labels in zip(logits, text_lens, labels_batch):
+        viterbi_path, _ = tf_ad.text.viterbi_decode(logit[:text_len], model.transition_params)
+        paths.append(viterbi_path)
+        correct_prediction = tf.equal(
+            tf.convert_to_tensor(tf.keras.preprocessing.sequence.pad_sequences([viterbi_path], padding='post'),
+                                 dtype=tf.int32),
+            tf.convert_to_tensor(tf.keras.preprocessing.sequence.pad_sequences([labels[:text_len]], padding='post'),
+                                 dtype=tf.int32)
+        )
+        accuracy = accuracy + tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+        # print(tf.reduce_mean(tf.cast(correct_prediction, tf.float32)))
+    accuracy = accuracy / len(paths)
+    return accuracy
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -104,7 +126,7 @@ if __name__ == "__main__":
     parser.add_argument('--restore', type=str, default=None, help="path of saved model")
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--num_hidden', type=int, default=256)
-    parser.add_argument('--lr', type=float, default=0.01)
+    parser.add_argument('--embedding_size', type=int, default=200)
     
     
     train(parser.parse_args())

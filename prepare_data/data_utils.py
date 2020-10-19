@@ -47,9 +47,11 @@ class DataProcessor():
         num_sent = 1
         for sent in self.sentences:
             for i in range(len(sent['words'])):
-                line = '%s\t%s\t%s\t%s\n'%(str(num_sent),sent['words'][i], sent['entities'][i], sent['labels'][i])              
+                # line = '%s\t%s\t%s\t%s\n'%(str(num_sent),sent['words'][i], sent['entities'][i], sent['labels'][i])              
+                line = '%s\t%s\n'%(sent['words'][i], sent['labels'][i])              
                 f.write(line)
-            num_sent += 1
+            # num_sent += 1
+            f.write("\n")
         f.close
 
     def get_train_examples(self):

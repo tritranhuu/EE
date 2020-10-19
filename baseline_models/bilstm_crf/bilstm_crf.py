@@ -23,8 +23,8 @@ class BiLstmModel(tf.keras.Model):
         # words_used_in_sent = tf.sign(tf.reduce_max(tf.abs(input_data), axis=2))
         # text_lens = tf.cast(tf.reduce_sum(words_used_in_sent, axis=1), tf.int32)
         inputs = self.embedding(input_data)
-        inputs = tf.keras.layers.Input(shape=(self.args.sentence_length, self.args.word_dim))
-        inputs = self.dropout(input_data, training)
+        # inputs = tf.keras.layers.Input(shape=(self.args.sentence_length, self.args.word_dim))
+        # inputs = self.dropout(input_data, training)
         logits = self.dense(self.biLSTM(inputs))
 
         if labels is not None:
@@ -36,9 +36,9 @@ class BiLstmModel(tf.keras.Model):
             return logits, text_lens
 
     def train_one_step(self, inp_batch, out_batch):
-        with tf.GradientTape() as tape:
-            logits, text_lens, log_likelihood = self.call(inp_batch, out_batch, training=True)
-            loss = - tf.reduce_mean(log_likelihood)
-        gradients = tape.gradient(loss, self.trainable_variables)
+        # with tf.GradientTape() as tape:
+        logits, text_lens, log_likelihood = self.call(inp_batch, out_batch, training=True)
+        loss = - tf.reduce_mean(log_likelihood)
+        gradients = tf.gradients(loss, self.trainable_variables)
         self.optimizer.apply_gradients(zip(gradients, self.trainable_variables))
         return loss, logits, text_lens
