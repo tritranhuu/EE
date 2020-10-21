@@ -28,54 +28,72 @@ class ED(object):
         return elapsed_mins, elapsed_secs
 
     def accuracy(self, preds, y):
-        max_preds = preds.argmax(dim=1, keepdim=True)  # get the index of the max probability
-        non_pad_elements = (y != self.data.tag_pad_idx).nonzero()  # prepare masking for paddings
-        correct = max_preds[non_pad_elements].squeeze(1).eq(y[non_pad_elements])
-        return correct.sum() / torch.FloatTensor([y[non_pad_elements].shape[0]])
+        flatten_preds = [pred for sent_pred in preds for pred in sent_pred]
+        flatten_y = [tag for sent_tag in y for tag in sent_tag]
+        # print(flatten_y)
+        correct = [pred==tag for pred, tag in zip(flatten_preds, flatten_y)]
+        return sum(correct) / len(correct) if len(correct) > 0 else 0
 
     def epoch(self):
         epoch_loss = 0
         epoch_acc = 0
         self.model.train()
         for batch in self.data.train_iter:
-        # text = [sent len, batch size]
-            text = batch.word
+        # words = [sent len, batch size]
+            words = batch.word
+            chars = batch.char
         # tags = [sent len, batch size]
             true_tags = batch.tag
             self.optimizer.zero_grad()
-            pred_tags = self.model(text)
+            pred_tags_list, batch_loss = self.model(words, chars, true_tags)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
-            pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
-        # flatten true_tags to [sent len * batch size]
-            true_tags = true_tags.view(-1)
-            batch_loss = self.loss_fn(pred_tags, true_tags)
-            batch_acc = self.accuracy(pred_tags, true_tags)
+            true_tags_list = [
+                [tag for tag in sent_tag if tag != self.data.tag_pad_idx]
+                for sent_tag in true_tags.permute(1, 0).tolist()
+            ]
+            batch_acc = self.accuracy(pred_tags_list, true_tags_list)
+            # batch_loss = self.loss_fn(pred_tags, true_tags)
+            # batch_acc = self.accuracy(pred_tags, true_tags)
+            # self.f_score(pred_tags, true_tags)
             batch_loss.backward()
             self.optimizer.step()
             epoch_loss += batch_loss.item()
-            epoch_acc += batch_acc.item()
+            epoch_acc += batch_acc
         return epoch_loss / len(self.data.train_iter), epoch_acc / len(self.data.train_iter)
 
     def evaluate(self, iterator):
         epoch_loss = 0
         epoch_acc = 0
+        y_pred = []
+        y_true = []
+        idx2tag = self.data.tag_field.vocab.itos
         self.model.eval()
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
-                text = batch.word
+                words = batch.word
+                chars = batch.char
                 true_tags = batch.tag
-                pred_tags = self.model(text)
-                pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
-                true_tags = true_tags.view(-1)
-                batch_loss = self.loss_fn(pred_tags, true_tags)
-                batch_acc = self.accuracy(pred_tags, true_tags)
+                pred_tags, batch_loss = self.model(words, chars, true_tags)
+                true_tags_list = [
+                    [tag for tag in sent_tag if tag != self.data.tag_pad_idx]
+                    for sent_tag in true_tags.permute(1, 0).tolist()
+                ]
+                batch_acc = self.accuracy(pred_tags, true_tags_list)
+                epoch_acc += batch_acc
+
                 epoch_loss += batch_loss.item()
-                epoch_acc += batch_acc.item()
+                # print(pred_tags, true_tags_list)
+                flatten_preds = [pred for sent_pred in pred_tags for pred in sent_pred]
+                flatten_y = [tag for sent_tag in true_tags_list for tag in sent_tag]
+                y_pred.extend([self.data.tag_field.vocab.itos[x] for x in flatten_preds])
+                y_true.extend([self.data.tag_field.vocab.itos[x] for x in flatten_y])
+                
+        print(classification_report(y_pred=y_pred, y_true=y_true, labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
+    
         return epoch_loss / len(iterator), epoch_acc / len(iterator)
 
-  # main training sequence
     def train(self, n_epochs):
         for epoch in range(n_epochs):
             start_time = time.time()
@@ -88,4 +106,3 @@ class ED(object):
             print(f"\tVal Loss: {val_loss:.3f} | Val Acc: {val_acc * 100:.2f}%")
         test_loss, test_acc = self.evaluate(self.data.test_iter)
         print(f"Test Loss: {test_loss:.3f} |  Test Acc: {test_acc * 100:.2f}%")
-

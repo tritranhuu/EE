@@ -5,33 +5,29 @@ from collections import Counter
 import torch
 from torch import nn
 from torch.optim import Adam
-from torchtext.data import Field, BucketIterator, NestedField
-from torchtext.datasets import SequenceTaggingDataset
-from torchtext.vocab import Vocab
-from torchcrf import CRF
 
 import numpy as np
 from sklearn.metrics import classification_report
 
-class BiLSTM_CRF(nn.Module):
+class CNN(nn.Module):
 
   def __init__(self, 
                 input_dim, 
-                embedding_dim, 
-                hidden_dim, 
+                embedding_dim,  
+                cnn_kernels,
+                cnn_in_chanel,
+                cnn_out_chanel, 
                 char_emb_dim,
                 char_input_dim,
                 char_cnn_filter_num,
                 char_cnn_kernel_size,
-                output_dim, 
-                lstm_layers,
+                output_dim,
                 emb_dropout,
+                char_cnn_dropout, 
                 cnn_dropout, 
-                lstm_dropout, 
                 fc_dropout, 
                 word_pad_idx,
-                char_pad_idx,
-                tag_pad_idx):
+                char_pad_idx):
     super().__init__()
     self.embedding_dim = embedding_dim
     # LAYER 1: Embedding
@@ -54,27 +50,23 @@ class BiLSTM_CRF(nn.Module):
         kernel_size=char_cnn_kernel_size,
         groups=char_emb_dim  # different 1d conv for each embedding dim
     )
-    self.cnn_dropout = nn.Dropout(cnn_dropout)
-    # LAYER 2: BiLSTM
-    self.lstm = nn.LSTM(
-        input_size=embedding_dim + (char_emb_dim*char_cnn_filter_num),
-        hidden_size=hidden_dim,
-        num_layers=lstm_layers,
-        bidirectional=True,
-        dropout=lstm_dropout if lstm_layers > 1 else 0
+    self.char_cnn_dropout = nn.Dropout(char_cnn_dropout)
+    # LAYER 2: CNN
+    self.cnns = nn.ModuleList(
+        [nn.Conv2d(
+            in_channels = cnn_in_chanel,
+            out_channels= cnn_out_chanel,
+            kernel_size = (k, embedding_dim + (char_emb_dim*char_cnn_filter_num))
+        ) for k in cnn_kernels]
     )
+
+    self.cnn_dropout = nn.Dropout(cnn_dropout)
     # LAYER 3: Fully-connected
     self.fc_dropout = nn.Dropout(fc_dropout)
+    self.fc = self.get_linear_layer(len(cnn_kernels) * cnn_out_chanel, output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
-    self.fc = self.get_linear_layer(hidden_dim * 2, output_dim)
 
-    # LAYER 4: CRF
-    self.tag_pad_idx = tag_pad_idx
-    self.crf = CRF(num_tags=output_dim)
-    # for name, param in self.named_parameters
-
-
-  def forward(self, words, chars, tags=None):
+  def forward(self, words, chars):
     # words = [sentence length, batch size]
     # chars = [batch size, sentence length, word length)
     # embedding_out = [sentence length, batch size, embedding dim]
@@ -93,19 +85,15 @@ class BiLSTM_CRF(nn.Module):
     char_cnn_p = char_cnn.permute(1,0,2)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
     
-    lstm_out, _ = self.lstm(word_features)
+    word_features = word_features.unsqueeze(1)
+    cnn_out = [nn.functional.relu(cnn(word_features)).squeeze(3) for cnn in self.cnns]
+    cnn_out = [nn.functional.max_pool1d(i, i.size(2)) for i in cnn_out]
+    cnn.out = cnn.permute(0,2,1)
+    cnn_out = torch.cat(cnn_out, 1)
+    # lstm_out, _ = self.lstm(word_features)
     # ner_out = [sentence length, batch size, output dim]
-    fc_out = self.fc(self.fc_dropout(lstm_out))
-
-    if tags is not None:
-        mask = tags != self.tag_pad_idx
-        crf_out = self.crf.decode(fc_out, mask=mask)
-        crf_loss = -self.crf(fc_out, tags=tags, mask=mask, reduction='sum')
-    else:
-        crf_out = self.crf.decode(fc_out)
-        crf_loss = None
-
-    return crf_out, crf_loss
+    ner_out = self.fc(self.fc_dropout(cnn_out))
+    return ner_out
 
   def init_weights(self):
     # to initialize all parameters from normal distribution
@@ -123,6 +111,7 @@ class BiLSTM_CRF(nn.Module):
           padding_idx=word_pad_idx,
           freeze=freeze
         )
+
   @staticmethod
   def get_linear_layer(input_dim, output_dim):
     linear_layer = nn.Linear(input_dim, output_dim, bias=True)
@@ -135,12 +124,6 @@ class BiLSTM_CRF(nn.Module):
     linear_layer.weight.data = torch.tensor(weight, requires_grad=True)
     linear_layer.bias.data = torch.tensor(bt, requires_grad=True)
     return linear_layer
-
-#   def init_crf_transitions(self, tag_names, imp_value=-100):
-#       num_tags = len(tag_names)
-#       for i in range(num_tags):
-
-
 
   def count_parameters(self):
     return sum(p.numel() for p in self.parameters() if p.requires_grad)
