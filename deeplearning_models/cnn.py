@@ -1,6 +1,7 @@
 import os
 import time
 import gensim
+import math
 from collections import Counter
 import torch
 from torch import nn
@@ -54,9 +55,11 @@ class CNN(nn.Module):
     # LAYER 2: CNN
     self.cnns = nn.ModuleList(
         [nn.Conv2d(
-            in_channels = cnn_in_chanel,
+            in_channels = 1,
             out_channels= cnn_out_chanel,
-            kernel_size = (k, embedding_dim + (char_emb_dim*char_cnn_filter_num))
+            kernel_size = (k,embedding_dim + char_emb_dim*char_cnn_filter_num),
+            padding = int((k-1)/2),
+            padding_mode = 'replicate'
         ) for k in cnn_kernels]
     )
 
@@ -70,8 +73,8 @@ class CNN(nn.Module):
     # words = [sentence length, batch size]
     # chars = [batch size, sentence length, word length)
     # embedding_out = [sentence length, batch size, embedding dim]
+    # print(chars.shape)
     embedding_out = self.emb_dropout(self.embedding(words))
-    # lstm_out = [sentence length, batch size, hidden dim * 2]
     char_emb_out = self.emb_dropout(self.char_emb(chars))
     batch_size, sent_len, word_len, char_emb_dim = char_emb_out.shape
     char_cnn_max_out = torch.zeros(batch_size, sent_len, self.char_cnn.out_channels)
@@ -84,13 +87,27 @@ class CNN(nn.Module):
     char_cnn = self.cnn_dropout(char_cnn_max_out)
     char_cnn_p = char_cnn.permute(1,0,2)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
-    
+    # word_features = (sentence_length, in_chanel, batch, embedding_dim)
+
+    word_features = word_features.permute(1,0,2)
     word_features = word_features.unsqueeze(1)
+    
+    # cnn_out = [(sent_length, out_chanel, batch, embedding_dim)]
+    # cnn_out = [c.permute(0,2,1,3) for c in cnn_out]
+    # cnn_out = [cnn(word_features) for cnn in self.cnns]
     cnn_out = [nn.functional.relu(cnn(word_features)).squeeze(3) for cnn in self.cnns]
-    cnn_out = [nn.functional.max_pool1d(i, i.size(2)) for i in cnn_out]
-    cnn.out = cnn.permute(0,2,1)
-    cnn_out = torch.cat(cnn_out, 1)
-    # lstm_out, _ = self.lstm(word_features)
+    cnn_out = [c.permute(2,0,1,3) for c in cnn_out]
+    cnn_out = [torch.max(c, dim=3)[0] for c in cnn_out]
+    # print(cnn_out[0][1])
+    # cnn_out = [torch.max(i, dim=2) for i in cnn_out]
+    # print(cnn_out[0][1])
+    # cnn_out = [(sent_length, out_chanel, batch)]
+    
+    # cnn_out = [nn.functional.max_pool1d(i, i.size(2)) for i in cnn_out]
+    cnn_out = torch.cat(cnn_out, dim=2 )
+    # print(cnn_out)
+
+    # fc_input = (sent_length, batch, out_channel)
     # ner_out = [sentence length, batch size, output dim]
     ner_out = self.fc(self.fc_dropout(cnn_out))
     return ner_out

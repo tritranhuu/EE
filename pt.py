@@ -10,7 +10,7 @@ from torchtext.datasets import SequenceTaggingDataset
 from torchtext.vocab import Vocab
 
 import numpy as np
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, f1_score
 
 class Corpus(object):
 
@@ -197,7 +197,8 @@ class NER(object):
         for i in range(max_preds[non_pad_elements].shape[0]):
             y_pred.append(self.data.tag_field.vocab.itos[max_preds[non_pad_elements][i].item()])
             y_true.append(self.data.tag_field.vocab.itos[y[non_pad_elements][i].item()])
-        print(classification_report(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
+        # print(classification_report(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
+        print(f1_score(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:], average='micro'))
 
     def epoch(self):
         epoch_loss = 0
@@ -245,11 +246,11 @@ class NER(object):
                 batch_acc = self.accuracy(pred_tags, true_tags)
                 epoch_loss += batch_loss.item()
                 epoch_acc += batch_acc.item()
-                non_pad_elements = (true_tags != self.data.tag_pad_idx).nonzero()
                 y_pred.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).numpy()])
                 y_true.extend([idx2tag[i] for i in true_tags.numpy()])
-        print(classification_report(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
-    
+        # print(classification_report(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
+        print(f1_score(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:], average='micro'))
+
         return epoch_loss / len(iterator), epoch_acc / len(iterator)
 
   # main training sequence
@@ -279,7 +280,7 @@ if __name__ == "__main__":
         embedding_dim=300,
         char_emb_dim=25,
         char_input_dim=len(corpus.char_field.vocab),
-        char_cnn_filter_num=5,
+        char_cnn_filter_num=1,
         char_cnn_kernel_size=3,
         hidden_dim=64,
         output_dim=len(corpus.tag_field.vocab),
