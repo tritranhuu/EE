@@ -1,0 +1,15 @@
+T1	TIM 41 60	2003-04-16 19:49:36
+T2	ORG 61 82	major league baseball
+T3	ORG 88 91	its
+T4	GPE 112 119	chicago
+T5	TIM 179 200	the last seven months
+T6	PER 88 108	its head of security
+T7	PER 165 168	fan
+T8	Attack 169 175	attack
+E1	Attack:T8 Attacker:T7 Time-Within:T5
+T9	ORG 203 213	the league
+T10	FAC 239 252	all ballparks
+T11	PER 270 279	spectator
+T12	TIM 337 344	tonight
+T13	ORG 291 313	the kansas city royals
+T14	ORG 352 360	the team

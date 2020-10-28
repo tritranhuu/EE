@@ -1,0 +1,182 @@
+T1	TIM 38 57	2003-06-14 17:59:34
+T2	ORG 77 95	people in the news
+T3	TIM 132 136	1987
+T4	GPE 170 177	israeli
+T5	GPE 137 148	palestinian
+T6	PER 216 222	muslim
+T7	GPE 274 285	palestinian
+T8	ORG 297 329	the most popular of these groups
+T9	ORG 330 335	hamas
+T10	ORG 317 329	these groups
+T11	PER 353 360	islamic
+T12	ORG 410 413	its
+T13	GPE 440 446	israel
+T14	ORG 449 454	hamas
+T15	PER 461 468	islamic
+T16	ORG 553 555	it
+T17	ORG 504 506	it
+T18	GPE 525 531	israel
+T19	GPE 540 544	they
+T20	GPE 580 591	palestinian
+T21	ORG 648 653	hamas
+T22	ORG 725 755	the islamic muslim brotherhood
+T23	TIM 835 844	the 1970s
+T24	TIM 669 673	1988
+T25	GPE 776 782	israel
+T26	PER 677 755	a blind paraplegic cleric who was influenced by the islamic muslim brotherhood
+T27	PER 703 706	who
+T28	PER 785 787	he
+T29	PER 729 736	islamic
+T30	ORG 795 804	sharities
+T31	LOC 808 831	the improverished strip
+T32	Start-Org 658 665	founded
+E1	Start-Org:T32 Org:T21 Agent:T26 Time-Within:T24
+T33	Start-Org 788 794	set up
+E2	Start-Org:T33 Org:T30 Agent:T26 Place:T31 Time-Within:T23
+T34	ORG 854 856	it
+T35	ORG 921 924	its
+T36	PER 940 947	islamic
+T37	GPE 937 953	an islamic state
+T38	PER 1008 1017	terrorist
+T39	Attack 1018 1025	attacks
+E3	Attack:T39 Attacker:T38
+T40	Attack 995 1003	bombings
+E4	Attack:T40
+T41	Die 987 994	suicide
+E5	Die:T41
+T42	ORG 1032 1037	hamas
+T43	ORG 1106 1109	its
+T44	ORG 1127 1130	its
+T45	ORG 1057 1097	an important part of palestinian society
+T46	GPE 1078 1089	palestinian
+T47	GPE 1198 1223	the palestinian authority
+T48	ORG 1234 1239	hamas
+T49	GPE 1249 1274	the palestinian authority
+T50	ORG 1299 1302	its
+T51	ORG 1380 1385	hamas
+T52	GPE 1319 1344	the palestinian authority
+T53	GPE 1358 1360	it
+T54	ORG 1403 1408	hamas
+T55	ORG 1450 1452	it
+T56	PER 1421 1445	the person on the street
+T57	PER 1622 1631	terrorist
+T58	PER 1522 1597	those same charity committees that funnel the funds to needier palestinians
+T59	PER 1552 1556	that
+T60	PER 1577 1597	needier palestinians
+T61	ORG 1484 1519	those same charitable organizations
+T62	Transfer-Money 1557 1563	funnel
+E6	Transfer-Money:T62 Giver:T58 Recipient:T60
+T63	Attack 1632 1639	attacks
+E7	Attack:T63 Attacker:T57
+T64	TIM 1766 1773	current
+T65	GPE 1642 1648	israel
+T66	PER 1675 1681	arafat
+T67	PER 1751 1754	him
+T68	GPE 1653 1670	the united states
+T69	Attack 1711 1720	terrorism
+E8	Attack:T69
+T70	TIM 1833 1836	now
+T71	GPE 1880 1910	palestinian and israeli states
+T72	GPE 1896 1903	israeli
+T73	PER 1790 1827	the prime minister known as abu mazen
+T74	PER 1818 1827	abu mazen
+T75	GPE 1880 1891	palestinian
+T76	ORG 1971 1976	hamas
+T77	GPE 1996 2002	israel
+T78	PER 1951 1953	he
+T79	PER 2005 2026	conservative israelis
+T80	ORG 2069 2074	hamas
+T81	PER 2043 2045	he
+T82	PER 2077 2079	he
+T83	ORG 2126 2130	them
+T84	PER 2103 2105	he
+T85	ORG 2151 2155	them
+T86	ORG 2180 2185	their
+T87	WEA 2180 2193	their weapons
+T88	PER 2199 2200	i
+T89	PER 2133 2135	he
+T90	PER 2233 2242	abu mazen
+T91	Attack 2250 2256	terror
+E9	Attack:T91 Instrument:T87
+T92	End-Org 2159 2166	disband
+E10	End-Org:T92 Org:T85
+T93	PER 2276 2284	settlers
+T94	GPE 2309 2325	israeli-american
+T95	GPE 2328 2339	palestinian
+T96	PER 2265 2273	reporter
+T97	Meet 2340 2346	summit
+E11	Meet:T97 Entity:T94 Entity:T94 Entity:T95
+T98	PER 2431 2433	we
+T99	PER 2475 2478	our
+T100	GPE 2551 2563	the israelis
+T101	GPE 2587 2598	palestinian
+T102	GPE 2528 2544	the palestinians
+T103	PER 2386 2396	translator
+T104	GPE 2583 2604	the palestinian state
+T105	ORG 2607 2612	hamas
+T106	LOC 2742 2746	gaza
+T107	ORG 2718 2730	israeli army
+T108	FAC 2715 2746	an israeli army outpost in gaza
+T109	ORG 2679 2684	their
+T110	PER 2659 2664	abbas
+T111	ORG 2617 2649	other palestinian militant group
+T112	GPE 2718 2725	israeli
+T113	GPE 2623 2634	palestinian
+T114	Attack 2685 2692	attacks
+E12	Attack:T114 Attacker:T105 Attacker:T111
+T115	Attack 2707 2711	raid
+E13	Attack:T115 Attacker:T105 Attacker:T111 Place:T106 Target:T108
+T116	PER 2749 2751	we
+T117	GPE 2823 2828	aqaba
+T118	Meet 2813 2819	summit
+E14	Meet:T118 Place:T117
+T119	ORG 2852 2857	hamas
+T120	PER 2891 2894	him
+T121	PER 2867 2878	al-rantissi
+T122	GPE 2881 2883	it
+T123	GPE 2831 2837	israel
+T124	PER 2906 2915	civilians
+T125	Attack 2838 2848	retaliated
+E15	Attack:T125 Attacker:T123 Target:T119 Target:T121
+T126	Die 2899 2905	killed
+E16	Die:T126 Victim:T124 Agent:T123
+T127	WEA 2951 2962	our weapons
+T128	ORG 2931 2936	hamas
+T129	ORG 2951 2954	our
+T130	PER 2973 2984	all leaders
+T131	PER 2918 2928	translator
+T132	Die 2989 3001	assassinated
+E17	Die:T132 Victim:T130
+T133	ORG 3179 3195	the red crescent
+T134	TIM 3050 3054	2000
+T135	PER 3057 3074	over 700 israelis
+T136	GPE 3147 3158	palestinian
+T137	PER 3004 3012	reporter
+T138	Die 3085 3091	killed
+E18	Die:T138 Victim:T135
+T139	ORG 3208 3213	hamas
+T140	PER 3208 3248	hamas leaders targeted for assassination
+T141	Die 3235 3248	assassination
+E19	Die:T141 Victim:T140
+T142	PER 3254 3257	you
+T143	PER 3288 3291	you
+T144	PER 3318 3321	you
+T145	PER 3351 3354	you
+T146	PER 3335 3341	people
+T147	PER 3368 3372	them
+T148	Attack 3273 3282	terrorism
+E20	Attack:T148
+T149	ORG 3421 3426	hamas
+T150	ORG 3538 3543	hamas
+T151	ORG 3562 3566	they
+T152	ORG 3599 3603	they
+T153	PER 3523 3526	you
+T154	PER 3408 3409	i
+T155	PER 3581 3590	abu mazen
+T156	PER 3630 3632	he
+T157	Attack 3532 3537	fight
+E21	Attack:T157 Attacker:T153 Target:T150
+T158	ORG 3721 3737	all armed groups
+T159	PER 3662 3675	mahmoud abbas
+T160	PER 3788 3795	leaders
+T161	PER 3777 3780	you

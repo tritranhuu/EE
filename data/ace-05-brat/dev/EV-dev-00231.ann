@@ -1,0 +1,136 @@
+T1	TIM 39 58	2003-04-08 20:29:33
+T2	PER 59 77	an air force pilot
+T3	PER 89 92	his
+T4	FAC 89 97	his base
+T5	ORG 62 71	air force
+T6	PER 156 159	his
+T7	PER 172 174	he
+T8	VEH 156 167	his warthog
+T9	WEA 142 151	a missile
+T10	ORG 119 127	military
+T11	PER 119 137	military officials
+T12	Attack 152 155	hit
+E1	Attack:T12 Target:T8 Instrument:T9
+T13	LOC 230 246	the iraqi border
+T14	PER 197 216	cnn 's gary tuchman
+T15	ORG 197 200	cnn
+T16	PER 279 288	the pilot
+T17	GPE 234 239	iraqi
+T18	PER 301 305	gary
+T19	PER 308 316	reporter
+T20	PER 335 338	you
+T21	PER 319 323	wolf
+T22	LOC 432 448	the iraqi border
+T23	PER 387 396	the pilot
+T24	PER 397 400	who
+T25	TIM 379 382	day
+T26	FAC 417 448	this base near the iraqi border
+T27	GPE 436 441	iraqi
+T28	PER 484 486	me
+T29	PER 451 453	he
+T30	VEH 460 514	one of the a-10s behind me , the warthog attack planes
+T31	VEH 467 486	the a-10s behind me
+T32	VEH 489 514	the warthog attack planes
+T33	VEH 493 500	warthog
+T34	TIM 529 547	early this morning
+T35	VEH 522 524	it
+T36	PER 575 578	him
+T37	PER 581 583	he
+T38	PER 629 631	he
+T39	PER 645 648	his
+T40	PER 679 681	he
+T41	GPE 616 623	baghdad
+T42	Transport 588 593	going
+E2	Transport:T42 Artifact:T37 Destination:T41
+T43	PER 782 785	his
+T44	VEH 782 794	his aircraft
+T45	WEA 708 710	it
+T46	WEA 715 731	an iraqi missile
+T47	WEA 748 772	a shoulder fired missile
+T48	WEA 773 777	that
+T49	GPE 718 723	iraqi
+T50	Attack 778 781	hit
+E3	Attack:T50 Target:T44 Instrument:T45 Instrument:T46 Instrument:T47 Instrument:T48
+T51	PER 797 799	he
+T52	PER 841 843	he
+T53	VEH 809 818	the plane
+T54	VEH 854 870	all these planes
+T55	PER 893 903	the pilots
+T56	PER 978 980	he
+T57	ORG 996 1005	u.s. army
+T58	LOC 941 968	the desert south of baghdad
+T59	LOC 1032 1040	the area
+T60	PER 996 1019	u.s. army ground troops
+T61	PER 1020 1023	who
+T62	GPE 961 968	baghdad
+T63	Transport 931 937	landed
+E4	Transport:T63 Artifact:T56 Destination:T58
+T64	PER 1043 1052	the pilot
+T65	PER 1055 1060	whose
+T66	FAC 1110 1119	this base
+T67	Transport 1094 1106	brought back
+E5	Transport:T67 Artifact:T64 Destination:T66
+T68	PER 1122 1124	he
+T69	GPE 1208 1216	michigan
+T70	GPE 1193 1216	battle creek , michigan
+T71	ORG 1151 1174	the 172nd fire squadron
+T72	ORG 1175 1180	which
+T73	PER 1223 1225	he
+T74	PER 1229 1245	a very lucky man
+T75	VEH 1259 1296	two other a-10s flying along with him
+T76	PER 1248 1250	he
+T77	PER 1293 1296	him
+T78	VEH 1299 1303	they
+T79	VEH 1306 1309	two
+T80	Attack 1317 1320	hit
+E6	Attack:T80 Target:T78
+T81	VEH 1323 1326	one
+T82	FAC 1340 1348	the base
+T83	ORG 1361 1363	we
+T84	VEH 1351 1360	the other
+T85	GPE 1418 1431	the coalition
+T86	FAC 1397 1431	a base controlled by the coalition
+T87	VEH 1384 1386	it
+T88	VEH 1434 1454	that particular a-10
+T89	Attack 1459 1462	hit
+E7	Attack:T89 Target:T88
+T90	PER 1547 1559	those pilots
+T91	PER 1536 1559	neither of those pilots
+T92	PER 1485 1494	the pilot
+T93	TIM 1599 1604	today
+T94	VEH 1572 1577	those
+T95	VEH 1582 1604	three planes hit today
+T96	Attack 1595 1598	hit
+E8	Attack:T96 Target:T95 Time-Within:T93
+T97	TIM 1641 1646	today
+T98	VEH 1607 1627	another a-10 warthog
+T99	GPE 1636 1640	here
+T100	Attack 1632 1635	hit
+E9	Attack:T100 Place:T99 Target:T98 Time-Within:T97
+T101	PER 1649 1659	that pilot
+T102	WEA 1671 1691	at least one missile
+T103	WEA 1696 1710	some artillery
+T104	Attack 1664 1667	hit
+E10	Attack:T104 Target:T101 Instrument:T102 Instrument:T103
+T105	ORG 1713 1715	we
+T106	VEH 1730 1740	that plane
+T107	VEH 1743 1753	that plane
+T108	VEH 1815 1824	the plane
+T109	PER 1827 1836	the pilot
+T110	PER 1864 1867	she
+T111	PER 1920 1923	she
+T112	PER 1952 1955	she
+T113	PER 2056 2059	she
+T114	WEA 2074 2092	artillery missiles
+T115	FAC 1969 2002	this base near the border of iraq
+T116	LOC 1984 2002	the border of iraq
+T117	WEA 2074 2083	artillery
+T118	GPE 1998 2002	iraq
+T119	Attack 2064 2070	struck
+E11	Attack:T119 Target:T113 Instrument:T114
+T120	Transport 1956 1960	came
+E12	Transport:T120 Artifact:T112 Destination:T115
+T121	ORG 2104 2106	we
+T122	VEH 2144 2167	the f-15 e strike eagle
+T123	PER 2123 2137	jamie mcintyre
+T124	PER 2170 2181	authorities

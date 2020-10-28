@@ -1,0 +1,267 @@
+T1	TIM 34 42	20030311
+T2	ORG 163 165	AP
+T3	GPE 150 156	Turkey
+T4	GPE 141 156	ANKARA , Turkey
+T5	LOC 376 399	Iraq 's northern border
+T6	JOB 234 248	prime minister
+T7	GPE 300 317	the United States
+T8	GPE 198 204	Turkey
+T9	GPE 358 369	the country
+T10	GPE 376 380	Iraq
+T11	PER 348 354	troops
+T12	ORG 198 223	Turkey 's governing party
+T13	TIM 249 256	Tuesday
+T14	PER 234 248	prime minister
+T15	PER 172 223	The charismatic leader of Turkey 's governing party
+T16	Elect 228 233	named
+E1	Elect:T16 Person:T15 Place:T9 Entity:T12 Position:T6 Time-Within:T13
+T17	Transport 341 347	deploy
+E2	Transport:T17 Artifact:T11 Agent:T7 Destination:T9 Destination:T5
+T18	PER 585 593	analysts
+T19	PER 538 581	officials who opposed letting in the troops
+T20	PER 548 551	who
+T21	PER 571 581	the troops
+T22	PER 483 494	the Cabinet
+T23	PER 523 525	he
+T24	PER 609 611	he
+T25	PER 402 450	Recep Tayyip Erdogan , who favors the deployment
+T26	PER 425 428	who
+T27	PER 465 467	he
+T28	Transport 440 450	deployment
+E3	Transport:T28
+T29	End-Position 532 537	purge
+E4	End-Position:T29 Person:T19
+T30	GPE 783 787	U.S.
+T31	PER 686 794	the few leaders with enough clout to unite his party and gain public support for allowing in the U.S. troops
+T32	GPE 655 661	Turkey
+T33	PER 779 794	the U.S. troops
+T34	ORG 729 738	his party
+T35	PER 623 630	Erdogan
+T36	PER 729 732	his
+T37	PER 679 794	one of the few leaders with enough clout to unite his party and gain public support for allowing in the U.S. troops
+T38	NUM 836 846	94 percent
+T39	GPE 797 802	Turks
+T40	Attack 827 830	war
+E5	Attack:T40
+T41	GPE 927 944	the United States
+T42	GPE 900 907	Turkish
+T43	ORG 896 918	the Turkish parliament
+T44	TIM 875 893	Earlier this month
+T45	Transport 962 972	deployment
+E6	Transport:T45
+T46	TIM 1082 1094	another week
+T47	PER 994 1001	Erdogan
+T48	PER 1018 1020	he
+T49	GPE 1097 1114	The United States
+T50	GPE 1127 1133	Turkey
+T51	GPE 1180 1184	U.S.
+T52	GPE 1220 1227	Turkish
+T53	VEH 1151 1191	Ships carrying equipment for U.S. troops
+T54	LOC 1216 1233	the Turkish coast
+T55	PER 1180 1191	U.S. troops
+T56	GPE 1345 1362	the United States
+T57	GPE 1436 1439	our
+T58	GPE 1410 1416	Turkey
+T59	GPE 1237 1247	Washington
+T60	TIM 1332 1339	Tuesday
+T61	ORG 1307 1315	Pentagon
+T62	ORG 1250 1271	Joint Chiefs of Staff
+T63	PER 1281 1285	Gen.
+T64	PER 1250 1280	Joint Chiefs of Staff Chairman
+T65	PER 1250 1299	Joint Chiefs of Staff Chairman Gen. Richard Myers
+T66	PER 1454 1455	I
+T67	PER 1575 1577	he
+T68	ORG 1645 1665	The Associated Press
+T69	GPE 1675 1679	U.S.
+T70	GPE 1606 1613	Turkish
+T71	GPE 1684 1691	Turkish
+T72	GPE 1751 1758	Turkish
+T73	ORG 1671 1702	the U.S. and Turkish militaries
+T74	LOC 1751 1767	Turkish airspace
+T75	GPE 1593 1603	Washington
+T76	PER 1606 1624	Turkish Ambassador
+T77	PER 1606 1639	Turkish Ambassador Farouk Logoglu
+T78	Phone-Write 1725 1736	discussions
+E7	Phone-Write:T78 Entity:T73
+T79	GPE 1810 1827	the United States
+T80	GPE 1835 1842	Turkish
+T81	PER 1774 1786	troop-basing
+T82	LOC 1835 1851	Turkish airspace
+T83	GPE 1888 1898	Washington
+T84	GPE 1957 1961	Iraq
+T85	PER 1981 1987	troops
+T86	LOC 1924 1936	the airspace
+T87	LOC 1991 2004	northern Iraq
+T88	Attack 1941 1948	strikes
+E8	Attack:T88 Attacker:T83 Place:T84
+T89	Transport 1970 1980	airlifting
+E9	Transport:T89 Artifact:T85 Agent:T83 Destination:T87
+T90	NUM 2078 2092	US$ 15 billion
+T91	GPE 2078 2081	US$
+T92	GPE 2093 2097	U.S.
+T93	GPE 2115 2125	Washington
+T94	GPE 2058 2064	Turkey
+T95	GPE 2154 2165	the country
+T96	PER 2030 2035	troop
+T97	Transfer-Money 2098 2101	aid
+E10	Transfer-Money:T97 Beneficiary:T94 Money:T90 Recipient:T93
+T98	Transport 2036 2046	deployment
+E11	Transport:T98 Artifact:T96
+T99	Attack 2189 2192	war
+E12	Attack:T99
+T100	GPE 2218 2224	Turkey
+T101	GPE 2259 2263	Iraq
+T102	TIM 2249 2255	future
+T103	PER 2287 2307	northern Iraqi Kurds
+T104	GPE 2275 2280	which
+T105	GPE 2266 2358	Turkey , which fears northern Iraqi Kurds may declare independence in the aftermath of a war
+T106	PER 2392 2406	Saddam Hussein
+T107	LOC 2287 2301	northern Iraqi
+T108	PER 2432 2443	Iraqi Kurds
+T109	PER 2482 2485	who
+T110	PER 2458 2530	Turkey 's rebel Kurds , who for 15 years have been fighting for autonomy
+T111	GPE 2458 2464	Turkey
+T112	GPE 2432 2437	Iraqi
+T113	TIM 2490 2498	15 years
+T114	Demonstrate 2509 2517	fighting
+E13	Demonstrate:T114 Place:T111 Entity:T110 Time-Within:T113
+T115	GPE 2599 2616	the United States
+T116	GPE 2569 2575	Turkey
+T117	GPE 2620 2623	its
+T118	GPE 2632 2636	Iraq
+T119	PER 2539 2541	he
+T120	PER 2556 2563	Erdogan
+T121	Elect 2546 2553	elected
+E14	Elect:T121 Person:T120 Entity:T116
+T122	PER 2802 2809	refugee
+T123	LOC 2773 2785	their border
+T124	PER 2639 2656	Defense Secretary
+T125	PER 2639 2675	Defense Secretary Donald H. Rumsfeld
+T126	GPE 2715 2722	Turkish
+T127	GPE 2773 2778	their
+T128	PER 2715 2729	Turkish troops
+T129	ORG 2639 2646	Defense
+T130	TIM 2681 2688	Tuesday
+T131	Transport 2739 2747	deployed
+E15	Transport:T131 Artifact:T128 Agent:T126 Destination:T123
+T132	GPE 2886 2925	the autonomous enclave in northern Iraq
+T133	PER 2828 2839	Iraqi Kurds
+T134	GPE 2850 2857	Turkish
+T135	GPE 2828 2833	Iraqi
+T136	PER 2850 2864	Turkish troops
+T137	LOC 2912 2925	northern Iraq
+T138	Transport 2871 2875	move
+E16	Transport:T138 Artifact:T136 Destination:T132
+T139	Attack 2946 2953	clashes
+E17	Attack:T139 Attacker:T136 Place:T132 Target:T133
+T140	GPE 3033 3050	a breakaway state
+T141	GPE 2994 3011	the United States
+T142	GPE 3056 3059	Our
+T143	PER 2956 2964	Rumsfeld
+T144	PER 3139 3141	he
+T145	GPE 2985 2991	Turkey
+T146	GPE 3104 3108	Iraq
+T147	GPE 3117 3133	a single country
+T148	ORG 3154 3162	Pentagon
+T149	TIM 3305 3311	Sunday
+T150	PER 3181 3208	Prime Minister Abdullah Gul
+T151	PER 3181 3195	Prime Minister
+T152	JOB 3268 3288	a parliamentary seat
+T153	TIM 3226 3233	Tuesday
+T154	PER 3260 3263	who
+T155	PER 3250 3311	Erdogan , who won a parliamentary seat in by-elections Sunday
+T156	Elect 3264 3267	won
+E18	Elect:T156 Person:T155 Position:T152 Time-Within:T149
+T157	End-Position 3209 3217	resigned
+E19	End-Position:T157 Person:T150 Time-Within:T153
+T158	TIM 3450 3471	as early as Wednesday
+T159	PER 3314 3317	Gul
+T160	PER 3333 3359	a caretaker prime minister
+T161	PER 3366 3394	President Ahmet Necdet Sezer
+T162	PER 3366 3375	President
+T163	PER 3404 3422	Erdogan 's Cabinet
+T164	PER 3404 3411	Erdogan
+T165	PER 3523 3536	the president
+T166	TIM 3625 3640	Tuesday evening
+T167	ORG 3580 3620	Erdogan 's Justice and Development Party
+T168	PER 3507 3514	Cabinet
+T169	PER 3569 3620	leaders of Erdogan 's Justice and Development Party
+T170	PER 3474 3481	Erdogan
+T171	PER 3487 3489	he
+T172	PER 3503 3506	his
+T173	PER 3580 3587	Erdogan
+T174	Meet 3621 3624	met
+E20	Meet:T174 Entity:T169 Time-Within:T166
+T175	PER 3680 3691	the Cabinet
+T176	PER 3694 3701	Erdogan
+T177	PER 3796 3799	Gul
+T178	End-Position 3803 3814	resignation
+E21	End-Position:T178 Person:T177
+T179	TIM 3956 3960	1999
+T180	CRM 3965 3988	anti-secular activities
+T181	TIM 3912 3920	November
+T182	ORG 3854 3863	the party
+T183	PER 3840 3847	Erdogan
+T184	PER 3939 3941	he
+T185	Arrest-Jail 3946 3952	jailed
+E22	Arrest-Jail:T185 Crime:T180 Person:T183 Time-Within:T179
+T186	ORG 3991 4008	The Justice party
+T187	GPE 4094 4100	Turkey
+T188	PER 4072 4079	Erdogan
+T189	PER 4082 4143	a leader of Turkey 's pro-Islamic movement when he was jailed
+T190	PER 4130 4132	he
+T191	PER 4151 4153	he
+T192	PER 4164 4167	his
+T193	FAC 4180 4186	prison
+T194	Arrest-Jail 4137 4143	jailed
+E23	Arrest-Jail:T194 Person:T189 Place:T187 Place:T193
+T195	ORG 4189 4198	His party
+T196	ORG 4209 4215	itself
+T197	ORG 4272 4275	its
+T198	PER 4189 4192	His
+T199	GPE 4322 4326	U.S.
+T200	GPE 4352 4356	Iraq
+T201	GPE 4369 4371	it
+T202	GPE 4375 4396	a fellow Muslim state
+T203	PER 4322 4333	U.S. troops
+T204	TIM 4292 4295	now
+T205	PER 4289 4291	He
+T206	Attack 4340 4343	war
+E24	Attack:T206 Attacker:T203 Place:T200
+T207	PER 4406 4425	the soft-spoken Gul
+T208	PER 4456 4465	a fighter
+T209	PER 4428 4435	Erdogan
+T210	PER 4547 4550	Gul
+T211	ORG 4611 4678	the Washington-based Center for Strategic and International Studies
+T212	GPE 4615 4631	Washington-based
+T213	PER 4471 4478	Erdogan
+T214	PER 4580 4594	Bulent Aliriza
+T215	PER 4597 4678	an analyst at the Washington-based Center for Strategic and International Studies
+T216	GPE 4738 4742	U.S.
+T217	PER 4687 4694	Erdogan
+T218	PER 4712 4715	his
+T219	PER 4754 4756	he
+T220	PER 4770 4772	he
+T221	TIM 4863 4870	Tuesday
+T222	GPE 4928 4936	American
+T223	ORG 4852 4862	parliament
+T224	PER 4916 4919	You
+T225	PER 4928 4944	American lackeys
+T226	PER 4876 4893	opposition deputy
+T227	PER 4876 4904	opposition deputy Ufuk Ozkan
+T228	ORG 4983 5007	the Anatolia news agency
+T229	ORG 4987 4995	Anatolia
+T230	PER 4953 4980	members of Erdogan 's party
+T231	ORG 4964 4980	Erdogan 's party
+T232	PER 4964 4971	Erdogan
+T233	ORG 5148 5156	Anatolia
+T234	PER 5087 5092	Ozkan
+T235	PER 5108 5111	him
+T236	PER 5124 5127	his
+T237	ORG 5029 5042	Justice party
+T238	PER 5019 5049	A furious Justice party member
+T239	PER 5052 5070	Fehmi Husrev Kutlu
+T240	PER 5197 5204	the two
+T241	PER 5168 5185	Other legislators
+T242	Attack 5219 5224	brawl
+E25	Attack:T242 Attacker:T240

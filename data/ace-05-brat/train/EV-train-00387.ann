@@ -1,0 +1,233 @@
+T1	TIM 34 42	20030422
+T2	ORG 145 147	AP
+T3	FAC 124 138	UNITED NATIONS
+T4	GPE 330 341	the country
+T5	GPE 229 233	Iraq
+T6	GPE 154 160	France
+T7	TIM 164 171	Tuesday
+T8	GPE 275 279	U.S.
+T9	PER 229 243	Iraq civilians
+T10	ORG 204 208	U.N.
+T11	GPE 563 566	its
+T12	GPE 537 541	Iraq
+T13	GPE 430 434	Iraq
+T14	GPE 385 390	which
+T15	GPE 376 382	France
+T16	TIM 446 455	last week
+T17	GPE 413 417	U.S.
+T18	GPE 467 471	U.S.
+T19	PER 467 496	U.S. President George W. Bush
+T20	PER 467 481	U.S. President
+T21	Attack 418 421	war
+E1	Attack:T21 Attacker:T17 Place:T13
+T22	GPE 619 625	France
+T23	ORG 697 713	Security Council
+T24	PER 756 794	chief U.N. weapons inspector Hans Blix
+T25	PER 756 784	chief U.N. weapons inspector
+T26	WEA 767 774	weapons
+T27	PER 619 644	France 's U.N. ambassador
+T28	PER 647 671	Jean-Marc de La Sabliere
+T29	PER 728 735	members
+T30	ORG 629 633	U.N.
+T31	ORG 762 766	U.N.
+T32	Attack 858 865	postwar
+E2	Attack:T32
+T33	Meet 714 721	meeting
+E3	Meet:T33 Entity:T28 Entity:T29 Entity:T24
+T34	GPE 938 942	Iraq
+T35	TIM 959 970	12-year-old
+T36	WEA 971 975	arms
+T37	ORG 902 906	U.N.
+T38	GPE 1040 1044	Iraq
+T39	TIM 1048 1052	1990
+T40	ORG 995 1015	The Security Council
+T41	GPE 1065 1071	Kuwait
+T42	Attack 1053 1061	invasion
+E4	Attack:T42 Attacker:T38 Place:T41 Time-Within:T39
+T43	GPE 1165 1169	Iraq
+T44	WEA 1165 1214	Iraq 's nuclear , chemical and biological weapons
+T45	WEA 1281 1285	them
+T46	PER 1136 1151	U.N. inspectors
+T47	ORG 1080 1087	council
+T48	WEA 1246 1285	the long-range missiles to deliver them
+T49	ORG 1136 1140	U.N.
+T50	GPE 1299 1305	France
+T51	GPE 1329 1334	China
+T52	GPE 1308 1314	Russia
+T53	GPE 1317 1324	Germany
+T54	Attack 1361 1364	war
+E5	Attack:T54
+T55	ORG 1415 1431	Security Council
+T56	PER 1371 1385	de La Sabliere
+T57	Meet 1402 1409	meeting
+E6	Meet:T57
+T58	PER 1495 1527	Russian Ambassador Sergey Lavrov
+T59	PER 1495 1513	Russian Ambassador
+T60	PER 1537 1540	his
+T61	GPE 1495 1502	Russian
+T62	GPE 1537 1548	his country
+T63	GPE 1664 1668	Iraq
+T64	PER 1611 1613	he
+T65	WEA 1690 1721	all weapons of mass destruction
+T66	PER 1632 1647	U.N. inspectors
+T67	GPE 1619 1625	Russia
+T68	ORG 1632 1636	U.N.
+T69	ORG 1742 1746	U.N.
+T70	GPE 1777 1783	French
+T71	PER 1795 1797	he
+T72	GPE 1808 1810	We
+T73	GPE 2026 2030	Iraq
+T74	PER 2012 2051	60 percent of Iraq 's 24 million people
+T75	TIM 1879 1892	later Tuesday
+T76	PER 1924 1935	Benon Sevan
+T77	PER 1938 1975	head of the U.N. oil-for-food program
+T78	PER 2026 2051	Iraq 's 24 million people
+T79	ORG 1863 1870	council
+T80	ORG 1895 1906	the council
+T81	NUM 2012 2022	60 percent
+T82	ORG 1950 1954	U.N.
+T83	Meet 1871 1878	meeting
+E7	Meet:T83 Entity:T80 Time-Within:T75
+T84	GPE 2169 2173	Iraq
+T85	GPE 2054 2060	France
+T86	LOC 2298 2302	Gulf
+T87	PER 2277 2306	victims of the first Gulf War
+T88	ORG 2106 2117	the council
+T89	PER 2054 2078	France 's de La Sabliere
+T90	PER 2084 2086	he
+T91	PER 2394 2408	de La Sabliere
+T92	GPE 2545 2549	Iraq
+T93	TIM 2480 2495	the weeks ahead
+T94	ORG 2455 2466	the council
+T95	Attack 2533 2536	war
+E8	Attack:T95
+T96	GPE 2644 2648	Iraq
+T97	GPE 2692 2696	Iraq
+T98	GPE 2575 2579	Iraq
+T99	TIM 2649 2652	now
+T100	TIM 2603 2609	future
+T101	ORG 2631 2635	U.N.
+T102	Attack 2662 2670	fighting
+E9	Attack:T102
+T103	GPE 2861 2865	Iraq
+T104	FAC 2837 2865	all sites and people in Iraq
+T105	PER 2837 2865	all sites and people in Iraq
+T106	PER 2803 2818	U.N. inspectors
+T107	ORG 2774 2781	council
+T108	PER 2755 2759	Blix
+T109	ORG 2803 2807	U.N.
+T110	GPE 3015 3026	the country
+T111	GPE 2934 2938	Iraq
+T112	TIM 3031 3044	over 10 years
+T113	PER 2967 2988	an international body
+T114	PER 2989 2993	that
+T115	LOC 2913 2922	the world
+T116	ORG 2884 2895	the council
+T117	PER 2868 2870	He
+T118	PER 2876 2878	he
+T119	PER 2901 2903	he
+T120	GPE 3189 3193	Iraq
+T121	PER 3172 3185	its own teams
+T122	TIM 3159 3166	already
+T123	PER 3051 3055	Bush
+T124	ORG 3047 3070	The Bush administration
+T125	ORG 3073 3078	which
+T126	ORG 3105 3108	its
+T127	ORG 3172 3175	its
+T128	WEA 3208 3223	illegal weapons
+T129	PER 3087 3091	Blix
+T130	Transport 3167 3171	sent
+E10	Transport:T130 Artifact:T121 Destination:T120 Agent:T124 Time-After:T122
+T131	Attack 3149 3152	war
+E11	Attack:T131
+T132	GPE 3306 3310	Iraq
+T133	TIM 3355 3362	Tuesday
+T134	PER 3316 3347	U.S. Ambassador John Negroponte
+T135	PER 3316 3331	U.S. Ambassador
+T136	GPE 3245 3258	the coalition
+T137	PER 3382 3392	U.S. teams
+T138	GPE 3316 3320	U.S.
+T139	GPE 3382 3386	U.S.
+T140	TIM 3229 3242	At the moment
+T141	PER 3409 3424	U.N. inspectors
+T142	ORG 3409 3413	U.N.
+T143	PER 3427 3429	He
+T144	PER 3609 3614	those
+T145	PER 3615 3618	who
+T146	PER 3534 3543	any Iraqi
+T147	PER 3630 3634	them
+T148	PER 3435 3455	important scientists
+T149	PER 3467 3477	themselves
+T150	GPE 3870 3875	Iraqi
+T151	GPE 3654 3660	France
+T152	PER 3804 3822	the American teams
+T153	GPE 3808 3816	American
+T154	PER 3839 3854	U.N. inspectors
+T155	ORG 3706 3717	the council
+T156	PER 3654 3678	France 's de La Sabliere
+T157	PER 3684 3686	he
+T158	ORG 3839 3843	U.N.
+T159	ORG 3935 3955	The Associated Press
+T160	TIM 4003 4021	a couple of months
+T161	PER 3927 3929	He
+T162	PER 3956 3958	he
+T163	GPE 4069 4073	U.S.
+T164	PER 4069 4093	U.S. and U.N. inspectors
+T165	PER 4050 4052	He
+T166	ORG 4078 4082	U.N.
+T167	GPE 4169 4174	Iraqi
+T168	ORG 4156 4185	a legitimate Iraqi government
+T169	PER 4203 4205	he
+T170	GPE 4413 4417	Iraq
+T171	GPE 4305 4312	Britain
+T172	ORG 4234 4243	BBC radio
+T173	TIM 4250 4257	Tuesday
+T174	GPE 4292 4300	the U.S.
+T175	WEA 4422 4436	banned weapons
+T176	TIM 4275 4289	before the war
+T177	PER 4260 4264	Blix
+T178	GPE 4557 4561	Iraq
+T179	GPE 4588 4620	the West African nation of Niger
+T180	GPE 4615 4620	Niger
+T181	GPE 4490 4494	U.S.
+T182	LOC 4592 4604	West African
+T183	PER 4439 4443	Blix
+T184	PER 4631 4640	reporters
+T185	TIM 4666 4673	Tuesday
+T186	FAC 4644 4662	the United Nations
+T187	PER 4623 4625	He
+T188	WEA 4867 4897	no weapons of mass destruction
+T189	GPE 4797 4801	Iraq
+T190	TIM 4905 4919	3 -LCB- months
+T191	TIM 4838 4851	late November
+T192	TIM 4824 4834	four years
+T193	PER 4768 4783	U.N. inspectors
+T194	ORG 4768 4772	U.N.
+T195	Transport 4784 4793	went back
+E12	Transport:T195 Artifact:T193 Destination:T189 Time-Holds:T190 Time-At-End:T192 Time-Within:T191
+T196	PER 4935 4963	Secretary-General Kofi Annan
+T197	PER 4935 4952	Secretary-General
+T198	GPE 5039 5043	Iraq
+T199	PER 4972 5027	all U.N. international staff , including the inspectors
+T200	TIM 5073 5081	March 20
+T201	PER 5013 5027	the inspectors
+T202	ORG 4976 4980	U.N.
+T203	Attack 5060 5063	war
+E13	Attack:T203 Place:T198 Time-Within:T200
+T204	Transport 5033 5038	leave
+E14	Transport:T204 Artifact:T199 Origin:T198 Time-Before:T200
+T205	PER 5084 5086	He
+T206	PER 5096 5098	he
+T207	PER 5107 5111	them
+T208	PER 5124 5129	Annan
+T209	GPE 5164 5170	Iraqis
+T210	GPE 5194 5199	their
+T211	GPE 5151 5158	Austria
+T212	TIM 5204 5210	future
+T213	TIM 5140 5147	Tuesday
+T214	PER 5235 5237	He
+T215	PER 5300 5302	he
+T216	GPE 5345 5349	Iraq
+T217	TIM 5353 5382	the `` not too distant future
+T218	ORG 5259 5267	the U.N.
+T219	ORG 5332 5336	U.N.

@@ -1,0 +1,84 @@
+T1	TIM 39 58	2003-06-05 07:32:21
+T2	ORG 109 117	the news
+T3	PER 59 73	martha stewart
+T4	ORG 219 223	that
+T5	ORG 171 204	martha stewart living , omnimedia
+T6	ORG 207 238	the company that bears her name
+T7	JOB 151 238	chairman and ceo of martha stewart living , omnimedia , the company that bears her name
+T8	PER 135 138	she
+T9	PER 151 238	chairman and ceo of martha stewart living , omnimedia , the company that bears her name
+T10	PER 230 233	her
+T11	End-Position 139 147	resigned
+E1	End-Position:T11 Position:T7 Person:T8
+T12	PER 411 415	they
+T13	PER 344 351	insider
+T14	ORG 334 341	the sec
+T15	ORG 307 329	the justice department
+T16	CRM 387 444	conspiracy to hide what they say is an illegal stock sale
+T17	CRM 362 384	obstruction of justice
+T18	CRM 344 359	insider trading
+T19	NUM 512 521	$ 225,000
+T20	PER 502 505	her
+T21	PER 447 449	we
+T22	Charge-Indict 288 295	charges
+E2	Charge-Indict:T22 Defendant:T20 Prosecutor:T15 Prosecutor:T14 Crime:T18 Crime:T17 Crime:T16
+T23	PER 704 724	both of that company
+T24	PER 675 701	the chairman and president
+T25	ORG 712 724	that company
+T26	ORG 578 583	enron
+T27	PER 661 670	kenny lay
+T28	PER 603 622	thousands of people
+T29	PER 623 628	their
+T30	PER 638 643	their
+T31	Declare-Bankruptcy 587 597	bankruptcy
+E3	Declare-Bankruptcy:T31 Org:T26
+T32	Charge-Indict 732 742	unindicted
+E4	Charge-Indict:T32 Defendant:T27
+T33	End-Position 598 602	cost
+E5	End-Position:T33 Person:T28 Entity:T26
+T34	PER 745 772	the chief financial officer
+T35	PER 776 810	the only one there taking the fall
+T36	ORG 789 794	there
+T37	GPE 904 921	the united states
+T38	PER 836 849	80,000 people
+T39	ORG 813 821	worldcom
+T40	TIM 822 826	once
+T41	End-Position 827 835	employed
+E6	End-Position:T41 Person:T38 Entity:T39
+T42	Declare-Bankruptcy 890 900	bankruptcy
+E7	Declare-Bankruptcy:T42 Place:T37 Org:T39
+T43	PER 924 936	bernie evers
+T44	PER 947 950	his
+T45	Charge-Indict 960 970	unindicted
+E8	Charge-Indict:T45 Defendant:T43
+T46	PER 973 980	the ceo
+T47	ORG 995 1000	there
+T48	PER 1029 1045	dennis kozlowski
+T49	PER 1075 1077	he
+T50	PER 1115 1118	his
+T51	PER 1003 1028	tyco 's ceo and president
+T52	VEH 1115 1124	his yacht
+T53	LOC 1097 1111	martha vinyard
+T54	PER 1064 1065	i
+T55	ORG 1003 1007	tyco
+T56	NUM 1189 1200	$ 1 billion
+T57	PER 1141 1155	martha stewart
+T58	PER 1234 1237	she
+T59	PER 1206 1209	you
+T60	PER 1296 1299	she
+T61	Charge-Indict 1331 1342	prosecution
+E9	Charge-Indict:T61 Defendant:T60
+T62	CTI 1367 1377	am@cnn.com
+T63	PER 1484 1487	you
+T64	PER 1419 1422	you
+T65	PER 1411 1422	many of you
+T66	PER 1394 1396	we
+T67	PER 1427 1429	we
+T68	PER 1384 1385	i
+T69	Phone-Write 1401 1410	hear from
+E10	Phone-Write:T69 Entity:T66 Entity:T65
+T70	PER 1513 1546	something worth a billion dollars
+T71	NUM 1583 1592	two grand
+T72	NUM 1529 1546	a billion dollars
+T73	PER 1664 1680	a powerful woman
+T74	PER 1685 1698	the celebrity

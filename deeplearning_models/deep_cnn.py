@@ -56,7 +56,8 @@ class DeepCNN(nn.Module):
     convs = [
         nn.Conv1d(in_channels = embedding_dim + char_emb_dim * char_cnn_filter_num,
                  out_channels = cnn_out_chanel, 
-                 kernel_size=k) for k in cnn_kernels
+                 kernel_size=k,
+                 padding = int((k-1)/2)) for k in cnn_kernels
     ]
     self.conv_modules = nn.ModuleList(convs)
     self.cnn_dropout = nn.Dropout(cnn_dropout)
@@ -65,6 +66,7 @@ class DeepCNN(nn.Module):
     self.fc = self.get_linear_layer(len(cnn_kernels) * cnn_out_chanel, output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
 
+    self.tanh = nn.Tanh()
   def forward(self, words, chars):
     # words = [sentence length, batch size]
     # chars = [batch size, sentence length, word length)
@@ -87,12 +89,13 @@ class DeepCNN(nn.Module):
     word_features = word_features.permute(1,2,0)
     feature_list = []
     for conv in self.conv_modules:
-        feature_map = nn.Tanh(conv(word_features))
-        max_pool, argmax = feature_map.max(dim=2)
-        feature_list.append(max_pool)
+        feature_map = self.tanh(conv(word_features))
+        # max_pool, argmax = feature_map.max(dim=2)
+        feature_list.append(feature_map)
+    # print(feature_list[0].shape, feature_list[1].shape, feature_list[2].shape)
     cnn_out = torch.cat(feature_list, dim=1)
     cnn_out = self.cnn_dropout(cnn_out)
-    print(cnn_out.shape)
+    cnn_out = cnn_out.permute(2,0,1)
 
     # fc_input = (sent_length, batch, out_channel)
     # ner_out = [sentence length, batch size, output dim]

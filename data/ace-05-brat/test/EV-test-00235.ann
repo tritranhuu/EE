@@ -1,0 +1,63 @@
+T1	TIM 35 55	2004-12-13T07 :22:00
+T2	PER 83 88	Byrne
+T3	TIM 89 109	2004-12-13T07 :22:00
+T4	TIM 147 165	the last 18 months
+T5	ORG 113 119	Oracle
+T6	ORG 137 140	who
+T7	ORG 176 187	one another
+T8	ORG 124 134	Peoplesoft
+T9	Merge-Org 226 240	tying the knot
+E1	Merge-Org:T9 Org:T5 Org:T8 Time-Ending:T4
+T10	NUM 261 268	$ 26.50
+T11	TIM 485 502	a year and a half
+T12	ORG 358 363	their
+T13	ORG 341 347	Oracle
+T14	ORG 420 430	themselves
+T15	PER 451 480	other Peoplesoft shareholders
+T16	ORG 457 467	Peoplesoft
+T17	TIM 653 656	day
+T18	ORG 576 586	Peoplesoft
+T19	PER 657 662	their
+T20	PER 576 625	Peoplesoft 's most valuable -- human -- resources
+T21	End-Position 631 635	walk
+E2	End-Position:T21 Person:T20 Entity:T18
+T22	PER 740 753	Larry Ellison
+T23	ORG 825 842	Oracle/Peoplesoft
+T24	PER 811 812	I
+T25	ORG 960 1000	two sides who absolutely hate each other
+T26	ORG 970 973	who
+T27	ORG 990 1000	each other
+T28	PER 876 877	I
+T29	Merge-Org 916 922	merger
+E3	Merge-Org:T29 Org:T25
+T30	NUM 1142 1156	$ 10.3 billion
+T31	NUM 1326 1334	billions
+T32	ORG 1253 1262	Coca-Cola
+T33	ORG 1077 1083	Oracle
+T34	ORG 1041 1047	Oracle
+T35	ORG 1285 1307	the bottling franchise
+T36	ORG 1342 1344	it
+T37	ORG 1095 1110	his own company
+T38	ORG 1164 1175	his company
+T39	PER 1164 1167	his
+T40	PER 1187 1190	him
+T41	PER 1095 1098	his
+T42	PER 1038 1056	an Oracle employee
+T43	PER 1125 1132	Ellison
+T44	PER 1247 1249	me
+T45	PER 1007 1008	I
+T46	End-Position 1063 1069	driven
+E4	End-Position:T46 Person:T42 Entity:T33
+T47	Transfer-Money 1136 1141	spend
+E5	Transfer-Money:T47 Giver:T43 Money:T30
+T48	Merge-Org 1160 1163	get
+E6	Merge-Org:T48 Org:T33 Org:T38
+T49	Start-Org 1086 1094	starting
+E7	Start-Org:T49 Org:T37 Agent:T40
+T50	Transfer-Ownership 1338 1341	buy
+E8	Transfer-Ownership:T50 Artifact:T35 Price:T31 Buyer:T32
+T51	PER 1358 1365	Ellison
+T52	PER 1417 1419	he
+T53	Merge-Org 1399 1405	merger
+E9	Merge-Org:T53
+T54	PER 1474 1476	We

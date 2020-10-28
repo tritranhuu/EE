@@ -1,0 +1,26 @@
+T1	TIM 39 58	2003-04-07 09:09:35
+T2	PER 200 212	two soldiers
+T3	FAC 111 176	operation center for 2nd brigade 3rd infantry zrigs south baghdad
+T4	ORG 132 156	2nd brigade 3rd infantry
+T5	LOC 163 176	south baghdad
+T6	PER 179 192	at least four
+T7	ORG 74 87	3-7th cavalry
+T8	PER 59 71	walt rodgers
+T9	PER 217 232	two journalists
+T10	WEA 93 106	iraqi missile
+T11	GPE 93 98	iraqi
+T12	Attack 107 110	hit
+E1	Attack:T12 Target:T3 Instrument:T10
+T13	Die 193 197	dead
+E2	Die:T13 Victim:T9 Place:T3 Instrument:T10 Victim:T6 Victim:T2
+T14	PER 235 240	other
+T15	PER 248 259	at least 15
+T16	Injure 264 271	wounded
+E3	Injure:T16 Victim:T15
+T17	TIM 323 339	a couple minutes
+T18	LOC 385 390	there
+T19	PER 312 316	walt
+T20	PER 274 286	some of them
+T21	PER 282 286	them
+T22	Die 287 297	critically
+E4	Die:T22 Victim:T20

@@ -1,0 +1,87 @@
+T1	TIM 34 42	20030324
+T2	TIM 97 105	March 24
+T3	ORG 112 118	Xinhua
+T4	GPE 87 94	BAGHDAD
+T5	TIM 180 186	Monday
+T6	VEH 236 266	the US-led coalition warplanes
+T7	GPE 130 135	Iraqi
+T8	PER 269 278	witnesses
+T9	PER 158 165	a woman
+T10	WEA 217 266	a missile fired by the US-led coalition warplanes
+T11	FAC 192 204	their houses
+T12	PER 125 165	Five Iraqi civilians , including a woman
+T13	PER 192 197	their
+T14	GPE 240 246	US-led
+T15	ORG 240 256	US-led coalition
+T16	Die 173 179	killed
+E1	Die:T16 Instrument:T10 Victim:T12 Victim:T9 Agent:T15 Place:T11 Time-Within:T5
+T17	Attack 210 213	hit
+E2	Attack:T17 Target:T9 Target:T11 Instrument:T10 Instrument:T6 Time-Within:T5 Attacker:T15 Target:T12
+T18	GPE 366 371	Iraqi
+T19	PER 393 397	they
+T20	LOC 335 390	the most populous areas in the Iraqi capital of Baghdad
+T21	FAC 286 298	Their houses
+T22	PER 286 291	Their
+T23	GPE 362 390	the Iraqi capital of Baghdad
+T24	GPE 383 390	Baghdad
+T25	GPE 328 390	one of the most populous areas in the Iraqi capital of Baghdad
+T26	GPE 314 325	Al-Azamiyah
+T27	FAC 405 414	One house
+T28	PER 451 461	casualties
+T29	GPE 485 493	the area
+T30	Attack 440 446	strike
+E3	Attack:T30 Place:T29 Target:T27
+T31	TIM 573 612	2:30 p.m. -LRB- 1130GMT -RRB- on Monday
+T32	GPE 562 569	Baghdad
+T33	GPE 500 506	US-led
+T34	PER 496 523	The US-led coalition forces
+T35	ORG 496 516	The US-led coalition
+T36	Attack 548 558	airstrikes
+E4	Attack:T36 Attacker:T34 Place:T32 Time-Within:T31
+T37	GPE 753 758	Iraqi
+T38	PER 729 733	they
+T39	GPE 664 671	Baghdad
+T40	GPE 710 726	the capital city
+T41	LOC 645 671	different parts of Baghdad
+T42	VEH 759 772	anti-aircraft
+T43	WEA 753 782	Iraqi anti-aircraft artillery
+T44	Attack 796 800	fire
+E5	Attack:T44 Attacker:T37 Instrument:T43
+T45	TIM 1032 1045	five days ago
+T46	TIM 934 941	current
+T47	GPE 942 946	Iraq
+T48	GPE 966 971	Iraqi
+T49	ORG 817 830	the coalition
+T50	PER 953 981	at least 130 Iraqi civilians
+T51	PER 817 838	the coalition leaders
+T52	PER 907 915	civilian
+T53	Die 1003 1009	killed
+E6	Die:T53 Victim:T50 Time-Within:T45
+T54	Attack 1020 1023	war
+E7	Attack:T54 Place:T47
+T55	Die 947 950	war
+E8	Die:T55 Victim:T52 Place:T47
+T56	TIM 1160 1174	Sunday morning
+T57	GPE 1237 1242	Iraqi
+T58	LOC 1233 1249	the Iraqi border
+T59	PER 1205 1209	they
+T60	WEA 1180 1192	a US missile
+T61	PER 1134 1143	10 others
+T62	VEH 1103 1106	bus
+T63	VEH 1197 1227	the bus they were traveling in
+T64	PER 1091 1117	five Syrian bus passengers
+T65	GPE 1096 1102	Syrian
+T66	GPE 1182 1184	US
+T67	Transport 1215 1224	traveling
+E9	Transport:T67 Vehicle:T63 Artifact:T64 Time-Within:T56
+T68	Die 1123 1129	killed
+E10	Die:T68 Instrument:T60 Victim:T64 Agent:T66 Place:T58 Time-Within:T56
+T69	Injure 1149 1156	injured
+E11	Injure:T69 Instrument:T60 Victim:T61 Agent:T66 Place:T58 Time-Within:T56
+T70	Attack 1193 1196	hit
+E12	Attack:T70 Place:T58 Target:T63 Instrument:T60 Time-Within:T56
+T71	GPE 1304 1308	Iraq
+T72	PER 1277 1308	Syrians fleeing the war in Iraq
+T73	VEH 1252 1263	The vehicle
+T74	Transport 1268 1276	carrying
+E13	Transport:T74 Vehicle:T73 Artifact:T72 Origin:T71

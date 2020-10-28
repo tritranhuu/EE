@@ -1,0 +1,48 @@
+T1	TIM 31 58	2003-04-17T16 :00:00 -05:00
+T2	PER 109 117	WOODRUFF
+T3	PER 118 179	Two Americans who gave their lives to Operation Iraqi Freedom
+T4	PER 132 135	who
+T5	PER 141 146	their
+T6	TIM 223 228	today
+T7	FAC 195 222	Arlington National Cemetery
+T8	Attack 156 179	Operation Iraqi Freedom
+E1	Attack:T8
+T9	Die 136 140	gave
+E2	Die:T9 Victim:T3
+T10	PER 231 266	Marine Lance Corporal Patrick Nixon
+T11	PER 231 252	Marine Lance Corporal
+T12	PER 271 327	one of 17 killed in an ambush near Nasiriyah on March 23
+T13	PER 278 327	17 killed in an ambush near Nasiriyah on March 23
+T14	GPE 306 315	Nasiriyah
+T15	TIM 319 327	March 23
+T16	ORG 231 237	Marine
+T17	Die 281 287	killed
+E3	Die:T17 Victim:T13 Place:T14 Time-Within:T15
+T18	Attack 294 300	ambush
+E4	Attack:T18 Target:T13 Time-Within:T15
+T19	PER 330 332	He
+T20	PER 354 392	the first Tennessean to die in the war
+T21	TIM 337 349	21 years old
+T22	Die 378 381	die
+E5	Die:T22 Victim:T20
+T23	Attack 389 392	war
+E6	Attack:T23
+T24	GPE 399 404	Idaho
+T25	PER 399 447	Idaho Air National Guardsman Major Gregory Stone
+T26	PER 428 433	Major
+T27	PER 399 427	Idaho Air National Guardsman
+T28	FAC 474 483	Arlington
+T29	PER 531 547	a fellow soldier
+T30	WEA 513 520	grenade
+T31	PER 486 488	He
+T32	Injure 497 505	injuries
+E7	Injure:T32 Instrument:T30 Victim:T31 Agent:T29
+T33	Attack 521 527	attack
+E8	Attack:T33 Attacker:T29 Instrument:T30
+T34	Die 489 493	died
+E9	Die:T34 Instrument:T30 Victim:T31 Agent:T29
+T35	PER 611 612	I
+T36	PER 616 629	Judy Woodruff
+T37	PER 641 644	you
+T38	ORG 632 634	We
+T39	ORG 657 659	us

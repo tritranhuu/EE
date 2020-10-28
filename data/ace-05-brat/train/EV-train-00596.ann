@@ -1,0 +1,89 @@
+T1	TIM 34 42	20030509
+T2	ORG 130 133	AFP
+T3	GPE 109 115	LONDON
+T4	TIM 118 123	May 9
+T5	FAC 173 179	cinema
+T6	ORG 140 237	A ground-breaking British budget cinema chain launched by the founder of low-cost airline easyJet
+T7	ORG 260 262	it
+T8	ORG 330 332	it
+T9	ORG 213 237	low-cost airline easyJet
+T10	ORG 213 229	low-cost airline
+T11	PER 198 237	the founder of low-cost airline easyJet
+T12	GPE 158 165	British
+T13	TIM 248 254	Friday
+T14	TIM 311 344	a fortnight before it first opens
+T15	Start-Org 186 194	launched
+E1	Start-Org:T15 Org:T6 Agent:T11 Time-After:T14
+T16	ORG 390 411	its no-frills cinemas
+T17	ORG 347 469	EasyCinema , which aims to sell tickets to its no-frills cinemas for as little as 20 pence -LRB- 0.28 euros , 0.32 dollars
+T18	ORG 360 365	which
+T19	ORG 390 393	its
+T20	ORG 545 547	it
+T21	NUM 444 454	0.28 euros
+T22	NUM 429 437	20 pence
+T23	NUM 457 469	0.32 dollars
+T24	ORG 518 535	film distributors
+T25	ORG 629 639	easyCinema
+T26	ORG 755 770	the film majors
+T27	ORG 614 626	distributors
+T28	ORG 773 783	EasyCinema
+T29	ORG 826 833	easyJet
+T30	ORG 852 854	it
+T31	ORG 863 895	Europe 's biggest budget airline
+T32	GPE 863 869	Europe
+T33	PER 773 791	EasyCinema founder
+T34	PER 773 895	EasyCinema founder Stelios Haji-Ioannou , who set up easyJet in 1995 and built it up into Europe 's biggest budget airline
+T35	PER 815 818	who
+T36	PER 978 981	him
+T37	TIM 837 841	1995
+T38	ORG 937 959	the distribution firms
+T39	ORG 967 971	they
+T40	Start-Org 819 825	set up
+E2	Start-Org:T40 Agent:T33 Org:T29 Time-Within:T37
+T41	Sue 922 928	action
+E3	Sue:T41 Defendant:T38 Plaintiff:T34
+T42	ORG 1086 1096	easyCinema
+T43	ORG 1086 1195	easyCinema 's first outlet in Milton Keynes , just north of London , which is due to open its doors on May 23
+T44	ORG 1155 1160	which
+T45	ORG 1176 1179	its
+T46	GPE 1146 1152	London
+T47	GPE 1116 1152	Milton Keynes , just north of London
+T48	TIM 1189 1195	May 23
+T49	Start-Org 1077 1082	debut
+E4	Start-Org:T49 Org:T43 Place:T47 Time-Within:T48
+T50	Start-Org 1171 1175	open
+E5	Start-Org:T50 Org:T43 Place:T47 Time-Within:T48
+T51	ORG 1206 1214	the firm
+T52	ORG 1240 1242	it
+T53	GPE 1271 1278	British
+T54	ORG 1267 1311	the British arm of French distributors Pathe
+T55	TIM 1228 1234	Friday
+T56	ORG 1286 1311	French distributors Pathe
+T57	ORG 1286 1305	French distributors
+T58	GPE 1286 1292	French
+T59	GPE 1487 1494	British
+T60	GPE 1432 1434	US
+T61	ORG 1357 1366	Hollywood
+T62	TIM 1350 1356	latest
+T63	TIM 1495 1506	1930s-based
+T64	TIM 1483 1486	new
+T65	TIM 1414 1431	recently-released
+T66	PER 1538 1550	Haji-Ioannou
+T67	PER 1617 1620	his
+T68	PER 1561 1568	himself
+T69	ORG 1633 1651	other distributors
+T70	PER 1780 1782	he
+T71	GPE 1688 1690	UK
+T72	NUM 1727 1737	90 percent
+T73	ORG 1676 1751	the top six UK distributors representing more than 90 percent of the market
+T74	PER 1793 1794	I
+T75	PER 1811 1813	my
+T76	ORG 1849 1875	the Office of Fair Trading
+T77	PER 1811 1821	my lawyers
+T78	ORG 1881 1891	EasyCinema
+T79	ORG 1905 1908	its
+T80	FAC 1993 2012	traditional cinemas
+T81	PER 1926 1936	the public
+T82	TIM 1971 1985	off-peak hours
+T83	ORG 2164 2186	the pared-down cinemas
+T84	PER 2214 2228	skeleton staff

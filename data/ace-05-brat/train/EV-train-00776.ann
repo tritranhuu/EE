@@ -1,0 +1,29 @@
+T1	TIM 45 65	2005-01-24T13 :54:00
+T2	PER 86 91	Scott
+T3	TIM 92 112	2005-01-24T13 :54:00
+T4	ORG 192 205	Supreme Court
+T5	GPE 293 304	the country
+T6	PER 165 168	Roe
+T7	TIM 113 130	This past weekend
+T8	PER 172 176	Wade
+T9	PER 323 328	women
+T10	TIM 142 149	32-year
+T11	ORG 503 516	Supreme Court
+T12	PER 365 383	pro-life crusaders
+T13	GPE 426 441	Washington D.C.
+T14	PER 352 383	thousands of pro-life crusaders
+T15	TIM 344 349	Today
+T16	Demonstrate 408 413	March
+E1	Demonstrate:T16 Place:T13 Entity:T14 Time-Within:T15
+T17	ORG 692 709	the Supreme Court
+T18	PER 607 639	the woman once known as Jane Roe
+T19	PER 731 734	she
+T20	PER 643 751	now a passionate pro-life advocate trying to get the Supreme Court to overturn the case she once represented
+T21	PER 571 591	those who value life
+T22	PER 577 580	who
+T23	TIM 617 621	once
+T24	TIM 643 646	now
+T25	TIM 735 739	once
+T26	PER 754 769	Michelle Malkin
+T27	Demonstrate 791 796	March
+E2	Demonstrate:T27

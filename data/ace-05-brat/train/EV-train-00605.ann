@@ -1,0 +1,36 @@
+T1	TIM 38 57	2003-06-27 07:09:04
+T2	GPE 156 198	his hometown of edgefield , south carolina
+T3	GPE 172 198	edgefield , south carolina
+T4	GPE 184 198	south carolina
+T5	TIM 142 152	last night
+T6	PER 72 86	strom thurmond
+T7	PER 87 136	the man who set an endureance record for politics
+T8	PER 95 98	who
+T9	PER 156 159	his
+T10	ORG 58 60	we
+T11	Die 137 141	died
+E1	Die:T11 Victim:T7 Place:T2 Time-Within:T5
+T12	JOB 237 276	the office of the county superintendent
+T13	TIM 230 234	1928
+T14	PER 201 203	he
+T15	PER 208 211	his
+T16	GPE 255 261	county
+T17	Elect 218 226	election
+E2	Elect:T17 Person:T14 Position:T12 Time-Starting:T13
+T18	TIM 383 387	1964
+T19	TIM 301 308	36-year
+T20	PER 292 294	he
+T21	PER 360 362	he
+T22	ORG 372 379	parties
+T23	ORG 336 346	democratic
+T24	ORG 332 352	the democratic party
+T25	PER 399 414	barry goldwater
+T26	TIM 456 463	36-year
+T27	ORG 478 488	republican
+T28	ORG 474 494	the republican party
+T29	PER 531 547	a segregationist
+T30	PER 497 499	he
+T31	TIM 616 629	a few minutes
+T32	PER 569 572	his
+T33	PER 632 697	a man who had controversy , but knew how to change with the times
+T34	PER 638 641	who

@@ -1,0 +1,16 @@
+T1	TIM 39 58	2003-04-18 09:50:44
+T2	GPE 121 126	iraqi
+T3	PER 117 143	the iraqi prisoners of war
+T4	FAC 82 94	the pentagon
+T5	Attack 140 143	war
+E1	Attack:T5
+T6	PER 180 202	well over 7,000 iraqis
+T7	FAC 157 254	one detention center , well over 7,000 iraqis held there and almost a thousand have been released
+T8	FAC 208 213	there
+T9	ORG 146 148	we
+T10	PER 218 235	almost a thousand
+T11	Release-Parole 246 254	released
+E2	Release-Parole:T11 Person:T10 Place:T7
+T12	FAC 269 281	the pentagon
+T13	GPE 346 356	washington
+T14	PER 322 326	they

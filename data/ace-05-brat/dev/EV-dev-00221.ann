@@ -1,0 +1,58 @@
+T1	TIM 35 55	2005-02-15T18 :58:00
+T2	PER 98 103	Byrne
+T3	TIM 104 124	2005-02-15T18 :58:00
+T4	LOC 203 241	the Star Wars universe of George Lucas
+T5	ORG 125 139	G 's Investing
+T6	PER 152 166	Alan Greenspan
+T7	PER 170 197	a George Lucas-esque figure
+T8	PER 172 190	George Lucas-esque
+T9	PER 229 241	George Lucas
+T10	PER 244 246	he
+T11	PER 490 492	we
+T12	ORG 539 546	the Fed
+T13	TIM 498 507	right now
+T14	PER 461 474	economic czar
+T15	PER 427 436	Greenspan
+T16	PER 683 685	we
+T17	ORG 699 706	the Fed
+T18	PER 714 723	Greenspan
+T19	End-Position 724 730	leaves
+E1	End-Position:T19 Person:T18 Entity:T17
+T20	PER 740 747	muckdog
+T21	TIM 763 773	T19 :19:00
+T22	PER 796 797	I
+T23	CTI 818 842	socialsecuritychoice.org
+T24	PER 1077 1091	most Democrats
+T25	PER 995 1063	those who equate investing in the SP500 as playing the slot machines
+T26	PER 1001 1004	who
+T27	ORG 1070 1074	AARP
+T28	PER 930 968	those who are for Choice and Ownership
+T29	PER 936 939	who
+T30	PER 975 979	Bush
+T31	TIM 1120 1123	now
+T32	PER 1147 1165	Sir Alan Greenspan
+T33	PER 1147 1150	Sir
+T34	PER 1179 1194	Dr. Greenshades
+T35	PER 1179 1182	Dr.
+T36	PER 1232 1234	he
+T37	PER 1315 1316	I
+T38	PER 1382 1387	Byrne
+T39	TIM 1403 1413	T19 :25:00
+T40	PER 1570 1596	half my political audience
+T41	PER 1575 1596	my political audience
+T42	PER 1425 1426	I
+T43	PER 1452 1453	I
+T44	PER 1484 1485	I
+T45	PER 1575 1577	my
+T46	PER 1504 1506	my
+T47	PER 1541 1542	I
+T48	PER 1866 1868	we
+T49	PER 1789 1797	children
+T50	PER 1802 1812	the assets
+T51	PER 1759 1766	parents
+T52	PER 1626 1627	I
+T53	PER 1647 1648	I
+T54	PER 1697 1698	I
+T55	PER 1939 1946	muckdog
+T56	TIM 1962 1972	T21 :16:00
+T57	PER 1980 1981	I

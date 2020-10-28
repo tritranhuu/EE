@@ -1,0 +1,108 @@
+T1	TIM 40 60	2005-02-26T13 :17:00
+T2	PER 94 104	Will Vehrs
+T3	TIM 105 125	2005-02-26T13 :17:00
+T4	GPE 158 171	Kennesaw , GA
+T5	PER 126 139	An old friend
+T6	PER 142 171	Joseph Britt of Kennesaw , GA
+T7	PER 237 255	Virginia Democrats
+T8	GPE 237 245	Virginia
+T9	GPE 169 171	GA
+T10	TIM 174 182	recently
+T11	Phone-Write 183 190	emailed
+E1	Phone-Write:T11 Entity:T5
+T12	PER 258 261	Joe
+T13	PER 278 295	George W. Grayson
+T14	ORG 311 325	William & Mary
+T15	ORG 307 341	the William & Mary Alumni Magazine
+T16	PER 311 332	William & Mary Alumni
+T17	PER 384 391	Grayson
+T18	PER 456 458	he
+T19	GPE 410 418	Virginia
+T20	PER 488 506	illegal immigrants
+T21	PER 551 555	they
+T22	PER 606 610	they
+T23	ORG 621 631	government
+T24	GPE 520 529	Americans
+T25	PER 643 652	Jim Bacon
+T26	TIM 668 678	T11 :25:00
+T27	PER 679 680	I
+T28	PER 697 724	a good number of immigrants
+T29	PER 752 762	One fellow
+T30	PER 765 776	a Brazilian
+T31	PER 813 815	He
+T32	PER 968 970	he
+T33	PER 847 870	an immigration attorney
+T34	NUM 996 1005	thousands
+T35	NUM 871 891	thousands of dollars
+T36	GPE 981 995	the government
+T37	ORG 923 946	the Immigration Service
+T38	Transfer-Money 843 846	pay
+E2	Transfer-Money:T38 Giver:T31 Money:T35 Recipient:T33
+T39	Transfer-Money 974 980	paying
+E3	Transfer-Money:T39 Beneficiary:T32 Money:T34 Recipient:T36
+T40	PER 1049 1075	many of his contemporaries
+T41	PER 1017 1019	He
+T42	PER 1057 1060	his
+T43	PER 1128 1135	lawyers
+T44	PER 1108 1112	They
+T45	PER 1142 1146	they
+T46	Transfer-Money 1121 1127	paying
+E4	Transfer-Money:T46 Giver:T44 Recipient:T43
+T47	Transfer-Money 1147 1150	pay
+E5	Transfer-Money:T47 Giver:T44 Recipient:T43
+T48	PER 1189 1232	the Americans who employ illegal immigrants
+T49	PER 1203 1206	who
+T50	PER 1293 1297	them
+T51	PER 1214 1232	illegal immigrants
+T52	Transfer-Money 1246 1249	pay
+E6	Transfer-Money:T52 Giver:T48
+T53	Start-Position 1207 1213	employ
+E7	Start-Position:T53 Person:T51
+T54	PER 1300 1303	Who
+T55	PER 1315 1337	The illegal immigrants
+T56	PER 1338 1348	themselves
+T57	PER 1363 1469	The employers who hire them instead of raising wages to attract native-born Americans and legal immigrants
+T58	PER 1377 1380	who
+T59	PER 1453 1469	legal immigrants
+T60	PER 1427 1448	native-born Americans
+T61	PER 1386 1390	them
+T62	Start-Position 1381 1385	hire
+E8	Start-Position:T62 Person:T61
+T63	PER 1494 1514	cheap domestic labor
+T64	FAC 1534 1543	the house
+T65	PER 1476 1583	families who hire cheap domestic labor , whether to clean the house , wash the laundry or maintain the lawn
+T66	PER 1485 1488	who
+T67	Start-Position 1489 1493	hire
+E9	Start-Position:T67 Person:T63
+T68	PER 1586 1589	Who
+T69	PER 1598 1690	Poor , native-born Americans who otherwise would be paid higher wages for their manual labor
+T70	PER 1627 1630	who
+T71	PER 1672 1677	their
+T72	Transfer-Money 1650 1654	paid
+E10	Transfer-Money:T72 Recipient:T70
+T73	PER 1693 1792	Legal immigrants like my Brazilian friend , who sometimes feels like a sap for playing by the rules
+T74	GPE 1718 1727	Brazilian
+T75	PER 1715 1717	my
+T76	PER 1737 1740	who
+T77	PER 1762 1767	a sap
+T78	PER 1715 1792	my Brazilian friend , who sometimes feels like a sap for playing by the rules
+T79	PER 1799 1917	the rest of us who wo n't hire anyone to work for us unless they 're paying their taxes , even if it means we pay more
+T80	PER 1814 1817	who
+T81	PER 1849 1851	us
+T82	PER 1906 1908	we
+T83	PER 1830 1836	anyone
+T84	PER 1859 1863	they
+T85	PER 1875 1880	their
+T86	PER 1811 1813	us
+T87	Start-Position 1825 1829	hire
+E11	Start-Position:T87 Person:T83
+T88	Transfer-Money 1868 1874	paying
+E12	Transfer-Money:T88 Giver:T84
+T89	Transfer-Money 1909 1912	pay
+E13	Transfer-Money:T89 Giver:T82
+T90	PER 2050 2098	the legal immigrants who 've played by the rules
+T91	PER 2071 2074	who
+T92	PER 2030 2045	the native born
+T93	PER 1978 1996	illegal immigrants
+T94	PER 1927 1928	I
+T95	PER 2107 2108	I

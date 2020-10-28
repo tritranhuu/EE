@@ -1,0 +1,37 @@
+T1	TIM 40 59	2003-04-16 13:37:49
+T2	TIM 66 72	former
+T3	GPE 112 116	home
+T4	PER 60 80	seven former p.o.w.s
+T5	TIM 189 192	now
+T6	TIM 172 192	a few hours from now
+T7	GPE 164 171	germany
+T8	FAC 143 171	ramstein air base in germany
+T9	PER 119 123	they
+T10	Transport 131 139	arriving
+E1	Transport:T10 Artifact:T9 Destination:T8 Time-Within:T6 Time-After:T5
+T11	TIM 195 199	once
+T12	PER 200 213	doctors there
+T13	GPE 260 269	stateside
+T14	FAC 208 213	there
+T15	PER 218 222	they
+T16	PER 240 249	the seven
+T17	Transport 255 259	head
+E2	Transport:T17 Artifact:T16 Destination:T13
+T18	PER 272 289	doctors in kuwait
+T19	PER 308 333	the six men and one woman
+T20	GPE 283 289	kuwait
+T21	GPE 386 393	germany
+T22	PER 357 361	they
+T23	TIM 438 444	sunday
+T24	TIM 410 416	former
+T25	GPE 469 476	baghdad
+T26	PER 406 424	the former p.o.w.s
+T27	PER 479 483	they
+T28	PER 530 546	medical officers
+T29	GPE 651 671	their separate homes
+T30	PER 551 555	they
+T31	PER 563 569	a team
+T32	PER 618 624	a team
+T33	PER 651 656	their
+T34	Transport 645 647	go
+E3	Transport:T34 Artifact:T30 Destination:T29

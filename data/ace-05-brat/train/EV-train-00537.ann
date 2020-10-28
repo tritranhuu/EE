@@ -1,0 +1,144 @@
+T1	TIM 34 42	20030319
+T2	GPE 101 112	LOS ANGELES
+T3	ORG 119 121	AP
+T4	JOB 153 206	co-chief executive of Vivendi Universal Entertainment
+T5	GPE 262 273	Paris-based
+T6	ORG 175 206	Vivendi Universal Entertainment
+T7	FAC 332 356	Universal 's theme parks
+T8	ORG 312 329	Universal Studios
+T9	ORG 332 341	Universal
+T10	ORG 262 291	Paris-based Vivendi Universal
+T11	ORG 361 387	other entertainment assets
+T12	PER 128 140	Barry Diller
+T13	PER 153 206	co-chief executive of Vivendi Universal Entertainment
+T14	PER 239 242	him
+T15	End-Position 141 149	resigned
+E1	End-Position:T15 Person:T12 Entity:T6 Position:T4
+T16	End-Position 246 255	step down
+E2	End-Position:T16 Person:T14
+T17	Transfer-Ownership 303 307	bids
+E3	Transfer-Ownership:T17 Seller:T10 Artifact:T7 Artifact:T11
+T18	GPE 447 457	U.S.-based
+T19	JOB 411 478	interim CEO of Vivendi Universal 's U.S.-based entertainment assets
+T20	ORG 426 443	Vivendi Universal
+T21	ORG 495 512	Vivendi Universal
+T22	ORG 426 478	Vivendi Universal 's U.S.-based entertainment assets
+T23	TIM 479 488	last year
+T24	PER 390 396	Diller
+T25	PER 411 478	interim CEO of Vivendi Universal 's U.S.-based entertainment assets
+T26	Start-Position 401 410	appointed
+E4	Start-Position:T26 Person:T24 Entity:T22 Position:T19 Time-Within:T23
+T27	Transfer-Money 529 537	repaying
+E5	Transfer-Money:T27 Giver:T21 Time-Starting:T23
+T28	FAC 611 670	its Universal theme parks and television production company
+T29	ORG 591 608	Universal Studios
+T30	ORG 611 614	its
+T31	ORG 615 624	Universal
+T32	ORG 555 576	Cash-strapped Vivendi
+T33	ORG 611 670	its Universal theme parks and television production company
+T34	Transfer-Ownership 586 590	sell
+E6	Transfer-Ownership:T34 Artifact:T29 Artifact:T28 Artifact:T33 Seller:T32
+T35	TIM 673 679	Former
+T36	ORG 729 732	VUE
+T37	ORG 740 761	Universal Music Group
+T38	PER 673 699	Former oilman Marvin Davis
+T39	PER 673 686	Former oilman
+T40	NUM 712 724	$ 20 billion
+T41	ORG 799 805	Viacom
+T42	ORG 764 771	Vivendi
+T43	ORG 869 872	its
+T44	ORG 816 896	other buyers interested in acquiring all or parts of its entertainment companies
+T45	ORG 808 811	MGM
+T46	ORG 869 896	its entertainment companies
+T47	ORG 853 896	all or parts of its entertainment companies
+T48	ORG 860 896	parts of its entertainment companies
+T49	Transfer-Ownership 843 852	acquiring
+E7	Transfer-Ownership:T49 Artifact:T47 Artifact:T48 Seller:T42 Buyer:T41 Buyer:T45 Buyer:T44
+T50	Meet 788 793	talks
+E8	Meet:T50 Entity:T41 Entity:T45 Entity:T44 Entity:T42
+T51	ORG 928 945	Vivendi Universal
+T52	PER 928 954	Vivendi Universal chairman
+T53	PER 928 972	Vivendi Universal chairman Jean-Rene Fourtou
+T54	PER 899 905	Diller
+T55	PER 916 922	co-CEO
+T56	TIM 1063 1072	Wednesday
+T57	PER 978 980	My
+T58	PER 1036 1042	Diller
+T59	TIM 1078 1081	Now
+T60	ORG 1087 1104	Vivendi Universal
+T61	ORG 1157 1160	its
+T62	ORG 1157 1181	its entertainment assets
+T63	End-Position 1205 1215	step aside
+E9	End-Position:T63
+T64	ORG 1402 1409	Expedia
+T65	ORG 1388 1397	Match.com
+T66	ORG 1418 1433	other companies
+T67	TIM 1272 1274	61
+T68	ORG 1467 1470	VUE
+T69	NUM 1446 1457	5.4 percent
+T70	PER 1263 1274	Diller , 61
+T71	PER 1285 1470	chief executive officer of USA Interactive , which operates the Home Shopping Network , Ticketmaster , Match.com and Expedia , among other companies , and has a 5.4 percent stake in VUE
+T72	ORG 1345 1370	the Home Shopping Network
+T73	ORG 1312 1470	USA Interactive , which operates the Home Shopping Network , Ticketmaster , Match.com and Expedia , among other companies , and has a 5.4 percent stake in VUE
+T74	ORG 1330 1335	which
+T75	ORG 1373 1385	Ticketmaster
+T76	TIM 1525 1531	future
+T77	ORG 1535 1563	Vivendi 's entertainment arm
+T78	ORG 1535 1542	Vivendi
+T79	PER 1473 1479	Diller
+T80	ORG 1600 1617	the joint venture
+T81	NUM 1585 1596	1.5 percent
+T82	PER 1566 1568	He
+T83	ORG 1656 1687	Vivendi Universal Entertainment
+T84	PER 1620 1626	Diller
+T85	ORG 1750 1797	one or more of the entertainment unit 's assets
+T86	ORG 1765 1787	the entertainment unit
+T87	ORG 1812 1827	the film studio
+T88	ORG 1765 1797	the entertainment unit 's assets
+T89	PER 1690 1696	Diller
+T90	PER 1734 1737	his
+T91	PER 1738 1741	own
+T92	Transfer-Ownership 1742 1745	bid
+E10	Transfer-Ownership:T92 Artifact:T85 Artifact:T85 Artifact:T87 Seller:T86 Buyer:T89
+T93	TIM 1835 1841	recent
+T94	ORG 1866 1886	The Associated Press
+T95	PER 1854 1860	Diller
+T96	PER 1887 1889	he
+T97	PER 1965 1968	him
+T98	PER 1981 1996	chief executive
+T99	Transfer-Ownership 1931 1934	bid
+E11	Transfer-Ownership:T99 Buyer:T96
+T100	PER 1999 2005	Diller
+T101	PER 2021 2024	his
+T102	PER 2052 2075	head of USA Interactive
+T103	ORG 2060 2075	USA Interactive
+T104	ORG 2168 2194	the Fox Television network
+T105	ORG 2107 2116	Paramount
+T106	PER 2078 2084	Diller
+T107	PER 2099 2194	head of Paramount and Twentieth Century Fox , where he helped launch the Fox Television network
+T108	PER 2151 2153	he
+T109	ORG 2172 2175	Fox
+T110	ORG 2121 2194	Twentieth Century Fox , where he helped launch the Fox Television network
+T111	ORG 2145 2150	where
+T112	Start-Org 2161 2167	launch
+E12	Start-Org:T112 Org:T104 Agent:T110 Agent:T108
+T113	PER 2212 2214	he
+T114	ORG 2206 2209	Fox
+T115	ORG 2350 2426	ABC , where he is credited with creating the `` movie of the week '' concept
+T116	ORG 2356 2361	where
+T117	PER 2311 2313	He
+T118	PER 2322 2325	his
+T119	PER 2362 2364	he
+T120	Start-Position 2314 2321	started
+E13	Start-Position:T120 Person:T117 Entity:T115
+T121	GPE 2570 2574	U.S.
+T122	ORG 2523 2606	the New York Stock Exchange , where Vivendi 's U.S. shares rose 35 cents to $ 15.15
+T123	ORG 2553 2558	where
+T124	ORG 2559 2566	Vivendi
+T125	NUM 2599 2606	$ 15.15
+T126	NUM 2494 2501	$ 24.41
+T127	NUM 2479 2488	8 percent
+T128	NUM 2587 2595	35 cents
+T129	NUM 2460 2466	$ 2.08
+T130	TIM 2505 2511	midday
+T131	ORG 2439 2454	USA Interactive

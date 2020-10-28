@@ -1,0 +1,92 @@
+T1	TIM 39 58	2003-04-11 08:29:16
+T2	PER 68 82	saddam hussein
+T3	GPE 68 92	saddam hussein 's regime
+T4	TIM 59 62	now
+T5	GPE 131 135	iraq
+T6	GPE 140 143	its
+T7	GPE 140 150	its people
+T8	ORG 195 197	us
+T9	TIM 230 244	iraq 's future
+T10	GPE 230 234	iraq
+T11	PER 156 159	his
+T12	PER 167 186	fareed zakar ericks
+T13	PER 259 262	you
+T14	PER 271 274	you
+T15	PER 277 282	paula
+T16	ORG 304 323	a different network
+T17	PER 297 300	you
+T18	PER 365 368	you
+T19	PER 382 383	i
+T20	FAC 447 459	the pentagon
+T21	PER 395 397	's
+T22	PER 414 427	barbara starr
+T23	GPE 588 595	baghdad
+T24	PER 612 629	our nic robertson
+T25	PER 545 558	ground troops
+T26	PER 462 465	she
+T27	LOC 665 683	some parts of iraq
+T28	PER 503 518	those officials
+T29	ORG 612 615	our
+T30	GPE 679 683	iraq
+T31	TIM 733 746	the day after
+T32	ORG 699 717	the administration
+T33	PER 689 692	you
+T34	TIM 765 778	the day after
+T35	PER 749 750	i
+T36	GPE 934 940	kosovo
+T37	GPE 943 954	afghanistan
+T38	PER 963 965	we
+T39	GPE 957 962	where
+T40	TIM 1083 1092	new order
+T41	TIM 994 1007	the old order
+T42	TIM 904 922	the last ten years
+T43	GPE 925 931	bosnia
+T44	ORG 873 892	this administration
+T45	PER 1020 1023	you
+T46	PER 817 818	i
+T47	GPE 1149 1157	american
+T48	ORG 1145 1166	the american military
+T49	PER 1240 1243	you
+T50	PER 1198 1199	i
+T51	PER 1286 1289	you
+T52	PER 1300 1309	a society
+T53	GPE 1413 1428	this government
+T54	PER 1375 1399	the local iraqi citizens
+T55	GPE 1385 1390	iraqi
+T56	PER 1361 1364	you
+T57	GPE 1541 1575	that kind of legitimate government
+T58	GPE 1584 1586	it
+T59	PER 1627 1630	you
+T60	PER 1648 1651	you
+T61	PER 1747 1749	we
+T62	TIM 1762 1770	the past
+T63	PER 1818 1845	all of the old ethnic thugs
+T64	PER 1869 1873	they
+T65	PER 1896 1900	they
+T66	PER 1916 1920	they
+T67	GPE 1774 1780	bosnia
+T68	PER 1795 1798	you
+T69	Elect 1804 1813	elections
+E1	Elect:T69 Person:T63 Place:T67 Time-Within:T62
+T70	GPE 2064 2090	legitimate iraqi authority
+T71	GPE 2075 2080	iraqi
+T72	PER 2108 2111	you
+T73	PER 2139 2142	you
+T74	GPE 2187 2210	this interim government
+T75	PER 2174 2177	you
+T76	PER 2390 2399	civilians
+T77	GPE 2273 2281	american
+T78	ORG 2273 2302	american and british military
+T79	GPE 2286 2293	british
+T80	GPE 2350 2369	an iraqi government
+T81	PER 2221 2260	deputy defense secretary paul wolfowitz
+T82	PER 2221 2245	deputy defense secretary
+T83	PER 2221 2227	deputy
+T84	GPE 2353 2358	iraqi
+T85	PER 2213 2216	you
+T86	PER 2530 2550	all different people
+T87	PER 2565 2569	them
+T88	TIM 2614 2625	a few years
+T89	PER 2443 2444	i
+T90	PER 2664 2667	you
+T91	PER 2633 2634	i

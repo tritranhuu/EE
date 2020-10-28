@@ -1,0 +1,77 @@
+T1	TIM 34 42	20030514
+T2	GPE 88 93	PARIS
+T3	TIM 96 102	May 14
+T4	ORG 109 112	AFP
+T5	PER 119 157	Israeli Foreign Minister Silvan Shalom
+T6	PER 119 143	Israeli Foreign Minister
+T7	PER 245 248	his
+T8	GPE 180 185	Qatar
+T9	GPE 249 255	Qatari
+T10	GPE 313 318	Paris
+T11	GPE 201 212	Middle East
+T12	TIM 161 170	Wednesday
+T13	PER 268 274	Sheikh
+T14	PER 245 267	his Qatari counterpart
+T15	PER 268 309	Sheikh Hamad bin Jassem bin Jabr al-Thani
+T16	GPE 119 126	Israeli
+T17	Meet 234 239	talks
+E1	Meet:T17 Place:T10 Time-Holds:T12
+T18	PER 321 327	Shalom
+T19	GPE 363 382	the tiny Gulf state
+T20	TIM 415 423	recently
+T21	PER 333 357	a joint press conference
+T22	GPE 434 445	Palestinian
+T23	JOB 434 460	Palestinian prime minister
+T24	LOC 372 376	Gulf
+T25	PER 411 460	the recently appointed Palestinian prime minister
+T26	PER 463 475	Mahmud Abbas
+T27	Start-Position 424 433	appointed
+E2	Start-Position:T27 Person:T25 Entity:T22 Time-Within:T20
+T28	PER 510 512	We
+T29	GPE 527 538	Middle East
+T30	Meet 513 522	discussed
+E3	Meet:T30 Entity:T28
+T31	PER 711 717	Shalom
+T32	TIM 555 567	Over an hour
+T33	LOC 633 647	the Arab world
+T34	PER 579 581	we
+T35	GPE 603 615	both parties
+T36	GPE 622 628	Israel
+T37	PER 637 641	Arab
+T38	Meet 571 576	talks
+E4	Meet:T38 Entity:T34 Time-Holds:T32
+T39	GPE 728 733	Qatar
+T40	GPE 737 775	a very important country on this issue
+T41	PER 778 779	I
+T42	PER 867 869	he
+T43	GPE 819 825	Qatari
+T44	PER 815 842	the Qatari foreign minister
+T45	PER 852 861	Abu Mazen
+T46	PER 883 888	Abbas
+T47	PER 984 986	he
+T48	PER 1002 1028	Israel 's foreign minister
+T49	PER 927 933	Shalom
+T50	TIM 1032 1043	February 27
+T51	PER 958 977	an Arab counterpart
+T52	JOB 1002 1028	Israel 's foreign minister
+T53	PER 961 965	Arab
+T54	GPE 1002 1008	Israel
+T55	Start-Position 987 998	took office
+E5	Start-Position:T55 Person:T47 Entity:T54 Position:T52 Time-Within:T50
+T56	Meet 915 922	meeting
+E6	Meet:T56 Entity:T49 Entity:T51
+T57	GPE 1046 1051	Qatar
+T58	GPE 1156 1176	other Arab countries
+T59	PER 1162 1166	Arab
+T60	GPE 1076 1082	Israel
+T61	PER 1190 1196	Shalom
+T62	GPE 1214 1220	London
+T63	PER 1236 1269	British Prime Minister Tony Blair
+T64	PER 1236 1258	British Prime Minister
+T65	GPE 1236 1243	British
+T66	PER 1274 1302	Foreign Secretary Jack Straw
+T67	PER 1274 1291	Foreign Secretary
+T68	Transport 1204 1207	fly
+E7	Transport:T68 Artifact:T61 Destination:T62
+T69	Meet 1225 1230	talks
+E8	Meet:T69 Place:T62 Entity:T61 Entity:T63 Entity:T66

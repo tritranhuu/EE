@@ -1,0 +1,42 @@
+T1	TIM 41 60	2003-04-28 13:46:16
+T2	LOC 142 147	space
+T3	PER 61 82	an american astronaut
+T4	PER 87 104	russian cosmonaut
+T5	GPE 87 94	russian
+T6	GPE 64 72	american
+T7	FAC 124 155	the international space station
+T8	TIM 199 211	this morning
+T9	VEH 168 173	soyuz
+T10	VEH 158 181	a russian soyuz capsule
+T11	PER 190 194	them
+T12	GPE 160 167	russian
+T13	FAC 239 259	the orbiting outpost
+T14	Transport 182 189	dropped
+E1	Transport:T14 Vehicle:T10 Artifact:T11 Destination:T13 Time-Within:T8
+T15	TIM 324 338	february first
+T16	LOC 300 305	space
+T17	VEH 339 358	shuttle `` columbia
+T18	VEH 339 346	shuttle
+T19	FAC 296 313	the space station
+T20	Transport 286 292	flight
+E2	Transport:T20 Destination:T19
+T21	TIM 379 389	90 minutes
+T22	PER 410 419	the crews
+T23	VEH 445 463	the two spacecraft
+T24	TIM 518 537	the next six months
+T25	LOC 545 550	space
+T26	PER 466 475	edward lu
+T27	PER 480 506	yuri malenchenko of russia
+T28	GPE 500 506	russia
+T29	FAC 541 558	the space station
+T30	TIM 617 626	currently
+T31	PER 580 598	the two astronauts
+T32	PER 603 616	one cosmonaut
+T33	PER 561 565	they
+T34	FAC 627 632	there
+T35	TIM 680 687	may 4th
+T36	LOC 674 679	earth
+T37	VEH 635 644	the soyuz
+T38	PER 656 665	that crew
+T39	Transport 650 655	carry
+E3	Transport:T39 Vehicle:T37 Artifact:T38 Destination:T36 Time-Starting:T35

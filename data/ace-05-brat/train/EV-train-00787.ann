@@ -1,0 +1,143 @@
+T1	TIM 38 57	2003-06-22 17:59:19
+T2	LOC 121 125	mars
+T3	LOC 173 187	the red planet
+T4	ORG 58 66	the nasa
+T5	TIM 126 136	this month
+T6	VEH 156 163	ashters
+T7	VEH 145 151	rovers
+T8	ORG 71 96	the european space agency
+T9	Transport 137 144	sending
+E1	Transport:T9 Artifact:T7 Artifact:T6 Destination:T2 Time-Within:T5
+T10	Transport 109 117	missions
+E2	Transport:T10 Vehicle:T7 Vehicle:T6 Agent:T8 Destination:T2 Time-Within:T5
+T11	LOC 221 225	mars
+T12	PER 245 251	humans
+T13	Transport 273 278	visit
+E3	Transport:T13 Artifact:T12 Destination:T11
+T14	ORG 410 414	nasa
+T15	PER 441 464	the contributing editor
+T16	PER 435 437	us
+T17	PER 479 482	you
+T18	PER 485 489	jeff
+T19	PER 498 501	you
+T20	PER 540 542	we
+T21	TIM 516 534	about 30 years ago
+T22	LOC 551 559	the moon
+T23	Transport 543 547	went
+E4	Transport:T23 Artifact:T20 Destination:T22 Time-Within:T21
+T24	LOC 611 615	mars
+T25	Transport 605 607	go
+E5	Transport:T25 Destination:T24
+T26	LOC 663 667	mars
+T27	LOC 713 715	us
+T28	TIM 726 736	nine-month
+T29	LOC 760 765	there
+T30	TIM 770 789	about a year or two
+T31	TIM 818 835	about three years
+T32	PER 752 754	we
+T33	Transport 802 806	trip
+E6	Transport:T33 Artifact:T32 Destination:T29 Time-Holds:T31
+T34	LOC 898 903	space
+T35	PER 838 840	we
+T36	LOC 993 997	mars
+T37	TIM 1045 1054	20 minute
+T38	PER 1016 1031	people on earth
+T39	LOC 1026 1031	earth
+T40	PER 982 985	you
+T41	Phone-Write 1008 1012	talk
+E7	Phone-Write:T41 Place:T36 Entity:T40 Entity:T38
+T42	LOC 1148 1156	the moon
+T43	PER 1093 1096	you
+T44	LOC 1238 1243	space
+T45	TIM 1179 1187	250 days
+T46	TIM 1167 1170	now
+T47	PER 1224 1243	astronauts in space
+T48	PER 1260 1263	you
+T49	LOC 1383 1388	there
+T50	PER 1308 1310	's
+T51	PER 1354 1360	humans
+T52	PER 1442 1444	's
+T53	PER 1513 1519	humans
+T54	VEH 1456 1559	the right kind of spacecraft that would be able to allow humans to actually get that far and to survive
+T55	VEH 1485 1489	that
+T56	VEH 1592 1606	the spacecraft
+T57	LOC 1634 1639	earth
+T58	Transport 1620 1628	launched
+E8	Transport:T58 Artifact:T56 Origin:T57
+T59	LOC 1675 1680	space
+T60	LOC 1732 1737	space
+T61	VEH 1664 1666	is
+T62	VEH 1726 1728	it
+T63	PER 1703 1705	we
+T64	PER 1642 1645	you
+T65	Transport 1657 1663	launch
+E9	Transport:T65 Artifact:T61 Agent:T64 Origin:T59
+T66	VEH 1826 1840	the spacecraft
+T67	VEH 1762 1840	a good shuttle that 's going to take us back and forth to build the spacecraft
+T68	VEH 1777 1781	that
+T69	PER 1754 1756	we
+T70	PER 1799 1801	us
+T71	LOC 1940 1944	mars
+T72	VEH 1896 1898	it
+T73	LOC 1906 1915	the earth
+T74	PER 1848 1850	we
+T75	Transport 1891 1895	take
+E10	Transport:T75 Artifact:T72 Destination:T71
+T76	PER 2025 2027	we
+T77	PER 2068 2070	we
+T78	LOC 2177 2181	mars
+T79	LOC 2216 2221	there
+T80	LOC 2272 2277	there
+T81	LOC 2352 2362	the planet
+T82	PER 2209 2211	we
+T83	PER 2224 2226	we
+T84	PER 2295 2297	we
+T85	LOC 2337 2362	the surface of the planet
+T86	Transport 2212 2215	get
+E11	Transport:T86 Artifact:T82 Destination:T79
+T87	LOC 2383 2387	mars
+T88	LOC 2429 2434	there
+T89	PER 2411 2413	we
+T90	LOC 2575 2585	the planet
+T91	LOC 2586 2592	itself
+T92	PER 2440 2442	we
+T93	TIM 2623 2626	now
+T94	PER 2633 2634	i
+T95	TIM 2661 2678	quite a few years
+T96	PER 2695 2698	you
+T97	PER 2815 2821	humans
+T98	LOC 2925 2929	mars
+T99	PER 2911 2921	astronauts
+T100	NUM 2893 2897	50 %
+T101	LOC 2957 2961	mars
+T102	LOC 3034 3038	mars
+T103	PER 2977 2985	the body
+T104	PER 3097 3099	it
+T105	PER 3041 3049	the body
+T106	PER 3159 3163	they
+T107	PER 3184 3188	they
+T108	PER 3209 3219	old people
+T109	PER 3244 3258	jeff rothfeder
+T110	PER 3267 3270	you
+T111	PER 3283 3285	us
+T112	LOC 3346 3350	mars
+T113	PER 3327 3329	we
+T114	PER 3335 3338	our
+T115	Transport 3339 3342	way
+E12	Transport:T115 Artifact:T114 Destination:T112
+T116	PER 3368 3370	us
+T117	TIM 3420 3429	next week
+T118	PER 3384 3386	we
+T119	GPE 3513 3520	alabama
+T120	FAC 3499 3540	an anniston , alabama , military facility
+T121	WEA 3488 3495	weapons
+T122	GPE 3502 3520	anniston , alabama
+T123	ORG 3523 3531	military
+T124	PER 3569 3584	people downwind
+T125	TIM 3622 3631	next week
+T126	GPE 3684 3691	america
+T127	PER 3785 3797	harry potter
+T128	PER 3767 3780	harrison ford
+T129	ORG 3818 3821	cnn
+T130	GPE 3839 3846	baghdad
+T131	TIM 3803 3815	8:00 eastern

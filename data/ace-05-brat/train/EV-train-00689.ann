@@ -1,0 +1,387 @@
+T1	TIM 34 42	20030519
+T2	ORG 127 129	AP
+T3	GPE 111 120	JERUSALEM
+T4	TIM 230 236	Monday
+T5	PER 247 269	at least four shoppers
+T6	PER 283 285	20
+T7	FAC 193 226	a crowded mall in northern Israel
+T8	LOC 211 226	northern Israel
+T9	TIM 314 322	two days
+T10	WEA 163 173	explosives
+T11	PER 136 152	A suicide bomber
+T12	Injure 274 282	wounding
+E1	Injure:T12 Instrument:T10 Victim:T6 Agent:T11 Place:T7 Time-Within:T4
+T13	Attack 304 310	attack
+E2	Attack:T13 Time-Within:T9
+T14	Die 138 145	suicide
+E3	Die:T14 Instrument:T10 Victim:T11 Agent:T11 Place:T7 Time-Within:T4
+T15	Die 239 246	killing
+E4	Die:T15 Victim:T5 Instrument:T10 Agent:T11 Place:T7 Time-Within:T4
+T16	Attack 153 162	detonated
+E5	Attack:T16 Attacker:T11 Place:T7 Instrument:T10 Time-Within:T4
+T17	GPE 509 528	a Palestinian state
+T18	GPE 511 522	Palestinian
+T19	GPE 401 412	U.S.-backed
+T20	TIM 532 536	2005
+T21	Attack 338 346	bombings
+E6	Attack:T21
+T22	Start-Org 498 508	setting up
+E7	Start-Org:T22 Time-Before:T20
+T23	PER 709 730	Palestinian militants
+T24	FAC 610 772	the Shaarei Amakim mall in the working class town of Afula , which has been targeted repeatedly by Palestinian militants because of its proximity to the West Bank
+T25	LOC 759 772	the West Bank
+T26	GPE 709 720	Palestinian
+T27	GPE 637 772	the working class town of Afula , which has been targeted repeatedly by Palestinian militants because of its proximity to the West Bank
+T28	GPE 663 668	Afula
+T29	GPE 671 676	which
+T30	GPE 742 745	its
+T31	TIM 590 596	Monday
+T32	Attack 686 694	targeted
+E8	Attack:T32 Place:T27 Attacker:T23
+T33	Attack 600 606	attack
+E9	Attack:T33 Attacker:T23 Place:T24 Time-Within:T31
+T34	ORG 775 801	The Islamic militant group
+T35	ORG 802 807	Hamas
+T36	PER 779 786	Islamic
+T37	TIM 839 850	the weekend
+T38	Attack 825 833	bombings
+E10	Attack:T38 Attacker:T34 Time-Within:T37
+T39	FAC 973 981	the mall
+T40	GPE 857 862	Afula
+T41	PER 998 1006	shoppers
+T42	TIM 923 947	5:14 p.m. -LRB- 1414 gmt
+T43	TIM 887 896	32 months
+T44	Attack 863 872	explosion
+E11	Attack:T44 Place:T40 Place:T39 Time-Holds:T42
+T45	GPE 1142 1161	Israeli-Palestinian
+T46	FAC 1051 1056	Malls
+T47	TIM 1174 1188	September 2000
+T48	Attack 1162 1170	fighting
+E12	Attack:T48 Attacker:T45 Attacker:T45 Time-Starting:T47
+T49	PER 1229 1242	four shoppers
+T50	PER 1212 1224	the attacker
+T51	ORG 1245 1251	police
+T52	Die 1205 1211	killed
+E13	Die:T52 Victim:T50 Victim:T49 Agent:T50
+T53	Attack 1195 1204	explosion
+E14	Attack:T53 Attacker:T50
+T54	PER 1259 1272	Twenty people
+T55	PER 1298 1335	several who were in serious condition
+T56	PER 1306 1309	who
+T57	Injure 1278 1285	wounded
+E15	Injure:T57 Victim:T54
+T58	PER 1355 1397	a 19-year-old Palestinian riding a bicycle
+T59	VEH 1388 1397	a bicycle
+T60	WEA 1408 1443	a 30-kilo -LRB- 66-pound -RRB- bomb
+T61	VEH 1449 1482	a military jeep in the Gaza Strip
+T62	ORG 1451 1459	military
+T63	TIM 1357 1368	19-year-old
+T64	TIM 1338 1352	Earlier Monday
+T65	LOC 1468 1482	the Gaza Strip
+T66	PER 1494 1508	three soldiers
+T67	Injure 1485 1493	injuring
+E16	Injure:T67 Instrument:T60 Victim:T66 Agent:T58 Place:T65 Time-Within:T64
+T68	Attack 1398 1407	detonated
+E17	Attack:T68 Attacker:T58 Place:T65 Target:T61 Target:T66 Instrument:T60
+T69	GPE 1547 1553	Israel
+T70	PER 1591 1594	who
+T71	PER 1576 1618	foreign envoys who meet with Yasser Arafat
+T72	PER 1605 1618	Yasser Arafat
+T73	Meet 1595 1599	meet
+E18	Meet:T73 Entity:T70 Entity:T72
+T74	Attack 1536 1544	bombings
+E19	Attack:T74
+T75	PER 1746 1763	Islamic militants
+T76	GPE 1638 1649	Palestinian
+T77	GPE 1621 1627	Israel
+T78	TIM 1711 1717	recent
+T79	PER 1634 1656	the Palestinian leader
+T80	Attack 1684 1692	violence
+E20	Attack:T80
+T81	Attack 1718 1725	attacks
+E21	Attack:T81 Time-Within:T78 Attacker:T75
+T82	ORG 1766 1771	Hamas
+T83	ORG 1784 1786	it
+T84	GPE 1858 1869	Palestinian
+T85	TIM 1777 1783	Monday
+T86	TIM 1897 1905	one-year
+T87	GPE 1833 1838	Egypt
+T88	ORG 1858 1885	Palestinian militant groups
+T89	Attack 1920 1929	shootings
+E22	Attack:T89 Attacker:T88 Time-Holds:T86
+T90	Attack 1815 1822	attacks
+E23	Attack:T90 Attacker:T83
+T91	Attack 1934 1942	bombings
+E24	Attack:T91 Attacker:T88 Time-Holds:T86
+T92	TIM 2045 2056	recent days
+T93	LOC 2024 2028	Gaza
+T94	GPE 1978 1986	Egyptian
+T95	ORG 2073 2092	the militant groups
+T96	PER 1978 1993	Egyptian envoys
+T97	GPE 2033 2041	Damascus
+T98	PER 2062 2092	leaders of the militant groups
+T99	Meet 2012 2020	meetings
+E25	Meet:T99 Place:T93 Place:T97 Entity:T96 Entity:T98 Time-Within:T92
+T100	GPE 2147 2153	Israel
+T101	GPE 2202 2209	Israeli
+T102	PER 2202 2237	Israeli Prime Minister Ariel Sharon
+T103	PER 2202 2224	Israeli Prime Minister
+T104	ORG 2095 2111	The armed groups
+T105	ORG 2116 2120	they
+T106	PER 2179 2188	militants
+T107	ORG 2258 2263	Hamas
+T108	TIM 2299 2305	Monday
+T109	PER 2256 2270	A Hamas leader
+T110	PER 2273 2291	Abdel Aziz Rantisi
+T111	PER 2382 2385	our
+T112	LOC 2382 2395	our holy land
+T113	PER 2437 2442	Abbas
+T114	ORG 2415 2420	Hamas
+T115	PER 2539 2553	a `` terrorist
+T116	PER 2524 2528	whom
+T117	PER 2515 2553	Sharon , whom he called a `` terrorist
+T118	PER 2445 2452	Rantisi
+T119	PER 2529 2531	he
+T120	GPE 2559 2565	Israel
+T121	GPE 2597 2600	its
+T122	PER 2618 2644	those involved in violence
+T123	Attack 2636 2644	violence
+E26	Attack:T123 Attacker:T122
+T124	VEH 2829 2844	a Jerusalem bus
+T125	PER 2811 2825	seven Israelis
+T126	ORG 2783 2788	Hamas
+T127	GPE 2647 2653	Israel
+T128	TIM 2766 2772	Sunday
+T129	TIM 2856 2863	the day
+T130	GPE 2831 2840	Jerusalem
+T131	ORG 2743 2750	Cabinet
+T132	PER 2781 2803	a Hamas suicide bomber
+T133	Die 2804 2810	killed
+E27	Die:T133 Agent:T132 Place:T130 Time-At-Beginning:T129 Victim:T125
+T134	Die 2789 2796	suicide
+E28	Die:T134 Victim:T132 Agent:T132 Place:T130 Time-At-Beginning:T129
+T135	PER 2866 2879	The ministers
+T136	PER 2910 2945	foreign envoys who meet with Arafat
+T137	PER 2925 2928	who
+T138	PER 2939 2945	Arafat
+T139	Meet 2929 2933	meet
+E29	Meet:T139 Entity:T137 Entity:T138
+T140	PER 2951 2980	Whoever wants to visit Arafat
+T141	PER 3002 3004	he
+T142	PER 3066 3089	a senior Sharon adviser
+T143	PER 3092 3105	Raanan Gissin
+T144	GPE 3038 3045	Israeli
+T145	PER 2974 2980	Arafat
+T146	PER 2991 2997	Arafat
+T147	PER 3075 3081	Sharon
+T148	PER 3031 3055	senior Israeli officials
+T149	Meet 2985 2990	visit
+E30	Meet:T149 Entity:T140 Entity:T146
+T150	Meet 3026 3030	meet
+E31	Meet:T150 Entity:T140 Entity:T148
+T151	GPE 3108 3114	Israel
+T152	TIM 3147 3164	several weeks ago
+T153	PER 3258 3271	a spokeswoman
+T154	PER 3277 3287	EU leaders
+T155	GPE 3202 3220	The European Union
+T156	GPE 3277 3279	EU
+T157	PER 3313 3319	Arafat
+T158	TIM 3224 3230	Monday
+T159	GPE 3390 3420	the West Bank town of Ramallah
+T160	GPE 3412 3420	Ramallah
+T161	LOC 3394 3403	West Bank
+T162	GPE 3380 3386	Israel
+T163	GPE 3452 3458	Israel
+T164	PER 3346 3441	Arafat , who has been confined by Israel to the West Bank town of Ramallah for more than a year
+T165	PER 3355 3358	who
+T166	PER 3479 3482	him
+T167	TIM 3425 3441	more than a year
+T168	GPE 3622 3627	Afula
+T169	PER 3536 3545	terrorist
+T170	PER 3562 3568	Arafat
+T171	PER 3502 3503	I
+T172	TIM 3574 3580	Monday
+T173	Attack 3628 3635	bombing
+E32	Attack:T173 Place:T168
+T174	PER 3660 3663	you
+T175	GPE 3686 3692	Israel
+T176	PER 3728 3730	me
+T177	PER 3770 3772	me
+T178	PER 3800 3811	a president
+T179	PER 3845 3848	his
+T180	FAC 3845 3855	his office
+T181	Transport 3831 3837	moving
+E33	Transport:T181 Artifact:T178 Origin:T180
+T182	PER 3861 3895	The new Palestinian prime minister
+T183	PER 3898 3911	Mahmoud Abbas
+T184	PER 4059 4061	he
+T185	PER 4080 4093	the militants
+T186	PER 4131 4135	them
+T187	GPE 3869 3880	Palestinian
+T188	GPE 4010 4029	Israeli-Palestinian
+T189	GPE 3945 3953	Israelis
+T190	PER 3970 3976	Sharon
+T191	TIM 3982 3989	weekend
+T192	TIM 4040 4051	three years
+T193	Meet 3990 3997	meeting
+E34	Meet:T193 Entity:T182 Entity:T190 Time-Within:T191
+T194	Meet 4030 4036	summit
+E35	Meet:T194 Entity:T182 Entity:T190
+T195	Attack 4102 4109	attacks
+E36	Attack:T195 Attacker:T185
+T196	Attack 3928 3936	violence
+E37	Attack:T196
+T197	PER 4177 4190	the militants
+T198	PER 4354 4363	militants
+T199	GPE 4397 4414	Palestinian towns
+T200	PER 4369 4382	Israeli troop
+T201	GPE 4329 4340	Palestinian
+T202	GPE 4397 4408	Palestinian
+T203	GPE 4369 4376	Israeli
+T204	GPE 4444 4462	Jewish settlements
+T205	PER 4444 4450	Jewish
+T206	Transport 4383 4391	pullback
+E38	Transport:T206 Origin:T199 Artifact:T200
+T207	GPE 4480 4496	the Palestinians
+T208	PER 4465 4471	Sharon
+T209	VEH 4644 4647	bus
+T210	PER 4564 4593	U.S. President George W. Bush
+T211	PER 4564 4578	U.S. President
+T212	GPE 4564 4568	U.S.
+T213	PER 4519 4521	He
+T214	PER 4544 4547	his
+T215	PER 4619 4622	his
+T216	TIM 4594 4603	this week
+T217	TIM 4634 4640	Sunday
+T218	Attack 4648 4655	bombing
+E39	Attack:T218 Time-Within:T217
+T219	Meet 4534 4543	discussed
+E40	Meet:T219 Entity:T213 Entity:T210
+T220	Meet 4623 4627	trip
+E41	Meet:T220 Entity:T213 Entity:T210
+T221	GPE 4658 4674	The Palestinians
+T222	PER 4869 4886	his pregnant wife
+T223	LOC 4811 4820	West Bank
+T224	ORG 4763 4768	Hamas
+T225	GPE 4849 4856	Israeli
+T226	PER 4761 4775	a Hamas bomber
+T227	PER 4781 4788	himself
+T228	FAC 4795 4835	a square in the West Bank city of Hebron
+T229	GPE 4807 4835	the West Bank city of Hebron
+T230	GPE 4829 4835	Hebron
+T231	PER 4846 4864	an Israeli settler
+T232	PER 4869 4872	his
+T233	TIM 4739 4755	Saturday evening
+T234	Die 4838 4845	killing
+E42	Die:T234 Victim:T231 Victim:T222 Agent:T226 Place:T228 Time-Within:T233
+T235	Attack 4725 4732	attacks
+E43	Attack:T235
+T236	Attack 4776 4780	blew
+E44	Attack:T236 Attacker:T226 Place:T229 Target:T231 Target:T222 Time-Within:T233
+T237	VEH 4941 4958	the Jerusalem bus
+T238	PER 4909 4932	another Hamas assailant
+T239	PER 4990 5019	a third bomber from the group
+T240	PER 5086 5093	himself
+T241	WEA 5030 5040	explosives
+T242	LOC 5044 5070	the outskirts of Jerusalem
+T243	ORG 4917 4922	Hamas
+T244	ORG 5010 5019	the group
+T245	GPE 4945 4954	Jerusalem
+T246	GPE 5061 5070	Jerusalem
+T247	TIM 4892 4906	Sunday morning
+T248	TIM 4963 4987	about half an hour later
+T249	Attack 4933 4937	blew
+E45	Attack:T249 Attacker:T238 Time-Within:T247
+T250	Attack 5020 5029	detonated
+E46	Attack:T250 Attacker:T239 Place:T242 Instrument:T241 Time-Within:T247 Time-Within:T248
+T251	Die 5073 5080	killing
+E47	Die:T251 Instrument:T241 Victim:T240 Agent:T239 Place:T242 Time-Within:T248
+T252	PER 5211 5220	Abu Mazen
+T253	PER 5211 5232	Abu Mazen -LRB- Abbas
+T254	PER 5227 5232	Abbas
+T255	ORG 5137 5142	Hamas
+T256	GPE 5096 5103	Israeli
+T257	PER 5096 5123	Israeli analyst Mark Heller
+T258	PER 5096 5111	Israeli analyst
+T259	GPE 5300 5306	Hebron
+T260	GPE 5364 5372	the city
+T261	ORG 5335 5372	the Polytechnic Institute in the city
+T262	PER 5272 5289	The three bombers
+T263	PER 5414 5434	Bassem Takrouri , 19
+T264	LOC 5446 5474	the same Hebron neighborhood
+T265	GPE 5455 5461	Hebron
+T266	PER 5389 5407	Fuad Qawasmeh , 18
+T267	PER 5375 5386	Two bombers
+T268	PER 5484 5491	friends
+T269	TIM 5405 5407	18
+T270	TIM 5432 5434	19
+T271	GPE 5498 5505	Israeli
+T272	PER 5620 5630	assailants
+T273	PER 5620 5642	assailants ' relatives
+T274	FAC 5536 5560	the Qawasmeh family home
+T275	PER 5540 5555	Qawasmeh family
+T276	PER 5540 5548	Qawasmeh
+T277	ORG 5494 5514	The Israeli military
+T278	TIM 5518 5524	Monday
+T279	Attack 5525 5535	demolished
+E48	Attack:T279 Attacker:T277 Target:T274 Time-Within:T278
+T280	Attack 5599 5606	attacks
+E49	Attack:T280 Attacker:T272
+T281	LOC 5710 5730	the same wooded area
+T282	PER 5645 5662	The three bombers
+T283	ORG 5761 5785	the Yediot Ahronot daily
+T284	WEA 5834 5848	assault rifles
+T285	PER 5788 5797	the three
+T286	TIM 5780 5785	daily
+T287	WEA 5956 5964	grenades
+T288	WEA 5941 5951	ammunition
+T289	PER 5851 5855	Each
+T290	PER 6029 6080	a body that washed up on a Tel Aviv beach last week
+T291	PER 6036 6040	that
+T292	PER 5992 6017	Israeli forensics experts
+T293	GPE 5992 5999	Israeli
+T294	GPE 6157 6164	British
+T295	LOC 6054 6070	a Tel Aviv beach
+T296	PER 6155 6231	a British suicide bomber who blew himself up outside a Tel Aviv pub April 30
+T297	PER 6180 6183	who
+T298	PER 6189 6196	himself
+T299	GPE 6056 6064	Tel Aviv
+T300	GPE 6210 6218	Tel Aviv
+T301	FAC 6208 6222	a Tel Aviv pub
+T302	PER 6092 6100	a Briton
+T303	PER 6127 6231	the suspected accomplice of a British suicide bomber who blew himself up outside a Tel Aviv pub April 30
+T304	PER 6103 6124	Omar Khan Sharif , 27
+T305	TIM 6071 6080	last week
+T306	TIM 6223 6231	April 30
+T307	Attack 6184 6188	blew
+E50	Attack:T307 Attacker:T297 Place:T301 Target:T298 Time-Within:T306
+T308	Die 6165 6172	suicide
+E51	Die:T308 Victim:T296 Agent:T296 Place:T301 Time-Within:T306
+T309	PER 6252 6262	a waitress
+T310	PER 6234 6247	Two musicians
+T311	Attack 6282 6287	blast
+E52	Attack:T311
+T312	Injure 6268 6274	killed
+E53	Injure:T312 Victim:T310 Victim:T309
+T313	PER 6290 6296	Sharif
+T314	PER 6353 6355	he
+T315	WEA 6310 6320	explosives
+T316	WEA 6327 6331	they
+T317	Attack 6340 6346	go off
+E54	Attack:T317 Attacker:T313 Instrument:T315
+T318	PER 6388 6390	he
+T319	TIM 6403 6411	the time
+T320	Injure 6395 6399	hurt
+E55	Injure:T320 Victim:T318
+T321	GPE 6483 6489	Israel
+T322	GPE 6516 6523	British
+T323	PER 6516 6534	British detectives
+T324	PER 6542 6567	the head of the institute
+T325	PER 6570 6585	Dr. Yehuda Hiss
+T326	PER 6570 6573	Dr.
+T327	ORG 6483 6512	Israel 's Forensics Institute
+T328	ORG 6554 6567	the institute
+T329	PER 6588 6590	He
+T330	PER 6596 6602	Sharif
+T331	Die 6603 6610	drowned
+E56	Die:T331 Victim:T330

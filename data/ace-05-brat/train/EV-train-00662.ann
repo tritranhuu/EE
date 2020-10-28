@@ -1,0 +1,19 @@
+T1	TIM 38 57	2003-04-24 09:37:31
+T2	VEH 58 71	a cruise ship
+T3	LOC 94 110	the hawaii coast
+T4	GPE 98 104	hawaii
+T5	PER 139 148	terrorist
+T6	Attack 149 155	attack
+E1	Attack:T6 Attacker:T5 Target:T2
+T7	VEH 206 223	legend of the sea
+T8	VEH 178 205	royal caribbean cruise ship
+T9	TIM 280 289	yesterday
+T10	GPE 236 244	honolulu
+T11	ORG 178 193	royal caribbean
+T12	VEH 317 325	the ship
+T13	VEH 377 385	the ship
+T14	WEA 348 352	bomb
+T15	PER 292 302	passengers
+T16	FAC 317 341	the ship 's dining rooms
+T17	Transport 308 313	taken
+E2	Transport:T17 Artifact:T15 Destination:T16

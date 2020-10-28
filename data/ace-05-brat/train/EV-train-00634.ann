@@ -1,0 +1,96 @@
+T1	TIM 34 42	20030603
+T2	ORG 146 148	AP
+T3	GPE 112 139	BLOEMFONTEIN , South Africa
+T4	GPE 127 139	South Africa
+T5	WEA 267 279	germ warfare
+T6	TIM 201 208	Tuesday
+T7	GPE 219 224	state
+T8	GPE 155 167	South Africa
+T9	PER 325 339	Nelson Mandela
+T10	ORG 155 194	South Africa 's Supreme Court of Appeal
+T11	CRM 306 339	plotting to poison Nelson Mandela
+T12	PER 242 339	the head of apartheid 's germ warfare program , once accused of plotting to poison Nelson Mandela
+T13	Trial-Hearing 236 241	retry
+E1	Trial-Hearing:T13 Adjudicator:T10 Defendant:T12 Crime:T11
+T14	Die 318 324	poison
+E2	Die:T14 Victim:T9 Agent:T12
+T15	TIM 373 383	April 2002
+T16	CRM 444 449	fraud
+T17	CRM 454 459	theft
+T18	CRM 413 419	murder
+T19	CRM 424 440	drug trafficking
+T20	PER 342 355	Wouter Basson
+T21	Acquit 360 369	acquitted
+E3	Acquit:T21 Defendant:T20 Crime:T18 Crime:T19 Crime:T16 Crime:T17 Time-Within:T15
+T22	Charge-Indict 390 397	charges
+E4	Charge-Indict:T22 Defendant:T20 Crime:T18 Crime:T19 Crime:T16 Crime:T17
+T23	TIM 510 516	former
+T24	GPE 494 506	South Africa
+T25	CRM 484 590	directing South Africa 's former apartheid regime 's biochemical efforts aimed at destroying its opponents
+T26	PER 577 590	its opponents
+T27	ORG 494 533	South Africa 's former apartheid regime
+T28	ORG 577 580	its
+T29	PER 462 468	Basson
+T30	Charge-Indict 473 480	accused
+E5	Charge-Indict:T30 Defendant:T29 Crime:T25
+T31	Die 566 576	destroying
+E6	Die:T31 Victim:T26 Agent:T27
+T32	GPE 709 720	the country
+T33	PER 607 720	judges Piet Streicher and Mohamed Navsa of the Supreme Court of Appeal , the highest appeals court in the country
+T34	ORG 650 677	the Supreme Court of Appeal
+T35	ORG 680 720	the highest appeals court in the country
+T36	ORG 791 826	the South African Press Association
+T37	PER 607 613	judges
+T38	PER 734 740	Basson
+T39	PER 768 771	his
+T40	Acquit 772 781	acquittal
+E7	Acquit:T40 Defendant:T38 Adjudicator:T33 Adjudicator:T33
+T41	Trial-Hearing 752 757	tried
+E8	Trial-Hearing:T41 Defendant:T38
+T42	GPE 838 847	The state
+T43	TIM 925 937	2 1/2 - year
+T44	PER 871 880	the judge
+T45	PER 900 907	himself
+T46	PER 915 921	Basson
+T47	Trial-Hearing 938 943	trial
+E9	Trial-Hearing:T47 Adjudicator:T44 Defendant:T46 Time-Holds:T43
+T48	Appeal 851 857	appeal
+E10	Appeal:T48 Plaintiff:T42
+T49	PER 946 961	The prosecution
+T50	PER 970 1004	presiding Judge Willie Hartzenberg
+T51	PER 980 985	Judge
+T52	PER 1013 1019	Basson
+T53	PER 1046 1057	Hartzenberg
+T54	PER 1106 1109	his
+T55	PER 1022 1039	The appeal judges
+T56	TIM 1164 1175	the 1980 's
+T57	PER 1117 1123	Basson
+T58	PER 1322 1328	blacks
+T59	PER 1195 1204	witnesses
+T60	Die 1258 1264	deadly
+E11	Die:T60
+T61	Trial-Hearing 1189 1194	trial
+E12	Trial-Hearing:T61
+T62	WEA 1399 1406	anthrax
+T63	WEA 1391 1394	HIV
+T64	WEA 1381 1388	cholera
+T65	PER 1345 1354	opponents
+T66	PER 1331 1335	They
+T67	Attack 1336 1344	poisoned
+E13	Attack:T67 Attacker:T66 Target:T65
+T68	TIM 1533 1536	now
+T69	TIM 1447 1453	former
+T70	GPE 1550 1560	government
+T71	ORG 1491 1516	African National Congress
+T72	PER 1483 1570	several African National Congress leaders who are now high-ranking government officials
+T73	PER 1525 1528	who
+T74	PER 1537 1570	high-ranking government officials
+T75	PER 1447 1478	former President Nelson Mandela
+T76	PER 1447 1463	former President
+T77	PER 1409 1437	The alleged intended victims
+T78	LOC 1672 1686	globe-trotting
+T79	CRM 1601 1717	siphoning millions of dollars from Project Coast to finance a lavish , globe-trotting lifestyle and of selling drugs
+T80	NUM 1611 1630	millions of dollars
+T81	PER 1573 1575	He
+T82	Charge-Indict 1590 1597	accused
+E14	Charge-Indict:T82 Defendant:T81 Crime:T79

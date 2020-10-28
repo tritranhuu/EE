@@ -1,0 +1,80 @@
+T1	TIM 34 42	20030418
+T2	TIM 135 143	April 18
+T3	GPE 121 132	LOS ANGELES
+T4	ORG 150 153	AFP
+T5	TIM 345 351	Friday
+T6	NUM 265 283	31 million dollars
+T7	PER 160 230	Best-selling novelist and `` Jurassic Park '' creator Michael Crichton
+T8	PER 160 181	Best-selling novelist
+T9	PER 189 213	Jurassic Park '' creator
+T10	PER 249 252	his
+T11	PER 249 264	his fourth wife
+T12	PER 295 300	their
+T13	ORG 322 327	court
+T14	Transfer-Money 245 248	pay
+E1	Transfer-Money:T14 Giver:T7 Money:T6 Recipient:T11
+T15	Divorce 301 308	divorce
+E2	Divorce:T15 Person:T12
+T16	PER 373 411	one of the world 's wealthiest authors
+T17	PER 354 367	Crichton , 60
+T18	PER 432 435	his
+T19	LOC 380 389	the world
+T20	GPE 459 468	Hollywood
+T21	PER 380 411	the world 's wealthiest authors
+T22	TIM 627 635	13 years
+T23	PER 478 488	The writer
+T24	PER 515 518	his
+T25	PER 546 548	he
+T26	PER 615 618	his
+T27	PER 602 612	Anne Marie
+T28	PER 615 635	his wife of 13 years
+T29	ORG 670 696	Los Angeles Superior Court
+T30	TIM 790 799	last year
+T31	GPE 749 757	New York
+T32	GPE 749 763	New York state
+T33	NUM 804 824	21.5 million dollars
+T34	FAC 719 824	the couple 's 19-room home in New York state , which was on the market last year for 21.5 million dollars
+T35	FAC 766 771	which
+T36	FAC 733 740	19-room
+T37	PER 699 709	Anne-Marie
+T38	PER 719 729	the couple
+T39	PER 838 843	their
+T40	TIM 1045 1056	15-year-old
+T41	FAC 994 1014	homes in Los Angeles
+T42	PER 1039 1065	their 15-year-old daughter
+T43	PER 1068 1074	Taylor
+T44	FAC 923 939	a home in Hawaii
+T45	GPE 933 939	Hawaii
+T46	VEH 944 953	four cars
+T47	PER 866 874	Crichton
+T48	PER 877 910	a Harvard Medical School graduate
+T49	ORG 879 901	Harvard Medical School
+T50	PER 962 1014	the couple , who also each have homes in Los Angeles
+T51	PER 975 978	who
+T52	PER 1039 1044	their
+T53	GPE 1003 1014	Los Angeles
+T54	NUM 1135 1153	65 million dollars
+T55	PER 1098 1106	Crichton
+T56	PER 1276 1279	his
+T57	Divorce 1088 1095	divorce
+E3	Divorce:T57 Person:T55
+T58	NUM 1351 1370	3.5 million dollars
+T59	NUM 1435 1452	30-million-dollar
+T60	ORG 1474 1499	publishers Harper Collins
+T61	ORG 1474 1484	publishers
+T62	PER 1339 1341	he
+T63	PER 1394 1397	his
+T64	TIM 1542 1551	September
+T65	PER 1518 1526	Crichton
+T66	PER 1502 1512	Anne-Marie
+T67	PER 1558 1563	their
+T68	Divorce 1531 1538	divorce
+E4	Divorce:T68 Person:T66 Person:T65 Time-Within:T64
+T69	Marry 1564 1572	marriage
+E5	Marry:T69 Person:T67
+T70	Sue 1513 1517	sued
+E6	Sue:T70 Defendant:T65 Plaintiff:T66 Time-Within:T64
+T71	TIM 1589 1597	December
+T72	GPE 1600 1607	Chinese
+T73	PER 1600 1622	Chinese archaeologists
+T74	PER 1661 1691	the `` Jurassic Park '' author

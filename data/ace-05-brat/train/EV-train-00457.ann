@@ -1,0 +1,203 @@
+T1	TIM 43 63	2005-01-27T03 :11:00
+T2	PER 78 90	Thomas Bauer
+T3	TIM 91 121	Thu , 27 Jan 2005 08:11:09 GMT
+T4	TIM 122 135	Holocaust Day
+T5	PER 146 147	I
+T6	ORG 160 169	the media
+T7	PER 174 178	gays
+T8	TIM 213 226	Holocaust Day
+T9	Die 213 222	Holocaust
+E1	Die:T9
+T10	ORG 294 297	BBC
+T11	ORG 320 324	they
+T12	PER 354 382	thousands of Jews and others
+T13	FAC 278 286	Auswitch
+T14	TIM 229 241	This morning
+T15	Die 341 350	slaughter
+E2	Die:T15 Victim:T12 Victim:T12 Place:T13
+T16	PER 401 408	gypsies
+T17	PER 450 456	others
+T18	PER 392 396	gays
+T19	ORG 541 548	the BBC
+T20	PER 520 523	you
+T21	PER 461 464	You
+T22	PER 512 516	gays
+T23	Die 499 508	slaughter
+E3	Die:T23 Victim:T22
+T24	PER 551 567	Lyn David Thomas
+T25	TIM 568 598	Thu , 27 Jan 2005 08:21:22 GMT
+T26	TIM 604 617	Holocaust Day
+T27	TIM 621 651	Thu , 27 Jan 2005 08:11:09 GMT
+T28	PER 652 653	I
+T29	PER 775 782	Gypsies
+T30	PER 799 802	who
+T31	ORG 703 714	Radio Wales
+T32	FAC 811 834	the concentration camps
+T33	PER 724 834	the millions of Jews and other minorites including Gypsies and homosexuals who died in the concentration camps
+T34	PER 787 798	homosexuals
+T35	TIM 673 690	the last 1/2 hour
+T36	Die 803 807	died
+E4	Die:T36 Victim:T30 Place:T32
+T37	PER 837 849	Thomas Bauer
+T38	TIM 850 880	Thu , 27 Jan 2005 10:17:33 GMT
+T39	TIM 886 899	Holocaust Day
+T40	PER 905 917	Thomas Bauer
+T41	PER 918 931	Peter Corlett
+T42	TIM 932 962	Thu , 27 Jan 2005 11:39:03 GMT
+T43	TIM 968 981	Holocaust Day
+T44	PER 982 994	The ` others
+T45	ORG 1011 1018	Radio 4
+T46	ORG 1061 1068	the BBC
+T47	ORG 1096 1098	it
+T48	PER 1080 1098	those who watch it
+T49	PER 1086 1089	who
+T50	PER 1041 1068	those who listen to the BBC
+T51	PER 1047 1050	who
+T52	PER 1112 1122	This woman
+T53	PER 1149 1152	she
+T54	PER 1169 1182	Quentin Crisp
+T55	PER 1183 1193	Peter Ould
+T56	TIM 1194 1224	Thu , 27 Jan 2005 13:11:44 GMT
+T57	TIM 1230 1243	Holocaust Day
+T58	PER 1250 1256	Thomas
+T59	PER 1323 1354	men killed for being homosexual
+T60	Die 1327 1333	killed
+E5	Die:T60 Victim:T59
+T61	PER 1511 1554	the family and loved ones of those who died
+T62	PER 1451 1459	Zigeuner
+T63	PER 1540 1554	those who died
+T64	PER 1546 1549	who
+T65	PER 1442 1446	Jews
+T66	PER 1555 1571	every single one
+T67	Die 1550 1554	died
+E6	Die:T67 Victim:T63
+T68	Die 1430 1438	genocide
+E7	Die:T68 Victim:T65 Victim:T62
+T69	PER 1666 1667	I
+T70	TIM 1726 1730	dusk
+T71	TIM 1689 1701	this morning
+T72	PER 1733 1740	Peter O
+T73	PER 1741 1746	Vicky
+T74	TIM 1747 1777	Thu , 27 Jan 2005 21:06:15 GMT
+T75	TIM 1783 1796	Holocaust Day
+T76	ORG 1816 1819	BBC
+T77	ORG 1842 1846	they
+T78	PER 1797 1798	I
+T79	PER 1859 1938	the man who is going to be in charge of Holocaust Day , certainly in the future
+T80	PER 1867 1870	who
+T81	TIM 1899 1912	Holocaust Day
+T82	TIM 1928 1938	the future
+T83	TIM 1825 1837	this morning
+T84	Die 1899 1908	Holocaust
+E8	Die:T84
+T85	PER 1990 1996	blacks
+T86	PER 1941 1943	He
+T87	PER 2022 2024	he
+T88	TIM 2051 2062	future Days
+T89	PER 2001 2005	roma
+T90	PER 1972 1976	gays
+T91	PER 2116 2122	John L
+T92	TIM 2123 2153	Fri , 28 Jan 2005 01:23:42 GMT
+T93	TIM 2159 2172	Holocaust Day
+T94	PER 2275 2279	they
+T95	PER 2210 2216	Hitler
+T96	PER 2199 2205	Stalin
+T97	Die 2268 2274	deaths
+E9	Die:T97 Agent:T94
+T98	PER 2330 2349	any group of people
+T99	PER 2422 2426	they
+T100	PER 2343 2349	people
+T101	GPE 2416 2421	which
+T102	GPE 2401 2431	the country in which they live
+T103	GPE 2383 2431	the government of the country in which they live
+T104	Die 2368 2379	liquidation
+E10	Die:T104 Victim:T98 Agent:T103
+T105	PER 2553 2557	your
+T106	GPE 2520 2542	the general population
+T107	PER 2498 2542	a particular group in the general population
+T108	PER 2468 2542	identifiable individuals from a particular group in the general population
+T109	PER 2593 2604	some groups
+T110	PER 2735 2761	two * thousand homosexuals
+T111	PER 2696 2705	the Nazis
+T112	TIM 2765 2777	the Thirties
+T113	PER 2864 2881	Magnus Hirschfeld
+T114	GPE 2850 2857	Germany
+T115	PER 2823 2826	gay
+T116	PER 2931 2937	John L
+T117	PER 2938 2950	Thomas Bauer
+T118	TIM 2951 2981	Fri , 28 Jan 2005 11:37:23 GMT
+T119	TIM 2987 3000	Holocaust Day
+T120	ORG 3045 3052	the BBC
+T121	ORG 3065 3069	they
+T122	PER 3016 3017	I
+T123	PER 3086 3087	I
+T124	Phone-Write 3029 3034	email
+E11	Phone-Write:T124 Entity:T122 Entity:T120
+T125	PER 3136 3148	Thomas Bauer
+T126	PER 3149 3159	Peter Ould
+T127	TIM 3160 3190	Fri , 28 Jan 2005 12:14:56 GMT
+T128	TIM 3196 3209	Holocaust Day
+T129	PER 3216 3220	John
+T130	PER 3223 3224	I
+T131	PER 3285 3306	the Jews and Zigeuner
+T132	Die 3272 3281	Holocaust
+E12	Die:T132 Victim:T131 Victim:T131
+T133	PER 3382 3397	10k homosexuals
+T134	Die 3348 3354	murder
+E13	Die:T134 Victim:T133
+T135	PER 3445 3449	Nazi
+T136	FAC 3473 3485	normal jails
+T137	PER 3408 3453	Most homosexuals arrested during the Nazi era
+T138	Arrest-Jail 3425 3433	arrested
+E14	Arrest-Jail:T138 Person:T137
+T139	Arrest-Jail 3459 3469	imprisoned
+E15	Arrest-Jail:T139 Person:T137 Place:T136
+T140	PER 3491 3494	you
+T141	PER 3585 3588	you
+T142	GPE 3561 3568	Germany
+T143	TIM 3557 3560	30s
+T144	PER 3591 3612	The Jews and Zigeuner
+T145	PER 3654 3659	their
+T146	Die 3636 3642	killed
+E16	Die:T146 Victim:T144 Victim:T144
+T147	PER 3693 3694	I
+T148	Die 3743 3749	murder
+E17	Die:T148
+T149	PER 3793 3800	Peter O
+T150	PER 3801 3816	Robert Marshall
+T151	TIM 3817 3847	Fri , 28 Jan 2005 14:13:10 GMT
+T152	TIM 3853 3866	Holocaust Day
+T153	PER 3893 3896	you
+T154	PER 3924 3928	your
+T155	PER 3916 3917	I
+T156	PER 4047 4131	only 10000 who were homosexual amongst the how ever million were killed in the camps
+T157	PER 4058 4061	who
+T158	PER 4086 4131	the how ever million were killed in the camps
+T159	PER 4013 4014	I
+T160	FAC 4122 4131	the camps
+T161	Die 4112 4118	killed
+E18	Die:T161 Victim:T158 Place:T160
+T162	PER 4433 4439	10-15k
+T163	PER 4178 4189	50000 _ men
+T164	PER 4337 4371	some who were sent to normal jails
+T165	PER 4342 4345	who
+T166	PER 4412 4417	their
+T167	PER 4259 4267	how many
+T168	FAC 4281 4287	a camp
+T169	FAC 4299 4304	there
+T170	FAC 4392 4397	camps
+T171	CRM 4210 4223	homosexuality
+T172	SEN 4418 4426	sentence
+T173	PER 4235 4239	Nazi
+T174	FAC 4359 4371	normal jails
+T175	Transport 4273 4277	sent
+E19	Transport:T175 Artifact:T167 Destination:T168
+T176	Convict 4197 4206	convicted
+E20	Convict:T176 Defendant:T163 Crime:T171
+T177	Sentence 4418 4426	sentence
+E21	Sentence:T177 Defendant:T166 Sentence:T172 Crime:T171
+T178	Transport 4377 4388	transferred
+E22	Transport:T178 Artifact:T164 Destination:T170 Origin:T174
+T179	Die 4292 4298	killed
+E23	Die:T179 Victim:T167 Place:T169
+T180	PER 4457 4463	Robert

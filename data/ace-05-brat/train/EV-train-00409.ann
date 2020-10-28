@@ -1,0 +1,194 @@
+T1	TIM 42 62	2005-02-11T04 :45:00
+T2	PER 92 114	rhooker...@hotmail.com
+T3	CTI 92 114	rhooker...@hotmail.com
+T4	TIM 115 141	11 Feb 2005 01:45:13 -0800
+T5	GPE 142 146	Iraq
+T6	Elect 147 156	Elections
+E1	Elect:T6 Entity:T5
+T7	PER 197 198	I
+T8	TIM 230 244	taking 2 weeks
+T9	TIM 319 327	24 hours
+T10	Elect 291 300	elections
+E2	Elect:T10
+T11	TIM 355 369	taking 2 weeks
+T12	PER 391 399	everyone
+T13	PER 416 423	Sistani
+T14	PER 406 409	who
+T15	Elect 410 413	won
+E3	Elect:T15 Person:T14
+T16	Elect 424 427	won
+E4	Elect:T16 Person:T13
+T17	PER 477 486	canidates
+T18	GPE 600 602	US
+T19	PER 430 433	His
+T20	PER 531 534	his
+T21	PER 562 565	his
+T22	ORG 562 570	his part
+T23	ORG 430 439	His party
+T24	ORG 442 458	the major winner
+T25	GPE 581 623	the heavily funded US supported government
+T26	Elect 509 517	election
+E5	Elect:T26
+T27	PER 629 631	we
+T28	PER 679 691	the Sunni 's
+T29	PER 725 744	the majority leader
+T30	PER 702 709	Sistani
+T31	GPE 650 668	the people of Iraq
+T32	GPE 664 668	Iraq
+T33	PER 751 753	he
+T34	GPE 775 781	the US
+T35	GPE 868 870	it
+T36	PER 812 816	Shia
+T37	GPE 830 847	Islamic Republics
+T38	GPE 888 892	Iran
+T39	PER 895 902	Sistani
+T40	GPE 912 916	Iraq
+T41	Elect 926 934	election
+E6	Elect:T41 Person:T39 Entity:T40
+T42	PER 1151 1178	their counter parts in Iran
+T43	PER 1061 1111	what ever figure heads take the PM and other posts
+T44	PER 1151 1156	their
+T45	GPE 1016 1029	the Ameircans
+T46	JOB 1093 1095	PM
+T47	JOB 1100 1111	other posts
+T48	PER 970 977	Sistani
+T49	PER 994 996	he
+T50	PER 1039 1060	the real power broker
+T51	GPE 1174 1178	Iran
+T52	GPE 986 990	Iraq
+T53	Elect 1084 1088	take
+E7	Elect:T53 Person:T43 Position:T46 Position:T47
+T54	GPE 1181 1187	The US
+T55	GPE 1238 1242	they
+T56	GPE 1214 1267	a nation who government they have no direct ties with
+T57	GPE 1223 1267	who government they have no direct ties with
+T58	TIM 1191 1194	now
+T59	Attack 1206 1209	war
+E8	Attack:T59 Attacker:T54 Place:T56 Time-Within:T58
+T60	GPE 1298 1304	the US
+T61	PER 1362 1369	Sistani
+T62	Elect 1350 1358	election
+E9	Elect:T62
+T63	Elect 1464 1472	election
+E10	Elect:T63
+T64	Elect 1379 1382	win
+E11	Elect:T64 Person:T61
+T65	PER 1580 1611	US puppets against the election
+T66	GPE 1503 1511	American
+T67	GPE 1580 1582	US
+T68	GPE 1632 1638	the US
+T69	TIM 1530 1545	about 10 minuts
+T70	Elect 1603 1611	election
+E12	Elect:T70
+T71	GPE 1676 1682	the US
+T72	PER 1735 1736	I
+T73	GPE 1760 1762	US
+T74	PER 1809 1816	Sistani
+T75	PER 1858 1859	I
+T76	TIM 1936 1944	the past
+T77	GPE 1875 1879	Iraq
+T78	GPE 1908 1911	its
+T79	Attack 1916 1918	it
+E13	Attack:T79 Place:T78 Time-Within:T76
+T80	Attack 1896 1899	war
+E14	Attack:T80 Place:T77
+T81	PER 1983 1992	one group
+T82	GPE 2008 2012	Iraq
+T83	TIM 2070 2075	1990s
+T84	TIM 2056 2065	the 1980s
+T85	Attack 1953 1956	War
+E15	Attack:T85 Attacker:T81 Place:T82
+T86	Die 2046 2052	graves
+E16	Die:T86 Place:T82 Time-Within:T84 Time-Within:T83
+T87	PER 2112 2116	more
+T88	Die 2105 2111	killed
+E17	Die:T88 Victim:T87
+T89	GPE 2187 2200	the Ameircans
+T90	PER 2119 2126	Sistani
+T91	PER 2228 2231	him
+T92	Elect 2172 2180	election
+E18	Elect:T92 Person:T90
+T93	Elect 2181 2186	which
+E19	Elect:T93 Person:T91
+T94	PER 2247 2259	The Sunni 's
+T95	WEA 2265 2276	the weapons
+T96	PER 2369 2373	Bush
+T97	PER 2384 2386	he
+T98	GPE 2313 2315	US
+T99	TIM 2357 2364	the day
+T100	PER 2541 2545	Bush
+T101	PER 2526 2540	his supporters
+T102	PER 2490 2497	Sistani
+T103	PER 2526 2529	his
+T104	Elect 2465 2473	election
+E20	Elect:T104
+T105	PER 2566 2570	Bush
+T106	LOC 2610 2630	the South of Ameirca
+T107	GPE 2623 2630	Ameirca
+T108	GPE 2700 2704	Iraq
+T109	PER 2663 2667	they
+T110	PER 2637 2641	they
+T111	PER 2712 2732	more and mmore Sunni
+T112	PER 2825 2832	Sistani
+T113	GPE 2759 2763	Iran
+T114	GPE 2766 2795	the big winner in all of this
+T115	PER 2744 2758	the insurgents
+T116	LOC 2836 2845	the south
+T117	PER 2881 2883	we
+T118	GPE 2854 2860	the US
+T119	GPE 2894 2898	Iraq
+T120	PER 2917 2927	the groups
+T121	Transport 2861 2867	leaves
+E21	Transport:T121 Agent:T118 Origin:T119
+T122	Attack 2945 2948	war
+E22	Attack:T122
+T123	Attack 2951 2954	its
+E23	Attack:T123
+T124	PER 2973 2983	old hoodoo
+T125	TIM 2984 3016	Fri , 11 Feb 2005 10:30:44 -0600
+T126	GPE 3022 3026	Iraq
+T127	Elect 3027 3036	Elections
+E24	Elect:T127 Entity:T126
+T128	PER 3095 3099	they
+T129	Elect 3116 3125	elections
+E25	Elect:T129
+T130	PER 3197 3208	the Shia 's
+T131	GPE 3153 3163	the public
+T132	PER 3143 3147	they
+T133	GPE 3262 3268	The US
+T134	GPE 3335 3337	us
+T135	PER 3308 3312	shia
+T136	GPE 3306 3323	A shia government
+T137	GPE 3361 3363	we
+T138	GPE 3376 3380	iraq
+T139	GPE 3522 3528	the US
+T140	GPE 3424 3541	Germany or Japan where they were so terrified of the Soviets post war that they were happy to see the US stick around
+T141	GPE 3447 3451	they
+T142	GPE 3499 3503	they
+T143	GPE 3441 3446	where
+T144	GPE 3473 3484	the Soviets
+T145	Attack 3490 3493	war
+E26	Attack:T145 Attacker:T140 Attacker:T140 Attacker:T144
+T146	ORG 3619 3624	junta
+T147	ORG 3582 3615	a Mushariff military dictatorship
+T148	PER 3544 3545	I
+T149	PER 3546 3552	myself
+T150	PER 3584 3593	Mushariff
+T151	ORG 3594 3602	military
+T152	GPE 3692 3706	the government
+T153	GPE 3729 3731	we
+T154	PER 3712 3714	my
+T155	GPE 3752 3757	Iraqi
+T156	PER 3740 3765	the average Iraqi citizen
+T157	ORG 3804 3825	Many small businesses
+T158	PER 3878 3883	women
+T159	End-Org 3839 3849	close down
+E27	End-Org:T159 Org:T157
+T160	PER 3967 3974	Sistani
+T161	PER 3986 4006	a very strong leader
+T162	PER 4055 4058	his
+T163	GPE 4055 4066	his country
+T164	PER 4031 4066	the moderate muslims in his country
+T165	PER 4079 4083	them
+T166	PER 4117 4127	the Sunnis
+T167	PER 4130 4134	they

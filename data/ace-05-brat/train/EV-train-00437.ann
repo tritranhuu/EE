@@ -1,0 +1,44 @@
+T1	TIM 39 58	2003-04-21 13:30:55
+T2	ORG 59 76	american airlines
+T3	ORG 122 133	the company
+T4	PER 167 183	rhonda schaffler
+T5	TIM 108 118	the latest
+T6	Declare-Bankruptcy 143 153	bankruptcy
+E1	Declare-Bankruptcy:T6 Org:T3
+T7	PER 257 284	a couple district attorneys
+T8	PER 223 225	we
+T9	TIM 257 288	a couple district attorneys ago
+T10	PER 297 318	the flight attendants
+T11	TIM 291 294	now
+T12	ORG 398 417	the largest airline
+T13	Declare-Bankruptcy 439 449	bankruptcy
+E2	Declare-Bankruptcy:T13 Org:T12
+T14	ORG 525 536	the airline
+T15	ORG 474 479	union
+T16	PER 474 487	union members
+T17	Declare-Bankruptcy 615 625	bankruptcy
+E3	Declare-Bankruptcy:T17 Org:T14
+T18	ORG 640 648	american
+T19	ORG 671 674	its
+T20	PER 710 723	union leaders
+T21	PER 671 690	its chief executive
+T22	ORG 710 715	union
+T23	TIM 631 637	friday
+T24	ORG 726 731	union
+T25	PER 726 739	union members
+T26	PER 763 767	they
+T27	ORG 810 820	its rivals
+T28	ORG 810 813	its
+T29	ORG 797 805	american
+T30	ORG 898 908	businesses
+T31	ORG 932 937	their
+T32	TIM 875 895	the past three years
+T33	ORG 990 994	they
+T34	PER 978 985	experts
+T35	TIM 974 977	now
+T36	ORG 1195 1212	low fare airlines
+T37	ORG 1228 1253	business travel coalition
+T38	VEH 1315 1322	a plane
+T39	PER 1256 1284	younger techs heavy managers
+T40	ORG 1256 1269	younger techs
+T41	PER 1325 1329	they

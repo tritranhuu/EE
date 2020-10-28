@@ -1,0 +1,27 @@
+T1	TIM 38 57	2003-04-11 19:35:35
+T2	ORG 166 173	the law
+T3	TIM 174 181	tonight
+T4	TIM 128 138	three-week
+T5	PER 58 146	a michigan teen who disappeared with a convicted killer and went on a three-week oddysey
+T6	PER 74 77	who
+T7	PER 95 113	a convicted killer
+T8	GPE 60 68	michigan
+T9	CRM 221 262	stealing firearms from her parents ' home
+T10	PER 244 255	her parents
+T11	FAC 244 262	her parents ' home
+T12	PER 203 215	lindsey ryan
+T13	PER 244 247	her
+T14	WEA 230 238	firearms
+T15	PER 184 195	prosecutors
+T16	Charge-Indict 196 202	charge
+E1	Charge-Indict:T16 Defendant:T12 Prosecutor:T15 Crime:T9
+T17	PER 265 271	police
+T18	PER 287 294	the two
+T19	GPE 298 308	california
+T20	PER 311 334	56-year-old forry drake
+T21	CRM 357 388	interstate transport of a minor
+T22	TIM 311 322	56-year-old
+T23	PER 381 388	a minor
+T24	GPE 357 367	interstate
+T25	Charge-Indict 344 351	charged
+E2	Charge-Indict:T25 Defendant:T20 Crime:T21

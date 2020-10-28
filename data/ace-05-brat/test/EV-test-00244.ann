@@ -1,0 +1,55 @@
+T1	TIM 34 42	20030610
+T2	ORG 137 143	Xinhua
+T3	GPE 110 120	WASHINGTON
+T4	TIM 123 130	June 10
+T5	PER 269 276	insider
+T6	GPE 178 180	US
+T7	PER 150 160	Sam Waksal
+T8	PER 163 219	founder of the US pharmaceutical company ImClone Systems
+T9	FAC 250 256	prison
+T10	ORG 174 219	the US pharmaceutical company ImClone Systems
+T11	ORG 174 203	the US pharmaceutical company
+T12	SEN 237 256	87 months in prison
+T13	CRM 269 284	insider trading
+T14	TIM 237 246	87 months
+T15	TIM 257 264	Tuesday
+T16	Sentence 224 233	sentenced
+E1	Sentence:T16 Crime:T13 Defendant:T7 Sentence:T12 Time-Within:T15
+T17	PER 287 293	Waksal
+T18	NUM 318 345	more than 4 million dollars
+T19	Fine 349 354	fines
+E2	Fine:T19 Entity:T17 Money:T18
+T20	GPE 461 469	New York
+T21	GPE 437 446	Manhattan
+T22	FAC 433 469	the Manhattan courthouse in New York
+T23	TIM 394 409	about two hours
+T24	PER 555 563	analysts
+T25	PER 575 581	Waksal
+T26	PER 609 612	his
+T27	PER 701 712	many people
+T28	ORG 609 620	his company
+T29	Sentence 510 518	sentence
+E3	Sentence:T29 Defendant:T25
+T30	PER 793 808	cancer patients
+T31	ORG 715 722	ImClone
+T32	TIM 748 756	recently
+T33	PER 895 901	Waksal
+T34	PER 943 946	his
+T35	GPE 862 870	New York
+T36	FAC 844 870	the courthouse in New York
+T37	PER 1057 1063	Waksal
+T38	PER 1111 1114	his
+T39	PER 1147 1150	his
+T40	ORG 1147 1158	his company
+T41	TIM 1082 1089	October
+T42	TIM 1172 1181	late 2001
+T43	TIM 990 999	last year
+T44	CRM 1111 1181	his efforts to sell a huge block of his company ' s stock in late 2001
+T45	Charge-Indict 1093 1100	charges
+E4	Charge-Indict:T45 Defendant:T37 Crime:T44 Time-Within:T43
+T46	ORG 1232 1239	ImClone
+T47	ORG 1314 1321	ImClone
+T48	ORG 1272 1304	the Food and Drug Administration
+T49	GPE 1472 1474	US
+T50	PER 1470 1505	a US media and domestic design diva
+T51	PER 1508 1522	Martha Stewart

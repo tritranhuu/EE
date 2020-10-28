@@ -1,0 +1,253 @@
+T1	TIM 39 59	2004-11-08T19 :42:06
+T2	PER 93 98	zeyad
+T3	TIM 99 119	2004-11-08T19 :42:06
+T4	PER 195 202	Kurdish
+T5	LOC 191 209	the Kurdish region
+T6	TIM 210 221	for 60 days
+T7	TIM 274 285	last August
+T8	TIM 354 383	a period no more than 60 days
+T9	ORG 120 142	The interim government
+T10	ORG 459 481	the interim government
+T11	GPE 176 180	Iraq
+T12	GPE 338 349	the country
+T13	GPE 418 423	Iraqi
+T14	TIM 549 572	at least two months ago
+T15	PER 629 683	insurgents and foreign terrorists based around Baghdad
+T16	GPE 676 683	Baghdad
+T17	TIM 738 745	Ramadan
+T18	Attack 606 613	attacks
+E1	Attack:T18 Attacker:T15 Attacker:T15
+T19	Attack 583 591	bombings
+E2	Attack:T19 Attacker:T15 Attacker:T15
+T20	Die 575 582	Suicide
+E3	Die:T20
+T21	GPE 870 877	Baghdad
+T22	PER 748 773	Deputy governor of Diyala
+T23	GPE 767 773	Diyala
+T24	TIM 942 963	a couple of weeks ago
+T25	PER 931 941	insurgents
+T26	GPE 814 823	Ba ` quba
+T27	GPE 852 860	Latifiya
+T28	GPE 888 893	which
+T29	GPE 880 963	an area which has supposedly been ` cleared ' from insurgents a couple of weeks ago
+T30	PER 785 823	several council members from Ba ` quba
+T31	ORG 793 800	council
+T32	Attack 829 837	ambushed
+E4	Attack:T32 Place:T27 Target:T22 Target:T30
+T33	Die 842 848	killed
+E5	Die:T33 Victim:T22 Victim:T30 Place:T27
+T34	PER 1045 1065	National Guard units
+T35	ORG 1045 1059	National Guard
+T36	FAC 1070 1094	the governorate building
+T37	TIM 1007 1015	recently
+T38	GPE 990 997	Samarra
+T39	GPE 1005 1034	a recently ` liberated ' area
+T40	GPE 1074 1085	governorate
+T41	Attack 979 986	attacks
+E6	Attack:T41 Target:T36 Place:T38 Target:T34
+T42	Die 971 978	suicide
+E7	Die:T42 Place:T38
+T43	ORG 1097 1113	Zarqawi 's group
+T44	PER 1097 1104	Zarqawi
+T45	Attack 1145 1152	attacks
+E8	Attack:T45
+T46	ORG 1161 1167	police
+T47	PER 1238 1258	groups of insurgents
+T48	PER 1248 1258	insurgents
+T49	GPE 1211 1217	Ramadi
+T50	GPE 1180 1187	Haditha
+T51	GPE 1190 1217	a small town west of Ramadi
+T52	FAC 1155 1217	Three police stations in Haditha , a small town west of Ramadi
+T53	Attack 1225 1234	assaulted
+E9	Attack:T53 Attacker:T47 Place:T50 Target:T52
+T54	PER 1261 1278	Some 30 policemen
+T55	TIM 1380 1396	lasted two hours
+T56	Attack 1360 1373	confrontation
+E10	Attack:T56 Time-Holds:T55
+T57	Die 1307 1315	executed
+E11	Die:T57 Victim:T54
+T58	ORG 1399 1415	Zarqawi 's group
+T59	PER 1399 1406	Zarqawi
+T60	GPE 1492 1500	Fallujah
+T61	ORG 1465 1473	military
+T62	ORG 1554 1568	the government
+T63	PER 1658 1666	civilian
+T64	PER 1593 1594	I
+T65	PER 1658 1677	civilian casualties
+T66	LOC 1782 1793	these areas
+T67	PER 1708 1709	I
+T68	GPE 1815 1822	Baghdad
+T69	GPE 1919 1940	the Anbar governorate
+T70	GPE 1923 1928	Anbar
+T71	PER 1796 1822	Insurgents west of Baghdad
+T72	PER 1956 1960	them
+T73	GPE 1893 1904	the country
+T74	ORG 2159 2173	the government
+T75	LOC 2119 2130	other areas
+T76	PER 1963 1967	They
+T77	PER 2023 2027	they
+T78	PER 2054 2059	their
+T79	PER 2137 2141	they
+T80	PER 2219 2229	themselves
+T81	ORG 2177 2229	any other authority in the country beside themselves
+T82	GPE 2200 2211	the country
+T83	PER 2381 2409	the armed groups in the area
+T84	LOC 2401 2409	the area
+T85	GPE 2251 2259	Fallujah
+T86	TIM 2291 2300	weeks ago
+T87	ORG 2276 2290	the government
+T88	PER 2247 2270	the Fallujah negotiants
+T89	TIM 2518 2526	days ago
+T90	GPE 2449 2454	Iraqi
+T91	GPE 2445 2461	the Iraqi public
+T92	PER 2601 2626	foreign occupation forces
+T93	GPE 2679 2681	US
+T94	ORG 2791 2795	army
+T95	PER 2784 2815	former army officers from Anbar
+T96	GPE 2717 2722	Anbar
+T97	GPE 2810 2815	Anbar
+T98	GPE 2713 2734	the Anbar governorate
+T99	GPE 2686 2691	Iraqi
+T100	PER 2679 2707	US and Iraqi security forces
+T101	TIM 2784 2790	former
+T102	Transport 2665 2675	withdrawal
+E12	Transport:T102 Origin:T98 Artifact:T100
+T103	GPE 2854 2875	the Anbar governorate
+T104	GPE 2858 2863	Anbar
+T105	PER 2839 2875	ministers from the Anbar governorate
+T106	ORG 2879 2933	the ministries of Interior , Defense , Oil and Finance
+T107	ORG 3027 3047	Ibrahim Al-Ja ` fari
+T108	JOB 3059 3081	governmental positions
+T109	PER 2953 3047	certain officials -LRB- most of them from Shi'ite Islamic parties such as Ibrahim Al-Ja ` fari
+T110	PER 2995 3002	Shi'ite
+T111	PER 2977 3047	most of them from Shi'ite Islamic parties such as Ibrahim Al-Ja ` fari
+T112	ORG 2995 3047	Shi'ite Islamic parties such as Ibrahim Al-Ja ` fari
+T113	End-Position 2942 2949	removal
+E13	End-Position:T113 Person:T109 Position:T108
+T114	JOB 3223 3232	positions
+T115	TIM 3216 3222	former
+T116	ORG 3122 3126	army
+T117	PER 3210 3215	their
+T118	PER 3171 3206	intelligence and security personnel
+T119	PER 3122 3135	army officers
+T120	PER 3109 3119	Ba'athists
+T121	PER 3158 3168	Mukhabarat
+T122	PER 3138 3155	Republican Guards
+T123	Start-Position 3099 3105	return
+E14	Start-Position:T123 Person:T120 Person:T119 Person:T122 Person:T121 Person:T118 Position:T114
+T124	End-Position 3216 3222	former
+E15	End-Position:T124 Person:T117 Position:T114
+T125	PER 3252 3259	Shi'ite
+T126	ORG 3354 3376	Shi'ite sacred shrines
+T127	ORG 3417 3465	the Ministry of Endowments and Religious Affairs
+T128	PER 3354 3361	Shi'ite
+T129	ORG 3557 3591	the Association of Muslim Scholars
+T130	ORG 3679 3693	the government
+T131	PER 3520 3591	Sheikh Harith Al-Dhari -LRB- head of the Association of Muslim Scholars
+T132	PER 3549 3591	head of the Association of Muslim Scholars
+T133	PER 3696 3720	Iraqis here in the south
+T134	LOC 3711 3720	the south
+T135	LOC 3703 3707	here
+T136	PER 3836 3852	people around me
+T137	GPE 3862 3870	Fallujah
+T138	PER 3810 3812	me
+T139	PER 3850 3852	me
+T140	ORG 3902 3930	a primary health care clinic
+T141	PER 3886 3930	The director of a primary health care clinic
+T142	GPE 3967 3975	Fallujah
+T143	GPE 3997 4000	its
+T144	GPE 3997 4010	its residents
+T145	TIM 3945 3958	the other day
+T146	PER 4063 4071	Mu'awiya
+T147	PER 4078 4083	Allah
+T148	GPE 4042 4046	They
+T149	GPE 4051 4071	the sons of Mu'awiya
+T150	GPE 4090 4098	them all
+T151	PER 4306 4319	Caliph Othman
+T152	PER 4306 4312	Caliph
+T153	PER 4231 4239	Muhammed
+T154	PER 4202 4253	Imam Ali bin Abi Talib -LRB- Muhammed 's son-in-law
+T155	PER 4231 4253	Muhammed 's son-in-law
+T156	GPE 4159 4164	Syria
+T157	PER 4115 4138	Mu'awiya bin Abi Sufyan
+T158	PER 4143 4187	the governor of Syria during the 7th century
+T159	PER 4192 4194	he
+T160	TIM 4165 4187	during the 7th century
+T161	Die 4289 4302	assassination
+E16	Die:T161 Victim:T151
+T162	PER 4412 4417	Yazid
+T163	PER 4404 4411	his son
+T164	PER 4420 4467	Imam Hussein bin Ali -LRB- grandson of Muhammed
+T165	PER 4447 4467	grandson of Muhammed
+T166	PER 4459 4467	Muhammed
+T167	PER 4322 4324	He
+T168	PER 4332 4356	the first Ummayid Caliph
+T169	PER 4404 4407	his
+T170	PER 4488 4491	his
+T171	PER 4488 4498	his armies
+T172	GPE 4514 4521	Karbala
+T173	JOB 4342 4356	Ummayid Caliph
+T174	TIM 4361 4378	two decades later
+T175	TIM 4502 4513	present day
+T176	Start-Position 4325 4331	became
+E17	Start-Position:T176 Person:T167 Position:T173
+T177	Die 4478 4484	killed
+E18	Die:T177 Victim:T164 Agent:T171 Place:T172 Time-Within:T174
+T178	PER 4539 4551	the director
+T179	PER 4571 4574	him
+T180	PER 4585 4590	Sunni
+T181	PER 4580 4581	I
+T182	PER 4524 4531	Someone
+T183	PER 4593 4595	He
+T184	PER 4644 4646	he
+T185	PER 4677 4693	foreign fighters
+T186	PER 4664 4672	Wahhabis
+T187	PER 4727 4728	I
+T188	PER 4764 4766	me
+T189	PER 4745 4751	people
+T190	GPE 4856 4863	Baghdad
+T191	GPE 4819 4827	Fallujah
+T192	LOC 4868 4889	the surrounding areas
+T193	PER 4785 4793	Refugees
+T194	TIM 4828 4850	over the last few days
+T195	Transport 4804 4815	pouring out
+E19	Transport:T195 Artifact:T193 Destination:T190 Destination:T192 Origin:T191 Time-Holds:T194
+T196	GPE 4974 4982	the city
+T197	ORG 4896 4904	military
+T198	PER 5010 5051	thousands of families with no place to go
+T199	GPE 5066 5073	Baghdad
+T200	PER 5137 5161	men from 15-50 years old
+T201	PER 5179 5183	they
+T202	PER 5218 5222	they
+T203	PER 5106 5122	the ` Mujahideen
+T204	WEA 5239 5243	arms
+T205	GPE 5258 5266	the town
+T206	PER 5054 5073	Refugees in Baghdad
+T207	Die 5205 5214	execution
+E20	Die:T207 Victim:T201
+T208	PER 5414 5418	Arab
+T209	PER 5414 5477	Arab and foreign -LRB- including American -RRB- media reporters
+T210	ORG 5462 5467	media
+T211	ORG 5269 5333	Majlis Shura Al-Mujahideen -LRB- The Mujahideen Advisory Council
+T212	ORG 5302 5333	The Mujahideen Advisory Council
+T213	ORG 5371 5375	they
+T214	GPE 5358 5366	Fallujah
+T215	GPE 5487 5495	the town
+T216	GPE 5447 5455	American
+T217	Attack 5510 5517	battles
+E21	Attack:T217 Place:T215
+T218	Transport 5481 5486	enter
+E22	Transport:T218 Artifact:T209 Destination:T215
+T219	ORG 5558 5574	Zarqawi 's group
+T220	ORG 5575 5591	Qa'idat Al-Jihad
+T221	PER 5558 5565	Zarqawi
+T222	GPE 5713 5720	Baghdad
+T223	LOC 5724 5735	other areas
+T224	FAC 5698 5720	the streets of Baghdad
+T225	PER 5594 5602	Everyone
+T226	TIM 5628 5645	the next few days
+T227	Attack 5670 5678	violence
+E23	Attack:T227
+T228	PER 5738 5739	I
+T229	PER 5772 5773	I
+T230	GPE 5761 5767	Basrah

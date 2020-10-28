@@ -1,0 +1,220 @@
+T1	TIM 43 63	2005-02-03T06 :39:00
+T2	PER 102 108	ltlee1
+T3	TIM 109 134	3 Feb 2005 06:39:37 -0800
+T4	Elect 146 154	election
+E1	Elect:T4
+T5	Elect 162 170	election
+E2	Elect:T5
+T6	GPE 184 188	Iraq
+T7	PER 173 179	Sunnis
+T8	Elect 250 258	election
+E3	Elect:T8
+T9	Elect 291 299	election
+E4	Elect:T9
+T10	TIM 306 312	recent
+T11	GPE 313 317	Iraq
+T12	GPE 384 398	the population
+T13	PER 370 398	about 20 % of the population
+T14	PER 342 398	the Sunnis which constitute about 20 % of the population
+T15	PER 353 358	which
+T16	NUM 370 380	about 20 %
+T17	Elect 318 326	election
+E5	Elect:T17 Place:T11 Time-Within:T10
+T18	PER 436 445	only 1400
+T19	PER 457 462	their
+T20	PER 428 435	200,000
+T21	GPE 418 435	a city of 200,000
+T22	LOC 536 545	the south
+T23	PER 511 518	polices
+T24	PER 479 487	the 1400
+T25	PER 523 545	Shiites from the south
+T26	PER 493 506	civil workers
+T27	PER 471 487	Many of the 1400
+T28	FAC 573 616	5 voting stations with only ONE vote casted
+T29	GPE 551 559	Fallujah
+T30	PER 623 628	their
+T31	Elect 699 707	election
+E6	Elect:T31
+T32	PER 865 879	so many Sunnis
+T33	PER 763 801	A leading group of Iraqi Sunni clerics
+T34	GPE 740 744	Iraq
+T35	GPE 782 787	Iraqi
+T36	GPE 812 823	the country
+T37	PER 788 793	Sunni
+T38	PER 782 801	Iraqi Sunni clerics
+T39	PER 729 735	Sunnis
+T40	Elect 836 844	election
+E7	Elect:T40 Place:T36
+T41	Elect 905 909	vote
+E8	Elect:T41
+T42	PER 998 1019	US and foreign troops
+T43	PER 912 923	The clerics
+T44	GPE 998 1000	US
+T45	PER 939 945	Sunnis
+T46	Elect 961 970	elections
+E9	Elect:T46
+T47	GPE 1033 1038	Iraqi
+T48	PER 1022 1050	The US and Iraqi authorities
+T49	GPE 1026 1028	US
+T50	ORG 1064 1082	the United Nations
+T51	Elect 1101 1109	election
+E10	Elect:T51
+T52	GPE 1241 1251	the people
+T53	ORG 1189 1223	any government elected in the poll
+T54	ORG 1149 1183	the Association of Muslim Scholars
+T55	Elect 1204 1211	elected
+E11	Elect:T55 Entity:T53
+T56	PER 1305 1391	a large segment of different sects , parties and currents with their influence in Iraq
+T57	PER 1324 1391	different sects , parties and currents with their influence in Iraq
+T58	ORG 1324 1391	different sects , parties and currents with their influence in Iraq
+T59	GPE 1387 1391	Iraq
+T60	PER 1368 1373	their
+T61	ORG 1407 1422	the association
+T62	Elect 1271 1280	elections
+E12	Elect:T62
+T63	PER 1482 1499	national assembly
+T64	PER 1582 1586	them
+T65	ORG 1504 1539	government that will emerge from it
+T66	ORG 1515 1519	that
+T67	ORG 1625 1627	it
+T68	TIM 1740 1743	new
+T69	PER 1688 1717	Iraqis who had chosen to vote
+T70	PER 1695 1698	who
+T71	ORG 1736 1754	the new government
+T72	ORG 1635 1644	The group
+T73	ORG 1657 1659	it
+T74	ORG 1720 1722	it
+T75	PER 1803 1809	PeterL
+T76	TIM 1810 1841	Thu , 3 Feb 2005 08:29:55 -0800
+T77	Elect 1858 1866	election
+E13	Elect:T77
+T78	Elect 1874 1882	election
+E14	Elect:T78
+T79	PER 1885 1886	I
+T80	GPE 1950 1961	the Chinese
+T81	PER 1893 1898	ltlee
+T82	Elect 1936 1944	election
+E15	Elect:T82
+T83	Elect 1994 2003	elections
+E16	Elect:T83
+T84	PER 2006 2017	Guru Google
+T85	TIM 2018 2043	3 Feb 2005 08:33:28 -0800
+T86	PER 2122 2128	others
+T87	PER 2094 2099	ltlee
+T88	GPE 2199 2204	china
+T89	GPE 2176 2204	problem near him -LRB- china
+T90	PER 2143 2145	he
+T91	PER 2157 2160	his
+T92	PER 2189 2192	him
+T93	PER 2230 2233	our
+T94	PER 2244 2246	we
+T95	LOC 2334 2342	the star
+T96	PER 2305 2399	the phoilosopher who observe the star in the sky and fall down by kicking a rock he do n't see
+T97	PER 2322 2325	who
+T98	PER 2386 2388	he
+T99	LOC 2346 2353	the sky
+T100	PER 2402 2409	urillan
+T101	TIM 2410 2435	3 Feb 2005 09:46:15 -0800
+T102	TIM 2501 2504	now
+T103	PER 2479 2484	Sunni
+T104	PER 2526 2530	they
+T105	Elect 2493 2497	poll
+E17	Elect:T105
+T106	PER 2611 2625	the other side
+T107	PER 2680 2694	your opponents
+T108	PER 2631 2634	you
+T109	PER 2661 2664	you
+T110	PER 2680 2684	your
+T111	PER 2991 3005	all non-Sunnis
+T112	PER 2714 2726	the Sunni 's
+T113	PER 2798 2802	they
+T114	PER 2840 2843	the
+T115	PER 2896 2900	they
+T116	PER 2933 2938	their
+T117	PER 2939 2942	own
+T118	Elect 2914 2918	vote
+E18	Elect:T118
+T119	PER 3047 3052	their
+T120	PER 3011 3014	one
+T121	PER 3026 3029	one
+T122	PER 3098 3103	their
+T123	PER 3065 3071	nobody
+T124	Injure 3015 3021	slices
+E19	Injure:T124 Victim:T121 Agent:T120
+T125	PER 3170 3173	you
+T126	PER 3208 3214	ltlee1
+T127	TIM 3215 3240	3 Feb 2005 10:30:01 -0800
+T128	TIM 3339 3351	election day
+T129	PER 3284 3287	You
+T130	Elect 3339 3347	election
+E20	Elect:T130 Time-Within:T128
+T131	PER 3374 3391	the Sunni clerics
+T132	PER 3378 3383	Sunni
+T133	TIM 3474 3483	currently
+T134	PER 3416 3421	their
+T135	GPE 3466 3470	Iraq
+T136	PER 3524 3538	foreign troops
+T137	PER 3545 3549	them
+T138	PER 3567 3571	they
+T139	Elect 3605 3613	election
+E21	Elect:T139
+T140	GPE 3745 3759	their own city
+T141	GPE 3720 3737	their own country
+T142	PER 3678 3682	they
+T143	PER 3720 3725	their
+T144	PER 3726 3729	own
+T145	PER 3745 3750	their
+T146	PER 3751 3754	own
+T147	PER 3788 3793	their
+T148	Elect 3794 3802	election
+E22	Elect:T148
+T149	PER 3831 3832	I
+T150	GPE 3916 3922	Iraqis
+T151	GPE 3886 3893	America
+T152	Attack 3894 3902	invasion
+E23	Attack:T152 Attacker:T151
+T153	PER 3940 3947	urillan
+T154	TIM 3948 3973	3 Feb 2005 15:32:17 -0800
+T155	GPE 4064 4075	the country
+T156	PER 4017 4022	Their
+T157	GPE 4139 4162	the rest of the country
+T158	PER 4174 4200	the `` occupying '' forces
+T159	GPE 4151 4162	the country
+T160	PER 4099 4103	They
+T161	Elect 4223 4227	vote
+E24	Elect:T161
+T162	TIM 4243 4246	now
+T163	PER 4230 4242	The Sunni 's
+T164	PER 4293 4297	they
+T165	Elect 4262 4266	vote
+E25	Elect:T165
+T166	PER 4323 4328	their
+T167	Elect 4367 4371	vote
+E26	Elect:T167
+T168	TIM 4405 4421	about a year ago
+T169	PER 4374 4386	The Sunni 's
+T170	PER 4519 4527	Shi'ites
+T171	PER 4429 4433	they
+T172	PER 4436 4448	the minority
+T173	PER 4470 4474	they
+T174	PER 4480 4485	their
+T175	PER 4573 4587	the insurgents
+T176	PER 4556 4559	Who
+T177	PER 4604 4612	shi'ites
+T178	PER 4563 4566	you
+T179	Die 4593 4600	killing
+E27	Die:T179 Agent:T175 Victim:T176
+T180	PER 4618 4624	anyone
+T181	PER 4690 4702	the shi'ites
+T182	PER 4678 4680	it
+T183	Elect 4649 4658	elections
+E28	Elect:T183
+T184	PER 4705 4709	They
+T185	GPE 4805 4822	their own country
+T186	PER 4762 4766	They
+T187	PER 4805 4810	their
+T188	PER 4805 4814	their own
+T189	PER 4825 4837	The Shi'ites
+T190	PER 4869 4881	large groups
+T191	TIM 4937 4959	from 1945 through 1947
+T192	GPE 4931 4936	Japan

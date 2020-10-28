@@ -1,0 +1,39 @@
+T1	TIM 35 55	2005-02-06T20 :09:00
+T2	PER 85 90	Byrne
+T3	TIM 91 111	2005-02-06T20 :09:00
+T4	ORG 193 203	a business
+T5	ORG 233 265	ridiculously overfunded startups
+T6	ORG 281 286	their
+T7	PER 369 397	forward-thinking visionaries
+T8	PER 414 419	their
+T9	ORG 414 431	their competitors
+T10	ORG 281 307	their bankrupt competitors
+T11	ORG 318 354	larger and less stable conglomerates
+T12	Transfer-Ownership 132 143	acquisition
+E1	Transfer-Ownership:T12
+T13	Declare-Bankruptcy 287 295	bankrupt
+E2	Declare-Bankruptcy:T13 Org:T10
+T14	Merge-Org 311 317	create
+E3	Merge-Org:T14 Org:T5 Org:T10
+T15	Transfer-Ownership 270 280	buying out
+E4	Transfer-Ownership:T15 Artifact:T10 Buyer:T5
+T16	Merge-Org 121 127	merger
+E5	Merge-Org:T16 Org:T4
+T17	ORG 540 542	it
+T18	ORG 471 483	the business
+T19	ORG 489 491	it
+T20	ORG 507 513	itself
+T21	TIM 484 488	once
+T22	ORG 449 460	an outsider
+T23	Transfer-Ownership 461 465	buys
+E6	Transfer-Ownership:T23 Artifact:T18 Buyer:T22
+T24	TIM 594 597	now
+T25	ORG 645 654	Bloglines
+T26	ORG 624 634	Ask Jeeves
+T27	Transfer-Ownership 638 644	buying
+E7	Transfer-Ownership:T27 Artifact:T25 Buyer:T26
+T28	PER 657 658	I
+T29	ORG 688 698	Ask Jeeves
+T30	PER 775 782	Michael
+T31	TIM 798 808	T10 :49:00
+T32	PER 826 834	somebody

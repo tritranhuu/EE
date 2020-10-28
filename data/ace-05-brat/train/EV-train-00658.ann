@@ -1,0 +1,30 @@
+T1	TIM 39 58	2003-05-29 09:12:46
+T2	TIM 158 163	today
+T3	PER 99 139	palestinian prime minister mahmoud abbas
+T4	PER 99 125	palestinian prime minister
+T5	PER 166 171	their
+T6	ORG 201 224	the bush administration
+T7	GPE 99 110	palestinian
+T8	GPE 59 66	israeli
+T9	GPE 242 249	mideast
+T10	PER 59 94	israeli prime minister ariel sharon
+T11	PER 59 81	israeli prime minister
+T12	PER 205 209	bush
+T13	Meet 153 157	meet
+E1	Meet:T13 Entity:T10 Entity:T3 Time-Within:T2
+T14	TIM 330 339	next week
+T15	PER 258 268	both sides
+T16	GPE 318 329	the mideast
+T17	PER 284 298	president bush
+T18	PER 284 293	president
+T19	PER 304 306	he
+T20	Transport 307 314	arrives
+E2	Transport:T20 Artifact:T17 Destination:T16 Time-Within:T14
+T21	Meet 274 278	meet
+E3	Meet:T21 Entity:T15 Entity:T17 Time-Within:T14
+T22	ORG 342 345	our
+T23	GPE 346 355	jerusalem
+T24	PER 346 368	jerusalem bureau chief
+T25	PER 369 379	mike hanna
+T26	ORG 346 362	jerusalem bureau
+T27	PER 413 417	mike

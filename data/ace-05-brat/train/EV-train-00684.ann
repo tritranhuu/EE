@@ -1,0 +1,92 @@
+T1	TIM 41 60	2003-03-04 14:40:44
+T2	VEH 76 130	a small plane that disappeared sunday in massachusetts
+T3	VEH 90 94	that
+T4	TIM 107 113	sunday
+T5	GPE 117 130	massachusetts
+T6	TIM 252 260	18 hours
+T7	PER 158 194	three young boys , ages 2 , 5 and 10
+T8	Injure 215 223	critical
+E1	Injure:T8 Victim:T7
+T9	VEH 305 314	the plane
+T10	TIM 345 359	late yesterday
+T11	FAC 363 375	the hospital
+T12	PER 275 314	the father , who was piloting the plane
+T13	PER 288 291	who
+T14	Die 340 344	died
+E2	Die:T14 Place:T11 Time-Within:T10 Victim:T12
+T15	PER 378 418	the boys ' mother and two other brothers
+T16	PER 400 418	two other brothers
+T17	PER 378 386	the boys
+T18	Die 424 430	killed
+E3	Die:T18 Victim:T15 Victim:T16
+T19	VEH 473 482	the plane
+T20	VEH 525 534	the plane
+T21	PER 433 442	officials
+T22	PER 447 456	the pilot
+T23	GPE 506 519	massachusetts
+T24	Transport 498 502	land
+E4	Transport:T24 Vehicle:T19 Agent:T22 Destination:T23
+T25	PER 580 584	they
+T26	PER 548 556	aviators
+T27	VEH 632 641	the cabin
+T28	VEH 612 624	the aircraft
+T29	VEH 688 690	it
+T30	PER 784 793	no person
+T31	VEH 909 921	the airplane
+T32	PER 813 815	we
+T33	PER 874 888	the 2-year-old
+T34	PER 868 869	i
+T35	TIM 878 888	2-year-old
+T36	GPE 955 968	new hampshire
+T37	PER 924 934	the family
+T38	PER 998 1003	their
+T39	VEH 998 1009	their plane
+T40	GPE 974 992	lakeland , florida
+T41	GPE 985 992	florida
+T42	Transport 944 951	heading
+E5	Transport:T42 Vehicle:T39 Artifact:T37 Destination:T36 Origin:T40
+T43	PER 1040 1059	the many unemployed
+T44	PER 1025 1028	you
+T45	PER 1033 1059	one of the many unemployed
+T46	PER 1069 1076	company
+T47	GPE 1113 1121	new york
+T48	PER 1079 1093	valerie morris
+T49	PER 1100 1102	us
+T50	PER 1140 1147	valerie
+T51	PER 1163 1169	sharon
+T52	PER 1155 1160	renay
+T53	NUM 1277 1278	5
+T54	TIM 1284 1292	february
+T55	ORG 1223 1252	challenger gray and christmas
+T56	TIM 1323 1330	monthly
+T57	GPE 1407 1412	state
+T58	ORG 1365 1375	government
+T59	ORG 1402 1434	many state and local governments
+T60	PER 1365 1398	government and non-profit workers
+T61	GPE 1469 1473	u.s.
+T62	TIM 1519 1537	the past two years
+T63	PER 1561 1567	flyers
+T64	ORG 1540 1548	airlines
+T65	Transport 1553 1560	getting
+E6	Transport:T65 Artifact:T63 Agent:T64
+T66	ORG 1604 1628	the top ten air carriers
+T67	TIM 1680 1687	january
+T68	TIM 1693 1709	the month before
+T69	ORG 1714 1724	government
+T70	PER 1823 1833	passengers
+T71	ORG 1878 1884	united
+T72	Declare-Bankruptcy 1860 1870	bankruptcy
+E7	Declare-Bankruptcy:T72 Org:T71
+T73	ORG 1923 1929	united
+T74	NUM 1984 1997	$ 382 million
+T75	TIM 2001 2008	january
+T76	ORG 1972 1978	united
+T77	ORG 2047 2055	airlines
+T78	ORG 2135 2146	wall street
+T79	ORG 2200 2213	the big three
+T80	VEH 2163 2167	auto
+T81	GPE 2281 2285	iraq
+T82	Attack 2256 2265	terrorism
+E8	Attack:T82
+T83	Attack 2272 2275	war
+E9	Attack:T83

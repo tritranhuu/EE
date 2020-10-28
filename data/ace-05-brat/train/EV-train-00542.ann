@@ -1,0 +1,26 @@
+T1	TIM 38 57	2003-06-30 08:11:12
+T2	GPE 119 125	boston
+T3	ORG 106 137	the troubled boston archdiocese
+T4	PER 92 137	a new head of the troubled boston archdiocese
+T5	PER 62 70	the pope
+T6	TIM 138 147	this week
+T7	Nominate 87 91	name
+E1	Nominate:T7 Person:T4 Agent:T5 Time-Within:T6
+T8	PER 234 254	cardinal bernard law
+T9	PER 234 242	cardinal
+T10	GPE 201 208	florida
+T11	GPE 188 208	palm beach , florida
+T12	PER 150 171	sean patrick o'malley
+T13	PER 174 208	the bishop of palm beach , florida
+T14	Start-Position 226 233	replace
+E2	Start-Position:T14 Person:T12
+T15	ORG 278 308	the national catholic reporter
+T16	PER 367 372	child
+T17	ORG 389 399	the church
+T18	PER 311 314	law
+T19	TIM 331 339	december
+T20	CRM 356 399	widespread child sexual abuse in the church
+T21	Charge-Indict 345 388	charges of widespread child sexual abuse in
+E3	Charge-Indict:T21 Defendant:T18 Crime:T20
+T22	End-Position 315 327	stepped down
+E4	End-Position:T22 Person:T18 Time-Within:T19

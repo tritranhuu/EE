@@ -1,0 +1,19 @@
+T1	TIM 40 59	2003-04-02 19:36:03
+T2	GPE 124 128	u.s.
+T3	GPE 101 106	iraqi
+T4	ORG 60 75	central command
+T5	ORG 81 83	it
+T6	PER 154 196	hundreds of civilians casualties in hillah
+T7	GPE 190 196	hillah
+T8	PER 166 175	civilians
+T9	Attack 129 136	attacks
+E1	Attack:T9 Attacker:T2 Place:T3 Place:T7 Target:T8
+T10	GPE 231 238	baghdad
+T11	GPE 199 203	that
+T12	ORG 253 293	the international committee of red cross
+T13	GPE 321 326	there
+T14	PER 241 293	a member of the international committee of red cross
+T15	PER 333 335	he
+T16	FAC 302 326	the local hospital there
+T17	Transport 294 301	visited
+E2	Transport:T17 Artifact:T14 Destination:T16

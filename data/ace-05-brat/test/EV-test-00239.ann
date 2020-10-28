@@ -1,0 +1,138 @@
+T1	TIM 39 58	2003-03-28 15:28:47
+T2	PER 130 171	coalition forces fighting the war in iraq
+T3	GPE 167 171	iraq
+T4	GPE 130 139	coalition
+T5	GPE 92 96	u.s.
+T6	PER 59 103	tense of thousands of additional u.s. troops
+T7	Transport 125 129	join
+E1	Transport:T7 Artifact:T6 Destination:T3
+T8	Attack 160 163	war
+E2	Attack:T8 Attacker:T2 Place:T3 Target:T2
+T9	GPE 219 234	fort hood texas
+T10	GPE 229 234	texas
+T11	Transport 184 194	departures
+E3	Transport:T11 Origin:T10
+T12	GPE 259 264	there
+T13	PER 237 255	cnn 's jamie kolbe
+T14	PER 277 282	jamie
+T15	PER 328 344	their loved ones
+T16	ORG 237 240	cnn
+T17	PER 286 300	these families
+T18	PER 301 304	who
+T19	PER 328 333	their
+T20	GPE 362 366	this
+T21	GPE 370 385	a military town
+T22	PER 347 355	reporter
+T23	ORG 372 380	military
+T24	PER 414 416	we
+T25	PER 388 392	judy
+T26	PER 428 442	these soldiers
+T27	Transport 443 451	head out
+E4	Transport:T27 Artifact:T26 Origin:T21
+T28	GPE 909 913	here
+T29	TIM 858 880	the course of the week
+T30	TIM 841 850	yesterday
+T31	TIM 590 593	now
+T32	TIM 578 585	january
+T33	ORG 714 739	the 4th infantry division
+T34	ORG 743 766	one seeped in tradition
+T35	PER 881 887	12,000
+T36	PER 823 835	250 of which
+T37	GPE 685 691	turkey
+T38	PER 542 556	these soldiers
+T39	PER 594 598	they
+T40	PER 808 820	the soldiers
+T41	PER 830 835	which
+T42	Transport 896 903	leaving
+E5	Transport:T42 Artifact:T35 Origin:T28 Time-Within:T29
+T43	Transport 836 840	left
+E6	Transport:T43 Artifact:T36 Origin:T28 Time-Within:T30
+T44	Transport 569 574	leave
+E7	Transport:T44 Artifact:T38 Time-Within:T32
+T45	PER 993 998	their
+T46	PER 916 929	another 4,000
+T47	GPE 935 958	fort carson in colorado
+T48	FAC 1072 1086	the suez canal
+T49	VEH 1202 1220	some 5 helicopters
+T50	GPE 950 958	colorado
+T51	VEH 1040 1086	a ship on its way south through the suez canal
+T52	VEH 1050 1053	its
+T53	TIM 1033 1036	now
+T54	TIM 1022 1029	january
+T55	TIM 1164 1189	the last couple of months
+T56	VEH 1223 1232	200 tanks
+T57	VEH 1244 1282	150 bradley infantry fighting vehicles
+T58	PER 1285 1290	these
+T59	PER 1295 1318	highly trained soldiers
+T60	PER 1321 1325	they
+T61	GPE 1438 1442	here
+T62	PER 1344 1348	they
+T63	PER 1398 1422	the first wave of troops
+T64	PER 1423 1427	that
+T65	PER 1416 1422	troops
+T66	Transport 1428 1432	left
+E8	Transport:T66 Artifact:T64 Origin:T61
+T67	PER 1475 1479	judy
+T68	PER 1445 1450	their
+T69	LOC 1490 1511	anywhere in the world
+T70	LOC 1502 1511	the world
+T71	PER 1546 1550	they
+T72	PER 1566 1570	they
+T73	TIM 1607 1611	once
+T74	GPE 1621 1626	there
+T75	PER 1586 1590	they
+T76	PER 1612 1616	they
+T77	PER 1627 1632	their
+T78	PER 1673 1677	they
+T79	ORG 1734 1751	the first cavalry
+T80	PER 1713 1717	they
+T81	PER 1754 1758	they
+T82	PER 1793 1797	they
+T83	GPE 1934 1938	here
+T84	GPE 1942 1951	fort hood
+T85	PER 1864 1866	me
+T86	PER 1903 1951	some of the information people here at fort hood
+T87	PER 1911 1951	the information people here at fort hood
+T88	PER 1954 1958	they
+T89	PER 1970 1974	they
+T90	PER 1869 1893	the soldiers you talk to
+T91	PER 1882 1885	you
+T92	PER 1850 1858	they all
+T93	Attack 1975 1980	fight
+E9	Attack:T93 Attacker:T89
+T94	PER 1983 1987	they
+T95	GPE 2062 2073	our country
+T96	GPE 2062 2065	our
+T97	PER 2000 2004	they
+T98	PER 2024 2028	they
+T99	TIM 2160 2169	yesterday
+T100	GPE 2096 2101	there
+T101	PER 2151 2154	250
+T102	PER 2141 2143	we
+T103	PER 2076 2080	they
+T104	PER 2118 2122	they
+T105	Transport 2155 2159	left
+E10	Transport:T105 Artifact:T101 Destination:T100 Time-Within:T99
+T106	WEA 2196 2207	their m-16s
+T107	PER 2172 2176	they
+T108	PER 2196 2201	their
+T109	PER 2210 2214	they
+T110	GPE 2251 2255	here
+T111	TIM 2455 2461	a year
+T112	PER 2346 2358	many of them
+T113	PER 2374 2388	young children
+T114	PER 2231 2245	their families
+T115	PER 2422 2425	dad
+T116	PER 2399 2409	their kids
+T117	PER 2415 2418	mom
+T118	PER 2231 2236	their
+T119	PER 2263 2267	them
+T120	PER 2278 2282	they
+T121	PER 2354 2358	them
+T122	PER 2399 2404	their
+T123	Transport 2301 2307	return
+E11	Transport:T123 Artifact:T120
+T124	PER 2464 2468	judy
+T125	PER 2524 2529	jamie
+T126	PER 2495 2497	we
+T127	PER 2480 2481	i

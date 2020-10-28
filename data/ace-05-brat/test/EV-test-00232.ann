@@ -1,0 +1,62 @@
+T1	TIM 34 42	20030523
+T2	TIM 117 123	May 23
+T3	GPE 108 114	MANILA
+T4	ORG 130 136	Xinhua
+T5	TIM 178 184	Friday
+T6	GPE 147 157	Philippine
+T7	GPE 273 284	the country
+T8	PER 216 245	deposed leader Joseph Estrada
+T9	PER 216 230	deposed leader
+T10	PER 260 262	he
+T11	PER 273 308	the country 's legitimate president
+T12	ORG 143 177	The Philippine Presidential Palace
+T13	PER 333 338	Staff
+T14	ORG 509 526	the Supreme Court
+T15	PER 311 355	Presidential Chief of Staff Rigoberto Tiglao
+T16	PER 311 338	Presidential Chief of Staff
+T17	PER 427 460	President Gloria Macapagal-Arroyo
+T18	PER 427 436	President
+T19	PER 361 368	Estrada
+T20	PER 361 376	Estrada 's camp
+T21	ORG 427 478	President Gloria Macapagal-Arroyo 's administration
+T22	TIM 603 608	hours
+T23	PER 591 597	Tiglao
+T24	GPE 692 702	government
+T25	ORG 634 654	the anti-graft court
+T26	ORG 657 674	the Sandiganbayan
+T27	PER 615 622	Estrada
+T28	PER 719 722	him
+T29	PER 765 767	he
+T30	PER 778 791	the president
+T31	ORG 562 572	the Palace
+T32	Charge-Indict 703 710	charges
+E1	Charge-Indict:T32 Adjudicator:T25 Defendant:T28 Prosecutor:T24
+T33	ORG 806 815	the court
+T34	ORG 877 880	its
+T35	ORG 966 978	the tribunal
+T36	PER 842 859	Estrada 's lawyer
+T37	PER 860 871	Alan Paguia
+T38	ORG 1032 1049	the Sandiganbayan
+T39	PER 913 919	Arroyo
+T40	PER 842 849	Estrada
+T41	ORG 909 934	the Arroyo administration
+T42	CRM 1141 1148	plunder
+T43	TIM 1104 1111	June 16
+T44	TIM 1199 1205	June 2
+T45	TIM 1087 1093	Friday
+T46	ORG 1056 1069	Sandiganbayan
+T47	PER 1130 1137	Estrada
+T48	ORG 1052 1086	The Sandiganbayan Special Division
+T49	Trial-Hearing 1154 1161	hearing
+E2	Trial-Hearing:T49 Defendant:T47 Crime:T42 Time-Starting:T43
+T50	TIM 1272 1284	January 2001
+T51	TIM 1309 1325	almost two years
+T52	CRM 1385 1392	plunder
+T53	GPE 1369 1381	Metro Manila
+T54	FAC 1329 1381	the Veterans Memorial Medical Center in Metro Manila
+T55	PER 1208 1284	Estrada , who was ousted in a military-backed popular revolt in January 2001
+T56	PER 1218 1221	who
+T57	Arrest-Jail 1296 1304	detained
+E3	Arrest-Jail:T57 Crime:T52 Time-Holds:T51
+T58	Charge-Indict 1393 1400	charges
+E4	Charge-Indict:T58 Crime:T52

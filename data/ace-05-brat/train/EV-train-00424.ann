@@ -1,0 +1,111 @@
+T1	TIM 34 42	20030427
+T2	GPE 100 117	MULTAN , Pakistan
+T3	ORG 135 138	AFP
+T4	TIM 120 128	April 27
+T5	GPE 109 117	Pakistan
+T6	PER 206 215	Christian
+T7	CRM 247 256	blasphemy
+T8	SEN 223 240	life imprisonment
+T9	PER 270 276	police
+T10	PER 204 219	a Christian man
+T11	LOC 166 189	central Punjab province
+T12	ORG 145 189	A Pakistani court in central Punjab province
+T13	TIM 282 288	Sunday
+T14	GPE 147 156	Pakistani
+T15	Sentence 194 203	sentenced
+E1	Sentence:T15 Adjudicator:T12 Defendant:T10 Place:T11 Sentence:T8 Crime:T7
+T16	Convict 257 267	conviction
+E2	Convict:T16 Defendant:T10 Crime:T7
+T17	PER 465 474	Christian
+T18	CRM 402 492	defiling Koranic verses during a protest rally by the minority Christian community in 1998
+T19	PER 452 484	the minority Christian community
+T20	PER 379 391	Ranjha Masih
+T21	GPE 319 327	district
+T22	ORG 315 370	the district court in the industrial city of Faisalabad
+T23	GPE 337 370	the industrial city of Faisalabad
+T24	GPE 360 370	Faisalabad
+T25	PER 291 370	Judge Shahid Rafiq , of the district court in the industrial city of Faisalabad
+T26	PER 291 296	Judge
+T27	TIM 488 492	1998
+T28	Convict 392 398	guilty
+E3	Convict:T28 Defendant:T20 Crime:T18 Place:T23 Adjudicator:T25
+T29	Demonstrate 443 448	rally
+E4	Demonstrate:T29 Entity:T19 Time-Within:T27
+T30	NUM 581 594	50,000 rupees
+T31	NUM 601 621	about 870 US dollars
+T32	GPE 611 613	US
+T33	PER 630 634	they
+T34	PER 557 563	Ranjha
+T35	PER 534 543	the judge
+T36	TIM 523 531	Saturday
+T37	Fine 573 577	fine
+E5	Fine:T37 Entity:T34 Adjudicator:T35 Money:T30 Money:T31 Time-Within:T36
+T38	PER 743 752	Christian
+T39	CRM 664 837	tearing down a billboard carrying verses from the Koran in Faisalabad during a Christian demonstration after the city 's bishop committed suicide over the 1985 blasphemy law
+T40	PER 773 791	the city 's bishop
+T41	PER 642 648	Ranjha
+T42	GPE 723 733	Faisalabad
+T43	GPE 773 781	the city
+T44	TIM 819 823	1985
+T45	Die 802 809	suicide
+E6	Die:T45 Victim:T40 Agent:T40
+T46	Demonstrate 753 766	demonstration
+E7	Demonstrate:T46 Place:T42 Entity:T38
+T47	Charge-Indict 653 660	accused
+E8	Charge-Indict:T47 Defendant:T41 Crime:T39
+T48	FAC 960 987	a court in Sahiwal district
+T49	GPE 971 987	Sahiwal district
+T50	PER 840 924	Faisalabad 's Catholic Bishop John Joseph , who had been campaigning against the law
+T51	PER 840 869	Faisalabad 's Catholic Bishop
+T52	PER 884 887	who
+T53	PER 932 939	himself
+T54	PER 993 1002	the judge
+T55	PER 1013 1033	Christian Ayub Masih
+T56	PER 1013 1022	Christian
+T57	GPE 840 850	Faisalabad
+T58	TIM 1051 1055	1998
+T59	Die 927 931	shot
+E9	Die:T59 Victim:T53 Agent:T50 Place:T48 Time-Within:T58
+T60	Convict 1003 1012	convicted
+E10	Convict:T60 Defendant:T55 Place:T48 Adjudicator:T54 Time-Within:T58
+T61	PER 1216 1222	Mulsim
+T62	CRM 1094 1103	blasphemy
+T63	PER 1058 1068	Ayub Masih
+T64	PER 1128 1271	British author Salman Rushdie , whose novel `` The Satanic Verses '' infuriated radical Mulsim clerics who accused the author of defaming Islam
+T65	PER 1128 1142	British author
+T66	PER 1160 1165	whose
+T67	PER 1243 1253	the author
+T68	TIM 1084 1088	1996
+T69	PER 1208 1271	radical Mulsim clerics who accused the author of defaming Islam
+T70	PER 1231 1234	who
+T71	GPE 1128 1135	British
+T72	Charge-Indict 1073 1080	charged
+E11	Charge-Indict:T72 Defendant:T63 Crime:T62 Time-Within:T68
+T73	PER 1321 1404	Ayub Masih , who had denied uttering any word against Islam or the Prophet Mohammad
+T74	PER 1334 1337	who
+T75	TIM 1302 1311	last year
+T76	PER 1384 1404	the Prophet Mohammad
+T77	PER 1384 1395	the Prophet
+T78	GPE 1278 1287	Pakistani
+T79	ORG 1274 1301	The Pakistani supreme court
+T80	Acquit 1312 1320	aquitted
+E12	Acquit:T80 Defendant:T73 Adjudicator:T79 Time-Within:T75
+T81	CRM 1407 1416	Blasphemy
+T82	SEN 1434 1439	death
+T83	GPE 1450 1458	Pakistan
+T84	Execute 1434 1439	death
+E13	Execute:T84 Agent:T83
+T85	Sentence 1420 1430	punishable
+E14	Sentence:T85 Sentence:T82 Crime:T81
+T86	CRM 1485 1494	blasphemy
+T87	PER 1482 1502	no blasphemy convict
+T88	GPE 1529 1540	the country
+T89	Execute 1517 1525	executed
+E15	Execute:T89 Person:T87 Place:T88 Crime:T86
+T90	PER 1615 1656	late military dictator General Zia-ul Haq
+T91	PER 1638 1645	General
+T92	PER 1615 1637	late military dictator
+T93	PER 1543 1656	Christian rights activists campaigning against the laws , introduced by late military dictator General Zia-ul Haq
+T94	PER 1543 1552	Christian
+T95	PER 1697 1707	Christians
+T96	ORG 1620 1628	military

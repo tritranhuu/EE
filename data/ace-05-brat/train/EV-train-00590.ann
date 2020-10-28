@@ -1,0 +1,64 @@
+T1	TIM 41 60	2003-06-16 23:24:31
+T2	PER 71 85	so many people
+T3	PER 114 118	they
+T4	FAC 96 102	prison
+T5	Arrest-Jail 86 92	end up
+E1	Arrest-Jail:T5 Person:T2
+T6	GPE 179 184	texas
+T7	GPE 171 184	tulia , texas
+T8	PER 153 184	the defendants of tulia , texas
+T9	ORG 190 193	our
+T10	GPE 323 328	tulia
+T11	GPE 274 328	a predominately african-american neighborhood in tulia
+T12	PER 290 306	african-american
+T13	TIM 221 237	july 23rd , 1999
+T14	PER 359 361	39
+T15	PER 366 382	african-american
+T16	PER 334 347	the 46 people
+T17	Arrest-Jail 348 356	arrested
+E2	Arrest-Jail:T17 Person:T16
+T18	PER 437 455	undercover officer
+T19	PER 437 470	undercover officer thomas coleman
+T20	PER 402 406	them
+T21	PER 473 480	coleman
+T22	PER 489 491	he
+T23	PER 510 524	the defendants
+T24	PER 661 681	the other defendants
+T25	PER 653 681	most of the other defendants
+T26	Convict 619 630	convictions
+E3	Convict:T26
+T27	Sentence 641 650	sentences
+E4	Sentence:T27
+T28	Trial-Hearing 601 607	trials
+E5	Trial-Hearing:T28
+T29	GPE 809 814	tulia
+T30	PER 742 749	coleman
+T31	PER 805 825	the tulia defendants
+T32	TIM 718 733	march 17 , 2003
+T33	Trial-Hearing 792 800	hearings
+E6	Trial-Hearing:T33 Adjudicator:T31 Time-Starting:T32
+T34	PER 872 881	the judge
+T35	PER 884 901	defense attorneys
+T36	PER 929 936	coleman
+T37	PER 960 968	a racist
+T38	PER 906 917	prosecutors
+T39	Trial-Hearing 846 854	hearings
+E7	Trial-Hearing:T39 Adjudicator:T34 Prosecutor:T38
+T40	PER 971 978	coleman
+T41	ORG 1034 1055	the texas legislature
+T42	GPE 1038 1043	texas
+T43	TIM 1077 1083	monday
+T44	Release-Parole 1087 1094	release
+E8	Release-Parole:T44 Entity:T42 Time-Within:T43
+T45	PER 1167 1186	convicted criminals
+T46	PER 1115 1156	the others caught up in the tulia tragedy
+T47	GPE 1143 1148	tulia
+T48	PER 1101 1110	these men
+T49	Convict 1167 1176	convicted
+E9	Convict:T49 Defendant:T48 Defendant:T46
+T50	ORG 1205 1222	the appeals court
+T51	ORG 1227 1258	the board of pardon and paroles
+T52	PER 1279 1284	their
+T53	TIM 1189 1192	now
+T54	Pardon 1273 1278	clear
+E10	Pardon:T54 Defendant:T52 Adjudicator:T50 Adjudicator:T51

@@ -1,0 +1,75 @@
+T1	TIM 39 58	2003-04-16 18:29:42
+T2	GPE 74 81	baghdad
+T3	GPE 112 121	that city
+T4	GPE 59 63	u.s.
+T5	PER 138 173	holdout members of saddam 's regime
+T6	ORG 157 173	saddam 's regime
+T7	PER 157 163	saddam
+T8	PER 59 81	u.s. forces in baghdad
+T9	Attack 99 104	raids
+E1	Attack:T9 Attacker:T8 Place:T3
+T10	ORG 179 181	we
+T11	WEA 230 257	weapons of mass destruction
+T12	GPE 289 293	u.s.
+T13	ORG 397 441	iraq 's secret biological warfare laboratory
+T14	PER 368 371	dr.
+T15	PER 389 392	who
+T16	PER 379 441	the woman who ran iraq 's secret biological warfare laboratory
+T17	PER 368 376	dr. germ
+T18	PER 334 376	the iraqi microbiologist known as dr. germ
+T19	PER 289 308	u.s. special forces
+T20	GPE 397 401	iraq
+T21	GPE 338 343	iraqi
+T22	FAC 322 441	the home of the iraqi microbiologist known as dr. germ . the woman who ran iraq 's secret biological warfare laboratory
+T23	TIM 309 314	today
+T24	Attack 315 321	raided
+E2	Attack:T24 Attacker:T19 Place:T22 Time-Within:T23
+T25	PER 444 458	mike boettcher
+T26	ORG 463 466	our
+T27	PER 486 565	dr. rehab taha , aka dr. germ , who directed iraq 's biological weapons program
+T28	PER 486 489	dr.
+T29	PER 518 521	who
+T30	PER 507 515	dr. germ
+T31	WEA 539 557	biological weapons
+T32	GPE 531 535	iraq
+T33	ORG 531 565	iraq 's biological weapons program
+T34	PER 640 643	her
+T35	ORG 568 571	cnn
+T36	ORG 601 615	united nations
+T37	GPE 766 773	baghdad
+T38	WEA 730 734	arms
+T39	PER 665 668	her
+T40	FAC 692 696	here
+T41	FAC 700 773	a location well-known to u.n. arms inspectors . 300 miles west of baghdad
+T42	ORG 725 729	u.n.
+T43	PER 725 745	u.n. arms inspectors
+T44	PER 776 779	her
+T45	PER 848 858	a narateor
+T46	PER 818 821	her
+T47	WEA 906 963	biological agents , botulinum toxin and spors of bacillus
+T48	WEA 955 963	bacillus
+T49	WEA 906 923	biological agents
+T50	WEA 926 935	botulinum
+T51	PER 1015 1019	taha
+T52	WEA 1071 1078	anthrax
+T53	WEA 1092 1109	artillery rockets
+T54	ORG 1050 1055	their
+T55	WEA 1092 1101	artillery
+T56	WEA 1068 1087	an anthrax sim lant
+T57	PER 1127 1130	she
+T58	WEA 1170 1182	aerial bombs
+T59	WEA 1195 1212	biological agents
+T60	TIM 1152 1156	1989
+T61	PER 1226 1229	dr.
+T62	PER 1226 1234	dr. taha
+T63	PER 1267 1270	she
+T64	PER 1296 1299	her
+T65	WEA 1300 1318	biological weapons
+T66	ORG 1256 1258	us
+T67	PER 1341 1352	the marines
+T68	PER 1381 1384	her
+T69	PER 1408 1411	her
+T70	GPE 1437 1444	baghdad
+T71	PER 1414 1428	mike boettcher
+T72	ORG 1431 1434	cnn
+T73	PER 1451 1454	she

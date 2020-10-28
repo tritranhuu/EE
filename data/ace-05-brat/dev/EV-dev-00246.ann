@@ -1,0 +1,368 @@
+T1	TIM 34 42	20030407
+T2	LOC 122 134	NEAR BAGHDAD
+T3	ORG 141 143	AP
+T4	FAC 174 195	a presidential palace
+T5	FAC 200 230	other key buildings in Baghdad
+T6	GPE 223 230	Baghdad
+T7	GPE 271 297	the battered Iraqi capital
+T8	LOC 258 297	the heart of the battered Iraqi capital
+T9	VEH 234 244	U.S. tanks
+T10	TIM 301 307	Monday
+T11	GPE 150 158	American
+T12	GPE 234 238	U.S.
+T13	PER 150 165	American troops
+T14	GPE 284 289	Iraqi
+T15	Transport 245 252	rumbled
+E1	Transport:T15 Vehicle:T9 Artifact:T13 Destination:T8 Time-Within:T10
+T16	Attack 340 350	explosions
+E2	Attack:T16 Time-Within:T10
+T17	Attack 166 173	stormed
+E3	Attack:T17 Attacker:T13 Place:T6 Target:T4 Target:T5 Time-Within:T10
+T18	Attack 328 335	gunfire
+E4	Attack:T18 Time-Within:T10
+T19	FAC 396 440	Saddam Hussein 's newest presidential palace
+T20	FAC 353 386	Buildings occupied by U.S. troops
+T21	PER 396 410	Saddam Hussein
+T22	GPE 375 379	U.S.
+T23	FAC 472 491	the Al-Rashid Hotel
+T24	FAC 443 467	the Information Ministry
+T25	PER 375 386	U.S. troops
+T26	GPE 541 548	Baghdad
+T27	GPE 605 613	the city
+T28	LOC 528 548	the heart of Baghdad
+T29	VEH 508 517	the tanks
+T30	LOC 572 613	the Tigris River , which divides the city
+T31	LOC 591 596	which
+T32	LOC 552 613	the western side of the Tigris River , which divides the city
+T33	PER 494 503	Reporters
+T34	Transport 518 522	roll
+E5	Transport:T34 Vehicle:T29 Destination:T28 Origin:T32
+T35	PER 705 709	some
+T36	LOC 691 700	its banks
+T37	PER 673 679	Iraqis
+T38	GPE 619 623	U.S.
+T39	LOC 654 670	the Tigris river
+T40	LOC 691 694	its
+T41	LOC 720 729	the water
+T42	Transport 632 637	moved
+E6	Transport:T42 Destination:T39
+T43	Transport 680 684	fled
+E7	Transport:T43 Artifact:T37 Destination:T39
+T44	FAC 732 768	An ammunition depot across the river
+T45	LOC 759 768	the river
+T46	VEH 806 833	60 Bradley armored vehicles
+T47	PER 863 879	military sources
+T48	VEH 783 801	More than 70 tanks
+T49	ORG 863 871	military
+T50	Attack 855 860	blitz
+E8	Attack:T50 Instrument:T48 Instrument:T46
+T51	FAC 890 909	the palace compound
+T52	FAC 945 999	a clock tower , which the U.S. tanks quickly destroyed
+T53	FAC 961 966	which
+T54	VEH 967 981	the U.S. tanks
+T55	PER 912 918	Iraqis
+T56	GPE 971 975	U.S.
+T57	WEA 924 934	small arms
+T58	Attack 919 923	shot
+E9	Attack:T58 Attacker:T55 Place:T51 Place:T52 Instrument:T57
+T59	Attack 990 999	destroyed
+E10	Attack:T59 Place:T51 Place:T52 Instrument:T57 Instrument:T54
+T60	FAC 1010 1022	the compound
+T61	FAC 1002 1022	Most of the compound
+T62	GPE 1055 1059	U.S.
+T63	Attack 1060 1065	raids
+E11	Attack:T63 Attacker:T62 Target:T61
+T64	ORG 1112 1128	the 3rd Infantry
+T65	GPE 1277 1284	Baghdad
+T66	PER 1068 1086	Col. David Perkins
+T67	PER 1068 1072	Col.
+T68	PER 1089 1128	a brigade commander of the 3rd Infantry
+T69	PER 1136 1139	his
+T70	PER 1136 1146	his troops
+T71	GPE 1255 1259	U.S.
+T72	PER 1255 1266	U.S. forces
+T73	Transport 1271 1276	enter
+E12	Transport:T73 Artifact:T72 Destination:T65
+T74	ORG 1376 1386	the regime
+T75	PER 1313 1314	I
+T76	PER 1452 1459	Perkins
+T77	GPE 1343 1359	the Iraqi people
+T78	GPE 1410 1414	they
+T79	GPE 1429 1434	their
+T80	GPE 1347 1352	Iraqi
+T81	TIM 1419 1422	now
+T82	End-Org 1393 1400	is over
+E13	End-Org:T82 Org:T74
+T83	GPE 1483 1492	this city
+T84	PER 1470 1471	I
+T85	PER 1521 1539	Capt. Chris Carter
+T86	PER 1521 1526	Capt.
+T87	PER 1506 1510	ours
+T88	VEH 1565 1575	U.S. armor
+T89	TIM 1542 1548	Monday
+T90	GPE 1565 1569	U.S.
+T91	Attack 1552 1561	incursion
+E14	Attack:T91 Attacker:T90 Instrument:T88 Time-Within:T89
+T92	TIM 1648 1656	Saturday
+T93	GPE 1717 1721	U.S.
+T94	WEA 1679 1682	gun
+T95	GPE 1753 1758	Iraqi
+T96	PER 1738 1767	at least 2,000 Iraqi fighters
+T97	Attack 1683 1690	battles
+E15	Attack:T97 Instrument:T94 Time-Within:T92
+T98	Die 1768 1772	dead
+E16	Die:T98 Instrument:T94 Victim:T96 Time-Within:T92
+T99	Attack 1637 1640	one
+E17	Attack:T99 Time-Within:T92
+T100	GPE 1805 1812	Baghdad
+T101	GPE 1860 1903	the heavily-bombed city of 5 million people
+T102	GPE 1887 1903	5 million people
+T103	FAC 1805 1837	Baghdad 's international airport
+T104	GPE 1781 1790	coalition
+T105	PER 1781 1797	coalition troops
+T106	PER 1840 1844	they
+T107	Transfer-Ownership 1798 1804	seized
+E18	Transfer-Ownership:T107 Artifact:T103 Place:T101 Buyer:T105
+T108	GPE 2084 2091	Baghdad
+T109	GPE 2047 2051	U.S.
+T110	FAC 2084 2102	Baghdad 's airport
+T111	VEH 2037 2073	a hulking U.S. C-130 transport plane
+T112	VEH 2052 2057	C-130
+T113	Transport 2074 2078	flew
+E19	Transport:T113 Vehicle:T111 Destination:T110
+T114	GPE 2161 2165	U.S.
+T115	PER 2161 2172	U.S. troops
+T116	GPE 2264 2270	Kuwait
+T117	TIM 2185 2194	until now
+T118	Transport 2109 2116	arrival
+E20	Transport:T118
+T119	TIM 2273 2279	Monday
+T120	TIM 2297 2395	one day after British forces in the south made their deepest push into Iraq 's second largest city
+T121	GPE 2368 2372	Iraq
+T122	PER 2311 2338	British forces in the south
+T123	PER 2344 2349	their
+T124	GPE 2311 2318	British
+T125	GPE 2368 2395	Iraq 's second largest city
+T126	LOC 2329 2338	the south
+T127	Transport 2358 2362	push
+E21	Transport:T127 Artifact:T122 Destination:T125 Origin:T126
+T128	GPE 2517 2534	the Iraqi capital
+T129	ORG 2471 2474	CNN
+T130	ORG 2433 2463	the U.S. Joint Chiefs of Staff
+T131	GPE 2437 2441	U.S.
+T132	GPE 2480 2484	U.S.
+T133	PER 2480 2491	U.S. forces
+T134	VEH 2545 2587	Iraqi tanks and armored personnel carriers
+T135	GPE 2521 2526	Iraqi
+T136	GPE 2545 2550	Iraqi
+T137	PER 2398 2413	Gen. Peter Pace
+T138	PER 2398 2402	Gen.
+T139	PER 2416 2463	vice chairman of the U.S. Joint Chiefs of Staff
+T140	Transport 2492 2497	drove
+E22	Transport:T140 Artifact:T133 Destination:T128
+T141	Transfer-Ownership 2537 2544	seizing
+E23	Transfer-Ownership:T141 Artifact:T134 Artifact:T134 Buyer:T133
+T142	GPE 2619 2626	Baghdad
+T143	GPE 2590 2594	U.S.
+T144	LOC 2640 2656	the rest of Iraq
+T145	PER 2590 2604	U.S. officials
+T146	GPE 2652 2656	Iraq
+T147	GPE 2703 2711	the city
+T148	GPE 2662 2664	We
+T149	GPE 2845 2848	our
+T150	PER 2845 2855	our forces
+T151	PER 2774 2855	any Iraqi military forces that might try to either escape or to engage our forces
+T152	PER 2800 2804	that
+T153	FAC 2676 2711	the highways in and out of the city
+T154	GPE 2778 2783	Iraqi
+T155	PER 2866 2870	Pace
+T156	Attack 2838 2844	engage
+E24	Attack:T156 Attacker:T151 Place:T147 Target:T150
+T157	Attack 2767 2773	attack
+E25	Attack:T157 Attacker:T151 Attacker:T150 Place:T153
+T158	TIM 2890 2906	over the weekend
+T159	PER 2930 2940	combatants
+T160	PER 2945 2954	civilians
+T161	Attack 2881 2889	fighting
+E26	Attack:T161 Attacker:T159 Attacker:T160
+T162	GPE 2999 3006	America
+T163	PER 2999 3034	America 's Kurdish comrades in arms
+T164	PER 3046 3102	unintended victims caught in crossfire and friendly fire
+T165	PER 3010 3017	Kurdish
+T166	PER 2957 2982	Injured Russian diplomats
+T167	GPE 2965 2972	Russian
+T168	PER 2987 3034	a convoy of America 's Kurdish comrades in arms
+T169	TIM 3103 3109	Sunday
+T170	Injure 2957 2964	Injured
+E27	Injure:T170 Victim:T166 Victim:T168 Victim:T164 Time-Within:T169
+T171	Attack 3075 3084	crossfire
+E28	Attack:T171 Target:T166 Target:T168 Target:T164 Time-Within:T169
+T172	PER 3123 3138	18 of their own
+T173	GPE 3160 3164	U.S.
+T174	PER 3112 3117	Kurds
+T175	PER 3129 3138	their own
+T176	PER 3129 3134	their
+T177	Die 3139 3143	died
+E29	Die:T177 Victim:T172
+T178	Attack 3169 3175	strike
+E30	Attack:T178 Attacker:T173 Target:T172
+T179	GPE 3282 3289	Baghdad
+T180	PER 3282 3313	Baghdad 's last-ditch defenders
+T181	GPE 3250 3254	U.S.
+T182	PER 3250 3261	U.S. forces
+T183	Attack 3235 3243	fighting
+E31	Attack:T183
+T184	Attack 3273 3281	confront
+E32	Attack:T184 Attacker:T182 Place:T179 Target:T180
+T185	ORG 3442 3474	Associated Press Television News
+T186	FAC 3385 3439	a lavish hideaway believed to have been used by Saddam
+T187	FAC 3340 3369	a VIP building at the airport
+T188	PER 3433 3439	Saddam
+T189	PER 3372 3378	troops
+T190	FAC 3358 3369	the airport
+T191	GPE 3499 3506	Baghdad
+T192	FAC 3579 3610	a Republican Guard headquarters
+T193	FAC 3531 3548	Saddam 's palaces
+T194	FAC 3524 3548	one of Saddam 's palaces
+T195	PER 3509 3516	Marines
+T196	ORG 3581 3597	Republican Guard
+T197	PER 3531 3537	Saddam
+T198	Transfer-Ownership 3517 3523	seized
+E33	Transfer-Ownership:T198 Artifact:T194 Place:T191 Buyer:T195
+T199	ORG 3709 3733	the Army Times newspaper
+T200	LOC 3668 3706	the center of the holy city of Karbala
+T201	GPE 3682 3706	the holy city of Karbala
+T202	GPE 3699 3706	Karbala
+T203	GPE 3633 3637	U.S.
+T204	PER 3633 3644	U.S. forces
+T205	TIM 3658 3664	Sunday
+T206	GPE 3802 3809	Baghdad
+T207	GPE 3760 3764	U.S.
+T208	PER 3760 3771	U.S. forces
+T209	LOC 3908 3916	downtown
+T210	FAC 3908 3926	downtown buildings
+T211	TIM 3834 3861	throughout the night Sunday
+T212	TIM 3868 3897	shortly before dawn on Monday
+T213	Attack 3812 3822	Explosions
+E34	Attack:T213 Time-Within:T211
+T214	LOC 3979 4028	the center of Basra , Iraq 's second largest city
+T215	PER 4070 4076	Saddam
+T216	PER 4070 4086	Saddam loyalists
+T217	GPE 4001 4005	Iraq
+T218	PER 3954 3968	British troops
+T219	PER 4044 4048	they
+T220	GPE 3954 3961	British
+T221	GPE 3993 3998	Basra
+T222	GPE 4001 4028	Iraq 's second largest city
+T223	Transport 3969 3975	thrust
+E35	Transport:T223 Artifact:T218 Destination:T214
+T224	VEH 4201 4275	a column similar in size to the American unit that probed suburban Baghdad
+T225	VEH 4154 4198	more than three dozen tanks and armored cars
+T226	ORG 4229 4246	the American unit
+T227	PER 4095 4114	British Desert Rats
+T228	GPE 4233 4241	American
+T229	GPE 4095 4102	British
+T230	GPE 4125 4148	the city of 1.3 million
+T231	GPE 4137 4148	1.3 million
+T232	Transport 4252 4258	probed
+E36	Transport:T232
+T233	Transport 4115 4119	went
+E37	Transport:T233 Vehicle:T225 Vehicle:T225 Artifact:T227 Destination:T230
+T234	PER 4434 4457	at least three soldiers
+T235	ORG 4363 4374	Baath Party
+T236	PER 4353 4385	the local Baath Party leadership
+T237	PER 4278 4289	The British
+T238	Die 4427 4433	losing
+E38	Die:T238 Victim:T234
+T239	End-Org 4390 4399	crumbling
+E39	End-Org:T239 Org:T235
+T240	Attack 4404 4410	fought
+E40	Attack:T240 Attacker:T237
+T241	PER 4497 4525	British Maj. Gen. Peter Wall
+T242	PER 4497 4514	British Maj. Gen.
+T243	ORG 4531 4538	the BBC
+T244	PER 4463 4465	We
+T245	GPE 4497 4504	British
+T246	GPE 4480 4482	it
+T247	PER 4541 4543	He
+T248	TIM 4563 4567	days
+T249	PER 4580 4589	renegades
+T250	PER 4706 4725	pro-Saddam elements
+T251	PER 4623 4669	some of Iraq 's exiles and internal dissidents
+T252	PER 4706 4716	pro-Saddam
+T253	GPE 4592 4609	The United States
+T254	PER 4631 4669	Iraq 's exiles and internal dissidents
+T255	ORG 4773 4794	one such organization
+T256	ORG 4797 4823	the Iraq National Congress
+T257	GPE 4631 4635	Iraq
+T258	GPE 4677 4688	the country
+T259	Transport 4613 4622	deploying
+E41	Transport:T259 Artifact:T251 Artifact:T254 Artifact:T250 Agent:T253 Origin:T258
+T260	GPE 4899 4920	the city of Nasiriyah
+T261	GPE 4911 4920	Nasiriyah
+T262	PER 4860 4871	its members
+T263	LOC 4886 4920	an area near the city of Nasiriyah
+T264	ORG 4826 4835	The group
+T265	ORG 4860 4863	its
+T266	PER 4841 4871	several hundred of its members
+T267	Transport 4877 4882	flown
+E42	Transport:T267 Artifact:T266 Destination:T263
+T268	GPE 4942 4946	U.S.
+T269	GPE 5004 5008	U.S.
+T270	LOC 4926 4939	northern Iraq
+T271	VEH 4942 4956	U.S. warplanes
+T272	PER 5004 5023	U.S. special forces
+T273	PER 4976 4999	allied Kurdish fighters
+T274	PER 4983 4990	Kurdish
+T275	TIM 5024 5030	Sunday
+T276	Attack 5084 5087	war
+E43	Attack:T276
+T277	Attack 5069 5076	attacks
+E44	Attack:T277
+T278	Attack 4957 4963	struck
+E45	Attack:T278 Place:T270 Target:T273 Target:T272 Instrument:T271 Time-Within:T275
+T279	PER 5090 5108	At least 18 people
+T280	PER 5165 5172	Kurdish
+T281	PER 5186 5193	Kurdish
+T282	PER 5186 5203	Kurdish officials
+T283	PER 5125 5137	more than 45
+T284	PER 5158 5183	senior Kurdish commanders
+T285	Die 5114 5120	killed
+E46	Die:T285 Victim:T279
+T286	Injure 5138 5145	wounded
+E47	Injure:T286 Victim:T283 Victim:T284
+T287	GPE 5211 5215	U.S.
+T288	GPE 5303 5307	U.S.
+T289	ORG 5211 5231	U.S. Central Command
+T290	ORG 5322 5325	its
+T291	PER 5246 5258	one civilian
+T292	PER 5270 5280	six people
+T293	PER 5301 5315	a U.S. soldier
+T294	Die 5259 5265	killed
+E48	Die:T294 Victim:T291
+T295	Die 5281 5288	injured
+E49	Die:T295 Victim:T292 Victim:T293
+T296	GPE 5458 5465	Baghdad
+T297	ORG 5468 5496	the Russian foreign ministry
+T298	PER 5371 5388	Russian diplomats
+T299	GPE 5371 5378	Russian
+T300	GPE 5472 5479	Russian
+T301	PER 5401 5415	the ambassador
+T302	TIM 5434 5440	Sunday
+T303	Attack 5429 5433	fire
+E50	Attack:T303 Place:T296 Target:T298 Target:T301 Time-Within:T302
+T304	PER 5504 5552	A correspondent for state-run Russian television
+T305	ORG 5524 5552	state-run Russian television
+T306	PER 5599 5614	three diplomats
+T307	PER 5627 5630	one
+T308	PER 5558 5568	the convoy
+T309	GPE 5534 5541	Russian
+T310	GPE 5524 5533	state-run
+T311	Injure 5620 5624	hurt
+E51	Injure:T311 Victim:T306 Victim:T307
+T312	Attack 5585 5594	crossfire
+E52	Attack:T312 Target:T308 Target:T306 Target:T307
+T313	GPE 5662 5666	U.S.
+T314	PER 5688 5704	no allied forces
+T315	ORG 5662 5682	U.S. Central Command
+T316	ORG 5750 5752	it

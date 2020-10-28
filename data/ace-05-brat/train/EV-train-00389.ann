@@ -1,0 +1,119 @@
+T1	TIM 44 64	2005-01-30T21 :05:00
+T2	PER 100 115	Deborah Sharavi
+T3	TIM 116 142	31 Jan 2005 18:12:23 -0800
+T4	PER 148 157	THOUSANDS
+T5	GPE 174 180	ISRAEL
+T6	Die 158 162	DIED
+E1	Die:T6 Victim:T4
+T7	GPE 217 223	Kuwait
+T8	GPE 289 291	we
+T9	GPE 234 241	British
+T10	GPE 230 274	the British oil protectorates along the Gulf
+T11	ORG 234 245	British oil
+T12	LOC 266 274	the Gulf
+T13	GPE 208 214	Saudia
+T14	PER 183 189	Saddam
+T15	PER 302 308	stupid
+T16	Attack 292 299	invaded
+E2	Attack:T16 Attacker:T8 Place:T12 Target:T14
+T17	PER 311 318	Deborah
+T18	CTI 319 337	takaou...@juno.com
+T19	PER 319 337	takaou...@juno.com
+T20	TIM 338 364	31 Jan 2005 19:00:01 -0800
+T21	PER 370 379	THOUSANDS
+T22	GPE 396 402	ISRAEL
+T23	Die 380 384	DIED
+E3	Die:T23 Victim:T21
+T24	NUM 560 584	some 10 thousand dollars
+T25	PER 511 554	the families of Palestinian suicide bombers
+T26	GPE 432 454	the Israeli government
+T27	GPE 436 443	Israeli
+T28	PER 424 426	me
+T29	PER 473 479	Saddam
+T30	PER 495 497	he
+T31	GPE 527 538	Palestinian
+T32	PER 527 554	Palestinian suicide bombers
+T33	Transfer-Money 504 510	reward
+E4	Transfer-Money:T33 Giver:T29 Money:T24 Recipient:T25
+T34	PER 587 592	Tilly
+T35	TIM 593 624	Tue , 1 Feb 2005 16:13:33 +1300
+T36	PER 630 639	THOUSANDS
+T37	GPE 656 662	ISRAEL
+T38	Die 640 644	DIED
+E5	Die:T38 Victim:T36
+T39	PER 684 687	you
+T40	WEA 830 844	nuclear weapon
+T41	ORG 722 755	Saddam 's Iraqi Republican Guards
+T42	GPE 732 737	Iraqi
+T43	GPE 824 829	Iraqi
+T44	FAC 820 853	the Iraqi nuclear weapon facility
+T45	WEA 712 721	the scuds
+T46	GPE 768 774	Israel
+T47	GPE 798 810	the Israelis
+T48	TIM 778 782	1991
+T49	TIM 788 792	1982
+T50	PER 722 728	Saddam
+T51	Attack 756 762	lobbed
+E6	Attack:T51 Attacker:T41 Instrument:T45 Time-Within:T48
+T52	Attack 811 819	levelled
+E7	Attack:T52 Attacker:T47 Target:T44 Time-Within:T49
+T53	PER 859 864	Tilly
+T54	CTI 865 895	striking1583REM...@yahoo.co.nz
+T55	PER 896 911	Deborah Sharavi
+T56	TIM 912 937	1 Feb 2005 16:08:57 -0800
+T57	PER 943 952	THOUSANDS
+T58	GPE 969 975	ISRAEL
+T59	Die 953 957	DIED
+E8	Die:T59 Victim:T57
+T60	GPE 1030 1039	Iraq/Iran
+T61	GPE 1111 1115	Iran
+T62	PER 1007 1015	this guy
+T63	TIM 1047 1056	1980-1988
+T64	PER 1070 1076	Saddam
+T65	Attack 1099 1107	invasion
+E9	Attack:T65 Attacker:T64 Place:T61 Time-Within:T63
+T66	Attack 1040 1043	war
+E10	Attack:T66 Place:T60 Place:T60 Time-Holds:T63
+T67	PER 1134 1142	Khomeini
+T68	GPE 1171 1175	Iran
+T69	GPE 1206 1210	they
+T70	PER 1118 1124	Anyone
+T71	TIM 1161 1165	1982
+T72	PER 1221 1227	Saddam
+T73	Attack 1191 1199	fighting
+E11	Attack:T73 Attacker:T68 Attacker:T69 Place:T68 Target:T72 Time-Within:T71
+T74	WEA 1257 1273	chemical weapons
+T75	PER 1240 1246	Saddam
+T76	Attack 1250 1253	use
+E12	Attack:T76 Attacker:T75 Instrument:T74
+T77	GPE 1326 1335	ourselves
+T78	GPE 1380 1387	Kuwaiti
+T79	GPE 1288 1290	we
+T80	GPE 1301 1310	the Brits
+T81	TIM 1356 1360	1987
+T82	VEH 1380 1399	Kuwaiti oil tankers
+T83	Attack 1369 1376	attacks
+E13	Attack:T83 Target:T82 Time-Within:T81
+T84	Attack 1344 1347	war
+E14	Attack:T84 Time-Within:T81
+T85	PER 1402 1417	How many Iraqis
+T86	PER 1422 1430	Iranians
+T87	Attack 1451 1454	war
+E15	Attack:T87 Target:T85 Target:T86
+T88	Die 1436 1442	killed
+E16	Die:T88 Victim:T85 Victim:T86
+T89	PER 1457 1468	One million
+T90	PER 1471 1482	Two million
+T91	GPE 1544 1550	Kuwait
+T92	GPE 1514 1519	Iraqi
+T93	TIM 1551 1573	barely two years after
+T94	ORG 1578 1588	UN-imposed
+T95	PER 1485 1491	Saddam
+T96	PER 1533 1535	he
+T97	PER 1514 1530	Iraqi casualties
+T98	Attack 1536 1543	invaded
+E17	Attack:T98 Attacker:T96 Time-At-End:T93
+T99	PER 1601 1611	This clown
+T100	GPE 1662 1685	Israel who got panicked
+T101	GPE 1669 1672	who
+T102	PER 1703 1710	Deborah

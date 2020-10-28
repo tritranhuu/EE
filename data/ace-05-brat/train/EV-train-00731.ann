@@ -1,0 +1,62 @@
+T1	TIM 45 65	2005-01-07T20 :12:00
+T2	PER 92 97	Scott
+T3	TIM 98 118	2005-01-07T20 :12:00
+T4	TIM 196 207	20-year-old
+T5	GPE 119 148	The blood red nation of China
+T6	GPE 143 148	China
+T7	PER 229 234	women
+T8	PER 247 266	more than one child
+T9	Be-Born 240 246	having
+E1	Be-Born:T9 Person:T8 Place:T5 Time-Holds:T4
+T10	PER 283 303	only about 100 girls
+T11	PER 342 349	couples
+T12	PER 317 331	every 119 boys
+T13	PER 370 375	males
+T14	Be-Born 308 312	born
+E2	Be-Born:T14 Person:T10 Person:T12
+T15	TIM 431 435	2010
+T16	GPE 378 385	Beijing
+T17	GPE 453 457	they
+T18	PER 559 564	girls
+T19	PER 551 555	boys
+T20	GPE 595 599	they
+T21	TIM 570 573	now
+T22	PER 585 594	the males
+T23	Die 577 584	killing
+E3	Die:T23 Agent:T20 Victim:T22
+T24	GPE 643 652	a country
+T25	PER 841 846	girls
+T26	PER 775 781	a baby
+T27	ORG 660 667	Reuters
+T28	TIM 909 924	in recent years
+T29	GPE 998 1003	China
+T30	PER 1040 1049	one-child
+T31	PER 976 985	the first
+T32	PER 989 995	a girl
+T33	PER 1076 1105	those who advocate against it
+T34	PER 1082 1085	who
+T35	PER 937 951	rural families
+T36	PER 960 972	two children
+T37	TIM 1165 1169	1988
+T38	ORG 1186 1209	a Shanghai soap factory
+T39	GPE 1188 1196	Shanghai
+T40	PER 1108 1125	One such activist
+T41	PER 1129 1247	Mao Hengfeng , who was dismissed in 1988 from her job at a Shanghai soap factory after becoming pregnant a second time
+T42	PER 1144 1147	who
+T43	PER 1175 1178	her
+T44	End-Position 1152 1161	dismissed
+E4	End-Position:T44 Place:T39 Entity:T38 Time-Within:T37 Person:T43
+T45	FAC 1329 1341	a labor camp
+T46	TIM 1250 1260	Last April
+T47	PER 1370 1379	one-child
+T48	ORG 1263 1298	the Shanghai public security bureau
+T49	TIM 1316 1325	18 months
+T50	SEN 1316 1341	18 months in a labor camp
+T51	CRM 1346 1386	campaigning against the one-child policy
+T52	PER 1309 1312	her
+T53	Sentence 1299 1308	sentenced
+E5	Sentence:T53 Adjudicator:T48 Crime:T51 Defendant:T52 Sentence:T50 Time-Within:T46
+T54	GPE 1463 1480	the United States
+T55	PER 1405 1414	feminists
+T56	PER 1429 1433	they
+T57	PER 1438 1459	second-class citizens

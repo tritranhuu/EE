@@ -1,0 +1,67 @@
+T1	TIM 38 57	2003-05-16 11:31:40
+T2	ORG 58 60	we
+T3	ORG 100 102	we
+T4	PER 135 148	laci peterson
+T5	TIM 83 93	a few days
+T6	ORG 167 169	we
+T7	TIM 202 214	this morning
+T8	GPE 325 335	california
+T9	GPE 315 335	modesto , california
+T10	ORG 289 292	our
+T11	PER 289 305	our rusty dornin
+T12	LOC 448 465	san francisco bay
+T13	PER 414 420	police
+T14	ORG 375 377	we
+T15	PER 499 512	laci peterson
+T16	PER 364 372	reporter
+T17	TIM 534 546	this morning
+T18	LOC 620 637	san francisco bay
+T19	PER 608 614	divers
+T20	VEH 549 603	numerous agency r agencies boats with sonar technology
+T21	ORG 558 564	agency
+T22	PER 640 644	they
+T23	GPE 659 667	richmond
+T24	FAC 655 674	the richmond marina
+T25	LOC 686 706	the urbuinano island
+T26	FAC 709 732	the coast guard station
+T27	ORG 713 724	coast guard
+T28	Transport 645 649	came
+E1	Transport:T28 Artifact:T22 Origin:T24 Origin:T25 Origin:T26
+T29	LOC 735 737	it
+T30	LOC 755 769	a staging area
+T31	LOC 836 843	the bay
+T32	LOC 844 848	here
+T33	ORG 772 776	they
+T34	TIM 849 852	now
+T35	PER 858 861	you
+T36	LOC 917 927	right here
+T37	TIM 873 884	a month ago
+T38	PER 885 898	laci peterson
+T39	Die 902 906	body
+E2	Die:T39 Victim:T38 Time-Before:T37
+T40	LOC 930 959	an area called point isabelle
+T41	LOC 995 1025	an area known as brooks island
+T42	LOC 975 986	the channel
+T43	PER 1069 1083	scott peterson
+T44	PER 1099 1101	he
+T45	PER 1028 1032	they
+T46	PER 1044 1050	police
+T47	PER 1089 1093	them
+T48	LOC 1055 1059	that
+T49	LOC 1063 1068	where
+T50	PER 1130 1143	laci peterson
+T51	TIM 1117 1157	the day that laci peterson did disappear
+T52	Transport 1106 1108	go
+E3	Transport:T52 Artifact:T44 Destination:T49
+T53	PER 1224 1228	they
+T54	TIM 1160 1163	now
+T55	PER 1166 1201	a source close to the investigation
+T56	PER 1308 1321	laci peterson
+T57	PER 1211 1213	me
+T58	PER 1416 1430	scott peterson
+T59	PER 1377 1381	they
+T60	FAC 1416 1443	scott peterson 's wearhouse
+T61	PER 1502 1516	scott peterson
+T62	WEA 1537 1550	a smoking gun
+T63	PER 1577 1581	they
+T64	PER 1618 1631	laci peterson

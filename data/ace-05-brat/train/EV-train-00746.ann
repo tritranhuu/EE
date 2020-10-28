@@ -1,0 +1,146 @@
+T1	TIM 36 56	2005-02-18T12 :50:00
+T2	PER 100 124	superprimen...@gmail.com
+T3	CTI 100 124	superprimen...@gmail.com
+T4	TIM 125 151	17 Feb 2005 21:50:52 -0800
+T5	ORG 152 158	S Corp
+T6	Declare-Bankruptcy 183 192	Bankrupcy
+E1	Declare-Bankruptcy:T6
+T7	PER 195 197	My
+T8	TIM 227 231	2003
+T9	TIM 255 264	June 2004
+T10	PER 195 203	My uncle
+T11	PER 236 239	his
+T12	Declare-Bankruptcy 213 223	bankruptcy
+E2	Declare-Bankruptcy:T12 Org:T10 Time-Within:T8
+T13	ORG 291 305	my corporation
+T14	ORG 321 337	my S Corporation
+T15	PER 418 431	the creditors
+T16	PER 270 271	I
+T17	PER 291 293	my
+T18	PER 321 323	my
+T19	PER 372 373	I
+T20	TIM 309 317	Feb 2004
+T21	TIM 471 475	2005
+T22	TIM 401 410	this year
+T23	PER 349 365	30 % shareholder
+T24	PER 277 280	him
+T25	PER 345 348	him
+T26	PER 464 467	him
+T27	NUM 349 353	30 %
+T28	Transfer-Money 448 452	take
+E3	Transfer-Money:T28 Giver:T26 Recipient:T15 Time-Within:T21
+T29	Transfer-Ownership 272 276	give
+E4	Transfer-Ownership:T29 Beneficiary:T24 Artifact:T13 Seller:T16 Time-Within:T20
+T30	PER 478 490	Thomas Healy
+T31	TIM 491 521	Fri , 18 Feb 2005 06:09:54 GMT
+T32	ORG 527 533	S Corp
+T33	Declare-Bankruptcy 558 567	Bankrupcy
+E5	Declare-Bankruptcy:T33
+T34	TIM 573 589	2/17/05 10:50 PM
+T35	CTI 603 659	1108705852.360452.268...@f14g2 000cwb . googlegroups.com
+T36	PER 684 686	he
+T37	Declare-Bankruptcy 722 732	bankruptcy
+E6	Declare-Bankruptcy:T37 Org:T36
+T38	PER 787 788	I
+T39	PER 871 874	his
+T40	Declare-Bankruptcy 837 847	bankruptcy
+E7	Declare-Bankruptcy:T40
+T41	PER 889 904	Tom Healy , CPA
+T42	PER 889 898	Tom Healy
+T43	GPE 915 917	CO
+T44	GPE 905 917	Boulder , CO
+T45	PER 924 935	Shyster1040
+T46	TIM 936 968	Fri , 18 Feb 2005 08:32:13 -0500
+T47	ORG 974 980	S Corp
+T48	PER 1021 1032	the trustee
+T49	PER 1089 1093	your
+T50	PER 1080 1083	you
+T51	PER 1089 1099	your uncle
+T52	PER 1120 1123	his
+T53	Declare-Bankruptcy 1190 1200	bankruptcy
+E8	Declare-Bankruptcy:T53 Org:T52
+T54	PER 1336 1339	you
+T55	PER 1365 1368	you
+T56	PER 1405 1409	your
+T57	PER 1386 1397	the trustee
+T58	PER 1278 1289	the trustee
+T59	PER 1294 1305	the trustee
+T60	PER 1405 1415	your uncle
+T61	PER 1492 1495	his
+T62	PER 1626 1635	creditors
+T63	PER 1648 1651	you
+T64	PER 1669 1680	the trustee
+T65	PER 1705 1708	You
+T66	PER 1726 1747	a bankruptcy attorney
+T67	Declare-Bankruptcy 1728 1738	bankruptcy
+E9	Declare-Bankruptcy:T67
+T68	Declare-Bankruptcy 1767 1777	bankruptcy
+E10	Declare-Bankruptcy:T68
+T69	PER 1806 1830	superprimen...@gmail.com
+T70	CTI 1806 1830	superprimen...@gmail.com
+T71	TIM 1831 1857	18 Feb 2005 10:49:15 -0800
+T72	ORG 1863 1869	S Corp
+T73	Declare-Bankruptcy 1894 1903	Bankrupcy
+E11	Declare-Bankruptcy:T73
+T74	PER 2002 2003	i
+T75	TIM 1973 1983	early 2004
+T76	TIM 1941 1945	2003
+T77	PER 2009 2012	him
+T78	Declare-Bankruptcy 1910 1919	bankrupcy
+E12	Declare-Bankruptcy:T78 Org:T77 Time-Within:T76
+T79	Transfer-Ownership 2004 2008	gave
+E13	Transfer-Ownership:T79 Beneficiary:T77 Seller:T74 Time-Within:T75
+T80	TIM 2046 2050	2003
+T81	PER 2026 2028	He
+T82	PER 2053 2064	Shyster1040
+T83	TIM 2065 2097	Fri , 18 Feb 2005 14:21:23 -0500
+T84	ORG 2103 2109	S Corp
+T85	Declare-Bankruptcy 2134 2143	Bankrupcy
+E14	Declare-Bankruptcy:T85
+T86	PER 2179 2182	you
+T87	PER 2250 2253	you
+T88	PER 2196 2198	he
+T89	PER 2259 2262	him
+T90	Declare-Bankruptcy 2224 2234	bankruptcy
+E15	Declare-Bankruptcy:T90
+T91	PER 2286 2289	you
+T92	PER 2304 2307	you
+T93	TIM 2331 2344	February 2004
+T94	TIM 2387 2399	June of 2004
+T95	PER 2276 2277	I
+T96	PER 2313 2316	him
+T97	Transfer-Ownership 2308 2312	gave
+E16	Transfer-Ownership:T97 Beneficiary:T96 Seller:T95 Time-Within:T93
+T98	PER 2566 2575	creditors
+T99	PER 2533 2544	the trustee
+T100	PER 2418 2420	he
+T101	PER 2447 2449	he
+T102	Declare-Bankruptcy 2463 2473	bankruptcy
+E17	Declare-Bankruptcy:T102 Org:T101
+T103	PER 2678 2688	the debtor
+T104	PER 2617 2620	you
+T105	PER 2715 2726	the trustee
+T106	Declare-Bankruptcy 2580 2590	bankruptcy
+E18	Declare-Bankruptcy:T106
+T107	PER 2798 2801	you
+T108	PER 2896 2899	you
+T109	PER 2732 2743	the trustee
+T110	PER 2839 2850	the trustee
+T111	ORG 3244 3259	the corporation
+T112	PER 3059 3072	the creditors
+T113	PER 3110 3114	they
+T114	PER 3201 3205	them
+T115	PER 2935 2939	your
+T116	PER 3158 3161	you
+T117	PER 3166 3170	your
+T118	ORG 3011 3031	the bankruptcy court
+T119	PER 2935 2945	your uncle
+T120	PER 2972 2974	he
+T121	PER 3166 3176	your uncle
+T122	PER 3185 3188	his
+T123	PER 3338 3341	him
+T124	PER 3230 3233	his
+T125	Declare-Bankruptcy 3015 3025	bankruptcy
+E19	Declare-Bankruptcy:T125
+T126	Declare-Bankruptcy 3301 3311	bankruptcy
+E20	Declare-Bankruptcy:T126

@@ -1,0 +1,61 @@
+T1	TIM 34 42	20030423
+T2	GPE 127 136	SINGAPORE
+T3	ORG 143 145	AP
+T4	GPE 194 197	its
+T5	GPE 290 293	its
+T6	GPE 152 161	Singapore
+T7	GPE 306 314	Malaysia
+T8	PER 152 173	Singapore authorities
+T9	LOC 290 314	its border with Malaysia
+T10	LOC 428 432	Tuas
+T11	ORG 410 413	its
+T12	ORG 317 358	The Immigration and Checkpoints Authority
+T13	ORG 364 366	it
+T14	PER 459 514	people suffering from severe acute respiratory syndrome
+T15	TIM 397 406	Wednesday
+T16	FAC 410 444	its Woodlands and Tuas checkpoints
+T17	LOC 414 423	Woodlands
+T18	GPE 590 599	Singapore
+T19	GPE 658 681	SARS-affected countries
+T20	TIM 618 627	last week
+T21	ORG 555 563	military
+T22	FAC 590 617	Singapore 's Changi Airport
+T23	PER 637 681	people arriving from SARS-affected countries
+T24	Transport 644 652	arriving
+E1	Transport:T24 Artifact:T23 Origin:T19
+T25	PER 684 689	Those
+T26	PER 690 693	who
+T27	GPE 929 938	Singapore
+T28	TIM 862 870	Each day
+T29	PER 871 890	about 90,000 people
+T30	GPE 916 924	Malaysia
+T31	LOC 897 938	the border between Malaysia and Singapore
+T32	Transport 891 896	cross
+E2	Transport:T32 Destination:T27 Origin:T30 Origin:T27 Time-Within:T28 Artifact:T29 Destination:T30
+T33	GPE 973 982	Singapore
+T34	PER 1037 1042	nurse
+T35	FAC 1028 1050	a nearby nurse station
+T36	PER 941 1006	Any person found to be entering Singapore with a high temperature
+T37	Transport 1016 1024	directed
+E3	Transport:T37 Destination:T35 Artifact:T36
+T38	Transport 964 972	entering
+E4	Transport:T38 Destination:T33 Artifact:T36
+T39	GPE 1072 1081	Singapore
+T40	PER 1148 1186	186 infected from the flu-like illness
+T41	LOC 1107 1116	the world
+T42	Die 1098 1104	deaths
+E5	Die:T42 Place:T39
+T43	PER 1200 1219	at least 236 people
+T44	PER 1234 1249	more than 4,000
+T45	Die 1225 1229	died
+E6	Die:T45 Victim:T43
+T46	ORG 1290 1327	Immigration and Checkpoints Authority
+T47	TIM 1367 1383	the trial period
+T48	FAC 1416 1509	bus checkpoints , where passengers are already required to disembark for immigration purposes
+T49	FAC 1434 1439	where
+T50	VEH 1416 1419	bus
+T51	PER 1440 1450	passengers
+T52	PER 1290 1354	Immigration and Checkpoints Authority spokeswoman Ngoon Pei Ling
+T53	PER 1290 1339	Immigration and Checkpoints Authority spokeswoman
+T54	Transport 1475 1484	disembark
+E7	Transport:T54 Vehicle:T50 Artifact:T51 Destination:T48

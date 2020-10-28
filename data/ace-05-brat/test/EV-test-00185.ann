@@ -1,0 +1,157 @@
+T1	TIM 38 57	2003-05-25 16:00:10
+T2	PER 118 128	carrot top
+T3	PER 132 134	he
+T4	ORG 147 205	one of the oldest and most reared corporations in the land
+T5	ORG 208 215	at & t.
+T6	GPE 197 205	the land
+T7	ORG 154 205	the oldest and most reared corporations in the land
+T8	PER 82 88	people
+T9	PER 216 218	we
+T10	PER 245 249	your
+T11	PER 316 320	them
+T12	PER 296 299	you
+T13	PER 323 333	carrot top
+T14	PER 397 399	us
+T15	PER 445 448	his
+T16	ORG 413 432	fortune '' magazine
+T17	PER 490 494	andy
+T18	PER 511 513	he
+T19	PER 517 532	a hot commodity
+T20	PER 540 541	i
+T21	PER 566 567	i
+T22	PER 599 601	my
+T23	PER 618 656	the most annoying person on the planet
+T24	LOC 646 656	the planet
+T25	PER 659 660	i
+T26	PER 687 725	the most annoying person on the planet
+T27	LOC 715 725	the planet
+T28	PER 773 776	him
+T29	PER 780 791	a pitch man
+T30	ORG 736 791	this old blue chip company that uses him as a pitch man
+T31	ORG 763 767	that
+T32	PER 794 795	i
+T33	PER 815 823	this guy
+T34	ORG 831 835	they
+T35	PER 874 876	he
+T36	TIM 870 873	now
+T37	PER 903 905	he
+T38	PER 920 925	girls
+T39	PER 961 965	this
+T40	PER 969 979	carrot top
+T41	PER 999 1009	carrot top
+T42	PER 987 993	anyone
+T43	PER 1045 1047	he
+T44	PER 1031 1032	i
+T45	PER 1059 1061	my
+T46	PER 1108 1116	this guy
+T47	PER 1070 1071	i
+T48	GPE 1079 1086	atlanta
+T49	ORG 1119 1146	the san francisco chronicle
+T50	ORG 1165 1168	its
+T51	PER 1165 1176	its readers
+T52	PER 1180 1234	most annoying celebrities famous for just being famous
+T53	PER 1237 1247	carrot top
+T54	PER 1250 1267	kathy lee gifford
+T55	PER 1268 1278	number two
+T56	PER 1281 1283	he
+T57	PER 1327 1330	him
+T58	PER 1292 1303	a celebrity
+T59	PER 1331 1334	one
+T60	ORG 1310 1316	at & t
+T61	PER 1337 1344	anybody
+T62	PER 1350 1353	you
+T63	ORG 1408 1417	the media
+T64	PER 1380 1386	nobody
+T65	PER 1424 1427	him
+T66	PER 1390 1401	a celebrity
+T67	PER 1428 1431	one
+T68	PER 1455 1464	my friend
+T69	PER 1465 1470	susan
+T70	PER 1455 1457	my
+T71	PER 1473 1476	you
+T72	PER 1511 1513	he
+T73	PER 1591 1594	him
+T74	ORG 1561 1574	your magazine
+T75	PER 1561 1565	your
+T76	PER 1547 1574	somebody from your magazine
+T77	Meet 1575 1580	spent
+E1	Meet:T77 Entity:T76 Entity:T73
+T78	PER 1613 1616	him
+T79	PER 1628 1641	everyone else
+T80	PER 1668 1676	this guy
+T81	PER 1731 1738	the guy
+T82	GPE 1691 1700	stockholm
+T83	PER 1649 1651	he
+T84	PER 1712 1714	he
+T85	Meet 1652 1657	spent
+E2	Meet:T85 Entity:T83 Entity:T80
+T86	PER 1747 1749	he
+T87	PER 1753 1763	a nice guy
+T88	GPE 1789 1798	stockholm
+T89	PER 1824 1834	carrot top
+T90	PER 1837 1839	he
+T91	PER 1846 1848	he
+T92	PER 1903 1913	carrot top
+T93	PER 1917 2029	one of those c list celebrities who wormed their way into your consciousness without you knowing how it happened
+T94	PER 1975 1979	your
+T95	PER 2002 2005	you
+T96	PER 1924 2029	those c list celebrities who wormed their way into your consciousness without you knowing how it happened
+T97	PER 1949 1952	who
+T98	PER 1960 1965	their
+T99	PER 1894 1896	he
+T100	PER 2054 2097	a kid who 's stormed into our consciousness
+T101	PER 2060 2063	who
+T102	PER 2100 2112	lebron james
+T103	PER 2080 2083	our
+T104	PER 2115 2160	the high school basketball phenom out of ohio
+T105	GPE 2156 2160	ohio
+T106	ORG 2119 2130	high school
+T107	PER 2163 2165	he
+T108	PER 2190 2198	a senior
+T109	ORG 2234 2241	the nba
+T110	TIM 2185 2187	18
+T111	ORG 2287 2289	ap
+T112	NUM 2317 2329	$ 90 million
+T113	ORG 2363 2372	cleveland
+T114	ORG 2391 2395	they
+T115	PER 2332 2344	lebron james
+T116	PER 2363 2384	cleveland 's top pick
+T117	ORG 2427 2430	nba
+T118	PER 2400 2438	the number one pick in the nba lottery
+T119	ORG 2441 2445	nike
+T120	ORG 2483 2488	their
+T121	ORG 2531 2535	team
+T122	PER 2456 2466	the phenom
+T123	PER 2595 2602	the kid
+T124	ORG 2646 2654	the pros
+T125	ORG 2620 2627	college
+T126	PER 2559 2568	everybody
+T127	ORG 2772 2791	stanford university
+T128	PER 2720 2731	tiger woods
+T129	PER 2749 2752	his
+T130	PER 2705 2709	they
+T131	NUM 2732 2744	$ 40 million
+T132	ORG 2900 2903	pga
+T133	PER 2798 2800	he
+T134	PER 2834 2836	he
+T135	PER 2927 2935	this kid
+T136	PER 2953 2969	shaquille o'neal
+T137	PER 2911 2917	nobody
+T138	ORG 2979 2983	nike
+T139	ORG 2988 2991	nba
+T140	PER 3008 3026	the next big thing
+T141	PER 3054 3057	his
+T142	PER 3108 3111	his
+T143	ORG 3184 3207	the cleveland cavaliers
+T144	PER 3151 3153	he
+T145	ORG 3142 3173	the team he ultimately plays on
+T146	ORG 3237 3241	they
+T147	ORG 3213 3226	somebody else
+T148	ORG 3295 3308	the cavaliers
+T149	PER 3271 3308	the starting five of of the cavaliers
+T150	PER 3311 3312	i
+T151	PER 3330 3332	my
+T152	ORG 3341 3345	they
+T153	ORG 3375 3382	the nba
+T154	PER 3385 3386	i
+T155	PER 3404 3412	this guy

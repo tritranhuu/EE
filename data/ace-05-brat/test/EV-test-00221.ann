@@ -1,0 +1,73 @@
+T1	TIM 38 57	2003-05-05 11:06:50
+T2	GPE 98 103	china
+T3	GPE 106 117	the country
+T4	TIM 127 130	now
+T5	Die 159 165	deaths
+E1	Die:T5
+T6	GPE 224 231	beijing
+T7	GPE 240 277	the most affected part of the country
+T8	LOC 331 345	northern china
+T9	GPE 266 277	the country
+T10	LOC 392 400	the west
+T11	LOC 362 376	the east coast
+T12	TIM 348 376	11:00 a.m. on the east coast
+T13	TIM 379 400	8:00 a.m. on the west
+T14	PER 403 414	leon harris
+T15	PER 459 468	survivors
+T16	LOC 496 507	the midwest
+T17	LOC 512 521	the south
+T18	GPE 566 572	kansas
+T19	GPE 599 608	tennessee
+T20	GPE 586 594	arkansas
+T21	GPE 575 583	missouri
+T22	GPE 655 663	missouri
+T23	GPE 735 759	several western counties
+T24	PER 666 678	the governor
+T25	PER 762 771	20 people
+T26	GPE 787 797	that state
+T27	Die 777 783	killed
+E2	Die:T27 Victim:T25 Place:T26
+T28	GPE 803 809	kansas
+T29	GPE 904 913	the state
+T30	PER 812 823	authorities
+T31	PER 828 840	seven people
+T32	LOC 879 913	the southeastern part of the state
+T33	Die 846 852	killed
+E3	Die:T33 Victim:T31 Place:T28
+T34	GPE 967 972	there
+T35	GPE 916 932	several counties
+T36	GPE 952 966	disaster areas
+T37	FAC 1023 1028	homes
+T38	FAC 1043 1054	power lines
+T39	LOC 988 998	the region
+T40	PER 1105 1111	people
+T41	PER 1112 1115	who
+T42	PER 1080 1092	search teams
+T43	LOC 1143 1182	the sites proving to be the most deadly
+T44	LOC 1136 1182	one of the sites proving to be the most deadly
+T45	LOC 1187 1254	the law enforcement center in the western tennessee city of jackson
+T46	LOC 1221 1238	western tennessee
+T47	GPE 1217 1254	the western tennessee city of jackson
+T48	GPE 1247 1254	jackson
+T49	LOC 1310 1315	there
+T50	PER 1294 1304	ten people
+T51	ORG 1285 1288	cnn
+T52	PER 1257 1278	an emergency official
+T53	Die 1305 1309	died
+E4	Die:T53 Victim:T50 Place:T49
+T54	PER 1318 1324	dozens
+T55	Injure 1330 1334	hurt
+E5	Injure:T55 Victim:T54
+T56	GPE 1387 1396	tennessee
+T57	PER 1364 1396	the mayor of jackson , tennessee
+T58	PER 1399 1413	charles farmer
+T59	GPE 1377 1396	jackson , tennessee
+T60	ORG 1345 1347	us
+T61	Phone-Write 1355 1360	phone
+E6	Phone-Write:T61 Entity:T60 Entity:T57
+T62	PER 1416 1428	mayor farmer
+T63	PER 1416 1421	mayor
+T64	PER 1435 1438	you
+T65	PER 1461 1465	your
+T66	GPE 1461 1470	your town
+T67	ORG 1444 1446	us

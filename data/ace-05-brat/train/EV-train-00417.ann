@@ -1,0 +1,49 @@
+T1	TIM 41 60	2003-05-13 23:10:24
+T2	GPE 145 150	state
+T3	PER 71 104	oklahoma city bombing conspirator
+T4	PER 61 118	convicted oklahoma city bombing conspirator terry nichols
+T5	GPE 71 84	oklahoma city
+T6	CRM 151 157	murder
+T7	Convict 61 70	convicted
+E1	Convict:T7 Defendant:T4
+T8	Charge-Indict 158 165	charges
+E2	Charge-Indict:T8 Crime:T6 Defendant:T4
+T9	Trial-Hearing 130 135	trial
+E3	Trial-Hearing:T9 Defendant:T4 Crime:T6
+T10	PER 168 175	nichols
+T11	PER 203 206	his
+T12	PER 283 306	eight federal employees
+T13	TIM 314 318	1995
+T14	CRM 207 227	federal manslaughter
+T15	SEN 187 198	a life term
+T16	CRM 232 242	conspiracy
+T17	Convict 243 254	convictions
+E4	Convict:T17 Defendant:T10 Crime:T14 Crime:T16
+T18	Die 273 279	deaths
+E5	Die:T18 Victim:T12 Agent:T10 Time-Within:T13
+T19	Attack 319 324	blast
+E6	Attack:T19 Time-Within:T13
+T20	PER 430 437	nichols
+T21	GPE 330 343	oklahoma city
+T22	PER 327 349	an oklahoma city judge
+T23	PER 360 371	prosecutors
+T24	CRM 441 447	murder
+T25	PER 460 495	the other 160 victims of the attack
+T26	Trial-Hearing 426 429	try
+E7	Trial-Hearing:T26 Defendant:T20 Prosecutor:T23 Crime:T24
+T27	Attack 489 495	attack
+E8	Attack:T27 Attacker:T25 Target:T20
+T28	Trial-Hearing 415 422	hearing
+E9	Trial-Hearing:T28 Adjudicator:T22 Defendant:T20 Prosecutor:T23 Place:T21 Crime:T24
+T29	PER 498 502	they
+T30	SEN 513 530	the death penalty
+T31	FAC 600 637	the alfred p. murrah federal building
+T32	PER 533 548	timothy mcveigh
+T33	WEA 585 589	that
+T34	WEA 576 584	the bomb
+T35	TIM 653 673	nearly two years ago
+T36	CRM 564 637	setting off the bomb that destroyed the alfred p. murrah federal building
+T37	Execute 644 652	executed
+E10	Execute:T37 Person:T32 Crime:T36 Time-At-Beginning:T35
+T38	Convict 551 560	convicted
+E11	Convict:T38 Defendant:T32 Crime:T36

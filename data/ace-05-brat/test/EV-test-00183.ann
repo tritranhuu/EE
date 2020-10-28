@@ -1,0 +1,23 @@
+T1	TIM 41 60	2003-04-24 13:52:32
+T2	TIM 142 154	this morning
+T3	PER 107 118	a principal
+T4	PER 61 83	police in pennsylvania
+T5	PER 84 93	a student
+T6	PER 134 141	himself
+T7	GPE 71 83	pennsylvania
+T8	Die 102 106	shot
+E1	Die:T8 Victim:T3 Agent:T5 Place:T7 Time-Within:T2
+T9	Die 126 133	killing
+E2	Die:T9 Victim:T6 Agent:T5 Place:T7 Time-Within:T2
+T10	FAC 172 260	the cafeteria of red lion area junior high school about 30 miles southeast of harrisburg
+T11	GPE 250 260	harrisburg
+T12	FAC 189 221	red lion area junior high school
+T13	Die 157 159	it
+E3	Die:T13 Place:T10
+T14	TIM 278 295	7:30 this morning
+T15	Die 263 265	it
+E4	Die:T15 Time-Within:T14
+T16	PER 298 306	students
+T17	FAC 344 364	a senior high school
+T18	Transport 317 322	moved
+E5	Transport:T18 Artifact:T16 Destination:T17

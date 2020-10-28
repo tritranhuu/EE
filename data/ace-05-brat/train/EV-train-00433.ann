@@ -1,0 +1,15 @@
+T1	TIM 41 60	2003-04-29 23:13:52
+T2	ORG 87 95	congress
+T3	NUM 108 120	$ 15 billion
+T4	PER 61 75	president bush
+T5	PER 61 70	president
+T6	PER 104 107	his
+T7	PER 326 351	at least 2 million people
+T8	LOC 230 239	the world
+T9	FAC 164 175	white house
+T10	PER 189 239	aids activists and lawmakers from around the world
+T11	TIM 357 372	the next decade
+T12	PER 242 255	the president
+T13	PER 261 264	hir
+T14	Meet 176 185	gathering
+E1	Meet:T14 Place:T9 Entity:T10 Entity:T10 Entity:T12

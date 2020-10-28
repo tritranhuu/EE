@@ -1,0 +1,67 @@
+T1	TIM 45 65	2005-01-06T13 :10:00
+T2	PER 99 104	Scott
+T3	TIM 105 125	2005-01-06T13 :10:00
+T4	PER 126 135	Feminists
+T5	PER 223 228	their
+T6	PER 334 337	her
+T7	PER 223 235	their martyr
+T8	PER 238 250	Andrea Yates
+T9	TIM 163 168	today
+T10	PER 275 289	the prosecutor
+T11	PER 275 309	the prosecutor 's expert witnesses
+T12	ORG 172 188	an appeals court
+T13	PER 268 309	one of the prosecutor 's expert witnesses
+T14	Trial-Hearing 338 343	trial
+E1	Trial-Hearing:T14 Defendant:T6 Prosecutor:T10
+T15	Appeal 175 182	appeals
+E2	Appeal:T15 Adjudicator:T12
+T16	Convict 208 219	convictions
+E3	Convict:T16 Defendant:T8
+T17	PER 472 475	one
+T18	PER 362 365	you
+T19	PER 429 432	her
+T20	PER 488 491	her
+T21	PER 407 410	who
+T22	PER 346 351	Yates
+T23	PER 386 499	the women from Texas who heinously drowned her five kids , aged 6 months to 7 years , one by one , in her bathtub
+T24	TIM 462 469	7 years
+T25	TIM 450 458	6 months
+T26	PER 429 469	her five kids , aged 6 months to 7 years
+T27	GPE 401 406	Texas
+T28	Die 421 428	drowned
+E4	Die:T28 Victim:T26 Agent:T23 Place:T27
+T29	ORG 574 681	the National Organization for Women , which provided money for her defense fund and held candlelight vigils
+T30	ORG 612 617	which
+T31	PER 543 548	Yates
+T32	PER 637 640	her
+T33	ORG 502 532	Liberal feminist organizations
+T34	Transfer-Money 618 626	provided
+E5	Transfer-Money:T34 Giver:T29 Beneficiary:T32
+T35	PER 717 720	her
+T36	PER 717 739	her five dead children
+T37	Die 726 730	dead
+E6	Die:T37 Victim:T36
+T38	PER 809 830	three of her children
+T39	PER 750 756	a jury
+T40	SEN 776 790	life in prison
+T41	PER 767 772	Yates
+T42	PER 818 821	her
+T43	TIM 745 749	2002
+T44	CRM 795 830	the deaths of three of her children
+T45	PER 818 830	her children
+T46	Die 799 805	deaths
+E7	Die:T46 Victim:T38 Agent:T41
+T47	Sentence 757 766	sentenced
+E8	Sentence:T47 Adjudicator:T39 Defendant:T41 Sentence:T40 Crime:T44 Time-Within:T43
+T48	PER 868 881	the other two
+T49	PER 833 836	She
+T50	CRM 854 881	the deaths of the other two
+T51	Trial-Hearing 845 850	tried
+E9	Trial-Hearing:T51 Defendant:T49 Crime:T50
+T52	TIM 884 889	Today
+T53	ORG 890 914	the 1st Court of Appeals
+T54	Trial-Hearing 960 965	trial
+E10	Trial-Hearing:T54
+T55	Convict 930 941	convictions
+E11	Convict:T55
+T56	PER 968 970	We

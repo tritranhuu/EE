@@ -1,0 +1,36 @@
+T1	TIM 41 60	2003-05-13 23:26:07
+T2	PER 61 62	i
+T3	PER 66 78	alisha davis
+T4	PER 92 107	the king of pop
+T5	PER 114 117	you
+T6	PER 129 132	him
+T7	PER 133 153	the king of lawsuits
+T8	TIM 110 113	now
+T9	ORG 231 245	motown records
+T10	ORG 291 307	the jackson five
+T11	PER 156 171	michael jackson
+T12	PER 260 263	him
+T13	PER 274 276	he
+T14	ORG 191 206	universal music
+T15	ORG 209 245	the parent company of motown records
+T16	ORG 253 255	he
+T17	TIM 316 325	the 1970s
+T18	Sue 178 182	suit
+E1	Sue:T18 Defendant:T14 Plaintiff:T11
+T19	ORG 394 406	jackson five
+T20	PER 328 342	the gloved one
+T21	PER 434 437	him
+T22	ORG 350 359	the label
+T23	NUM 441 456	a single dollar
+T24	Transfer-Money 427 433	giving
+E2	Transfer-Money:T24 Giver:T22 Money:T23 Recipient:T20
+T25	PER 462 469	jackson
+T26	FAC 493 503	courtrooms
+T27	TIM 504 510	lately
+T28	PER 532 534	he
+T29	PER 593 611	a concert promoter
+T30	ORG 551 567	an auction house
+T31	TIM 645 655	millennium
+T32	TIM 516 529	recent months
+T33	Sue 543 547	sued
+E3	Sue:T33 Defendant:T28 Plaintiff:T30 Plaintiff:T29 Time-Within:T32

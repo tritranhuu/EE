@@ -1,0 +1,53 @@
+T1	TIM 38 57	2003-06-11 10:40:49
+T2	TIM 65 68	now
+T3	TIM 95 107	this morning
+T4	TIM 77 94	33 after the hour
+T5	ORG 58 60	we
+T6	TIM 160 181	more than seven years
+T7	FAC 185 191	prison
+T8	CRM 196 211	insider trading
+T9	SEN 160 191	more than seven years in prison
+T10	ORG 120 127	imclone
+T11	PER 196 203	insider
+T12	PER 110 135	embattled imclone founder
+T13	PER 110 146	embattled imclone founder sam waksal
+T14	Sentence 147 156	sentenced
+E1	Sentence:T14 Defendant:T13 Sentence:T9 Crime:T8
+T15	PER 267 295	domestic diva martha stewart
+T16	PER 267 280	domestic diva
+T17	PER 323 335	his daughter
+T18	PER 344 347	her
+T19	PER 356 363	stewart
+T20	PER 394 397	her
+T21	PER 298 304	waksal
+T22	PER 323 326	his
+T23	TIM 586 590	2001
+T24	PER 450 456	waksal
+T25	PER 460 590	the first chief executive to be sentenced in a wave of corporate scandals and that started with the big enron bankruptcy into 2001
+T26	ORG 564 569	enron
+T27	Sentence 492 501	sentenced
+E2	Sentence:T27 Defendant:T25
+T28	Declare-Bankruptcy 570 580	bankruptcy
+E3	Declare-Bankruptcy:T28 Org:T26 Time-Within:T23
+T29	NUM 660 679	billions of dollars
+T30	PER 593 622	top executives at the company
+T31	ORG 611 622	the company
+T32	TIM 1033 1045	this morning
+T33	TIM 690 696	former
+T34	TIM 816 819	now
+T35	GPE 825 832	houston
+T36	PER 955 976	key enroan executives
+T37	ORG 876 896	her form are company
+T38	ORG 959 965	enroan
+T39	ORG 697 702	enron
+T40	ORG 900 918	justice department
+T41	ORG 938 941	its
+T42	ORG 835 837	we
+T43	ORG 1019 1021	we
+T44	ORG 813 815	us
+T45	PER 690 717	former enron vice president
+T46	PER 734 737	who
+T47	PER 854 857	her
+T48	PER 876 879	her
+T49	PER 690 800	former enron vice president sherron watkins who wrote that now-famous memo questioning the accounting practice
+T50	TIM 749 759	now-famous

@@ -1,0 +1,27 @@
+T1	TIM 38 57	2003-05-12 20:11:04
+T2	PER 71 105	a woman in an east texas jail cell
+T3	FAC 82 105	an east texas jail cell
+T4	LOC 85 95	east texas
+T5	TIM 106 113	tonight
+T6	PER 138 141	she
+T7	PER 116 118	we
+T8	PER 219 222	she
+T9	PER 265 268	her
+T10	PER 277 297	deanna lejeune laney
+T11	PER 300 303	she
+T12	PER 333 336	her
+T13	PER 371 374	she
+T14	PER 391 394	her
+T15	PER 382 385	god
+T16	PER 333 351	her three children
+T17	PER 326 351	two of her three children
+T18	Die 355 360	death
+E1	Die:T18 Victim:T17 Agent:T11
+T19	TIM 418 431	this saturday
+T20	TIM 434 439	today
+T21	GPE 548 561	tyler , texas
+T22	PER 478 502	katherine garcia of wfaa
+T23	ORG 498 502	wfaa
+T24	FAC 517 561	the smith county courthouse in tyler , texas
+T25	GPE 556 561	texas
+T26	PER 514 516	us

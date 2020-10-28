@@ -1,0 +1,121 @@
+T1	TIM 38 57	2003-05-13 12:58:38
+T2	PER 115 130	john f. kennedy
+T3	PER 156 159	his
+T4	TIM 81 84	new
+T5	FAC 168 183	the white house
+T6	PER 247 265	the 35th president
+T7	PER 268 285	our jonathan karl
+T8	ORG 268 271	our
+T9	PER 351 358	kennedy
+T10	PER 318 326	reporter
+T11	PER 423 444	historian robert dowd
+T12	PER 423 432	historian
+T13	PER 382 391	an intern
+T14	PER 546 553	kennedy
+T15	TIM 539 545	former
+T16	PER 571 574	she
+T17	PER 562 565	who
+T18	PER 537 616	a former kennedy staffer who says she does not remember the intern 's last game
+T19	PER 593 603	the intern
+T20	PER 719 726	kennedy
+T21	PER 652 659	kennedy
+T22	TIM 697 700	new
+T23	PER 685 687	he
+T24	PER 628 630	he
+T25	PER 768 771	jfk
+T26	PER 827 829	he
+T27	PER 863 866	his
+T28	JOB 903 912	president
+T29	PER 930 938	a priest
+T30	PER 913 915	he
+T31	PER 903 912	president
+T32	PER 962 965	him
+T33	Elect 894 902	becoming
+E1	Elect:T33 Person:T30 Position:T28
+T34	PER 1013 1016	jfk
+T35	PER 1099 1102	his
+T36	PER 1136 1138	he
+T37	PER 1165 1175	the public
+T38	TIM 1001 1004	new
+T39	PER 997 1000	his
+T40	PER 1019 1025	dallic
+T41	ORG 1262 1270	military
+T42	PER 1207 1279	politicians who used political influence to get out of military conflict
+T43	PER 1219 1222	who
+T44	PER 1308 1318	his family
+T45	GPE 1361 1368	america
+T46	ORG 1344 1352	the navy
+T47	PER 1299 1301	he
+T48	PER 1308 1311	his
+T49	PER 1286 1292	dallic
+T50	Attack 1395 1398	war
+E2	Attack:T50 Attacker:T45
+T51	ORG 1429 1437	military
+T52	PER 1414 1416	he
+T53	TIM 1407 1411	1941
+T54	PER 1454 1473	his powerful father
+T55	PER 1454 1457	his
+T56	PER 1547 1550	one
+T57	PER 1536 1539	his
+T58	PER 1563 1565	he
+T59	PER 1606 1609	his
+T60	PER 1689 1699	his father
+T61	PER 1689 1692	his
+T62	GPE 1814 1826	the japanese
+T63	ORG 1726 1734	the navy
+T64	PER 1710 1717	kennedy
+T65	PER 1766 1769	his
+T66	PER 1786 1789	his
+T67	PER 1766 1780	his ship mates
+T68	VEH 1786 1794	his boat
+T69	VEH 1795 1801	pt-109
+T70	Attack 1806 1810	sunk
+E3	Attack:T70 Attacker:T62 Target:T68
+T71	JOB 1997 2006	president
+T72	PER 1903 1925	his sister and brother
+T73	GPE 2010 2018	american
+T74	PER 1841 1848	kennedy
+T75	PER 1887 1890	his
+T76	PER 1903 1906	his
+T77	PER 1955 1958	him
+T78	PER 1969 2026	the youngest person elected president in american history
+T79	PER 1997 2006	president
+T80	PER 1829 1835	dallek
+T81	Elect 1989 1996	elected
+E4	Elect:T81 Person:T78 Entity:T73 Position:T71
+T82	Die 1893 1899	deaths
+E5	Die:T82 Victim:T72 Victim:T72
+T83	PER 2042 2050	a friend
+T84	LOC 2138 2143	earth
+T85	PER 2080 2083	you
+T86	PER 2121 2125	your
+T87	PER 2029 2036	kennedy
+T88	PER 2058 2060	he
+T89	TIM 2100 2109	every day
+T90	TIM 2121 2143	your last day on earth
+T91	PER 2159 2160	i
+T92	GPE 2194 2204	washington
+T93	PER 2172 2185	jonathan karl
+T94	ORG 2188 2191	cnn
+T95	ORG 2211 2213	we
+T96	TIM 2257 2268	later today
+T97	PER 2330 2332	my
+T98	TIM 2372 2389	2:00 p.m. pacific
+T99	PER 2330 2339	my guests
+T100	PER 2301 2315	the biographer
+T101	TIM 2340 2369	later today 5:00 p.m. eastern
+T102	PER 2476 2500	the secretary of defense
+T103	PER 2588 2612	the secretary of defense
+T104	PER 2503 2518	donald rumsfeld
+T105	GPE 2442 2452	washington
+T106	PER 2392 2410	the vice president
+T107	PER 2411 2422	dick cheney
+T108	PER 2521 2539	the vice president
+T109	PER 2563 2578	jimmy doolittle
+T110	TIM 2426 2429	now
+T111	PER 2657 2661	them
+T112	PER 2649 2661	both of them
+T113	ORG 2615 2617	we
+T114	ORG 2676 2678	we
+T115	PER 2736 2750	andrew jackson
+T116	ORG 2830 2832	we

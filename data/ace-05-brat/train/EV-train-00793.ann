@@ -1,0 +1,85 @@
+T1	TIM 40 60	2005-02-17T07 :44:00
+T2	PER 103 113	Will Vehrs
+T3	TIM 114 134	2005-02-17T07 :44:00
+T4	ORG 176 194	Bacon 's Rebellion
+T5	PER 135 194	Many of the good-governiks who write for Bacon 's Rebellion
+T6	PER 143 194	the good-governiks who write for Bacon 's Rebellion
+T7	PER 162 165	who
+T8	GPE 257 265	Virginia
+T9	LOC 314 328	Capitol Square
+T10	PER 268 272	Some
+T11	TIM 329 338	right now
+T12	GPE 415 425	California
+T13	GPE 428 444	The Golden State
+T14	GPE 469 479	the nation
+T15	GPE 557 567	California
+T16	ORG 531 536	Slate
+T17	PER 516 536	Mickey Kaus of Slate
+T18	PER 630 691	those who support or oppose the current redistricting process
+T19	PER 636 639	who
+T20	PER 545 547	us
+T21	PER 598 600	we
+T22	TIM 662 669	current
+T23	PER 694 700	Mickey
+T24	PER 711 724	Stuart Taylor
+T25	PER 785 815	any who would debate the issue
+T26	PER 789 792	who
+T27	PER 834 844	Barnie Day
+T28	TIM 860 870	T09 :01:00
+T29	PER 938 940	we
+T30	ORG 1004 1030	the state House and Senate
+T31	GPE 1008 1013	state
+T32	TIM 1033 1042	Currently
+T33	PER 1074 1105	approximately 75,000 Virginians
+T34	PER 1114 1126	each Senator
+T35	PER 1045 1062	each House member
+T36	PER 1138 1158	appoximately 187,500
+T37	ORG 1050 1055	House
+T38	PER 1217 1224	the two
+T39	PER 1251 1323	people pools that are in turn fractured into five or six House districts
+T40	PER 1264 1268	that
+T41	ORG 1308 1313	House
+T42	PER 1251 1257	people
+T43	PER 1227 1240	Some senators
+T44	LOC 1296 1323	five or six House districts
+T45	TIM 1428 1431	now
+T46	GPE 1407 1410	our
+T47	GPE 1407 1427	our state government
+T48	GPE 1411 1416	state
+T49	PER 1326 1327	I
+T50	TIM 1434 1440	Former
+T51	JOB 1441 1449	Governor
+T52	PER 1518 1532	the two houses
+T53	PER 1434 1464	Former Governor Gerald Baliles
+T54	PER 1434 1449	Former Governor
+T55	End-Position 1434 1440	Former
+E1	End-Position:T55 Person:T54 Position:T51
+T56	PER 1656 1672	House membership
+T57	PER 1611 1635	membership in the Senate
+T58	PER 1639 1641	50
+T59	PER 1736 1796	a block of people who are represented by exactly 2 Delegates
+T60	PER 1754 1757	who
+T61	PER 1710 1719	1 Senator
+T62	PER 1676 1678	80
+T63	PER 1777 1796	exactly 2 Delegates
+T64	ORG 1625 1635	the Senate
+T65	GPE 1592 1594	we
+T66	ORG 1656 1661	House
+T67	PER 1570 1572	He
+T68	ORG 1912 1922	the Senate
+T69	ORG 1927 1936	the House
+T70	PER 1799 1801	He
+T71	PER 1824 1826	he
+T72	PER 1816 1817	I
+T73	PER 2134 2146	independents
+T74	ORG 2113 2118	three
+T75	PER 1968 2146	these dysfunctional groupings we now have , where 1 Senator often represents a population divided among half a dozen Delegates of two parties -- three , if you count independents
+T76	PER 2012 2017	where
+T77	PER 2018 2027	1 Senator
+T78	PER 2072 2146	half a dozen Delegates of two parties -- three , if you count independents
+T79	PER 2045 2146	a population divided among half a dozen Delegates of two parties -- three , if you count independents
+T80	PER 1939 1942	You
+T81	PER 2124 2127	you
+T82	ORG 2098 2109	two parties
+T83	TIM 2001 2004	now
+T84	GPE 1998 2000	we

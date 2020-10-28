@@ -1,0 +1,91 @@
+T1	TIM 39 58	2003-04-24 09:30:22
+T2	PER 145 157	shareholders
+T3	PER 120 135	angry employees
+T4	PER 97 107	executives
+T5	PER 168 179	andy serwer
+T6	PER 219 223	them
+T7	PER 338 351	ceo don carty
+T8	PER 338 341	ceo
+T9	PER 354 356	he
+T10	PER 377 379	he
+T11	PER 263 287	the board of the company
+T12	ORG 243 260	american airlines
+T13	ORG 276 287	the company
+T14	PER 431 440	employees
+T15	PER 402 417	the guys in top
+T16	TIM 296 301	today
+T17	TIM 328 334	future
+T18	Meet 288 295	meeting
+E1	Meet:T18 Entity:T11 Time-Within:T16
+T19	NUM 464 477	$ 1.8 billion
+T20	JOB 517 520	ceo
+T21	PER 493 531	former general electric ceo jack welch
+T22	PER 493 520	former general electric ceo
+T23	PER 542 552	paula zahn
+T24	ORG 500 516	general electric
+T25	TIM 493 499	former
+T26	TIM 480 490	last night
+T27	End-Position 493 499	former
+E2	End-Position:T27 Person:T21 Entity:T24 Position:T20
+T28	PER 613 615	he
+T29	ORG 595 597	's
+T30	GPE 655 662	america
+T31	PER 710 722	other people
+T32	PER 679 685	people
+T33	PER 700 704	they
+T34	PER 896 907	shareholder
+T35	NUM 917 930	$ 600 billion
+T36	PER 863 886	the team that i managed
+T37	PER 872 876	that
+T38	PER 830 839	executive
+T39	PER 801 802	i
+T40	PER 877 878	i
+T41	PER 936 945	sharoners
+T42	PER 808 812	they
+T43	PER 957 978	the larger share orns
+T44	PER 985 994	employees
+T45	TIM 788 798	every year
+T46	TIM 771 777	annual
+T47	PER 1130 1156	tens of thousand employees
+T48	ORG 1108 1117	companies
+T49	PER 1063 1067	ceos
+T50	NUM 1159 1178	billions of dollars
+T51	NUM 1080 1099	millions of dollars
+T52	PER 997 998	i
+T53	PER 1041 1042	i
+T54	PER 1050 1051	i
+T55	NUM 1226 1235	5 million
+T56	NUM 1192 1209	a million dollars
+T57	NUM 1238 1251	$ 100 million
+T58	PER 1255 1257	me
+T59	PER 1283 1286	who
+T60	PER 1547 1555	everyone
+T61	PER 1486 1504	the average worker
+T62	PER 1428 1438	each other
+T63	PER 1387 1411	the ceos golfing buddies
+T64	PER 1414 1418	they
+T65	PER 1628 1636	the guys
+T66	PER 1387 1395	the ceos
+T67	PER 1515 1518	ceo
+T68	PER 1321 1330	the board
+T69	PER 1334 1337	who
+T70	PER 1355 1360	board
+T71	PER 1428 1448	each other 's boards
+T72	PER 1721 1724	you
+T73	ORG 1738 1740	us
+T74	ORG 1679 1692	the companies
+T75	PER 1671 1674	you
+T76	GPE 1592 1604	this country
+T77	End-Org 1693 1703	going down
+E3	End-Org:T77 Org:T74
+T78	PER 1756 1760	bill
+T79	PER 1771 1774	you
+T80	PER 1777 1781	jack
+T81	TIM 1840 1852	this morning
+T82	GPE 1949 1961	27 countries
+T83	ORG 1855 1884	the world health organization
+T84	Die 1939 1945	deaths
+E4	Die:T84 Place:T82
+T85	PER 1989 1995	nobody
+T86	PER 2047 2050	you
+T87	PER 2058 2062	your

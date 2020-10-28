@@ -1,0 +1,215 @@
+T1	TIM 34 42	20030601
+T2	PER 50 55	Putin
+T3	GPE 69 73	Iraq
+T4	GPE 85 89	Iran
+T5	PER 43 47	Bush
+T6	PER 105 122	Stephen Collinson
+T7	PER 165 189	Russian foreign minister
+T8	GPE 165 172	Russian
+T9	GPE 192 194	US
+T10	ORG 249 252	AFP
+T11	GPE 217 233	SAINT PETERSBURG
+T12	TIM 236 242	June 1
+T13	TIM 331 337	Sunday
+T14	PER 293 325	Russian President Vladimir Putin
+T15	PER 293 310	Russian President
+T16	GPE 293 300	Russian
+T17	PER 338 343	their
+T18	GPE 411 415	Iraq
+T19	GPE 465 469	Iran
+T20	GPE 261 263	US
+T21	PER 261 288	US President George W. Bush
+T22	PER 261 273	US President
+T23	Attack 416 419	war
+E1	Attack:T23 Place:T18
+T24	GPE 506 522	Saint Petersburg
+T25	FAC 506 554	Saint Petersburg 's grand Konstantinovsky Palace
+T26	GPE 574 585	North Korea
+T27	GPE 597 600	its
+T28	GPE 659 665	Moscow
+T29	PER 557 561	they
+T30	WEA 713 728	nuclear weapons
+T31	Meet 497 502	talks
+E2	Meet:T31 Place:T25 Entity:T29
+T32	GPE 826 842	Saint Petersburg
+T33	TIM 846 863	300th anniversary
+T34	PER 888 893	Putin
+T35	PER 938 943	their
+T36	PER 918 923	buddy
+T37	PER 879 883	Bush
+T38	Meet 810 815	talks
+E3	Meet:T38 Entity:T37 Entity:T34 Time-Within:T33
+T39	PER 1037 1042	Putin
+T40	GPE 1090 1096	Russia
+T41	PER 969 972	Our
+T42	GPE 1083 1087	Iraq
+T43	GPE 1101 1118	the United States
+T44	PER 1217 1219	my
+T45	PER 1260 1261	I
+T46	PER 1290 1292	my
+T47	PER 1349 1351	he
+T48	PER 1191 1193	me
+T49	GPE 1326 1343	a friendly nation
+T50	PER 1202 1216	President Bush
+T51	PER 1202 1211	President
+T52	PER 1270 1273	him
+T53	PER 1379 1383	Bush
+T54	PER 1217 1226	my friend
+T55	PER 1290 1304	my counterpart
+T56	PER 1309 1343	the president of a friendly nation
+T57	GPE 1544 1548	that
+T58	GPE 1522 1583	an `` axis of evil '' that also included Iraq and North Korea
+T59	GPE 1447 1454	Russian
+T60	GPE 1572 1583	North Korea
+T61	PER 1390 1398	both men
+T62	GPE 1563 1567	Iraq
+T63	GPE 1485 1583	Iran , whom Bush has labeled part of an `` axis of evil '' that also included Iraq and North Korea
+T64	GPE 1492 1496	whom
+T65	GPE 1514 1583	part of an `` axis of evil '' that also included Iraq and North Korea
+T66	GPE 1429 1431	US
+T67	PER 1497 1501	Bush
+T68	Transfer-Money 1455 1458	aid
+E4	Transfer-Money:T68 Giver:T59 Recipient:T63
+T69	GPE 1612 1616	Iran
+T70	GPE 1654 1658	Iran
+T71	GPE 1682 1685	its
+T72	GPE 1589 1591	We
+T73	PER 1746 1750	Bush
+T74	PER 1758 1778	A senior US diplomat
+T75	FAC 1800 1851	one of the biggest irritants in Russia-US relations
+T76	FAC 1784 1791	Bushehr
+T77	GPE 1832 1841	Russia-US
+T78	GPE 1767 1769	US
+T79	PER 2005 2020	the US diplomat
+T80	FAC 1917 1924	Bushehr
+T81	GPE 1892 1898	Russia
+T82	GPE 1949 1956	Iranian
+T83	GPE 1857 1859	We
+T84	GPE 2009 2011	US
+T85	Meet 2052 2057	talks
+E5	Meet:T85
+T86	GPE 2063 2066	Our
+T87	GPE 2187 2191	Iran
+T88	GPE 2150 2167	The United States
+T89	WEA 2253 2260	weapons
+T90	GPE 2355 2378	Bushehr , southern Iran
+T91	FAC 2330 2378	a nuclear power plant in Bushehr , southern Iran
+T92	GPE 2306 2312	Russia
+T93	GPE 2387 2389	it
+T94	LOC 2365 2378	southern Iran
+T95	GPE 2275 2285	Washington
+T96	PER 2434 2448	Vladimir Putin
+T97	PER 2483 2486	his
+T98	PER 2519 2525	others
+T99	PER 2421 2422	I
+T100	PER 2512 2514	me
+T101	PER 2568 2572	Bush
+T102	PER 2575 2580	Putin
+T103	GPE 2595 2608	the two sides
+T104	GPE 2629 2633	they
+T105	PER 2774 2776	he
+T106	GPE 2660 2662	We
+T107	WEA 2741 2768	weapons of mass destruction
+T108	PER 2833 2838	Putin
+T109	GPE 2846 2852	Russia
+T110	GPE 2898 2902	Iran
+T111	PER 3038 3040	he
+T112	GPE 2908 2910	We
+T113	GPE 3030 3032	us
+T114	GPE 2975 2979	Iran
+T115	WEA 2948 2963	nuclear weapons
+T116	FAC 3205 3257	his weekend retreat outside Camp David in Washington
+T117	GPE 3247 3257	Washington
+T118	TIM 3261 3270	September
+T119	GPE 3233 3257	Camp David in Washington
+T120	PER 3174 3192	his `` good friend
+T121	PER 3196 3201	Putin
+T122	GPE 3068 3074	Russia
+T123	GPE 3119 3126	Germany
+T124	GPE 3158 3162	Iraq
+T125	GPE 3108 3114	France
+T126	GPE 3144 3150	US-led
+T127	PER 3048 3052	Bush
+T128	PER 3174 3177	his
+T129	PER 3205 3208	his
+T130	Meet 3165 3173	inviting
+E6	Meet:T130 Place:T116 Time-Within:T118 Entity:T121
+T131	Attack 3151 3154	war
+E7	Attack:T131 Place:T124
+T132	FAC 3300 3315	his Texas ranch
+T133	TIM 3319 3332	November 2001
+T134	GPE 3304 3309	Texas
+T135	PER 3273 3278	Putin
+T136	PER 3292 3296	Bush
+T137	PER 3300 3303	his
+T138	Meet 3284 3291	visited
+E8	Meet:T138 Place:T132 Entity:T135 Entity:T136 Time-Within:T133
+T139	GPE 3499 3506	Britain
+T140	ORG 3527 3529	UN
+T141	TIM 3445 3448	now
+T142	ORG 3423 3441	whose oil industry
+T143	GPE 3391 3398	Russian
+T144	GPE 3550 3556	Russia
+T145	GPE 3416 3578	Iraq , whose oil industry is now under the administration of the United States and Britain in line with latest UN resolutions , which Russia was persuaded to back
+T146	GPE 3423 3428	whose
+T147	NUM 3368 3387	billions of dollars
+T148	GPE 3477 3494	the United States
+T149	ORG 3605 3622	Russian companies
+T150	LOC 3714 3723	this area
+T151	PER 3585 3590	Putin
+T152	GPE 3605 3612	Russian
+T153	GPE 3673 3675	we
+T154	GPE 3695 3698	our
+T155	GPE 3664 3668	Iraq
+T156	GPE 3731 3735	Iraq
+T157	GPE 3743 3747	Iraq
+T158	ORG 3891 3908	Russian companies
+T159	PER 3943 4039	Foreign Minister Igor Ivanov , pointing the finger clearly at the United States after the summit
+T160	PER 3943 3959	Foreign Minister
+T161	TIM 3811 3816	times
+T162	PER 3781 3786	Putin
+T163	PER 3761 3786	the president -LRB- Putin
+T164	GPE 3823 3825	we
+T165	GPE 3891 3898	Russian
+T166	GPE 3928 3932	Iran
+T167	GPE 4005 4022	the United States
+T168	Meet 4033 4039	summit
+E9	Meet:T168
+T169	TIM 4234 4247	the year 2012
+T170	WEA 4153 4184	the two sides ' nuclear weapons
+T171	WEA 4199 4230	1,700 to 2,200 nuclear warheads
+T172	WEA 4118 4122	arms
+T173	PER 4051 4056	Putin
+T174	GPE 4153 4166	the two sides
+T175	PER 4042 4046	Bush
+T176	GPE 4266 4282	Saint Petersburg
+T177	PER 4360 4365	whose
+T178	PER 4322 4436	German Chancellor Gerhard Schroeder , whose opposition to the Iraq war had soured his relationship with Washington
+T179	PER 4322 4339	German Chancellor
+T180	PER 4404 4407	his
+T181	TIM 4286 4294	Saturday
+T182	PER 4461 4466	Putin
+T183	GPE 4322 4328	German
+T184	GPE 4384 4388	Iraq
+T185	GPE 4426 4436	Washington
+T186	PER 4250 4254	Bush
+T187	PER 4302 4304	he
+T188	Attack 4389 4392	war
+E10	Attack:T188 Place:T184
+T189	Meet 4318 4321	met
+E11	Meet:T189 Place:T176 Entity:T186 Entity:T178 Time-Within:T181
+T190	Transport 4255 4262	arrived
+E12	Transport:T190 Artifact:T186 Destination:T176 Time-Within:T181
+T191	GPE 4568 4602	the largest industrialised nations
+T192	GPE 4543 4557	Group of Eight
+T193	GPE 4606 4620	Evian , France
+T194	PER 4478 4483	Putin
+T195	PER 4523 4528	their
+T196	GPE 4614 4620	France
+T197	PER 4469 4473	Bush
+T198	Transport 4502 4507	leave
+E13	Transport:T198 Artifact:T197 Artifact:T194 Destination:T193
+T199	Meet 4529 4534	talks
+E14	Meet:T199 Entity:T195
+T200	Meet 4558 4564	summit
+E15	Meet:T200 Place:T193 Entity:T197 Entity:T194 Entity:T191

@@ -1,0 +1,37 @@
+T1	TIM 38 57	2003-03-12 08:36:01
+T2	GPE 79 87	belgrade
+T3	Attack 90 98	violence
+E1	Attack:T3 Place:T2
+T4	PER 121 147	the serbian prime minister
+T5	PER 150 164	zoran djindjic
+T6	PER 177 180	his
+T7	GPE 125 132	serbian
+T8	Attack 200 204	shot
+E2	Attack:T8 Target:T4
+T9	Die 210 223	assassination
+E3	Die:T9 Victim:T4
+T10	Die 169 173	died
+E4	Die:T10 Victim:T4
+T11	ORG 313 323	government
+T12	TIM 291 295	time
+T13	PER 247 249	he
+T14	PER 257 260	his
+T15	GPE 331 348	there in belgrade
+T16	GPE 340 348	belgrade
+T17	PER 274 283	reporters
+T18	FAC 304 348	the main government office there in belgrade
+T19	Meet 268 273	greet
+E5	Meet:T19 Place:T18 Entity:T13 Entity:T17
+T20	Transport 261 264	way
+E6	Transport:T20 Artifact:T13 Destination:T18
+T21	TIM 376 390	90 minutes ago
+T22	ORG 417 419	we
+T23	GPE 432 436	here
+T24	PER 462 476	zoran djindjic
+T25	PER 479 497	the prime minister
+T26	GPE 453 459	serbia
+T27	Die 503 507	dead
+E7	Die:T27 Victim:T24
+T28	PER 531 533	he
+T29	Attack 538 542	shot
+E8	Attack:T29 Target:T28

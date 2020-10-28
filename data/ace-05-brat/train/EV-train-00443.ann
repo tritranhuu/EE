@@ -1,0 +1,36 @@
+T1	TIM 41 60	2003-04-10 19:40:14
+T2	PER 89 99	postsaddam
+T3	GPE 87 104	a postsaddam iraq
+T4	PER 117 150	a key faction bidding for control
+T5	PER 161 163	it
+T6	PER 193 223	a prominent iraqi exile leader
+T7	GPE 205 210	iraqi
+T8	Demonstrate 169 176	protest
+E1	Demonstrate:T8 Entity:T5
+T9	PER 350 363	ahmad chalabi
+T10	PER 226 267	the head of the iraqi democratic movement
+T11	PER 273 276	his
+T12	ORG 238 267	the iraqi democratic movement
+T13	ORG 273 282	his group
+T14	GPE 312 321	nasiriyah
+T15	Demonstrate 295 308	demonstration
+E2	Demonstrate:T15 Place:T14 Entity:T13
+T16	PER 366 373	chalabi
+T17	PER 377 430	the founder and leader of the iraqi national congress
+T18	ORG 403 430	the iraqi national congress
+T19	GPE 470 474	u.s.
+T20	PER 433 435	he
+T21	PER 470 482	u.s. marines
+T22	TIM 459 466	tuesday
+T23	GPE 454 458	iraq
+T24	Transport 440 448	escorted
+E3	Transport:T24 Artifact:T20 Agent:T21 Destination:T23 Time-Within:T22
+T25	PER 504 507	own
+T26	PER 485 492	chalabi
+T27	PER 500 503	his
+T28	PER 535 538	his
+T29	PER 553 576	the next leader of iraq
+T30	TIM 514 523	yesterday
+T31	GPE 572 576	iraq
+T32	Demonstrate 508 513	rally
+E4	Demonstrate:T32 Entity:T26 Time-Within:T30

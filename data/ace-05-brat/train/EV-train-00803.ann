@@ -1,0 +1,182 @@
+T1	TIM 34 42	20030425
+T2	TIM 165 173	April 25
+T3	GPE 157 162	SEOUL
+T4	ORG 180 183	AFP
+T5	TIM 289 295	Friday
+T6	WEA 245 260	nuclear weapons
+T7	GPE 190 192	US
+T8	GPE 331 345	world capitals
+T9	LOC 331 336	world
+T10	GPE 284 288	Asia
+T11	WEA 245 252	nuclear
+T12	GPE 210 221	North Korea
+T13	TIM 445 451	Friday
+T14	TIM 402 411	three-day
+T15	TIM 543 557	six months ago
+T16	GPE 421 428	Beijing
+T17	GPE 377 379	US
+T18	GPE 480 482	US
+T19	PER 480 509	US and North Korean officials
+T20	PER 377 387	US sources
+T21	WEA 520 527	nuclear
+T22	GPE 487 499	North Korean
+T23	GPE 647 653	Moscow
+T24	PER 634 664	officials in Moscow and London
+T25	GPE 658 664	London
+T26	GPE 587 597	both sides
+T27	GPE 560 565	China
+T28	GPE 763 768	Seoul
+T29	LOC 907 921	Northeast Asia
+T30	PER 763 801	Seoul Foreign Minister Yoon Young-Kwan
+T31	PER 763 785	Seoul Foreign Minister
+T32	GPE 736 741	Japan
+T33	GPE 720 731	South Korea
+T34	GPE 812 829	the North Koreans
+T35	PER 1057 1077	US envoy James Kelly
+T36	PER 1057 1065	US envoy
+T37	GPE 971 978	Beijing
+T38	PER 993 1032	the head of the North Korean delegation
+T39	PER 1033 1039	Li Gun
+T40	WEA 1117 1132	nuclear weapons
+T41	WEA 1163 1167	them
+T42	GPE 924 926	US
+T43	GPE 1057 1059	US
+T44	GPE 1183 1185	US
+T45	ORG 1005 1032	the North Korean delegation
+T46	WEA 1117 1124	nuclear
+T47	GPE 1009 1021	North Korean
+T48	GPE 1083 1102	the Stalinist state
+T49	GPE 1144 1146	it
+T50	PER 924 987	US sources with authoritative knowledge of the Beijing meetings
+T51	Transfer-Ownership 1151 1155	sell
+E1	Transfer-Ownership:T51 Artifact:T41 Seller:T49
+T52	Attack 1159 1162	use
+E2	Attack:T52 Attacker:T49 Instrument:T41
+T53	PER 1262 1275	one US source
+T54	WEA 1249 1256	weapons
+T55	GPE 1214 1216	we
+T56	GPE 1266 1268	US
+T57	GPE 1199 1203	They
+T58	GPE 1236 1240	they
+T59	GPE 1306 1308	us
+T60	GPE 1311 1313	we
+T61	TIM 1336 1339	Now
+T62	GPE 1340 1344	they
+T63	FAC 1478 1483	which
+T64	GPE 1461 1469	Yongbyon
+T65	PER 1376 1381	Kelly
+T66	PER 1363 1365	Li
+T67	WEA 1505 1512	weapons
+T68	FAC 1457 1475	its Yongbyon plant
+T69	WEA 1546 1553	nuclear
+T70	GPE 1387 1398	North Korea
+T71	GPE 1457 1460	its
+T72	WEA 1533 1559	several more nuclear bombs
+T73	PER 1567 1578	the sources
+T74	PER 1579 1582	who
+T75	TIM 1821 1834	six-month-old
+T76	GPE 1764 1774	Washington
+T77	GPE 1614 1616	US
+T78	WEA 1700 1707	nuclear
+T79	GPE 1722 1733	North Korea
+T80	GPE 1650 1659	Pyongyang
+T81	PER 1605 1641	An angry US President George W. Bush
+T82	PER 1614 1626	US President
+T83	GPE 1913 1918	Seoul
+T84	PER 1924 1932	analysts
+T85	PER 1940 1944	they
+T86	GPE 2035 2037	US
+T87	GPE 2120 2122	US
+T88	PER 2120 2165	US State Department spokesman Richard Boucher
+T89	PER 2120 2149	US State Department spokesman
+T90	PER 2035 2047	US officials
+T91	ORG 2120 2139	US State Department
+T92	GPE 2084 2095	North Korea
+T93	GPE 2190 2203	North Koreans
+T94	PER 2321 2349	Foreign Minister Li Zhaoxing
+T95	PER 2321 2337	Foreign Minister
+T96	GPE 2253 2270	host to the talks
+T97	GPE 2237 2242	China
+T98	ORG 2514 2545	the official Xinhua news agency
+T99	PER 2497 2499	Li
+T100	WEA 2478 2485	nuclear
+T101	GPE 2471 2477	Korean
+T102	GPE 2406 2415	all sides
+T103	GPE 2393 2395	We
+T104	PER 2558 2560	He
+T105	WEA 2573 2580	nuclear
+T106	GPE 2566 2572	Korean
+T107	GPE 2661 2675	the other side
+T108	GPE 2717 2720	its
+T109	GPE 2798 2805	Britain
+T110	PER 2734 2773	A top Russian foreign ministry official
+T111	PER 2798 2837	Britain 's Foreign Secretary Jack Straw
+T112	PER 2798 2826	Britain 's Foreign Secretary
+T113	GPE 2740 2747	Russian
+T114	ORG 2740 2764	Russian foreign ministry
+T115	ORG 2859 2868	BBC radio
+T116	PER 2881 2886	Kelly
+T117	PER 2889 2949	the US assistant secretary for East Asia and Pacific Affairs
+T118	TIM 2982 2988	Friday
+T119	LOC 2934 2941	Pacific
+T120	LOC 2920 2929	East Asia
+T121	GPE 2974 2981	Beijing
+T122	GPE 2893 2895	US
+T123	GPE 2963 2968	Seoul
+T124	PER 2998 3002	Yoon
+T125	PER 3005 3025	the foreign minister
+T126	Transport 2952 2959	arrived
+E3	Transport:T126 Destination:T123 Origin:T121 Artifact:T116 Time-Within:T118
+T127	Meet 2992 2997	brief
+E4	Meet:T127 Entity:T116 Entity:T124
+T128	WEA 3072 3087	nuclear weapons
+T129	LOC 3166 3180	Northeast Asia
+T130	PER 3191 3195	Yoon
+T131	LOC 3131 3151	the Korean peninsula
+T132	WEA 3072 3079	nuclear
+T133	GPE 3050 3061	North Korea
+T134	TIM 3265 3271	Sunday
+T135	PER 3198 3203	Kelly
+T136	PER 3206 3209	who
+T137	PER 3287 3305	Japanese officials
+T138	PER 3231 3245	reporters here
+T139	GPE 3259 3264	Tokyo
+T140	GPE 3241 3245	here
+T141	GPE 3287 3295	Japanese
+T142	Transport 3248 3255	travels
+E5	Transport:T142 Artifact:T135 Destination:T139 Time-Within:T134
+T143	PER 3308 3310	He
+T144	GPE 3353 3360	Beijing
+T145	GPE 3377 3379	US
+T146	GPE 3490 3507	the United States
+T147	GPE 3462 3471	all sides
+T148	ORG 3393 3398	State
+T149	PER 3377 3411	US Secretary of State Colin Powell
+T150	PER 3377 3398	US Secretary of State
+T151	GPE 3659 3669	Washington
+T152	GPE 3750 3756	itself
+T153	GPE 3577 3588	North Korea
+T154	GPE 3594 3597	its
+T155	GPE 3684 3693	Pyongyang
+T156	WEA 3932 3947	nuclear weapons
+T157	ORG 3813 3852	the official Korean Central News Agency
+T158	WEA 3932 3939	nuclear
+T159	GPE 3761 3773	North Korean
+T160	GPE 3893 3904	North Korea
+T161	PER 3759 3852	A North Korean foreign ministry spokesman , quoted by the official Korean Central News Agency
+T162	ORG 3761 3790	North Korean foreign ministry
+T163	GPE 4076 4082	the US
+T164	LOC 4137 4157	the Korean peninsula
+T165	WEA 4120 4127	nuclear
+T166	GPE 3966 3992	the DPRK -LRB- North Korea
+T167	GPE 3981 3992	North Korea
+T168	GPE 4063 4071	the DPRK
+T169	PER 4182 4202	the unnamed official
+T170	GPE 4089 4157	the parties concerned with the nuclear issue on the Korean peninsula
+T171	GPE 4229 4235	The US
+T172	GPE 4257 4260	its
+T173	WEA 4308 4315	nuclear
+T174	GPE 4304 4307	its
+T175	GPE 4280 4288	the DPRK
+T176	GPE 4430 4441	North Korea
+T177	PER 4395 4407	The official

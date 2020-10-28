@@ -1,0 +1,260 @@
+T1	TIM 31 58	2003-04-09T16 :00:00 -05:00
+T2	PER 113 121	WOODRUFF
+T3	FAC 174 179	where
+T4	FAC 158 173	the White House
+T5	TIM 256 261	today
+T6	GPE 248 255	Baghdad
+T7	PER 180 194	President Bush
+T8	PER 180 189	President
+T9	PER 122 125	You
+T10	GPE 334 345	New Orleans
+T11	PER 277 298	Vice President Cheney
+T12	PER 277 291	Vice President
+T13	PER 306 309	his
+T14	FAC 397 408	White House
+T15	ORG 383 386	CNN
+T16	TIM 356 359	now
+T17	PER 353 355	me
+T18	PER 383 432	CNN 's senior White House correspondent John King
+T19	PER 383 422	CNN 's senior White House correspondent
+T20	FAC 464 469	there
+T21	ORG 442 446	they
+T22	PER 435 439	John
+T23	PER 472 519	JOHN KING , CNN SNR . WHITE HOUSE CORRESPONDENT
+T24	ORG 527 531	they
+T25	PER 520 524	Judy
+T26	FAC 566 570	here
+T27	FAC 656 660	here
+T28	PER 663 687	administration officials
+T29	PER 571 574	you
+T30	ORG 663 677	administration
+T31	PER 693 711	the vice president
+T32	Attack 731 734	war
+E1	Attack:T32
+T33	Attack 774 782	fighting
+E2	Attack:T33
+T34	ORG 813 817	they
+T35	PER 855 867	Brent Sadler
+T36	LOC 835 848	northern Iraq
+T37	LOC 829 907	those northern Iraq areas Brent Sadler was just talking about before the break
+T38	ORG 914 918	they
+T39	TIM 958 963	today
+T40	GPE 950 957	Baghdad
+T41	LOC 1044 1058	the Arab world
+T42	PER 1030 1087	the people in the Arab world who have criticized this war
+T43	PER 1059 1062	who
+T44	PER 1048 1052	Arab
+T45	PER 1014 1017	you
+T46	Attack 1084 1087	war
+E3	Attack:T46
+T47	GPE 1100 1107	Baghdad
+T48	PER 1090 1107	People in Baghdad
+T49	GPE 1122 1126	U.S.
+T50	PER 1122 1133	U.S. troops
+T51	PER 1175 1189	Saddam Hussein
+T52	GPE 1263 1280	the United States
+T53	LOC 1199 1213	the Arab world
+T54	PER 1203 1207	Arab
+T55	GPE 1298 1314	the Iraqi people
+T56	GPE 1333 1350	their own country
+T57	GPE 1333 1342	their own
+T58	ORG 1216 1234	the administration
+T59	ORG 1449 1464	the White House
+T60	GPE 1478 1497	the American people
+T61	GPE 1482 1490	American
+T62	Attack 1537 1540	war
+E4	Attack:T62
+T63	PER 1761 1781	the Iraqi leadership
+T64	PER 1740 1781	other key members of the Iraqi leadership
+T65	PER 1610 1666	those saying the toughest fighting might still lie ahead
+T66	GPE 1765 1770	Iraqi
+T67	PER 1721 1735	Saddam Hussein
+T68	PER 1582 1603	Vice President Cheney
+T69	PER 1582 1596	Vice President
+T70	PER 1551 1577	Defense Secretary Rumsfeld
+T71	PER 1551 1568	Defense Secretary
+T72	Attack 1636 1644	fighting
+E5	Attack:T72
+T73	TIM 1822 1827	today
+T74	PER 1784 1802	The vice president
+T75	PER 1917 1920	you
+T76	PER 1909 1911	we
+T77	PER 1875 1878	you
+T78	PER 1842 1844	he
+T79	PER 1955 2004	DICK CHENEY , VICE PRESIDENT OF THE UNITED STATES
+T80	TIM 2098 2110	12 years ago
+T81	PER 2024 2059	less than half of the ground forces
+T82	PER 2152 2166	General Franks
+T83	PER 2152 2159	General
+T84	VEH 2064 2092	two-thirds of the air assets
+T85	PER 2129 2147	Secretary Rumsfeld
+T86	PER 2129 2138	Secretary
+T87	Attack 2114 2126	Desert Storm
+E6	Attack:T87 Time-Within:T80
+T88	GPE 2248 2250	we
+T89	GPE 2279 2282	our
+T90	Attack 2229 2232	war
+E7	Attack:T90
+T91	GPE 2298 2300	we
+T92	PER 2343 2387	whatever forces remain loyal to the dictator
+T93	PER 2375 2387	the dictator
+T94	PER 2417 2421	KING
+T95	ORG 2466 2468	we
+T96	PER 2422 2424	We
+T97	TIM 2458 2463	today
+T98	TIM 2519 2539	as early as tomorrow
+T99	TIM 2484 2506	before the week is out
+T100	PER 2444 2457	the president
+T101	PER 2554 2567	the president
+T102	PER 2587 2590	his
+T103	PER 2540 2549	officials
+T104	Attack 2733 2741	fighting
+E8	Attack:T104
+T105	FAC 2839 2854	the White House
+T106	PER 2773 2776	you
+T107	PER 2788 2792	Judy
+T108	PER 2758 2759	I
+T109	ORG 2799 2802	CIA
+T110	PER 2795 2824	the CIA Director George Tenet
+T111	PER 2795 2811	the CIA Director
+T112	PER 2894 2897	his
+T113	Transport 2825 2835	walked out
+E9	Transport:T113 Artifact:T110 Origin:T105
+T114	PER 2905 2906	I
+T115	PER 2986 2988	we
+T116	ORG 3003 3006	CIA
+T117	PER 2999 3015	the CIA director
+T118	TIM 2937 2956	September 11 , 2001
+T119	PER 3032 3040	WOODRUFF
+T120	GPE 3110 3118	American
+T121	PER 3048 3052	John
+T122	PER 3070 3073	you
+T123	JOB 3127 3134	general
+T124	PER 3107 3134	an American retired general
+T125	GPE 3146 3152	Kuwait
+T126	PER 3085 3087	we
+T127	End-Position 3119 3126	retired
+E10	End-Position:T127 Person:T124 Entity:T120 Position:T123
+T128	FAC 3219 3234	the White House
+T129	ORG 3196 3200	they
+T130	GPE 3283 3287	Iraq
+T131	PER 3249 3268	post-Saddam Hussein
+T132	ORG 3247 3279	a post-Saddam Hussein government
+T133	PER 3290 3294	KING
+T134	ORG 3295 3299	They
+T135	JOB 3374 3381	general
+T136	GPE 3395 3399	Iraq
+T137	PER 3410 3420	his troops
+T138	PER 3362 3381	the retired general
+T139	PER 3351 3361	Jay Garner
+T140	PER 3410 3413	his
+T141	Transport 3387 3389	go
+E11	Transport:T141 Artifact:T139 Artifact:T137 Destination:T136
+T142	End-Position 3366 3373	retired
+E12	End-Position:T142 Person:T138 Position:T135
+T143	PER 3428 3429	I
+T144	PER 3434 3440	troops
+T145	GPE 3467 3486	the U.S. government
+T146	PER 3443 3447	They
+T147	PER 3452 3486	civilians from the U.S. government
+T148	PER 3517 3521	They
+T149	ORG 3549 3561	the Pentagon
+T150	ORG 3567 3569	it
+T151	PER 3725 3728	you
+T152	TIM 3656 3677	as early as next week
+T153	Meet 3711 3719	meetings
+E13	Meet:T153 Time-Starting:T152
+T154	PER 3770 3790	General Tommy Franks
+T155	PER 3770 3777	General
+T156	FAC 3929 3944	the White House
+T157	FAC 3921 3925	here
+T158	ORG 4086 4114	that interim Iraqi authority
+T159	PER 4064 4067	who
+T160	ORG 3908 3912	they
+T161	GPE 3840 3851	the country
+T162	GPE 3865 3870	Iraqi
+T163	GPE 4099 4104	Iraqi
+T164	PER 3821 3851	Iraqis from within the country
+T165	PER 3947 3950	who
+T166	PER 3865 3892	Iraqi dissidents and exiles
+T167	ORG 3793 3797	They
+T168	ORG 4010 4014	they
+T169	TIM 4034 4047	weeks or more
+T170	PER 4133 4163	one person who will be invited
+T171	PER 4144 4147	who
+T172	PER 4215 4228	Ahmed Chalabi
+T173	ORG 4123 4125	we
+T174	Meet 4201 4209	meetings
+E14	Meet:T174 Entity:T170
+T175	PER 4231 4233	He
+T176	PER 4237 4278	the leader of the Iraqi National Congress
+T177	ORG 4251 4278	the Iraqi National Congress
+T178	PER 4281 4283	He
+T179	PER 4299 4425	a favorite of Vice President Dick Cheney , of Defense Secretary Rumsfeld and Secretary Rumsfeld 's top deputy , Paul Wolfowitz
+T180	PER 4411 4425	Paul Wolfowitz
+T181	PER 4376 4408	Secretary Rumsfeld 's top deputy
+T182	PER 4313 4339	Vice President Dick Cheney
+T183	PER 4313 4327	Vice President
+T184	PER 4345 4371	Defense Secretary Rumsfeld
+T185	PER 4345 4362	Defense Secretary
+T186	PER 4376 4394	Secretary Rumsfeld
+T187	PER 4376 4385	Secretary
+T188	PER 4428 4430	He
+T189	Meet 4477 4485	meetings
+E15	Meet:T189 Entity:T188
+T190	PER 4585 4622	some of Mr. Chalabi 's top supporters
+T191	PER 4593 4604	Mr. Chalabi
+T192	PER 4593 4596	Mr.
+T193	PER 4673 4675	he
+T194	FAC 4556 4571	the White House
+T195	FAC 4548 4552	here
+T196	ORG 4717 4720	our
+T197	GPE 4746 4763	the United States
+T198	PER 4492 4493	I
+T199	GPE 4651 4655	Iraq
+T200	TIM 4659 4670	recent days
+T201	TIM 4725 4738	earlier today
+T202	Transport 4638 4647	returning
+E16	Transport:T202 Artifact:T193 Destination:T199 Time-Within:T200
+T203	FAC 4875 4887	the Pentagon
+T204	PER 4948 4959	Mr. Chalabi
+T205	PER 4948 4951	Mr.
+T206	PER 4896 4922	Defense Secretary Rumsfeld
+T207	PER 4896 4913	Defense Secretary
+T208	PER 4933 4959	a supporter of Mr. Chalabi
+T209	PER 4977 4980	his
+T210	TIM 4888 4893	today
+T211	PER 5174 5178	Judy
+T212	PER 5039 5051	Mr. Rumsfeld
+T213	PER 5039 5042	Mr.
+T214	PER 5069 5087	Secretary Rumsfeld
+T215	PER 5069 5078	Secretary
+T216	Attack 5122 5125	war
+E17	Attack:T216
+T217	PER 5181 5189	WOODRUFF
+T218	PER 5196 5198	we
+T219	PER 5233 5236	his
+T220	FAC 5281 5292	White House
+T221	ORG 5270 5273	our
+T222	PER 5258 5267	John King
+T223	PER 5270 5306	our senior White House correspondent
+T224	PER 5315 5318	you
+T225	GPE 5370 5377	Baghdad
+T226	Attack 5337 5344	warfare
+E18	Attack:T226 Place:T225
+T227	GPE 5451 5459	American
+T228	PER 5383 5389	Iraqis
+T229	PER 5422 5427	their
+T230	LOC 5488 5504	a different area
+T231	PER 5451 5466	American troops
+T232	FAC 5402 5413	the streets
+T233	TIM 5437 5440	new
+T234	Attack 5478 5482	fire
+E19	Attack:T234 Target:T231
+T235	Transport 5390 5396	poured
+E20	Transport:T235 Artifact:T228 Destination:T232
+T236	ORG 5507 5510	CNN
+T237	PER 5539 5541	us
+T238	PER 5547 5551	they
+T239	FAC 5571 5589	Baghdad University
+T240	PER 5507 5528	CNN 's Martin Savidge

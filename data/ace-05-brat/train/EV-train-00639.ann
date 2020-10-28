@@ -1,0 +1,30 @@
+T1	TIM 39 58	2003-06-24 14:30:53
+T2	PER 63 65	's
+T3	ORG 77 85	fidelity
+T4	ORG 259 267	fidelity
+T5	NUM 306 309	3 %
+T6	ORG 342 345	its
+T7	ORG 270 278	fidelity
+T8	ORG 503 511	magellan
+T9	ORG 516 530	new millennium
+T10	TIM 545 548	new
+T11	PER 545 558	new investors
+T12	PER 561 578	current investors
+T13	GPE 606 612	peoria
+T14	TIM 561 568	current
+T15	PER 613 619	police
+T16	ORG 631 635	they
+T17	PER 668 676	investor
+T18	ORG 606 630	peoria police department
+T19	PER 713 727	many investors
+T20	FAC 856 867	wall street
+T21	TIM 902 916	this afternoon
+T22	PER 954 962	everyone
+T23	PER 1028 1030	we
+T24	TIM 1053 1061	tomorrow
+T25	PER 1064 1075	wall street
+T26	ORG 1084 1100	the central bank
+T27	ORG 1194 1227	chip maker advanced micro devices
+T28	ORG 1247 1249	it
+T29	ORG 1230 1241	the company
+T30	ORG 1402 1405	cnn

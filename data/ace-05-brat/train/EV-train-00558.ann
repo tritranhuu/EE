@@ -1,0 +1,32 @@
+T1	TIM 38 57	2003-05-07 08:07:45
+T2	TIM 69 84	the second hour
+T3	PER 103 106	you
+T4	TIM 92 99	morning
+T5	PER 157 184	the families of the victims
+T6	ORG 115 123	al qaeda
+T7	PER 173 184	the victims
+T8	TIM 297 316	four years ago 1999
+T9	TIM 244 248	9/11
+T10	PER 194 248	the four pilots who took control of the planes on 9/11
+T11	PER 210 213	who
+T12	VEH 230 240	the planes
+T13	GPE 277 294	hamburg , germany
+T14	GPE 287 294	germany
+T15	PER 187 248	two of the four pilots who took control of the planes on 9/11
+T16	PER 342 352	the pilots
+T17	PER 327 352	another one of the pilots
+T18	PER 355 368	mohammed atta
+T19	TIM 478 487	right now
+T20	TIM 428 439	the morning
+T21	PER 442 444	we
+T22	TIM 545 549	9/11
+T23	ORG 490 494	what
+T24	ORG 513 549	the terror cell responsible for 9/11
+T25	Attack 517 523	terror
+E1	Attack:T25 Attacker:T24 Time-Within:T22
+T26	GPE 613 620	germany
+T27	TIM 672 685	the same time
+T28	FAC 655 668	the same room
+T29	PER 552 577	many members on that tape
+T30	ORG 603 646	a cell in germany known as the hamburg cell
+T31	ORG 630 646	the hamburg cell

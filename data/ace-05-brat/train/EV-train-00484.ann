@@ -1,0 +1,23 @@
+T1	TIM 45 65	2005-01-16T21 :49:00
+T2	PER 89 94	Scott
+T3	TIM 95 115	2005-01-16T21 :49:00
+T4	TIM 180 193	morning-after
+T5	ORG 116 148	The Food and Drug Administration
+T6	TIM 273 282	this week
+T7	PER 382 404	women age 16 and older
+T8	ORG 291 302	drug stores
+T9	ORG 243 250	The FDA
+T10	Transfer-Ownership 307 311	sell
+E1	Transfer-Ownership:T10 Buyer:T7 Seller:T8
+T11	TIM 526 550	up to 72 hours after sex
+T12	PER 434 454	my conservative base
+T13	PER 434 436	my
+T14	PER 421 422	I
+T15	NUM 561 565	89 %
+T16	PER 581 583	we
+T17	PER 607 609	we
+T18	PER 796 800	they
+T19	PER 729 735	people
+T20	PER 711 724	Conservatives
+T21	PER 939 951	the liberals
+T22	PER 883 884	I

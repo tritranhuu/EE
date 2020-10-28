@@ -1,0 +1,79 @@
+T1	TIM 34 42	20030509
+T2	GPE 109 115	LONDON
+T3	TIM 118 123	May 9
+T4	ORG 130 136	Xinhua
+T5	GPE 250 256	Israel
+T6	GPE 305 311	London
+T7	WEA 235 239	bomb
+T8	PER 175 181	Muslim
+T9	TIM 321 327	Friday
+T10	TIM 218 226	April 30
+T11	GPE 167 174	British
+T12	FAC 303 317	a London court
+T13	PER 143 256	Three family members of British Muslim Omar Sharif , who is wanted for the April 30 suicide bomb attack in Israel
+T14	PER 167 256	British Muslim Omar Sharif , who is wanted for the April 30 suicide bomb attack in Israel
+T15	PER 196 199	who
+T16	Die 227 234	suicide
+E1	Die:T16 Place:T5 Time-Within:T10 Instrument:T7 Victim:T14 Agent:T14
+T17	Attack 364 369	blast
+E2	Attack:T17
+T18	Attack 240 246	attack
+E3	Attack:T18 Attacker:T15 Place:T5 Instrument:T7 Time-Within:T10
+T19	Charge-Indict 333 340	charges
+E4	Charge-Indict:T19 Place:T6 Time-Before:T9 Defendant:T13
+T20	PER 387 407	Tahari Shad Tabussum
+T21	PER 372 475	Sharif 's wife Tahari Shad Tabussum , 27 , brother Zahid Hussain Sharif , 46 , and sister Paveen Sharif
+T22	PER 423 443	Zahid Hussain Sharif
+T23	FAC 515 524	the court
+T24	PER 462 475	Paveen Sharif
+T25	PER 372 378	Sharif
+T26	CRM 648 703	failure to disclose information about acts of terrorism
+T27	TIM 581 589	Thursday
+T28	PER 556 567	All of them
+T29	Charge-Indict 573 580	charged
+E5	Charge-Indict:T29 Defendant:T28 Crime:T26 Time-Within:T27
+T30	CRM 804 850	aiding and abetting acts of terrorism overseas
+T31	PER 725 735	The sister
+T32	Charge-Indict 745 752	charged
+E6	Charge-Indict:T32 Defendant:T31 Crime:T30
+T33	GPE 853 860	Israeli
+T34	GPE 980 988	Tel Aviv
+T35	GPE 905 910	Derby
+T36	FAC 978 992	a Tel Aviv bar
+T37	PER 853 872	Israeli authorities
+T38	PER 886 910	Sharif , 27 , from Derby
+T39	PER 950 957	himself
+T40	Die 945 949	blow
+E7	Die:T40 Victim:T39 Agent:T38 Place:T36
+T41	Attack 968 974	attack
+E8	Attack:T41 Attacker:T38 Place:T34 Target:T36
+T42	GPE 1095 1101	London
+T43	PER 1046 1060	another Briton
+T44	PER 1063 1101	Asif Muhammad Hanif , 21 , from London
+T45	PER 1137 1140	his
+T46	PER 995 1007	Three people
+T47	WEA 1114 1145	explosives strapped to his body
+T48	PER 1024 1032	about 50
+T49	Attack 1104 1113	detonated
+E9	Attack:T49 Attacker:T44 Instrument:T47
+T50	Die 1013 1019	killed
+E10	Die:T50 Instrument:T47 Victim:T46 Agent:T43
+T51	Injure 1033 1040	injured
+E11	Injure:T51 Instrument:T47 Victim:T46 Agent:T43
+T52	PER 1148 1174	British anti-terror police
+T53	GPE 1244 1250	London
+T54	LOC 1222 1237	central England
+T55	GPE 1209 1237	Derbyshire , central England
+T56	TIM 1264 1265	3
+T57	TIM 1254 1259	May 2
+T58	GPE 1148 1155	British
+T59	PER 1184 1194	six people
+T60	Arrest-Jail 1175 1183	arrested
+E12	Arrest-Jail:T60 Person:T59 Place:T55 Place:T53 Agent:T52 Time-Within:T57
+T61	PER 1286 1293	two men
+T62	PER 1298 1307	one woman
+T63	PER 1268 1283	The other three
+T64	Release-Parole 1328 1336	released
+E13	Release-Parole:T64 Person:T63
+T65	Charge-Indict 1345 1351	charge
+E14	Charge-Indict:T65 Defendant:T63

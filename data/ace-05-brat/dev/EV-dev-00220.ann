@@ -1,0 +1,221 @@
+T1	TIM 23 41	20041205-23 :09:52
+T2	GPE 132 137	Paris
+T3	FAC 130 146	a Paris hospital
+T4	ORG 97 100	PLO
+T5	PER 62 68	Arafat
+T6	PER 83 107	Controversial PLO leader
+T7	PER 108 121	Yasser Arafat
+T8	TIM 147 156	last week
+T9	Die 53 58	Death
+E1	Die:T9 Victim:T5
+T10	Die 122 126	died
+E2	Die:T10 Victim:T7 Place:T3 Time-Within:T8
+T11	GPE 210 229	Israeli-Palestinian
+T12	PER 162 165	you
+T13	PER 172 178	Arafat
+T14	Die 182 187	death
+E3	Die:T14 Victim:T13
+T15	PER 257 270	a good leader
+T16	PER 250 256	Arafat
+T17	TIM 328 331	now
+T18	GPE 318 327	Palestine
+T19	PER 281 284	you
+T20	PER 337 343	Arafat
+T21	GPE 291 293	US
+T22	Die 348 352	died
+E4	Die:T22 Victim:T20
+T23	GPE 415 426	Middle East
+T24	GPE 383 389	the US
+T25	PER 443 449	Gandhi
+T26	TIM 460 467	evening
+T27	PER 470 475	Marco
+T28	PER 487 488	I
+T29	PER 503 507	your
+T30	PER 523 527	your
+T31	PER 535 541	Gandhi
+T32	PER 542 548	Gandhi
+T33	GPE 554 562	New York
+T34	PER 565 568	You
+T35	PER 571 576	Marco
+T36	PER 577 583	Gindhi
+T37	PER 586 592	Gandhi
+T38	GPE 593 601	New York
+T39	PER 611 616	Marco
+T40	GPE 622 630	New York
+T41	PER 633 639	Gandhi
+T42	PER 647 652	Marco
+T43	GPE 669 677	Illinois
+T44	PER 658 663	Marco
+T45	PER 680 686	Gandhi
+T46	PER 694 698	Mark
+T47	PER 706 707	I
+T48	TIM 736 743	tonight
+T49	PER 746 751	Marco
+T50	PER 800 806	Gandhi
+T51	PER 818 821	you
+T52	PER 830 835	Marco
+T53	GPE 987 1002	the Middle East
+T54	GPE 1122 1141	the state of Israel
+T55	GPE 1135 1141	Israel
+T56	PER 848 849	I
+T57	PER 858 859	I
+T58	PER 885 886	I
+T59	PER 950 951	I
+T60	PER 1018 1020	me
+T61	GPE 1076 1089	United States
+T62	GPE 1069 1100	the -- United States government
+T63	Transfer-Money 1101 1106	gives
+E5	Transfer-Money:T63 Giver:T62 Recipient:T54
+T64	PER 1265 1286	a lot of Palestinians
+T65	GPE 1155 1174	the state of Israel
+T66	GPE 1168 1174	Israel
+T67	WEA 1183 1214	many expensive military weapons
+T68	WEA 1222 1227	which
+T69	Transfer-Ownership 1175 1179	buys
+E6	Transfer-Ownership:T69 Artifact:T67 Buyer:T65
+T70	Die 1260 1264	kill
+E7	Die:T70 Instrument:T67 Victim:T64 Agent:T65
+T71	PER 1298 1300	me
+T72	PER 1437 1440	you
+T73	PER 1703 1706	you
+T74	PER 1809 1810	I
+T75	GPE 1748 1756	the West
+T76	PER 1377 1390	Yasser Arafat
+T77	PER 1543 1549	Arafat
+T78	PER 1677 1683	Arafat
+T79	PER 1714 1716	he
+T80	PER 1782 1784	he
+T81	PER 1798 1800	he
+T82	PER 1446 1530	these , um , incredibly -- oppressed and in some ways imprisoned , uh , Palestinians
+T83	PER 1595 1599	them
+T84	PER 1620 1625	their
+T85	PER 1647 1651	they
+T86	Attack 1610 1615	fight
+E8	Attack:T86 Attacker:T78
+T87	PER 1858 1864	Gandhi
+T88	PER 1871 1876	Marco
+T89	PER 1916 1919	you
+T90	PER 1922 1928	Gandhi
+T91	PER 1985 1988	you
+T92	PER 1929 1930	I
+T93	PER 1961 1962	I
+T94	PER 1967 1968	I
+T95	PER 2019 2021	my
+T96	GPE 2098 2105	Israeli
+T97	GPE 2113 2117	they
+T98	GPE 2098 2110	Israeli side
+T99	PER 2071 2072	I
+T100	PER 2133 2135	he
+T101	PER 2159 2161	he
+T102	PER 2201 2206	Marco
+T103	PER 2214 2220	Gandhi
+T104	PER 2232 2234	he
+T105	TIM 2228 2231	Now
+T106	PER 2255 2260	Marco
+T107	PER 2268 2274	Gandhi
+T108	PER 2284 2286	us
+T109	PER 2351 2365	the coming one
+T110	GPE 2417 2431	the other side
+T111	GPE 2434 2440	Israel
+T112	PER 2312 2314	he
+T113	PER 2329 2336	himself
+T114	PER 2479 2484	Marco
+T115	PER 2492 2498	Gandhi
+T116	PER 2504 2506	we
+T117	PER 2567 2572	Marco
+T118	GPE 3075 3080	their
+T119	GPE 2924 2929	their
+T120	GPE 2999 3004	their
+T121	GPE 3045 3049	them
+T122	GPE 3075 3092	their own country
+T123	PER 3019 3022	you
+T124	PER 2654 2656	We
+T125	GPE 2957 3092	a government that has taken away a lot of their land , that , you know , does n't allow them to really move around in their own country
+T126	GPE 3012 3016	that
+T127	GPE 2970 2974	that
+T128	PER 2579 2580	I
+T129	PER 2588 2589	I
+T130	PER 2808 2809	I
+T131	PER 2827 2829	my
+T132	PER 2787 3092	a group that is - -- I do n't know , in my view , has -- not ver - not very many resources to fight - -- to fight this -- battle that -- their trying to fight against -- a government that has taken away a lot of their land , that , you know , does n't allow them to really move around in their own country
+T133	PER 3081 3084	own
+T134	PER 2763 3092	the leader of -- a - -- a group that is - -- I do n't know , in my view , has -- not ver - not very many resources to fight - -- to fight this -- battle that -- their trying to fight against -- a government that has taken away a lot of their land , that , you know , does n't allow them to really move around in their own country
+T135	Attack 2881 2886	fight
+E9	Attack:T135 Attacker:T132
+T136	PER 3134 3164	the leader of the Palestinians
+T137	PER 3302 3316	that -- leader
+T138	PER 3285 3316	the people -- of that -- leader
+T139	PER 3148 3164	the Palestinians
+T140	PER 3319 3325	Gandhi
+T141	PER 3354 3359	Marco
+T142	PER 3534 3564	the leader of the Palestinians
+T143	GPE 3457 3474	the United States
+T144	ORG 3433 3442	the media
+T145	PER 3548 3564	the Palestinians
+T146	PER 3580 3586	Gandhi
+T147	PER 3587 3592	Marco
+T148	PER 3593 3599	Arafat
+T149	GPE 3746 3757	Palestinian
+T150	PER 3725 3764	the leader of -- the Palestinian people
+T151	PER 3714 3717	you
+T152	PER 3742 3764	the Palestinian people
+T153	PER 3779 3785	Gandhi
+T154	PER 3828 3833	Marco
+T155	PER 3846 3852	Gandhi
+T156	PER 3905 3906	I
+T157	PER 3959 3964	Marco
+T158	PER 3972 3978	Gandhi
+T159	PER 3993 3996	you
+T160	PER 4019 4024	Marco
+T161	PER 4047 4049	my
+T162	PER 4083 4089	Gandhi
+T163	PER 4128 4130	me
+T164	PER 4193 4196	you
+T165	TIM 4138 4155	the other -- days
+T166	PER 4199 4204	Marco
+T167	PER 4380 4402	all of the new members
+T168	PER 4387 4402	the new members
+T169	PER 4300 4304	Bush
+T170	PER 4311 4315	Bush
+T171	PER 4249 4253	they
+T172	PER 4260 4264	they
+T173	PER 4332 4335	you
+T174	PER 4419 4420	I
+T175	PER 4426 4427	I
+T176	PER 4353 4372	new Cabinet members
+T177	PER 4407 4456	people that I 'm - I do n't really know very well
+T178	PER 4414 4418	that
+T179	PER 4278 4304	the Cabinet -- for -- Bush
+T180	PER 4357 4364	Cabinet
+T181	Nominate 4343 4352	selecting
+E10	Nominate:T181 Person:T176 Agent:T170
+T182	PER 4496 4497	I
+T183	PER 4503 4504	I
+T184	PER 4558 4561	you
+T185	PER 4618 4619	I
+T186	Elect 4587 4595	election
+E11	Elect:T186
+T187	PER 4675 4678	you
+T188	PER 4685 4688	you
+T189	PER 4700 4703	you
+T190	PER 4735 4738	you
+T191	GPE 4709 4726	the United States
+T192	PER 4756 4762	Gandhi
+T193	GPE 4775 4783	the area
+T194	GPE 4796 4801	Egypt
+T195	PER 4763 4764	I
+T196	PER 4786 4787	I
+T197	PER 4804 4809	Marco
+T198	GPE 4823 4828	Egypt
+T199	PER 4810 4813	You
+T200	PER 4831 4837	Gandhi
+T201	PER 4848 4849	I
+T202	PER 4855 4856	I
+T203	PER 4873 4878	Marco
+T204	PER 4882 4885	you
+T205	PER 4888 4894	Gandhi
+T206	PER 4936 4937	I
+T207	PER 4945 4951	People
+T208	PER 4965 4969	they
+T209	GPE 5034 5044	both sides
+T210	PER 5047 5052	Marco

@@ -1,0 +1,154 @@
+T1	TIM 41 61	2005-02-17T20 :19:00
+T2	PER 103 118	Rapid T. Rabbit
+T3	TIM 119 145	17 Feb 2005 17:19:51 -0800
+T4	ORG 155 180	one Carousel organization
+T5	PER 187 188	I
+T6	TIM 246 255	quarterly
+T7	ORG 271 304	the National Carousel Association
+T8	TIM 374 382	recently
+T9	ORG 340 369	the American Carousel Society
+T10	End-Org 383 392	disbanded
+E1	End-Org:T10 Org:T9
+T11	PER 395 406	Some of you
+T12	PER 403 406	you
+T13	ORG 439 465	two carousel organizations
+T14	PER 610 625	Frederick Fried
+T15	PER 628 800	author of the 1964 book `` A Pictorial History of The Carousel '' that single-handedly gave the classic hand-carved wooden carousel the respect and appreciation it deserved
+T16	TIM 642 646	1964
+T17	TIM 536 553	the early 1970 's
+T18	PER 557 800	a group of art historians and collectors , including Frederick Fried , author of the 1964 book `` A Pictorial History of The Carousel '' that single-handedly gave the classic hand-carved wooden carousel the respect and appreciation it deserved
+T19	PER 568 597	art historians and collectors
+T20	ORG 487 520	The National Carousel Association
+T21	Start-Org 525 532	founded
+E2	Start-Org:T21 Org:T20 Agent:T18 Time-Within:T17
+T22	PER 862 899	a major collector of carousel artwork
+T23	PER 827 911	Charlotte Dinger , who was already a major collector of carousel artwork at the time
+T24	PER 846 849	who
+T25	PER 803 817	Other founders
+T26	TIM 903 911	the time
+T27	ORG 929 936	the NCA
+T28	PER 1320 1334	art collectors
+T29	ORG 1344 1358	auction houses
+T30	PER 1367 1373	others
+T31	PER 1202 1218	owners/operators
+T32	PER 1179 1199	carousel enthusiasts
+T33	PER 1143 1373	a wide range of members , including carousel enthusiasts , owners/operators , theme and amusement parks , museums , libraries , those in the entertainment/recreation industry , art collectors and even auction houses , among others
+T34	ORG 1259 1268	libraries
+T35	ORG 1249 1256	museums
+T36	ORG 1221 1246	theme and amusement parks
+T37	ORG 1280 1317	the entertainment/recreation industry
+T38	PER 1271 1317	those in the entertainment/recreation industry
+T39	ORG 1116 1132	The organization
+T40	PER 1399 1426	these last two named groups
+T41	ORG 1495 1502	the NCA
+T42	PER 2018 2024	owners
+T43	TIM 1918 1929	the 1980 's
+T44	PER 2141 2165	amusement park operators
+T45	PER 2180 2185	their
+T46	ORG 2141 2155	amusement park
+T47	ORG 2344 2394	Some collectors of carousel art and auction houses
+T48	PER 2344 2394	Some collectors of carousel art and auction houses
+T49	PER 2417 2422	their
+T50	PER 2488 2492	they
+T51	PER 2521 2526	their
+T52	ORG 2602 2618	the organization
+T53	ORG 2423 2426	NCA
+T54	PER 2649 2693	the `` preservationists '' and `` collectors
+T55	PER 2784 2794	collectors
+T56	PER 2780 2813	the collectors faction of the NCA
+T57	PER 2772 2813	many in the collectors faction of the NCA
+T58	PER 2889 2895	others
+T59	PER 2868 2884	Charlotte Dinger
+T60	PER 2851 2895	founders such as Charlotte Dinger and others
+T61	ORG 2806 2813	the NCA
+T62	ORG 2829 2838	the group
+T63	PER 2966 2976	Fred Fried
+T64	PER 2898 2918	The preservationists
+T65	ORG 2946 2953	the NCA
+T66	ORG 3085 3092	the NCA
+T67	PER 3014 3066	carousel artwork collector and printer Marge Swenson
+T68	PER 3014 3052	carousel artwork collector and printer
+T69	PER 3071 3124	the editor of the NCA 's Merry-Go-Roundup publication
+T70	TIM 2982 3011	this time in the late 1970 's
+T71	PER 3246 3260	the membership
+T72	ORG 3171 3178	the NCA
+T73	PER 3205 3213	officers
+T74	ORG 3404 3413	the group
+T75	PER 3387 3413	both factions in the group
+T76	PER 3414 3418	each
+T77	PER 3428 3437	the other
+T78	ORG 3494 3501	the NCA
+T79	PER 3461 3468	Swenson
+T80	PER 3469 3476	herself
+T81	End-Position 3488 3493	leave
+E3	End-Position:T81 Person:T79 Entity:T78
+T82	TIM 3672 3682	each month
+T83	PER 3521 3524	she
+T84	PER 3542 3545	her
+T85	PER 3643 3660	different carvers
+T86	ORG 3781 3936	the American Carousel Society -LRB- ACS -RRB- , whose stated aims of carousel preservation also recognized collectors as a positive asset towards that goal
+T87	ORG 3817 3820	ACS
+T88	ORG 3829 3834	whose
+T89	ORG 3723 3756	the National Carousel Association
+T90	PER 3697 3756	those collectors who left the National Carousel Association
+T91	PER 3714 3717	who
+T92	PER 3888 3898	collectors
+T93	Start-Org 3776 3780	form
+E4	Start-Org:T93 Org:T86 Agent:T90
+T94	PER 4049 4056	members
+T95	ORG 3972 4002	the two carousel organizations
+T96	TIM 3943 3969	the next couple of decades
+T97	ORG 4020 4024	each
+T98	ORG 4036 4039	its
+T99	ORG 4084 4095	both groups
+T100	ORG 4122 4127	their
+T101	TIM 4128 4134	annual
+T102	PER 4059 4063	Some
+T103	TIM 4156 4171	the mid-1980 's
+T104	PER 4172 4184	Walter Louck
+T105	TIM 4290 4297	monthly
+T106	PER 4393 4417	all carousel enthusiasts
+T107	TIM 4420 4440	About a decade later
+T108	ORG 4491 4498	The NCA
+T109	ORG 4538 4541	its
+T110	PER 4538 4549	its members
+T111	TIM 4563 4575	late 1990 's
+T112	PER 4595 4606	NCA founder
+T113	PER 4595 4617	NCA founder Fred Fried
+T114	PER 4656 4744	both who represented the two opposite points of view in the carousel preservation debate
+T115	PER 4661 4664	who
+T116	PER 4637 4653	Charlotte Dinger
+T117	ORG 4595 4598	NCA
+T118	TIM 4552 4559	The mid
+T119	Die 4629 4633	that
+E5	Die:T119 Victim:T116 Time-Within:T118
+T120	Die 4584 4591	passing
+E6	Die:T120 Victim:T113 Time-Within:T118
+T121	ORG 4890 4904	Carousel Works
+T122	ORG 4909 4923	Carousel Magic
+T123	ORG 4876 4923	firms such as Carousel Works and Carousel Magic
+T124	TIM 5115 5139	the past several decades
+T125	PER 5341 5364	the founding generation
+T126	PER 5297 5325	newer and younger leadership
+T127	ORG 5228 5291	the National Carousel Association and American Carousel Society
+T128	TIM 5142 5171	The turn of the new millenium
+T129	ORG 5367 5381	The two groups
+T130	ORG 5417 5421	them
+T131	ORG 5542 5553	non-profits
+T132	Merge-Org 5496 5511	re -RRB- merger
+E7	Merge-Org:T132
+T133	PER 5675 5686	the members
+T134	ORG 5609 5612	ACS
+T135	ORG 5661 5670	the clubs
+T136	ORG 5601 5604	NCA
+T137	ORG 5736 5765	the American Carousel Society
+T138	ORG 5786 5790	they
+T139	ORG 5850 5855	their
+T140	ORG 5850 5868	their organization
+T141	TIM 5701 5726	the past couple of months
+T142	End-Org 5884 5890	ceased
+E8	End-Org:T142 Org:T137 Time-Within:T141
+T143	PER 5975 5978	you
+T144	ORG 5931 5963	a single nationwide organization
+T145	TIM 5905 5908	now
+T146	PER 5996 6011	Rapid T. Rabbit
