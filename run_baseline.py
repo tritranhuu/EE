@@ -8,8 +8,8 @@ from baseline_models.naive_bayes import train_and_test_with_nb
 import pandas as pd
 
 if __name__ == "__main__":
-    data = DataProcessor('data/ace-05-brat/train')
-    data.format_to_file('data/ace-05-brat/csv/train.csv')
+    data = DataProcessor('data/ace-05-brat/test')
+    data.format_to_file('data/ace-05-brat/csv/test.csv')
     # crf = CRFModel(data.sentences)
     # print(crf.X.shape, crf.y.shape)
     # # print(crf.cross_val_predict())

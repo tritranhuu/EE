@@ -1,3 +1,4 @@
 pretrained_embedding
 *.pkl
 *pyc
+ace*
