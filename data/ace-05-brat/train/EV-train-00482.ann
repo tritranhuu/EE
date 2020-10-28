@@ -1,0 +1,239 @@
+T1	TIM 34 42	20030602
+T2	PER 237 262	a senior U.S. congressman
+T3	GPE 138 149	North Korea
+T4	GPE 306 325	the communist state
+T5	GPE 178 180	it
+T6	WEA 193 208	nuclear weapons
+T7	GPE 159 167	American
+T8	GPE 246 250	U.S.
+T9	PER 159 177	American lawmakers
+T10	WEA 230 234	more
+T11	TIM 268 274	Monday
+T12	Transport 298 302	trip
+E1	Transport:T12 Artifact:T2 Destination:T4
+T13	Transport 281 290	returning
+E2	Transport:T13 Artifact:T2 Origin:T4 Time-Before:T11
+T14	PER 411 523	Rep. Curt Weldon , who headed a delegation of U.S. lawmakers that visited Pyongyang for three days ending Sunday
+T15	PER 411 415	Rep.
+T16	PER 430 433	who
+T17	GPE 331 335	They
+T18	WEA 355 385	nuclear capability and weapons
+T19	GPE 457 461	U.S.
+T20	GPE 485 494	Pyongyang
+T21	PER 472 476	that
+T22	PER 441 523	a delegation of U.S. lawmakers that visited Pyongyang for three days ending Sunday
+T23	PER 457 471	U.S. lawmakers
+T24	TIM 517 523	Sunday
+T25	TIM 495 523	for three days ending Sunday
+T26	TIM 389 400	this moment
+T27	Transport 477 484	visited
+E3	Transport:T27 Destination:T20 Artifact:T21 Time-Before:T24
+T28	GPE 529 533	They
+T29	GPE 566 571	their
+T30	PER 604 610	Weldon
+T31	GPE 639 643	U.S.
+T32	PER 639 653	U.S. officials
+T33	GPE 673 680	Beijing
+T34	TIM 684 689	April
+T35	Meet 664 669	talks
+E4	Meet:T35 Place:T33 Entity:T32 Time-Within:T34
+T36	GPE 707 718	North Korea
+T37	GPE 767 769	it
+T38	WEA 782 797	nuclear weapons
+T39	PER 692 696	They
+T40	Meet 756 761	talks
+E5	Meet:T40 Entity:T36
+T41	PER 883 889	Weldon
+T42	PER 930 977	North Korean Vice Foreign Minister Kim Kye Gwan
+T43	PER 930 964	North Korean Vice Foreign Minister
+T44	GPE 930 942	North Korean
+T45	GPE 919 924	Seoul
+T46	Meet 1014 1021	meeting
+E6	Meet:T46 Entity:T41 Entity:T42
+T47	PER 1072 1078	Weldon
+T48	GPE 1261 1271	its allies
+T49	PER 1029 1032	Kim
+T50	GPE 1084 1093	Pyongyang
+T51	PER 1037 1066	Foreign Minister Paek Nam Sun
+T52	PER 1037 1053	Foreign Minister
+T53	GPE 1239 1256	the United States
+T54	GPE 1261 1264	its
+T55	WEA 1113 1133	more nuclear weapons
+T56	PER 1363 1369	Weldon
+T57	PER 1385 1388	who
+T58	PER 1372 1384	a Republican
+T59	PER 1392 1461	the No. 2 member of a U.S. House panel that oversees the armed forces
+T60	ORG 1412 1461	a U.S. House panel that oversees the armed forces
+T61	ORG 1431 1435	that
+T62	ORG 1445 1461	the armed forces
+T63	GPE 1277 1281	They
+T64	GPE 1414 1418	U.S.
+T65	ORG 1414 1424	U.S. House
+T66	WEA 1531 1557	several more nuclear bombs
+T67	PER 1464 1476	U.S. experts
+T68	GPE 1519 1530	North Korea
+T69	GPE 1464 1468	U.S.
+T70	TIM 1565 1571	months
+T71	PER 1608 1614	Weldon
+T72	ORG 1666 1692	North Korea 's legislature
+T73	ORG 1695 1725	the Supreme People 's Assembly
+T74	GPE 1666 1677	North Korea
+T75	PER 1638 1651	Choe Thae Bok
+T76	PER 1654 1725	chairman of North Korea 's legislature , the Supreme People 's Assembly
+T77	GPE 1596 1605	Pyongyang
+T78	PER 1581 1586	their
+T79	PER 1608 1628	Weldon 's delegation
+T80	Meet 1634 1637	met
+E7	Meet:T80 Place:T77 Entity:T79 Entity:T75
+T81	Transport 1587 1592	visit
+E8	Transport:T81 Artifact:T78 Destination:T77
+T82	TIM 1881 1897	began in October
+T83	GPE 1826 1834	American
+T84	GPE 1774 1778	U.S.
+T85	PER 1774 1803	U.S. President George W. Bush
+T86	PER 1774 1788	U.S. President
+T87	PER 1737 1741	they
+T88	PER 1806 1810	they
+T89	PER 1816 1897	the first American officials to visit since the nuclear standoff began in October
+T90	PER 1764 1803	envoys of U.S. President George W. Bush
+T91	TIM 1922 1928	Sunday
+T92	GPE 1970 1978	Northern
+T93	GPE 1913 1918	Seoul
+T94	PER 1900 1904	They
+T95	PER 1964 1969	their
+T96	GPE 1938 1950	South Korean
+T97	PER 1938 1960	South Korean officials
+T98	Transport 1905 1909	flew
+E9	Transport:T98 Artifact:T94 Destination:T93 Time-Within:T91
+T99	Transport 1979 1983	trip
+E10	Transport:T99 Artifact:T95 Destination:T92 Time-Before:T91
+T100	PER 2148 2154	Weldon
+T101	GPE 1986 1997	North Korea
+T102	GPE 2003 2005	it
+T103	GPE 2021 2024	its
+T104	GPE 2066 2070	they
+T105	GPE 2099 2107	the U.S.
+T106	PER 2117 2131	Saddam Hussein
+T107	GPE 2087 2091	Iraq
+T108	WEA 2021 2040	its nuclear weapons
+T109	End-Position 2108 2116	removing
+E11	End-Position:T109 Person:T106 Place:T107
+T110	GPE 2362 2371	Pyongyang
+T111	GPE 2164 2176	North Korean
+T112	GPE 2228 2237	state-run
+T113	GPE 2347 2357	Washington
+T114	GPE 2306 2316	each other
+T115	PER 2162 2203	A North Korean foreign ministry spokesman
+T116	ORG 2238 2242	KCNA
+T117	ORG 2228 2254	state-run KCNA news agency
+T118	ORG 2164 2193	North Korean foreign ministry
+T119	GPE 2277 2287	both sides
+T120	GPE 2321 2325	they
+T121	PER 2636 2649	the spokesman
+T122	GPE 2428 2432	They
+T123	GPE 2543 2548	their
+T124	GPE 2657 2668	North Korea
+T125	GPE 2692 2702	Washington
+T126	Attack 2717 2723	invade
+E12	Attack:T126 Attacker:T125
+T127	PER 2726 2730	Bush
+T128	PER 2736 2738	he
+T129	PER 2824 2859	South Korean President Roh Moo-hyun
+T130	PER 2824 2846	South Korean President
+T131	PER 2865 2868	his
+T132	GPE 2917 2928	North Korea
+T133	WEA 2933 2948	nuclear weapons
+T134	GPE 2816 2821	Seoul
+T135	GPE 2824 2836	South Korean
+T136	GPE 2865 2879	his government
+T137	GPE 2954 2965	North Korea
+T138	GPE 3018 3020	it
+T139	WEA 3035 3040	nukes
+T140	GPE 2995 3012	the United States
+T141	PER 2975 3012	important people of the United States
+T142	PER 3134 3137	Roh
+T143	PER 3117 3128	anyone else
+T144	GPE 3079 3090	North Korea
+T145	GPE 3220 3222	it
+T146	WEA 3227 3242	nuclear weapons
+T147	GPE 3155 3157	we
+T148	GPE 3203 3205	we
+T149	PER 3283 3314	U.S. and South Korean officials
+T150	GPE 3324 3335	North Korea
+T151	GPE 3358 3361	its
+T152	GPE 3283 3287	U.S.
+T153	GPE 3420 3437	the United States
+T154	GPE 3292 3304	South Korean
+T155	PER 3444 3488	U.S. Deputy Defense Secretary Paul Wolfowitz
+T156	PER 3444 3473	U.S. Deputy Defense Secretary
+T157	GPE 3444 3448	U.S.
+T158	TIM 3494 3500	Monday
+T159	PER 3671 3673	he
+T160	GPE 3611 3623	North Korean
+T161	GPE 3558 3560	we
+T162	GPE 3580 3582	we
+T163	GPE 3703 3708	Seoul
+T164	PER 3600 3633	they -LRB- North Korean officials
+T165	PER 3611 3633	North Korean officials
+T166	PER 3711 3717	Weldon
+T167	PER 3723 3726	his
+T168	GPE 3840 3869	Pyongyang 's communist regime
+T169	GPE 3840 3849	Pyongyang
+T170	GPE 3894 3897	its
+T171	PER 3723 3737	his delegation
+T172	PER 3916 3919	Roh
+T173	PER 4176 4178	he
+T174	GPE 4058 4069	North Korea
+T175	WEA 4091 4106	nuclear weapons
+T176	GPE 4012 4029	the United States
+T177	GPE 3996 4007	South Korea
+T178	PER 4233 4242	Wolfowitz
+T179	PER 4245 4248	who
+T180	PER 4186 4189	Roh
+T181	GPE 4312 4323	North Korea
+T182	GPE 4214 4218	U.S.
+T183	GPE 4265 4270	Seoul
+T184	TIM 4271 4300	on Sunday for a two-day visit
+T185	PER 4210 4228	the U.S. lawmakers
+T186	Meet 4202 4209	meeting
+E13	Meet:T186 Place:T183 Entity:T180 Entity:T185 Entity:T178
+T187	Transport 4254 4261	arrived
+E14	Transport:T187 Destination:T183 Artifact:T179 Time-Before:T184
+T188	GPE 4353 4362	Singapore
+T189	PER 4326 4335	Wolfowitz
+T190	GPE 4405 4416	North Korea
+T191	GPE 4368 4378	Washington
+T192	TIM 4341 4349	Saturday
+T193	PER 4486 4495	Wolfowitz
+T194	TIM 4477 4483	Monday
+T195	PER 4595 4604	Wolfowitz
+T196	ORG 4704 4715	U.S. forces
+T197	GPE 4704 4708	U.S.
+T198	GPE 4570 4582	South Korean
+T199	PER 4570 4592	South Korean officials
+T200	PER 4611 4615	them
+T201	Meet 4556 4564	meetings
+E15	Meet:T201 Entity:T199 Entity:T195
+T202	NUM 4755 4771	US$ 14.5 billion
+T203	ORG 4776 4788	its military
+T204	GPE 4728 4739	South Korea
+T205	GPE 4776 4779	its
+T206	PER 4946 4955	Wolfowitz
+T207	GPE 4929 4940	Afghanistan
+T208	PER 4892 4910	our special forces
+T209	PER 4921 4925	them
+T210	GPE 4892 4895	our
+T211	ORG 4794 4798	They
+T212	PER 4963 4965	He
+T213	LOC 5100 5113	the peninsula
+T214	PER 4992 4998	troops
+T215	GPE 5032 5041	the North
+T216	Attack 5088 5096	conflict
+E16	Attack:T216 Place:T213
+T217	PER 5178 5192	U.S. officials
+T218	GPE 5198 5209	North Korea
+T219	WEA 5236 5251	nuclear weapons
+T220	GPE 5178 5182	U.S.
+T221	GPE 5295 5305	Washington
+T222	TIM 5160 5172	last October
+T223	TIM 5278 5282	1994

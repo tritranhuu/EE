@@ -1,0 +1,68 @@
+T1	TIM 45 65	2005-02-05T19 :54:00
+T2	PER 94 99	Scott
+T3	TIM 100 120	2005-02-05T19 :54:00
+T4	PER 224 230	anyone
+T5	PER 146 176	some pretty undesirable people
+T6	PER 207 208	I
+T7	PER 121 123	We
+T8	FAC 377 386	home-made
+T9	NUM 306 317	about $ 900
+T10	PER 255 271	A Colorado judge
+T11	PER 280 298	two teen-age girls
+T12	PER 351 355	they
+T13	PER 335 345	a neighbor
+T14	PER 373 376	her
+T15	GPE 257 265	Colorado
+T16	Transfer-Money 302 305	pay
+E1	Transfer-Money:T16 Giver:T11 Beneficiary:T13 Money:T9 Place:T15
+T17	TIM 522 524	49
+T18	TIM 704 716	the next day
+T19	NUM 452 460	$ 871.70
+T20	NUM 466 470	$ 39
+T21	ORG 474 479	court
+T22	FAC 691 703	the hospital
+T23	FAC 594 603	her house
+T24	PER 610 619	the girls
+T25	PER 423 431	The pair
+T26	PER 631 634	her
+T27	PER 684 687	her
+T28	PER 492 519	neighbor Wanita Renea Young
+T29	PER 492 500	neighbor
+T30	PER 594 597	her
+T31	Sue 535 542	lawsuit
+E2	Sue:T31 Defendant:T25 Plaintiff:T28
+T32	Transfer-Money 448 451	pay
+E3	Transfer-Money:T32 Giver:T25 Money:T19 Money:T20 Recipient:T21
+T33	Transport 679 683	sent
+E4	Transport:T33 Artifact:T27 Destination:T23 Origin:T22 Time-Within:T18
+T34	TIM 801 809	Thursday
+T35	TIM 775 777	18
+T36	TIM 911 917	Friday
+T37	TIM 744 746	17
+T38	TIM 739 743	then
+T39	PER 889 902	a court clerk
+T40	PER 847 886	La Plata County Court Judge Doug Walker
+T41	PER 847 874	La Plata County Court Judge
+T42	PER 753 772	Lindsey Jo Zellitte
+T43	ORG 818 836	small claims court
+T44	ORG 847 868	La Plata County Court
+T45	ORG 891 896	court
+T46	PER 719 736	Taylor Ostergaard
+T47	Transfer-Money 780 784	paid
+E5	Transfer-Money:T47 Giver:T46 Giver:T42 Time-Within:T34
+T48	FAC 1048 1061	their porches
+T49	TIM 1130 1143	a great night
+T50	TIM 1007 1014	July 31
+T51	PER 962 1003	several of their rural Colorado neighbors
+T52	PER 1048 1053	their
+T53	PER 973 1003	their rural Colorado neighbors
+T54	LOC 979 993	rural Colorado
+T55	PER 920 929	The girls
+T56	PER 973 978	their
+T57	FAC 1229 1233	home
+T58	TIM 1187 1193	Friday
+T59	PER 1199 1208	the girls
+T60	Transport 1267 1269	go
+E6	Transport:T60 Artifact:T59 Origin:T57
+T61	ORG 1325 1337	Zebra Report
+T62	PER 1355 1381	the good-intentioned girls

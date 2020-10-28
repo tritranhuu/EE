@@ -1,0 +1,44 @@
+T1	TIM 34 42	20030415
+T2	TIM 121 129	April 16
+T3	GPE 113 118	MACAO
+T4	ORG 136 142	Xinhua
+T5	PER 249 260	a Taiwanese
+T6	VEH 229 243	the same plane
+T7	ORG 192 211	the Health Services
+T8	TIM 344 351	April 8
+T9	GPE 154 159	Macao
+T10	PER 149 169	Four Macao residents
+T11	PER 217 221	they
+T12	ORG 410 423	the authority
+T13	ORG 354 373	The Health Services
+T14	PER 380 398	the four residents
+T15	PER 446 451	their
+T16	ORG 484 513	the World Health Organization
+T17	ORG 520 523	WHO
+T18	PER 563 583	these four residents
+T19	PER 620 624	they
+T20	PER 662 666	they
+T21	ORG 1124 1127	WHO
+T22	ORG 897 916	the Health Services
+T23	TIM 1010 1018	Thursday
+T24	JOB 809 817	director
+T25	PER 790 793	who
+T26	PER 809 840	director of the SARS task force
+T27	PER 735 775	Secretary for Social Affairs and Culture
+T28	PER 735 858	Secretary for Social Affairs and Culture Chui Sai On , who has been named director of the SARS task force by the government
+T29	ORG 749 775	Social Affairs and Culture
+T30	ORG 821 840	the SARS task force
+T31	GPE 976 1006	neighboring Guangdong Province
+T32	GPE 1035 1044	Guangdong
+T33	ORG 921 966	the Center for Disease Prevention and Control
+T34	PER 876 966	representatives from the Health Services and the Center for Disease Prevention and Control
+T35	GPE 844 858	the government
+T36	Nominate 803 808	named
+E1	Nominate:T36 Person:T28 Agent:T35 Position:T24
+T37	Transport 970 975	visit
+E2	Transport:T37 Artifact:T34 Destination:T31 Time-Within:T23
+T38	TIM 1240 1249	Wednesday
+T39	GPE 1204 1209	Macao
+T40	TIM 1378 1393	every six hours
+T41	PER 1396 1400	Chui
+T42	ORG 1299 1313	the task force

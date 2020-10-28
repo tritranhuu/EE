@@ -1,0 +1,287 @@
+T1	TIM 43 63	2005-02-18T19 :02:00
+T2	PER 90 94	Lynn
+T3	TIM 95 127	Fri , 18 Feb 2005 19:02:43 -0500
+T4	PER 128 133	Board
+T5	PER 128 140	Board Member
+T6	Transfer-Money 141 153	Compensation
+E1	Transfer-Money:T6 Recipient:T5
+T7	PER 160 163	all
+T8	PER 213 218	board
+T9	PER 321 326	board
+T10	PER 213 226	board members
+T11	PER 257 261	they
+T12	PER 338 347	their own
+T13	PER 344 347	own
+T14	Transfer-Money 363 366	pay
+E2	Transfer-Money:T14 Recipient:T10
+T15	Meet 241 249	meetings
+E3	Meet:T15 Entity:T10
+T16	Meet 327 334	meeting
+E4	Meet:T16 Entity:T10 Entity:T9
+T17	Transfer-Money 200 212	compensating
+E5	Transfer-Money:T17 Recipient:T10
+T18	PER 369 371	We
+T19	PER 418 423	board
+T20	PER 413 430	this board member
+T21	PER 482 495	Nathan Garber
+T22	TIM 496 528	Sat , 19 Feb 2005 11:15:48 -0500
+T23	PER 534 539	Board
+T24	PER 534 546	Board Member
+T25	Transfer-Money 547 559	Compensation
+E6	Transfer-Money:T25 Recipient:T24
+T26	PER 560 564	Lynn
+T27	ORG 568 585	your organization
+T28	ORG 589 598	a charity
+T29	PER 706 711	board
+T30	PER 706 719	board members
+T31	PER 724 729	their
+T32	PER 568 572	your
+T33	Transfer-Money 695 705	compensate
+E7	Transfer-Money:T33 Giver:T28 Recipient:T30
+T34	GPE 772 797	your state and/or country
+T35	PER 740 743	You
+T36	PER 772 776	your
+T37	PER 842 847	board
+T38	PER 924 933	the board
+T39	PER 842 855	board members
+T40	Transfer-Money 832 841	reimburse
+E8	Transfer-Money:T40 Recipient:T39
+T41	PER 1004 1009	board
+T42	PER 1024 1029	board
+T43	PER 981 988	someone
+T44	PER 936 937	I
+T45	PER 1000 1016	the board member
+T46	PER 1020 1036	the board member
+T47	PER 948 951	you
+T48	Meet 1048 1056	meetings
+E9	Meet:T48 Entity:T42
+T49	End-Position 992 999	replace
+E10	End-Position:T49 Person:T45
+T50	Transfer-Money 974 980	paying
+E11	Transfer-Money:T50 Giver:T47 Recipient:T43
+T51	PER 1068 1076	a lawyer
+T52	PER 1129 1134	board
+T53	PER 1127 1141	a board member
+T54	PER 1059 1060	I
+T55	PER 1095 1097	me
+T56	PER 1167 1173	no one
+T57	PER 1146 1158	a babysitter
+T58	Transfer-Money 1115 1126	reimbursing
+E12	Transfer-Money:T58 Recipient:T53
+T59	TIM 1219 1236	the meeting times
+T60	Meet 1223 1230	meeting
+E13	Meet:T60
+T61	PER 1239 1245	Nathan
+T62	PER 1246 1250	lnma
+T63	TIM 1251 1283	Sat , 19 Feb 2005 11:34:54 -0500
+T64	PER 1289 1294	Board
+T65	PER 1289 1301	Board Member
+T66	Transfer-Money 1302 1314	Compensation
+E14	Transfer-Money:T66 Recipient:T65
+T67	ORG 1315 1317	We
+T68	GPE 1338 1346	Maryland
+T69	PER 1375 1384	the board
+T70	GPE 1466 1502	different states from coast to coast
+T71	LOC 1497 1502	coast
+T72	LOC 1488 1493	coast
+T73	ORG 1391 1393	we
+T74	ORG 1398 1433	a charity 501 -LRB- c -RRB- -LRB- 3
+T75	PER 1359 1384	just 5 of us on the board
+T76	PER 1451 1453	we
+T77	PER 1369 1371	us
+T78	PER 1454 1457	all
+T79	TIM 1534 1539	times
+T80	PER 1544 1553	all of us
+T81	Meet 1561 1569	together
+E15	Meet:T81 Entity:T80
+T82	GPE 1625 1667	the state in which this board member lives
+T83	GPE 1638 1643	which
+T84	PER 1649 1654	board
+T85	PER 1578 1579	I
+T86	PER 1644 1661	this board member
+T87	GPE 1598 1606	Maryland
+T88	PER 1679 1689	David Ross
+T89	TIM 1690 1722	Sat , 19 Feb 2005 11:29:45 -0800
+T90	PER 1728 1733	Board
+T91	PER 1728 1740	Board Member
+T92	Transfer-Money 1741 1753	Compensation
+E16	Transfer-Money:T92 Recipient:T91
+T93	ORG 1757 1760	IRS
+T94	PER 1867 1876	directors
+T95	Transfer-Money 1839 1851	compensation
+E17	Transfer-Money:T95 Recipient:T94
+T96	PER 2005 2010	board
+T97	ORG 1946 1962	the organization
+T98	Meet 2011 2019	meetings
+E18	Meet:T98 Entity:T96
+T99	PER 2108 2117	directors
+T100	Transfer-Money 2092 2104	compensation
+E19	Transfer-Money:T100 Recipient:T99
+T101	ORG 2209 2225	the organization
+T102	ORG 2269 2285	the organization
+T103	GPE 2130 2135	state
+T104	PER 2146 2149	you
+T105	GPE 2175 2294	the states -LRB- 1 -RRB- in which the organization is incorporated and -LRB- 2 -RRB- in which the organization operates
+T106	GPE 2203 2208	which
+T107	GPE 2263 2268	which
+T108	PER 2454 2467	the directors
+T109	ORG 2301 2386	an organization that is incorporated in Maryland and has its headquarters in Maryland
+T110	ORG 2317 2321	that
+T111	ORG 2358 2361	its
+T112	FAC 2358 2374	its headquarters
+T113	GPE 2434 2472	the states in which the directors live
+T114	GPE 2448 2453	which
+T115	GPE 2341 2349	Maryland
+T116	GPE 2378 2386	Maryland
+T117	GPE 2401 2409	Maryland
+T118	ORG 2486 2499	a corporation
+T119	ORG 2511 2613	a `` person '' , distinct from the corporeal persons who govern , manage , and operate the corporation
+T120	ORG 2598 2613	the corporation
+T121	PER 2542 2613	the corporeal persons who govern , manage , and operate the corporation
+T122	PER 2564 2567	who
+T123	ORG 2644 2664	the corporate person
+T124	ORG 2697 2708	that person
+T125	GPE 2681 2717	the state where that person `` lives
+T126	GPE 2691 2696	where
+T127	PER 2726 2739	David E. Ross
+T128	PER 2757 2758	I
+T129	PER 2774 2776	my
+T130	PER 2797 2798	I
+T131	PER 2872 2889	Freddie Newsgroup
+T132	TIM 2890 2920	Sun , 20 Feb 2005 08:14:39 GMT
+T133	PER 2926 2931	Board
+T134	PER 2926 2938	Board Member
+T135	Transfer-Money 2939 2951	Compensation
+E20	Transfer-Money:T135 Recipient:T134
+T136	GPE 3011 3017	Canada
+T137	PER 3054 3086	people on boards that are active
+T138	PER 3071 3075	that
+T139	PER 3064 3070	boards
+T140	Transfer-Money 3021 3024	pay
+E21	Transfer-Money:T140 Place:T136 Recipient:T137
+T141	PER 3089 3093	Many
+T142	PER 3107 3111	they
+T143	PER 3162 3166	they
+T144	Transfer-Money 3097 3101	this
+E22	Transfer-Money:T144 Giver:T141
+T145	PER 3197 3211	the recipients
+T146	PER 3320 3324	they
+T147	PER 3174 3178	They
+T148	Transfer-Money 3218 3225	payment
+E23	Transfer-Money:T148 Giver:T147 Recipient:T145
+T149	PER 3341 3345	lnma
+T150	TIM 3346 3378	Mon , 21 Feb 2005 17:40:01 -0500
+T151	PER 3384 3389	Board
+T152	PER 3384 3396	Board Member
+T153	Transfer-Money 3397 3409	Compensation
+E24	Transfer-Money:T153 Recipient:T152
+T154	GPE 3491 3499	the U.S.
+T155	PER 3419 3499	anyone who knows of a precedent for this being done for a non-profit in the U.S.
+T156	PER 3426 3429	who
+T157	ORG 3475 3499	a non-profit in the U.S.
+T158	PER 3511 3517	anonym
+T159	TIM 3522 3552	Mon , 21 Feb 2005 22:59:47 GMT
+T160	PER 3558 3563	Board
+T161	PER 3558 3570	Board Member
+T162	Transfer-Money 3571 3583	Compensation
+E25	Transfer-Money:T162 Recipient:T161
+T163	ORG 3590 3614	Some Head Start agencies
+T164	ORG 3595 3605	Head Start
+T165	ORG 3617 3641	Community Health Centers
+T166	ORG 3648 3705	similar nonprofit organizations serving low-income people
+T167	PER 3688 3705	low-income people
+T168	PER 3732 3740	consumer
+T169	PER 3762 3774	their boards
+T170	ORG 3762 3767	their
+T171	PER 3813 3818	child
+T172	PER 3908 3914	anonym
+T173	TIM 3919 3949	Mon , 21 Feb 2005 23:03:58 GMT
+T174	PER 3955 3960	Board
+T175	PER 3955 3967	Board Member
+T176	Transfer-Money 3968 3980	Compensation
+E26	Transfer-Money:T176 Recipient:T175
+T177	PER 3981 3998	Michael L. Wyland
+T178	GPE 4044 4060	Sioux Falls , SD
+T179	ORG 3999 4016	Sumption & Wyland
+T180	CTI 4072 4094	-LRB-605-RRB- 336-0244
+T181	CTI 4183 4212	mich...@sumptionandwyland.com
+T182	CTI 4140 4176	888 -RRB- 4-SUMPTION -LRB- toll-free
+T183	CTI 4095 4127	-LRB-605-RRB- 336-0275 -LRB- FAX
+T184	GPE 4058 4060	SD
+T185	LOC 4017 4043	818 South Hawthorne Avenue
+T186	FAC 4021 4043	South Hawthorne Avenue
+T187	PER 4329 4342	Nathan Garber
+T188	TIM 4343 4375	Tue , 22 Feb 2005 07:48:14 -0500
+T189	PER 4381 4386	Board
+T190	PER 4381 4393	Board Member
+T191	Transfer-Money 4394 4406	Compensation
+E27	Transfer-Money:T191 Recipient:T190
+T192	PER 4454 4460	Freddy
+T193	ORG 4579 4588	charities
+T194	PER 4566 4588	directors of charities
+T195	ORG 4722 4731	charities
+T196	GPE 4629 4637	Canadian
+T197	PER 4705 4710	board
+T198	PER 4753 4758	board
+T199	PER 4606 4766	a lawyer familiar with Canadian charity law , who explained that it is not permitted to remunerate board members of charities for their service as board members
+T200	PER 4652 4655	who
+T201	PER 4705 4731	board members of charities
+T202	PER 4736 4741	their
+T203	PER 4753 4766	board members
+T204	PER 4591 4592	I
+T205	ORG 4629 4645	Canadian charity
+T206	ORG 4816 4862	nonprofit organizations that are not charities
+T207	ORG 4840 4844	that
+T208	ORG 4853 4862	charities
+T209	PER 4803 4862	directors of nonprofit organizations that are not charities
+T210	GPE 4868 4875	the USA
+T211	GPE 4898 4903	state
+T212	GPE 4907 4912	state
+T213	ORG 4951 4960	charities
+T214	PER 4934 4939	board
+T215	PER 4934 4960	board members of charities
+T216	GPE 4915 4926	Some states
+T217	ORG 5087 5096	charities
+T218	PER 5074 5096	directors of charities
+T219	PER 5012 5018	Donors
+T220	PER 5021 5028	funders
+T221	PER 5035 5053	the general public
+T222	PER 5176 5185	directors
+T223	LOC 5140 5150	everywhere
+T224	PER 5360 5365	board
+T225	ORG 5262 5271	a charity
+T226	ORG 5241 5258	your organization
+T227	PER 5360 5373	board members
+T228	GPE 5292 5302	your state
+T229	PER 5241 5245	your
+T230	PER 5274 5277	you
+T231	PER 5292 5296	your
+T232	PER 5333 5336	you
+T233	PER 5376 5382	Nathan
+T234	PER 5383 5400	Freddie Newsgroup
+T235	TIM 5401 5431	Tue , 22 Feb 2005 20:47:33 GMT
+T236	PER 5437 5442	Board
+T237	PER 5437 5449	Board Member
+T238	Transfer-Money 5450 5462	Compensation
+E28	Transfer-Money:T238 Recipient:T237
+T239	GPE 5501 5507	Canada
+T240	ORG 5517 5540	the non-profit industry
+T241	PER 5469 5540	someone that works and lives in Canada , and in the non-profit industry
+T242	PER 5477 5481	that
+T243	ORG 5521 5531	non-profit
+T244	Transfer-Money 5543 5545	it
+E29	Transfer-Money:T244 Place:T239
+T245	ORG 5601 5625	the large student unions
+T246	ORG 5641 5646	their
+T247	ORG 5628 5636	they all
+T248	PER 5611 5618	student
+T249	PER 5641 5668	their elected board members
+T250	PER 5655 5660	board
+T251	ORG 5699 5720	the large foundations
+T252	ORG 5691 5720	many of the large foundations
+T253	Elect 5647 5654	elected
+E30	Elect:T253 Person:T249 Entity:T246
+T254	Transfer-Money 5637 5640	pay
+E31	Transfer-Money:T254 Recipient:T249
+T255	Transfer-Money 5741 5743	it
+E32	Transfer-Money:T255

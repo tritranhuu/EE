@@ -1,0 +1,214 @@
+T1	TIM 34 42	20030314
+T2	TIM 165 173	March 14
+T3	ORG 180 183	AFP
+T4	FAC 148 162	UNITED NATIONS
+T5	TIM 237 243	Friday
+T6	GPE 298 302	Iraq
+T7	GPE 310 320	Washington
+T8	GPE 329 331	it
+T9	FAC 218 236	the United Nations
+T10	ORG 345 365	the Security Council
+T11	Attack 376 379	war
+E1	Attack:T11 Attacker:T8
+T12	ORG 549 557	military
+T13	WEA 584 598	missile-firing
+T14	GPE 498 508	US-British
+T15	LOC 611 622	the Red Sea
+T16	GPE 521 538	the United States
+T17	GPE 545 548	its
+T18	VEH 579 607	more missile-firing warships
+T19	TIM 438 451	late Thursday
+T20	GPE 465 471	French
+T21	GPE 476 483	Russian
+T22	FAC 411 429	the top world body
+T23	Meet 402 407	talks
+E2	Meet:T23 Place:T22 Entity:T20 Entity:T21 Entity:T14 Entity:T14 Time-Within:T19
+T24	Transport 569 578	deploying
+E3	Transport:T24 Artifact:T18 Agent:T16 Destination:T15
+T25	ORG 838 844	the UN
+T26	PER 814 844	France 's ambassador to the UN
+T27	GPE 625 757	Six non-permanent members of the Security Council considered to be in the middle ground between the fiercely pro- and anti-war camps
+T28	GPE 814 820	France
+T29	ORG 654 674	the Security Council
+T30	TIM 867 870	now
+T31	TIM 947 974	tomorrow -LRB- Friday -RRB-
+T32	PER 1008 1017	reporters
+T33	PER 894 896	we
+T34	PER 978 1002	Jean-Marc de La Sabliere
+T35	GPE 855 862	The six
+T36	Meet 926 938	consultation
+E4	Meet:T36 Entity:T35
+T37	TIM 1220 1240	in the next few days
+T38	TIM 1107 1111	1991
+T39	GPE 1020 1024	Iraq
+T40	GPE 1083 1085	it
+T41	GPE 1091 1093	it
+T42	WEA 1199 1206	anthrax
+T43	GPE 1149 1156	Baghdad
+T44	PER 1127 1240	diplomatic sources in Baghdad , who said a second batch of documents on anthrax would follow in the next few days
+T45	PER 1159 1162	who
+T46	WEA 1064 1111	biological weapons it said it destroyed in 1991
+T47	GPE 1395 1399	Asia
+T48	GPE 1284 1294	US-British
+T49	GPE 1313 1318	Iraqi
+T50	PER 1313 1343	Iraqi President Saddam Hussein
+T51	PER 1313 1328	Iraqi President
+T52	TIM 1350 1356	Monday
+T53	GPE 1434 1436	US
+T54	Meet 1375 1378	war
+E5	Meet:T54 Time-Within:T52
+T55	PER 1583 1613	London 's ambassador to the UN
+T56	PER 1616 1633	Jeremy Greenstock
+T57	PER 1643 1645	he
+T58	GPE 1452 1459	British
+T59	GPE 1583 1589	London
+T60	TIM 1558 1571	late Thursday
+T61	ORG 1515 1533	the United Nations
+T62	ORG 1607 1613	the UN
+T63	TIM 1670 1686	into the weekend
+T64	Meet 1655 1660	talks
+E6	Meet:T64 Time-Within:T63
+T65	PER 1689 1707	His US counterpart
+T66	PER 1710 1725	John Negroponte
+T67	PER 1738 1739	I
+T68	PER 1689 1692	His
+T69	GPE 1839 1846	British
+T70	GPE 1866 1870	Iraq
+T71	TIM 1777 1782	today
+T72	TIM 1796 1805	yesterday
+T73	TIM 1811 1822	after hours
+T74	GPE 1693 1695	US
+T75	PER 1751 1753	we
+T76	PER 1788 1790	we
+T77	ORG 1890 1897	council
+T78	Meet 1826 1831	talks
+E7	Meet:T78 Entity:T75 Time-Holds:T73
+T79	GPE 2023 2027	Iraq
+T80	GPE 2039 2042	its
+T81	TIM 2116 2122	Monday
+T82	GPE 1940 1971	six uncommitted council members
+T83	ORG 1956 1963	council
+T84	ORG 2083 2094	the council
+T85	ORG 2212 2230	the United Nations
+T86	TIM 2166 2172	Friday
+T87	GPE 2244 2246	US
+T88	GPE 2291 2301	Washington
+T89	ORG 2260 2265	State
+T90	GPE 2125 2139	The two allies
+T91	PER 2199 2230	diplomats at the United Nations
+T92	PER 2244 2278	US Secretary of State Colin Powell
+T93	PER 2244 2265	US Secretary of State
+T94	GPE 2358 2360	We
+T95	GPE 2382 2408	the members of the council
+T96	GPE 2535 2542	members
+T97	PER 2575 2581	Powell
+T98	ORG 2397 2408	the council
+T99	Meet 2371 2378	talking
+E8	Meet:T99 Entity:T94 Entity:T95
+T100	TIM 2618 2623	today
+T101	TIM 2626 2634	tomorrow
+T102	TIM 2639 2655	into the weekend
+T103	TIM 2669 2682	late Thursday
+T104	GPE 2592 2594	We
+T105	PER 2661 2663	he
+T106	ORG 2835 2843	military
+T107	GPE 2858 2862	Iraq
+T108	GPE 2802 2819	the United States
+T109	GPE 2831 2834	its
+T110	WEA 2870 2877	weapons
+T111	GPE 2729 2735	French
+T112	GPE 2740 2755	Russian refusal
+T113	GPE 2763 2768	their
+T114	Attack 2823 2830	unleash
+E9	Attack:T114 Attacker:T108 Place:T107
+T115	GPE 3057 3064	British
+T116	GPE 3101 3108	Baghdad
+T117	GPE 2934 2944	Washington
+T118	GPE 2914 2920	France
+T119	GPE 2955 2958	its
+T120	GPE 2985 2987	it
+T121	GPE 3191 3198	British
+T122	PER 3191 3227	British Foreign Secretary Jack Straw
+T123	PER 3191 3216	British Foreign Secretary
+T124	GPE 3123 3129	France
+T125	GPE 3148 3151	its
+T126	GPE 3352 3359	Britain
+T127	ORG 3311 3313	UN
+T128	ORG 3352 3385	Britain 's The Guardian newspaper
+T129	PER 3341 3346	Straw
+T130	GPE 3252 3256	they
+T131	PER 3424 3426	we
+T132	GPE 3587 3591	Iraq
+T133	TIM 3565 3574	this week
+T134	PER 3455 3499	Russian Deputy Foreign Minister Yury Fedotov
+T135	PER 3455 3486	Russian Deputy Foreign Minister
+T136	GPE 3509 3511	US
+T137	GPE 3455 3462	Russian
+T138	ORG 3543 3559	Security Council
+T139	ORG 3840 3864	the Interfax news agency
+T140	ORG 3799 3807	military
+T141	GPE 3659 3666	British
+T142	GPE 3695 3702	British
+T143	GPE 3716 3720	Iraq
+T144	GPE 3827 3834	Baghdad
+T145	PER 3643 3645	He
+T146	TIM 3992 3995	now
+T147	GPE 3962 3966	Iraq
+T148	GPE 4027 4031	Iraq
+T149	TIM 4009 4012	new
+T150	PER 3876 3878	He
+T151	GPE 3893 3899	Moscow
+T152	Attack 3947 3953	attack
+E10	Attack:T152 Place:T147
+T153	Attack 4071 4074	war
+E11	Attack:T153 Place:T148
+T154	PER 4108 4139	the German ambassador to the UN
+T155	PER 4142 4156	Gunter Pleuger
+T156	PER 4159 4162	who
+T157	GPE 4210 4217	British
+T158	GPE 4112 4118	German
+T159	ORG 4133 4139	the UN
+T160	PER 4080 4083	His
+T161	GPE 4235 4242	Germany
+T162	PER 4245 4273	Chancellor Gerhard Schroeder
+T163	PER 4245 4255	Chancellor
+T164	WEA 4284 4291	weapons
+T165	PER 4284 4302	weapons inspectors
+T166	PER 4333 4338	their
+T167	GPE 4363 4366	our
+T168	GPE 4448 4450	we
+T169	GPE 4484 4488	Iraq
+T170	PER 4533 4542	Schroeder
+T171	GPE 4378 4384	France
+T172	PER 4363 4447	our friends in France , with Russia , China and the majority of the security council
+T173	GPE 4392 4398	Russia
+T174	PER 4411 4447	the majority of the security council
+T175	GPE 4401 4406	China
+T176	ORG 4427 4447	the security council
+T177	GPE 4554 4564	British-US
+T178	GPE 4753 4760	Germany
+T179	GPE 4611 4620	15-member
+T180	GPE 4683 4689	France
+T181	GPE 4694 4700	Russia
+T182	GPE 4761 4764	all
+T183	GPE 4743 4748	China
+T184	GPE 4735 4740	Syria
+T185	ORG 4607 4637	the 15-member Security Council
+T186	GPE 4860 4864	Iraq
+T187	VEH 4877 4942	as many as 15 warships capable of firing Tomahawk cruise missiles
+T188	LOC 4946 4957	the Red Sea
+T189	LOC 4963 4980	the Mediterranean
+T190	GPE 4776 4793	The United States
+T191	GPE 4813 4816	its
+T192	GPE 4983 4985	US
+T193	PER 4983 4995	US officials
+T194	WEA 4918 4942	Tomahawk cruise missiles
+T195	WEA 4918 4926	Tomahawk
+T196	VEH 4813 4836	its B-2 stealth bombers
+T197	VEH 4817 4820	B-2
+T198	Transport 4869 4876	ordered
+E12	Transport:T198 Origin:T189 Destination:T188 Agent:T190
+T199	Transport 4804 4812	deployed
+E13	Transport:T199 Artifact:T196 Agent:T190
+T200	Attack 4911 4917	firing
+E14	Attack:T200 Attacker:T190 Target:T188 Target:T189 Instrument:T196 Instrument:T187

@@ -1,0 +1,27 @@
+T1	TIM 38 57	2003-04-16 19:06:41
+T2	PER 70 97	his wife and three children
+T3	PER 70 73	his
+T4	PER 129 144	christian longo
+T5	PER 112 116	whom
+T6	PER 98 116	the oldest of whom
+T7	SEN 164 170	to die
+T8	TIM 121 126	three
+T9	Sentence 154 163	sentenced
+E1	Sentence:T9 Defendant:T4 Sentence:T7
+T10	Die 62 69	killing
+E2	Die:T10 Victim:T2 Victim:T2 Agent:T4
+T11	PER 189 194	longo
+T12	PER 201 204	his
+T13	PER 238 241	him
+T14	PER 255 257	he
+T15	PER 173 184	prosecutors
+T16	PER 201 211	his family
+T17	PER 220 224	they
+T18	PER 267 275	the jury
+T19	SEN 322 327	death
+T20	TIM 292 302	three hour
+T21	Sentence 328 336	sentence
+E3	Sentence:T21 Adjudicator:T18 Sentence:T19
+T22	ORG 343 346	cnn
+T23	GPE 362 374	the new iraq
+T24	TIM 339 342	now

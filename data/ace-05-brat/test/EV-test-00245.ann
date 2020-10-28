@@ -1,0 +1,57 @@
+T1	TIM 34 42	20030415
+T2	TIM 156 164	April 15
+T3	GPE 147 153	BEIRUT
+T4	ORG 171 174	AFP
+T5	TIM 244 251	Tuesday
+T6	GPE 181 189	Lebanese
+T7	PER 181 217	Lebanese Prime Minister Rafiq Hariri
+T8	PER 181 204	Lebanese Prime Minister
+T9	PER 228 231	his
+T10	PER 310 313	him
+T11	PER 330 339	caretaker
+T12	PER 275 284	President
+T13	PER 275 297	President Emile Lahoud
+T14	PER 300 303	who
+T15	FAC 470 522	the Baabda presidential palace , outside the capital
+T16	TIM 426 435	10-minute
+T17	GPE 511 522	the capital
+T18	PER 384 390	Hariri
+T19	PER 401 404	his
+T20	PER 449 466	the head of state
+T21	GPE 474 480	Baabda
+T22	GPE 461 466	state
+T23	Meet 436 443	meeting
+E1	Meet:T23 Entity:T20 Time-Holds:T16 Place:T15 Entity:T18
+T24	TIM 620 629	Wednesday
+T25	TIM 658 661	new
+T26	ORG 656 672	a new government
+T27	PER 587 593	Lahoud
+T28	TIM 719 748	for nine of the past 11 years
+T29	PER 755 789	highly placed governmental sources
+T30	GPE 693 704	the country
+T31	GPE 693 718	the country 's government
+T32	PER 675 681	Hariri
+T33	PER 795 797	he
+T34	TIM 871 883	October 2000
+T35	TIM 838 845	current
+T36	ORG 834 856	The current government
+T37	Start-Org 861 867	formed
+E2	Start-Org:T37 Org:T36 Time-Within:T34
+T38	TIM 983 987	1990
+T39	TIM 962 969	15-year
+T40	GPE 951 958	Lebanon
+T41	PER 1072 1092	a Maronite Christian
+T42	PER 1035 1049	a Sunni Muslim
+T43	Attack 976 979	war
+E3	Attack:T43 Place:T40 Time-Holds:T39 Time-Ending:T38
+T44	PER 1125 1131	Hariri
+T45	PER 1136 1149	five children
+T46	Marry 1095 1102	Married
+E4	Marry:T46 Person:T44
+T47	NUM 1195 1213	10 billion dollars
+T48	PER 1152 1213	A businessman whose fortune is estimate at 10 billion dollars
+T49	PER 1166 1171	whose
+T50	PER 1216 1218	he
+T51	ORG 1334 1345	a newspaper
+T52	ORG 1297 1329	a television and a radio station
+T53	PER 1284 1286	He

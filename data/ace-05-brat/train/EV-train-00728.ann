@@ -1,0 +1,153 @@
+T1	TIM 34 42	20030319
+T2	GPE 150 158	NEW YORK
+T3	ORG 176 179	AFP
+T4	TIM 161 169	March 19
+T5	ORG 242 273	Vivendi Universal Entertainment
+T6	ORG 276 366	the entertainment unit of French giant Vivendi Universal whose future appears up for grabs
+T7	JOB 233 238	chief
+T8	ORG 186 191	Media
+T9	PER 186 211	Media tycoon Barry Diller
+T10	PER 186 198	Media tycoon
+T11	PER 233 366	chief of Vivendi Universal Entertainment , the entertainment unit of French giant Vivendi Universal whose future appears up for grabs
+T12	GPE 302 308	French
+T13	ORG 302 366	French giant Vivendi Universal whose future appears up for grabs
+T14	ORG 333 338	whose
+T15	ORG 302 314	French giant
+T16	TIM 215 224	Wednesday
+T17	TIM 339 345	future
+T18	End-Position 225 229	quit
+E1	End-Position:T18 Person:T9 Entity:T5 Position:T7 Time-Within:T16
+T19	ORG 575 606	Vivendi Universal Entertainment
+T20	JOB 408 434	the `` provisional '' role
+T21	GPE 460 462	US
+T22	ORG 449 487	Vivendi 's US entertainment operations
+T23	PER 508 511	his
+T24	PER 386 499	Diller -- who took on the `` provisional '' role at the top of Vivendi 's US entertainment operations in December
+T25	PER 396 399	who
+T26	ORG 449 456	Vivendi
+T27	ORG 558 606	a shareholder of Vivendi Universal Entertainment
+T28	ORG 508 533	his USA Interactive group
+T29	ORG 512 527	USA Interactive
+T30	TIM 491 499	December
+T31	Start-Position 400 407	took on
+E2	Start-Position:T31 Person:T24 Position:T20 Time-Within:T30 Entity:T22
+T32	PER 612 614	My
+T33	PER 675 681	Diller
+T34	ORG 696 713	Vivendi Universal
+T35	ORG 766 769	its
+T36	TIM 687 690	Now
+T37	ORG 1078 1109	Vivendi Universal Entertainment
+T38	NUM 1035 1054	2.5 billion dollars
+T39	NUM 887 904	11-billion-dollar
+T40	ORG 977 982	media
+T41	GPE 970 976	French
+T42	ORG 966 990	the French media company
+T43	ORG 913 962	USA Interactive 's film and television operations
+T44	ORG 1010 1025	USA Interactive
+T45	ORG 913 928	USA Interactive
+T46	TIM 994 1007	December 2001
+T47	Transfer-Ownership 905 909	sale
+E3	Transfer-Ownership:T47 Artifact:T43 Seller:T44 Price:T39 Buyer:T42 Time-Within:T46
+T48	ORG 1169 1181	the business
+T49	NUM 1148 1159	1.5 percent
+T50	ORG 1315 1320	media
+T51	GPE 1274 1291	the United States
+T52	ORG 1231 1291	Vivendi Universal 's entertainment unit in the United States
+T53	PER 1112 1123	Diller , 60
+T54	PER 1205 1341	a likely candidate to run Vivendi Universal 's entertainment unit in the United States if the troubled French media giant were broken up
+T55	GPE 1308 1314	French
+T56	ORG 1231 1248	Vivendi Universal
+T57	ORG 1295 1326	the troubled French media giant
+T58	JOB 1461 1487	chief executive of US unit
+T59	JOB 1448 1456	chairman
+T60	ORG 1366 1371	media
+T61	GPE 1480 1482	US
+T62	PER 1438 1444	Diller
+T63	GPE 1359 1365	French
+T64	ORG 1355 1377	the French media group
+T65	ORG 1480 1487	US unit
+T66	PER 1383 1424	parent company chairman Jean-Rene Fourtou
+T67	PER 1383 1406	parent company chairman
+T68	PER 1448 1487	chairman and chief executive of US unit
+T69	GPE 1347 1352	Paris
+T70	ORG 1383 1397	parent company
+T71	Start-Position 1430 1437	replace
+E4	Start-Position:T71 Person:T66 Place:T69 Entity:T65 Position:T59 Position:T58
+T72	ORG 1656 1687	Vivendi Universal Entertainment
+T73	JOB 1649 1687	CEO of Vivendi Universal Entertainment
+T74	PER 1527 1533	Diller
+T75	PER 1604 1606	he
+T76	PER 1621 1624	his
+T77	PER 1649 1687	CEO of Vivendi Universal Entertainment
+T78	ORG 1490 1497	Vivendi
+T79	ORG 1566 1583	Vivendi Universal
+T80	End-Position 1614 1620	ending
+E5	End-Position:T80 Person:T76 Entity:T72 Position:T73
+T81	ORG 1741 1746	media
+T82	GPE 1778 1795	the United States
+T83	ORG 1759 1795	AOL Time Warner of the United States
+T84	PER 1870 1906	expansionist boss Jean-Marie Messier
+T85	PER 1870 1887	expansionist boss
+T86	ORG 1693 1710	Vivendi Universal
+T87	ORG 1713 1795	the world 's second-largest media group after AOL Time Warner of the United States
+T88	LOC 1713 1722	the world
+T89	TIM 1907 1916	last July
+T90	End-Position 1859 1866	removal
+E6	End-Position:T90 Person:T84 Entity:T86 Time-Within:T89
+T91	NUM 2014 2032	23.3 billion euros
+T92	ORG 1949 1966	Vivendi Universal
+T93	TIM 1967 1985	earlier this month
+T94	TIM 2070 2074	2002
+T95	NUM 2039 2059	25.6 billion dollars
+T96	ORG 2195 2200	media
+T97	ORG 2232 2258	the sprawling conglomerate
+T98	ORG 2288 2291	its
+T99	ORG 2191 2222	the media and telecoms division
+T100	NUM 2175 2185	19 billion
+T101	NUM 2300 2316	16 billion euros
+T102	NUM 2096 2112	35 billion euros
+T103	NUM 2119 2137	37 billion dollars
+T104	TIM 2320 2328	end-2004
+T105	TIM 2147 2161	June last year
+T106	ORG 2418 2468	its US film , television and theme park operations
+T107	FAC 2447 2457	theme park
+T108	GPE 2422 2424	US
+T109	ORG 2362 2378	troubled Vivendi
+T110	ORG 2418 2421	its
+T111	ORG 2480 2483	its
+T112	Transfer-Ownership 2410 2414	sale
+E7	Transfer-Ownership:T112 Artifact:T106 Seller:T109
+T113	ORG 2574 2602	its Universal Music division
+T114	ORG 2578 2593	Universal Music
+T115	ORG 2696 2709	Entertainment
+T116	ORG 2640 2653	third parties
+T117	ORG 2545 2552	Vivendi
+T118	ORG 2574 2577	its
+T119	ORG 2500 2505	Press
+T120	PER 2740 2747	sources
+T121	ORG 2803 2809	Viacom
+T122	ORG 2881 3007	a serious rival squarely in the running against oil billionaire Marvin Davis who has bid 20 billion dollars for the operations
+T123	ORG 2875 2877	it
+T124	ORG 2753 2797	Agence France Presse financial news unit AFX
+T125	ORG 2753 2793	Agence France Presse financial news unit
+T126	GPE 2843 2845	US
+T127	ORG 2832 2839	Vivendi
+T128	ORG 2993 3007	the operations
+T129	ORG 2753 2773	Agence France Presse
+T130	PER 2929 3007	oil billionaire Marvin Davis who has bid 20 billion dollars for the operations
+T131	PER 2929 2944	oil billionaire
+T132	PER 2958 2961	who
+T133	TIM 2719 2737	Earlier this month
+T134	ORG 3197 3203	Viacom
+T135	ORG 3207 3288	one of the few media companies with a balance sheet healthy enough to mount a bid
+T136	ORG 3222 3227	media
+T137	ORG 3172 3194	the Vivendi operations
+T138	ORG 3176 3183	Vivendi
+T139	ORG 3214 3288	the few media companies with a balance sheet healthy enough to mount a bid
+T140	ORG 3065 3083	Liberty Media Corp
+T141	ORG 3086 3095	News Corp
+T142	ORG 3016 3126	other media companies like Metro-Goldwyn-Mayer , Liberty Media Corp , News Corp and General Electric Co 's NBC
+T143	ORG 3150 3194	potential bidders for the Vivendi operations
+T144	ORG 3043 3062	Metro-Goldwyn-Mayer
+T145	ORG 3100 3126	General Electric Co 's NBC
+T146	ORG 3100 3119	General Electric Co

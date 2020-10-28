@@ -1,0 +1,142 @@
+T1	TIM 45 65	2005-01-29T14 :04:00
+T2	PER 97 108	Machiavegli
+T3	TIM 109 133	29 Jan 2005 22:04:38 GMT
+T4	TIM 138 142	1860
+T5	Elect 156 164	Election
+E1	Elect:T5 Time-Within:T4
+T6	ORG 251 271	the Democratic Party
+T7	TIM 168 172	1860
+T8	PER 390 399	John Bell
+T9	PER 330 347	John Breckenridge
+T10	ORG 354 384	the Constitutional Union Party
+T11	PER 277 292	Stephen Douglas
+T12	ORG 295 324	the Southern Democratic Party
+T13	ORG 207 227	the Republican Party
+T14	PER 233 248	Abraham Lincold
+T15	PER 402 409	Lincoln
+T16	NUM 437 441	40 %
+T17	Elect 410 413	won
+E2	Elect:T17 Person:T15
+T18	PER 516 517	I
+T19	PER 506 513	Douglas
+T20	PER 526 533	Douglas
+T21	PER 494 501	Lincoln
+T22	Elect 545 548	won
+E3	Elect:T22 Person:T19
+T23	Attack 599 602	War
+E4	Attack:T23
+T24	PER 605 617	David Tenner
+T25	TIM 618 650	Sat , 29 Jan 2005 17:21:13 -0600
+T26	TIM 660 664	1860
+T27	Elect 678 686	Election
+E5	Elect:T27 Time-Within:T26
+T28	PER 713 724	Machiavegli
+T29	CTI 687 706	machiave...@aol.com
+T30	ORG 1018 1023	which
+T31	ORG 995 1073	the Democratic party , which divided its vote between Breckinridge and Douglas
+T32	ORG 1032 1035	its
+T33	PER 791 814	Many careless observers
+T34	PER 910 935	three opposing candidates
+T35	PER 1049 1061	Breckinridge
+T36	PER 1066 1073	Douglas
+T37	PER 852 859	Lincoln
+T38	ORG 1103 1123	the Democratic party
+T39	ORG 1146 1148	it
+T40	LOC 1265 1273	Southern
+T41	PER 1499 1506	Lincoln
+T42	GPE 1713 1720	nowhere
+T43	PER 1547 1574	all the opposing candidates
+T44	GPE 1744 1754	California
+T45	GPE 1731 1741	New Jersey
+T46	GPE 1664 1675	five States
+T47	GPE 1761 1767	Oregon
+T48	ORG 1863 1891	the entire electoral college
+T49	PER 1770 1777	Lincoln
+T50	PER 1963 1971	John Hay
+T51	PER 1939 1958	John George Nicolay
+T52	GPE 2143 2153	California
+T53	GPE 2160 2170	New Jersey
+T54	GPE 2025 2170	the states where Lincoln got an abolute majority of the popular vote -LRB- i.e. , all the free states except Oregon , California , and New Jersey
+T55	GPE 2036 2041	where
+T56	GPE 2107 2126	all the free states
+T57	GPE 2134 2140	Oregon
+T58	ORG 2220 2241	the Electoral College
+T59	PER 2042 2049	Lincoln
+T60	PER 2202 2205	him
+T61	Elect 2002 2011	electoral
+E6	Elect:T61 Person:T60 Place:T54 Entity:T58
+T62	PER 2434 2447	his opponents
+T63	PER 2260 2267	Lincoln
+T64	PER 2357 2360	his
+T65	PER 2434 2437	his
+T66	PER 2474 2476	he
+T67	PER 2393 2395	he
+T68	GPE 2454 2473	ten southern states
+T69	NUM 2310 2323	forty percent
+T70	Elect 2281 2290	electoral
+E7	Elect:T70 Person:T63
+T71	PER 2621 2661	the OTL anti-Lincoln candidates combined
+T72	PER 2711 2732	Lincoln 's opposition
+T73	PER 2784 2797	fewer of them
+T74	PER 2711 2718	Lincoln
+T75	PER 2756 2768	anti-Lincoln
+T76	PER 2565 2577	anti-Lincoln
+T77	PER 2629 2641	anti-Lincoln
+T78	PER 2539 2588	the candidate of a united anti-Lincoln opposition
+T79	PER 2756 2772	anti-Lincoln men
+T80	PER 2793 2797	them
+T81	TIM 2881 2885	1860
+T82	PER 2888 2889	I
+T83	PER 2999 3006	Douglas
+T84	PER 2978 2985	Lincoln
+T85	PER 2939 2941	me
+T86	PER 3027 3029	He
+T87	PER 3066 3069	his
+T88	PER 3172 3175	his
+T89	GPE 3101 3107	Kansas
+T90	GPE 3111 3163	a state under the pro-slavery Lecompton Constitution
+T91	LOC 3052 3061	the South
+T92	LOC 3223 3234	territories
+T93	PER 3307 3314	Douglas
+T94	PER 3329 3332	his
+T95	PER 3414 3436	a compromise candidate
+T96	PER 3440 3483	former governor Horatio Seymour of New York
+T97	PER 3440 3455	former governor
+T98	TIM 3440 3446	former
+T99	PER 3374 3378	Bell
+T100	PER 3357 3369	Breckinridge
+T101	PER 3350 3352	He
+T102	GPE 3475 3483	New York
+T103	PER 3520 3527	Seymour
+T104	PER 3661 3664	his
+T105	PER 3733 3735	he
+T106	PER 3567 3611	all the combined OTL anti-Lincoln candidates
+T107	PER 3588 3600	anti-Lincoln
+T108	PER 3773 3780	Lincoln
+T109	PER 3507 3508	I
+T110	PER 3719 3721	me
+T111	GPE 3649 3656	Indiana
+T112	GPE 3636 3644	Illinois
+T113	GPE 3615 3656	such close states as Illinois and Indiana
+T114	GPE 3661 3686	his own state of New York
+T115	GPE 3678 3686	New York
+T116	GPE 3753 3763	that state
+T117	PER 3793 3805	David Tenner
+T118	CTI 3806 3827	dten...@ameritech.net
+T119	PER 3828 3842	Joseph T Major
+T120	TIM 3843 3875	Sun , 30 Jan 2005 11:13:09 -0500
+T121	TIM 3885 3889	1860
+T122	Elect 3903 3911	Election
+E8	Elect:T122 Time-Within:T121
+T123	PER 3939 3946	Douglas
+T124	ORG 4018 4035	Electoral College
+T125	PER 3927 3934	Lincoln
+T126	PER 3950 3957	Lincoln
+T127	PER 3962 3978	Fusion Candidate
+T128	NUM 4051 4055	40 %
+T129	PER 3991 4075	a candidate having won the Electoral College vote with only 40 % of the popular vote
+T130	Elect 4010 4013	won
+E9	Elect:T130 Person:T129
+T131	Demonstrate 4090 4098	protests
+E10	Demonstrate:T131
+T132	PER 4108 4122	Joseph T Major

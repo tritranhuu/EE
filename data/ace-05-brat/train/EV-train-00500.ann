@@ -1,0 +1,91 @@
+T1	TIM 34 42	20030519
+T2	ORG 127 130	AFP
+T3	GPE 101 111	WASHINGTON
+T4	TIM 114 120	May 19
+T5	NUM 285 301	9.4-billion-euro
+T6	ORG 167 205	the Securities and Exchange Commission
+T7	NUM 261 278	11-billion-dollar
+T8	ORG 137 140	MCI
+T9	ORG 143 160	formerly WorldCom
+T10	ORG 240 257	the telecom giant
+T11	ORG 321 344	The Wall Street Journal
+T12	TIM 143 151	formerly
+T13	TIM 354 360	Monday
+T14	ORG 524 531	the SEC
+T15	ORG 535 572	a company that is not a broker-dealer
+T16	ORG 545 549	that
+T17	ORG 557 572	a broker-dealer
+T18	PER 432 463	a judge presiding over the case
+T19	ORG 466 469	MCI
+T20	PER 601 628	sources close to the matter
+T21	ORG 575 586	the Journal
+T22	TIM 410 428	as early as Monday
+T23	Fine 501 505	fine
+E1	Fine:T23 Entity:T19 Adjudicator:T18 Adjudicator:T14
+T24	ORG 776 783	the SEC
+T25	NUM 746 764	10 million dollars
+T26	ORG 765 770	Xerox
+T27	TIM 784 793	last year
+T28	Fine 673 677	fine
+E2	Fine:T28 Entity:T24
+T29	Transfer-Money 771 775	paid
+E3	Transfer-Money:T29 Giver:T26 Money:T25 Recipient:T24 Time-Within:T27
+T30	CRM 910 962	conflicts of interest between analysts and investors
+T31	TIM 796 806	Last month
+T32	ORG 809 816	the SEC
+T33	NUM 840 859	1.4 billion dollars
+T34	ORG 863 888	10 Wall Street brokerages
+T35	PER 940 948	analysts
+T36	PER 953 962	investors
+T37	LOC 866 877	Wall Street
+T38	Fine 825 830	fines
+E4	Fine:T38 Entity:T34 Adjudicator:T32 Money:T33 Time-Within:T31
+T39	Charge-Indict 899 906	charges
+E5	Charge-Indict:T39 Defendant:T34 Crime:T30
+T40	TIM 1074 1082	formerly
+T41	TIM 1010 1016	months
+T42	TIM 1047 1055	November
+T43	ORG 973 980	the SEC
+T44	ORG 965 968	MCI
+T45	ORG 1068 1071	MCI
+T46	ORG 1092 1100	WorldCom
+T47	ORG 1141 1144	its
+T48	PER 1125 1134	investors
+T49	ORG 1191 1202	the Journal
+T50	NUM 1316 1335	3.5 million dollars
+T51	NUM 1339 1357	11 million dollars
+T52	TIM 1429 1435	former
+T53	TIM 1474 1482	April 29
+T54	ORG 1615 1618	SEC
+T55	NUM 1512 1530	25 million dollars
+T56	NUM 1554 1572	400-million-dollar
+T57	ORG 1436 1444	WorldCom
+T58	ORG 1583 1586	MCI
+T59	PER 1429 1463	former WorldCom CEO Bernard Ebbers
+T60	PER 1429 1448	former WorldCom CEO
+T61	ORG 1589 1600	the Journal
+T62	Transfer-Money 1573 1577	loan
+E6	Transfer-Money:T62 Giver:T58 Money:T56 Recipient:T59
+T63	TIM 1645 1648	now
+T64	TIM 1669 1672	now
+T65	ORG 1660 1663	MCI
+T66	PER 1639 1641	he
+T67	PER 1706 1712	Ebbers
+T68	Transfer-Money 1729 1733	loan
+E7	Transfer-Money:T68 Giver:T65 Recipient:T67
+T69	NUM 1811 1829	15 million dollars
+T70	ORG 1736 1747	The company
+T71	PER 1765 1768	his
+T72	PER 1856 1859	his
+T73	ORG 1942 1953	the Journal
+T74	NUM 1915 1939	60 to 70 million dollars
+T75	ORG 1765 1806	his Georgia-based yacht building business
+T76	VEH 1783 1788	yacht
+T77	GPE 1769 1782	Georgia-based
+T78	GPE 1869 1885	British Colombia
+T79	FAC 1856 1939	his ranch in British Colombia , which is expected to bring 60 to 70 million dollars
+T80	FAC 1888 1893	which
+T81	Transfer-Ownership 1760 1764	sold
+E8	Transfer-Ownership:T81 Artifact:T75 Seller:T70 Price:T69
+T82	Transfer-Ownership 1848 1855	selling
+E9	Transfer-Ownership:T82 Artifact:T79 Seller:T70 Price:T74

@@ -1,0 +1,68 @@
+T1	TIM 34 42	20030513
+T2	TIM 105 111	May 12
+T3	ORG 118 124	Xinhua
+T4	GPE 96 102	BOGOTA
+T5	TIM 196 202	Monday
+T6	ORG 131 173	The Revolutionary Armed Forces of Colombia
+T7	ORG 180 184	FARC
+T8	ORG 208 210	it
+T9	ORG 307 322	the rebel group
+T10	GPE 251 265	the government
+T11	PER 287 322	10 hostages held by the rebel group
+T12	PER 236 245	prisoners
+T13	Die 278 283	death
+E1	Die:T13 Victim:T11
+T14	PER 357 421	more than 70 politicians , soldiers and policemen in its control
+T15	ORG 522 526	FARC
+T16	ORG 325 333	The FARC
+T17	ORG 410 413	its
+T18	PER 480 517	Luis Devia , also known as Raul Reyes
+T19	PER 520 533	a FARC leader
+T20	PER 507 517	Raul Reyes
+T21	PER 426 472	nearly 500 rebels imprisoned by the government
+T22	GPE 458 472	the government
+T23	Phone-Write 541 547	letter
+E2	Phone-Write:T23 Entity:T18
+T24	TIM 586 591	May 5
+T25	ORG 614 622	the FARC
+T26	ORG 671 679	the army
+T27	PER 594 622	10 hostages held by the FARC
+T28	PER 663 667	them
+T29	Die 628 634	killed
+E3	Die:T29 Victim:T27 Time-Within:T24
+T30	TIM 738 744	former
+T31	PER 785 799	eight soldiers
+T32	PER 738 780	former Defense Minister Gilberto Echeverry
+T33	PER 738 761	former Defense Minister
+T34	GPE 699 708	Antioquia
+T35	PER 699 735	Antioquia Governor Guillermo Gaviria
+T36	PER 699 717	Antioquia Governor
+T37	PER 682 693	The victims
+T38	PER 940 955	their prisoners
+T39	PER 832 854	the `` guerrilla units
+T40	PER 940 945	their
+T41	PER 802 807	Reyes
+T42	PER 816 819	his
+T43	Phone-Write 820 826	letter
+E4	Phone-Write:T43 Entity:T41
+T44	PER 1009 1022	its prisoners
+T45	ORG 961 971	The rebels
+T46	ORG 1009 1012	its
+T47	PER 1089 1091	he
+T48	PER 1043 1055	enemy forces
+T49	Attack 1075 1083	response
+E5	Attack:T49 Attacker:T45
+T50	PER 1104 1117	17,000-strong
+T51	TIM 1218 1236	more than 40 years
+T52	PER 1247 1254	400,000
+T53	ORG 1125 1164	the largest guerrilla force in Colombia
+T54	ORG 1100 1122	The 17,000-strong FARC
+T55	GPE 1156 1164	Colombia
+T56	GPE 1199 1213	the government
+T57	Die 1255 1259	dead
+E6	Die:T57 Victim:T52 Time-Holds:T51
+T58	Attack 1187 1190	war
+E7	Attack:T58 Attacker:T53 Place:T55 Target:T52 Time-Holds:T51
+T59	PER 1313 1328	three Americans
+T60	PER 1282 1302	hundreds of hostages
+T61	ORG 1262 1264	It

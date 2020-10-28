@@ -1,0 +1,58 @@
+T1	TIM 34 42	20030310
+T2	ORG 126 128	AP
+T3	GPE 110 119	HONG KONG
+T4	ORG 235 246	a newspaper
+T5	TIM 256 263	Tuesday
+T6	GPE 215 232	neighboring Macau
+T7	ORG 190 232	the horse racing club in neighboring Macau
+T8	ORG 135 160	The Hong Kong Jockey Club
+T9	Transfer-Ownership 179 189	buying out
+E1	Transfer-Ownership:T9 Artifact:T7 Place:T6 Buyer:T8
+T10	ORG 266 294	The South China Morning Post
+T11	PER 302 339	Hong Kong Jockey Club Chief Executive
+T12	PER 302 353	Hong Kong Jockey Club Chief Executive Lawrence Wong
+T13	ORG 302 323	Hong Kong Jockey Club
+T14	PER 534 560	gambling tycoon Stanley Ho
+T15	PER 534 549	gambling tycoon
+T16	GPE 428 437	Hong Kong
+T17	ORG 499 560	a for-profit concern controlled by gambling tycoon Stanley Ho
+T18	ORG 474 495	the Macau Jockey Club
+T19	ORG 446 465	a charitable entity
+T20	ORG 424 442	The Hong Kong club
+T21	TIM 606 615	last year
+T22	ORG 581 605	Macau 's gaming industry
+T23	ORG 682 718	anyone but the Hong Kong Jockey Club
+T24	PER 631 652	gamblers in Hong Kong
+T25	GPE 581 586	Macau
+T26	GPE 563 572	Hong Kong
+T27	GPE 621 623	it
+T28	GPE 643 652	Hong Kong
+T29	ORG 693 718	the Hong Kong Jockey Club
+T30	PER 763 782	people in Hong Kong
+T31	GPE 721 726	Macau
+T32	GPE 773 782	Hong Kong
+T33	TIM 852 857	later
+T34	PER 944 952	gamblers
+T35	GPE 841 846	Macau
+T36	GPE 914 919	Macau
+T37	GPE 895 904	Hong Kong
+T38	ORG 837 851	The Macau club
+T39	ORG 1073 1093	The Associated Press
+T40	ORG 1022 1034	Neither club
+T41	Transfer-Ownership 1115 1121	buyout
+E2	Transfer-Ownership:T41
+T42	TIM 1321 1325	1999
+T43	TIM 1251 1275	more than four centuries
+T44	GPE 1130 1135	Macau
+T45	GPE 1139 1325	a gambling enclave 60 kilometers -LRB- 40 miles -RRB- west of Hong Kong that was governed by the Portuguese for more than four centuries before it returned to Chinese sovereignty in 1999
+T46	GPE 1211 1215	that
+T47	GPE 1283 1285	it
+T48	GPE 1201 1210	Hong Kong
+T49	GPE 1298 1305	Chinese
+T50	GPE 1232 1246	the Portuguese
+T51	TIM 1342 1348	former
+T52	TIM 1394 1398	1997
+T53	GPE 1328 1337	Hong Kong
+T54	GPE 1340 1363	a former British colony
+T55	GPE 1378 1385	Chinese
+T56	GPE 1349 1356	British

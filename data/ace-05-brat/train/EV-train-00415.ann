@@ -1,0 +1,101 @@
+T1	TIM 39 58	2003-05-27 22:32:00
+T2	TIM 64 67	now
+T3	GPE 75 84	louisiana
+T4	Die 92 100	killings
+E1	Die:T4 Place:T3
+T5	PER 121 138	the prime suspect
+T6	PER 141 160	derrick lee tee lee
+T7	ORG 197 203	police
+T8	PER 193 220	the police chief of atlanta
+T9	ORG 161 163	w.
+T10	GPE 213 220	atlanta
+T11	Arrest-Jail 111 117	arrest
+E2	Arrest-Jail:T11 Person:T5
+T12	Phone-Write 184 189	phone
+E3	Phone-Write:T12 Entity:T9 Entity:T8
+T13	PER 301 312	the suspect
+T14	PER 227 230	owe
+T15	PER 288 291	you
+T16	ORG 236 238	us
+T17	Arrest-Jail 292 300	arrested
+E4	Arrest-Jail:T17 Person:T13 Agent:T15
+T18	PER 321 323	we
+T19	TIM 420 427	all day
+T20	GPE 470 481	baton rouge
+T21	PER 359 367	fugitive
+T22	PER 408 419	derrick lee
+T23	PER 394 405	the suspect
+T24	PER 499 527	the serial murder task force
+T25	ORG 470 488	baton rouge police
+T26	PER 466 494	the baton rouge police chief
+T27	PER 356 372	my fugitive unit
+T28	PER 345 372	members of my fugitive unit
+T29	PER 449 451	we
+T30	PER 356 358	my
+T31	GPE 536 558	the state of louisiana
+T32	GPE 549 558	louisiana
+T33	Die 510 516	murder
+E5	Die:T33
+T34	TIM 576 591	about 8:45 p.m.
+T35	TIM 561 573	this evening
+T36	PER 608 616	fugitive
+T37	PER 710 721	the suspect
+T38	PER 722 733	derrick lee
+T39	PER 653 666	an informtive
+T40	PER 674 678	they
+T41	PER 692 696	they
+T42	LOC 795 812	southwest atlanta
+T43	LOC 737 812	the area of woods drive and donald lee holland parkway in southwest atlanta
+T44	FAC 765 791	donald lee holland parkway
+T45	FAC 749 760	woods drive
+T46	PER 605 621	my fugitive unit
+T47	PER 594 621	members of my fugitive unit
+T48	PER 605 607	my
+T49	Phone-Write 643 647	call
+E6	Phone-Write:T49 Entity:T47 Entity:T39
+T50	LOC 841 854	that location
+T51	PER 815 827	the officers
+T52	PER 865 898	a suspect fitting the description
+T53	PER 912 923	derrick lee
+T54	PER 953 964	derrick lee
+T55	GPE 974 983	louisiana
+T56	PER 1001 1003	he
+T57	Arrest-Jail 1008 1016	arrested
+E7	Arrest-Jail:T57 Person:T56
+T58	TIM 1065 1074	currently
+T59	PER 1059 1061	he
+T60	FAC 1078 1116	atlanta police department headquarters
+T61	ORG 1078 1103	atlanta police department
+T62	GPE 1145 1167	the state of louisiana
+T63	GPE 1158 1167	louisiana
+T64	Extradite 1125 1136	extradition
+E8	Extradite:T64 Destination:T62 Origin:T60 Person:T59
+T65	Arrest-Jail 1047 1054	custody
+E9	Arrest-Jail:T65 Person:T59
+T66	PER 1257 1260	him
+T67	FAC 1223 1231	facility
+T68	FAC 1236 1263	it that you arrested him at
+T69	FAC 1239 1243	that
+T70	PER 1244 1247	you
+T71	Arrest-Jail 1248 1256	arrested
+E10	Arrest-Jail:T71 Agent:T70 Person:T66 Place:T68
+T72	PER 1266 1268	he
+T73	FAC 1288 1299	a tire shop
+T74	FAC 1276 1299	the rear of a tire shop
+T75	PER 1339 1341	he
+T76	LOC 1321 1332	a mall area
+T77	FAC 1323 1327	mall
+T78	FAC 1361 1372	a tire shop
+T79	PER 1421 1424	him
+T80	PER 1438 1441	him
+T81	PER 1405 1412	someone
+T82	FAC 1375 1398	an automotive tire shop
+T83	PER 1463 1471	fugitive
+T84	PER 1459 1476	the fugitive unit
+T85	TIM 1573 1580	all day
+T86	TIM 1504 1514	about 8:45
+T87	TIM 1491 1503	this evening
+T88	PER 1535 1537	he
+T89	PER 1542 1580	the person we were looking for all day
+T90	PER 1479 1481	we
+T91	PER 1553 1555	we

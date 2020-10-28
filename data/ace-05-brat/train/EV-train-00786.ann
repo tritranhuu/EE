@@ -1,0 +1,100 @@
+T1	TIM 34 61	2003-04-10T16 :00:00 -05:00
+T2	PER 142 150	WOODRUFF
+T3	GPE 278 282	U.S.
+T4	ORG 278 298	U.S. Central Command
+T5	PER 238 250	firefighters
+T6	TIM 208 213	today
+T7	TIM 151 160	Yesterday
+T8	GPE 198 205	Baghdad
+T9	GPE 308 315	Baghdad
+T10	GPE 325 338	an ugly place
+T11	Attack 226 233	bombing
+E1	Attack:T11 Place:T8 Time-Within:T6
+T12	Die 218 225	suicide
+E2	Die:T12 Time-Within:T6
+T13	ORG 341 344	CNN
+T14	PER 341 359	CNN 's John Irvine
+T15	GPE 380 425	a city literally teetering on a razor 's edge
+T16	PER 456 510	JOHN IRVINE , CNN CORRESPONDENT -LRB- voice-over -RRB-
+T17	PER 552 568	the U.S. Marines
+T18	PER 631 636	their
+T19	GPE 556 560	U.S.
+T20	GPE 608 651	the people who are now their responsibility
+T21	GPE 619 622	who
+T22	TIM 627 630	now
+T23	TIM 729 738	nighttime
+T24	GPE 703 710	Baghdad
+T25	PER 786 820	these soldiers manning a roadblock
+T26	GPE 763 783	a city without power
+T27	FAC 809 820	a roadblock
+T28	PER 838 855	UNIDENTIFIED MALE
+T29	PER 912 918	IRVINE
+T30	WEA 974 977	gun
+T31	VEH 924 929	a car
+T32	Attack 978 984	battle
+E3	Attack:T32 Instrument:T30
+T33	WEA 987 994	Bullets
+T34	PER 1045 1058	the Americans
+T35	GPE 1032 1039	Baghdad
+T36	LOC 1023 1079	parts of Baghdad that the Americans have n't yet reached
+T37	LOC 1040 1044	that
+T38	PER 1175 1181	Saddam
+T39	FAC 1148 1195	the home of Uday Hussein , Saddam 's eldest son
+T40	PER 1107 1115	This man
+T41	PER 1160 1172	Uday Hussein
+T42	PER 1175 1195	Saddam 's eldest son
+T43	FAC 1136 1195	a stable at the home of Uday Hussein , Saddam 's eldest son
+T44	PER 1280 1286	people
+T45	PER 1320 1325	their
+T46	PER 1198 1200	We
+T47	TIM 1265 1279	a few days ago
+T48	FAC 1207 1216	the house
+T49	FAC 1219 1244	a large , gaudy structure
+T50	FAC 1247 1331	a place that just a few days ago people did n't even look at for fear of their lives
+T51	FAC 1357 1370	Uday 's homes
+T52	FAC 1334 1338	This
+T53	FAC 1350 1370	one of Uday 's homes
+T54	PER 1357 1361	Uday
+T55	PER 1380 1397	the ruling family
+T56	FAC 1373 1377	Here
+T57	LOC 1418 1428	the Tigris
+T58	PER 1431 1437	People
+T59	FAC 1467 1476	the house
+T60	PER 1547 1551	They
+T61	PER 1647 1651	they
+T62	TIM 1682 1703	in less than 24 hours
+T63	FAC 1666 1676	this place
+T64	PER 1727 1730	you
+T65	PER 1856 1862	Saddam
+T66	ORG 1839 1853	the Mukhabarat
+T67	ORG 1856 1887	Saddam 's dreaded secret police
+T68	PER 1820 1887	a senior member of the Mukhabarat , Saddam 's dreaded secret police
+T69	FAC 1810 1887	a home of a senior member of the Mukhabarat , Saddam 's dreaded secret police
+T70	PER 1784 1796	These Iraqis
+T71	FAC 1890 1892	It
+T72	FAC 1911 1942	some kind of monitoring station
+T73	FAC 1979 1983	here
+T74	PER 2004 2006	we
+T75	FAC 1989 2001	the basement
+T76	ORG 2133 2147	the bully boys
+T77	FAC 2072 2076	This
+T78	FAC 2086 2111	a nerve center for spying
+T79	FAC 2114 2173	a place from where the bully boys kept tabs to keep control
+T80	PER 2200 2202	We
+T81	TIM 2207 2210	now
+T82	FAC 2214 2262	the bowels of a secret police monitoring station
+T83	ORG 2230 2243	secret police
+T84	FAC 2228 2262	a secret police monitoring station
+T85	FAC 2412 2429	a shopping center
+T86	PER 2381 2393	These people
+T87	PER 2583 2590	a guard
+T88	GPE 2543 2549	German
+T89	FAC 2539 2557	the German Embassy
+T90	PER 2506 2519	These thieves
+T91	Attack 2572 2576	shot
+E4	Attack:T91 Attacker:T87 Target:T90
+T92	Transport 2534 2538	flee
+E5	Transport:T92 Origin:T89 Artifact:T90
+T93	PER 2593 2604	John Irvine
+T94	GPE 2618 2625	Baghdad
+T95	ORG 2607 2615	ITV News

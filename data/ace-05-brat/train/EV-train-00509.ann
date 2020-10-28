@@ -1,0 +1,108 @@
+T1	TIM 41 60	2003-05-26 23:31:17
+T2	PER 61 67	no one
+T3	PER 188 193	qusay
+T4	PER 179 183	uday
+T5	PER 124 136	his two sons
+T6	PER 214 219	their
+T7	PER 105 119	saddam hussein
+T8	PER 124 127	his
+T9	PER 214 226	their father
+T10	ORG 245 261	time '' magazine
+T11	PER 245 282	time '' magazine 's michael weisskopf
+T12	PER 338 347	these two
+T13	GPE 371 381	washington
+T14	PER 359 361	us
+T15	PER 350 352	he
+T16	TIM 362 365	now
+T17	Phone-Write 353 358	joins
+E1	Phone-Write:T17 Entity:T15 Entity:T14 Time-Within:T16
+T18	PER 419 421	us
+T19	PER 486 495	good guys
+T20	PER 458 460	we
+T21	PER 437 438	i
+T22	PER 525 528	you
+T23	PER 571 575	your
+T24	PER 424 431	michael
+T25	PER 471 476	these
+T26	PER 684 687	you
+T27	PER 702 706	they
+T28	PER 730 744	these two guys
+T29	PER 747 778	the younger of the two brothers
+T30	PER 781 786	qusay
+T31	PER 791 870	a very ic professional killer who pulled the trigger with political aim in mind
+T32	PER 821 824	who
+T33	PER 762 778	the two brothers
+T34	PER 962 975	shiite muslim
+T35	PER 873 875	we
+T36	PER 897 900	his
+T37	PER 924 942	hundreds of people
+T38	PER 881 984	eyewitnesses to his orders of execution of hundreds of people in 1991 during the shiite muslim uprising
+T39	PER 962 968	shiite
+T40	TIM 946 950	1991
+T41	Attack 976 984	uprising
+E2	Attack:T41 Time-Within:T40
+T42	Execute 911 920	execution
+E3	Execute:T42 Person:T37 Agent:T36 Time-Within:T40
+T43	PER 1118 1127	employees
+T44	PER 987 990	his
+T45	PER 1088 1099	young girls
+T46	PER 1105 1112	friends
+T47	PER 987 998	his brother
+T48	PER 1001 1005	uday
+T49	PER 1062 1065	his
+T50	Attack 1066 1073	attacks
+E4	Attack:T50 Attacker:T49 Target:T45 Target:T46 Target:T43
+T51	PER 1319 1332	a 14-year-old
+T52	PER 1342 1345	her
+T53	PER 1381 1391	the brides
+T54	PER 1170 1171	i
+T55	PER 1163 1167	uday
+T56	PER 1193 1196	you
+T57	PER 1221 1224	you
+T58	PER 1294 1308	saddam 's sons
+T59	PER 1294 1300	saddam
+T60	Attack 1376 1380	rape
+E5	Attack:T60 Attacker:T58 Target:T53
+T61	Attack 1335 1341	raping
+E6	Attack:T61 Attacker:T58 Target:T52
+T62	PER 1431 1441	these guys
+T63	PER 1444 1445	i
+T64	PER 1605 1612	friends
+T65	PER 1662 1666	they
+T66	PER 1576 1578	we
+T67	PER 1526 1537	his friends
+T68	PER 1515 1517	he
+T69	PER 1526 1529	his
+T70	PER 1595 1597	he
+T71	PER 1479 1480	i
+T72	GPE 1726 1737	the country
+T73	PER 1682 1764	one friend he was afraid was going to leave the country and spill the beans on him
+T74	PER 1693 1695	he
+T75	PER 1761 1764	him
+T76	Transport 1720 1725	leave
+E7	Transport:T76 Artifact:T73 Origin:T72
+T77	PER 1774 1777	him
+T78	ORG 1790 1809	his fedayeen saddam
+T79	PER 1767 1769	he
+T80	PER 1790 1793	his
+T81	Arrest-Jail 1778 1786	arrested
+E8	Arrest-Jail:T81 Person:T77 Agent:T78
+T82	PER 1819 1822	him
+T83	PER 1812 1814	he
+T84	PER 1900 1906	people
+T85	PER 1918 1922	them
+T86	PER 1927 1941	saddam hussein
+T87	PER 1942 1949	himself
+T88	PER 1968 1974	people
+T89	PER 1960 1963	you
+T90	PER 1990 1994	they
+T91	PER 2046 2056	these guys
+T92	PER 2102 2108	people
+T93	PER 2132 2136	them
+T94	PER 2159 2161	we
+T95	TIM 2152 2156	time
+T96	PER 2203 2209	people
+T97	PER 2177 2179	we
+T98	PER 2226 2228	we
+T99	PER 2287 2297	the people
+T100	PER 2266 2268	we

@@ -1,0 +1,196 @@
+T1	TIM 34 42	20030630
+T2	GPE 108 118	WASHINGTON
+T3	TIM 147 150	now
+T4	PER 329 355	U.S. troops based in Japan
+T5	GPE 350 355	Japan
+T6	WEA 250 292	the country 's growing arsenal of missideS
+T7	PER 379 431	officials who have received the intelligence reports
+T8	PER 389 392	who
+T9	PER 119 146	U.S. intelligence officials
+T10	WEA 208 292	nuclear warheads small enough to fit atop the country 's growing arsenal of missideS
+T11	GPE 119 123	U.S.
+T12	GPE 329 333	U.S.
+T13	ORG 119 136	U.S. intelligence
+T14	GPE 159 170	North Korea
+T15	GPE 250 261	the country
+T16	GPE 319 324	Tokyo
+T17	WEA 284 292	missideS
+T18	GPE 482 487	Japan
+T19	GPE 490 501	South Korea
+T20	TIM 522 534	recent weeks
+T21	PER 537 581	officials at the Central Intelligence Agency
+T22	PER 460 464	they
+T23	FAC 592 607	U.S. satellites
+T24	FAC 624 695	a sophisticated new nuclear testing site in an area called Youngdoktong
+T25	GPE 592 596	U.S.
+T26	ORG 550 581	the Central Intelligence Agency
+T27	GPE 506 518	other allies
+T28	LOC 668 695	an area called Youngdoktong
+T29	LOC 683 695	Youngdoktong
+T30	FAC 701 709	the site
+T31	WEA 746 856	conventional explosives that , when detonated , could compress a plutonium core and set onfe nuclear explosion
+T32	WEA 770 774	that
+T33	WEA 1063 1118	its growing arsenal of medium - and long-range missiles
+T34	WEA 992 1118	much more sophisticated weapons that would be light enough to put onto its growing arsenal of medium - and long-range missiles
+T35	WEA 1024 1028	that
+T36	FAC 922 939	the testing range
+T37	ORG 869 881	intelligence
+T38	PER 865 891	oMa intelligence officials
+T39	GPE 957 968	the country
+T40	GPE 1063 1066	its
+T41	WEA 1086 1118	medium - and long-range missiles
+T42	PER 1134 1148	U.S. officials
+T43	PER 1158 1162	they
+T44	WEA 1265 1306	such a `` miniaturized '' nuclear warhead
+T45	GPE 1134 1138	U.S.
+T46	GPE 1186 1197	North Korea
+T47	TIM 1394 1397	now
+T48	TIM 1466 1493	as little as a year or less
+T49	PER 1400 1409	officials
+T50	GPE 1355 1372	the North Koreans
+T51	GPE 1446 1450	they
+T52	PER 1500 1509	officials
+T53	WEA 1585 1588	one
+T54	GPE 1551 1555	they
+T55	GPE 1566 1570	they
+T56	ORG 1598 1612	administration
+T57	GPE 1671 1679	Asiagent
+T58	PER 1591 1622	Senior administration officials
+T59	GPE 1632 1642	Washington
+T60	GPE 1685 1687	it
+T61	WEA 1756 1767	its weapons
+T62	GPE 1756 1759	its
+T63	GPE 1733 1744	the country
+T64	ORG 1832 1850	the administration
+T65	PER 1878 1929	officials who have been briefed on the U.S. reports
+T66	PER 1888 1891	who
+T67	FAC 2009 2077	the testing site , which is near North Korea 's main nuclear complex
+T68	FAC 2028 2033	which
+T69	GPE 1917 1921	U.S.
+T70	FAC 2042 2077	North Korea 's main nuclear complex
+T71	GPE 2042 2053	North Korea
+T72	WEA 2183 2200	two crude devices
+T73	TIM 2222 2233	early 1990s
+T74	TIM 2204 2218	the late 1980s
+T75	WEA 2109 2125	a nuclear weapon
+T76	ORG 2135 2142	the CIA
+T77	TIM 2143 2151	long ago
+T78	GPE 2080 2091	North Korea
+T79	GPE 2167 2169	it
+T80	GPE 2257 2261	Iraq
+T81	WEA 2306 2321	nuclear weapons
+T82	GPE 2236 2247	North Korea
+T83	GPE 2286 2289	its
+T84	ORG 2330 2344	administration
+T85	TIM 2324 2327	Now
+T86	PER 2330 2354	administration officials
+T87	PER 2359 2363	they
+T88	WEA 2441 2476	some of which might be miniaturized
+T89	WEA 2415 2476	five or six new weapons , some of which might be miniaturized
+T90	WEA 2449 2454	which
+T91	GPE 2374 2385	the country
+T92	GPE 2694 2699	Japan
+T93	GPE 2586 2597	South Korea
+T94	GPE 2619 2624	Asian
+T95	PER 2648 2680	approximately 60,000 U.S. troops
+T96	PER 2608 2633	one senior Asian official
+T97	GPE 2669 2673	U.S.
+T98	GPE 2498 2502	them
+T99	GPE 2513 2517	they
+T100	GPE 2562 2567	their
+T101	GPE 2792 2797	Asian
+T102	GPE 2792 2804	Asian allies
+T103	WEA 2869 2887	the small warheads
+T104	GPE 2845 2854	the North
+T105	PER 2916 2925	officials
+T106	TIM 2960 2976	less than a year
+T107	GPE 2940 2944	they
+T108	FAC 3040 3055	U.S. satellites
+T109	GPE 3040 3044	U.S.
+T110	TIM 3120 3134	late last year
+T111	PER 3160 3184	international inspectors
+T112	GPE 3075 3087	North Korean
+T113	GPE 3142 3151	the North
+T114	Transport 3152 3159	evicted
+E1	Transport:T114 Artifact:T111 Agent:T113 Time-Within:T110
+T115	WEA 3303 3316	weapons-grade
+T116	PER 3187 3203	Those inspectors
+T117	TIM 3461 3465	1994
+T118	TIM 3332 3339	January
+T119	TIM 3437 3452	nearly a decade
+T120	GPE 3340 3351	the country
+T121	GPE 3370 3373	its
+T122	PER 3485 3492	Clinton
+T123	ORG 3481 3507	the Clinton administration
+T124	TIM 3547 3550	now
+T125	PER 3527 3541	U.S. officials
+T126	FAC 3629 3643	the facilities
+T127	PER 3564 3586	North Korean engineers
+T128	GPE 3527 3531	U.S.
+T129	GPE 3564 3576	North Korean
+T130	TIM 3720 3729	last week
+T131	GPE 3713 3719	allies
+T132	PER 3652 3674	intelligence officials
+T133	PER 3703 3707	they
+T134	ORG 3652 3664	intelligence
+T135	PER 3902 3909	experts
+T136	WEA 3891 3899	a weapon
+T137	TIM 3966 3976	six months
+T138	PER 4070 4132	one senior official who has recently reviewed the intelligence
+T139	PER 4090 4093	who
+T140	WEA 4040 4059	one of the missiles
+T141	TIM 4098 4106	recently
+T142	PER 3924 3926	we
+T143	WEA 3999 4021	a miniaturized warhead
+T144	WEA 4032 4034	it
+T145	WEA 4047 4059	the missiles
+T146	PER 4155 4158	who
+T147	GPE 4148 4152	Iraq
+T148	WEA 4227 4288	prohibited weapons in Iraq , which have not been found so far
+T149	WEA 4256 4261	which
+T150	GPE 4249 4253	Iraq
+T151	GPE 4323 4327	U.S.
+T152	PER 4442 4447	whose
+T153	GPE 4396 4400	Iraq
+T154	GPE 4376 4387	North Korea
+T155	WEA 4644 4657	weapons-grade
+T156	GPE 4490 4494	U.S.
+T157	TIM 4780 4796	a few months ago
+T158	PER 4683 4696	some analysts
+T159	WEA 4759 4767	a weapon
+T160	GPE 4711 4728	the North Koreans
+T161	TIM 4888 4898	months ago
+T162	PER 4803 4809	others
+T163	VEH 4820 4826	trucks
+T164	LOC 5005 5020	the right place
+T165	FAC 4862 4887	their normal storage area
+T166	GPE 4952 4969	the United States
+T167	Transport 4837 4845	carrying
+E2	Transport:T167 Vehicle:T163 Origin:T165 Time-Within:T161
+T168	ORG 5122 5136	administration
+T169	TIM 5151 5157	recent
+T170	PER 5111 5145	one senior administration official
+T171	FAC 5049 5079	the main reprocessing facility
+T172	GPE 5026 5028	We
+T173	FAC 5192 5212	a second reprocessor
+T174	PER 5215 5221	No one
+T175	TIM 5340 5355	the past decade
+T176	TIM 5397 5410	several years
+T177	GPE 5324 5328	Iraq
+T178	GPE 5420 5424	Iran
+T179	GPE 5270 5281	North Korea
+T180	GPE 5362 5373	North Korea
+T181	GPE 5449 5460	South Korea
+T182	PER 5430 5444	President Bush
+T183	PER 5430 5439	President
+T184	PER 5449 5477	South Korea 's new president
+T185	PER 5480 5489	Roh Moo-h
+T186	PER 5509 5513	they
+T187	PER 5566 5570	Bush
+T188	PER 5580 5582	he
+T189	ORG 5675 5683	military
+T190	FAC 5738 5769	the North 's nuclear facilities
+T191	PER 5694 5697	Roh
+T192	GPE 5738 5747	the North
+T193	Attack 5723 5729	strike
+E3	Attack:T193 Place:T192 Target:T190

@@ -1,0 +1,88 @@
+T1	TIM 31 58	2003-04-12T16 :00:00 -05:00
+T2	PER 175 183	WOODRUFF
+T3	GPE 212 216	Iraq
+T4	TIM 223 226	now
+T5	PER 238 257	the military doctor
+T6	ORG 242 250	military
+T7	GPE 391 398	Baghdad
+T8	ORG 373 377	they
+T9	ORG 331 345	the Devil Docs
+T10	TIM 369 372	now
+T11	PER 260 304	CNN medical correspondent , Dr. Sanjay Gupta
+T12	PER 260 285	CNN medical correspondent
+T13	PER 288 291	Dr.
+T14	ORG 260 263	CNN
+T15	Attack 361 364	war
+E1	Attack:T15
+T16	PER 429 492	SANJAY GUPTA , CNN MEDICAL CORRESPONDENT -LRB- voice-over -RRB-
+T17	PER 554 556	we
+T18	PER 578 584	others
+T19	PER 614 619	their
+T20	Injure 620 628	injuries
+E2	Injure:T20 Victim:T19
+T21	ORG 687 788	Naval corpsmen who never look the other way , but rather face what needs to be done without flinching
+T22	ORG 702 705	who
+T23	ORG 670 684	the Devil Docs
+T24	PER 631 637	Nobody
+T25	GPE 857 866	coalition
+T26	ORG 857 872	coalition force
+T27	GPE 848 853	Iraqi
+T28	PER 857 880	coalition force members
+T29	PER 843 847	they
+T30	PER 822 833	the injured
+T31	ORG 791 795	They
+T32	ORG 806 837	the first faces the injured see
+T33	FAC 945 956	the streets
+T34	Attack 990 1000	firefights
+E3	Attack:T34
+T35	ORG 1029 1043	the Devil Docs
+T36	ORG 1066 1074	The Navy
+T37	GPE 1186 1193	Baghdad
+T38	FAC 1086 1193	a helicopter landing zone just a 100 meters from a mobile operating room , just on the outskirts of Baghdad
+T39	FAC 1135 1158	a mobile operating room
+T40	VEH 1088 1098	helicopter
+T41	LOC 1169 1193	the outskirts of Baghdad
+T42	ORG 1204 1243	the closest front line surgical company
+T43	PER 1268 1276	patients
+T44	VEH 1280 1289	ambulance
+T45	PER 1246 1254	Corpsmen
+T46	FAC 1320 1333	a triage tent
+T47	Transport 1263 1267	take
+E4	Transport:T47 Vehicle:T44 Artifact:T43 Destination:T46 Agent:T45
+T48	ORG 1348 1359	the doctors
+T49	ORG 1366 1371	their
+T50	FAC 1342 1347	there
+T51	PER 1411 1422	32 patients
+T52	PER 1491 1506	those delivered
+T53	PER 1485 1506	29 of those delivered
+T54	PER 1509 1565	Marines involved in a firefight in the center of Baghdad
+T55	GPE 1558 1565	Baghdad
+T56	LOC 1544 1565	the center of Baghdad
+T57	PER 1398 1400	we
+T58	TIM 1384 1394	45 minutes
+T59	FAC 1438 1442	here
+T60	Attack 1531 1540	firefight
+E5	Attack:T60 Attacker:T54 Place:T56
+T61	Transport 1497 1506	delivered
+E6	Transport:T61 Artifact:T53 Destination:T59
+T62	Transport 1428 1437	delivered
+E7	Transport:T62 Artifact:T51 Destination:T59 Time-Within:T58
+T63	PER 1568 1573	Their
+T64	WEA 1671 1693	semi-automatic weapons
+T65	WEA 1652 1658	bullet
+T66	WEA 1622 1638	rocket-propelled
+T67	WEA 1622 1647	rocket-propelled grenades
+T68	Injure 1659 1665	wounds
+E8	Injure:T68 Instrument:T65 Victim:T63
+T69	Injure 1612 1618	wounds
+E9	Injure:T69 Instrument:T67 Victim:T63
+T70	PER 1718 1723	their
+T71	PER 1758 1769	the Marines
+T72	PER 1751 1769	Two of the Marines
+T73	PER 1791 1812	many of the survivors
+T74	PER 1799 1812	the survivors
+T75	GPE 1978 1985	Baghdad
+T76	ORG 1955 1969	the Devil Docs
+T77	PER 1927 1943	Dr. Sanjay Gupta
+T78	PER 1927 1930	Dr.
+T79	ORG 1946 1949	CNN

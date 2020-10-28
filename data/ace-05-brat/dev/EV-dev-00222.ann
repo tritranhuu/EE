@@ -1,0 +1,65 @@
+T1	TIM 39 58	2003-06-21 12:32:02
+T2	TIM 76 83	weekend
+T3	TIM 183 189	sunday
+T4	GPE 152 163	middle east
+T5	PER 88 104	secretary powell
+T6	PER 88 97	secretary
+T7	GPE 137 171	members of the middle east quartet
+T8	GPE 148 171	the middle east quartet
+T9	Meet 172 179	meeting
+E1	Meet:T9 Entity:T7 Time-Within:T3
+T10	GPE 210 218	the u.s.
+T11	GPE 221 227	russia
+T12	GPE 230 248	the european union
+T13	ORG 255 273	the united nations
+T14	GPE 192 194	it
+T15	GPE 395 420	the palestinian authority
+T16	ORG 279 283	u.n.
+T17	PER 276 289	an u.n. envoy
+T18	LOC 373 377	gaza
+T19	GPE 382 391	bethlehem
+T20	GPE 295 304	the group
+T21	PER 423 439	she la mac vicar
+T22	PER 566 598	palestinian prime minister abbas
+T23	PER 566 592	palestinian prime minister
+T24	GPE 566 577	palestinian
+T25	PER 551 563	ariel sharon
+T26	PER 457 465	reporter
+T27	ORG 651 674	the u.s. administration
+T28	TIM 512 521	yesterday
+T29	PER 525 537	colin powell
+T30	Meet 538 545	meeting
+E2	Meet:T30 Entity:T29 Entity:T25 Time-Within:T28
+T31	GPE 753 764	palestinian
+T32	GPE 909 920	palestinian
+T33	GPE 741 748	israeli
+T34	ORG 701 722	the los angeles times
+T35	PER 741 774	israeli and palestinian officials
+T36	LOC 847 867	a small part of gaza
+T37	LOC 863 867	gaza
+T38	LOC 884 905	all of the gaza strip
+T39	GPE 979 1010	the west bank city of bethlehem
+T40	GPE 1001 1010	bethlehem
+T41	LOC 983 992	west bank
+T42	ORG 1013 1030	the `` l.a. times
+T43	TIM 1089 1097	tomorrow
+T44	Meet 1049 1061	negotiations
+E3	Meet:T44 Time-Starting:T43
+T45	GPE 1287 1298	palestinian
+T46	GPE 1399 1410	palestinian
+T47	GPE 1338 1350	the israelis
+T48	GPE 1107 1114	israeli
+T49	LOC 1181 1195	the gaza strip
+T50	LOC 1262 1283	all of the gaza strip
+T51	LOC 1494 1515	all of the gaza strip
+T52	PER 1100 1124	senior israeli officials
+T53	ORG 1133 1136	cnn
+T54	LOC 1154 1195	the area to be returned to the gaza strip
+T55	GPE 1589 1610	palestinian authority
+T56	GPE 1533 1540	israeli
+T57	GPE 1571 1575	they
+T58	TIM 1518 1521	now
+T59	ORG 1659 1683	organizations like hamas
+T60	ORG 1678 1683	hamas
+T61	End-Org 1649 1658	dismantle
+E4	End-Org:T61 Org:T59

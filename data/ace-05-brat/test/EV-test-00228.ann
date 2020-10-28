@@ -1,0 +1,29 @@
+T1	TIM 35 55	2005-02-16T21 :20:00
+T2	PER 85 90	Byrne
+T3	TIM 91 111	2005-02-16T21 :20:00
+T4	CRM 167 175	stealing
+T5	NUM 176 195	millions of dollars
+T6	TIM 217 220	now
+T7	ORG 136 211	the hedge fund firm accused of stealing millions of dollars in client funds
+T8	ORG 112 133	Northshore Management
+T9	PER 199 205	client
+T10	ORG 235 238	SEC
+T11	Charge-Indict 156 163	accused
+E1	Charge-Indict:T11 Crime:T4 Defendant:T7 Prosecutor:T10
+T12	NUM 273 285	$ 37 million
+T13	NUM 373 385	$ 90 million
+T14	ORG 634 667	companies the managers controlled
+T15	PER 502 521	these fund managers
+T16	PER 644 656	the managers
+T17	PER 674 678	they
+T18	Transfer-Money 611 615	lent
+E2	Transfer-Money:T18 Recipient:T14
+T19	ORG 755 765	Northshore
+T20	PER 728 732	they
+T21	PER 824 828	they
+T22	TIM 926 942	the coming weeks
+T23	ORG 1063 1087	avenues for stolen funds
+T24	ORG 1006 1021	these companies
+T25	ORG 1033 1037	they
+T26	ORG 1038 1052	real companies
+T27	PER 899 901	we

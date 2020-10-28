@@ -1,0 +1,51 @@
+T1	TIM 38 57	2003-03-29 17:17:30
+T2	TIM 58 63	today
+T3	LOC 118 131	southern iraq
+T4	FAC 99 108	oil field
+T5	GPE 174 182	ramallah
+T6	FAC 170 192	the ramallah oil field
+T7	PER 134 146	firefighters
+T8	PER 156 161	their
+T9	LOC 295 303	the area
+T10	FAC 277 303	500 oil fields in the area
+T11	FAC 246 255	two wells
+T12	PER 195 204	officials
+T13	PER 209 213	they
+T14	PER 315 365	some iraqis who worked in the field before the war
+T15	PER 327 330	who
+T16	PER 389 394	their
+T17	PER 306 310	they
+T18	FAC 341 350	the field
+T19	Attack 362 365	war
+E1	Attack:T19
+T20	PER 431 437	iraqis
+T21	GPE 468 472	u.s.
+T22	VEH 468 479	u.s. planes
+T23	WEA 488 494	a bomb
+T24	LOC 500 513	northern iraq
+T25	Attack 480 487	dropped
+E2	Attack:T25 Attacker:T21 Place:T24 Instrument:T23
+T26	LOC 544 553	the ridge
+T27	PER 556 559	you
+T28	PER 608 611	you
+T29	PER 524 528	they
+T30	VEH 569 579	the planes
+T31	Attack 588 598	explosions
+E3	Attack:T31
+T32	PER 670 673	you
+T33	PER 632 651	any american marine
+T34	PER 656 660	they
+T35	PER 674 678	they
+T36	GPE 636 644	american
+T37	PER 729 744	fallen comrades
+T38	Die 729 735	fallen
+E4	Die:T38 Person:T37
+T39	GPE 822 843	the city of nasiriyah
+T40	GPE 834 843	nasiriyah
+T41	GPE 844 853	nasiriyah
+T42	PER 781 843	marines engaged in the fierce battle for the city of nasiriyah
+T43	Attack 811 817	battle
+E5	Attack:T43 Attacker:T42 Target:T42
+T44	GPE 874 879	there
+T45	PER 885 896	the marines
+T46	PER 856 870	aless so vinci

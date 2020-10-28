@@ -1,0 +1,75 @@
+T1	TIM 38 57	2003-04-29 18:11:48
+T2	PER 58 82	coalition forces in iraq
+T3	GPE 78 82	iraq
+T4	ORG 141 149	al qaeda
+T5	PER 97 149	a member of a terrorist group with links to al qaeda
+T6	PER 111 120	terrorist
+T7	ORG 109 149	a terrorist group with links to al qaeda
+T8	GPE 58 67	coalition
+T9	ORG 165 168	our
+T10	LOC 272 291	the west of baghdad
+T11	PER 152 159	sources
+T12	GPE 284 291	baghdad
+T13	PER 165 200	our national security correspondent
+T14	PER 203 214	david ensor
+T15	PER 222 235	the terrorist
+T16	PER 239 291	a member of a group operating in the west of baghdad
+T17	ORG 251 291	a group operating in the west of baghdad
+T18	PER 315 332	abu musab zarqawi
+T19	ORG 294 304	that group
+T20	TIM 434 446	last october
+T21	PER 358 365	zarqawi
+T22	PER 335 349	u.s. officials
+T23	GPE 335 339	u.s.
+T24	GPE 395 399	u.s.
+T25	PER 395 423	u.s. diplomat lawrence foley
+T26	PER 395 408	u.s. diplomat
+T27	GPE 427 433	jordan
+T28	Die 378 391	assassination
+E1	Die:T28 Victim:T25 Agent:T21 Place:T27 Time-Within:T20
+T29	JOB 501 513	oil minister
+T30	TIM 494 500	former
+T31	PER 449 465	coalition forces
+T32	PER 476 513	saddam hussein 's former oil minister
+T33	PER 476 490	saddam hussein
+T34	GPE 449 458	coalition
+T35	End-Position 494 500	former
+E2	End-Position:T35 Person:T32 Position:T29
+T36	PER 532 534	he
+T37	PER 539 575	an expert on iraq 's missile systems
+T38	GPE 552 556	iraq
+T39	WEA 560 567	missile
+T40	WEA 552 575	iraq 's missile systems
+T41	JOB 597 605	minister
+T42	TIM 590 596	former
+T43	PER 586 605	the former minister
+T44	PER 608 707	the 6 of spades in the deck of cards , showing the most wanted members of the saddam hussein regime
+T45	PER 655 707	the most wanted members of the saddam hussein regime
+T46	ORG 682 707	the saddam hussein regime
+T47	PER 686 700	saddam hussein
+T48	End-Position 590 596	former
+E3	End-Position:T48 Person:T43 Entity:T46 Position:T41
+T49	PER 710 712	he
+T50	GPE 731 736	iraqi
+T51	PER 727 769	the iraqi microbiologist known as dr. germ
+T52	PER 761 769	dr. germ
+T53	Marry 716 723	married
+E4	Marry:T53 Person:T49 Person:T51
+T54	FAC 793 835	the iraqi facility that weaponized anthrax
+T55	FAC 812 816	that
+T56	WEA 828 835	anthrax
+T57	GPE 797 802	iraqi
+T58	PER 772 775	she
+T59	End-Position 783 789	charge
+E5	End-Position:T59 Person:T58 Place:T54
+T60	JOB 849 857	governor
+T61	TIM 913 918	today
+T62	TIM 842 848	former
+T63	PER 896 912	coalition forces
+T64	GPE 861 875	basra province
+T65	PER 838 875	the former governor of basra province
+T66	GPE 896 905	coalition
+T67	End-Position 842 848	former
+E6	End-Position:T67 Person:T65 Place:T64 Entity:T64 Position:T60
+T68	PER 921 923	he
+T69	PER 928 942	the 8 of clubs

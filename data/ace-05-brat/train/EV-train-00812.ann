@@ -1,0 +1,21 @@
+T1	TIM 35 55	2005-02-12T16 :07:00
+T2	PER 113 118	Byrne
+T3	TIM 119 139	2005-02-12T16 :07:00
+T4	ORG 272 303	one of the deal 's participants
+T5	ORG 306 319	Movie Gallery
+T6	ORG 279 303	the deal 's participants
+T7	ORG 194 203	Hollywood
+T8	ORG 402 411	Hollywood
+T9	ORG 180 191	Blockbuster
+T10	ORG 360 371	Blockbuster
+T11	PER 140 141	I
+T12	PER 256 257	I
+T13	PER 244 245	I
+T14	PER 340 341	I
+T15	ORG 453 466	Movie Gallery
+T16	ORG 491 500	Hollywood
+T17	ORG 538 549	Blockbuster
+T18	ORG 624 633	Allegheny
+T19	PER 590 591	I
+T20	Transfer-Ownership 668 676	takeover
+E1	Transfer-Ownership:T20 Buyer:T18

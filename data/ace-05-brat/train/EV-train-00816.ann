@@ -1,0 +1,189 @@
+T1	TIM 46 66	2005-01-30T18 :48:00
+T2	PER 90 106	D. Spencer Hines
+T3	TIM 107 139	Sun , 30 Jan 2005 23:48:53 -0000
+T4	GPE 158 162	Iraq
+T5	TIM 145 157	Good Morning
+T6	GPE 185 201	The Iraqi People
+T7	GPE 189 194	Iraqi
+T8	TIM 163 165	It
+T9	TIM 169 180	A Great Day
+T10	GPE 228 236	American
+T11	TIM 287 289	It
+T12	TIM 293 304	A Great Day
+T13	PER 309 333	President George W. Bush
+T14	PER 338 341	His
+T15	GPE 578 585	Vietnam
+T16	PER 551 554	LBJ
+T17	PER 451 454	GWB
+T18	Attack 586 589	War
+E1	Attack:T18 Place:T15
+T19	PER 592 605	Teddy Kennedy
+T20	GPE 828 838	The French
+T21	PER 747 807	The Supine Appeasement-Oriented American Left-Wing Democrats
+T22	PER 719 742	the Left-Wing Spaniards
+T23	GPE 705 716	the Chinese
+T24	GPE 690 702	the Russians
+T25	GPE 676 687	The Germans
+T26	GPE 779 787	American
+T27	GPE 841 849	They All
+T28	PER 901 917	D. Spencer Hines
+T29	PER 960 967	tiglath
+T30	TIM 968 994	31 Jan 2005 10:40:52 -0800
+T31	GPE 1013 1017	Iraq
+T32	TIM 1000 1012	Good Morning
+T33	PER 1022 1024	's
+T34	PER 1075 1095	a Commander-in-Chief
+T35	PER 1156 1178	the Commander-in-Chief
+T36	PER 1271 1293	the Commander-in-Chief
+T37	PER 1327 1349	the Commander-in-Chief
+T38	PER 1412 1415	his
+T39	PER 1245 1293	the generals proper under the Commander-in-Chief
+T40	PER 1412 1423	his general
+T41	GPE 1138 1155	the United States
+T42	PER 1780 1789	the enemy
+T43	PER 1711 1718	his men
+T44	PER 1682 1693	a commander
+T45	PER 1711 1714	his
+T46	Attack 1722 1727	fight
+E2	Attack:T46 Attacker:T43
+T47	PER 1792 1806	President Bush
+T48	PER 1792 1801	President
+T49	PER 1842 1845	His
+T50	PER 1886 1889	his
+T51	Attack 1922 1930	invasion
+E3	Attack:T51
+T52	Attack 1863 1866	war
+E4	Attack:T52
+T53	Attack 1908 1911	war
+E5	Attack:T53
+T54	Attack 2034 2044	insurgency
+E6	Attack:T54
+T55	PER 2047 2069	The Commander-in-Chief
+T56	PER 2146 2148	he
+T57	PER 2152 2186	a very capable and skilled general
+T58	PER 2109 2112	men
+T59	PER 2116 2120	they
+T60	PER 2189 2199	Eisenhower
+T61	WEA 2338 2345	any WMD
+T62	PER 2255 2320	President Bush , who unleashed hell acting on faulty intelligence
+T63	PER 2255 2264	President
+T64	PER 2272 2275	who
+T65	GPE 2357 2360	our
+T66	PER 2357 2365	our boys
+T67	Attack 2369 2372	war
+E7	Attack:T67 Attacker:T66
+T68	PER 2470 2473	men
+T69	Die 2495 2500	death
+E8	Die:T69 Victim:T68
+T70	PER 2503 2506	Men
+T71	PER 2666 2673	his men
+T72	PER 2635 2673	a commander fighting alongside his men
+T73	PER 2666 2669	his
+T74	Attack 2647 2655	fighting
+E9	Attack:T74 Attacker:T72 Attacker:T71
+T75	TIM 2875 2904	times of Alexander of Macedon
+T76	TIM 2856 2861	today
+T77	GPE 2897 2904	Macedon
+T78	PER 2884 2904	Alexander of Macedon
+T79	PER 2721 2770	a president with a preference for personal combat
+T80	GPE 2704 2706	we
+T81	PER 2831 2838	his men
+T82	PER 2786 2797	a commander
+T83	PER 2831 2834	his
+T84	Attack 2764 2770	combat
+E10	Attack:T84
+T85	ORG 2934 2942	military
+T86	PER 2953 2964	our leaders
+T87	GPE 2919 2921	we
+T88	GPE 2953 2956	our
+T89	ORG 3051 3059	military
+T90	PER 3008 3018	John Kerry
+T91	PER 3021 3030	the loser
+T92	PER 2982 2996	George H. Bush
+T93	PER 2967 2979	John Kennedy
+T94	PER 3106 3109	men
+T95	Attack 3113 3119	battle
+E11	Attack:T95 Attacker:T94
+T96	PER 3141 3163	the Commander-in-Chief
+T97	PER 3234 3264	troops facing the same dangers
+T98	Attack 3191 3194	war
+E12	Attack:T98
+T99	ORG 3303 3311	military
+T100	PER 3267 3281	George W. Bush
+T101	VEH 3339 3346	carrier
+T102	VEH 3331 3334	CBS
+T103	PER 3426 3428	he
+T104	PER 3467 3469	he
+T105	Attack 3452 3455	war
+E13	Attack:T105
+T106	PER 3555 3558	men
+T107	Die 3580 3585	death
+E14	Die:T107 Victim:T106
+T108	PER 3634 3643	a general
+T109	PER 3608 3622	George W. Bush
+T110	PER 3660 3662	he
+T111	PER 3666 3678	a politician
+T112	PER 3588 3592	Some
+T113	PER 3648 3657	a soldier
+T114	PER 3681 3683	He
+T115	PER 3719 3721	he
+T116	PER 3757 3775	Commander-in-Chief
+T117	PER 3776 3778	he
+T118	PER 3782 3802	the Ultimate General
+T119	PER 3807 3824	the First Soldier
+T120	PER 3827 3841	George W. Bush
+T121	PER 3844 3858	the Politician
+T122	PER 4142 4166	he most wanted terrorist
+T123	PER 4017 4030	his opponents
+T124	PER 3973 3976	his
+T125	PER 4017 4020	his
+T126	PER 4071 4074	his
+T127	PER 4169 4183	George W. Bush
+T128	PER 4186 4188	he
+T129	Attack 4115 4124	terrorism
+E15	Attack:T129
+T130	GPE 4256 4260	Iraq
+T131	GPE 4269 4295	a truly democratic country
+T132	PER 4239 4240	I
+T133	GPE 4307 4309	it
+T134	LOC 4551 4560	the world
+T135	NUM 4373 4381	billions
+T136	PER 4584 4592	a tyrant
+T137	GPE 4561 4565	that
+T138	GPE 4535 4592	each country in the world that is in the grip of a tyrant
+T139	PER 4336 4339	you
+T140	PER 4384 4428	thousands of Americans dead or badly wounded
+T141	GPE 4504 4507	our
+T142	GPE 4504 4514	our nation
+T143	Attack 4478 4481	war
+E16	Attack:T143
+T144	Die 4421 4428	wounded
+E17	Die:T144 Victim:T140
+T145	PER 4595 4596	I
+T146	GPE 4735 4748	other nations
+T147	PER 4631 4708	a generation with the guts and the willingness to originate democratic change
+T148	GPE 4610 4625	those countries
+T149	PER 4713 4714	I
+T150	GPE 4876 4880	Iraq
+T151	GPE 4824 4833	tyrannies
+T152	GPE 4802 4813	a coalition
+T153	Elect 4884 4893	elections
+E18	Elect:T153 Entity:T150
+T154	PER 4912 4926	George W. Bush
+T155	PER 5045 5055	such a man
+T156	ORG 5028 5038	Government
+T157	GPE 5160 5164	Iraq
+T158	PER 5142 5164	the new rulers of Iraq
+T159	TIM 5146 5149	new
+T160	GPE 5220 5242	The interim government
+T161	PER 5293 5299	Saddam
+T162	PER 5271 5280	opponents
+T163	Injure 5263 5270	torture
+E19	Injure:T163 Agent:T160 Victim:T162
+T164	Injure 5300 5303	did
+E20	Injure:T164 Victim:T162 Agent:T161
+T165	PER 5306 5317	the Shiites
+T166	GPE 5354 5357	our
+T167	GPE 5381 5385	Iraq
+T168	PER 5408 5422	Britney Spears
+T169	PER 5481 5484	she

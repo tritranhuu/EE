@@ -1,0 +1,108 @@
+T1	TIM 35 55	2004-12-20T09 :19:00
+T2	PER 97 108	Mark Backer
+T3	TIM 109 129	2004-12-20T09 :19:00
+T4	PER 174 175	I
+T5	TIM 344 357	weeks to come
+T6	PER 198 199	I
+T7	PER 251 252	I
+T8	PER 289 290	I
+T9	TIM 331 339	the days
+T10	ORG 401 412	the Packers
+T11	PER 426 431	Favre
+T12	PER 436 451	Robert Ferguson
+T13	TIM 365 369	4:41
+T14	ORG 535 547	Jacksonville
+T15	PER 588 596	Ferguson
+T16	PER 535 550	Jacksonville DB
+T17	PER 535 565	Jacksonville DB Donovin Darius
+T18	Attack 566 574	unloaded
+E1	Attack:T18 Attacker:T17 Target:T15
+T19	PER 699 702	his
+T20	PER 639 647	Ferguson
+T21	PER 841 850	the crowd
+T22	FAC 762 771	the field
+T23	PER 774 782	Ferguson
+T24	TIM 729 741	many minutes
+T25	Transport 795 802	removed
+E2	Transport:T25
+T26	ORG 868 879	The Packers
+T27	PER 996 999	you
+T28	Attack 940 944	This
+E3	Attack:T28
+T29	PER 1131 1139	Ferguson
+T30	PER 1155 1158	his
+T31	Attack 1043 1047	This
+E4	Attack:T31 Target:T29
+T32	PER 1275 1284	the crowd
+T33	PER 1241 1247	Darius
+T34	PER 1334 1339	their
+T35	FAC 1433 1442	the field
+T36	PER 1401 1421	the offending player
+T37	PER 1425 1427	he
+T38	Transport 1428 1432	left
+E5	Transport:T38 Artifact:T37 Origin:T35
+T39	ORG 1537 1543	Packer
+T40	PER 1533 1548	the Packer fans
+T41	PER 1478 1481	him
+T42	PER 1519 1521	he
+T43	PER 1588 1592	they
+T44	PER 1618 1623	their
+T45	PER 1662 1667	their
+T46	PER 1577 1585	a person
+T47	PER 1762 1773	Jim McMahon
+T48	PER 1847 1849	he
+T49	ORG 1748 1755	the NFL
+T50	TIM 1822 1869	about five seconds after he had released a pass
+T51	PER 1733 1734	I
+T52	TIM 1808 1821	the mid 80 's
+T53	Attack 1783 1790	slammed
+E6	Attack:T53 Target:T47 Time-Within:T52 Time-At-End:T50
+T54	ORG 1876 1883	Jaguars
+T55	PER 1876 1902	Jaguars coach Jack Del Rio
+T56	PER 1876 1889	Jaguars coach
+T57	PER 1955 1964	officials
+T58	PER 1971 1977	Darius
+T59	PER 1907 1913	Darius
+T60	PER 2024 2030	anyone
+T61	PER 2045 2048	you
+T62	PER 2005 2006	I
+T63	PER 2129 2137	Ferguson
+T64	PER 2074 2080	Darius
+T65	Injure 2097 2106	dismember
+E7	Injure:T65 Victim:T63 Agent:T64
+T66	Injure 2109 2115	injure
+E8	Injure:T66 Victim:T63 Agent:T64
+T67	Die 2124 2128	kill
+E9	Die:T67 Victim:T63 Agent:T64
+T68	PER 2149 2150	I
+T69	PER 2187 2189	me
+T70	ORG 2197 2207	The league
+T71	PER 2259 2260	I
+T72	TIM 2343 2362	In this day and age
+T73	PER 2366 2402	bigger , stronger and faster players
+T74	Injure 2405 2413	injuries
+E10	Injure:T74 Time-Within:T72
+T75	PER 2527 2535	Ferguson
+T76	Injure 2539 2545	injury
+E11	Injure:T76 Victim:T75
+T77	PER 2581 2601	all of his employees
+T78	PER 2588 2601	his employees
+T79	PER 2548 2562	Paul Tagliabue
+T80	PER 2588 2591	his
+T81	Attack 2620 2624	this
+E12	Attack:T81
+T82	ORG 2670 2681	the Jaguars
+T83	ORG 2768 2775	the NFL
+T84	PER 2684 2690	Darius
+T85	PER 2708 2711	him
+T86	PER 2695 2711	players like him
+T87	ORG 2802 2813	the Packers
+T88	FAC 2863 2872	the field
+T89	PER 2787 2788	I
+T90	PER 2881 2887	Darius
+T91	PER 2894 2959	the target of similar attacks by tight ends and offensive lineman
+T92	ORG 2818 2834	many other teams
+T93	PER 2942 2959	offensive lineman
+T94	PER 2927 2937	tight ends
+T95	Attack 2916 2923	attacks
+E13	Attack:T95 Attacker:T94 Attacker:T93 Place:T88 Target:T91

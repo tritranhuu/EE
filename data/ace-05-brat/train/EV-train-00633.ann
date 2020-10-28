@@ -1,0 +1,66 @@
+T1	TIM 39 58	2003-06-17 07:32:18
+T2	LOC 76 85	the world
+T3	PER 113 128	three fishermen
+T4	LOC 59 85	the same part of the world
+T5	ORG 157 172	royal caribbean
+T6	LOC 101 110	high seas
+T7	GPE 142 151	vancouver
+T8	VEH 155 184	a royal caribbean cruise ship
+T9	PER 187 194	the men
+T10	PER 265 269	them
+T11	VEH 228 246	the passenger ship
+T12	VEH 203 221	the sinking vessel
+T13	PER 232 241	passenger
+T14	PER 320 333	the fisherman
+T15	PER 356 360	they
+T16	ORG 274 285	cruise line
+T17	PER 272 295	a cruise line spokesman
+T18	LOC 434 443	the world
+T19	LOC 447 452	which
+T20	LOC 417 493	the same part of the world in which we had that other incident the other day
+T21	TIM 480 493	the other day
+T22	PER 453 455	we
+T23	PER 578 582	jack
+T24	TIM 597 604	the day
+T25	PER 631 711	high-profile people who are taking it on the arthur and heading for other places
+T26	PER 651 654	who
+T27	PER 617 620	you
+T28	JOB 800 808	her post
+T29	PER 714 738	the lady at the pentagon
+T30	PER 746 749	she
+T31	PER 800 803	her
+T32	PER 813 816	she
+T33	ORG 726 738	the pentagon
+T34	End-Position 754 761	leaving
+E1	End-Position:T34 Person:T30 Entity:T33 Position:T28
+T35	End-Position 820 827	leaving
+E2	End-Position:T35 Person:T29 Entity:T33 Position:T28
+T36	PER 1008 1036	uncooperative church bishops
+T37	ORG 934 953	the catholic church
+T38	ORG 1022 1028	church
+T39	PER 1056 1067	other folks
+T40	PER 1070 1083	ari fleischer
+T41	ORG 873 953	a commission set up to look into allegations of sex abuse in the catholic church
+T42	PER 851 864	frank keating
+T43	PER 956 958	he
+T44	PER 981 983	he
+T45	PER 1040 1053	la cosa nosta
+T46	End-Position 865 872	leaving
+E3	End-Position:T46 Person:T42 Entity:T41
+T47	End-Position 970 974	quit
+E4	End-Position:T47 Person:T43 Entity:T41
+T48	Attack 925 930	abuse
+E5	Attack:T48
+T49	PER 1086 1088	we
+T50	PER 1153 1156	you
+T51	PER 1176 1179	you
+T52	PER 1206 1208	us
+T53	PER 1191 1194	you
+T54	Phone-Write 1199 1205	e-mail
+E6	Phone-Write:T54 Entity:T53 Entity:T52
+T55	PER 1238 1243	crews
+T56	PER 1291 1293	us
+T57	FAC 1391 1400	buildings
+T58	TIM 1304 1314	one summer
+T59	ORG 1318 1342	the university of nevada
+T60	PER 1296 1297	i

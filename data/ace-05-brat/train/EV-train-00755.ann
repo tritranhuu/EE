@@ -1,0 +1,21 @@
+T1	TIM 39 58	2003-06-16 13:31:44
+T2	TIM 154 159	today
+T3	ORG 88 120	new york 's manufacturing sector
+T4	GPE 88 96	new york
+T5	TIM 162 171	right now
+T6	ORG 279 311	manufacturers 3m and caterpillar
+T7	ORG 335 352	johnson & johnson
+T8	ORG 279 292	manufacturers
+T9	ORG 325 330	merck
+T10	NUM 400 405	1.5 %
+T11	NUM 447 457	nearly $ 3
+T12	ORG 429 434	kmart
+T13	TIM 551 561	a year ago
+T14	NUM 468 481	$ 862 million
+T15	TIM 485 502	the first quarter
+T16	ORG 460 462	it
+T17	ORG 534 546	the retailer
+T18	ORG 567 569	it
+T19	Declare-Bankruptcy 580 590	bankruptcy
+E1	Declare-Bankruptcy:T19 Org:T17 Time-At-Beginning:T13
+T20	FAC 633 644	wall street

@@ -1,0 +1,115 @@
+T1	TIM 39 58	2003-04-08 09:52:31
+T2	GPE 132 148	northern ireland
+T3	LOC 116 148	an air field in northern ireland
+T4	PER 77 104	the president united states
+T5	GPE 91 104	united states
+T6	Transport 105 112	landing
+E1	Transport:T6 Artifact:T4 Destination:T3
+T7	VEH 205 218	air force one
+T8	VEH 171 185	the helicopter
+T9	PER 156 158	he
+T10	PER 186 188	he
+T11	PER 259 294	the prime minister of great britain
+T12	TIM 151 155	once
+T13	TIM 240 247	20-hour
+T14	GPE 227 231	home
+T15	GPE 281 294	great britain
+T16	Transport 222 226	come
+E2	Transport:T16 Vehicle:T7 Artifact:T10 Destination:T14
+T17	Meet 248 253	visit
+E3	Meet:T17 Entity:T10 Entity:T11 Time-Holds:T13
+T18	GPE 353 368	the middle east
+T19	PER 297 301	they
+T20	GPE 392 405	post-war iraq
+T21	Meet 302 308	talked
+E4	Meet:T21 Entity:T19
+T22	PER 424 428	they
+T23	GPE 454 470	northern ireland
+T24	Meet 429 435	talked
+E5	Meet:T24 Entity:T22
+T25	VEH 551 563	this chopper
+T26	PER 525 538	the president
+T27	TIM 499 507	a second
+T28	ORG 473 475	we
+T29	ORG 518 520	we
+T30	PER 589 628	the prime minister of the great britain
+T31	PER 569 572	you
+T32	GPE 757 761	iraq
+T33	ORG 704 722	the united nations
+T34	GPE 671 685	much of europe
+T35	GPE 611 628	the great britain
+T36	GPE 662 666	home
+T37	GPE 679 685	europe
+T38	GPE 815 832	the united states
+T39	GPE 764 779	the white house
+T40	GPE 806 808	it
+T41	GPE 837 850	great britain
+T42	GPE 939 951	the new iraq
+T43	PER 918 931	the president
+T44	ORG 875 877	we
+T45	GPE 1023 1028	iraqi
+T46	GPE 967 971	u.s.
+T47	PER 891 931	john king , traveling with the president
+T48	ORG 995 1009	united nations
+T49	GPE 1019 1035	the iraqi people
+T50	GPE 967 991	u.s. / british coalition
+T51	GPE 974 981	british
+T52	PER 1140 1145	their
+T53	PER 1079 1088	president
+T54	PER 1056 1074	the prime minister
+T55	PER 1101 1110	reporters
+T56	Meet 1146 1154	meetings
+E6	Meet:T56 Entity:T54 Entity:T53 Entity:T52
+T57	ORG 1191 1263	an interim authority composed of iraq grs inside and outside the country
+T58	PER 1157 1170	the president
+T59	PER 1224 1263	iraq grs inside and outside the country
+T60	ORG 1284 1306	a permanent government
+T61	GPE 1224 1228	iraq
+T62	GPE 1252 1263	the country
+T63	GPE 1273 1277	iraq
+T64	PER 1331 1334	you
+T65	ORG 1371 1373	we
+T66	PER 1437 1452	the two leaders
+T67	PER 1502 1507	their
+T68	ORG 1409 1411	we
+T69	Meet 1518 1526	meetings
+E7	Meet:T69 Entity:T67
+T70	PER 1529 1533	they
+T71	ORG 1597 1601	u.n.
+T72	PER 1555 1622	folks who had any concerns about what the u.n. involvement might be
+T73	PER 1561 1564	who
+T74	PER 1638 1642	they
+T75	PER 1716 1720	they
+T76	PER 1821 1825	they
+T77	TIM 1841 1859	the future of iraq
+T78	GPE 1855 1859	iraq
+T79	GPE 1877 1882	iraqi
+T80	ORG 1695 1713	the united nations
+T81	GPE 1756 1764	european
+T82	GPE 1752 1772	the european nations
+T83	VEH 1969 1982	air force one
+T84	PER 1891 1904	the president
+T85	PER 1941 1943	he
+T86	PER 1986 1989	his
+T87	LOC 1955 1959	here
+T88	PER 1914 1937	a number of dignitaries
+T89	GPE 1994 1998	home
+T90	GPE 2102 2117	the middle east
+T91	TIM 2001 2030	a little earlier this morning
+T92	PER 2033 2034	i
+T93	PER 2046 2117	an iraqi dissident who teaches at writes extensively on the middle east
+T94	PER 2065 2068	who
+T95	GPE 2049 2054	iraqi
+T96	PER 2120 2122	he
+T97	GPE 2143 2163	the republic of fear
+T98	GPE 2189 2193	iraq
+T99	TIM 2263 2272	yesterday
+T100	PER 2200 2201	i
+T101	PER 2208 2211	him
+T102	PER 2232 2246	saddam hussein
+T103	PER 2313 2319	saddam
+T104	GPE 2291 2297	iraqis
+T105	Die 2324 2330	killed
+E8	Die:T105 Victim:T103
+T106	Attack 2276 2282	strike
+E9	Attack:T106 Target:T102 Time-Within:T99

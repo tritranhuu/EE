@@ -1,5 +1,5 @@
 from data_utils.corpus import Corpus
-from deeplearning_models.cnn import CNN
+from deeplearning_models.deep_cnn import DeepCNN
 from trainer.event_detection import ED
 
 import torch
@@ -14,10 +14,10 @@ else:
 
 if __name__ == "__main__":
     corpus = Corpus(
-        input_folder="./data/csv",
+        input_folder="./data/ace-05-brat/csv",
         min_word_freq=2,  
-        batch_size=128,
-        wv_file = './pretrained_embedding/word2vec/baomoi.vn.model.bin'
+        batch_size=128
+        # wv_file = './pretrained_embedding/word2vec/baomoi.vn.model.bin'
     )
     # model = BiLSTM_CRF(
     #     input_dim=len(corpus.word_field.vocab),
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     #     char_pad_idx=corpus.char_pad_idx,
     #     tag_pad_idx=corpus.tag_pad_idx
     # )
-    model = CNN(
+    model = DeepCNN(
         input_dim=len(corpus.word_field.vocab),
         embedding_dim=300,
         cnn_kernels = [7,3,5],
@@ -59,7 +59,8 @@ if __name__ == "__main__":
     model.init_embeddings(
       char_pad_idx=corpus.char_pad_idx,
       word_pad_idx=corpus.word_pad_idx,
-      pretrained=corpus.word_field.vocab.vectors if corpus.wv_model else None,
+      # pretrained=corpus.word_field.vocab.vectors if corpus.wv_model else None,
+      pretrained= None,
       freeze=True
       )
     ed = ED(

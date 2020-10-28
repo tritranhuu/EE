@@ -1,0 +1,66 @@
+T1	TIM 45 65	2004-12-23T14 :49:00
+T2	PER 115 120	Scott
+T3	TIM 121 141	2004-12-23T14 :49:00
+T4	PER 362 391	at least half of this country
+T5	ORG 186 199	the Democrats
+T6	ORG 305 310	their
+T7	GPE 227 246	the American people
+T8	GPE 231 239	American
+T9	GPE 379 391	this country
+T10	PER 416 417	I
+T11	ORG 426 439	the Democrats
+T12	Elect 473 482	elections
+E1	Elect:T12
+T13	PER 709 734	a broader array of voters
+T14	ORG 540 546	itself
+T15	ORG 550 591	an undisputed defender of abortion rights
+T16	ORG 594 614	the Democratic Party
+T17	ORG 683 686	its
+T18	PER 728 734	voters
+T19	ORG 496 517	the Los Angeles Times
+T20	GPE 868 875	Vermont
+T21	PER 930 960	former Indiana Rep. Tim Roemer
+T22	PER 930 949	former Indiana Rep.
+T23	PER 963 1138	an abortion foe who argues that the party can not rebound from its losses in the November election unless it shows more tolerance on one of society 's most emotional conflicts
+T24	PER 979 982	who
+T25	ORG 995 1004	the party
+T26	ORG 1026 1029	its
+T27	ORG 789 812	the Democratic National
+T28	ORG 1069 1071	it
+T29	PER 861 923	former Vermont Gov. Howard Dean , who supports abortion rights
+T30	PER 861 880	former Vermont Gov.
+T31	PER 895 898	who
+T32	GPE 937 944	Indiana
+T33	JOB 945 949	Rep.
+T34	JOB 876 880	Gov.
+T35	TIM 930 936	former
+T36	TIM 861 867	former
+T37	PER 836 858	two leading candidates
+T38	TIM 1044 1052	November
+T39	PER 1103 1110	society
+T40	Elect 1053 1061	election
+E2	Elect:T40 Time-Within:T38
+T41	End-Position 930 936	former
+E3	End-Position:T41 Person:T21 Position:T33 Time-Within:T35
+T42	End-Position 861 867	former
+E4	End-Position:T42 Person:T29 Position:T34 Time-Within:T36
+T43	ORG 1174 1194	his unraveling party
+T44	PER 1141 1194	No Democrat with any respect for his unraveling party
+T45	PER 1174 1177	his
+T46	PER 1214 1225	Howard Dean
+T47	GPE 1296 1310	his home state
+T48	GPE 1322 1333	the country
+T49	PER 1256 1258	he
+T50	PER 1351 1354	his
+T51	PER 1296 1299	his
+T52	ORG 1418 1436	Planned Parenthood
+T53	ORG 1386 1478	outspoken organizations such as Planned Parenthood , which gives a lot of money to Democrats
+T54	ORG 1508 1512	they
+T55	ORG 1439 1444	which
+T56	ORG 1469 1478	Democrats
+T57	Transfer-Money 1445 1450	gives
+E5	Transfer-Money:T57 Giver:T52 Beneficiary:T56 Recipient:T56
+T58	ORG 1697 1705	Congress
+T59	ORG 1660 1664	they
+T60	Elect 1604 1613	elections
+E6	Elect:T60

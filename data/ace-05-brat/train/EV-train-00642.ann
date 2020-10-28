@@ -1,0 +1,33 @@
+T1	TIM 40 60	2005-02-10T07 :28:00
+T2	PER 86 96	Will Vehrs
+T3	TIM 97 117	2005-02-10T07 :28:00
+T4	PER 349 365	a CDBG supporter
+T5	PER 126 128	my
+T6	ORG 215 218	NPR
+T7	ORG 144 147	NPR
+T8	PER 166 186	Mickey Kaus in Slate
+T9	TIM 136 143	morning
+T10	PER 252 266	President Bush
+T11	PER 252 261	President
+T12	ORG 438 441	NPR
+T13	TIM 493 496	old
+T14	PER 490 505	an old Democrat
+T15	PER 466 565	a Democrat , maybe even an old Democrat , who believed CDBGs are an ineffective antipoverty program
+T16	PER 508 511	who
+T17	PER 671 694	their developer friends
+T18	PER 677 686	developer
+T19	LOC 709 717	downtown
+T20	FAC 704 724	ugly downtown hotels
+T21	PER 629 632	who
+T22	PER 671 676	their
+T23	PER 609 724	local politicians , who too often sluice the federal money to their developer friends to build ugly downtown hotels
+T24	Transfer-Money 643 649	sluice
+E1	Transfer-Money:T24 Beneficiary:T17 Giver:T21 Recipient:T17
+T25	LOC 807 818	rural areas
+T26	GPE 756 764	Virginia
+T27	PER 739 741	my
+T28	GPE 903 911	Virginia
+T29	PER 867 874	someone
+T30	PER 915 921	Mickey
+T31	PER 934 935	I
+T32	TIM 1010 1020	the future

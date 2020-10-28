@@ -1,0 +1,69 @@
+T1	TIM 45 65	2004-12-08T21 :33:00
+T2	PER 83 88	Scott
+T3	TIM 89 109	2004-12-08T21 :33:00
+T4	ORG 110 117	Defense
+T5	PER 110 143	Defense Secretary Donald Rumsfeld
+T6	PER 110 127	Defense Secretary
+T7	PER 168 178	the troops
+T8	TIM 179 184	today
+T9	Meet 159 162	Q&A
+E1	Meet:T9 Entity:T5 Entity:T7 Time-Within:T8
+T10	PER 249 257	Rumsfeld
+T11	PER 214 234	Disgruntled soldiers
+T12	VEH 295 311	armored vehicles
+T13	PER 407 415	Rumsfeld
+T14	ORG 339 359	the Associated Press
+T15	PER 365 368	You
+T16	PER 393 396	you
+T17	PER 442 445	you
+T18	ORG 384 401	the Army you have
+T19	ORG 433 472	the Army you might want or wish to have
+T20	Attack 375 378	war
+E2	Attack:T20 Attacker:T15
+T21	ORG 511 518	defense
+T22	PER 507 528	the defense secretary
+T23	PER 659 662	our
+T24	PER 541 543	we
+T25	PER 541 552	we soldiers
+T26	PER 478 496	Spc. Thomas Wilson
+T27	PER 478 482	Spc.
+T28	VEH 659 671	our vehicles
+T29	PER 774 782	Rumsfeld
+T30	PER 720 782	the estimated 2,300 soldiers who had assembled to see Rumsfeld
+T31	PER 749 752	who
+T32	PER 841 843	us
+T33	PER 788 790	We
+T34	TIM 864 866	31
+T35	PER 855 861	Wilson
+T36	GPE 884 889	Tenn.
+T37	GPE 872 889	Nashville , Tenn.
+T38	VEH 803 849	proper armored vehicles to carry with us north
+T39	ORG 1002 1035	the Tennessee Army National Guard
+T40	TIM 1166 1182	more than a year
+T41	TIM 1078 1086	one-year
+T42	PER 1106 1109	his
+T43	PER 923 929	Wilson
+T44	PER 932 1035	an airplane mechanic whose unit , the 278th Regimental Combat Team of the Tennessee Army National Guard
+T45	PER 953 958	whose
+T46	ORG 953 963	whose unit
+T47	ORG 966 1035	the 278th Regimental Combat Team of the Tennessee Army National Guard
+T48	VEH 935 943	airplane
+T49	ORG 1149 1161	the Pentagon
+T50	GPE 1067 1071	Iraq
+T51	Transport 1050 1055	drive
+E3	Transport:T51 Artifact:T43 Destination:T50 Time-At-Beginning:T41
+T52	PER 1244 1252	Rumsfeld
+T53	ORG 1258 1266	the Army
+T54	ORG 1366 1368	it
+T55	VEH 1311 1372	as many Humvees and other vehicles with extra armor as it can
+T56	Transfer-Ownership 1303 1310	acquire
+E4	Transfer-Ownership:T56 Artifact:T55 Artifact:T55 Buyer:T53
+T57	PER 1390 1392	he
+T58	PER 1424 1428	some
+T59	LOC 1476 1485	the world
+T60	PER 1546 1548	he
+T61	PER 1446 1449	You
+T62	VEH 1489 1495	a tank
+T63	VEH 1500 1506	a tank
+T64	Attack 1532 1540	blown up
+E5	Attack:T64 Target:T63

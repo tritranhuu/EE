@@ -1,0 +1,178 @@
+T1	TIM 34 42	20030413
+T2	ORG 154 157	AFP
+T3	TIM 139 147	April 13
+T4	GPE 130 136	MOSCOW
+T5	TIM 413 424	the weekend
+T6	PER 164 196	Russian President Vladimir Putin
+T7	PER 164 181	Russian President
+T8	GPE 362 366	Iraq
+T9	GPE 239 245	France
+T10	GPE 164 171	Russian
+T11	GPE 369 379	government
+T12	GPE 227 234	Germany
+T13	PER 212 245	the leaders of Germany and France
+T14	PER 369 387	government sources
+T15	Meet 200 206	summit
+E1	Meet:T15 Entity:T6 Entity:T13 Time-Within:T5
+T16	Attack 355 358	war
+E2	Attack:T16 Place:T8
+T17	FAC 472 504	the corridors of power in Moscow
+T18	PER 430 457	Senior government officials
+T19	TIM 633 638	daily
+T20	GPE 498 504	Moscow
+T21	ORG 610 638	the respected Izvestia daily
+T22	GPE 572 593	Russian-German-French
+T23	GPE 437 447	government
+T24	PER 811 816	Putin
+T25	GPE 669 673	Iraq
+T26	ORG 824 833	the paper
+T27	GPE 699 715	the United Sates
+T28	PER 779 782	who
+T29	PER 750 776	the senior Moscow official
+T30	GPE 688 694	Russia
+T31	GPE 761 767	Moscow
+T32	GPE 856 860	Iraq
+T33	GPE 919 936	the United States
+T34	GPE 880 882	we
+T35	ORG 1178 1195	the Russian media
+T36	PER 1057 1062	Putin
+T37	PER 1082 1085	his
+T38	GPE 1012 1016	Iraq
+T39	PER 1200 1227	other top Kremlin officials
+T40	PER 1110 1137	US President George W. Bush
+T41	PER 1110 1122	US President
+T42	GPE 1110 1112	US
+T43	GPE 969 975	Russia
+T44	GPE 1182 1189	Russian
+T45	GPE 1210 1217	Kremlin
+T46	Attack 1005 1008	war
+E3	Attack:T46 Place:T38
+T47	GPE 1344 1356	pro-European
+T48	ORG 1416 1450	the foreign and defense ministries
+T49	ORG 1394 1411	the Russian media
+T50	PER 1230 1238	Analysts
+T51	PER 1261 1266	Putin
+T52	GPE 1317 1334	the United States
+T53	GPE 1398 1405	Russian
+T54	Attack 1359 1367	anti-war
+E4	Attack:T54
+T55	TIM 1610 1620	Soviet-era
+T56	PER 1453 1479	Russia 's foreign minister
+T57	GPE 1610 1620	Soviet-era
+T58	PER 1518 1543	a top Washington official
+T59	NUM 1585 1606	eight billion dollars
+T60	GPE 1631 1638	Baghdad
+T61	GPE 1524 1534	Washington
+T62	GPE 1453 1459	Russia
+T63	GPE 1559 1565	Moscow
+T64	GPE 1644 1646	it
+T65	TIM 1544 1553	last week
+T66	TIM 1697 1702	daily
+T67	ORG 1677 1702	Kommersant business daily
+T68	GPE 1839 1844	Iraqi
+T69	GPE 1763 1780	The United States
+T70	GPE 1808 1814	France
+T71	GPE 1799 1805	Russia
+T72	GPE 1819 1826	Germany
+T73	Attack 1845 1848	war
+E5	Attack:T73 Place:T68
+T74	Transfer-Money 1827 1830	pay
+E6	Transfer-Money:T74 Giver:T71 Giver:T70 Giver:T72
+T75	ORG 1870 1879	Gazeta.ru
+T76	CTI 1870 1879	Gazeta.ru
+T77	GPE 1906 1908	We
+T78	GPE 2005 2009	Iraq
+T79	GPE 1977 1979	US
+T80	TIM 2013 2019	future
+T81	PER 2044 2049	Putin
+T82	TIM 2123 2129	Friday
+T83	PER 2079 2081	He
+T84	PER 2086 2089	his
+T85	GPE 2182 2187	Iraqi
+T86	PER 2086 2112	his loyal finance minister
+T87	GPE 2215 2224	Russia-US
+T88	GPE 2135 2141	Moscow
+T89	PER 2304 2309	Putin
+T90	GPE 2320 2326	Russia
+T91	PER 2369 2374	Putin
+T92	PER 2385 2388	his
+T93	TIM 2389 2397	two days
+T94	TIM 2500 2508	Saturday
+T95	GPE 2589 2593	Iraq
+T96	PER 2432 2456	Jacques Chirac of France
+T97	GPE 2410 2426	Saint Petersburg
+T98	GPE 2450 2456	France
+T99	GPE 2461 2467	German
+T100	PER 2461 2496	German Chancellor Gerhard Schroeder
+T101	PER 2461 2478	German Chancellor
+T102	ORG 2545 2563	the United Nations
+T103	Attack 2569 2577	post-war
+E7	Attack:T103
+T104	GPE 2696 2700	Iraq
+T105	GPE 2758 2763	Iraqi
+T106	GPE 2673 2683	US-British
+T107	PER 2758 2788	Iraqi President Saddam Hussein
+T108	PER 2758 2773	Iraqi President
+T109	PER 2644 2661	the three leaders
+T110	ORG 2706 2708	UN
+T111	Attack 2684 2692	invasion
+E8	Attack:T111 Attacker:T106 Attacker:T106
+T112	GPE 2863 2867	Iraq
+T113	GPE 2799 2815	Saint Petersburg
+T114	Meet 2816 2822	summit
+E9	Meet:T114 Place:T113
+T115	PER 2874 2883	diplomats
+T116	PER 2895 2900	Putin
+T117	PER 3016 3019	his
+T118	PER 3004 3010	Chirac
+T119	PER 3047 3051	Bush
+T120	GPE 2964 2979	anti-Washington
+T121	PER 2990 2999	Schroeder
+T122	FAC 3194 3232	Saint Petersburg 's Grand Hotel Europe
+T123	PER 3086 3119	British Prime Minister Tony Blair
+T124	PER 3086 3108	British Prime Minister
+T125	PER 3122 3166	Bush 's staunchest backer in the war on Iraq
+T126	PER 3259 3264	Blair
+T127	PER 3244 3253	diplomats
+T128	PER 3054 3059	Putin
+T129	GPE 3162 3166	Iraq
+T130	GPE 3194 3210	Saint Petersburg
+T131	PER 3122 3126	Bush
+T132	GPE 3086 3093	British
+T133	Transport 3172 3178	attend
+E10	Transport:T133 Artifact:T123 Destination:T122
+T134	Meet 3183 3190	pow-wow
+E11	Meet:T134 Entity:T123 Place:T122
+T135	Attack 3155 3158	war
+E12	Attack:T135 Place:T129
+T136	PER 3326 3331	Putin
+T137	GPE 3348 3358	Washington
+T138	GPE 3420 3422	US
+T139	Attack 3423 3426	war
+E13	Attack:T139 Attacker:T138
+T140	PER 3436 3482	A senior lawmaker seen as close to the Kremlin
+T141	GPE 3573 3577	Iraq
+T142	WEA 3538 3577	any weapons of mass destruction in Iraq
+T143	GPE 3493 3510	the United States
+T144	GPE 3471 3482	the Kremlin
+T145	TIM 3511 3517	Sunday
+T146	PER 3583 3585	We
+T147	PER 3626 3640	Dmitry Rogozin
+T148	PER 3643 3713	the head of the lower house of parliament 's foreign affairs committee
+T149	ORG 3721 3738	Rossia television
+T150	ORG 3655 3713	the lower house of parliament 's foreign affairs committee
+T151	ORG 3674 3684	parliament
+T152	ORG 3655 3684	the lower house of parliament
+T153	GPE 3604 3611	America
+T154	WEA 3754 3776	those chemical weapons
+T155	PER 3782 3784	he
+T156	ORG 3850 3860	Kommersant
+T157	PER 3800 3805	Putin
+T158	ORG 3809 3814	media
+T159	GPE 3890 3895	Iraqi
+T160	PER 3800 3819	Putin 's media aide
+T161	PER 3822 3842	Sergei Yastrzhembsky
+T162	GPE 3861 3867	Russia
+T163	PER 3958 3970	other people
+T164	PER 3987 3989	he
+T165	GPE 3912 3922	Washington

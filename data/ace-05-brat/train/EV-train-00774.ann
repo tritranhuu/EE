@@ -1,0 +1,212 @@
+T1	TIM 34 42	20030417
+T2	GPE 135 141	MOSCOW
+T3	ORG 159 162	AFP
+T4	TIM 144 152	April 17
+T5	GPE 296 302	Russia
+T6	GPE 231 237	Moscow
+T7	GPE 356 362	US-led
+T8	GPE 375 379	Iraq
+T9	PER 206 210	your
+T10	PER 227 253	top Moscow policy analysts
+T11	Attack 363 371	campaign
+E1	Attack:T11 Attacker:T7 Place:T8
+T12	GPE 419 430	Kremlin-run
+T13	GPE 457 462	China
+T14	TIM 520 528	March 20
+T15	GPE 467 472	India
+T16	GPE 442 472	countries like China and India
+T17	GPE 473 477	that
+T18	PER 382 411	Several top diplomacy experts
+T19	Meet 431 436	forum
+E2	Meet:T19 Entity:T18
+T20	Attack 500 508	conflict
+E3	Attack:T20 Time-Starting:T14
+T21	PER 706 733	US President George W. Bush
+T22	PER 706 718	US President
+T23	GPE 592 599	Russian
+T24	PER 592 624	Russian President Vladimir Putin
+T25	PER 592 609	Russian President
+T26	PER 742 744	he
+T27	PER 767 770	his
+T28	PER 673 676	his
+T29	PER 572 576	Some
+T30	PER 767 801	his intelligence and defense aides
+T31	GPE 706 708	US
+T32	TIM 677 689	once-budding
+T33	TIM 630 633	now
+T34	ORG 868 870	UN
+T35	GPE 841 847	Russia
+T36	GPE 1101 1104	its
+T37	GPE 1074 1080	Russia
+T38	ORG 868 887	UN Security Council
+T39	GPE 821 942	China -- which like Russia and France wields a UN Security Council veto but never threatened to use it to prevent the war
+T40	GPE 830 835	which
+T41	GPE 959 962	its
+T42	GPE 971 1027	chief mediator between the United States and North Korea
+T43	GPE 994 1011	the United States
+T44	GPE 1036 1057	other regional powers
+T45	GPE 1016 1027	North Korea
+T46	GPE 852 858	France
+T47	GPE 1105 1110	Iraqi
+T48	PER 804 815	One analyst
+T49	TIM 946 954	recently
+T50	Attack 939 942	war
+E4	Attack:T50
+T51	GPE 1140 1143	our
+T52	GPE 1126 1128	We
+T53	GPE 1323 1329	Moscow
+T54	ORG 1323 1360	Moscow 's Center of Strategic Studies
+T55	GPE 1283 1289	France
+T56	GPE 1271 1278	Germany
+T57	PER 1222 1256	Foreign Minister Igor -RRB- Ivanov
+T58	PER 1222 1238	Foreign Minister
+T59	GPE 1157 1161	Asia
+T60	PER 1301 1360	Andrei Piontkovsky of Moscow 's Center of Strategic Studies
+T61	LOC 1546 1556	the region
+T62	GPE 1509 1515	Moscow
+T63	GPE 1464 1470	Bejing
+T64	GPE 1384 1394	Washington
+T65	GPE 1412 1417	their
+T66	GPE 1399 1408	Pyongyang
+T67	TIM 1452 1460	April 23
+T68	Meet 1363 1375	Negotiations
+E5	Meet:T68 Entity:T64 Entity:T66 Place:T63 Time-Starting:T67
+T69	Meet 1578 1585	meeting
+E6	Meet:T69 Place:T63 Entity:T64 Entity:T66
+T70	GPE 1598 1634	the European `` peace camp '' troika
+T71	GPE 1641 1647	itself
+T72	GPE 1684 1694	Washington
+T73	GPE 1602 1610	European
+T74	PER 1831 1835	Bush
+T75	PER 1697 1728	French President Jacques Chirac
+T76	PER 1697 1713	French President
+T77	PER 1768 1770	he
+T78	GPE 1697 1703	French
+T79	TIM 1820 1827	Tuesday
+T80	Phone-Write 1815 1819	call
+E7	Phone-Write:T80 Entity:T77 Entity:T74 Time-Within:T79
+T81	PER 1902 1906	Bush
+T82	PER 1848 1883	German Chancellor Gerhard Schroeder
+T83	PER 1848 1865	German Chancellor
+T84	GPE 1848 1854	German
+T85	TIM 1913 1954	several weeks before the start of the war
+T86	Attack 1951 1954	war
+E8	Attack:T86
+T87	GPE 1991 1997	Moscow
+T88	GPE 1974 1978	here
+T89	GPE 2027 2037	Washington
+T90	PER 1965 1978	everyone here
+T91	GPE 2079 2086	Russian
+T92	PER 2121 2126	Putin
+T93	PER 2162 2165	his
+T94	PER 2079 2096	Russian diplomacy
+T95	PER 2162 2174	his advisers
+T96	PER 2062 2066	Most
+T97	GPE 2180 2183	Our
+T98	TIM 2274 2280	former
+T99	PER 2274 2322	former deputy foreign minister Anatoly Adamishin
+T100	PER 2274 2304	former deputy foreign minister
+T101	Attack 2248 2251	War
+E9	Attack:T101
+T102	GPE 2328 2330	We
+T103	GPE 2481 2487	Moscow
+T104	GPE 2377 2383	France
+T105	GPE 2388 2395	Germany
+T106	TIM 2448 2465	at least 12 years
+T107	PER 2470 2487	someone in Moscow
+T108	GPE 2403 2410	nations
+T109	Attack 2359 2366	antiwar
+E10	Attack:T109
+T110	Attack 2548 2551	war
+E11	Attack:T110
+T111	GPE 2560 2563	Our
+T112	GPE 2599 2602	our
+T113	GPE 2618 2635	the United States
+T114	TIM 2574 2577	now
+T115	PER 2665 2666	I
+T116	GPE 2881 2887	Moscow
+T117	GPE 2695 2697	US
+T118	GPE 2741 2751	Washington
+T119	GPE 2822 2827	Paris
+T120	GPE 2854 2860	Berlin
+T121	TIM 2723 2735	recent weeks
+T122	GPE 2766 2774	European
+T123	PER 2695 2707	US diplomats
+T124	Attack 2793 2801	campaign
+E12	Attack:T124
+T125	PER 2910 2914	Bush
+T126	PER 2929 2945	the US president
+T127	PER 2890 2895	Putin
+T128	GPE 2933 2935	US
+T129	TIM 2918 2925	April 5
+T130	GPE 3005 3012	Russian
+T131	PER 3001 3019	the Russian leader
+T132	GPE 3001 3054	the Russian leader 's native city of Saint Petersburg
+T133	GPE 3038 3054	Saint Petersburg
+T134	PER 2966 2970	They
+T135	TIM 3058 3066	late May
+T136	Meet 2988 2992	meet
+E13	Meet:T136 Place:T132 Entity:T134 Time-Within:T135
+T137	GPE 3072 3074	We
+T138	GPE 3120 3123	our
+T139	PER 3138 3202	liberal lawmaker Irina Khakamada of the Union of Rightist Forces
+T140	PER 3138 3154	liberal lawmaker
+T141	ORG 3174 3202	the Union of Rightist Forces
+T142	Attack 3107 3111	this
+E14	Attack:T142
+T143	Attack 3124 3127	war
+E15	Attack:T143
+T144	GPE 3208 3210	We
+T145	GPE 3237 3239	we
+T146	GPE 3261 3264	our
+T147	GPE 3294 3296	we
+T148	GPE 3218 3231	the Americans
+T149	GPE 3277 3281	Iraq
+T150	GPE 3338 3341	our
+T151	GPE 3307 3309	We
+T152	GPE 3414 3420	Russia
+T153	GPE 3380 3397	the United States
+T154	GPE 3440 3464	the new Iraqi government
+T155	GPE 3448 3453	Iraqi
+T156	PER 3358 3367	Khakamada
+T157	GPE 3507 3513	Russia
+T158	GPE 3559 3561	it
+T159	GPE 3540 3544	Iraq
+T160	PER 3634 3648	Saddam Hussein
+T161	GPE 3608 3648	the now-toppled regime of Saddam Hussein
+T162	PER 3486 3499	Most analysts
+T163	TIM 3612 3623	now-toppled
+T164	Attack 3533 3536	war
+E16	Attack:T164 Place:T159
+T165	GPE 3733 3739	Russia
+T166	GPE 3805 3808	its
+T167	LOC 3710 3715	world
+T168	GPE 3669 3674	Iraqi
+T169	TIM 3688 3691	now
+T170	GPE 3845 3852	Kremlin
+T171	GPE 3925 3931	Russia
+T172	PER 3874 3879	Putin
+T173	PER 3902 3908	voters
+T174	PER 3834 3858	few at the Kremlin forum
+T175	GPE 4096 4107	the Kremlin
+T176	PER 3965 3970	Putin
+T177	PER 4059 4072	most Russians
+T178	PER 4011 4019	analysts
+T179	TIM 3996 4006	March 2004
+T180	Attack 4035 4038	war
+E17	Attack:T180
+T181	Elect 3981 3992	re-election
+E18	Elect:T181 Person:T176 Time-Within:T179
+T182	GPE 4206 4212	Russia
+T183	PER 4148 4149	I
+T184	PER 4312 4400	Viktor Kuvaldin of a research center funded by former Soviet president Mikhail Gorbachev
+T185	PER 4359 4400	former Soviet president Mikhail Gorbachev
+T186	PER 4359 4382	former Soviet president
+T187	ORG 4331 4400	a research center funded by former Soviet president Mikhail Gorbachev
+T188	GPE 4227 4231	Iraq
+T189	TIM 4359 4365	former
+T190	GPE 4366 4372	Soviet
+T191	Elect 4189 4198	elections
+E19	Elect:T191
+T192	Transfer-Money 4349 4355	funded
+E20	Transfer-Money:T192 Giver:T185 Recipient:T187

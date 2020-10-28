@@ -1,0 +1,101 @@
+T1	TIM 38 57	2003-05-02 10:26:56
+T2	GPE 87 94	florida
+T3	GPE 79 94	orlando florida
+T4	PER 97 99	we
+T5	GPE 105 109	here
+T6	GPE 122 127	where
+T7	PER 128 185	the man in the green in the forefront of the screen there
+T8	TIM 192 198	former
+T9	TIM 270 273	now
+T10	PER 320 326	p.o.w.
+T11	PER 274 277	you
+T12	PER 237 246	the crowd
+T13	PER 188 205	the former p.o.w.
+T14	PER 206 220	david williams
+T15	PER 282 284	he
+T16	PER 334 335	i
+T17	PER 341 342	i
+T18	PER 354 357	you
+T19	LOC 358 363	which
+T20	LOC 364 368	site
+T21	ORG 450 457	news 13
+T22	LOC 432 447	central florida
+T23	PER 396 398	we
+T24	TIM 496 499	now
+T25	PER 500 501	i
+T26	FAC 468 493	that city hall in orlando
+T27	FAC 460 464	this
+T28	GPE 486 493	orlando
+T29	TIM 543 555	this morning
+T30	GPE 660 664	iraq
+T31	PER 582 664	the p.o.w.s whose face we got to know in the coverage that we saw coming from iraq
+T32	PER 605 607	we
+T33	PER 641 643	we
+T34	PER 558 572	david williams
+T35	PER 594 599	whose
+T36	PER 575 664	one of the p.o.w.s whose face we got to know in the coverage that we saw coming from iraq
+T37	TIM 753 772	that sunday morning
+T38	GPE 850 867	a town in baghdad
+T39	PER 815 908	marines who had wanted wandered in a town in baghdad and were told where they were being kept
+T40	PER 823 826	who
+T41	GPE 686 690	iraq
+T42	PER 667 690	other p.o.w.s from iraq
+T43	PER 697 701	they
+T44	PER 778 782	they
+T45	PER 888 892	they
+T46	ORG 801 908	a squadron of marines who had wanted wandered in a town in baghdad and were told where they were being kept
+T47	LOC 882 887	where
+T48	GPE 860 867	baghdad
+T49	Transport 788 797	picked up
+E1	Transport:T49 Artifact:T44 Agent:T46 Origin:T38 Time-Within:T37
+T50	Transport 838 846	wandered
+E2	Transport:T50 Artifact:T39 Destination:T38
+T51	GPE 945 949	home
+T52	Transport 938 944	return
+E3	Transport:T52 Destination:T51
+T53	PER 986 995	one of us
+T54	PER 993 995	us
+T55	PER 1056 1058	we
+T56	GPE 1105 1112	florida
+T57	GPE 1095 1112	orlando , florida
+T58	TIM 1214 1232	the sunday morning
+T59	PER 1119 1122	you
+T60	PER 1273 1284	the p.o.w.s
+T61	PER 1155 1163	his wife
+T62	PER 1164 1172	michelle
+T63	PER 1173 1176	who
+T64	PER 1289 1292	she
+T65	PER 1367 1370	she
+T66	PER 1382 1385	her
+T67	PER 1434 1437	her
+T68	VEH 1127 1144	apache helicopter
+T69	PER 1127 1150	apache helicopter pilot
+T70	PER 1155 1158	his
+T71	PER 1382 1393	her husband
+T72	PER 1194 1196	us
+T73	PER 1310 1312	us
+T74	PER 1333 1335	we
+T75	Phone-Write 1181 1188	talking
+E4	Phone-Write:T75 Entity:T63 Entity:T72 Time-Within:T58
+T76	TIM 1538 1548	last month
+T77	TIM 1461 1464	now
+T78	ORG 1552 1562	fraternity
+T79	GPE 1609 1617	new york
+T80	LOC 1470 1486	upstate new york
+T81	ORG 1579 1617	platsberg state university of new york
+T82	Die 1570 1575	death
+E5	Die:T82 Agent:T78 Place:T80 Place:T79 Time-Within:T76
+T83	Charge-Indict 1511 1518	charges
+E6	Charge-Indict:T83 Defendant:T78 Defendant:T81 Place:T80 Place:T79
+T84	CRM 1653 1671	negligent homicide
+T85	PER 1684 1722	18-year-old pledge walter dean jenning
+T86	PER 1684 1702	18-year-old pledge
+T87	PER 1620 1630	11 members
+T88	Charge-Indict 1640 1647	charged
+E7	Charge-Indict:T88 Defendant:T87 Crime:T84
+T89	Die 1663 1671	homicide
+E8	Die:T89 Victim:T85 Agent:T87
+T90	ORG 1763 1777	the fraternity
+T91	CRM 1815 1838	other hazing activities
+T92	Charge-Indict 1803 1810	charges
+E9	Charge-Indict:T92 Defendant:T90 Crime:T91

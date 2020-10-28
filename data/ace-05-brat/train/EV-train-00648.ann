@@ -1,0 +1,13 @@
+T1	TIM 38 57	2003-06-03 13:46:53
+T2	VEH 145 165	a china airlines jet
+T3	TIM 166 174	last may
+T4	ORG 147 161	china airlines
+T5	PER 62 85	investigators in taiwan
+T6	GPE 79 85	taiwan
+T7	PER 177 198	all 225 people aboard
+T8	Die 204 210	killed
+E1	Die:T8 Victim:T7
+T9	VEH 236 245	the plane
+T10	TIM 368 384	20 years earlier
+T11	FAC 350 358	a runway
+T12	PER 293 306	investigators

@@ -1,0 +1,173 @@
+T1	TIM 35 55	2004-12-28T05 :03:00
+T2	PER 88 90	EW
+T3	TIM 91 123	Tue , 28 Dec 2004 09:09:36 -0500
+T4	GPE 129 138	Indonesia
+T5	LOC 206 222	the Indian Ocean
+T6	PER 235 263	international ocean monitors
+T7	LOC 249 254	ocean
+T8	TIM 164 232	Minutes after a massive earthquake rocked the Indian Ocean on Sunday
+T9	PER 328 340	whom to tell
+T10	PER 310 314	they
+T11	ORG 452 503	the National Oceanic and Atmospheric Administration
+T12	PER 436 503	Jeff LaDouce of the National Oceanic and Atmospheric Administration
+T13	PER 346 348	We
+T14	PER 411 413	we
+T15	TIM 368 385	within 20 minutes
+T16	PER 506 513	LaDouce
+T17	PER 573 575	he
+T18	PER 546 566	Indonesian officials
+T19	GPE 546 556	Indonesian
+T20	Phone-Write 519 526	e-mails
+E1	Phone-Write:T20 Entity:T18
+T21	PER 647 671	the Indonesian officials
+T22	PER 692 697	their
+T23	PER 723 728	their
+T24	GPE 651 661	Indonesian
+T25	TIM 750 759	10 minute
+T26	ORG 857 861	NOAA
+T27	PER 851 868	those NOAA people
+T28	Phone-Write 877 881	used
+E2	Phone-Write:T28 Entity:T27
+T29	PER 898 899	I
+T30	PER 910 999	the -LRB- few -RRB- lives they could have saved if they 'd used a modicum of common sense
+T31	PER 936 940	they
+T32	PER 961 965	they
+T33	PER 1013 1018	their
+T34	PER 1027 1033	Joe727
+T35	TIM 1034 1064	Tue , 28 Dec 2004 14:46:35 GMT
+T36	GPE 1070 1079	Indonesia
+T37	GPE 1149 1166	any other country
+T38	GPE 1193 1201	American
+T39	PER 1133 1166	scientists from any other country
+T40	PER 1109 1110	I
+T41	PER 1189 1212	the American scientists
+T42	GPE 1228 1253	the Indonesian government
+T43	GPE 1232 1242	Indonesian
+T44	PER 1416 1430	who to contact
+T45	GPE 1383 1391	American
+T46	PER 1379 1402	the American scientists
+T47	PER 1448 1453	their
+T48	PER 1474 1479	their
+T49	PER 1488 1491	Joe
+T50	PER 1492 1497	Peter
+T51	TIM 1498 1530	Tue , 28 Dec 2004 09:53:06 -0500
+T52	GPE 1536 1545	Indonesia
+T53	FAC 1568 1575	EMBASSY
+T54	PER 1597 1607	Scientists
+T55	PER 1591 1596	Peter
+T56	PER 1636 1642	Joe727
+T57	TIM 1643 1673	Tue , 28 Dec 2004 15:26:51 GMT
+T58	GPE 1679 1688	Indonesia
+T59	FAC 1740 1751	the embassy
+T60	PER 1715 1718	you
+T61	ORG 1819 1823	NOAA
+T62	GPE 1862 1866	your
+T63	FAC 1862 1895	your coastal villages and resorts
+T64	GPE 1862 1895	your coastal villages and resorts
+T65	PER 1796 1798	he
+T66	PER 1802 1823	a scientist with NOAA
+T67	PER 1754 1790	A voice on the other end of the line
+T68	LOC 1867 1874	coastal
+T69	PER 1898 1907	Thousands
+T70	Die 1914 1917	die
+E3	Die:T70 Victim:T69
+T71	PER 1930 1933	you
+T72	PER 1957 1958	I
+T73	GPE 1997 2022	the Indonesian government
+T74	GPE 2001 2011	Indonesian
+T75	PER 2125 2128	Joe
+T76	PER 2129 2145	Eugene Gallagher
+T77	TIM 2146 2178	Tue , 28 Dec 2004 10:38:02 -0500
+T78	GPE 2184 2193	Indonesia
+T79	PER 2292 2301	residents
+T80	LOC 2249 2260	New England
+T81	LOC 2349 2360	New England
+T82	ORG 2216 2232	The Boston Globe
+T83	GPE 2439 2451	Newfoundland
+T84	LOC 2382 2403	the continental slope
+T85	GPE 2455 2462	Georgia
+T86	PER 2465 2471	Joe727
+T87	TIM 2472 2502	Tue , 28 Dec 2004 15:47:40 GMT
+T88	GPE 2508 2517	Indonesia
+T89	GPE 2565 2573	the U.S.
+T90	LOC 2540 2573	The entire East Coast of the U.S.
+T91	PER 2615 2618	Joe
+T92	PER 2619 2632	William Asher
+T93	TIM 2633 2657	28 Dec 2004 16:36:47 GMT
+T94	ORG 2742 2746	NOAA
+T95	PER 2845 2917	who you might call if you did get some advanced warning of such an event
+T96	PER 2768 2774	people
+T97	PER 2727 2746	a scientist at NOAA
+T98	PER 2718 2721	you
+T99	PER 2791 2794	you
+T100	PER 2807 2810	you
+T101	PER 2867 2870	you
+T102	PER 2849 2852	you
+T103	Phone-Write 2859 2863	call
+E4	Phone-Write:T103 Entity:T95 Entity:T102
+T104	ORG 2979 2983	NOAA
+T105	GPE 2927 2952	the Indonesian government
+T106	GPE 2931 2941	Indonesian
+T107	GPE 2995 2999	them
+T108	GPE 3042 3046	they
+T109	GPE 3052 3056	they
+T110	ORG 3193 3197	NOAA
+T111	GPE 3106 3131	the Indonesian government
+T112	GPE 3110 3120	Indonesian
+T113	PER 3189 3208	the NOAA scientists
+T114	PER 3245 3280	who they should have call next time
+T115	PER 3211 3214	You
+T116	PER 3223 3227	they
+T117	PER 3249 3253	they
+T118	Phone-Write 3266 3270	call
+E5	Phone-Write:T118 Entity:T114 Entity:T117
+T119	PER 3286 3318	Bill `` 20/20 Hindsight '' Asher
+T120	PER 3319 3325	Joe727
+T121	TIM 3326 3356	Tue , 28 Dec 2004 17:00:23 GMT
+T122	GPE 3362 3371	Indonesia
+T123	LOC 3472 3481	the world
+T124	GPE 3453 3481	governments around the world
+T125	ORG 3426 3430	NOAA
+T126	ORG 3532 3557	the U.S. State Department
+T127	PER 3571 3585	U.S. officials
+T128	GPE 3484 3509	The Indonesian government
+T129	GPE 3488 3498	Indonesian
+T130	GPE 3536 3540	U.S.
+T131	GPE 3571 3575	U.S.
+T132	PER 3610 3613	Joe
+T133	PER 3614 3616	EW
+T134	TIM 3617 3649	Tue , 28 Dec 2004 12:24:30 -0500
+T135	GPE 3655 3664	Indonesia
+T136	PER 3690 3693	you
+T137	PER 3700 3704	they
+T138	PER 3712 3741	the USAF boys in Diego Garcia
+T139	LOC 3729 3741	Diego Garcia
+T140	ORG 3716 3720	USAF
+T141	LOC 3783 3786	sea
+T142	LOC 3744 3763	It 's highest point
+T143	LOC 3744 3749	It 's
+T144	LOC 3828 3830	it
+T145	PER 3882 3895	its personnel
+T146	FAC 3882 3885	its
+T147	FAC 3869 3877	the base
+T148	PER 3833 3836	one
+T149	LOC 3798 3808	the seabed
+T150	PER 3898 3903	Peter
+T151	TIM 3904 3936	Tue , 28 Dec 2004 15:34:40 -0500
+T152	GPE 3942 3951	Indonesia
+T153	LOC 3979 3995	the Indian ocean
+T154	PER 3974 3978	FWIK
+T155	LOC 4015 4035	a tsunami prone area
+T156	PER 4048 4050	we
+T157	PER 4133 4135	We
+T158	PER 4154 4157	our
+T159	GPE 4185 4193	Thailand
+T160	PER 4154 4176	our friend 's daughter
+T161	PER 4203 4206	her
+T162	PER 4154 4164	our friend
+T163	PER 4203 4213	her father
+T164	Transport 4177 4181	when
+E6	Transport:T164 Artifact:T160 Destination:T159
+T165	PER 4266 4269	her
+T166	PER 4276 4279	she
+T167	PER 4290 4295	Peter

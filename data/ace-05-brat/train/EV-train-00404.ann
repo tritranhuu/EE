@@ -1,0 +1,75 @@
+T1	TIM 35 55	2004-12-09T14 :01:00
+T2	PER 107 112	Byrne
+T3	TIM 113 133	2004-12-09T14 :01:00
+T4	PER 244 246	me
+T5	NUM 371 377	$ 1.78
+T6	ORG 144 175	Martha Stewart Living Omnimedia
+T7	ORG 178 340	a company whose name is so breathtakingly self-promoting it makes me long for the days when every single entity involve in real estate or casinos was called Trump
+T8	ORG 188 193	whose
+T9	ORG 405 416	the company
+T10	NUM 383 389	7.29 %
+T11	TIM 260 264	days
+T12	FAC 316 323	casinos
+T13	ORG 270 289	every single entity
+T14	ORG 335 340	Trump
+T15	TIM 456 460	once
+T16	FAC 486 492	prison
+T17	PER 405 428	the company 's namesake
+T18	PER 461 464	she
+T19	Release-Parole 474 482	gets out
+E1	Release-Parole:T19 Person:T18 Place:T16
+T20	ORG 524 566	succesful companies that dealt with crooks
+T21	ORG 544 548	that
+T22	PER 501 502	I
+T23	ORG 643 690	the three most mob-influenced industries around
+T24	ORG 631 639	business
+T25	ORG 658 672	mob-influenced
+T26	ORG 597 602	which
+T27	ORG 573 690	Warner Communications , which started as a merger between business in the three most mob-influenced industries around
+T28	Merge-Org 616 622	merger
+E2	Merge-Org:T28 Org:T27 Org:T23
+T29	ORG 764 775	The company
+T30	TIM 864 872	recently
+T31	FAC 840 846	prison
+T32	PER 824 831	the CEO
+T33	Arrest-Jail 832 836	went
+E3	Arrest-Jail:T33 Person:T32 Place:T31
+T34	ORG 918 938	a one-person company
+T35	ORG 910 914	this
+T36	ORG 959 961	it
+T37	NUM 1007 1021	$ 1.31 billion
+T38	PER 920 930	one-person
+T39	PER 1100 1103	she
+T40	CRM 1162 1184	obstruction of justice
+T41	PER 1136 1139	she
+T42	Convict 1148 1158	convincted
+E4	Convict:T42 Defendant:T41 Crime:T40
+T43	ORG 1258 1266	the firm
+T44	ORG 1289 1310	a much-resented brand
+T45	ORG 1373 1377	they
+T46	CRM 1339 1370	lying to the Federal government
+T47	TIM 1237 1240	now
+T48	PER 1246 1266	the head of the firm
+T49	PER 1271 1310	the embodiment of a much-resented brand
+T50	ORG 1348 1370	the Federal government
+T51	Arrest-Jail 1324 1334	doing time
+E5	Arrest-Jail:T51 Person:T48 Crime:T46
+T52	PER 1418 1419	I
+T53	PER 1451 1458	muckdog
+T54	TIM 1474 1484	T15 :03:00
+T55	PER 1485 1491	Martha
+T56	PER 1524 1538	10 contestants
+T57	PER 1550 1554	them
+T58	PER 1569 1572	You
+T59	PER 1611 1614	You
+T60	PER 1648 1651	You
+T61	PER 1578 1585	company
+T62	Marry 1666 1673	wedding
+E6	Marry:T62
+T63	Meet 1586 1597	coming over
+E7	Meet:T63 Entity:T58 Entity:T61
+T64	TIM 1732 1742	every week
+T65	PER 1693 1696	she
+T66	PER 1708 1712	them
+T67	PER 1728 1731	one
+T68	LOC 1774 1782	the moon

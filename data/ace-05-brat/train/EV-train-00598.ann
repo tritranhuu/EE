@@ -1,0 +1,25 @@
+T1	TIM 38 57	2003-04-16 16:05:56
+T2	TIM 100 103	now
+T3	PER 127 146	terrorist abu abbas
+T4	PER 127 136	terrorist
+T5	GPE 58 66	the u.s.
+T6	GPE 82 85	its
+T7	GPE 109 111	it
+T8	TIM 176 193	late monday night
+T9	GPE 168 175	baghdad
+T10	PER 149 151	he
+T11	TIM 253 257	1985
+T12	CRM 216 257	hijacking the `` achille lauro '' in 1985
+T13	PER 196 198	he
+T14	VEH 226 246	the `` achille lauro
+T15	Attack 216 225	hijacking
+E1	Attack:T15 Attacker:T13 Target:T14 Time-Within:T11
+T16	Convict 203 212	convicted
+E2	Convict:T16 Defendant:T13 Time-Within:T11 Crime:T12
+T17	PER 260 303	disabled american tourist kling klinghoffer
+T18	PER 260 285	disabled american tourist
+T19	GPE 269 277	american
+T20	PER 319 321	he
+T21	Attack 326 330	shot
+E3	Attack:T21 Target:T20
+T22	TIM 378 381	now

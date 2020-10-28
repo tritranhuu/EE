@@ -1,0 +1,87 @@
+T1	TIM 34 42	20030520
+T2	GPE 86 101	ANKARA , Turkey
+T3	GPE 95 101	Turkey
+T4	ORG 108 110	AP
+T5	ORG 234 240	police
+T6	GPE 150 161	the capital
+T7	PER 194 203	one woman
+T8	FAC 133 186	a cafe at one of the capital 's busiest intersections
+T9	FAC 143 186	one of the capital 's busiest intersections
+T10	PER 216 223	another
+T11	FAC 150 186	the capital 's busiest intersections
+T12	TIM 224 231	Tuesday
+T13	Injure 208 215	injured
+E1	Injure:T13 Victim:T10 Place:T8 Time-Within:T12
+T14	Attack 120 129	explosion
+E2	Attack:T14 Place:T8 Time-Within:T12
+T15	Die 187 193	killed
+E3	Die:T15 Victim:T7 Place:T8 Time-Within:T12
+T16	ORG 248 254	Police
+T17	FAC 320 387	the multistory Crocodile Cafe in the commercial district of Kizilay
+T18	FAC 304 387	the restroom of the multistory Crocodile Cafe in the commercial district of Kizilay
+T19	LOC 353 387	the commercial district of Kizilay
+T20	LOC 380 387	Kizilay
+T21	TIM 395 416	the morning rush hour
+T22	Attack 291 300	explosion
+E4	Attack:T22 Place:T18 Place:T19 Time-Within:T21
+T23	FAC 460 472	the building
+T24	Attack 423 428	blast
+E5	Attack:T24 Target:T23
+T25	PER 492 511	the body of a woman
+T26	PER 556 558	it
+T27	PER 504 511	a woman
+T28	PER 475 481	Police
+T29	FAC 531 543	the restroom
+T30	ORG 723 729	police
+T31	PER 734 761	interior ministry officials
+T32	ORG 734 751	interior ministry
+T33	PER 607 616	the woman
+T34	PER 631 647	a suicide bomber
+T35	PER 679 682	she
+T36	WEA 670 695	the bomb she was planting
+T37	Attack 696 704	exploded
+E6	Attack:T37 Attacker:T33 Instrument:T36
+T38	Die 633 640	suicide
+E7	Die:T38 Instrument:T36 Victim:T34 Agent:T34
+T39	Die 660 664	died
+E8	Die:T39 Instrument:T36 Victim:T33
+T40	ORG 795 808	Ankara police
+T41	GPE 795 801	Ankara
+T42	PER 795 830	Ankara police chief Ercument Yilmaz
+T43	PER 795 814	Ankara police chief
+T44	WEA 891 897	a bomb
+T45	FAC 839 868	the site of the morning blast
+T46	TIM 855 862	morning
+T47	Attack 913 922	explosion
+E9	Attack:T47 Instrument:T44 Target:T45 Time-Within:T46
+T48	Transport 831 838	visited
+E10	Transport:T48 Artifact:T42 Destination:T45
+T49	PER 977 979	he
+T50	PER 928 931	Our
+T51	PER 928 942	Our colleagues
+T52	PER 1031 1049	the injured person
+T53	Injure 1035 1042	injured
+E11	Injure:T53 Victim:T52
+T54	PER 1069 1084	how many people
+T55	FAC 1093 1101	the cafe
+T56	TIM 1105 1126	the time of the blast
+T57	Attack 1121 1126	blast
+E12	Attack:T57 Place:T55 Target:T54 Time-Within:T56
+T58	TIM 1149 1218	a month after a bomb exploded at a McDonald 's restaurant in Istanbul
+T59	WEA 1163 1169	a bomb
+T60	FAC 1182 1218	a McDonald 's restaurant in Istanbul
+T61	GPE 1210 1218	Istanbul
+T62	ORG 1184 1195	McDonald 's
+T63	Attack 1170 1178	exploded
+E13	Attack:T63 Place:T61 Target:T60 Instrument:T59
+T64	Injure 1243 1251	injuries
+E14	Injure:T64 Place:T61
+T65	Attack 1133 1142	explosion
+E15	Attack:T65
+T66	PER 1272 1279	Kurdish
+T67	PER 1284 1291	Islamic
+T68	ORG 1254 1298	Radical leftist , Kurdish and Islamic groups
+T69	GPE 1313 1324	the country
+T70	TIM 1358 1366	the past
+T71	Attack 1346 1354	bombings
+E16	Attack:T71 Attacker:T68 Place:T69 Time-Within:T70

@@ -1,0 +1,110 @@
+T1	TIM 45 65	2004-11-01T18 :06:00
+T2	PER 88 93	Scott
+T3	TIM 94 114	2004-11-01T18 :06:00
+T4	FAC 154 183	wherever these people convene
+T5	ORG 237 250	the Telegraph
+T6	GPE 293 300	Britain
+T7	PER 163 175	these people
+T8	PER 212 263	all the Britons who read the Telegraph this morning
+T9	PER 228 231	who
+T10	PER 482 526	an international firearms legislation expert
+T11	FAC 143 148	a Pub
+T12	WEA 499 507	firearms
+T13	TIM 251 263	this morning
+T14	TIM 448 466	the past few years
+T15	WEA 304 307	gun
+T16	PER 115 116	I
+T17	PER 122 123	I
+T18	Meet 176 183	convene
+E1	Meet:T18 Entity:T7
+T19	Attack 425 433	shooting
+E2	Attack:T19 Place:T6 Instrument:T15
+T20	GPE 595 601	Canada
+T21	GPE 556 563	Britain
+T22	PER 529 545	Prof Gary Mauser
+T23	PER 529 533	Prof
+T24	GPE 716 724	Dunblane
+T25	PER 659 752	the law-abiding community where gun crimes , such as the Dunblane massacre , were aberrations
+T26	PER 685 690	where
+T27	WEA 691 694	gun
+T28	GPE 606 615	Australia
+T29	PER 631 752	legal owners - a section of the law-abiding community where gun crimes , such as the Dunblane massacre , were aberrations
+T30	PER 646 752	a section of the law-abiding community where gun crimes , such as the Dunblane massacre , were aberrations
+T31	Attack 725 733	massacre
+E3	Attack:T31 Instrument:T27 Place:T24
+T32	GPE 921 927	Canada
+T33	PER 837 845	criminal
+T34	ORG 885 927	the independent Fraser Institute in Canada
+T35	PER 859 870	Prof Mauser
+T36	PER 859 863	Prof
+T37	PER 873 927	a member of the independent Fraser Institute in Canada
+T38	ORG 775 781	police
+T39	WEA 829 833	guns
+T40	ORG 755 770	The Home Office
+T41	PER 775 788	police chiefs
+T42	GPE 1005 1013	Canadian
+T43	ORG 976 996	the House of Commons
+T44	ORG 1001 1020	the Canadian Senate
+T45	FAC 1066 1084	Britain 's streets
+T46	GPE 1066 1073	Britain
+T47	PER 955 1020	select committees of the House of Commons and the Canadian Senate
+T48	PER 930 932	He
+T49	WEA 1053 1056	gun
+T50	GPE 1160 1167	England
+T51	GPE 1172 1177	Wales
+T52	ORG 1214 1235	the Labour Government
+T53	PER 1087 1090	His
+T54	TIM 1151 1156	a day
+T55	TIM 1253 1257	1997
+T56	WEA 1108 1111	gun
+T57	Elect 1236 1249	came to power
+E4	Elect:T57 Entity:T52 Time-At-Beginning:T55
+T58	PER 1309 1323	schoolchildren
+T59	PER 1328 1334	a baby
+T60	TIM 1263 1281	the past two years
+T61	WEA 1358 1362	guns
+T62	Die 1337 1343	killed
+E5	Die:T62 Instrument:T61 Victim:T58 Victim:T59 Time-Within:T60
+T63	Injure 1347 1354	injured
+E6	Injure:T63 Instrument:T61 Victim:T58 Victim:T59 Time-Within:T60
+T64	PER 1368 1369	I
+T65	PER 1433 1435	he
+T66	ORG 1446 1452	Police
+T67	ORG 1581 1591	themselves
+T68	ORG 1570 1591	the police themselves
+T69	ORG 1607 1611	they
+T70	WEA 1638 1641	gun
+T71	ORG 1466 1477	Home Office
+T72	WEA 1513 1533	legally held weapons
+T73	GPE 1814 1820	the UK
+T74	GPE 1914 1925	the country
+T75	PER 1653 1664	Prof Mauser
+T76	PER 1653 1657	Prof
+T77	PER 1704 1723	the police officers
+T78	GPE 1947 1957	inner city
+T79	WEA 1857 1865	firearms
+T80	PER 1944 1963	an inner city youth
+T81	ORG 1708 1714	police
+T82	WEA 1749 1752	gun
+T83	WEA 1903 1908	a gun
+T84	WEA 1937 1940	one
+T85	LOC 1801 1820	somewhere in the UK
+T86	PER 1823 1882	someone , who has not filled in a firearms certificate form
+T87	PER 1833 1836	who
+T88	PER 1739 1746	farmers
+T89	PER 1772 1776	they
+T90	Transport 1893 1902	smuggling
+E7	Transport:T90 Artifact:T83 Agent:T86 Destination:T74
+T91	Transfer-Ownership 1929 1936	selling
+E8	Transfer-Ownership:T91 Artifact:T84 Seller:T86 Buyer:T80
+T92	NUM 1996 2010	three per cent
+T93	TIM 2034 2050	the year to June
+T94	WEA 1978 1981	gun
+T95	GPE 2101 2111	Birmingham
+T96	GPE 2116 2126	Manchester
+T97	GPE 2092 2098	London
+T98	WEA 2067 2070	gun
+T99	GPE 2262 2275	Great Britain
+T100	PER 2151 2163	these people
+T101	WEA 2227 2230	gun
+T102	PER 2308 2312	they

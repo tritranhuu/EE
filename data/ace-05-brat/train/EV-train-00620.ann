@@ -1,0 +1,47 @@
+T1	TIM 39 58	2003-06-17 18:02:12
+T2	LOC 63 72	the coast
+T3	VEH 104 117	a cruise ship
+T4	ORG 125 134	canada tv
+T5	VEH 275 301	their sinking niching boat
+T6	PER 246 258	three mendes
+T7	PER 275 280	their
+T8	TIM 236 243	an hour
+T9	VEH 344 346	it
+T10	PER 304 312	the crew
+T11	VEH 410 425	the engine room
+T12	PER 448 452	they
+T13	PER 487 491	they
+T14	PER 382 384	we
+T15	VEH 565 573	the ship
+T16	PER 635 639	them
+T17	PER 663 668	their
+T18	VEH 683 698	their life raft
+T19	PER 683 688	their
+T20	VEH 779 781	it
+T21	PER 754 756	we
+T22	PER 814 816	we
+T23	ORG 865 880	royal caribbean
+T24	PER 985 996	the captain
+T25	VEH 1014 1020	a boat
+T26	LOC 967 982	the rough ocean
+T27	PER 1032 1036	them
+T28	TIM 921 935	almost an hour
+T29	VEH 861 917	the royal caribbean cruise ship `` raidience of the seas
+T30	VEH 861 892	the royal caribbean cruise ship
+T31	PER 1048 1052	them
+T32	PER 1039 1043	they
+T33	PER 1064 1068	them
+T34	PER 1055 1059	they
+T35	PER 1114 1126	the rescuers
+T36	LOC 1092 1099	the sea
+T37	PER 1071 1075	they
+T38	PER 1105 1109	they
+T39	Transport 1081 1088	jumping
+E1	Transport:T39 Artifact:T37 Destination:T36
+T40	VEH 1171 1179	the boat
+T41	PER 1145 1149	they
+T42	PER 1182 1183	i
+T43	PER 1227 1228	i
+T44	PER 1195 1211	the youngest guy
+T45	PER 1248 1259	the captain
+T46	PER 1266 1277	the captain

@@ -1,0 +1,94 @@
+T1	TIM 35 55	2005-01-05T16 :32:00
+T2	PER 78 89	Mark Backer
+T3	TIM 90 110	2005-01-05T16 :32:00
+T4	PER 258 288	folks around the Buckeye state
+T5	PER 135 138	you
+T6	ORG 176 179	UGA
+T7	GPE 271 288	the Buckeye state
+T8	PER 243 255	The Harricks
+T9	ORG 205 210	their
+T10	ORG 172 198	the UGA basketball program
+T11	PER 148 156	everyone
+T12	PER 128 129	I
+T13	Start-Position 211 217	hiring
+E1	Start-Position:T13 Entity:T9 Person:T8
+T14	End-Position 233 239	firing
+E2	End-Position:T14 Entity:T9 Person:T8
+T15	TIM 433 441	11 years
+T16	PER 340 408	AD and frequent `` No we did n't '' Ohio State front man Andy Geiger
+T17	PER 340 396	AD and frequent `` No we did n't '' Ohio State front man
+T18	JOB 340 342	AD
+T19	ORG 376 386	Ohio State
+T20	End-Position 415 423	retiring
+E3	End-Position:T20 Entity:T19 Person:T16 Position:T18 Time-After:T15
+T21	PER 468 470	me
+T22	PER 477 478	I
+T23	PER 593 618	their athletes in general
+T24	PER 491 495	Andy
+T25	PER 568 570	he
+T26	PER 574 581	Tressel
+T27	PER 623 628	their
+T28	PER 593 598	their
+T29	ORG 623 659	their football program in particular
+T30	PER 676 697	Maurice Clarrett-gate
+T31	TIM 723 736	Two years ago
+T32	PER 739 747	everyone
+T33	PER 777 784	Maurice
+T34	PER 771 774	you
+T35	PER 787 790	You
+T36	TIM 821 824	Now
+T37	PER 884 888	Andy
+T38	PER 893 896	Jim
+T39	PER 875 883	you both
+T40	PER 841 851	most folks
+T41	PER 899 907	YOU both
+T42	PER 973 992	several OSU players
+T43	ORG 981 984	OSU
+T44	VEH 1046 1050	cars
+T45	Transfer-Money 993 1001	received
+E4	Transfer-Money:T45 Recipient:T42
+T46	PER 1066 1067	I
+T47	TIM 1165 1186	every couple of weeks
+T48	PER 1082 1098	the AD and coach
+T49	PER 1129 1137	a player
+T50	PER 1206 1214	somebody
+T51	VEH 1149 1164	a brand new car
+T52	TIM 1190 1196	months
+T53	PER 1318 1325	Tressel
+T54	PER 1407 1414	himself
+T55	ORG 1290 1297	Buckeye
+T56	VEH 1496 1500	cars
+T57	ORG 1350 1366	Youngstown State
+T58	PER 1290 1302	Buckeye fans
+T59	Transfer-Money 1470 1478	benefits
+E5	Transfer-Money:T59
+T60	PER 1525 1531	Geiger
+T61	PER 1599 1602	his
+T62	ORG 1599 1621	his basketball program
+T63	PER 1561 1563	we
+T64	PER 1875 1879	Andy
+T65	PER 1659 1662	his
+T66	ORG 1663 1680	men 's basketball
+T67	NUM 1706 1715	six grand
+T68	GPE 1721 1732	Yugoslavian
+T69	PER 1719 1740	a Yugoslavian recruit
+T70	PER 1761 1764	his
+T71	PER 1659 1686	his men 's basketball coach
+T72	PER 1788 1793	coach
+T73	PER 1788 1805	coach Jim O'Brien
+T74	Transfer-Money 1700 1705	given
+E6	Transfer-Money:T74 Giver:T71 Money:T67 Recipient:T69
+T75	PER 1882 1883	I
+T76	TIM 2018 2030	January 2003
+T77	ORG 1984 1994	Ohio State
+T78	ORG 1899 1907	the NCAA
+T79	ORG 1926 1930	they
+T80	PER 2051 2094	a very important and very ineligible player
+T81	ORG 2042 2046	they
+T82	PER 2119 2123	many
+T83	PER 2126 2127	I
+T84	PER 2182 2183	I
+T85	PER 2213 2214	I
+T86	ORG 2240 2250	Ohio State
+T87	ORG 2198 2205	Alabama
+T88	ORG 2161 2175	Thugtown Miami

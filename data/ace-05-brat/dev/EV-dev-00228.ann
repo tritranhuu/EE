@@ -1,0 +1,85 @@
+T1	TIM 34 42	20030419
+T2	ORG 122 124	AP
+T3	GPE 105 115	California
+T4	GPE 92 115	EL SEGUNDO , California
+T5	PER 170 180	a baby boy
+T6	PER 131 155	Shaquille O'Neal 's wife
+T7	ORG 230 248	Los Angeles Lakers
+T8	PER 131 147	Shaquille O'Neal
+T9	PER 226 255	the Los Angeles Lakers center
+T10	TIM 181 195	early Saturday
+T11	Be-Born 161 166	birth
+E1	Be-Born:T11 Person:T5 Time-Within:T10
+T12	Be-Born 297 302	birth
+E2	Be-Born:T12 Person:T5 Time-Within:T10
+T13	PER 334 359	the couple 's third child
+T14	PER 305 319	Shaunie O'Neal
+T15	GPE 378 394	Los Angeles-area
+T16	LOC 378 394	Los Angeles-area
+T17	FAC 376 403	a Los Angeles-area hospital
+T18	PER 334 344	the couple
+T19	ORG 406 410	team
+T20	PER 406 431	team spokesman John Black
+T21	PER 406 420	team spokesman
+T22	TIM 363 372	1:52 a.m.
+T23	Be-Born 325 330	birth
+E3	Be-Born:T23 Person:T13 Place:T17 Time-Within:T22
+T24	PER 458 466	the baby
+T25	PER 439 441	He
+T26	PER 494 500	O'Neal
+T27	TIM 518 526	Saturday
+T28	TIM 609 615	Sunday
+T29	TIM 591 604	late Saturday
+T30	ORG 672 698	the Minnesota Timberwolves
+T31	GPE 579 590	Minneapolis
+T32	PER 541 543	He
+T33	PER 568 571	his
+T34	Transport 561 564	fly
+E4	Transport:T34 Destination:T31 Artifact:T32 Time-Within:T29
+T35	PER 744 751	a child
+T36	PER 837 855	coach Phil Jackson
+T37	PER 837 842	coach
+T38	ORG 803 805	we
+T39	ORG 704 706	We
+T40	Be-Born 732 740	delivery
+E5	Be-Born:T40 Person:T35
+T41	GPE 890 901	Minneapolis
+T42	PER 876 878	he
+T43	Transport 883 886	get
+E6	Transport:T43 Artifact:T42 Destination:T41
+T44	ORG 983 993	every team
+T45	PER 999 1005	O'Neal
+T46	PER 1015 1017	he
+T47	Be-Born 1067 1072	birth
+E7	Be-Born:T47
+T48	TIM 1103 1193	the same day as Game 4 of the best-of-seven series between the Timberwolves and the Lakers
+T49	TIM 1092 1100	April 27
+T50	ORG 1162 1178	the Timberwolves
+T51	ORG 1183 1193	the Lakers
+T52	GPE 1317 1328	Minneapolis
+T53	PER 1251 1257	O'Neal
+T54	PER 1288 1291	his
+T55	PER 1196 1216	Teammate Kobe Bryant
+T56	PER 1196 1204	Teammate
+T57	PER 1222 1224	he
+T58	TIM 1273 1279	Sunday
+T59	Transport 1306 1313	arrival
+E8	Transport:T59 Destination:T52 Artifact:T54
+T60	PER 1334 1337	You
+T61	ORG 1458 1466	the team
+T62	GPE 1433 1443	Sacramento
+T63	TIM 1412 1416	2001
+T64	PER 1377 1497	Bryant , who scored 48 points in a 2001 playoff game at Sacramento after leaving the team to attend to a personal matter
+T65	PER 1386 1389	who
+T66	PER 1540 1546	O'Neal
+T67	PER 1540 1570	O'Neal 's maternal grandfather
+T68	PER 1573 1589	Sirlester O'Neal
+T69	TIM 1516 1589	days after the death of O'Neal 's maternal grandfather , Sirlester O'Neal
+T70	Die 1531 1536	death
+E9	Die:T70 Victim:T67
+T71	Be-Born 1504 1509	birth
+E10	Be-Born:T71 Time-Within:T69
+T72	PER 1663 1668	Black
+T73	GPE 1646 1660	South Carolina
+T74	TIM 1633 1642	this week
+T75	PER 1676 1682	O'Neal

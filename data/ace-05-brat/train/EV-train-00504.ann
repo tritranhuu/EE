@@ -1,0 +1,82 @@
+T1	TIM 38 57	2003-06-05 20:01:46
+T2	TIM 122 127	today
+T3	PER 80 127	the only corporate figurehead in the news today
+T4	PER 58 72	martha stewart
+T5	NUM 157 169	$ 30 million
+T6	PER 220 263	the true creators of the chihuahua mass cot
+T7	GPE 174 186	grand rapids
+T8	PER 130 138	the jury
+T9	PER 172 191	a grand rapids jury
+T10	ORG 199 208	taco bell
+T11	Fine 216 219	pay
+E1	Fine:T11 Entity:T10 Adjudicator:T9 Money:T5
+T12	PER 266 273	two men
+T13	PER 282 287	their
+T14	ORG 325 343	the wrong business
+T15	PER 317 318	i
+T16	ORG 346 355	taco ball
+T17	Appeal 359 368	appealing
+E2	Appeal:T17 Plaintiff:T16
+T18	PER 383 392	tom rinks
+T19	PER 398 401	his
+T20	PER 398 410	his attorney
+T21	PER 411 420	john doza
+T22	PER 377 379	me
+T23	PER 429 432	you
+T24	PER 423 426	tom
+T25	PER 534 537	you
+T26	PER 475 476	i
+T27	PER 527 529	my
+T28	ORG 482 486	they
+T29	PER 585 591	myself
+T30	PER 614 616	we
+T31	PER 772 774	we
+T32	PER 821 836	the 18-24 crowd
+T33	PER 577 580	joe
+T34	PER 594 596	he
+T35	PER 600 611	the partner
+T36	PER 842 844	we
+T37	PER 1003 1005	we
+T38	PER 1014 1016	he
+T39	PER 1039 1048	everybody
+T40	PER 1107 1110	you
+T41	ORG 1082 1091	taco bell
+T42	ORG 1078 1097	the taco bell folks
+T43	PER 1135 1137	us
+T44	ORG 1113 1117	they
+T45	TIM 1229 1233	1996
+T46	PER 1160 1162	we
+T47	PER 1234 1236	we
+T48	PER 1337 1339	us
+T49	PER 1275 1285	nick loada
+T50	GPE 1255 1268	new york city
+T51	GPE 1269 1274	where
+T52	ORG 1290 1307	universal studios
+T53	ORG 1185 1219	a bunch of different manufacturers
+T54	ORG 1314 1323	taco bell
+T55	ORG 1349 1353	they
+T56	ORG 1386 1391	their
+T57	TIM 1441 1445	year
+T58	PER 1459 1461	we
+T59	ORG 1471 1475	them
+T60	TIM 1497 1503	a year
+T61	PER 1510 1513	you
+T62	PER 1550 1553	you
+T63	ORG 1585 1589	they
+T64	PER 1622 1624	we
+T65	ORG 1710 1725	a new ad agency
+T66	ORG 1692 1696	them
+T67	ORG 1699 1703	they
+T68	TIM 1880 1891	over a year
+T69	PER 1809 1811	we
+T70	PER 1859 1861	we
+T71	ORG 1783 1787	they
+T72	PER 1899 1902	you
+T73	PER 1941 1944	you
+T74	PER 1998 2001	you
+T75	PER 2020 2023	who
+T76	PER 1965 1966	i
+T77	PER 2006 2019	one other guy
+T78	ORG 2045 2049	they
+T79	ORG 2054 2079	a huge , huge corporation
+T80	PER 2133 2135	we

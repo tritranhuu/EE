@@ -1,0 +1,76 @@
+T1	TIM 34 42	20030417
+T2	GPE 102 118	GUWAHATI , India
+T3	GPE 113 118	India
+T4	ORG 136 139	AFP
+T5	TIM 121 129	April 17
+T6	GPE 184 190	Indias
+T7	PER 146 220	At least three members of a family in Indias northeastern state of Tripura
+T8	GPE 184 220	Indias northeastern state of Tripura
+T9	GPE 213 220	Tripura
+T10	PER 296 302	police
+T11	PER 245 257	a tribal mob
+T12	PER 172 220	a family in Indias northeastern state of Tripura
+T13	TIM 308 316	Thursday
+T14	Attack 226 232	hacked
+E1	Attack:T14 Attacker:T11 Place:T8 Target:T7
+T15	Die 236 241	death
+E2	Die:T15 Agent:T11 Place:T9 Victim:T7
+T16	GPE 486 517	Tripuras state capital Agartala
+T17	GPE 486 508	Tripuras state capital
+T18	GPE 408 415	village
+T19	GPE 432 517	Tultuli , 60 kilometers -LRB- 38 miles -RRB- south of Tripuras state capital Agartala
+T20	PER 406 517	a village quack doctor in Tultuli , 60 kilometers -LRB- 38 miles -RRB- south of Tripuras state capital Agartala
+T21	GPE 486 494	Tripuras
+T22	GPE 495 500	state
+T23	FAC 385 517	a house belonging to a village quack doctor in Tultuli , 60 kilometers -LRB- 38 miles -RRB- south of Tripuras state capital Agartala
+T24	PER 319 330	A spokesman
+T25	PER 336 365	a group of 25 to 30 armed men
+T26	TIM 366 375	Wednesday
+T27	Attack 376 384	attacked
+E3	Attack:T27 Attacker:T25 Place:T19 Target:T23 Time-Within:T26
+T28	LOC 637 645	the area
+T29	GPE 688 696	Agartala
+T30	WEA 615 621	spears
+T31	WEA 602 610	machetes
+T32	PER 543 568	three members of a family
+T33	PER 592 596	them
+T34	PER 651 664	the spokesman
+T35	PER 523 530	The mob
+T36	PER 560 568	a family
+T37	Attack 579 585	killed
+E4	Attack:T37 Attacker:T35 Place:T28 Target:T33 Instrument:T31 Instrument:T30
+T38	Transport 629 636	fleeing
+E5	Transport:T38 Artifact:T35
+T39	Phone-Write 673 682	telephone
+E6	Phone-Write:T39 Place:T29 Entity:T34
+T40	PER 788 843	another member of the family , whom he did not identify
+T41	PER 819 823	whom
+T42	PER 767 783	his teenaged son
+T43	PER 717 733	the quack doctor
+T44	PER 736 764	55-year-old Nityalila Naotia
+T45	PER 767 770	his
+T46	PER 699 707	The dead
+T47	PER 824 826	he
+T48	PER 806 816	the family
+T49	PER 953 962	villagers
+T50	GPE 990 1001	the village
+T51	PER 865 871	Naotia
+T52	PER 876 897	a practicing sorcerer
+T53	PER 910 913	his
+T54	PER 926 928	he
+T55	PER 1015 1019	them
+T56	PER 1025 1038	the spokesman
+T57	PER 975 1001	a group within the village
+T58	Die 1005 1014	eliminate
+E7	Die:T58 Victim:T55 Agent:T57 Place:T50
+T59	PER 1067 1078	four people
+T60	PER 1046 1052	Police
+T61	Die 1102 1110	killings
+E8	Die:T61
+T62	Arrest-Jail 1058 1066	arrested
+E9	Arrest-Jail:T62 Person:T59 Agent:T60
+T63	LOC 1201 1251	parts of Tripura and other northeast Indian states
+T64	GPE 1238 1244	Indian
+T65	GPE 1222 1251	other northeast Indian states
+T66	GPE 1210 1217	Tripura
+T67	PER 1254 1265	Many tribes

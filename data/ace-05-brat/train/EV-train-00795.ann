@@ -1,0 +1,233 @@
+T1	TIM 34 61	2003-04-02T16 :00:00 -05:00
+T2	PER 112 124	WOLF BLITZER
+T3	PER 127 137	CNN ANCHOR
+T4	ORG 127 130	CNN
+T5	PER 143 147	Judy
+T6	PER 156 159	you
+T7	GPE 236 240	U.S.
+T8	TIM 178 195	an hour or so ago
+T9	ORG 198 200	we
+T10	PER 236 247	U.S. forces
+T11	LOC 277 305	the southern edge of Baghdad
+T12	GPE 298 305	Baghdad
+T13	TIM 336 345	right now
+T14	PER 312 316	they
+T15	GPE 412 417	Iraqi
+T16	LOC 395 425	the heart of the Iraqi capital
+T17	GPE 408 425	the Iraqi capital
+T18	Attack 361 366	fight
+E1	Attack:T18 Place:T16
+T19	PER 428 444	Pentagon sources
+T20	ORG 428 436	Pentagon
+T21	TIM 499 502	now
+T22	GPE 488 495	Baghdad
+T23	Transport 478 482	push
+E2	Transport:T23 Destination:T22 Time-Within:T21
+T24	PER 580 608	Iraqi Republican Guard units
+T25	PER 515 530	U.S.-led forces
+T26	GPE 515 523	U.S.-led
+T27	ORG 580 602	Iraqi Republican Guard
+T28	GPE 612 619	Karbala
+T29	GPE 624 627	Kut
+T30	Attack 570 579	defeating
+E3	Attack:T30 Attacker:T25 Place:T28 Place:T29 Target:T24
+T31	Transport 544 549	press
+E4	Transport:T31 Artifact:T25 Origin:T28 Origin:T29
+T32	PER 645 667	Our embedded reporters
+T33	PER 729 739	commanders
+T34	ORG 645 648	Our
+T35	Transport 688 695	advance
+E5	Transport:T35
+T36	ORG 751 763	The Pentagon
+T37	ORG 780 796	Republican Guard
+T38	ORG 769 824	two of the Republican Guard divisions defending Baghdad
+T39	ORG 776 824	the Republican Guard divisions defending Baghdad
+T40	GPE 817 824	Baghdad
+T41	ORG 839 854	credible forces
+T42	PER 898 908	the troops
+T43	GPE 869 874	Najaf
+T44	PER 960 971	U.S. forces
+T45	PER 1004 1008	them
+T46	PER 1022 1027	their
+T47	PER 1046 1051	their
+T48	GPE 960 964	U.S.
+T49	PER 920 988	Iraqis who initially were cautious when U.S. forces arrived in Najaf
+T50	PER 927 930	who
+T51	GPE 983 988	Najaf
+T52	Transport 972 979	arrived
+E6	Transport:T52 Artifact:T44 Destination:T51
+T53	GPE 1108 1112	U.S.
+T54	PER 1108 1119	U.S. troops
+T55	PER 1126 1130	they
+T56	PER 1060 1084	U.S. Army 's 7th Cavalry
+T57	ORG 1060 1069	U.S. Army
+T58	GPE 1179 1184	Iraqi
+T59	LOC 1175 1191	the Iraqi desert
+T60	GPE 1142 1148	Kuwait
+T61	Transport 1137 1141	left
+E7	Transport:T61 Artifact:T55 Destination:T59 Origin:T60
+T62	Transport 1153 1160	crossed
+E8	Transport:T62 Artifact:T55 Destination:T59
+T63	PER 1257 1262	which
+T64	PER 1230 1333	the unit 's 3rd Squadron , which is leading the 3rd Infantry Division 's march toward the Iraqi capital
+T65	GPE 1320 1325	Iraqi
+T66	PER 1194 1212	Our Walter Rodgers
+T67	PER 1274 1299	the 3rd Infantry Division
+T68	ORG 1194 1197	Our
+T69	ORG 1230 1238	the unit
+T70	GPE 1316 1333	the Iraqi capital
+T71	Transport 1303 1308	march
+E9	Transport:T71 Artifact:T67 Destination:T70
+T72	PER 1364 1378	WALTER RODGERS
+T73	PER 1381 1398	CNN CORRESPONDENT
+T74	ORG 1381 1384	CNN
+T75	TIM 1410 1417	the day
+T76	PER 1423 1448	the U.S. Army 7th Cavalry
+T77	ORG 1427 1436	U.S. Army
+T78	PER 1534 1569	supply troops moving ever northward
+T79	PER 1505 1507	we
+T80	PER 1518 1569	huge convoys of supply troops moving ever northward
+T81	GPE 1495 1502	Baghdad
+T82	Transport 1449 1456	punched
+E10	Transport:T82 Artifact:T76 Destination:T81 Time-Holds:T75
+T83	ORG 1599 1607	the Army
+T84	LOC 1655 1686	the southern suburbs of Baghdad
+T85	GPE 1679 1686	Baghdad
+T86	TIM 1689 1707	Earlier in the day
+T87	ORG 1729 1754	the 3rd Infantry Division
+T88	GPE 1760 1767	Karbala
+T89	PER 1710 1754	the 1st Brigade of the 3rd Infantry Division
+T90	Attack 1786 1791	fight
+E11	Attack:T90 Attacker:T89 Place:T88 Time-Within:T86
+T91	ORG 1822 1847	the 3rd Infantry Division
+T92	GPE 1856 1875	the town of Karbala
+T93	GPE 1868 1875	Karbala
+T94	PER 1803 1847	the 3rd Brigade of the 3rd Infantry Division
+T95	PER 1893 1908	the 7th Cavalry
+T96	GPE 1955 1962	Baghdad
+T97	Transport 1913 1926	pushed onward
+E12	Transport:T97 Destination:T96 Artifact:T95
+T98	LOC 2003 2034	the southern suburbs of Baghdad
+T99	PER 1975 1977	we
+T100	TIM 1965 1974	Yesterday
+T101	GPE 2027 2034	Baghdad
+T102	PER 2037 2039	We
+T103	TIM 2085 2092	the day
+T104	PER 2111 2136	the 3rd Infantry Division
+T105	PER 2146 2162	prisoners of war
+T106	PER 2095 2097	we
+T107	Attack 2159 2162	war
+E13	Attack:T107
+T108	GPE 2165 2170	Iraqi
+T109	PER 2165 2209	Iraqi soldiers glad the war is over for them
+T110	PER 2205 2209	them
+T111	PER 2220 2223	100
+T112	Attack 2189 2192	war
+E14	Attack:T112
+T113	PER 2258 2280	the 7th Cavalry itself
+T114	PER 2274 2280	itself
+T115	PER 2309 2311	it
+T116	GPE 2355 2362	Baghdad
+T117	Transport 2312 2326	pushed forward
+E15	Transport:T117 Artifact:T115 Destination:T116
+T118	Attack 2295 2305	skirmishes
+E16	Attack:T118 Attacker:T113
+T119	WEA 2427 2482	three Soviet vintage 20 - millimeter anti-aircraft guns
+T120	WEA 2485 2497	ack-ack guns
+T121	PER 2401 2416	the 7th Cavalry
+T122	GPE 2433 2439	Soviet
+T123	Attack 2386 2395	firefight
+E17	Attack:T123 Attacker:T121 Target:T119
+T124	WEA 2532 2542	those guns
+T125	PER 2577 2592	the 7th Cavalry
+T126	GPE 2504 2509	Iraqi
+T127	PER 2500 2542	The Iraqi unit in possession of those guns
+T128	WEA 2549 2556	mortars
+T129	Attack 2543 2548	fired
+E18	Attack:T129 Attacker:T127 Target:T125 Instrument:T128
+T130	PER 2670 2679	that unit
+T131	PER 2686 2688	it
+T132	WEA 2619 2632	its tank guns
+T133	VEH 2623 2627	tank
+T134	WEA 2642 2657	its own mortars
+T135	PER 2726 2740	some 20 Iraqis
+T136	PER 2595 2611	The Apache troop
+T137	PER 2619 2622	its
+T138	PER 2642 2645	its
+T139	VEH 2599 2605	Apache
+T140	Die 2719 2725	killed
+E19	Die:T140 Instrument:T132 Instrument:T134 Victim:T135 Agent:T136
+T141	Attack 2612 2618	opened
+E20	Attack:T141 Attacker:T136 Target:T130 Instrument:T132
+T142	Attack 2635 2641	opened
+E21	Attack:T142 Attacker:T136 Target:T130 Instrument:T134
+T143	LOC 2807 2838	the southern suburbs of Baghdad
+T144	PER 2766 2768	it
+T145	GPE 2831 2838	Baghdad
+T146	Transport 2782 2786	push
+E22	Transport:T146 Artifact:T144 Destination:T143
+T147	GPE 2873 2877	U.S.
+T148	PER 2869 2889	the U.S. 7th Cavalry
+T149	GPE 2897 2902	Iraqi
+T150	PER 2841 2855	Walter Rodgers
+T151	LOC 2893 2909	the Iraqi desert
+T152	ORG 2858 2861	CNN
+T153	PER 2938 2945	BLITZER
+T154	TIM 3004 3007	now
+T155	GPE 3054 3059	Iraqi
+T156	PER 2977 3067	CNN 's Karl Penhaul who is now just miles from the southern outskirts of the Iraqi capital
+T157	PER 2997 3000	who
+T158	LOC 3024 3067	the southern outskirts of the Iraqi capital
+T159	ORG 2977 2980	CNN
+T160	GPE 3050 3067	the Iraqi capital
+T161	ORG 3090 3103	the U.S. Army
+T162	PER 3090 3138	the U.S. Army 's 11th Attack Helicopter Regiment
+T163	PER 3070 3072	He
+T164	TIM 3171 3188	a few minutes ago
+T165	PER 3149 3152	his
+T166	PER 3219 3231	KARL PENHAUL
+T167	PER 3234 3251	CNN CORRESPONDENT
+T168	ORG 3234 3237	CNN
+T169	PER 3288 3292	they
+T170	TIM 3337 3346	overnight
+T171	TIM 3368 3380	this morning
+T172	GPE 3301 3308	Baghdad
+T173	Transport 3293 3297	push
+E23	Transport:T173 Destination:T172 Artifact:T169
+T174	GPE 3434 3438	U.S.
+T175	PER 3430 3463	the U.S. commanders on the ground
+T176	PER 3422 3463	many of the U.S. commanders on the ground
+T177	LOC 3453 3463	the ground
+T178	PER 3476 3481	CAPT.
+T179	PER 3476 3494	CAPT. BRIAN MCCORT
+T180	PER 3497 3502	PILOT
+T181	Attack 3554 3560	battle
+E24	Attack:T181
+T182	PER 3563 3649	The armor , and mechanized infantry , and artillery pieces and personnel on the ground
+T183	LOC 3639 3649	the ground
+T184	WEA 3563 3649	The armor , and mechanized infantry , and artillery pieces and personnel on the ground
+T185	PER 3679 3686	PENHAUL
+T186	ORG 3765 3790	the 3rd Infantry Division
+T187	ORG 3881 3897	Republican Guard
+T188	GPE 3921 3928	Karbala
+T189	TIM 3687 3696	Overnight
+T190	TIM 3701 3719	early this morning
+T191	VEH 3722 3790	the tanks and Bradley fighting vehicles of the 3rd Infantry Division
+T192	VEH 3736 3743	Bradley
+T193	VEH 3801 3860	the Apache attack helicopters of the 11th Aviation Regiment
+T194	VEH 3805 3811	Apache
+T195	ORG 3834 3860	the 11th Aviation Regiment
+T196	Attack 3861 3876	punched through
+E25	Attack:T196 Attacker:T186 Attacker:T195 Place:T188 Target:T187 Instrument:T191 Instrument:T191 Instrument:T193
+T197	GPE 4005 4009	U.S.
+T198	ORG 4046 4071	the 3rd Infantry Division
+T199	PER 3931 3935	They
+T200	GPE 3975 3984	that city
+T201	PER 4026 4028	me
+T202	TIM 4076 4079	now
+T203	PER 3994 3996	we
+T204	PER 4005 4020	U.S. commanders
+T205	PER 4034 4071	elements of the 3rd Infantry Division
+T206	GPE 4112 4119	Baghdad
+T207	Transport 3954 3961	advance
+E26	Transport:T207 Artifact:T205 Origin:T200 Destination:T206

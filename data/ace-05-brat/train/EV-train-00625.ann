@@ -1,0 +1,76 @@
+T1	TIM 39 58	2003-04-01 08:59:49
+T2	PER 103 140	federal , state and local authorities
+T3	PER 146 151	their
+T4	GPE 189 193	home
+T5	GPE 171 180	americans
+T6	Attack 74 77	war
+E1	Attack:T6
+T7	PER 196 210	president bush
+T8	PER 196 205	president
+T9	TIM 216 225	yesterday
+T10	GPE 326 329	our
+T11	GPE 326 342	our shore shores
+T12	ORG 274 298	the dying regime if iraq
+T13	GPE 294 298	iraq
+T14	Attack 316 322	terror
+E2	Attack:T14 Attacker:T12 Place:T11
+T15	GPE 438 440	we
+T16	ORG 345 385	other parts of the global terror network
+T17	ORG 360 385	the global terror network
+T18	LOC 364 370	global
+T19	Attack 415 421	strike
+E3	Attack:T19 Attacker:T16
+T20	ORG 458 462	they
+T21	PER 536 548	steven berle
+T22	GPE 511 520	americans
+T23	GPE 529 533	home
+T24	GPE 582 589	america
+T25	TIM 601 623	the september 12th era
+T26	PER 653 656	you
+T27	TIM 674 683	yesterday
+T28	PER 732 735	you
+T29	TIM 746 757	over a year
+T30	PER 786 789	you
+T31	PER 827 842	secretary ridge
+T32	PER 827 836	secretary
+T33	PER 872 924	other player in this post-september 11th environment
+T34	PER 847 867	the attorney general
+T35	TIM 893 912	post-september 11th
+T36	GPE 945 947	we
+T37	GPE 1012 1014	we
+T38	PER 1051 1052	i
+T39	PER 1092 1095	who
+T40	PER 1081 1119	the people who were on the front lines
+T41	PER 1183 1187	they
+T42	GPE 1211 1223	this country
+T43	PER 1232 1233	i
+T44	GPE 1240 1242	we
+T45	GPE 1284 1286	we
+T46	GPE 1316 1318	we
+T47	TIM 1254 1283	the morning of september 12th
+T48	PER 1307 1313	victim
+T49	GPE 1353 1355	we
+T50	GPE 1391 1393	we
+T51	GPE 1420 1422	we
+T52	GPE 1433 1435	we
+T53	TIM 1457 1462	today
+T54	Attack 1448 1456	attacked
+E4	Attack:T54 Attacker:T52 Time-Within:T53
+T55	FAC 1468 1477	the ports
+T56	GPE 1508 1511	our
+T57	GPE 1526 1528	we
+T58	FAC 1483 1495	the airports
+T59	GPE 1565 1567	we
+T60	GPE 1585 1587	we
+T61	GPE 1628 1632	here
+T62	FAC 1616 1627	the streets
+T63	GPE 1635 1637	we
+T64	GPE 1685 1687	we
+T65	GPE 1729 1731	we
+T66	GPE 1766 1768	we
+T67	FAC 1656 1676	mass transit systems
+T68	TIM 1757 1772	the last we 're
+T69	PER 1793 1794	i
+T70	PER 1834 1837	who
+T71	GPE 1851 1853	us
+T72	PER 1816 1864	the men and women who have brought us this point

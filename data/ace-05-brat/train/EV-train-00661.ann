@@ -1,0 +1,49 @@
+T1	TIM 40 60	2005-02-04T13 :26:00
+T2	PER 82 92	Barnie Day
+T3	TIM 93 113	2005-02-04T13 :26:00
+T4	NUM 185 196	$ 1,000,000
+T5	ORG 123 126	UVA
+T6	ORG 210 236	the University of Virginia
+T7	PER 114 159	Renowned UVA political scientist Larry Sabato
+T8	PER 114 146	Renowned UVA political scientist
+T9	TIM 160 172	this morning
+T10	Transfer-Money 202 206	gift
+E1	Transfer-Money:T10 Giver:T7 Money:T4 Recipient:T6
+T11	PER 361 387	UVA President John Casteen
+T12	PER 361 374	UVA President
+T13	TIM 258 274	over three years
+T14	ORG 303 317	the university
+T15	ORG 361 364	UVA
+T16	PER 331 338	faculty
+T17	PER 321 345	an active faculty member
+T18	Transfer-Money 243 247	gift
+E2	Transfer-Money:T18 Recipient:T14 Time-Within:T13 Giver:T17
+T19	PER 390 396	Sabato
+T20	ORG 469 489	the Associated Press
+T21	PER 490 499	Jim Bacon
+T22	TIM 515 525	T20 :45:00
+T23	PER 564 567	HIS
+T24	PER 576 586	Will Vehrs
+T25	TIM 602 612	T20 :45:00
+T26	PER 613 614	I
+T27	PER 642 643	I
+T28	PER 663 679	Professor Sabato
+T29	PER 663 672	Professor
+T30	PER 733 743	any pundit
+T31	ORG 833 836	UVA
+T32	PER 785 787	he
+T33	PER 815 818	his
+T34	PER 682 684	He
+T35	PER 695 698	his
+T36	Transfer-Money 753 761	donation
+E3	Transfer-Money:T36 Giver:T34
+T37	GPE 937 952	Charlottesville
+T38	PER 851 853	He
+T39	PER 965 968	his
+T40	PER 982 983	I
+T41	ORG 1073 1089	their university
+T42	PER 1045 1051	Sabato
+T43	PER 1055 1103	the embodiment of their university 's excellence
+T44	PER 1020 1031	Pete Gillen
+T45	PER 995 1031	Wahoos disenchanted with Pete Gillen
+T46	PER 1073 1078	their

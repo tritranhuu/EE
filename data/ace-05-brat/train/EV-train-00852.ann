@@ -1,0 +1,95 @@
+T1	TIM 34 42	20030306
+T2	ORG 110 112	AP
+T3	GPE 86 103	Serbia-Montenegro
+T4	GPE 75 103	BELGRADE , Serbia-Montenegro
+T5	PER 119 145	Slobodan Milosevic 's wife
+T6	CRM 187 213	mismanaging state property
+T7	GPE 199 204	state
+T8	PER 119 137	Slobodan Milosevic
+T9	PER 221 241	the former president
+T10	TIM 265 273	Thursday
+T11	TIM 163 172	next week
+T12	TIM 225 231	former
+T13	ORG 252 259	a court
+T14	End-Position 225 231	former
+E1	End-Position:T14 Person:T9
+T15	Trial-Hearing 157 162	trial
+E2	Trial-Hearing:T15 Adjudicator:T13 Defendant:T5 Crime:T6 Time-Starting:T11
+T16	Charge-Indict 176 183	charges
+E3	Charge-Indict:T16 Defendant:T5 Crime:T6
+T17	PER 276 292	Mirjana Markovic
+T18	PER 295 356	the power behind the scenes during Milosevic 's 13-year reign
+T19	GPE 424 435	state-owned
+T20	PER 330 339	Milosevic
+T21	GPE 456 464	Belgrade
+T22	TIM 468 472	2000
+T23	TIM 343 350	13-year
+T24	PER 393 407	their grandson
+T25	PER 393 416	their grandson 's nanny
+T26	PER 393 398	their
+T27	FAC 422 464	a state-owned luxury apartment in Belgrade
+T28	Transfer-Ownership 383 392	providing
+E4	Transfer-Ownership:T28 Beneficiary:T25 Artifact:T27 Seller:T17 Place:T21 Time-Within:T22
+T29	SEN 675 699	up to five years in jail
+T30	PER 513 521	Markovic
+T31	CRM 611 646	inappropriate use of state property
+T32	FAC 695 699	jail
+T33	GPE 632 637	state
+T34	PER 556 569	Milosevic-era
+T35	PER 547 699	10 other Milosevic-era officials who face similar charges of `` inappropriate use of state property '' that carry a sentence of up to five years in jail
+T36	PER 580 583	who
+T37	GPE 479 487	Belgrade
+T38	TIM 556 569	Milosevic-era
+T39	ORG 475 502	The Belgrade district court
+T40	Charge-Indict 597 604	charges
+E5	Charge-Indict:T40 Defendant:T30 Defendant:T35 Place:T37 Crime:T31
+T41	Trial-Hearing 530 535	tried
+E6	Trial-Hearing:T41 Adjudicator:T39 Defendant:T30 Defendant:T35 Place:T37 Crime:T31
+T42	Sentence 663 671	sentence
+E7	Sentence:T42 Defendant:T30 Defendant:T35 Place:T37 Sentence:T29 Crime:T31
+T43	TIM 726 734	March 13
+T44	ORG 737 746	the court
+T45	Trial-Hearing 706 711	trial
+E8	Trial-Hearing:T45 Time-Starting:T43
+T46	PER 768 776	his wife
+T47	GPE 803 813	Yugoslavia
+T48	PER 768 771	his
+T49	PER 754 763	Milosevic
+T50	PER 844 846	he
+T51	TIM 896 908	October 2000
+T52	TIM 818 836	more than a decade
+T53	End-Position 851 869	swept out of power
+E9	End-Position:T53 Person:T49 Place:T47 Time-Within:T51
+T54	ORG 911 940	The post-Milosevic government
+T55	ORG 969 973	U.N.
+T56	ORG 965 1024	the U.N. war crimes tribunal in The Hague , the Netherlands
+T57	GPE 1009 1024	the Netherlands
+T58	GPE 997 1024	The Hague , the Netherlands
+T59	PER 915 929	post-Milosevic
+T60	PER 958 961	him
+T61	TIM 941 946	later
+T62	Attack 974 977	war
+E10	Attack:T62
+T63	Extradite 947 957	extradited
+E11	Extradite:T63 Person:T60 Destination:T58 Agent:T54 Time-Within:T61
+T64	PER 1102 1118	his two children
+T65	PER 1048 1090	Milosevic 's political and business allies
+T66	CRM 1140 1146	crimes
+T67	PER 1040 1090	many of Milosevic 's political and business allies
+T68	PER 1048 1057	Milosevic
+T69	PER 1102 1105	his
+T70	ORG 1302 1392	the parliament of Serbia and Montenegro , the country that last month succeeded Yugoslavia
+T71	ORG 1174 1211	the neo-communist Yugoslav Left party
+T72	ORG 1192 1205	Yugoslav Left
+T73	PER 1149 1157	Markovic
+T74	PER 1160 1211	the leader of the neo-communist Yugoslav Left party
+T75	PER 1219 1222	her
+T76	PER 1269 1272	she
+T77	PER 1290 1392	a deputy in the parliament of Serbia and Montenegro , the country that last month succeeded Yugoslavia
+T78	GPE 1382 1392	Yugoslavia
+T79	GPE 1320 1341	Serbia and Montenegro
+T80	GPE 1344 1355	the country
+T81	GPE 1356 1360	that
+T82	TIM 1361 1371	last month
+T83	Start-Position 1283 1289	become
+E12	Start-Position:T83 Place:T79 Entity:T70

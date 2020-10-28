@@ -1,0 +1,56 @@
+T1	TIM 38 57	2003-04-30 17:07:31
+T2	TIM 64 91	wednesday , april 30 , 2003
+T3	GPE 105 115	washington
+T4	PER 118 119	i
+T5	PER 123 135	wolf blitzer
+T6	ORG 148 150	we
+T7	TIM 192 201	right now
+T8	PER 257 271	saddam hussein
+T9	GPE 275 282	baghdad
+T10	GPE 330 347	the iraqi capital
+T11	PER 285 318	defense secretary donald rumsfeld
+T12	PER 285 302	defense secretary
+T13	TIM 213 217	then
+T14	TIM 234 282	20 years after meeting saddam hussein in baghdad
+T15	TIM 228 231	now
+T16	GPE 364 368	u.s.
+T17	GPE 334 339	iraqi
+T18	PER 353 375	victorious u.s. troops
+T19	Meet 249 256	meeting
+E1	Meet:T19 Place:T9 Entity:T8 Entity:T11 Time-At-Beginning:T14
+T20	PER 382 385	you
+T21	VEH 421 447	the `` uss abraham lincoln
+T22	VEH 454 457	its
+T23	Attack 472 475	war
+E2	Attack:T23
+T24	VEH 483 486	its
+T25	TIM 568 582	tomorrow night
+T26	GPE 548 567	the american people
+T27	GPE 552 560	american
+T28	PER 499 513	president bush
+T29	PER 499 508	president
+T30	VEH 483 498	its flight deck
+T31	GPE 613 617	iraq
+T32	Attack 603 609	combat
+E3	Attack:T32 Place:T31
+T33	ORG 630 632	we
+T34	TIM 620 629	right now
+T35	FAC 680 695	the white house
+T36	PER 663 676	the president
+T37	ORG 698 700	we
+T38	ORG 739 741	we
+T39	ORG 755 757	we
+T40	PER 711 714	you
+T41	PER 715 718	his
+T42	PER 878 907	his guests in the rose garden
+T43	TIM 827 832	today
+T44	PER 910 925	elizabeth smart
+T45	LOC 892 907	the rose garden
+T46	PER 850 858	children
+T47	PER 813 826	the president
+T48	PER 878 881	his
+T49	ORG 936 939	cnn
+T50	PER 936 964	cnn 's justice correspondent
+T51	PER 965 976	kelli arena
+T52	ORG 994 996	us
+T53	PER 979 982	she

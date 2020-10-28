@@ -1,0 +1,55 @@
+T1	TIM 39 58	2003-06-19 12:32:30
+T2	ORG 191 199	al qaeda
+T3	GPE 131 135	d.c.
+T4	ORG 74 76	we
+T5	GPE 118 135	washington , d.c.
+T6	GPE 148 170	the federal government
+T7	GPE 214 231	the united states
+T8	ORG 234 237	our
+T9	ORG 301 303	us
+T10	PER 234 271	our justice correspondent kelli arena
+T11	PER 234 259	our justice correspondent
+T12	PER 286 289	she
+T13	PER 311 316	kelli
+T14	VEH 761 791	a truck loaded with explosives
+T15	FAC 800 807	airport
+T16	PER 319 327	reporter
+T17	PER 585 598	investigators
+T18	FAC 631 650	the brooklyn bridge
+T19	FAC 690 711	the suspension bridge
+T20	PER 539 554	al qaeda leader
+T21	PER 557 579	khaled sheikh mohammed
+T22	ORG 452 460	al qaeda
+T23	ORG 539 547	al qaeda
+T24	PER 520 538	government sources
+T25	ORG 520 530	government
+T26	WEA 781 791	explosives
+T27	VEH 826 833	a plane
+T28	GPE 337 351	the government
+T29	VEH 413 418	truck
+T30	GPE 408 412	ohio
+T31	PER 330 334	wolf
+T32	PER 405 425	an ohio truck driver
+T33	PER 467 477	the driver
+T34	PER 604 610	ferris
+T35	PER 726 728	he
+T36	PER 426 429	who
+T37	Attack 818 825	blow up
+E1	Attack:T37 Target:T27
+T38	ORG 908 911	cnn
+T39	PER 872 878	ferris
+T40	PER 926 928	he
+T41	Arrest-Jail 933 951	taken into custody
+E2	Arrest-Jail:T41 Person:T39
+T42	TIM 1053 1060	may 1st
+T43	CRM 1034 1044	two counts
+T44	PER 990 994	wolf
+T45	PER 1016 1018	he
+T46	Convict 1019 1030	pled guilty
+E3	Convict:T46 Defendant:T45 Crime:T43 Time-Within:T42
+T47	ORG 1170 1172	we
+T48	PER 1242 1252	terrorists
+T49	CRM 1200 1292	conspiracy to provide material support to terrorists and actually providing material support
+T50	PER 1182 1184	he
+T51	Convict 1185 1196	pled guilty
+E4	Convict:T51 Defendant:T50 Crime:T49

@@ -1,0 +1,107 @@
+T1	TIM 39 58	2003-03-25 15:29:15
+T2	PER 59 61	we
+T3	GPE 87 94	baghdad
+T4	PER 103 105	we
+T5	PER 111 113	we
+T6	GPE 236 241	iraqi
+T7	PER 131 208	marines battling for control of the bridges in the southern city of nasiriyah
+T8	PER 127 130	you
+T9	PER 236 261	iraqi paramilitary groups
+T10	ORG 242 254	paramilitary
+T11	FAC 163 208	the bridges in the southern city of nasiriyah
+T12	GPE 178 208	the southern city of nasiriyah
+T13	GPE 199 208	nasiriyah
+T14	TIM 262 267	today
+T15	Attack 139 147	battling
+E1	Attack:T15 Attacker:T7 Attacker:T9 Place:T11 Target:T7 Target:T9 Time-Within:T14
+T16	JOB 345 352	general
+T17	ORG 335 344	air force
+T18	PER 297 299	's
+T19	PER 327 365	retired air force general don shepperd
+T20	PER 335 352	air force general
+T21	PER 308 321	miles o'brien
+T22	End-Position 327 334	retired
+E2	End-Position:T22 Person:T19 Entity:T17 Position:T16
+T23	PER 374 377	you
+T24	FAC 454 461	bridges
+T25	LOC 419 429	the ground
+T26	PER 393 396	you
+T27	PER 432 435	you
+T28	Attack 410 415	fight
+E3	Attack:T28 Attacker:T26 Place:T25
+T29	FAC 488 624	a lot of bridges between where the 3 7 cavalry and the rest of the u.s. forces are now and their ultimate destination , downtown baghdad
+T30	PER 539 566	the rest of the u.s. forces
+T31	PER 519 534	the 3 7 cavalry
+T32	GPE 555 559	u.s.
+T33	PER 551 566	the u.s. forces
+T34	PER 579 584	their
+T35	LOC 579 605	their ultimate destination
+T36	LOC 608 624	downtown baghdad
+T37	TIM 571 574	now
+T38	PER 627 629	we
+T39	GPE 635 643	the city
+T40	PER 657 660	you
+T41	GPE 688 697	this city
+T42	FAC 668 697	how many bridges in this city
+T43	FAC 739 755	13 major bridges
+T44	PER 718 720	we
+T45	LOC 759 775	downtown baghdad
+T46	FAC 788 809	the expressway bridge
+T47	FAC 822 835	three bridges
+T48	LOC 851 863	east baghdad
+T49	FAC 888 894	palace
+T50	LOC 867 879	west baghdad
+T51	LOC 884 899	the palace area
+T52	FAC 967 975	a bridge
+T53	GPE 943 947	u.s.
+T54	PER 943 954	u.s. forces
+T55	FAC 987 991	that
+T56	FAC 978 1019	a bridge that might be defended by iraqis
+T57	PER 1013 1019	iraqis
+T58	Transfer-Ownership 961 966	seize
+E4	Transfer-Ownership:T58 Artifact:T52 Seller:T57 Buyer:T54
+T59	PER 1026 1028	's
+T60	PER 1127 1129	we
+T61	FAC 1206 1216	the bridge
+T62	VEH 1179 1184	m1-a1
+T63	VEH 1179 1190	m1-a1 tanks
+T64	Attack 1217 1223	firing
+E5	Attack:T64 Place:T61 Instrument:T63
+T65	Transport 1191 1197	coming
+E6	Transport:T65 Vehicle:T63 Destination:T61
+T66	FAC 1273 1284	that bridge
+T67	PER 1226 1229	you
+T68	FAC 1293 1295	it
+T69	PER 1320 1334	the other side
+T70	Attack 1310 1314	fire
+E7	Attack:T70 Attacker:T69 Target:T68
+T71	WEA 1349 1365	chemical weapons
+T72	PER 1377 1379	we
+T73	GPE 1434 1439	iraqi
+T74	VEH 1407 1423	what you 'll see
+T75	VEH 1428 1478	these iraqi tanks that are kind of fortified there
+T76	VEH 1446 1450	that
+T77	LOC 1473 1478	there
+T78	PER 1412 1415	you
+T79	VEH 1481 1485	they
+T80	VEH 1509 1513	them
+T81	VEH 1533 1537	them
+T82	WEA 1516 1525	artillery
+T83	Attack 1538 1544	firing
+E8	Attack:T83 Target:T81 Instrument:T82
+T84	VEH 1561 1565	they
+T85	PER 1639 1674	the oncoming forces fire ing at you
+T86	PER 1671 1674	you
+T87	Attack 1659 1663	fire
+E9	Attack:T87 Target:T86 Attacker:T85
+T88	PER 1783 1787	them
+T89	PER 1761 1764	you
+T90	VEH 1798 1805	an f-16
+T91	VEH 1808 1810	he
+T92	VEH 1842 1845	his
+T93	VEH 1857 1859	he
+T94	PER 1907 1909	we
+T95	PER 1934 1936	we
+T96	PER 1955 1958	you
+T97	PER 1976 1978	we
+T98	LOC 1961 1975	somewhere near

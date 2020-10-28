@@ -1,0 +1,204 @@
+T1	TIM 41 61	2004-12-30T18 :44:00
+T2	PER 82 86	Curt
+T3	TIM 87 107	2004-12-30T18 :44:00
+T4	TIM 113 119	recent
+T5	TIM 308 317	Christmas
+T6	LOC 327 331	West
+T7	PER 218 253	some wackjob playing with a new toy
+T8	PER 174 175	I
+T9	PER 201 202	I
+T10	TIM 258 261	now
+T11	PER 262 264	we
+T12	LOC 335 339	East
+T13	LOC 323 345	the West to East coast
+T14	TIM 514 523	Christmas
+T15	PER 373 383	terrorists
+T16	WEA 404 411	weapons
+T17	WEA 435 446	laser beams
+T18	WEA 394 400	lasers
+T19	ORG 348 355	The FBI
+T20	VEH 482 507	seven airplanes in flight
+T21	VEH 466 507	the cockpits of seven airplanes in flight
+T22	Attack 390 393	use
+E1	Attack:T22 Target:T21 Instrument:T17 Time-After:T14
+T23	WEA 526 537	Laser beams
+T24	VEH 599 606	a plane
+T25	PER 573 579	pilots
+T26	Injure 554 559	blind
+E2	Injure:T26 Victim:T25 Instrument:T23
+T27	PER 808 823	law enforcement
+T28	ORG 618 625	The FBI
+T29	PER 790 904	federal and local law enforcement and transportation officials , some of whom spoke only on condition of anonymity
+T30	PER 863 867	whom
+T31	GPE 770 774	Ore.
+T32	PER 855 867	some of whom
+T33	GPE 659 683	Colorado Springs , Colo.
+T34	GPE 678 683	Colo.
+T35	GPE 702 711	Cleveland
+T36	GPE 737 753	Teterboro , N.J.
+T37	GPE 727 734	Houston
+T38	GPE 760 774	Medford , Ore.
+T39	GPE 749 753	N.J.
+T40	GPE 714 724	Washington
+T41	Attack 646 655	incidents
+E3	Attack:T41 Place:T33
+T42	Attack 690 693	one
+E4	Attack:T42 Place:T35
+T43	PER 1032 1041	terrorist
+T44	PER 907 981	A federal law enforcement official , who declined to be identified by name
+T45	PER 944 947	who
+T46	TIM 989 997	Thursday
+T47	Attack 1042 1050	activity
+E5	Attack:T47 Attacker:T43
+T48	PER 1158 1168	terrorists
+T49	WEA 1194 1201	weapons
+T50	ORG 1100 1107	the FBI
+T51	PER 1057 1063	pilots
+T52	TIM 1108 1126	earlier this month
+T53	Attack 1084 1093	incidents
+E6	Attack:T53
+T54	Attack 1175 1178	use
+E7	Attack:T54 Attacker:T48 Instrument:T49
+T55	PER 1294 1350	the security committee for the Allied Pilots Association
+T56	ORG 1321 1350	the Allied Pilots Association
+T57	PER 1217 1225	some kid
+T58	PER 1236 1250	Paul Rancatore
+T59	PER 1253 1350	a pilot who serves as deputy chairman of the security committee for the Allied Pilots Association
+T60	PER 1261 1264	who
+T61	PER 1275 1350	deputy chairman of the security committee for the Allied Pilots Association
+T62	ORG 1410 1418	military
+T63	PER 1381 1454	Loren Thompson , who teaches military technology at Georgetown University
+T64	PER 1398 1401	who
+T65	PER 1513 1515	he
+T66	ORG 1433 1454	Georgetown University
+T67	PER 1521 1528	experts
+T68	PER 1698 1706	Thompson
+T69	VEH 1670 1692	a fast-moving aircraft
+T70	WEA 1598 1692	a fairly powerful visible light laser that has the ability to lock onto a fast-moving aircraft
+T71	PER 1574 1576	we
+T72	ORG 1764 1772	military
+T73	WEA 1717 1721	That
+T74	FAC 1762 1786	a military surplus store
+T75	PER 1747 1750	you
+T76	Transfer-Ownership 1751 1758	pick up
+E8	Transfer-Ownership:T76 Artifact:T73 Place:T74 Buyer:T75
+T77	PER 1792 1800	Thompson
+T78	ORG 1852 1859	the FBI
+T79	PER 1998 2006	Thompson
+T80	VEH 1975 1982	airline
+T81	Attack 1969 1974	cause
+E9	Attack:T81 Target:T80
+T82	PER 2014 2029	Michelle Malkin
+T83	FAC 2064 2076	some outlets
+T84	WEA 2098 2104	lasers
+T85	TIM 2052 2057	today
+T86	Transfer-Ownership 2090 2097	selling
+E10	Transfer-Ownership:T86 Artifact:T84 Place:T83
+T87	PER 2107 2121	Lots of people
+T88	PER 2155 2194	loonies playing with new Christmas toys
+T89	PER 2199 2200	I
+T90	VEH 2267 2271	some
+T91	VEH 2238 2251	the Airplanes
+T92	ORG 2380 2398	the local wal-mart
+T93	VEH 2304 2323	a fast moving plane
+T94	PER 2363 2366	you
+T95	PER 2404 2406	my
+T96	WEA 2605 2692	a Chinese-produced ZM-87 laser blinder which is specifically designed to blind eyesight
+T97	WEA 2644 2649	which
+T98	PER 2576 2586	terrorists
+T99	GPE 2607 2623	Chinese-produced
+T100	WEA 2630 2635	laser
+T101	Injure 2678 2683	blind
+E11	Injure:T101 Instrument:T96 Agent:T98
+T102	PER 2708 2717	terrorist
+T103	WEA 2875 2881	lasers
+T104	WEA 2967 2972	laser
+T105	WEA 2885 2902	weapons.According
+T106	ORG 2997 3028	Russian institutes they visited
+T107	GPE 2997 3004	Russian
+T108	VEH 3065 3072	a truck
+T109	WEA 3039 3072	a laser weapon mounted on a truck
+T110	ORG 2906 2928	The Asian Pacific Post
+T111	VEH 2798 2804	subway
+T112	PER 2934 2946	Cult members
+T113	PER 3016 3020	they
+T114	GPE 2699 2707	Japanese
+T115	ORG 2695 2722	The Japanese terrorist cult
+T116	ORG 2723 2736	Aum Shinrikyo
+T117	ORG 2740 2745	which
+T118	ORG 2934 2938	Cult
+T119	GPE 2792 2797	Tokyo
+T120	FAC 2792 2811	Tokyo subway system
+T121	TIM 2815 2819	1995
+T122	WEA 2774 2777	gas
+T123	WEA 3041 3046	laser
+T124	Transport 3021 3028	visited
+E12	Transport:T124 Artifact:T112 Destination:T107
+T125	Attack 2778 2784	attack
+E13	Attack:T125 Attacker:T117 Place:T119 Target:T120 Instrument:T122 Time-Within:T121
+T126	WEA 3099 3108	the laser
+T127	WEA 3160 3169	the laser
+T128	PER 3117 3132	Tokyo policemen
+T129	PER 3075 3079	They
+T130	GPE 3117 3122	Tokyo
+T131	Attack 3095 3098	use
+E14	Attack:T131 Attacker:T129 Place:T130 Target:T128 Instrument:T126
+T132	PER 3214 3225	PoliticAlex
+T133	TIM 3326 3334	recently
+T134	PER 3266 3267	I
+T135	ORG 3317 3325	Congress
+T136	WEA 3341 3369	the shoulder launched missle
+T137	WEA 3511 3549	shoulder fired surface-to-air missiles
+T138	WEA 3584 3616	Man-Portable Air Defense Systems
+T139	WEA 3623 3630	MANPADS
+T140	WEA 3556 3560	SAMs
+T141	VEH 3380 3389	airliners
+T142	VEH 3647 3667	commercial airliners
+T143	TIM 3439 3445	Recent
+T144	PER 3495 3630	terrorists with shoulder fired surface-to-air missiles -LRB- SAMs -RRB- , referred to as Man-Portable Air Defense Systems -LRB- MANPADS
+T145	Attack 3370 3376	threat
+E15	Attack:T145 Target:T141 Instrument:T136
+T146	PER 3670 3674	Most
+T147	VEH 3864 3872	aircraft
+T148	FAC 3950 3957	airport
+T149	WEA 4000 4007	missile
+T150	VEH 4046 4054	aircraft
+T151	VEH 4103 4115	the aircraft
+T152	LOC 4145 4150	where
+T153	LOC 4139 4224	areas where ground-based security measures are unavailable or infeasible to implement
+T154	WEA 4060 4067	missile
+T155	PER 4422 4431	terrorist
+T156	NUM 4286 4297	$ 1 million
+T157	NUM 4302 4313	$ 3 million
+T158	VEH 4318 4326	aircraft
+T159	FAC 4601 4609	airports
+T160	PER 4482 4493	flight crew
+T161	PER 4688 4706	domestic terrorist
+T162	GPE 4688 4696	domestic
+T163	Attack 4707 4714	attacks
+E16	Attack:T163 Attacker:T161
+T164	FAC 4871 4887	foreign airports
+T165	VEH 4837 4887	U.S. airliners flying to and from foreign airports
+T166	GPE 4837 4841	U.S.
+T167	GPE 4798 4806	domestic
+T168	Attack 4807 4814	attacks
+E17	Attack:T168
+T169	Transport 4852 4858	flying
+E18	Transport:T169 Vehicle:T165 Destination:T166 Destination:T164 Origin:T166 Origin:T164
+T170	WEA 4995 5002	missile
+T171	ORG 4916 4934	the 108th Congress
+T172	VEH 5022 5081	all turbojet aircraft used in scheduled air carrier service
+T173	ORG 5353 5361	military
+T174	TIM 5225 5231	FY2005
+T175	NUM 5182 5194	$ 60 million
+T176	NUM 5209 5221	$ 61 million
+T177	VEH 5315 5334	commercial aircraft
+T178	WEA 5280 5287	missile
+T179	ORG 5138 5155	Homeland Security
+T180	TIM 5198 5204	FY2004
+T181	Transfer-Money 5235 5239	fund
+E19	Transfer-Money:T181 Giver:T179 Money:T175 Money:T176 Time-Holds:T180 Time-Holds:T174
+T182	TIM 5437 5449	January 2006
+T183	PER 5597 5606	passenger
+T184	VEH 5586 5615	commercial passenger aircraft
+T185	ORG 5452 5487	the Department of Homeland Security

@@ -1,0 +1,130 @@
+T1	TIM 38 57	2003-05-07 18:06:14
+T2	GPE 74 76	we
+T3	GPE 87 105	the people of iraq
+T4	GPE 101 105	iraq
+T5	GPE 167 169	we
+T6	PER 141 151	translator
+T7	GPE 198 219	people of all nations
+T8	GPE 208 219	all nations
+T9	GPE 256 261	spain
+T10	PER 238 251	the president
+T11	PER 222 223	i
+T12	Attack 295 303	conflict
+E1	Attack:T12
+T13	GPE 357 364	spanish
+T14	FAC 357 384	spanish air space and bases
+T15	LOC 357 384	spanish air space and bases
+T16	PER 312 322	translator
+T17	Attack 392 395	war
+E2	Attack:T17
+T18	ORG 518 535	the spanish media
+T19	GPE 522 529	spanish
+T20	PER 473 587	the family and friends of the two members of the spanish media who lost their lives while covering the hostilities
+T21	PER 499 587	the two members of the spanish media who lost their lives while covering the hostilities
+T22	PER 536 539	who
+T23	PER 545 550	their
+T24	PER 416 426	translator
+T25	PER 442 443	i
+T26	PER 455 457	my
+T27	Attack 576 587	hostilities
+E3	Attack:T27
+T28	Die 540 544	lost
+E4	Die:T28 Victim:T21
+T29	GPE 718 736	the people of iraq
+T30	GPE 732 736	iraq
+T31	TIM 707 713	future
+T32	GPE 637 654	the united states
+T33	GPE 622 654	both spain and the united states
+T34	PER 596 606	translator
+T35	GPE 852 870	the people of iraq
+T36	GPE 866 870	iraq
+T37	GPE 771 776	spain
+T38	PER 745 755	translator
+T39	ORG 814 843	engineering and medical units
+T40	GPE 917 920	you
+T41	PER 879 889	translator
+T42	PER 909 910	i
+T43	GPE 1045 1049	iraq
+T44	TIM 969 974	today
+T45	GPE 1019 1036	the united states
+T46	PER 943 953	translator
+T47	GPE 1045 1067	iraq 's old government
+T48	PER 977 978	i
+T49	GPE 1271 1275	iraq
+T50	GPE 1184 1188	iraq
+T51	TIM 1131 1139	recently
+T52	ORG 1155 1163	congress
+T53	PER 1076 1086	translator
+T54	PER 1149 1151	me
+T55	PER 1164 1165	i
+T56	GPE 1443 1447	iraq
+T57	PER 1448 1452	that
+T58	PER 1352 1365	the secretary
+T59	ORG 1388 1495	american countries and citizens conducting business in iraq that contributed to humanitarian reconstruction
+T60	GPE 1388 1396	american
+T61	PER 1388 1495	american countries and citizens conducting business in iraq that contributed to humanitarian reconstruction
+T62	PER 1302 1312	translator
+T63	ORG 1540 1565	the u.n. security council
+T64	ORG 1544 1548	u.n.
+T65	ORG 1677 1695	the united nations
+T66	GPE 1568 1585	the united states
+T67	GPE 1606 1611	spain
+T68	PER 1504 1514	translator
+T69	GPE 1588 1601	great britain
+T70	GPE 1798 1802	iraq
+T71	PER 1704 1714	translator
+T72	GPE 1730 1781	the regime that the sanctions were directed against
+T73	GPE 1741 1745	that
+T74	GPE 1925 1941	the iraqi people
+T75	GPE 1929 1934	iraqi
+T76	GPE 1841 1851	no country
+T77	PER 1811 1821	translator
+T78	LOC 1990 1999	the globe
+T79	GPE 2037 2075	strong allys in the war against terror
+T80	GPE 2012 2019	america
+T81	GPE 2002 2007	spain
+T82	PER 1950 1963	trance lay or
+T83	Attack 2057 2060	war
+E5	Attack:T83 Attacker:T81 Attacker:T80
+T84	TIM 2110 2115	today
+T85	GPE 2118 2135	the united states
+T86	PER 2084 2094	translator
+T87	ORG 2212 2219	the eta
+T88	ORG 2172 2188	the organization
+T89	ORG 2200 2203	its
+T90	GPE 2254 2256	we
+T91	GPE 2284 2289	spain
+T92	GPE 2270 2305	the people of spain like everywhere
+T93	PER 2228 2238	translator
+T94	GPE 2295 2305	everywhere
+T95	LOC 2399 2413	a better world
+T96	GPE 2378 2380	we
+T97	PER 2352 2362	translator
+T98	GPE 2473 2475	we
+T99	PER 2447 2457	translator
+T100	LOC 2550 2562	the atlantic
+T101	GPE 2597 2599	we
+T102	PER 2571 2581	translator
+T103	PER 2609 2617	together
+T104	GPE 2730 2747	the united states
+T105	GPE 2720 2725	spain
+T106	PER 2694 2704	translator
+T107	GPE 2781 2791	everywhere
+T108	PER 2774 2791	people everywhere
+T109	GPE 2883 2885	we
+T110	PER 2857 2867	translator
+T111	PER 2946 2962	the palestinians
+T112	PER 2929 2941	the israelis
+T113	TIM 2997 3006	last week
+T114	GPE 3114 3131	the united states
+T115	PER 2971 2981	translator
+T116	GPE 3082 3088	russia
+T117	PER 3026 3031	mazen
+T118	GPE 3091 3109	the european union
+T119	GPE 3176 3193	the united states
+T120	GPE 3166 3171	spain
+T121	PER 3140 3150	translator
+T122	PER 3275 3285	translator
+T123	PER 3354 3370	jose maria aznar
+T124	PER 3301 3302	i
+T125	PER 3379 3389	translator

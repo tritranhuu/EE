@@ -1,0 +1,326 @@
+T1	TIM 34 61	2003-04-05T16 :00:00 -05:00
+T2	PER 110 118	WOODRUFF
+T3	PER 128 132	Wolf
+T4	ORG 139 141	we
+T5	PER 151 154	you
+T6	GPE 224 231	Baghdad
+T7	PER 261 275	Saddam Hussein
+T8	PER 280 283	his
+T9	GPE 172 181	coalition
+T10	PER 172 188	coalition forces
+T11	PER 203 208	their
+T12	Transport 189 199	push ahead
+E1	Transport:T12 Artifact:T10 Destination:T6
+T13	PER 353 372	the Iraqi president
+T14	PER 383 385	he
+T15	GPE 357 362	Iraqi
+T16	TIM 337 343	latest
+T17	Die 389 393	dead
+E2	Die:T17 Victim:T13
+T18	GPE 482 489	Baghdad
+T19	GPE 603 620	the Iraqi capital
+T20	PER 460 463	who
+T21	PER 405 489	CNN senior international correspondent Nic Robertson , who was expelled from Baghdad
+T22	PER 405 443	CNN senior international correspondent
+T23	LOC 512 565	the border of Iraq and Jordan , on the Jordanian side
+T24	GPE 535 541	Jordan
+T25	GPE 551 560	Jordanian
+T26	LOC 547 565	the Jordanian side
+T27	GPE 526 530	Iraq
+T28	GPE 607 612	Iraqi
+T29	TIM 503 506	now
+T30	ORG 500 502	us
+T31	ORG 405 408	CNN
+T32	Transport 468 476	expelled
+E3	Transport:T32 Artifact:T22 Origin:T18
+T33	GPE 745 753	the city
+T34	PER 623 626	Nic
+T35	GPE 698 707	coalition
+T36	ORG 629 631	we
+T37	PER 698 719	coalition land forces
+T38	Attack 685 694	incursion
+E4	Attack:T38 Attacker:T37
+T39	ORG 761 763	us
+T40	PER 787 800	NIC ROBERTSON
+T41	PER 803 841	CNN SENIOR INTERNATIONAL CORRESPONDENT
+T42	ORG 803 806	CNN
+T43	GPE 883 890	Baghdad
+T44	GPE 973 980	Baghdad
+T45	TIM 891 903	this evening
+T46	TIM 966 969	day
+T47	ORG 859 861	we
+T48	PER 872 890	sources in Baghdad
+T49	Attack 943 950	bombing
+E5	Attack:T49 Place:T44 Time-Holds:T46
+T50	GPE 1083 1090	Baghdad
+T51	PER 1039 1050	journalists
+T52	FAC 1029 1090	the hotel journalists are staying in in the center of Baghdad
+T53	LOC 1069 1090	the center of Baghdad
+T54	Attack 1006 1015	explosion
+E6	Attack:T54 Place:T53
+T55	FAC 1132 1234	a number of Ba'ath Party houses and buildings that appear to be -- have some sort of military function
+T56	ORG 1217 1225	military
+T57	LOC 1099 1113	the riverfront
+T58	FAC 1178 1182	that
+T59	ORG 1144 1156	Ba'ath Party
+T60	GPE 1324 1335	the capital
+T61	GPE 1416 1424	the city
+T62	GPE 1447 1455	the city
+T63	GPE 1308 1313	Iraqi
+T64	GPE 1379 1388	coalition
+T65	TIM 1336 1341	today
+T66	ORG 1288 1290	we
+T67	LOC 1399 1424	the southwest of the city
+T68	LOC 1430 1455	the southeast of the city
+T69	PER 1308 1335	Iraqi people in the capital
+T70	PER 1350 1354	they
+T71	PER 1364 1368	they
+T72	PER 1379 1395	coalition forces
+T73	GPE 1580 1587	Baghdad
+T74	GPE 1487 1496	coalition
+T75	GPE 1516 1525	coalition
+T76	FAC 1538 1587	a checkpoint on the northern outskirts of Baghdad
+T77	LOC 1554 1587	the northern outskirts of Baghdad
+T78	PER 1458 1462	They
+T79	PER 1467 1471	they
+T80	PER 1487 1503	coalition forces
+T81	PER 1516 1532	coalition forces
+T82	GPE 1716 1724	the city
+T83	GPE 1611 1627	the Iraqi people
+T84	GPE 1644 1648	they
+T85	GPE 1669 1678	coalition
+T86	LOC 1699 1724	the perimeter of the city
+T87	PER 1669 1685	coalition forces
+T88	WEA 1789 1798	artillery
+T89	GPE 1869 1877	the city
+T90	VEH 1810 1815	tanks
+T91	PER 1764 1776	Iraqi forces
+T92	WEA 1789 1805	artillery pieces
+T93	GPE 1764 1769	Iraqi
+T94	ORG 1727 1730	Our
+T95	ORG 1756 1758	us
+T96	LOC 1819 1877	a number of locations on the southwestern edge of the city
+T97	LOC 1844 1877	the southwestern edge of the city
+T98	PER 1727 1738	Our sources
+T99	GPE 1937 1944	Baghdad
+T100	GPE 2011 2020	coalition
+T101	LOC 1923 1944	the center of Baghdad
+T102	LOC 1880 1895	These locations
+T103	PER 2007 2027	the coalition forces
+T104	TIM 2068 2073	today
+T105	TIM 2188 2197	first day
+T106	PER 2036 2067	Iraq 's minister of information
+T107	FAC 2122 2133	the airport
+T108	FAC 2299 2310	the airport
+T109	PER 2221 2251	hundreds of coalition soldiers
+T110	PER 2274 2279	their
+T111	GPE 2036 2040	Iraq
+T112	GPE 2084 2097	the coalition
+T113	GPE 2233 2242	coalition
+T114	TIM 2292 2295	now
+T115	TIM 2030 2033	Now
+T116	Transfer-Ownership 2111 2118	control
+E7	Transfer-Ownership:T116 Beneficiary:T112 Artifact:T107
+T117	Die 2261 2267	killed
+E8	Die:T117 Victim:T109 Place:T108
+T118	TIM 2444 2447	day
+T119	PER 2336 2347	journalists
+T120	PER 2313 2315	He
+T121	PER 2375 2377	he
+T122	PER 2392 2394	he
+T123	FAC 2351 2362	the airport
+T124	Transport 2331 2335	take
+E9	Transport:T124 Artifact:T119 Agent:T120 Destination:T123
+T125	TIM 2527 2532	today
+T126	PER 2502 2526	President Saddam Hussein
+T127	PER 2502 2511	President
+T128	PER 2535 2551	the Iraqi leader
+T129	PER 2450 2474	The information minister
+T130	GPE 2563 2569	people
+T131	GPE 2621 2625	they
+T132	GPE 2539 2544	Iraqi
+T133	GPE 2653 2666	the coalition
+T134	Attack 2640 2645	fight
+E10	Attack:T134 Attacker:T130
+T135	PER 2725 2748	MOHAMMED SAEED AL-SAHAF
+T136	PER 2751 2777	IRAQI INFORMATION MINISTER
+T137	GPE 2751 2756	IRAQI
+T138	PER 2821 2830	the enemy
+T139	PER 2858 2867	the enemy
+T140	PER 2880 2889	the enemy
+T141	PER 2916 2919	you
+T142	Attack 2872 2879	destroy
+E11	Attack:T142 Attacker:T141 Target:T138
+T143	PER 2937 2940	God
+T144	PER 2956 2969	the criminals
+T145	PER 3004 3013	ROBERTSON
+T146	PER 3020 3052	representatives of the committee
+T147	PER 3104 3107	who
+T148	ORG 3039 3052	the committee
+T149	ORG 3056 3101	the International Committee for the Red Cross
+T150	FAC 3121 3153	some of the hospitals in Baghdad
+T151	FAC 3215 3230	those hospitals
+T152	PER 3163 3202	higher-than-usual numbers of casualties
+T153	GPE 3146 3153	Baghdad
+T154	FAC 3129 3153	the hospitals in Baghdad
+T155	Transport 3203 3214	coming into
+E12	Transport:T155 Artifact:T152 Destination:T151
+T156	Transport 3108 3120	have been to
+E13	Transport:T156 Artifact:T146 Destination:T150
+T157	ORG 3289 3329	INTERNATIONAL COMMITTEE OF THE RED CROSS
+T158	PER 3262 3286	ROLAND NUGUENIN-BENJAMIN
+T159	TIM 3537 3542	night
+T160	TIM 3374 3381	morning
+T161	TIM 3564 3567	day
+T162	PER 3351 3353	We
+T163	PER 3455 3457	we
+T164	PER 3593 3604	war wounded
+T165	PER 3711 3747	the sheer number of people coming in
+T166	PER 3499 3521	hundreds of casualties
+T167	PER 3570 3580	casualties
+T168	FAC 3641 3656	other hospitals
+T169	FAC 3391 3433	the main hospital , which is called Yarmuk
+T170	FAC 3411 3416	which
+T171	FAC 3427 3433	Yarmuk
+T172	FAC 3667 3678	this Yarmuk
+T173	PER 3584 3585	I
+T174	Transport 3738 3747	coming in
+E14	Transport:T174 Artifact:T165 Destination:T169
+T175	Transport 3385 3387	go
+E15	Transport:T175 Artifact:T162 Destination:T169 Time-Within:T160
+T176	Transport 3615 3624	sent over
+E16	Transport:T176 Artifact:T164 Destination:T168 Origin:T172
+T177	PER 3777 3786	ROBERTSON
+T178	PER 3793 3824	these Red Cross representatives
+T179	PER 3876 3880	they
+T180	ORG 3799 3808	Red Cross
+T181	PER 3861 3917	the casualties they 've seen in this particular hospital
+T182	ORG 3934 3942	military
+T183	PER 3842 3917	that two-thirds of the casualties they 've seen in this particular hospital
+T184	PER 3934 3953	military casualties
+T185	PER 3834 3838	most
+T186	FAC 3893 3917	this particular hospital
+T187	TIM 4224 4227	now
+T188	GPE 4104 4111	Baghdad
+T189	PER 3992 4003	journalists
+T190	GPE 3960 3965	Iraqi
+T191	GPE 4219 4223	Iraq
+T192	GPE 4177 4186	coalition
+T193	TIM 4064 4067	now
+T194	LOC 4087 4111	the southwest of Baghdad
+T195	FAC 4007 4031	this particular hospital
+T196	FAC 4034 4053	the Yarmuk Hospital
+T197	FAC 4056 4060	that
+T198	FAC 4078 4080	it
+T199	FAC 4118 4120	it
+T200	PER 3960 3975	Iraqi officials
+T201	LOC 4213 4265	where Iraq now has a militarized front-line position
+T202	LOC 4232 4265	a militarized front-line position
+T203	LOC 4155 4208	the position of where coalition forces have been seen
+T204	LOC 4171 4176	where
+T205	PER 4177 4193	coalition forces
+T206	Transport 3987 3991	take
+E17	Transport:T206 Agent:T200 Artifact:T189 Destination:T195
+T207	PER 4429 4433	Judy
+T208	PER 4279 4290	journalists
+T209	PER 4331 4335	they
+T210	PER 4369 4373	they
+T211	FAC 4309 4322	that hospital
+T212	FAC 4413 4426	that hospital
+T213	Transport 4291 4301	were taken
+E18	Transport:T213 Artifact:T208 Destination:T211
+T214	Transport 4403 4412	go inside
+E19	Transport:T214 Artifact:T208 Destination:T212
+T215	PER 4436 4444	WOODRUFF
+T216	TIM 4480 4483	now
+T217	WEA 4492 4501	artillery
+T218	GPE 4524 4532	the city
+T219	PER 4445 4448	Nic
+T220	PER 4456 4459	you
+T221	PER 4539 4542	you
+T222	PER 4464 4470	Iraqis
+T223	PER 4621 4625	they
+T224	WEA 4492 4508	artillery pieces
+T225	WEA 4592 4596	they
+T226	WEA 4574 4578	they
+T227	WEA 4653 4657	them
+T228	ORG 4665 4667	us
+T229	PER 4694 4703	ROBERTSON
+T230	WEA 4768 4777	artillery
+T231	FAC 4721 4726	where
+T232	FAC 4788 4818	the Zawara -LRB- ph -RRB- Park
+T233	FAC 4704 4784	One of the areas where I understand they 're locating tanks and artillery pieces
+T234	PER 4727 4728	I
+T235	VEH 4758 4763	tanks
+T236	PER 4740 4744	they
+T237	WEA 4768 4784	artillery pieces
+T238	LOC 4711 4784	the areas where I understand they 're locating tanks and artillery pieces
+T239	ORG 4872 4882	government
+T240	GPE 4847 4854	Baghdad
+T241	FAC 4821 4825	This
+T242	LOC 4870 4887	a government area
+T243	LOC 4858 4887	the edge of a government area
+T244	FAC 4890 4892	It
+T245	FAC 4896 4904	a garden
+T246	FAC 4908 4910	it
+T247	FAC 4914 4987	a large garden-type area for people to take their children to go and play
+T248	PER 4943 4949	people
+T249	PER 4958 4963	their
+T250	PER 4958 4972	their children
+T251	Transport 4953 4957	take
+E20	Transport:T251 Artifact:T250 Agent:T248 Destination:T247
+T252	FAC 5020 5025	there
+T253	FAC 4990 4992	It
+T254	FAC 5008 5019	a small zoo
+T255	GPE 5108 5116	the city
+T256	FAC 5036 5038	It
+T257	PER 5047 5050	you
+T258	LOC 5083 5116	the southwestern area of the city
+T259	FAC 5119 5121	It
+T260	FAC 5170 5181	the airport
+T261	FAC 5140 5181	the highway that leads out to the airport
+T262	FAC 5152 5156	that
+T263	FAC 5190 5194	that
+T264	LOC 5205 5223	a residential area
+T265	FAC 5226 5228	It
+T266	FAC 5232 5251	a clear , open area
+T267	VEH 5342 5347	tanks
+T268	PER 5405 5409	Judy
+T269	GPE 5314 5319	Iraqi
+T270	ORG 5294 5296	we
+T271	LOC 5380 5402	more residential areas
+T272	FAC 5365 5372	streets
+T273	PER 5314 5329	Iraqi officials
+T274	LOC 5273 5372	The other areas that we understand where Iraqi officials are placing tanks and blocking off streets
+T275	LOC 5289 5293	that
+T276	LOC 5308 5313	where
+T277	PER 5412 5420	WOODRUFF
+T278	PER 5433 5446	Nic Robertson
+T279	PER 5498 5508	the Iraqis
+T280	GPE 5555 5564	coalition
+T281	ORG 5456 5458	us
+T282	PER 5555 5571	coalition forces
+T283	PER 5574 5577	Nic
+T284	PER 5586 5589	you
+T285	GPE 5649 5692	the Iraqi government 's key center of power
+T286	GPE 5752 5769	the Iraqi capital
+T287	GPE 5649 5669	the Iraqi government
+T288	GPE 5756 5761	Iraqi
+T289	PER 5612 5627	American forces
+T290	GPE 5612 5620	American
+T291	PER 5695 5709	British forces
+T292	PER 5725 5730	their
+T293	GPE 5695 5702	British
+T294	Transport 5631 5641	push ahead
+E21	Transport:T294 Artifact:T289 Destination:T285
+T295	GPE 5835 5839	Iraq
+T296	PER 5772 5799	ITN reporter Juliet Bremner
+T297	PER 5772 5784	ITN reporter
+T298	PER 5817 5831	British forces
+T299	GPE 5817 5824	British
+T300	GPE 5835 5862	Iraq 's second-largest city
+T301	GPE 5865 5908	Basra , where the fight for control goes on
+T302	GPE 5873 5878	where
+T303	ORG 5772 5775	ITN
+T304	Attack 5883 5888	fight
+E22	Attack:T304 Place:T300

@@ -1,0 +1,379 @@
+T1	TIM 31 58	2003-03-04T19 :00:00 -05:00
+T2	PER 165 171	BEGALA
+T3	TIM 215 220	today
+T4	NUM 244 253	$ 250,000
+T5	PER 293 327	the victims of medical malpractice
+T6	CRM 308 327	medical malpractice
+T7	PER 200 214	President Bush
+T8	PER 200 209	President
+T9	PER 229 232	his
+T10	Fine 280 287	damages
+E1	Fine:T10
+T11	TIM 364 369	today
+T12	TIM 539 549	last month
+T13	TIM 418 429	17-year-old
+T14	TIM 383 386	day
+T15	PER 418 446	17-year-old Jesica Santillan
+T16	PER 449 549	the brave young woman who got the wrong heart and lungs in a botched transplant operation last month
+T17	PER 471 474	who
+T18	GPE 349 363	North Carolina
+T19	NUM 599 608	$ 250,000
+T20	PER 555 558	her
+T21	PER 555 565	her family
+T22	PER 691 711	Dr. Donald Palmisano
+T23	PER 691 694	Dr.
+T24	PER 714 769	the president-elect of the American Medical Association
+T25	ORG 737 769	the American Medical Association
+T26	PER 657 665	consumer
+T27	PER 657 674	consumer advocate
+T28	PER 657 686	consumer advocate Ralph Nader
+T29	Start-Position 718 733	president-elect
+E2	Start-Position:T29 Person:T24 Entity:T25
+T30	PER 794 799	NOVAK
+T31	ORG 873 880	the AMA
+T32	PER 887 894	doctors
+T33	PER 929 933	they
+T34	GPE 881 886	where
+T35	GPE 841 845	that
+T36	GPE 824 840	states in crisis
+T37	PER 800 811	Ralph Nader
+T38	ORG 980 982	We
+T39	GPE 1008 1026	some of the states
+T40	GPE 1029 1033	They
+T41	GPE 1038 1048	big states
+T42	GPE 1092 1104	Pennsylvania
+T43	GPE 1051 1058	Florida
+T44	GPE 1061 1071	New Jersey
+T45	GPE 1074 1082	New York
+T46	GPE 1085 1089	Ohio
+T47	GPE 1107 1115	Illinois
+T48	GPE 1118 1123	Texas
+T49	PER 1153 1160	lawyers
+T50	GPE 1181 1188	America
+T51	PER 1203 1234	RALPH NADER , CONSUMER ADVOCATE
+T52	PER 1250 1254	your
+T53	TIM 1342 1351	every day
+T54	PER 1314 1335	Over 80,000 Americans
+T55	PER 1338 1341	220
+T56	PER 1382 1402	hundred of thousands
+T57	Injure 1407 1414	injured
+E3	Injure:T57 Agent:T56
+T58	Die 1352 1355	die
+E4	Die:T58 Victim:T54 Victim:T55 Time-Within:T53
+T59	TIM 1494 1508	about 10 years
+T60	PER 1482 1489	doctors
+T61	ORG 1421 1508	the insurance companies which had relatively steady rates on doctors for about 10 years
+T62	ORG 1445 1450	which
+T63	ORG 1520 1523	its
+T64	ORG 1544 1547	its
+T65	PER 1666 1679	obstetricians
+T66	PER 1684 1697	neurosurgeons
+T67	ORG 1606 1610	they
+T68	NUM 1859 1876	less than $ 9,000
+T69	PER 1770 1793	doctors in this country
+T70	PER 1841 1845	they
+T71	ORG 1797 1817	malpractice insurers
+T72	PER 1707 1710	you
+T73	PER 1748 1751	Bob
+T74	GPE 1781 1793	this country
+T75	PER 1910 1914	they
+T76	PER 1919 1933	a receptionist
+T77	PER 1936 1941	NOVAK
+T78	PER 1974 1989	so many of them
+T79	PER 2007 2012	their
+T80	PER 2030 2034	they
+T81	End-Position 1999 2006	leaving
+E5	End-Position:T81 Person:T78
+T82	PER 2054 2057	You
+T83	PER 2132 2134	we
+T84	PER 2081 2082	I
+T85	PER 2124 2125	I
+T86	PER 2065 2070	Ralph
+T87	PER 2073 2076	you
+T88	PER 2205 2216	the lawyers
+T89	PER 2219 2327	the trial lawyers who appoint millions and millions of dollars into Democratic coffers in order to keep this
+T90	PER 2237 2240	who
+T91	ORG 2287 2297	Democratic
+T92	NUM 2249 2281	millions and millions of dollars
+T93	PER 2333 2336	you
+T94	PER 2192 2195	you
+T95	Transfer-Money 2241 2248	appoint
+E6	Transfer-Money:T95 Giver:T90 Money:T92 Recipient:T91
+T96	Trial-Hearing 2223 2228	trial
+E7	Trial-Hearing:T96 Prosecutor:T89
+T97	PER 2370 2375	NADER
+T98	PER 2576 2595	members of Congress
+T99	ORG 2587 2595	Congress
+T100	ORG 2498 2517	the hospital chains
+T101	ORG 2502 2510	hospital
+T102	ORG 2522 2530	the HMOs
+T103	ORG 2535 2558	the nursing home chains
+T104	ORG 2539 2551	nursing home
+T105	PER 2394 2398	they
+T106	PER 2457 2468	the doctors
+T107	ORG 2471 2495	the malpractice insurers
+T108	Transfer-Money 2403 2409	poured
+E8	Transfer-Money:T108 Giver:T105
+T109	Transfer-Money 2564 2570	poured
+E9	Transfer-Money:T109 Giver:T106 Giver:T107 Giver:T100 Giver:T102 Giver:T103 Recipient:T98
+T110	PER 2637 2640	Bob
+T111	PER 2670 2672	we
+T112	PER 2688 2766	severely injured people who have found a lung taken out that 's the wrong lung
+T113	PER 2712 2715	who
+T114	PER 2835 2857	a woman in the Midwest
+T115	LOC 2846 2857	the Midwest
+T116	TIM 2915 2926	17-year-old
+T117	PER 2910 2953	that 17-year-old teenager in North Carolina
+T118	GPE 2939 2953	North Carolina
+T119	Injure 2697 2704	injured
+E10	Injure:T119 Victim:T112
+T120	PER 2979 2984	these
+T121	PER 2989 3003	so many others
+T122	PER 3006 3009	you
+T123	PER 3022 3026	your
+T124	PER 2960 2962	we
+T125	TIM 3022 3044	your full day in court
+T126	FAC 3039 3044	court
+T127	Trial-Hearing 3017 3021	have
+E11	Trial-Hearing:T127 Prosecutor:T122
+T128	ORG 3047 3059	The Congress
+T129	PER 3081 3123	the judges and juries in the United States
+T130	ORG 3131 3142	state court
+T131	GPE 3131 3136	state
+T132	GPE 3106 3123	the United States
+T133	GPE 3261 3277	their home state
+T134	GPE 3296 3312	their home state
+T135	PER 3247 3312	the jurors in their home state and the judges in their home state
+T136	PER 3200 3203	who
+T137	PER 3221 3224	who
+T138	PER 3261 3266	their
+T139	PER 3296 3301	their
+T140	PER 3170 3404	one senator or representative who 's for this bill who has demonstrated that the jurors in their home state and the judges in their home state are incompetent , unwilling or unable to perform justice in these medical malpractice cases
+T141	PER 3151 3152	I
+T142	TIM 3502 3512	every week
+T143	PER 3546 3552	no one
+T144	PER 3429 3439	one person
+T145	PER 3449 3543	the insurance executives who make $ 250,000 a week , every week without any pain and suffering
+T146	PER 3474 3477	who
+T147	NUM 3483 3492	$ 250,000
+T148	TIM 3495 3499	week
+T149	PER 3411 3412	I
+T150	PER 3596 3602	BEGALA
+T151	PER 3603 3616	Dr. Palmisano
+T152	PER 3603 3606	Dr.
+T153	PER 3631 3634	you
+T154	FAC 3645 3649	here
+T155	PER 3652 3696	DR. DONALD PALMISANO , PRESIDENT-ELECT , AMA
+T156	PER 3703 3706	you
+T157	FAC 3724 3728	here
+T158	PER 3731 3737	BEGALA
+T159	TIM 3771 3776	today
+T160	LOC 3758 3770	Capitol Hill
+T161	Trial-Hearing 3750 3754	hear
+E12	Trial-Hearing:T161 Place:T160 Time-Within:T159
+T162	TIM 3865 3870	today
+T163	PER 3824 3837	the witnesses
+T164	PER 3817 3837	one of the witnesses
+T165	PER 3840 3854	John McCormick
+T166	PER 3785 3786	I
+T167	PER 3799 3802	you
+T168	PER 3893 3906	a little girl
+T169	PER 3909 3926	13-month-old girl
+T170	PER 3929 3932	who
+T171	PER 3873 3875	He
+T172	PER 3933 3935	he
+T173	PER 3879 3982	the father of a little girl , 13-month-old girl , who he said today died because of medical malpractice
+T174	TIM 3941 3946	today
+T175	TIM 3909 3921	13-month-old
+T176	Die 3947 3951	died
+E13	Die:T176 Victim:T170
+T177	PER 4042 4045	her
+T178	PER 3985 3987	He
+T179	ORG 3998 4010	the hospital
+T180	PER 4064 4087	the attending physician
+T181	PER 4122 4125	She
+T182	Die 4126 4130	died
+E14	Die:T182 Victim:T181
+T183	PER 4165 4178	Mr. McCormick
+T184	PER 4165 4168	Mr.
+T185	PER 4188 4189	I
+T186	PER 4198 4201	you
+T187	PER 4244 4289	JOHN MCCORMICK , FATHER OF MALPRACTICE VICTIM
+T188	PER 4311 4317	father
+T189	PER 4330 4332	my
+T190	PER 4330 4339	my family
+T191	PER 4290 4303	Mr. President
+T192	PER 4290 4293	Mr.
+T193	PER 4321 4327	father
+T194	PER 4409 4415	BEGALA
+T195	PER 4423 4425	he
+T196	PER 4474 4476	he
+T197	PER 4441 4454	our president
+T198	GPE 4441 4444	our
+T199	PER 4495 4498	You
+T200	PER 4538 4548	these guys
+T201	PER 4506 4514	Mr. Bush
+T202	PER 4506 4509	Mr.
+T203	PER 4518 4532	President Bush
+T204	PER 4518 4527	President
+T205	PER 4650 4663	his dead baby
+T206	PER 4603 4619	a Lottery winner
+T207	PER 4650 4653	his
+T208	PER 4623 4626	you
+T209	Die 4654 4658	dead
+E15	Die:T209 Victim:T205
+T210	PER 4666 4675	PALMISANO
+T211	PER 4733 4741	patients
+T212	PER 4750 4754	they
+T213	TIM 4687 4694	current
+T214	ORG 4783 4815	The American Medical Association
+T215	ORG 4910 4948	the National Patient Safety Foundation
+T216	ORG 4899 4901	we
+T217	Start-Org 4902 4909	founded
+E16	Start-Org:T217 Org:T215 Agent:T216
+T218	TIM 4955 4962	current
+T219	ORG 5061 5080	the emergency rooms
+T220	ORG 5095 5109	trauma centers
+T221	PER 5124 5138	pregnant women
+T222	PER 5151 5179	a doctor to deliver the baby
+T223	PER 5182 5207	a boy knocked unconscious
+T224	ORG 5034 5036	we
+T225	TIM 5049 5052	now
+T226	PER 5171 5179	the baby
+T227	GPE 5233 5246	another state
+T228	Transport 5218 5229	transported
+E17	Transport:T228 Artifact:T223 Destination:T227
+T229	End-Org 5114 5121	closing
+E18	End-Org:T229 Org:T219 Org:T220 Time-Holds:T225
+T230	Injure 5188 5195	knocked
+E19	Injure:T230 Victim:T223
+T231	TIM 5265 5270	today
+T232	GPE 5364 5377	the community
+T233	PER 5249 5264	Another witness
+T234	PER 5296 5299	her
+T235	PER 5296 5307	her husband
+T236	PER 5337 5377	neurosurgeons available in the community
+T237	TIM 5420 5429	that time
+T238	PER 5380 5391	The patient
+T239	Transport 5402 5412	airavacked
+E20	Transport:T239 Artifact:T238
+T240	PER 5476 5482	BEGALA
+T241	PER 5512 5513	I
+T242	PER 5529 5538	PALMISANO
+T243	PER 5545 5551	BEGALA
+T244	PER 5587 5600	Mr. McCormick
+T245	PER 5587 5590	Mr.
+T246	PER 5556 5557	I
+T247	PER 5568 5571	you
+T248	PER 5655 5658	him
+T249	PER 5664 5667	his
+T250	PER 5612 5615	Who
+T251	PER 5620 5623	you
+T252	NUM 5692 5701	$ 250,000
+T253	PER 5626 5629	who
+T254	PER 5633 5646	our president
+T255	PER 5718 5725	a child
+T256	GPE 5633 5636	our
+T257	Die 5710 5714	loss
+E21	Die:T257 Victim:T255
+T258	PER 5728 5737	PALMISANO
+T259	PER 5855 5869	the physicians
+T260	PER 5920 5930	physicians
+T261	PER 5893 5901	patients
+T262	PER 5934 5939	their
+T263	PER 5824 5832	everyone
+T264	GPE 5788 5790	we
+T265	ORG 6009 6017	Congress
+T266	TIM 6018 6021	now
+T267	GPE 5973 5983	California
+T268	GPE 6164 6175	Los Angeles
+T269	PER 6105 6132	obstetricians in California
+T270	PER 6208 6212	they
+T271	GPE 6090 6100	California
+T272	GPE 6122 6132	California
+T273	GPE 6200 6205	Miami
+T274	LOC 6183 6196	South Florida
+T275	NUM 6142 6144	55
+T276	NUM 6147 6149	57
+T277	NUM 6152 6160	$ 60,000
+T278	NUM 6221 6230	$ 210,000
+T279	Fine 6217 6220	pay
+E22	Fine:T279 Entity:T270 Money:T278 Place:T273
+T280	Fine 6138 6141	pay
+E23	Fine:T280 Entity:T269 Money:T275 Money:T276 Money:T277 Place:T268
+T281	PER 6257 6262	NADER
+T282	GPE 6274 6284	California
+T283	GPE 6285 6289	they
+T284	ORG 6309 6326	insurance company
+T285	GPE 6351 6358	Florida
+T286	GPE 6361 6365	they
+T287	PER 6535 6558	the state medical board
+T288	PER 6458 6461	you
+T289	PER 6438 6466	doctors that are -- you know
+T290	PER 6446 6450	that
+T291	PER 6507 6511	they
+T292	GPE 6400 6411	some states
+T293	GPE 6539 6544	state
+T294	TIM 6493 6502	ten years
+T295	Fine 6482 6489	payouts
+E24	Fine:T295 Place:T292 Time-Within:T294
+T296	PER 6582 6606	5 percent of the doctors
+T297	PER 6655 6659	Paul
+T298	NUM 6582 6591	5 percent
+T299	NUM 6627 6637	55 percent
+T300	PER 6570 6573	you
+T301	PER 6561 6562	I
+T302	Fine 6645 6652	payoffs
+E25	Fine:T302 Entity:T296
+T303	PER 6677 6758	a small percentage of doctors that are bad , incompetent , indifferent , whatever
+T304	PER 6707 6711	that
+T305	PER 6761 6765	They
+T306	GPE 6860 6865	state
+T307	ORG 6798 6805	the AMA
+T308	PER 6902 6911	PALMISANO
+T309	PER 6912 6913	I
+T310	ORG 6940 6975	The National Practitioner Data Bank
+T311	ORG 7013 7015	it
+T312	ORG 6979 7008	the source of the information
+T313	TIM 7031 7036	today
+T314	ORG 7054 7086	the Government Accounting Office
+T315	ORG 7121 7123	It
+T316	ORG 7207 7225	different insurers
+T317	PER 7154 7167	one physician
+T318	PER 7233 7251	the same physician
+T319	Fine 7226 7229	pay
+E26	Fine:T319 Entity:T318
+T320	Sue 7199 7204	claim
+E27	Sue:T320 Defendant:T317
+T321	Sue 7277 7282	claim
+E28	Sue:T321 Defendant:T318
+T322	Sue 7139 7145	claims
+E29	Sue:T322 Defendant:T317
+T323	ORG 7285 7287	It
+T324	PER 7322 7335	obstetricians
+T325	PER 7355 7373	emergency medicine
+T326	PER 7338 7351	neurosurgeons
+T327	PER 7313 7317	they
+T328	ORG 7376 7378	It
+T329	PER 7475 7493	every neurosurgeon
+T330	LOC 7413 7426	South Florida
+T331	LOC 7432 7445	South Florida
+T332	TIM 7400 7409	Right now
+T333	Sue 7503 7507	sued
+E30	Sue:T333 Defendant:T329 Place:T331
+T334	LOC 7572 7585	South Florida
+T335	PER 7546 7560	a neurosurgeon
+T336	Sue 7532 7537	suits
+E31	Sue:T336 Defendant:T335 Place:T334
+T337	PER 7596 7601	these
+T338	PER 7602 7613	bad doctors
+T339	PER 7616 7618	We
+T340	PER 7641 7643	we
+T341	PER 7672 7688	no obstetricians
+T342	PER 7653 7669	no neurosurgeons
+T343	PER 7628 7638	no doctors
+T344	PER 7693 7698	NOVAK
+T345	ORG 7699 7701	We
+T346	PER 7728 7733	NADER
+T347	PER 7740 7744	they
+T348	PER 7749 7760	bad doctors

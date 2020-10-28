@@ -1,0 +1,219 @@
+T1	TIM 31 58	2003-05-04T12 :00:00 -05:00
+T2	PER 179 186	BLITZER
+T3	PER 235 237	my
+T4	TIM 248 261	earlier today
+T5	TIM 228 231	now
+T6	ORG 218 220	We
+T7	PER 267 302	the United States defense secretary
+T8	PER 305 320	Donald Rumsfeld
+T9	GPE 271 284	United States
+T10	PER 351 358	BLITZER
+T11	PER 359 360	I
+T12	GPE 446 467	the Syrian government
+T13	GPE 450 456	Syrian
+T14	PER 400 403	you
+T15	PER 523 526	you
+T16	LOC 503 517	an open border
+T17	PER 487 493	Iraqis
+T18	Attack 377 380	war
+E1	Attack:T18
+T19	Attack 394 397	war
+E2	Attack:T19
+T20	TIM 591 594	now
+T21	ORG 615 620	state
+T22	PER 598 620	the secretary of state
+T23	PER 637 651	Bashar al-Asad
+T24	Meet 624 631	meeting
+E3	Meet:T24 Entity:T22 Entity:T23
+T25	PER 654 662	RUMSFELD
+T26	PER 670 671	I
+T27	PER 782 785	you
+T28	TIM 724 736	this morning
+T29	PER 695 696	I
+T30	PER 774 775	I
+T31	PER 707 723	Secretary Powell
+T32	PER 707 716	Secretary
+T33	Phone-Write 697 703	talked
+E4	Phone-Write:T33 Entity:T29 Entity:T31 Time-Within:T28
+T34	PER 835 837	my
+T35	PER 824 826	He
+T36	PER 908 911	him
+T37	PER 888 901	the president
+T38	PER 958 960	We
+T39	PER 991 994	You
+T40	PER 1046 1053	BLITZER
+T41	TIM 1058 1067	right now
+T42	GPE 1098 1103	Syria
+T43	GPE 1115 1119	they
+T44	GPE 1194 1198	them
+T45	PER 1068 1071	you
+T46	PER 1185 1188	you
+T47	Attack 1139 1148	terrorism
+E5	Attack:T47
+T48	PER 1209 1217	RUMSFELD
+T49	GPE 1230 1234	they
+T50	PER 1218 1219	I
+T51	TIM 1417 1427	the future
+T52	GPE 1317 1322	there
+T53	GPE 1335 1339	them
+T54	GPE 1373 1377	them
+T55	PER 1279 1280	I
+T56	PER 1291 1307	Secretary Powell
+T57	PER 1291 1300	Secretary
+T58	GPE 1443 1447	they
+T59	PER 1433 1435	my
+T60	GPE 1500 1504	they
+T61	PER 1550 1557	BLITZER
+T62	PER 1793 1797	them
+T63	LOC 1749 1771	Guantanamo Bay in Cuba
+T64	GPE 1767 1771	Cuba
+T65	ORG 1575 1580	state
+T66	PER 1593 1596	you
+T67	PER 1558 1580	The secretary of state
+T68	GPE 1730 1734	U.S.
+T69	FAC 1726 1771	the U.S. Naval base at Guantanamo Bay in Cuba
+T70	PER 1667 1680	the prisoners
+T71	PER 1708 1771	those detained at the U.S. Naval base at Guantanamo Bay in Cuba
+T72	PER 1774 1797	about 600 or so of them
+T73	Phone-Write 1599 1605	letter
+E6	Phone-Write:T73 Entity:T67 Entity:T66
+T74	PER 1857 1874	these individuals
+T75	PER 1877 1885	RUMSFELD
+T76	PER 1886 1887	I
+T77	PER 1944 1946	me
+T78	PER 1935 1937	he
+T79	Phone-Write 1938 1943	wrote
+E7	Phone-Write:T79 Entity:T78 Entity:T77
+T80	PER 1955 1962	BLITZER
+T81	PER 1980 1982	me
+T82	PER 1992 2000	RUMSFELD
+T83	PER 2091 2166	all these FBI and Department of Justice and CIA and DIA , and what have you
+T84	ORG 2054 2066	inter-agency
+T85	PER 2001 2002	I
+T86	PER 2023 2025	me
+T87	ORG 2135 2138	CIA
+T88	ORG 2143 2146	DIA
+T89	ORG 2101 2104	FBI
+T90	ORG 2109 2130	Department of Justice
+T91	PER 2163 2166	you
+T92	PER 2014 2016	he
+T93	PER 2195 2210	these detainees
+T94	PER 2257 2261	they
+T95	PER 2083 2085	we
+T96	Phone-Write 2017 2022	wrote
+E8	Phone-Write:T96 Entity:T92 Entity:T86
+T97	PER 2373 2374	I
+T98	PER 2363 2368	Colin
+T99	PER 2403 2413	both of us
+T100	LOC 2597 2602	Gitmo
+T101	LOC 2608 2629	Guantanamo Bay , Cuba
+T102	GPE 2625 2629	Cuba
+T103	ORG 2748 2760	inter-agency
+T104	PER 2728 2743	those people.So
+T105	PER 2576 2646	foreign nationals in Gitmo , in Guantanamo Bay , Cuba , being detained
+T106	ORG 2485 2508	the Department of State
+T107	GPE 2457 2478	a number of countries
+T108	GPE 2548 2563	those countries
+T109	GPE 2566 2570	that
+T110	GPE 2653 2668	those countries
+T111	GPE 2712 2716	they
+T112	PER 2808 2809	I
+T113	PER 2798 2803	Colin
+T114	PER 2885 2892	BLITZER
+T115	PER 2897 2899	me
+T116	PER 2953 2954	I
+T117	PER 2959 2962	you
+T118	PER 2988 2998	the troops
+T119	PER 3001 3002	I
+T120	PER 3021 3040	General Schwarzkopf
+T121	PER 3021 3028	General
+T122	GPE 3073 3081	New York
+T123	LOC 3098 3102	Gulf
+T124	GPE 3058 3068	Washington
+T125	GPE 3199 3207	New York
+T126	GPE 3223 3232	elsewhere
+T127	PER 3121 3131	the troops
+T128	PER 3163 3167	they
+T129	PER 3112 3115	you
+T130	GPE 3210 3220	Washington
+T131	Transport 3168 3177	come back
+E9	Transport:T131 Artifact:T127 Artifact:T128
+T132	PER 3235 3243	RUMSFELD
+T133	PER 3274 3284	the troops
+T134	PER 3287 3310	the young men and women
+T135	PER 3371 3375	them
+T136	LOC 3482 3491	the world
+T137	GPE 3509 3551	the Iraqi people , who have been liberated
+T138	GPE 3513 3518	Iraqi
+T139	GPE 3528 3531	who
+T140	PER 3421 3429	his team
+T141	PER 3402 3416	General Franks
+T142	PER 3402 3409	General
+T143	PER 3421 3424	his
+T144	GPE 3462 3473	our country
+T145	GPE 3462 3465	our
+T146	GPE 3652 3658	Kuwait
+T147	TIM 3603 3607	1991
+T148	PER 3665 3669	they
+T149	PER 3683 3687	they
+T150	PER 3640 3644	them
+T151	GPE 3725 3742	the United States
+T152	Transport 3710 3721	coming back
+E10	Transport:T152 Artifact:T149 Destination:T151
+T153	ORG 3812 3823	that regime
+T154	Attack 3853 3856	war
+E11	Attack:T154
+T155	Attack 3860 3869	terrorism
+E12	Attack:T155
+T156	PER 3945 3954	terrorist
+T157	PER 3968 3977	terrorist
+T158	GPE 3968 4034	terrorist states that exist , that work with those global networks
+T159	GPE 3998 4002	that
+T160	GPE 3985 3989	that
+T161	ORG 3926 3963	a number of global terrorist networks
+T162	ORG 4013 4034	those global networks
+T163	GPE 3889 3891	We
+T164	PER 4138 4163	these young men and women
+T165	GPE 4057 4059	we
+T166	GPE 4170 4172	we
+T167	TIM 4225 4229	1991
+T168	PER 4238 4239	I
+T169	PER 4254 4255	I
+T170	TIM 4369 4373	1991
+T171	GPE 4333 4336	our
+T172	Attack 4337 4340	war
+E13	Attack:T172
+T173	PER 4376 4383	BLITZER
+T174	GPE 4406 4417	North Korea
+T175	GPE 4423 4440	the North Koreans
+T176	GPE 4448 4453	their
+T177	WEA 4454 4469	nuclear weapons
+T178	PER 4484 4492	RUMSFELD
+T179	PER 4499 4506	BLITZER
+T180	Attack 4524 4530	strike
+E14	Attack:T180
+T181	PER 4571 4579	RUMSFELD
+T182	PER 4589 4630	one who speculates about things like that
+T183	PER 4593 4596	who
+T184	PER 4580 4581	I
+T185	ORG 4668 4694	the Clinton administration
+T186	ORG 4789 4793	they
+T187	ORG 4837 4841	they
+T188	ORG 4865 4869	they
+T189	ORG 4938 4942	them
+T190	PER 4672 4679	Clinton
+T191	PER 4723 4756	the former secretaries of defense
+T192	PER 4763 4765	we
+T193	PER 4697 4712	Secretary Perry
+T194	PER 4697 4706	Secretary
+T195	ORG 4816 4824	military
+T196	TIM 4727 4733	former
+T197	TIM 4653 4662	the 1990s
+T198	JOB 4723 4756	the former secretaries of defense
+T199	PER 4633 4634	I
+T200	Meet 4772 4782	discussion
+E15	Meet:T200 Entity:T192
+T201	End-Position 4727 4733	former
+E16	End-Position:T201 Person:T191 Position:T198
+T202	PER 5015 5016	I
+T203	PER 5032 5045	the president

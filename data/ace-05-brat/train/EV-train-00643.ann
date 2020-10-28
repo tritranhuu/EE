@@ -1,0 +1,123 @@
+T1	TIM 39 58	2003-06-05 09:30:54
+T2	PER 86 96	sammy sosa
+T3	TIM 118 128	last night
+T4	FAC 104 117	wrigley field
+T5	GPE 203 210	chicago
+T6	PER 131 163	a major league baseball official
+T7	ORG 133 154	major league baseball
+T8	PER 274 284	sammy sosa
+T9	ORG 251 261	the league
+T10	ORG 333 336	our
+T11	PER 333 349	our gary tuchman
+T12	TIM 365 372	morning
+T13	PER 386 403	the cub 's player
+T14	PER 434 444	sammy sosa
+T15	PER 471 473	he
+T16	PER 512 515	his
+T17	PER 554 556	he
+T18	TIM 404 418	this afternoon
+T19	TIM 489 506	as early as today
+T20	ORG 386 393	the cub
+T21	PER 594 596	he
+T22	PER 670 673	him
+T23	PER 631 664	most of the fans on wrigley field
+T24	PER 639 664	the fans on wrigley field
+T25	TIM 578 588	last night
+T26	FAC 651 664	wrigley field
+T27	PER 713 728	not all of them
+T28	PER 746 756	sammy sosa
+T29	PER 761 763	he
+T30	PER 767 778	a hero here
+T31	PER 804 814	sammy sosa
+T32	PER 783 787	they
+T33	GPE 774 778	here
+T34	PER 817 819	he
+T35	PER 911 915	sosa
+T36	PER 950 952	he
+T37	PER 967 969	he
+T38	PER 998 1000	he
+T39	PER 1043 1045	he
+T40	PER 1108 1111	his
+T41	ORG 1075 1096	major league baseball
+T42	PER 1196 1229	a trained radiological technician
+T43	ORG 1232 1234	we
+T44	ORG 1317 1319	we
+T45	PER 1436 1438	we
+T46	PER 1443 1452	all human
+T47	PER 1457 1459	we
+T48	PER 1481 1487	nobody
+T49	LOC 1502 1512	this world
+T50	PER 1583 1593	sammy sosa
+T51	PER 1557 1559	we
+T52	TIM 1531 1541	last night
+T53	PER 1632 1634	he
+T54	ORG 1696 1712	the chicago cubs
+T55	PER 1723 1726	you
+T56	ORG 1793 1804	the yankees
+T57	PER 1825 1830	sammy
+T58	GPE 1815 1819	town
+T59	GPE 1769 1774	there
+T60	TIM 1775 1787	this weekend
+T61	Transport 1805 1811	coming
+E1	Transport:T61 Agent:T56 Destination:T58 Time-Within:T60
+T62	ORG 1864 1875	the yankees
+T63	ORG 1925 1929	they
+T64	TIM 1949 1958	the 1930s
+T65	ORG 1937 1945	the cubs
+T66	FAC 1889 1902	wrigley field
+T67	TIM 1909 1918	the 1930s
+T68	PER 1961 1965	sosa
+T69	PER 1995 1997	he
+T70	ORG 2056 2067	the yankees
+T71	PER 2030 2032	he
+T72	PER 2070 2072	he
+T73	GPE 2116 2123	chicago
+T74	PER 2100 2112	gary tuchman
+T75	GPE 2231 2235	d.c.
+T76	PER 2156 2160	jack
+T77	PER 2147 2149	's
+T78	PER 2223 2225	us
+T79	PER 2202 2206	bill
+T80	TIM 2190 2197	the day
+T81	PER 2246 2253	william
+T82	PER 2261 2265	your
+T83	PER 2277 2281	jack
+T84	PER 2302 2304	us
+T85	PER 2307 2321	martha stewart
+T86	PER 2365 2368	she
+T87	PER 2382 2385	she
+T88	Trial-Hearing 2347 2358	prosecution
+E2	Trial-Hearing:T88 Defendant:T85
+T89	GPE 2404 2412	new york
+T90	ORG 2468 2475	imclone
+T91	PER 2432 2446	martha stewart
+T92	PER 2397 2400	jim
+T93	PER 2415 2416	i
+T94	TIM 2451 2456	years
+T95	PER 2564 2603	moguls who strip the hopes of investors
+T96	PER 2571 2574	who
+T97	PER 2594 2603	investors
+T98	PER 2528 2539	prosecutors
+T99	PER 2549 2553	they
+T100	Trial-Hearing 2499 2510	prosecution
+E3	Trial-Hearing:T100 Defendant:T91 Prosecutor:T98
+T101	PER 2606 2610	ceos
+T102	PER 2695 2698	ceo
+T103	PER 2613 2619	sleaze
+T104	PER 2681 2685	them
+T105	PER 2841 2862	your believing public
+T106	PER 2715 2718	joe
+T107	GPE 2722 2730	michigan
+T108	PER 2750 2754	your
+T109	PER 2806 2809	you
+T110	PER 2841 2845	your
+T111	PER 2870 2873	you
+T112	Trial-Hearing 2733 2742	prosecute
+E4	Trial-Hearing:T112
+T113	PER 2932 2938	martha
+T114	PER 2949 2952	she
+T115	PER 2956 2970	a part of good
+T116	TIM 2945 2948	now
+T117	PER 2891 2895	jude
+T118	PER 2916 2919	eye
+T119	GPE 2901 2908	florida

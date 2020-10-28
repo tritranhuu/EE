@@ -1,0 +1,145 @@
+T1	TIM 40 60	2005-01-25T11 :08:00
+T2	PER 84 94	Will Vehrs
+T3	TIM 95 115	2005-01-25T11 :08:00
+T4	PER 116 119	Jim
+T5	PER 122 125	you
+T6	PER 130 189	not the only one mining the data on political contributions
+T7	Transfer-Money 176 189	contributions
+E1	Transfer-Money:T7
+T8	PER 290 304	Speaker Howell
+T9	ORG 290 311	Speaker Howell 's PAC
+T10	ORG 200 228	the blog sic semper tyrannis
+T11	ORG 200 208	the blog
+T12	PER 234 241	Addison
+T13	PER 272 311	the top donors to Speaker Howell 's PAC
+T14	PER 314 323	E M Risse
+T15	TIM 339 349	T11 :31:00
+T16	PER 358 362	Will
+T17	PER 350 353	Jim
+T18	PER 435 440	Baril
+T19	PER 389 424	the `` Northern Virginia Supporters
+T20	LOC 396 413	Northern Virginia
+T21	PER 514 516	he
+T22	PER 479 482	his
+T23	PER 525 530	their
+T24	PER 457 541	the folks who support his father-in-law on the condition he support their road plans
+T25	PER 467 470	who
+T26	PER 479 496	his father-in-law
+T27	FAC 531 535	road
+T28	Transfer-Money 471 478	support
+E2	Transfer-Money:T28 Giver:T24 Recipient:T26
+T29	PER 548 552	Paul
+T30	TIM 568 578	T12 :33:00
+T31	ORG 667 698	the Werkheiser campaign in NOVA
+T32	LOC 694 698	NOVA
+T33	PER 671 681	Werkheiser
+T34	PER 623 624	I
+T35	TIM 625 633	recently
+T36	TIM 741 750	THIS YEAR
+T37	PER 792 800	OPPONENT
+T38	PER 811 822	CHALLENGERS
+T39	PER 770 780	WERKHEISER
+T40	PER 989 1011	his incumbent opponent
+T41	PER 1014 1024	David Albo
+T42	PER 1037 1062	all challengers statewide
+T43	ORG 865 887	the House of Delegates
+T44	GPE 893 937	the 42nd District in southern Fairfax County
+T45	PER 833 848	Greg Werkheiser
+T46	PER 851 937	candidate for the House of Delegates from the 42nd District in southern Fairfax County
+T47	PER 989 992	his
+T48	LOC 914 937	southern Fairfax County
+T49	TIM 1144 1161	January 18 , 2005
+T50	ORG 1112 1140	the State Board of Elections
+T51	Transfer-Money 944 950	raised
+E3	Transfer-Money:T51 Recipient:T45
+T52	Transfer-Money 1066 1077	fundraising
+E4	Transfer-Money:T52 Recipient:T45 Recipient:T42
+T53	PER 1186 1198	his opponent
+T54	PER 1240 1244	Albo
+T55	PER 1164 1174	Werkheiser
+T56	PER 1186 1189	his
+T57	PER 1218 1228	Werkheiser
+T58	NUM 1229 1237	$ 81,615
+T59	NUM 1245 1253	$ 55,119
+T60	Transfer-Money 1175 1185	out-raised
+E5	Transfer-Money:T60 Money:T58 Money:T59 Recipient:T55 Recipient:T54
+T61	PER 1318 1330	his opponent
+T62	PER 1355 1359	Albo
+T63	TIM 1267 1270	now
+T64	PER 1256 1266	Werkheiser
+T65	PER 1318 1321	his
+T66	PER 1333 1343	Werkheiser
+T67	NUM 1344 1352	$ 50,017
+T68	NUM 1360 1368	$ 23,767
+T69	PER 1425 1429	Albo
+T70	PER 1369 1379	Werkheiser
+T71	PER 1407 1422	200 individuals
+T72	PER 1434 1459	8 individual contributors
+T73	Transfer-Money 1430 1433	had
+E6	Transfer-Money:T73 Giver:T72 Recipient:T69
+T74	Transfer-Money 1383 1396	contributions
+E7	Transfer-Money:T74 Giver:T71 Recipient:T70
+T75	PER 1479 1504	all challengers statewide
+T76	PER 1462 1472	Werkheiser
+T77	Transfer-Money 1514 1527	contributions
+E8	Transfer-Money:T77 Recipient:T76 Recipient:T75
+T78	GPE 1555 1591	The 42nd House of Delegates District
+T79	LOC 1598 1632	the southern tip of Fairfax County
+T80	GPE 1618 1632	Fairfax County
+T81	GPE 1736 1748	the district
+T82	GPE 1663 1675	the district
+T83	NUM 1635 1659	Nearly fifty-two percent
+T84	TIM 1773 1777	2001
+T85	PER 1686 1696	John Kerry
+T86	PER 1711 1731	Governor Mark Warner
+T87	PER 1711 1719	Governor
+T88	PER 1635 1675	Nearly fifty-two percent of the district
+T89	TIM 1700 1704	2004
+T90	Elect 1732 1735	won
+E9	Elect:T90 Person:T86 Entity:T81 Time-Within:T84
+T91	GPE 1834 1851	the 42nd District
+T92	PER 1783 1784	I
+T93	PER 1814 1916	so many citizens in the 42nd District who are voting with their pocketbooks for a change in leadership
+T94	PER 1852 1855	who
+T95	PER 1872 1877	their
+T96	Transfer-Money 1803 1810	support
+E10	Transfer-Money:T96 Giver:T93
+T97	ORG 1925 1927	we
+T98	GPE 2075 2078	our
+T99	GPE 2075 2108	our communities in Fairfax County
+T100	GPE 2109 2157	a better place to live , work and raise a family
+T101	PER 1979 1980	I
+T102	PER 2009 2010	I
+T103	PER 2042 2044	my
+T104	PER 2170 2180	Werkheiser
+T105	PER 2042 2054	my neighbors
+T106	PER 2149 2157	a family
+T107	GPE 2094 2108	Fairfax County
+T108	ORG 2210 2237	Greg Werkheiser 's campaign
+T109	PER 2210 2225	Greg Werkheiser
+T110	CTI 2255 2284	www.werkheiserfordelegate.com
+T111	PER 2337 2347	WERKHEISER
+T112	NUM 2379 2390	$ 81,615.42
+T113	Transfer-Money 2354 2367	contributions
+E11	Transfer-Money:T113 Money:T112
+T114	NUM 2407 2418	$ 67,814.09
+T115	Transfer-Money 2396 2404	received
+E12	Transfer-Money:T115 Money:T114
+T116	NUM 2438 2449	$ 13,801.33
+T117	NUM 2470 2481	$ 17,796.52
+T118	NUM 2490 2493	$ 0
+T119	NUM 2509 2520	$ 50,017.57
+T120	PER 2521 2525	ALBO
+T121	NUM 2557 2568	$ 55,119.75
+T122	Transfer-Money 2546 2554	received
+E13	Transfer-Money:T122 Money:T121
+T123	NUM 2585 2596	$ 55,119.75
+T124	Transfer-Money 2574 2582	received
+E14	Transfer-Money:T124 Money:T123
+T125	NUM 2616 2624	$ 400.00
+T126	NUM 2645 2656	$ 34,267.77
+T127	NUM 2665 2673	$ 10,500
+T128	PER 2685 2692	himself
+T129	Transfer-Money 2657 2662	Loans
+E15	Transfer-Money:T129 Money:T127 Recipient:T128
+T130	NUM 2714 2725	$ 23,767.77

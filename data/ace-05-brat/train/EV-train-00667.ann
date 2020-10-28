@@ -1,0 +1,36 @@
+T1	TIM 38 57	2003-06-04 09:42:13
+T2	PER 124 138	scott peterson
+T3	PER 74 87	laci peterson
+T4	PER 93 97	bill
+T5	PER 124 150	scott peterson 's attorney
+T6	CRM 239 245	murder
+T7	PER 230 235	scott
+T8	PER 163 176	laci peterson
+T9	Trial-Hearing 246 251	trial
+E1	Trial-Hearing:T9 Defendant:T7 Crime:T6
+T10	PER 265 271	anyone
+T11	PER 272 275	who
+T12	PER 254 257	she
+T13	TIM 351 360	yesterday
+T14	PER 333 341	peterson
+T15	PER 433 447	scott peterson
+T16	PER 366 373	a judge
+T17	FAC 345 350	court
+T18	PER 322 329	geragos
+T19	Arrest-Jail 451 457	arrest
+E2	Arrest-Jail:T19 Person:T15
+T20	CRM 487 536	the murder of his wife lace sand their unborn son
+T21	PER 520 525	their
+T22	PER 501 504	his
+T23	PER 460 468	peterson
+T24	PER 520 536	their unborn son
+T25	PER 501 509	his wife
+T26	PER 510 514	lace
+T27	Die 491 497	murder
+E3	Die:T27 Victim:T25 Victim:T24 Agent:T23
+T28	Trial-Hearing 478 483	trial
+E4	Trial-Hearing:T28 Defendant:T23 Crime:T20
+T29	ORG 547 549	us
+T30	PER 552 562	beth caras
+T31	TIM 570 577	morning
+T32	ORG 613 615	us

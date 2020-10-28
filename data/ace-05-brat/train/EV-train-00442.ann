@@ -1,0 +1,106 @@
+T1	TIM 41 60	2003-06-24 23:32:10
+T2	FAC 148 161	seven stories
+T3	PER 139 147	his baby
+T4	GPE 70 78	new york
+T5	CRM 89 105	attempted murder
+T6	PER 61 78	a man in new york
+T7	PER 139 142	his
+T8	Attack 130 138	throwing
+E1	Attack:T8 Attacker:T6 Place:T4 Target:T3
+T9	Charge-Indict 106 113	charges
+E2	Charge-Indict:T9 Defendant:T6 Place:T4 Crime:T5
+T10	PER 184 226	jordeena ginsburg from news 12 westchester
+T11	ORG 207 226	news 12 westchester
+T12	PER 284 313	ten months old miana williams
+T13	PER 327 330	she
+T14	PER 254 260	police
+T15	FAC 349 362	seventh floor
+T16	FAC 378 387	apartment
+T17	FAC 373 396	this apartment building
+T18	TIM 284 298	ten months old
+T19	Transport 314 320	landed
+E3	Transport:T19 Artifact:T12 Origin:T15
+T20	PER 399 407	the baby
+T21	PER 453 456	her
+T22	PER 472 475	her
+T23	PER 483 491	the baby
+T24	ORG 543 545	us
+T25	PER 483 499	the baby 's aunt
+T26	PER 546 549	she
+T27	PER 513 516	her
+T28	PER 574 577	she
+T29	PER 564 565	i
+T30	PER 605 608	she
+T31	PER 651 659	the girl
+T32	PER 635 650	willie williams
+T33	PER 651 669	the girl 's father
+T34	CRM 681 697	attempted murder
+T35	TIM 631 634	now
+T36	Charge-Indict 673 680	qharthd
+E4	Charge-Indict:T36 Defendant:T32 Crime:T34
+T37	PER 781 789	the baby
+T38	PER 781 799	the baby 's mother
+T39	PER 802 809	jasmine
+T40	PER 750 758	williams
+T41	TIM 715 742	around 11:30 saturday night
+T42	PER 830 833	her
+T43	PER 844 847	she
+T44	PER 812 814	he
+T45	PER 901 904	her
+T46	PER 931 934	her
+T47	PER 958 961	her
+T48	PER 970 973	her
+T49	PER 878 880	he
+T50	PER 908 911	his
+T51	VEH 908 915	his car
+T52	PER 869 873	cops
+T53	FAC 970 978	her home
+T54	Transport 950 957	brought
+E5	Transport:T54 Vehicle:T51 Artifact:T47 Agent:T49 Destination:T53
+T55	PER 1016 1028	her daughter
+T56	PER 1016 1019	her
+T57	PER 1005 1007	he
+T58	PER 994 1000	police
+T59	PER 1059 1067	the baby
+T60	PER 1081 1083	it
+T61	PER 1129 1138	the child
+T62	PER 1031 1041	the father
+T63	FAC 1102 1119	the seventh floor
+T64	PER 1165 1173	the baby
+T65	ORG 1207 1213	police
+T66	PER 1165 1183	the baby 's mother
+T67	Phone-Write 1199 1203	call
+E6	Phone-Write:T67 Entity:T65 Entity:T66
+T68	PER 1275 1284	the child
+T69	PER 1313 1316	her
+T70	PER 1222 1225	she
+T71	PER 1256 1264	williams
+T72	PER 1245 1251	police
+T73	Attack 1307 1312	threw
+E7	Attack:T73 Attacker:T71 Target:T69
+T74	PER 1420 1423	you
+T75	WEA 1380 1395	a kitchen knife
+T76	PER 1350 1358	the baby
+T77	PER 1350 1368	the baby 's mother
+T78	PER 1433 1441	williams
+T79	PER 1468 1470	me
+T80	PER 1339 1345	police
+T81	Die 1463 1467	kill
+E8	Die:T81 Instrument:T75 Victim:T79 Agent:T77
+T82	FAC 1556 1568	the hospital
+T83	PER 1526 1534	the baby
+T84	PER 1544 1552	the baby
+T85	FAC 1500 1510	downstairs
+T86	PER 1493 1495	he
+T87	Transport 1539 1543	took
+E9	Transport:T87 Artifact:T84 Agent:T86 Destination:T82
+T88	Transport 1496 1499	ran
+E10	Transport:T88 Artifact:T86 Destination:T85
+T89	Injure 1482 1490	bleeding
+E11	Injure:T89 Victim:T86
+T90	FAC 1631 1650	mem norial hospital
+T91	FAC 1651 1656	where
+T92	PER 1619 1627	the baby
+T93	PER 1586 1589	his
+T94	PER 1606 1614	williams
+T95	ORG 1571 1577	police

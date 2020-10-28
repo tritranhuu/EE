@@ -1,0 +1,49 @@
+T1	TIM 40 60	2005-02-18T08 :48:00
+T2	PER 87 97	Will Vehrs
+T3	TIM 98 118	2005-02-18T08 :48:00
+T4	JOB 157 187	the job of State Archaeologist
+T5	TIM 127 131	1996
+T6	End-Position 146 156	eliminated
+E1	End-Position:T6 Position:T4 Time-Within:T5
+T7	ORG 209 228	the Virginian-Pilot
+T8	GPE 370 379	the state
+T9	TIM 331 335	2007
+T10	PER 360 363	who
+T11	GPE 321 330	Jamestown
+T12	JOB 424 443	State Archaeologist
+T13	ORG 519 557	the Department of Historical Resources
+T14	PER 415 443	The last State Archaeologist
+T15	PER 446 463	Catherine Slusser
+T16	End-Position 419 423	last
+E2	End-Position:T16 Person:T15 Position:T12
+T17	GPE 644 652	Virginia
+T18	PER 640 662	Few Virginia employees
+T19	PER 560 563	She
+T20	PER 703 710	John K.
+T21	TIM 726 736	T11 :44:00
+T22	PER 744 753	taxpayers
+T23	ORG 771 783	The Assembly
+T24	ORG 831 835	They
+T25	PER 864 866	us
+T26	PER 867 885	a certified rodent
+T27	PER 888 897	Jim Bacon
+T28	TIM 913 923	T12 :35:00
+T29	GPE 947 955	Virginia
+T30	JOB 947 978	Virginia 's first poet laureate
+T31	PER 924 925	I
+T32	PER 935 942	John K.
+T33	PER 947 978	Virginia 's first poet laureate
+T34	Nominate 926 934	nominate
+E3	Nominate:T34 Person:T32 Agent:T31 Position:T30
+T35	PER 981 994	Steven Sisson
+T36	TIM 1010 1020	T15 :27:00
+T37	PER 1021 1034	Governor Mark
+T38	PER 1021 1029	Governor
+T39	PER 1057 1071	those citizens
+T40	PER 1081 1085	them
+T41	PER 1095 1110	the anti-taxers
+T42	PER 1128 1141	Governor Mark
+T43	PER 1128 1136	Governor
+T44	PER 1153 1163	Will Vehrs
+T45	TIM 1179 1189	T17 :51:00
+T46	PER 1190 1193	Jim

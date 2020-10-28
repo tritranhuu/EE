@@ -1,0 +1,34 @@
+T1	TIM 38 57	2003-04-28 14:27:44
+T2	PER 58 99	an international tourist in new york city
+T3	PER 112 115	his
+T4	FAC 136 146	a hospital
+T5	GPE 86 99	new york city
+T6	PER 198 205	the man
+T7	PER 206 209	who
+T8	PER 149 165	health officials
+T9	PER 170 174	they
+T10	PER 259 278	the unnamed tourist
+T11	ORG 283 289	knicks
+T12	PER 245 254	officials
+T13	PER 398 401	you
+T14	GPE 480 502	27 different countries
+T15	LOC 411 420	the globe
+T16	GPE 525 530	where
+T17	GPE 513 524	the country
+T18	GPE 505 510	china
+T19	Die 618 624	deaths
+E1	Die:T19 Place:T18
+T20	GPE 635 652	the united states
+T21	Die 684 690	deaths
+E2	Die:T21
+T22	GPE 765 782	another 21 states
+T23	GPE 729 738	17 states
+T24	TIM 897 906	last year
+T25	TIM 956 966	every year
+T26	PER 881 891	284 people
+T27	PER 938 951	36,000 people
+T28	GPE 861 878	the united states
+T29	Die 892 896	died
+E3	Die:T29 Victim:T26 Place:T28 Time-Within:T24
+T30	Die 952 955	die
+E4	Die:T30 Place:T28 Time-Within:T25 Victim:T27

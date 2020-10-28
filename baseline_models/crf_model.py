@@ -7,7 +7,7 @@ from sklearn_crfsuite.metrics import flat_classification_report
 from vncorenlp import VnCoreNLP
 
 class CRFModel():
-    def __init__(self, sent):
+    def __init__(self, train, dev, test):
         self.model = CRF(algorithm='lbfgs',
                         c1=0.1,
                         c2=0.1,

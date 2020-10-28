@@ -1,0 +1,51 @@
+T1	TIM 39 58	2003-04-04 16:41:56
+T2	ORG 59 61	we
+T3	ORG 108 110	we
+T4	ORG 139 141	we
+T5	GPE 77 82	iraqi
+T6	PER 116 119	you
+T7	TIM 67 70	now
+T8	GPE 187 194	baghdad
+T9	TIM 228 248	the last few moments
+T10	ORG 274 276	we
+T11	WEA 294 312	anti-aircraft guns
+T12	WEA 328 332	they
+T13	WEA 262 268	tracer
+T14	Attack 313 319	firing
+E1	Attack:T14 Instrument:T11
+T15	TIM 428 435	tonight
+T16	GPE 386 393	baghdad
+T17	Attack 423 427	this
+E2	Attack:T17 Place:T16
+T18	ORG 458 460	we
+T19	TIM 503 523	the last few moments
+T20	Attack 447 457	explosions
+E3	Attack:T20
+T21	PER 552 555	you
+T22	TIM 573 581	just now
+T23	ORG 584 586	we
+T24	GPE 608 616	the city
+T25	GPE 634 637	its
+T26	ORG 667 669	we
+T27	ORG 736 738	we
+T28	GPE 905 918	the coalition
+T29	GPE 787 796	coalition
+T30	FAC 833 837	what
+T31	FAC 842 887	formerly saddam hussein international airport
+T32	FAC 919 948	baghdad international airport
+T33	TIM 890 893	now
+T34	PER 787 803	coalition forces
+T35	GPE 776 784	the city
+T36	Transfer-Ownership 822 829	control
+E4	Transfer-Ownership:T36 Artifact:T30 Buyer:T34
+T37	LOC 1024 1068	the area immediately surrounding the airport
+T38	GPE 955 968	the coalition
+T39	GPE 996 1000	they
+T40	FAC 1057 1068	the airport
+T41	TIM 1139 1158	well into the night
+T42	GPE 1117 1124	baghdad
+T43	GPE 1127 1132	where
+T44	ORG 1161 1163	we
+T45	ORG 1265 1267	we
+T46	PER 1237 1240	you
+T47	GPE 1221 1226	there

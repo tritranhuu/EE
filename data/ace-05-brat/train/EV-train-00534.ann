@@ -1,0 +1,34 @@
+T1	TIM 38 57	2003-06-20 09:09:14
+T2	PER 58 94	convicted rapist and max factor heir
+T3	PER 58 108	convicted rapist and max factor heir andrew luster
+T4	ORG 79 89	max factor
+T5	GPE 120 130	california
+T6	Convict 58 67	convicted
+E1	Convict:T6 Defendant:T3
+T7	PER 133 139	luster
+T8	PER 196 199	his
+T9	TIM 164 173	yesterday
+T10	TIM 208 215	tuesday
+T11	GPE 219 227	american
+T12	GPE 152 163	los angeles
+T13	GPE 179 185	mexico
+T14	PER 219 243	american bounlty hunters
+T15	Transport 140 148	returned
+E2	Transport:T15 Destination:T12 Origin:T13 Artifact:T7 Time-Within:T9
+T16	Arrest-Jail 200 207	capture
+E3	Arrest-Jail:T16 Person:T7 Agent:T14 Time-Within:T10
+T17	PER 246 252	luster
+T18	PER 273 276	his
+T19	PER 318 329	three women
+T20	CRM 298 329	raping and drugging three women
+T21	TIM 286 293	january
+T22	Trial-Hearing 277 282	trial
+E4	Trial-Hearing:T22 Defendant:T17 Crime:T20 Time-Within:T21
+T23	Attack 298 317	raping and drugging
+E5	Attack:T23 Victim:T19 Agent:T17
+T24	PER 332 334	he
+T25	FAC 381 387	prison
+T26	TIM 368 377	124 years
+T27	SEN 368 387	124 years in prison
+T28	Sentence 339 348	sentenced
+E6	Sentence:T28 Defendant:T24 Sentence:T27

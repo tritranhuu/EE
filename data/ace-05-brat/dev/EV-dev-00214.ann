@@ -1,0 +1,135 @@
+T1	TIM 38 57	2003-06-11 10:42:55
+T2	GPE 100 109	jerusalem
+T3	ORG 58 60	we
+T4	ORG 90 92	us
+T5	GPE 154 159	there
+T6	ORG 112 114	we
+T7	Attack 144 153	explosion
+E1	Attack:T7 Place:T5
+T8	ORG 241 243	we
+T9	TIM 203 220	the last few days
+T10	TIM 167 176	right now
+T11	Attack 224 231	violent
+E2	Attack:T11 Time-Within:T9
+T12	VEH 354 359	a bus
+T13	ORG 335 337	we
+T14	Attack 372 380	exploded
+E3	Attack:T14 Target:T12
+T15	LOC 410 431	indown town jerusalem
+T16	ORG 383 385	we
+T17	ORG 437 439	we
+T18	PER 445 455	mike hanna
+T19	GPE 496 505	jerusalem
+T20	ORG 493 512	or jerusalem bureau
+T21	ORG 550 552	us
+T22	ORG 493 495	or
+T23	PER 493 518	or jerusalem bureau chief
+T24	PER 521 524	who
+T25	PER 482 492	mike hanna
+T26	TIM 565 576	minutes ago
+T27	GPE 624 629	there
+T28	PER 704 713	professor
+T29	ORG 663 665	we
+T30	PER 680 684	mike
+T31	PER 936 950	several people
+T32	GPE 907 912	there
+T33	ORG 861 877	associated press
+T34	ORG 807 809	we
+T35	ORG 854 856	us
+T36	ORG 917 919	we
+T37	TIM 814 817	now
+T38	Die 961 967	killed
+E4	Die:T38 Victim:T31 Place:T32
+T39	Attack 897 906	explosion
+E5	Attack:T39 Place:T32 Target:T31
+T40	ORG 1011 1031	the associated press
+T41	ORG 991 993	we
+T42	PER 1064 1090	our reporters in jerusalem
+T43	GPE 1081 1090	jerusalem
+T44	ORG 1034 1036	we
+T45	ORG 1064 1067	our
+T46	ORG 1099 1101	us
+T47	Attack 1216 1223	violent
+E6	Attack:T47
+T48	ORG 1381 1394	islamic jihad
+T49	PER 1360 1394	coordinated group of islamic jihad
+T50	PER 1305 1333	a number of israeli soldiers
+T51	PER 1250 1253	you
+T52	VEH 1615 1625	helicopter
+T53	VEH 1643 1656	his motorcade
+T54	WEA 1615 1632	helicopter rocket
+T55	GPE 1530 1541	palestinian
+T56	PER 1571 1583	a top leader
+T57	PER 1599 1602	who
+T58	PER 1586 1598	mr. rantissi
+T59	PER 1643 1646	his
+T60	GPE 1317 1324	israeli
+T61	ORG 1406 1435	al ak satisfy martyr brigades
+T62	ORG 1442 1447	hamas
+T63	PER 1511 1517	sharon
+T64	PER 1526 1552	the palestinian leadership
+T65	TIM 1235 1244	last week
+T66	Attack 1633 1639	attack
+E7	Attack:T66 Attacker:T63 Target:T56 Target:T53 Instrument:T54
+T67	Attack 1279 1285	strike
+E8	Attack:T67 Time-Within:T65 Attacker:T49 Attacker:T61 Attacker:T62 Target:T50
+T68	Die 1334 1340	killed
+E9	Die:T68 Victim:T50 Agent:T49 Agent:T61 Agent:T62
+T69	PER 1669 1679	two others
+T70	PER 1680 1683	who
+T71	LOC 1689 1694	there
+T72	Die 1699 1702	die
+E10	Die:T72 Victim:T69 Place:T71
+T73	ORG 1771 1775	ware
+T74	TIM 1710 1713	now
+T75	TIM 1756 1768	this morning
+T76	TIM 1735 1746	the weekend
+T77	Attack 1846 1852	strike
+E11	Attack:T77 Time-Within:T75
+T78	ORG 1868 1870	we
+T79	PER 1928 1931	you
+T80	GPE 1969 1978	jerusalem
+T81	VEH 1960 1978	a bus in jerusalem
+T82	LOC 1982 2010	ventral -- central jerusalem
+T83	ORG 1916 1918	we
+T84	Attack 1947 1956	explosion
+E12	Attack:T84 Target:T81
+T85	PER 2049 2063	several people
+T86	PER 2013 2031	a number of people
+T87	Attack 2084 2093	explosion
+E13	Attack:T87 Target:T86 Target:T85
+T88	Die 2032 2038	killed
+E14	Die:T88 Victim:T86 Victim:T85
+T89	Die 2070 2076	killed
+E15	Die:T89 Victim:T85
+T90	ORG 2143 2145	we
+T91	ORG 2173 2176	our
+T92	ORG 2208 2210	us
+T93	PER 2173 2187	our mike hanna
+T94	PER 2190 2193	who
+T95	Phone-Write 2218 2223	phone
+E16	Phone-Write:T95 Entity:T93
+T96	PER 2395 2398	you
+T97	GPE 2252 2261	jerusalem
+T98	FAC 2265 2275	the bureau
+T99	PER 2226 2227	i
+T100	ORG 2374 2376	we
+T101	PER 2236 2240	mike
+T102	PER 2338 2340	he
+T103	PER 2354 2358	behe
+T104	Phone-Write 2288 2298	telephones
+E17	Phone-Write:T104 Place:T98 Entity:T101
+T105	GPE 2492 2501	jerusalem
+T106	ORG 2401 2403	we
+T107	ORG 2430 2432	we
+T108	ORG 2445 2447	we
+T109	PER 2507 2517	mike hanna
+T110	PER 2532 2543	new analyst
+T111	PER 2552 2554	he
+T112	PER 2625 2628	him
+T113	PER 2595 2606	the traders
+T114	TIM 2680 2692	this morning
+T115	PER 2756 2759	you
+T116	PER 2719 2722	you
+T117	ORG 2748 2750	we
+T118	ORG 2797 2806	evergreen

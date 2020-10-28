@@ -1,0 +1,115 @@
+T1	TIM 35 55	2004-12-06T07 :33:00
+T2	PER 87 98	Mark Backer
+T3	TIM 99 119	2004-12-06T07 :33:00
+T4	TIM 180 189	right now
+T5	PER 120 121	I
+T6	PER 157 159	my
+T7	PER 205 207	me
+T8	ORG 252 258	Auburn
+T9	ORG 297 303	Auburn
+T10	ORG 288 317	no other Auburn football team
+T11	ORG 248 272	the Auburn Football team
+T12	PER 225 226	I
+T13	ORG 342 346	They
+T14	ORG 356 361	their
+T15	ORG 406 411	their
+T16	TIM 393 397	1987
+T17	ORG 377 380	SEC
+T18	ORG 418 421	SEC
+T19	ORG 434 448	the conference
+T20	VEH 571 576	plane
+T21	TIM 492 502	A year ago
+T22	PER 607 669	an over-zealous and too empowered booster with a fat checkbook
+T23	PER 537 546	the coach
+T24	ORG 505 516	the program
+T25	End-Position 598 603	fired
+E1	End-Position:T25 Person:T23 Entity:T24 Time-Within:T21
+T26	ORG 689 697	the team
+T27	TIM 678 686	that day
+T28	TIM 803 833	the time the games were played
+T29	ORG 789 799	the top 15
+T30	FAC 878 897	Jordan-Hare Stadium
+T31	ORG 765 833	four teams that were in the top 15 at the time the games were played
+T32	ORG 776 780	that
+T33	TIM 754 757	now
+T34	ORG 744 748	They
+T35	TIM 903 923	championship weekend
+T36	ORG 926 939	the big three
+T37	ORG 983 987	UCLA
+T38	ORG 1133 1137	UCLA
+T39	ORG 974 1010	a shitty UCLA team with a 6-5 record
+T40	PER 1044 1147	an official who blew dead a clear and obvious fumble that would have been returned for a UCLA touchdown
+T41	PER 1056 1059	who
+T42	ORG 953 956	USC
+T43	ORG 1217 1225	Colorado
+T44	ORG 1205 1257	a four-loss Colorado team that ca n't throw the ball
+T45	ORG 1175 1185	conference
+T46	ORG 1150 1158	Oklahoma
+T47	ORG 1169 1171	it
+T48	PER 1315 1321	anyone
+T49	TIM 1471 1484	the same year
+T50	ORG 1331 1337	Auburn
+T51	ORG 1428 1435	college
+T52	ORG 1455 1461	a team
+T53	ORG 1345 1366	15th ranked Tennessee
+T54	ORG 1609 1615	Auburn
+T55	PER 1553 1563	Kody Bliss
+T56	ORG 1650 1652	UT
+T57	ORG 1688 1694	Auburn
+T58	PER 1781 1794	his receivers
+T59	FAC 1755 1769	the ball field
+T60	PER 1722 1736	Jason Campbell
+T61	PER 1781 1784	his
+T62	PER 1810 1812	he
+T63	PER 1832 1835	his
+T64	PER 1832 1839	his own
+T65	PER 1899 1902	his
+T66	Attack 1940 1948	assaults
+E2	Attack:T66 Target:T65
+T67	Attack 1868 1872	hits
+E3	Attack:T67 Target:T65
+T68	Attack 1891 1895	hits
+E4	Attack:T68 Target:T65
+T69	ORG 1991 2000	Tennessee
+T70	ORG 2230 2236	Auburn
+T71	ORG 2270 2287	Oklahoma-Colorado
+T72	PER 2159 2160	I
+T73	ORG 2353 2359	Auburn
+T74	PER 2435 2459	senior QB Jason Campbell
+T75	PER 2435 2444	senior QB
+T76	ORG 2484 2490	Auburn
+T77	PER 2711 2715	that
+T78	PER 2678 2789	Jeff Sagarin and the other dicks that keep voting USC number one to make up for what happened to them last year
+T79	ORG 2728 2731	USC
+T80	ORG 2775 2779	them
+T81	ORG 2601 2623	an undefeated SEC team
+T82	TIM 2780 2789	last year
+T83	PER 2665 2667	we
+T84	ORG 2615 2618	SEC
+T85	PER 2579 2580	I
+T86	PER 2657 2658	I
+T87	TIM 2838 2847	next year
+T88	PER 2811 2815	they
+T89	ORG 2864 2870	Auburn
+T90	ORG 2871 2875	that
+T91	TIM 2888 2897	this year
+T92	PER 2796 2797	I
+T93	GPE 2981 2992	the country
+T94	ORG 2954 3006	the three hottest teams in the country in my opinion
+T95	ORG 2947 3006	one of the three hottest teams in the country in my opinion
+T96	ORG 2927 2933	Auburn
+T97	PER 2996 2998	my
+T98	TIM 3135 3146	January 3rd
+T99	GPE 3093 3104	the country
+T100	ORG 3062 3104	the most well coached teams in the country
+T101	ORG 3009 3022	Virginia Tech
+T102	ORG 3055 3104	one of the most well coached teams in the country
+T103	ORG 3109 3113	they
+T104	PER 3237 3243	idiots
+T105	PER 3213 3226	the pollsters
+T106	PER 3156 3159	our
+T107	ORG 3156 3164	our kids
+T108	PER 3149 3150	I
+T109	ORG 3300 3306	Auburn
+T110	ORG 3255 3263	Oklahoma
+T111	PER 3403 3405	We

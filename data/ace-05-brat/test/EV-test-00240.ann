@@ -1,0 +1,85 @@
+T1	TIM 34 42	20030519
+T2	GPE 125 139	AMMAN , Jordan
+T3	ORG 146 148	AP
+T4	GPE 133 139	Jordan
+T5	CRM 321 384	publishing information that harmed the government 's reputation
+T6	TIM 180 186	Monday
+T7	TIM 249 256	June 17
+T8	TIM 306 315	last year
+T9	GPE 155 164	Jordanian
+T10	GPE 192 198	Jordan
+T11	GPE 356 370	the government
+T12	PER 155 176	Jordanian authorities
+T13	PER 192 223	Jordan 's first female lawmaker
+T14	PER 291 294	her
+T15	Convict 295 305	conviction
+E1	Convict:T15 Defendant:T13 Crime:T5 Place:T11 Time-Within:T8
+T16	Elect 271 280	elections
+E2	Elect:T16 Person:T13 Place:T11 Time-Within:T7
+T17	ORG 451 468	Interior Ministry
+T18	PER 387 400	Toujan Faisal
+T19	PER 413 416	she
+T20	PER 448 511	an Interior Ministry committee overseeing election preparations
+T21	Elect 490 498	election
+E3	Elect:T21
+T22	ORG 682 702	The Associated Press
+T23	PER 547 548	I
+T24	PER 627 629	my
+T25	PER 670 676	Faisal
+T26	Convict 558 567	convicted
+E4	Convict:T26 Defendant:T23
+T27	Elect 655 664	elections
+E5	Elect:T27
+T28	CRM 742 846	publishing false and exaggerated information abroad that harmed the government 's reputation and dignity
+T29	TIM 729 737	May 2002
+T30	GPE 806 820	the government
+T31	PER 705 711	Faisal
+T32	Convict 716 725	convicted
+E6	Convict:T32 Defendant:T31 Crime:T28 Time-Within:T29
+T33	SEN 870 891	1 -LCB- years in jail
+T34	TIM 870 883	1 -LCB- years
+T35	FAC 887 891	jail
+T36	PER 849 852	She
+T37	Sentence 857 866	sentenced
+E7	Sentence:T37 Defendant:T36 Sentence:T33
+T38	TIM 973 979	former
+T39	TIM 913 920	40 days
+T40	FAC 924 930	prison
+T41	PER 933 959	Jordan 's King Abdullah II
+T42	PER 933 947	Jordan 's King
+T43	GPE 933 939	Jordan
+T44	GPE 1024 1033	the state
+T45	PER 969 1033	the former legislator known for her harsh criticism of the state
+T46	PER 1001 1004	her
+T47	Pardon 960 968	pardoned
+E8	Pardon:T47 Defendant:T45 Place:T43 Adjudicator:T41 Time-At-End:T39
+T48	CRM 1128 1156	any crime , except political
+T49	SEN 1176 1202	more than one year in jail
+T50	FAC 1198 1202	jail
+T51	GPE 1036 1042	Jordan
+T52	GPE 1065 1075	Jordanians
+T53	GPE 1105 1109	they
+T54	Sentence 1163 1172	sentenced
+E9	Sentence:T54 Place:T51 Sentence:T49 Crime:T48 Defendant:T53
+T55	Convict 1115 1124	convicted
+E10	Convict:T55 Defendant:T53 Crime:T48 Place:T51
+T56	PER 1205 1225	Government officials
+T57	GPE 1205 1215	Government
+T58	TIM 1288 1295	1993-97
+T59	PER 1376 1382	Muslim
+T60	GPE 1357 1371	the government
+T61	GPE 1429 1448	conservative Jordan
+T62	ORG 1305 1315	parliament
+T63	PER 1278 1284	Faisal
+T64	PER 1318 1321	she
+T65	PER 1338 1393	a fierce critic of the government and Muslim extremists
+T66	PER 1398 1448	a champion of liberal views in conservative Jordan
+T67	PER 1376 1393	Muslim extremists
+T68	TIM 1476 1480	1997
+T69	JOB 1460 1468	her seat
+T70	PER 1451 1454	She
+T71	PER 1460 1463	her
+T72	Elect 1455 1459	lost
+E11	Elect:T72 Person:T70 Position:T69 Time-Within:T68
+T73	Elect 1481 1489	election
+E12	Elect:T73 Time-Within:T68

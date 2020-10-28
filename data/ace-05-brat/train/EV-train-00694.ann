@@ -1,0 +1,133 @@
+T1	TIM 41 61	2005-01-01T22 :44:00
+T2	PER 91 95	Curt
+T3	TIM 96 116	2005-01-01T22 :44:00
+T4	TIM 171 181	yesterdays
+T5	ORG 182 199	Houston Chronicle
+T6	PER 289 303	President Bush
+T7	PER 289 298	President
+T8	GPE 223 231	European
+T9	ORG 219 243	the European Governments
+T10	ORG 264 269	their
+T11	PER 310 313	you
+T12	PER 495 499	Bush
+T13	ORG 491 511	the Bush White House
+T14	GPE 423 431	European
+T15	PER 534 547	Yasser Arafat
+T16	Die 525 530	death
+E1	Die:T16 Victim:T15
+T17	GPE 617 636	Israeli-Palestinian
+T18	GPE 578 595	the United States
+T19	GPE 567 573	Europe
+T20	TIM 651 669	the last few years
+T21	LOC 762 786	the occupied territories
+T22	GPE 741 747	Israel
+T23	PER 698 702	Bush
+T24	PER 817 823	Arafat
+T25	GPE 672 681	Europeans
+T26	PER 875 878	his
+T27	PER 860 864	Bush
+T28	PER 850 851	I
+T29	PER 902 924	that windbag terrorist
+T30	PER 925 931	Arafat
+T31	LOC 948 952	hell
+T32	PER 938 940	he
+T33	GPE 1116 1122	Israel
+T34	GPE 1130 1146	the Palestinians
+T35	GPE 1220 1231	Palestinian
+T36	PER 1187 1200	Mahmoud Abbas
+T37	PER 1211 1238	the next Palestinian leader
+T38	LOC 1089 1093	Gaza
+T39	PER 1057 1069	Ariel Sharon
+T40	PER 965 971	Arafat
+T41	GPE 997 1006	Americans
+T42	GPE 983 992	Europeans
+T43	Elect 1152 1161	elections
+E2	Elect:T43 Person:T36 Entity:T34
+T44	Die 975 980	death
+E3	Die:T44 Victim:T40
+T45	PER 1292 1299	Islamic
+T46	GPE 1260 1266	Europe
+T47	Attack 1300 1309	terrorism
+E4	Attack:T47 Attacker:T45 Place:T46
+T48	PER 1405 1412	Islamic
+T49	TIM 1326 1334	November
+T50	GPE 1368 1373	Dutch
+T51	PER 1402 1421	an Islamic militant
+T52	PER 1338 1351	Theo van Gogh
+T53	PER 1354 1383	a provocative Dutch filmmaker
+T54	GPE 1438 1444	Europe
+T55	Die 1316 1322	murder
+E5	Die:T55 Victim:T52 Agent:T51 Time-Within:T49
+T56	TIM 1638 1646	recently
+T57	PER 1594 1607	Bernard Lewis
+T58	PER 1621 1637	a wider audience
+T59	PER 1573 1589	Francis Fukuyama
+T60	GPE 1540 1548	American
+T61	GPE 1694 1702	European
+T62	PER 1540 1562	American conservatives
+T63	PER 1729 1732	You
+T64	PER 1738 1759	those radical muslims
+T65	PER 1835 1855	the cowards in Spain
+T66	GPE 1850 1855	Spain
+T67	GPE 1860 1864	they
+T68	GPE 1892 1897	their
+T69	GPE 1903 1906	own
+T70	TIM 2056 2070	half a century
+T71	GPE 2015 2042	the trans-Atlantic alliance
+T72	LOC 2019 2033	trans-Atlantic
+T73	GPE 2077 2084	Russian
+T74	GPE 2073 2089	The Russian bear
+T75	LOC 2316 2334	his `` near abroad
+T76	PER 2270 2287	Vladimir V. Putin
+T77	PER 2316 2319	his
+T78	PER 2177 2198	the opposition leader
+T79	PER 2248 2266	European diplomats
+T80	GPE 2114 2123	Ukrainian
+T81	ORG 2154 2163	KGB-style
+T82	GPE 2248 2256	European
+T83	Die 2164 2173	poisoning
+E6	Die:T83 Victim:T78
+T84	Elect 2124 2132	election
+E7	Elect:T84 Place:T80
+T85	TIM 2443 2447	once
+T86	PER 2396 2401	Putin
+T87	PER 2386 2387	I
+T88	PER 2340 2344	They
+T89	GPE 2420 2426	Russia
+T90	GPE 2440 2442	it
+T91	GPE 2464 2478	our Government
+T92	GPE 2464 2467	our
+T93	PER 2728 2750	the inarticulate Texan
+T94	PER 2582 2605	the snooty continentals
+T95	PER 2632 2660	the gormless Hollywood actor
+T96	ORG 2645 2654	Hollywood
+T97	TIM 2775 2779	once
+T98	PER 2834 2838	Bush
+T99	PER 2843 2891	an ignorant interloper who stole the White House
+T100	PER 2866 2869	who
+T101	PER 2753 2774	Many European leaders
+T102	PER 2794 2807	Michael Moore
+T103	ORG 2876 2891	the White House
+T104	GPE 2758 2766	European
+T105	PER 2894 2897	His
+T106	PER 2942 2944	he
+T107	GPE 2972 2993	conservative American
+T108	Elect 2907 2918	re-election
+E8	Elect:T108 Person:T105
+T109	PER 3069 3073	Bush
+T110	PER 3074 3077	who
+T111	GPE 3101 3109	the U.S.
+T112	GPE 3110 3116	itself
+T113	GPE 3175 3202	this exceptional superpower
+T114	GPE 3222 3224	it
+T115	GPE 3242 3244	it
+T116	PER 3081 3094	the exception
+T117	GPE 3015 3024	Europeans
+T118	GPE 3152 3156	they
+T119	GPE 3203 3207	they
+T120	PER 3280 3290	Tony Blair
+T121	GPE 3338 3351	the Continent
+T122	PER 3415 3421	myself
+T123	GPE 3439 3445	France
+T124	LOC 3464 3471	nowhere
+T125	GPE 3448 3450	we

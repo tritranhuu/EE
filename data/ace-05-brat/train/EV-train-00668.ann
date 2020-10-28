@@ -1,0 +1,95 @@
+T1	TIM 45 65	2004-12-15T23 :02:00
+T2	PER 104 109	Scott
+T3	TIM 110 130	2004-12-15T23 :02:00
+T4	ORG 136 156	the Associated Press
+T5	GPE 159 163	City
+T6	PER 248 334	everyone except law enforcement officers , members of the military and security guards
+T7	PER 159 173	City residents
+T8	ORG 302 314	the military
+T9	PER 319 334	security guards
+T10	WEA 208 215	weapons
+T11	TIM 184 193	next year
+T12	PER 264 288	law enforcement officers
+T13	PER 291 314	members of the military
+T14	WEA 236 244	handguns
+T15	PER 363 372	residents
+T16	PER 412 416	they
+T17	PER 425 430	their
+T18	TIM 347 360	next November
+T19	TIM 384 391	90 days
+T20	WEA 403 450	firearms they keep in their homes or businesses
+T21	ORG 425 450	their homes or businesses
+T22	FAC 425 450	their homes or businesses
+T23	ORG 506 524	a gun owners group
+T24	PER 508 518	gun owners
+T25	WEA 508 511	gun
+T26	PER 628 760	anyone else `` actually employed and engaged in protecting and preserving property or life within the scope of his or her employment
+T27	PER 746 749	her
+T28	PER 739 742	his
+T29	ORG 609 621	the military
+T30	PER 580 595	security guards
+T31	PER 562 577	police officers
+T32	PER 598 621	members of the military
+T33	WEA 527 535	Firearms
+T34	ORG 562 568	police
+T35	ORG 793 817	Gun Owners of California
+T36	ORG 820 853	a Sacramento-based lobbying group
+T37	GPE 822 838	Sacramento-based
+T38	ORG 903 912	the group
+T39	GPE 942 947	state
+T40	GPE 989 998	the state
+T41	GPE 957 974	local governments
+T42	WEA 1024 1032	firearms
+T43	PER 889 900	Sam Paredes
+T44	PER 903 934	the group 's executive director
+T45	GPE 1082 1095	San Francisco
+T46	GPE 1101 1178	ground zero for every criminal who wants to profit at their chosen profession
+T47	GPE 1059 1063	they
+T48	PER 1117 1178	every criminal who wants to profit at their chosen profession
+T49	PER 1132 1135	who
+T50	PER 1155 1160	their
+T51	PER 1184 1191	Paredes
+T52	GPE 1237 1245	American
+T53	PER 1293 1309	private citizens
+T54	TIM 1256 1265	currently
+T55	GPE 1199 1216	Washington , D.C.
+T56	GPE 1222 1309	the only major American city that currently bans handgun possession by private citizens
+T57	GPE 1251 1255	that
+T58	WEA 1271 1278	handgun
+T59	GPE 1402 1415	San Francisco
+T60	PER 1312 1330	Andrew Arulanandam
+T61	PER 1333 1394	director of public affairs for the National Rifle Association
+T62	ORG 1364 1394	the National Rifle Association
+T63	GPE 1439 1448	that city
+T64	GPE 1452 1459	a model
+T65	GPE 1489 1506	Washington , D.C.
+T66	GPE 1518 1528	the beacon
+T67	WEA 1468 1471	gun
+T68	GPE 1569 1586	the United States
+T69	PER 1592 1594	he
+T70	GPE 1541 1543	it
+T71	GPE 1547 1586	the murder capital of the United States
+T72	Die 1551 1557	murder
+E1	Die:T72 Place:T71
+T73	TIM 1653 1665	January 2006
+T74	WEA 1620 1627	weapons
+T75	TIM 1677 1684	the day
+T76	PER 1791 1920	anyone else actually employed and engaged in protecting and preserving property or life within the scope of his or her employment
+T77	PER 1899 1902	his
+T78	PER 1906 1909	her
+T79	ORG 1772 1784	the military
+T80	PER 1743 1758	security guards
+T81	PER 1725 1740	police officers
+T82	PER 1761 1784	members of the military
+T83	WEA 1690 1698	Firearms
+T84	ORG 1725 1731	police
+T85	FAC 2008 2016	the home
+T86	PER 2170 2179	burgulars
+T87	PER 2218 2225	rapists
+T88	PER 2260 2264	them
+T89	PER 2281 2285	they
+T90	PER 2296 2301	their
+T91	PER 2049 2059	the people
+T92	PER 2117 2121	them
+T93	PER 2270 2292	the victim they desire
+T94	FAC 2190 2195	homes

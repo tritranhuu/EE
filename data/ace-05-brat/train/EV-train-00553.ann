@@ -1,0 +1,145 @@
+T1	TIM 34 61	2003-03-29T16 :00:00 -05:00
+T2	PER 96 104	WOODRUFF
+T3	PER 105 107	We
+T4	PER 159 161	we
+T5	PER 167 196	CNN correspondent Ben Wedeman
+T6	PER 167 184	CNN correspondent
+T7	ORG 167 170	CNN
+T8	TIM 149 152	now
+T9	LOC 135 196	northern Iraq now where we find CNN correspondent Ben Wedeman
+T10	LOC 153 158	where
+T11	LOC 228 237	that area
+T12	PER 262 263	I
+T13	PER 271 272	I
+T14	PER 240 244	Nick
+T15	PER 290 292	we
+T16	PER 331 333	us
+T17	PER 284 287	Ben
+T18	PER 302 305	you
+T19	PER 339 342	you
+T20	PER 361 392	BEN WEDEMAN , CNN CORRESPONDENT
+T21	GPE 580 584	Iraq
+T22	LOC 508 618	this ridge behind me in Kalak which of course is the front line between Iraq and Kurdish -LRB- ph -RRB- forces
+T23	LOC 538 543	which
+T24	LOC 709 733	the ridge line behind us
+T25	PER 589 596	Kurdish
+T26	PER 589 618	Kurdish -LRB- ph -RRB- forces
+T27	VEH 645 651	planes
+T28	VEH 654 688	planes we can hear but can not see
+T29	PER 526 528	me
+T30	PER 399 403	Judy
+T31	PER 406 409	you
+T32	PER 621 623	we
+T33	PER 661 663	we
+T34	PER 731 733	us
+T35	PER 421 423	us
+T36	PER 484 486	we
+T37	LOC 713 718	ridge
+T38	TIM 466 483	for the last hour
+T39	GPE 532 618	Kalak which of course is the front line between Iraq and Kurdish -LRB- ph -RRB- forces
+T40	Attack 701 708	bombing
+E1	Attack:T40 Target:T24 Instrument:T28
+T41	GPE 843 848	Iraqi
+T42	VEH 798 810	these planes
+T43	WEA 816 835	these massive bombs
+T44	PER 866 868	us
+T45	TIM 777 794	less than an hour
+T46	Attack 746 756	explosions
+E2	Attack:T46 Instrument:T42 Instrument:T43
+T47	Attack 811 815	drop
+E3	Attack:T47 Instrument:T42
+T48	GPE 880 885	Iraqi
+T49	GPE 988 993	Iraqi
+T50	GPE 948 1031	Mosul as well which is a major northern Iraqi city about 28 miles to the west of me
+T51	GPE 962 967	which
+T52	GPE 971 1031	a major northern Iraqi city about 28 miles to the west of me
+T53	PER 1029 1031	me
+T54	PER 903 905	us
+T55	PER 1034 1036	We
+T56	PER 1151 1153	we
+T57	TIM 1223 1240	the last 24 hours
+T58	GPE 1210 1219	this area
+T59	Attack 1064 1070	blasts
+E4	Attack:T59 Time-Within:T57
+T60	Attack 1188 1195	bombing
+E5	Attack:T60 Place:T58 Time-Within:T57
+T61	Attack 1203 1206	war
+E6	Attack:T61
+T62	Attack 1116 1123	bombing
+E7	Attack:T62 Time-Within:T57
+T63	PER 1243 1247	Judy
+T64	PER 1252 1260	WOODRUFF
+T65	GPE 1336 1345	coalition
+T66	PER 1332 1352	the coalition forces
+T67	PER 1261 1264	Ben
+T68	PER 1275 1279	your
+T69	PER 1377 1384	WEDEMAN
+T70	PER 1491 1495	them
+T71	LOC 1623 1641	this entire valley
+T72	GPE 1445 1450	Iraqi
+T73	LOC 1405 1421	the ridge itself
+T74	LOC 1422 1465	it is the most forward Iraqi army positions
+T75	LOC 1415 1421	itself
+T76	PER 1470 1472	we
+T77	ORG 1445 1455	Iraqi army
+T78	TIM 1509 1544	for the last month prior to the war
+T79	Attack 1541 1544	war
+E8	Attack:T79
+T80	WEA 1663 1681	heavy machine guns
+T81	PER 1653 1657	they
+T82	WEA 1694 1701	mortars
+T83	PER 1684 1688	They
+T84	WEA 1714 1728	anti-tank guns
+T85	PER 1704 1708	They
+T86	LOC 1753 1821	this very long ridge that basically runs from the north to the south
+T87	LOC 1774 1778	that
+T88	PER 1731 1821	hundreds of men along this very long ridge that basically runs from the north to the south
+T89	GPE 1911 1916	Mosul
+T90	PER 1846 1848	we
+T91	TIM 2064 2078	for many years
+T92	VEH 1946 1951	tanks
+T93	PER 1980 2008	the people here in this area
+T94	PER 2011 2026	the local Kurds
+T95	PER 2027 2030	who
+T96	WEA 1926 1941	heavy artillery
+T97	GPE 1999 2008	this area
+T98	Transport 2041 2053	going across
+E9	Transport:T98 Time-Within:T91 Artifact:T94
+T99	Transport 2100 2109	smuggling
+E10	Transport:T99 Time-Within:T91 Agent:T94
+T100	PER 2131 2135	they
+T101	GPE 2225 2230	Iraqi
+T102	PER 2182 2184	my
+T103	PER 2164 2166	us
+T104	Attack 2140 2147	hitting
+E11	Attack:T104 Attacker:T100
+T105	PER 2269 2273	Judy
+T106	PER 2278 2285	WEDEMAN
+T107	GPE 2309 2318	coalition
+T108	PER 2286 2297	Ben Wedeman
+T109	PER 2342 2344	he
+T110	LOC 2371 2384	northern Iraq
+T111	GPE 2327 2347	the area where he is
+T112	GPE 2336 2341	where
+T113	GPE 2350 2384	the town of Kalak in northern Iraq
+T114	GPE 2362 2367	Kalak
+T115	Attack 2319 2323	hits
+E12	Attack:T115 Attacker:T107
+T116	PER 2409 2411	we
+T117	PER 2387 2389	He
+T118	PER 2441 2444	you
+T119	Phone-Write 2395 2401	called
+E13	Phone-Write:T119 Entity:T117
+T120	PER 2471 2473	we
+T121	PER 2507 2509	we
+T122	PER 2458 2461	Ben
+T123	PER 2480 2483	you
+T124	TIM 2539 2548	the night
+T125	TIM 2554 2563	the night
+T126	PER 2532 2535	you
+T127	PER 2575 2577	We
+T128	TIM 2599 2621	the bottom of the hour
+T129	PER 2624 2626	We
+T130	PER 2686 2699	Heidi Collins
+T131	TIM 2662 2670	the hour
+T132	TIM 2671 2680	right now
