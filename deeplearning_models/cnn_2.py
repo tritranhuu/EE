@@ -76,7 +76,7 @@ class CNN(nn.Module):
     self.cnn_dropout = nn.Dropout(cnn_dropout)
     # LAYER 3: Fully-connected
     self.fc_dropout = nn.Dropout(fc_dropout)
-    self.fc = self.get_linear_layer(len(cnn_kernels) * cnn_out_chanel, output_dim)
+    self.fc = self.get_linear_layer(cnn_out_chanel, output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
     self.scale = torch.sqrt(torch.FloatTensor([0.5]))
 
@@ -104,15 +104,16 @@ class CNN(nn.Module):
 
     cnn_input = cnn_input.permute(1,2,0)
     
-    for i, conv for enumerate(self.convs):
+    for i, conv in enumerate(self.convs):
         # conved = (batch, cnn_out_chanel, sentlength)
         conved = conv(self.cnn_dropout(cnn_input))
-        conved = nn.functional.glu(conv, dim=1)
+        conved = nn.functional.glu(conved, dim=1)
         conved = (conved+cnn_input)*self.scale
         cnn_input = conved
     
     # cnn_out = torch.cat(cnn_out, dim=2 )
     cnn_out = conved.permute(2,0,1)
+    # print(cnn_out.shape)
 
     # fc_input = (sent_length, batch, out_channel)
     # ner_out = [sentence length, batch size, output dim]

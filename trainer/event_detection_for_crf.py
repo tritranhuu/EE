@@ -45,7 +45,7 @@ class ED(object):
         # tags = [sent len, batch size]
             true_tags = batch.tag
             self.optimizer.zero_grad()
-            pred_tags_list, batch_loss = self.model(words, chars, true_tags)
+            pred_tags_list, batch_loss, _ = self.model(words, chars, true_tags)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             true_tags_list = [
@@ -75,7 +75,7 @@ class ED(object):
                 words = batch.word
                 chars = batch.char
                 true_tags = batch.tag
-                pred_tags, batch_loss = self.model(words, chars, true_tags)
+                pred_tags, batch_loss, _ = self.model(words, chars, true_tags)
                 true_tags_list = [
                     [tag for tag in sent_tag if tag != self.data.tag_pad_idx]
                     for sent_tag in true_tags.permute(1, 0).tolist()
@@ -106,3 +106,6 @@ class ED(object):
             print(f"\tVal Loss: {val_loss:.3f} | Val Acc: {val_acc * 100:.2f}%")
         test_loss, test_acc = self.evaluate(self.data.test_iter)
         print(f"Test Loss: {test_loss:.3f} |  Test Acc: {test_acc * 100:.2f}%")
+
+    # @staticmethod
+    # def visualize_attn(tokens, weights):

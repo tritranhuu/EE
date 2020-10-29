@@ -25,14 +25,20 @@ class BiLSTM_CRF(nn.Module):
                 char_cnn_kernel_size,
                 output_dim, 
                 lstm_layers,
+                attn_heads,
                 emb_dropout,
                 cnn_dropout, 
-                lstm_dropout, 
+                lstm_dropout,
+                attn_dropout, 
                 fc_dropout, 
                 word_pad_idx,
                 char_pad_idx,
                 tag_pad_idx):
     super().__init__()
+    self.char_pad_idx = char_pad_idx
+    self.word_pad_idx = word_pad_idx
+    self.tag_pad_idx = tag_pad_idx
+
     self.embedding_dim = embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
@@ -63,7 +69,14 @@ class BiLSTM_CRF(nn.Module):
         bidirectional=True,
         dropout=lstm_dropout if lstm_layers > 1 else 0
     )
-    # LAYER 3: Fully-connected
+
+    # LAYER 3: Self-attention
+    self.attn = nn.MultiheadAttention(
+      embed_dim=hidden_dim*2,
+      num_heads=attn_heads,
+      dropout=attn_dropout
+    )
+    # LAYER 4: Fully-connected
     self.fc_dropout = nn.Dropout(fc_dropout)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
     self.fc = self.get_linear_layer(hidden_dim * 2, output_dim)
@@ -92,18 +105,24 @@ class BiLSTM_CRF(nn.Module):
     char_cnn = self.cnn_dropout(char_cnn_max_out)
     char_cnn_p = char_cnn.permute(1,0,2)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
-    
+
     lstm_out, _ = self.lstm(word_features)
     # ner_out = [sentence length, batch size, output dim]
-    fc_out = self.fc(self.fc_dropout(lstm_out))
+    key_padding_mask = torch.as_tensor(words==self.word_pad_idx).permute(1,0)
+    attn_out, attn_weight = self.attn(lstm_out, lstm_out, lstm_out, key_padding_mask=key_padding_mask)
 
-    if tags is not None:
-        mask = tags != self.tag_pad_idx
-        crf_out = self.crf.decode(fc_out, mask=mask)
-        crf_loss = -self.crf(fc_out, tags=tags, mask=mask, reduction='sum')
-    else:
-        crf_out = self.crf.decode(fc_out)
-        crf_loss = None
+    fc_out = self.fc(self.fc_dropout(attn_out))
+    crf_mask = words != self.word_pad_idx
+    crf_out = self.crf.decode(fc_out, mask=crf_mask)
+    crf_loss = -self.crf(fc_out, tags=tags, mask=crf_mask) if tags is not None else None
+    return crf_out, crf_loss, attn_weight
+    # if tags is not None:
+    #     mask = tags != self.tag_pad_idx
+    #     crf_out = self.crf.decode(fc_out, mask=mask)
+    #     crf_loss = -self.crf(fc_out, tags=tags, mask=mask, reduction='sum')
+    # else:
+    #     crf_out = self.crf.decode(fc_out)
+    #     crf_loss = None
 
     return crf_out, crf_loss
 
