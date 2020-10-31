@@ -82,6 +82,8 @@ class ED(object):
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
                 words = batch.word
+                if words.shape[0] < 5:
+                  continue
                 chars = batch.char
                 true_tags = batch.tag
                 pred_tags = self.model(words, chars)
