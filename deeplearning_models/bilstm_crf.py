@@ -16,74 +16,75 @@ from sklearn.metrics import classification_report
 class BiLSTM_CRF(nn.Module):
 
   def __init__(self, 
-                input_dim, 
-                embedding_dim, 
-                hidden_dim, 
-                char_emb_dim,
-                char_input_dim,
-                char_cnn_filter_num,
-                char_cnn_kernel_size,
-                output_dim, 
-                lstm_layers,
-                attn_heads,
-                emb_dropout,
-                cnn_dropout, 
-                lstm_dropout,
-                attn_dropout, 
-                fc_dropout, 
-                word_pad_idx,
-                char_pad_idx,
-                tag_pad_idx):
+                # input_dim, 
+                # embedding_dim, 
+                # hidden_dim, 
+                # char_emb_dim,
+                # char_input_dim,
+                # char_cnn_filter_num,
+                # char_cnn_kernel_size,
+                # output_dim, 
+                # lstm_layers,
+                # attn_heads,
+                # emb_dropout,
+                # cnn_dropout, 
+                # lstm_dropout,
+                # attn_dropout, 
+                # fc_dropout, 
+                # word_pad_idx,
+                # char_pad_idx,
+                # tag_pad_idx,
+                args):
     super().__init__()
-    self.char_pad_idx = char_pad_idx
-    self.word_pad_idx = word_pad_idx
-    self.tag_pad_idx = tag_pad_idx
+    self.char_pad_idx = args.char_pad_idx
+    self.word_pad_idx = args.word_pad_idx
+    self.tag_pad_idx = args.tag_pad_idx
 
-    self.embedding_dim = embedding_dim
+    self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
-        num_embeddings=input_dim, 
-        embedding_dim=embedding_dim, 
-        padding_idx=word_pad_idx
+        num_embeddings=args.input_dim, 
+        embedding_dim=args.embedding_dim, 
+        padding_idx=args.word_pad_idx
     )
-    self.emb_dropout = nn.Dropout(emb_dropout)
+    self.emb_dropout = nn.Dropout(args.emb_dropout)
     # LAYER 1B: Char Embedding-CNN
-    self.char_emb_dim = char_emb_dim
+    self.char_emb_dim = args.char_emb_dim
     self.char_emb = nn.Embedding(
-        num_embeddings=char_input_dim,
-        embedding_dim=char_emb_dim,
-        padding_idx=char_pad_idx
+        num_embeddings=args.char_input_dim,
+        embedding_dim=args.char_emb_dim,
+        padding_idx=args.char_pad_idx
     )
     self.char_cnn = nn.Conv1d(
-        in_channels=char_emb_dim,
-        out_channels=char_emb_dim * char_cnn_filter_num,
-        kernel_size=char_cnn_kernel_size,
-        groups=char_emb_dim  # different 1d conv for each embedding dim
+        in_channels=args.char_emb_dim,
+        out_channels=args.char_emb_dim * args.char_cnn_filter_num,
+        kernel_size=args.char_cnn_kernel_size,
+        groups=args.char_emb_dim  # different 1d conv for each embedding dim
     )
     self.cnn_dropout = nn.Dropout(cnn_dropout)
     # LAYER 2: BiLSTM
     self.lstm = nn.LSTM(
-        input_size=embedding_dim + (char_emb_dim*char_cnn_filter_num),
-        hidden_size=hidden_dim,
-        num_layers=lstm_layers,
+        input_size=args.embedding_dim + (args.char_emb_dim*args.char_cnn_filter_num),
+        hidden_size=args.hidden_dim,
+        num_layers=args.lstm_layers,
         bidirectional=True,
-        dropout=lstm_dropout if lstm_layers > 1 else 0
+        dropout=args.lstm_dropout if lstm_layers > 1 else 0
     )
 
     # LAYER 3: Self-attention
     self.attn = nn.MultiheadAttention(
-      embed_dim=hidden_dim*2,
-      num_heads=attn_heads,
-      dropout=attn_dropout
+      embed_dim=args.hidden_dim*2,
+      num_heads=args.attn_heads,
+      dropout=args.attn_dropout
     )
     # LAYER 4: Fully-connected
-    self.fc_dropout = nn.Dropout(fc_dropout)
+    self.fc_dropout = nn.Dropout(args.fc_dropout)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
-    self.fc = self.get_linear_layer(hidden_dim * 2, output_dim)
+    self.fc = self.get_linear_layer(args.hidden_dim * 2, args.output_dim)
 
     # LAYER 4: CRF
-    self.tag_pad_idx = tag_pad_idx
-    self.crf = CRF(num_tags=output_dim)
+    self.tag_pad_idx = args.tag_pad_idx
+    self.crf = CRF(num_tags=args.output_dim)
     # for name, param in self.named_parameters
 
 
