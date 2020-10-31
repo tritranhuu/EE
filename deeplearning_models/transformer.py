@@ -1,6 +1,7 @@
 import os
 import time
 import gensim
+import math
 from collections import Counter
 import torch
 from torch import nn
@@ -9,26 +10,49 @@ from torch.optim import Adam
 import numpy as np
 from sklearn.metrics import classification_report
 
-class BiLSTM(nn.Module):
+class PositionalEncoding(nn.Module):
+    def __init__(self, d_model, dropout=0.1, max_len=500):
+        super(PositionalEncoding, self).__init__()
+        self.dropout = nn.Dropout(p=dropout)
+        pe = torch.zeros(max_len, d_model)
+        position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2).float()*(-math.log(10000.0)/d_model))
+        pe[:, 0::2] = torch.sin(position*div_term)
+        pe[:, 1::2] = torch.cos(position*div_term)
+        pe = pe.unsqueeze().transpose(0,1)
+        self.register_buffer('pe', pe)
+
+    def forward(self, x):
+        x = x+self.pe[:x.size(0), :]
+        return self.dropout(x)
+
+class BiLSTM_CRF(nn.Module):
 
   def __init__(self, 
-                input_dim, 
-                embedding_dim, 
-                hidden_dim, 
-                char_emb_dim,
-                char_input_dim,
-                char_cnn_filter_num,
-                char_cnn_kernel_size,
-                output_dim, 
-                lstm_layers,
-                emb_dropout,
-                cnn_dropout, 
-                lstm_dropout, 
-                fc_dropout, 
-                word_pad_idx,
-                char_pad_idx,
+                # input_dim, 
+                # embedding_dim, 
+                # hidden_dim, 
+                # char_emb_dim,
+                # char_input_dim,
+                # char_cnn_filter_num,
+                # char_cnn_kernel_size,
+                # output_dim, 
+                # lstm_layers,
+                # attn_heads,
+                # emb_dropout,
+                # cnn_dropout, 
+                # lstm_dropout,
+                # attn_dropout, 
+                # fc_dropout, 
+                # word_pad_idx,
+                # char_pad_idx,
+                # tag_pad_idx,
                 args):
     super().__init__()
+    self.char_pad_idx = args.char_pad_idx
+    self.word_pad_idx = args.word_pad_idx
+    self.tag_pad_idx = args.tag_pad_idx
+    self.device = args.device
     self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
@@ -51,20 +75,41 @@ class BiLSTM(nn.Module):
         groups=args.char_emb_dim  # different 1d conv for each embedding dim
     )
     self.cnn_dropout = nn.Dropout(args.cnn_dropout)
-    # LAYER 2: BiLSTM
-    self.lstm = nn.LSTM(
-        input_size=args.embedding_dim + (args.char_emb_dim*args.char_cnn_filter_num),
-        hidden_size=args.hidden_dim,
-        num_layers=args.lstm_layers,
-        bidirectional=True,
-        dropout=args.lstm_dropout if args.lstm_layers > 1 else 0
+    # LAYER 2: Transformer
+    all_emb_size = args.embedding_dim + (args.char_emb_dim*args.char_cnn_filter_num)
+    self.position_encoder = PositionalEncoding(
+        d_model = all_emb_size
     )
-    # LAYER 3: Fully-connected
-    self.fc_dropout = nn.Dropout(args.fc_dropout)
-    self.fc = self.get_linear_layer(args.hidden_dim * 2, args.output_dim)
-    # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
+    encoder_layer = nn.TransformerEncoderLayer(
+        d_model=all_emb_size,
+        nhead=args.attn_heads,
+        activation='relu',
+        dropout=args.trf_dropout
+    )
+    self.encoder = nn.TransformerEncoder(
+        encoder_layer = encoder_layer,
+        num_layers=args.trf_layers
+    )
 
-  def forward(self, words, chars):
+    # LAYER 3: 2-layers fully-connected with GELU activation in-between
+    self.fc1 = self.get_linear_layer(
+        input_dim=all_emb_size,
+        output_dim=args.fc_hidden
+    )
+    self.fc1_gelu = nn.GELU()
+    self.fc1_norm = nn.LayerNorm(args.fc_hidden)
+    self.fc2_dropout = nn.Dropout(args.fc_dropout)
+    self.fc2 = self.get_linear_layer(
+        input_dim=args.fc_hidden,
+        output_dim=args.output_dim
+    )
+    # LAYER 4: CRF
+    self.tag_pad_idx = args.tag_pad_idx
+    self.crf = CRF(num_tags=args.output_dim)
+    # for name, param in self.named_parameters
+
+
+  def forward(self, words, chars, tags=None):
     # words = [sentence length, batch size]
     # chars = [batch size, sentence length, word length)
     # embedding_out = [sentence length, batch size, embedding dim]
@@ -82,11 +127,27 @@ class BiLSTM(nn.Module):
     char_cnn = self.cnn_dropout(char_cnn_max_out)
     char_cnn_p = char_cnn.permute(1,0,2)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
-    
-    lstm_out, _ = self.lstm(word_features)
-    # ner_out = [sentence length, batch size, output dim]
-    ner_out = self.fc(self.fc_dropout(lstm_out))
-    return ner_out
+
+    #transformer forward
+    key_padding_mask = torch.as_tensor(words == self.word_pad_idx).permute(1, 0)
+    pos_out = self.position_encoder(word_features)
+    enc_out = self.encoder(pos_out, src_key_padding_mask=key_padding_mask)
+    fc1_out = self.fc1_norm(self.fc1_gelu(self.fc1(enc_out)))
+    fc2_out = self.fc2(self.fc2_dropout(fc1_out))
+
+    crf_mask = words != self.word_pad_idx
+    crf_out = self.crf.decode(fc_out, mask=crf_mask)
+    crf_loss = -self.crf(fc_out, tags=tags, mask=crf_mask) if tags is not None else None
+    return crf_out, crf_loss, attn_weight
+    # if tags is not None:
+    #     mask = tags != self.tag_pad_idx
+    #     crf_out = self.crf.decode(fc_out, mask=mask)
+    #     crf_loss = -self.crf(fc_out, tags=tags, mask=mask, reduction='sum')
+    # else:
+    #     crf_out = self.crf.decode(fc_out)
+    #     crf_loss = None
+
+    return crf_out, crf_loss
 
   def init_weights(self):
     # to initialize all parameters from normal distribution
@@ -104,7 +165,6 @@ class BiLSTM(nn.Module):
           padding_idx=word_pad_idx,
           freeze=freeze
         )
-
   @staticmethod
   def get_linear_layer(input_dim, output_dim):
     linear_layer = nn.Linear(input_dim, output_dim, bias=True)
@@ -117,6 +177,6 @@ class BiLSTM(nn.Module):
     linear_layer.weight.data = torch.tensor(weight, requires_grad=True)
     linear_layer.bias.data = torch.tensor(bt, requires_grad=True)
     return linear_layer
+            
 
-  def count_parameters(self):
-    return sum(p.numel() for p in self.parameters() if p.requires_grad)
+        

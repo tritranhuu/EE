@@ -30,54 +30,57 @@ class CNN(nn.Module):
                 cnn_dropout, 
                 fc_dropout, 
                 word_pad_idx,
-                char_pad_idx):
+                char_pad_idx,
+                args):
     super().__init__()
-    self.embedding_dim = embedding_dim
+    self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
-        num_embeddings=input_dim, 
-        embedding_dim=embedding_dim, 
-        padding_idx=word_pad_idx
+        num_embeddings=args.input_dim, 
+        embedding_dim=args.embedding_dim, 
+        padding_idx=args.word_pad_idx
     )
-    self.emb_dropout = nn.Dropout(emb_dropout)
+    self.emb_dropout = nn.Dropout(args.emb_dropout)
     # LAYER 1B: Char Embedding-CNN
-    self.char_emb_dim = char_emb_dim
+    self.char_emb_dim = args.char_emb_dim
     self.char_emb = nn.Embedding(
-        num_embeddings=char_input_dim,
-        embedding_dim=char_emb_dim,
-        padding_idx=char_pad_idx
+        num_embeddings=args.char_input_dim,
+        embedding_dim=args.char_emb_dim,
+        padding_idx=args.char_pad_idx
     )
     self.char_cnn = nn.Conv1d(
-        in_channels=char_emb_dim,
-        out_channels=char_emb_dim * char_cnn_filter_num,
-        kernel_size=char_cnn_kernel_size,
-        groups=char_emb_dim  # different 1d conv for each embedding dim
+        in_channels=args.char_emb_dim,
+        out_channels=args.char_emb_dim * args.char_cnn_filter_num,
+        kernel_size=args.char_cnn_kernel_size,
+        groups=args.char_emb_dim  # different 1d conv for each embedding dim
     )
-    self.pos_emb_dim = pos_emb_dim
+    self.pos_emb_dim = args.pos_emb_dim
     self.pos_emb = nn.Embedding(
-        num_embeddings=max_sent_length,
-        embedding_dim=pos_emb_dim
+        num_embeddings=args.max_sent_length,
+        embedding_dim=args.pos_emb_dim
     )
 
-    self.emb_to_cnn_input = self.get_linear_layer(embedding_dim + char_emb_dim*char_cnn_filter_num, cnn_out_chanel)
+    self.emb_to_cnn_input = self.get_linear_layer(args.embedding_dim + args.char_emb_dim*args.char_cnn_filter_num,
+                                                  args.cnn_out_chanel)
 
-    self.char_cnn_dropout = nn.Dropout(char_cnn_dropout)
+    self.char_cnn_dropout = nn.Dropout(args.char_cnn_dropout)
     # LAYER 2: CNN
     self.convs = nn.ModuleList(
         [nn.Conv2d(
             in_channels = 1,
-            out_channels= cnn_out_chanel,
+            out_channels= args.cnn_out_chanel,
             kernel_size = k,
             # padding = /(k-1)//2,
             # padding_mode = 'replicate'
-        ) for k in cnn_kernels]
+        ) for k in args.cnn_kernels]
     )
 
-    self.cnn_dropout = nn.Dropout(cnn_dropout)
+    self.cnn_dropout = nn.Dropout(args.cnn_dropout)
     # LAYER 3: Fully-connected
-    self.fc_dropout = nn.Dropout(fc_dropout)
-    self.fc = self.get_linear_layer(cnn_out_chanel*3, output_dim)
+    self.fc_dropout = nn.Dropout(args.fc_dropout)
+    self.fc = self.get_linear_layer(args.cnn_out_chanel*3, args.output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
+    
   def get_sentence_positional_feature(self, batch_size, sentence_length):
     positions = [[abs(j) for j in range(-i, sentence_length-i)] for i in range(sentence_length)]
     positions = [torch.LongTensor(position) for position in positions]

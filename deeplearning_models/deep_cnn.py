@@ -13,57 +13,58 @@ from sklearn.metrics import classification_report
 class DeepCNN(nn.Module):
 
   def __init__(self, 
-                input_dim, 
-                embedding_dim,  
-                cnn_kernels,
-                cnn_in_chanel,
-                cnn_out_chanel, 
-                char_emb_dim,
-                char_input_dim,
-                char_cnn_filter_num,
-                char_cnn_kernel_size,
-                output_dim,
-                emb_dropout,
-                char_cnn_dropout, 
-                cnn_dropout, 
-                fc_dropout, 
-                word_pad_idx,
-                char_pad_idx):
+                # input_dim, 
+                # embedding_dim,  
+                # cnn_kernels,
+                # cnn_in_chanel,
+                # cnn_out_chanel, 
+                # char_emb_dim,
+                # char_input_dim,
+                # char_cnn_filter_num,
+                # char_cnn_kernel_size,
+                # output_dim,
+                # emb_dropout,
+                # char_cnn_dropout, 
+                # cnn_dropout, 
+                # fc_dropout, 
+                # word_pad_idx,
+                # char_pad_idx,
+                args):
     super().__init__()
-    self.embedding_dim = embedding_dim
+    self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
-        num_embeddings=input_dim, 
-        embedding_dim=embedding_dim, 
-        padding_idx=word_pad_idx
+        num_embeddings=args.input_dim, 
+        embedding_dim=args.embedding_dim, 
+        padding_idx=args.word_pad_idx
     )
-    self.emb_dropout = nn.Dropout(emb_dropout)
+    self.emb_dropout = nn.Dropout(args.emb_dropout)
     # LAYER 1B: Char Embedding-CNN
-    self.char_emb_dim = char_emb_dim
+    self.char_emb_dim = args.char_emb_dim
     self.char_emb = nn.Embedding(
-        num_embeddings=char_input_dim,
-        embedding_dim=char_emb_dim,
-        padding_idx=char_pad_idx
+        num_embeddings=args.char_input_dim,
+        embedding_dim=args.char_emb_dim,
+        padding_idx=args.char_pad_idx
     )
     self.char_cnn = nn.Conv1d(
-        in_channels=char_emb_dim,
-        out_channels=char_emb_dim * char_cnn_filter_num,
-        kernel_size=char_cnn_kernel_size,
-        groups=char_emb_dim  # different 1d conv for each embedding dim
+        in_channels=args.char_emb_dim,
+        out_channels=args.char_emb_dim * args.char_cnn_filter_num,
+        kernel_size=args.char_cnn_kernel_size,
+        groups=args.char_emb_dim  # different 1d conv for each embedding dim
     )
-    self.char_cnn_dropout = nn.Dropout(char_cnn_dropout)
+    self.char_cnn_dropout = nn.Dropout(args.char_cnn_dropout)
     # LAYER 2: CNN
     convs = [
-        nn.Conv1d(in_channels = embedding_dim + char_emb_dim * char_cnn_filter_num,
-                 out_channels = cnn_out_chanel, 
+        nn.Conv1d(in_channels = args.embedding_dim + args.char_emb_dim * args.char_cnn_filter_num,
+                 out_channels = args.cnn_out_chanel, 
                  kernel_size=k,
-                 padding = int((k-1)/2)) for k in cnn_kernels
+                 padding = int((k-1)/2)) for k in args.cnn_kernels
     ]
     self.conv_modules = nn.ModuleList(convs)
-    self.cnn_dropout = nn.Dropout(cnn_dropout)
+    self.cnn_dropout = nn.Dropout(args.cnn_dropout)
     # LAYER 3: Fully-connected
-    self.fc_dropout = nn.Dropout(fc_dropout)
-    self.fc = self.get_linear_layer(len(cnn_kernels) * cnn_out_chanel, output_dim)
+    self.fc_dropout = nn.Dropout(args.fc_dropout)
+    self.fc = self.get_linear_layer(len(args.cnn_kernels) * args.cnn_out_chanel, args.output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
 
     self.tanh = nn.Tanh()

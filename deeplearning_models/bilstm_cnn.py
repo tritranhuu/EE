@@ -1,55 +1,56 @@
 class BiLSTM(nn.Module):
 
   def __init__(self, 
-                input_dim, 
-                embedding_dim, 
-                hidden_dim, 
-                char_emb_dim,
-                char_input_dim,
-                char_cnn_filter_num,
-                char_cnn_kernel_size,
-                output_dim, 
-                lstm_layers,
-                emb_dropout,
-                cnn_dropout, 
-                lstm_dropout, 
-                fc_dropout, 
-                word_pad_idx,
-                char_pad_idx):
+  #               input_dim, 
+  #               embedding_dim, 
+  #               hidden_dim, 
+  #               char_emb_dim,
+  #               char_input_dim,
+  #               char_cnn_filter_num,
+  #               char_cnn_kernel_size,
+  #               output_dim, 
+  #               lstm_layers,
+  #               emb_dropout,
+  #               cnn_dropout, 
+  #               lstm_dropout, 
+  #               fc_dropout, 
+  #               word_pad_idx,
+  #               char_pad_idx,
+                args):
     super().__init__()
-    self.embedding_dim = embedding_dim
+    self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
-        num_embeddings=input_dim, 
-        embedding_dim=embedding_dim, 
-        padding_idx=word_pad_idx
+        num_embeddings=args.input_dim, 
+        embedding_dim=args.embedding_dim, 
+        padding_idx=args.word_pad_idx
     )
-    self.emb_dropout = nn.Dropout(emb_dropout)
+    self.emb_dropout = nn.Dropout(args.emb_dropout)
     # LAYER 1B: Char Embedding-CNN
-    self.char_emb_dim = char_emb_dim
+    self.char_emb_dim = args.char_emb_dim
     self.char_emb = nn.Embedding(
-        num_embeddings=char_input_dim,
-        embedding_dim=char_emb_dim,
-        padding_idx=char_pad_idx
+        num_embeddings=args.char_input_dim,
+        embedding_dim=args.char_emb_dim,
+        padding_idx=args.char_pad_idx
     )
     self.char_cnn = nn.Conv1d(
-        in_channels=char_emb_dim,
-        out_channels=char_emb_dim * char_cnn_filter_num,
-        kernel_size=char_cnn_kernel_size,
-        groups=char_emb_dim  # different 1d conv for each embedding dim
+        in_channels=args.char_emb_dim,
+        out_channels=args.char_emb_dim * args.char_cnn_filter_num,
+        kernel_size=args.char_cnn_kernel_size,
+        groups=args.char_emb_dim  # different 1d conv for each embedding dim
     )
-    self.cnn_dropout = nn.Dropout(cnn_dropout)
+    self.cnn_dropout = nn.Dropout(args.cnn_dropout)
     # LAYER 2: BiLSTM
     self.lstm = nn.LSTM(
-        input_size=embedding_dim + (char_emb_dim*char_cnn_filter_num),
-        hidden_size=hidden_dim,
-        num_layers=lstm_layers,
+        input_size=args.embedding_dim + (args.char_emb_dim*args.char_cnn_filter_num),
+        hidden_size=args.hidden_dim,
+        num_layers=args.lstm_layers,
         bidirectional=True,
-        dropout=lstm_dropout if lstm_layers > 1 else 0
+        dropout=args.lstm_dropout if args.lstm_layers > 1 else 0
     )
     # LAYER 3: Fully-connected
-    self.fc_dropout = nn.Dropout(fc_dropout)
-    self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
+    self.fc_dropout = nn.Dropout(args.fc_dropout)
+    self.fc = nn.Linear(args.hidden_dim * 2, args.output_dim)  # times 2 for bidirectional
 
   def forward(self, words, chars):
     # words = [sentence length, batch size]
