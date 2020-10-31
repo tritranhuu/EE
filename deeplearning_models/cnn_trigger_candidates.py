@@ -64,11 +64,11 @@ class CNN(nn.Module):
     self.char_cnn_dropout = nn.Dropout(char_cnn_dropout)
     # LAYER 2: CNN
     self.convs = nn.ModuleList(
-        [nn.Conv1d(
-            in_channels = cnn_out_chanel,
-            out_channels= cnn_out_chanel*2,
+        [nn.Conv2d(
+            in_channels = 1,
+            out_channels= cnn_out_chanel,
             kernel_size = k,
-            padding = (k-1)//2,
+            # padding = /(k-1)//2,
             # padding_mode = 'replicate'
         ) for k in cnn_kernels]
     )
@@ -76,9 +76,14 @@ class CNN(nn.Module):
     self.cnn_dropout = nn.Dropout(cnn_dropout)
     # LAYER 3: Fully-connected
     self.fc_dropout = nn.Dropout(fc_dropout)
-    self.fc = self.get_linear_layer(cnn_out_chanel, output_dim)
+    self.fc = self.get_linear_layer(cnn_out_chanel*3, output_dim)
     # self.fc = nn.Linear(hidden_dim * 2, output_dim)  # times 2 for bidirectional
-    self.scale = torch.sqrt(torch.FloatTensor([0.5]))
+  def get_sentence_positional_feature(self, batch_size, sentence_length):
+    positions = [[abs(j) for j in range(-i, sentence_length-i)] for i in range(sentence_length)]
+    positions = [torch.LongTensor(position) for position in positions]
+    positions = [torch.cat([position]*batch_size).resize_(batch_size, position.size(0))
+                  for position in positions]
+    return positions
 
   def forward(self, words, chars):
     # words = [sentence length, batch size]
@@ -100,19 +105,23 @@ class CNN(nn.Module):
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
     
     cnn_input = self.emb_to_cnn_input(self.fc_dropout(word_features))
-    # word_features = (batch, embedding_dim, sentence_length)
-
-    cnn_input = cnn_input.permute(1,2,0)
+    positional_sequences = self.get_sentence_positional_feature(words.shape[1], words.shape[0])
     
-    for i, conv in enumerate(self.convs):
-        # conved = (batch, cnn_out_chanel, sentlength)
-        conved = conv(self.cnn_dropout(cnn_input))
-        conved = nn.functional.glu(conved, dim=1)
-        conved = (conved+cnn_input)*self.scale
-        cnn_input = conved
+    # cnn_input = (batch, sentence_length, embedding_dim)
+    cnn_input = cnn_input.permute(1,0,2)
+    cnn_out = []
+    for i in range(words.shape[0]):
+      x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i], 2)
+      x = x.unsqueeze(1)
+      x = [nn.functional.relu(conv(self.cnn_dropout(x))).squeeze(3) for conv in self.convs]
+      x = [nn.functional.max_pool1d(i, i.size(2)).squeeze(2) for i in x]
+      x = torch.cat(x, 1)
+      cnn_out.append(x)
+    cnn_out = torch.stack(cnn_out, dim=1) # cnn_out = (batch, sentlength, dim)
+
     
     # cnn_out = torch.cat(cnn_out, dim=2 )
-    cnn_out = conved.permute(2,0,1)
+    cnn_out = conved.permute(1,0,2)
     # print(cnn_out.shape)
 
     # fc_input = (sent_length, batch, out_channel)
