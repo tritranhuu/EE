@@ -1,6 +1,6 @@
 from data_utils.corpus import Corpus
-from deeplearning_models.bilstm_crf import BiLSTM_CRF
-from trainer.event_detection_for_crf import ED
+from deeplearning_models.cnn_trigger_candidates import CNN
+from trainer.event_detection import ED
 
 import torch
 from torch.optim import Adam
@@ -58,7 +58,6 @@ if __name__ == "__main__":
       char_pad_idx=corpus.char_pad_idx,
       word_pad_idx=corpus.word_pad_idx,
       pretrained=corpus.word_field.vocab.vectors if corpus.wv_model else None,
-      pretrained= None,
       freeze=True
       )
 
