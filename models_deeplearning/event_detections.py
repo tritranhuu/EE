@@ -147,6 +147,47 @@ class PositionalEncoding(nn.Module):
         x = x+self.pe[:x.size(0), :]
         return self.dropout(x)
 
+class CNNSequence(nn.Module):
+    def __init__(self,
+                 input_dim,
+                 cnn_out_channel,
+                 cnn_kernels,
+                 cnn_dropout
+                 ):
+        super().__init__()
+        self.word_pad_idx = word_pad_idx
+        self.emb_to_cnn_input = nn.Linear(
+            in_features = input_dim,
+            out_features=cnn_out_channel
+        )
+        #CNN layer
+        self.convs = nn.ModuleList(
+            [nn.Conv1d(
+                in_channels = cnn_out_channel,
+                out_channels= cnn_out_channel*2,
+                kernel_size = k,
+                padding = (k-1)//2,
+                # padding_mode = 'replicate'
+            ) for k in cnn_kernels]
+        )
+        self.cnn_dropout = cnn_dropout
+        self.scale = torch.sqrt(torch.FloatTensor([0.5]))
+    def forward(self, words, word_features):
+        cnn_input = self.emb_to_cnn_input(self.fc_dropout(word_features))
+        # word_features = (batch, embedding_dim, sentence_length)
+
+        cnn_input = cnn_input.permute(1,2,0)
+    
+        for i, conv in enumerate(self.convs):
+            # conved = (batch, cnn_out_chanel, sentlength)
+            conved = conv(self.cnn_dropout(cnn_input))
+            conved = nn.functional.glu(conved, dim=1)
+            conved = (conved+cnn_input)*self.scale
+            cnn_input = conved
+
+        cnn_out = conved.permute(2,0,1)
+        return cnn_out
+
 class Transformer(nn.Module):
 
     def __init__(self,
@@ -235,6 +276,9 @@ class Model(nn.Module):
                  attn_heads=None,
                  attn_dropout=None,
                  trf_layers=None,
+                 cnn_out_chanel=None,
+                 cnn_kernels=None,
+                 cnn_dropout=None,
                  fc_hidden=None,
                  fc_dropout=0.25):
         super().__init__()
@@ -276,6 +320,16 @@ class Model(nn.Module):
                 trf_layers=trf_layers,
                 fc_hidden=fc_hidden,
                 word_pad_idx=word_pad_idx
+            )
+            encoder_output_dim = self.encoder.output_dim
+        
+        elif model_arch.lower() == "cnn":
+            # Transformer
+            self.encoder = CNNSequence(
+                input_dim=self.embeddings.output_dim,
+                cnn_out_channel=cnn_out_chanel,
+                cnn_kernels=cnn_kernels,
+                cnn_dropout=cnn_dropout
             )
             encoder_output_dim = self.encoder.output_dim
         else:

@@ -10,7 +10,7 @@ def get_configs(corpus, device):
     w2v = {
         "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None
     }
-    cnn = {
+    char_cnn = {
         "use_char_emb": True,
         "char_input_dim": len(corpus.char_field.vocab),
         "char_emb_dim": 37,
@@ -28,12 +28,22 @@ def get_configs(corpus, device):
         "trf_layers": 1,
         "fc_hidden": 256,
     }
+    cnn = {
+        "model_arch": "cnn",
+        "cnn_out_channel": 100,
+        "cnn_kernels": [3,5,7],
+        "cnn_dropout": 0.25
+    }
+
     # this is the main config, which is based on the previous building blocks
     configs = {
         "bilstm": base,
         "bilstm+w2v": {**base, **w2v},
-        "bilstm+w2v+cnn": {**base, **w2v, **cnn},
-        "bilstm+w2v+cnn+attn": {**base, **w2v, **cnn, **attn},
-        "transformer+w2v+cnn": {**base, **transformer, **w2v, **cnn, **attn}
+        "bilstm+w2v+charcnn": {**base, **w2v, **char_cnn},
+        "bilstm+w2v+charcnn+attn": {**base, **w2v, **char_cnn, **attn},
+        "cnn": {**base, **cnn},
+        "cnn+w2v": {**base, **cnn, **w2v},
+        "cnn+w2v+charcnn": {**base, **cnn, **w2v, **char_cnn}
+        "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
     }
     return configs
