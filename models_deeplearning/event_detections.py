@@ -36,13 +36,13 @@ class Embeddings(nn.Module):
         self.char_pad_idx = char_pad_idx
         #Initialize embedding if pretrained is given
         if word_emb_pretrained is not None:
-            self.word_emb = nn.Embeddings.from_pretrained(
+            self.word_emb = nn.Embedding.from_pretrained(
                 embeddings=torch.as_tensor(word_emb_pretrained),
                 padding_idx = self.word_pad_idx,
                 freeze=word_emb_froze
             )
         else:
-            self.word_emb = nn.Embeddings(
+            self.word_emb = nn.Embedding(
                 num_embeddings=word_input_dim,
                 embedding_dim=word_emb_dim,
                 padding_idx=self.word_pad_idx
@@ -125,7 +125,7 @@ class LSTMAttn(nn.Module):
     
     def forward(self, words, word_features):
         lstm_out, _ = self.lstm(word_features)
-        if not.self.attn_heads:
+        if not self.attn_heads:
             return lstm_out
         key_padding_mask = torch.as_tensor(words == self.word_pad_idx).permute(1,0)
         attn_out, _ = self.attn(lstm_out, lstm_out, lstm_out, key_padding_mask=key_padding_mask)
@@ -187,7 +187,7 @@ class Transformer(nn.Module):
         fc_out = self.fc_norm(self.fc_gelu(self.fc(trf_out)))
         return fc_out
 
-class CRF(nn.Module):
+class CRF_(nn.Module):
 
     def __init__(self,
                  input_dim,
@@ -203,7 +203,7 @@ class CRF(nn.Module):
         #CRF
         self.crf = CRF(num_tags=len(tag_names))
     
-    def forward(self, word, word_features, tags):
+    def forward(self, words, word_features, tags):
         # fc_out = [sentence length, batch size, output dim]
         fc_out = self.fc(self.fc_dropout(word_features))
         crf_mask = words != self.word_pad_idx
@@ -223,6 +223,7 @@ class Model(nn.Module):
                  word_emb_pretrained=None,
                  word_emb_dropout=0.5,
                  word_emb_froze=False,
+                 use_char_emb=False,
                  char_input_dim=None,
                  char_emb_dim=None,
                  char_emb_dropout=None,
@@ -281,7 +282,7 @@ class Model(nn.Module):
         else:
             raise ValueError("param `model_arch` must be either 'bilstm' or 'transformer'")
         # CRF
-        self.crf = CRF(
+        self.crf = CRF_(
             input_dim=encoder_output_dim,
             fc_dropout=fc_dropout,
             word_pad_idx=word_pad_idx,
