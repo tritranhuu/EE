@@ -1,6 +1,7 @@
 from data_utils.corpus import Corpus
 from models_deeplearning.event_detections import Model
 from trainer.trainer_with_crf import Trainer
+import matplotlib.pyplot as plt
 
 import torch
 from torch.optim import Adam
@@ -40,3 +41,32 @@ if __name__ == "__main__":
 
     trainer.train_live(20)
 
+    num_epochs = 15
+    histories = {}
+    for model_name in configs:
+        print(f"Start Training: {model_name}")
+        trainer = Trainer(
+            model=Model(**configs[model_name]),
+            data=corpus,
+            optimizer_cls=Adam,
+            loss_fn_cls=nn.CrossEntropyLoss,
+            device=device
+        )
+        histories[model_name] = trainer.train(num_epochs)
+        print(f"Done Training: {model_name}")
+    epochs = [i+1 for i in range(15)]
+    model_name = "bilstm"
+    val_loss1 = histories[model_name]["val_loss"]
+    val_loss2 = histories["bilstm+w2v"]["val_loss"]
+    fig, axs = plt.subplots(2, 1, figsize=(15, 12))
+    for model_name in histories:
+        axs[0].plot(epochs, histories[model_name]["val_loss"], label=model_name)
+        axs[1].plot(epochs, histories[model_name]["val_f1"], label=model_name)
+    _ = axs[0].set_title("Val Loss")
+    _ = axs[1].set_title("Val F1")
+    _ = axs[1].set_xlabel("epochs")
+    _ = axs[0].set_ylabel("loss")
+    _ = axs[1].set_ylabel("F1")
+    _ = axs[0].legend(loc="upper right")
+    _ = axs[1].legend(loc="lower right")
+    plt.savefig('fig.png')
