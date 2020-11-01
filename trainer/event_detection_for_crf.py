@@ -14,8 +14,9 @@ from sklearn.metrics import classification_report
 
 class ED(object):
 
-    def __init__(self, model, data, optimizer_cls, loss_fn_cls):
-        self.model = model
+    def __init__(self, model, data, optimizer_cls, loss_fn_cls, device):
+        self.device = device
+        self.model = model.to(self.device)
         self.data = data
         self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.tag_pad_idx)
@@ -40,12 +41,12 @@ class ED(object):
         self.model.train()
         for batch in self.data.train_iter:
         # words = [sent len, batch size]
-            words = batch.word
-            chars = batch.char
+            words = batch.word.to(self.device)
+            chars = batch.char.to(self.device)
         # tags = [sent len, batch size]
-            true_tags = batch.tag
+            true_tags = batch.tag.to(self.device)
             self.optimizer.zero_grad()
-            pred_tags_list, batch_loss, _ = self.model(words, chars, true_tags)
+            pred_tags_list, batch_loss = self.model(words, chars, true_tags)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             true_tags_list = [
@@ -72,10 +73,10 @@ class ED(object):
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
-                words = batch.word
-                chars = batch.char
-                true_tags = batch.tag
-                pred_tags, batch_loss, _ = self.model(words, chars, true_tags)
+                words = batch.word.to(self.device)
+                chars = batch.char.to(self.device)
+                true_tags = batch.tag.to(self.device)
+                pred_tags, batch_loss = self.model(words, chars, true_tags)
                 true_tags_list = [
                     [tag for tag in sent_tag if tag != self.data.tag_pad_idx]
                     for sent_tag in true_tags.permute(1, 0).tolist()

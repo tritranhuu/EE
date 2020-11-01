@@ -34,7 +34,7 @@ class Corpus(object):
     
     
     if args.wv_file:
-        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(wv_file, binary=True)
+        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=True)
         self.embedding_dim = self.wv_model.vector_size
         word_freq = {word: self.wv_model.wv.vocab[word].count for word in self.wv_model.wv.vocab}
         word_counter = Counter(word_freq)

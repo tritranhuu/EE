@@ -14,26 +14,28 @@ from sklearn.metrics import classification_report
 class CNN(nn.Module):
 
   def __init__(self, 
-                input_dim, 
-                embedding_dim,
-                max_sent_length,
-                pos_emb_dim,  
-                cnn_kernels,
-                cnn_in_chanel,
-                cnn_out_chanel, 
-                char_emb_dim,
-                char_input_dim,
-                char_cnn_filter_num,
-                char_cnn_kernel_size,
-                output_dim,
-                emb_dropout,
-                char_cnn_dropout, 
-                cnn_dropout, 
-                fc_dropout, 
-                word_pad_idx,
-                char_pad_idx,
-                args):
+                # input_dim, 
+                # embedding_dim,
+                # max_sent_length,
+                # pos_emb_dim,  
+                # cnn_kernels,
+                # cnn_in_chanel,
+                # cnn_out_chanel, 
+                # char_emb_dim,
+                # char_input_dim,
+                # char_cnn_filter_num,
+                # char_cnn_kernel_size,
+                # output_dim,
+                # emb_dropout,
+                # char_cnn_dropout, 
+                # cnn_dropout, 
+                # fc_dropout, 
+                # word_pad_idx,
+                # char_pad_idx,
+                args,
+                device):
     super().__init__()
+    self.device = device
     self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
@@ -72,7 +74,7 @@ class CNN(nn.Module):
         [nn.Conv2d(
             in_channels = 1,
             out_channels= args.cnn_out_chanel,
-            kernel_size = k,
+            kernel_size = (k, args.cnn_out_chanel)
 
             # padding = /(k-1)//2,
             # padding_mode = 'replicate'
@@ -98,8 +100,8 @@ class CNN(nn.Module):
     # chars = [batch size, sentence length, word length)
     # embedding_out = [sentence length, batch size, embedding dim]
     # print(chars.shape)
-    embedding_out = self.emb_dropout(self.embedding(words))
-    char_emb_out = self.emb_dropout(self.char_emb(chars))
+    embedding_out = self.emb_dropout(self.embedding(words)).to(self.device)
+    char_emb_out = self.emb_dropout(self.char_emb(chars)).to(self.device)
     batch_size, sent_len, word_len, char_emb_dim = char_emb_out.shape
     char_cnn_max_out = torch.zeros(batch_size, sent_len, self.char_cnn.out_channels)
         # for character embedding, we need to iterate over sentences
@@ -109,17 +111,18 @@ class CNN(nn.Module):
       char_cnn_sent_out = self.char_cnn(sent_char_emb_p)
       char_cnn_max_out[:, sent_i, :], _ = torch.max(char_cnn_sent_out, dim=2)
     char_cnn = self.cnn_dropout(char_cnn_max_out)
-    char_cnn_p = char_cnn.permute(1,0,2)
+    char_cnn_p = char_cnn.permute(1,0,2).to(self.device)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
     
     # cnn_input = self.emb_to_cnn_input(self.fc_dropout(word_features))
     positional_sequences = self.get_sentence_positional_feature(words.shape[1], words.shape[0])
     
     # cnn_input = (batch, sentence_length, embedding_dim)
-    cnn_input = word_features.permute(1,0,2)
+    cnn_input = word_features.permute(1,0,2).to(self.device)
     cnn_out = []
     for i in range(words.shape[0]):
-      x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i])], 2)
+      # x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i]).to(self.device)], 2)
+      x = cnn_input
       x = self.emb_to_cnn_input(self.fc_dropout(x))
 
       x = x.unsqueeze(1)
@@ -131,7 +134,7 @@ class CNN(nn.Module):
 
     
     # cnn_out = torch.cat(cnn_out, dim=2 )
-    cnn_out = cnn_out.permute(1,0,2)
+    cnn_out = cnn_out.permute(1,0,2).to(self.device)
     # print(cnn_out.shape)
 
     # fc_input = (sent_length, batch, out_channel)

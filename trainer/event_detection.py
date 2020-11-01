@@ -14,8 +14,9 @@ from sklearn.metrics import classification_report, f1_score
 
 class ED(object):
 
-    def __init__(self, model, data, optimizer_cls, loss_fn_cls):
-        self.model = model
+    def __init__(self, model, data, optimizer_cls, loss_fn_cls, device):
+        self.device = device
+        self.model = model.to(self.device)
         self.data = data
         self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.tag_pad_idx)
@@ -28,6 +29,8 @@ class ED(object):
         return elapsed_mins, elapsed_secs
 
     def accuracy(self, preds, y):
+        preds= preds.to(self.device)
+        y = y.to(self.device)
         max_preds = preds.argmax(dim=1, keepdim=True)  # get the index of the max probability
         non_pad_elements = (y != 0).nonzero()  # prepare masking for paddings
         correct = max_preds[non_pad_elements].squeeze(1).eq(y[non_pad_elements])
@@ -51,12 +54,12 @@ class ED(object):
         self.model.train()
         for batch in self.data.train_iter:
         # words = [sent len, batch size]
-            words = batch.word
-            chars = batch.char
+            words = batch.word.to(self.device)
+            chars = batch.char.to(self.device)
         # tags = [sent len, batch size]
-            true_tags = batch.tag
+            true_tags = batch.tag.to(self.device)
             self.optimizer.zero_grad()
-            pred_tags = self.model(words, chars)
+            pred_tags = self.model(words, chars).to(self.device)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
@@ -81,12 +84,12 @@ class ED(object):
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
-                words = batch.word
+                words = batch.word.to(self.device)
                 if words.shape[0] < 5:
                   continue
-                chars = batch.char
-                true_tags = batch.tag
-                pred_tags = self.model(words, chars)
+                chars = batch.char.to(self.device)
+                true_tags = batch.tag.to(self.device)
+                pred_tags = self.model(words, chars).to(self.device)
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
                 batch_loss = self.loss_fn(pred_tags, true_tags)

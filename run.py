@@ -31,10 +31,10 @@ if __name__ == "__main__":
     parser.add_argument('--embedding_dim', type=int, default=300)
     parser.add_argument('--char_emb_dim', type=int, default=25)
     parser.add_argument('--char_input_dim', type=int, default=len(corpus.char_field.vocab))
-    parser.add_argument('--char_cnn_filter_num', type=int, default=5, help="path of saved model")
+    parser.add_argument('--char_cnn_filter_num', type=int, default=4, help="path of saved model")
     parser.add_argument('--char_cnn_kernel_size', type=int, default=3)
     parser.add_argument('--hidden_dim', type=int, default=64)
-    parser.add_argument('--output_dim', type=int, default=corpus.tag_field.vocab)
+    parser.add_argument('--output_dim', type=int, default=len(corpus.tag_field.vocab))
     parser.add_argument('--lstm_layers', type=int, default=2)
     parser.add_argument('--attn_heads', type=int, default=16)
     parser.add_argument('--emb_dropout', type=float, default=0.5)
@@ -49,9 +49,16 @@ if __name__ == "__main__":
     parser.add_argument('--cnn_kernels', type=list, default=[3,4,5])
     parser.add_argument('--cnn_in_chanel', type=int, default=1)
     parser.add_argument('--cnn_out_chanel', type=int, default=100)
+    parser.add_argument('--fc_hidden', type=int, default=256)
+    parser.add_argument('--trf_layers', type=int, default=1)
+    parser.add_argument('--trf_dropout', type=float, default=0.1)
+    parser.add_argument('--pos_emb_dim', type=int, default=20)
+    parser.add_argument('--max_sent_length', type=int, default=200)
     
-    model = BiLSTM_CRF(
-        parser.parse_args()
+    
+    model = CNN(
+        parser.parse_args(),
+        device=device
     )
     model.init_weights()
     model.init_embeddings(
@@ -65,6 +72,7 @@ if __name__ == "__main__":
         model=model,
         data=corpus,
         optimizer_cls=Adam,
-        loss_fn_cls=nn.CrossEntropyLoss
+        loss_fn_cls=nn.CrossEntropyLoss,
+        device = device
         )
-    ed.train(20)
+    ed.train(30)

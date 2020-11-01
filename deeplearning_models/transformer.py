@@ -6,6 +6,10 @@ from collections import Counter
 import torch
 from torch import nn
 from torch.optim import Adam
+from torchtext.data import Field, BucketIterator, NestedField
+from torchtext.datasets import SequenceTaggingDataset
+from torchtext.vocab import Vocab
+from torchcrf import CRF
 
 import numpy as np
 from sklearn.metrics import classification_report
@@ -19,14 +23,14 @@ class PositionalEncoding(nn.Module):
         div_term = torch.exp(torch.arange(0, d_model, 2).float()*(-math.log(10000.0)/d_model))
         pe[:, 0::2] = torch.sin(position*div_term)
         pe[:, 1::2] = torch.cos(position*div_term)
-        pe = pe.unsqueeze().transpose(0,1)
+        pe = pe.unsqueeze(0).transpose(0,1)
         self.register_buffer('pe', pe)
 
     def forward(self, x):
         x = x+self.pe[:x.size(0), :]
         return self.dropout(x)
 
-class BiLSTM_CRF(nn.Module):
+class Transformer(nn.Module):
 
   def __init__(self, 
                 # input_dim, 
@@ -47,12 +51,13 @@ class BiLSTM_CRF(nn.Module):
                 # word_pad_idx,
                 # char_pad_idx,
                 # tag_pad_idx,
-                args):
+                args,
+                device):
     super().__init__()
     self.char_pad_idx = args.char_pad_idx
     self.word_pad_idx = args.word_pad_idx
     self.tag_pad_idx = args.tag_pad_idx
-    self.device = args.device
+    self.device = device
     self.embedding_dim = args.embedding_dim
     # LAYER 1: Embedding
     self.embedding = nn.Embedding(
@@ -113,9 +118,9 @@ class BiLSTM_CRF(nn.Module):
     # words = [sentence length, batch size]
     # chars = [batch size, sentence length, word length)
     # embedding_out = [sentence length, batch size, embedding dim]
-    embedding_out = self.emb_dropout(self.embedding(words))
+    embedding_out = self.emb_dropout(self.embedding(words)).to(self.device)
     # lstm_out = [sentence length, batch size, hidden dim * 2]
-    char_emb_out = self.emb_dropout(self.char_emb(chars))
+    char_emb_out = self.emb_dropout(self.char_emb(chars)).to(self.device)
     batch_size, sent_len, word_len, char_emb_dim = char_emb_out.shape
     char_cnn_max_out = torch.zeros(batch_size, sent_len, self.char_cnn.out_channels)
         # for character embedding, we need to iterate over sentences
@@ -125,7 +130,7 @@ class BiLSTM_CRF(nn.Module):
       char_cnn_sent_out = self.char_cnn(sent_char_emb_p)
       char_cnn_max_out[:, sent_i, :], _ = torch.max(char_cnn_sent_out, dim=2)
     char_cnn = self.cnn_dropout(char_cnn_max_out)
-    char_cnn_p = char_cnn.permute(1,0,2)
+    char_cnn_p = char_cnn.permute(1,0,2).to(self.device)
     word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
 
     #transformer forward
@@ -136,9 +141,9 @@ class BiLSTM_CRF(nn.Module):
     fc2_out = self.fc2(self.fc2_dropout(fc1_out))
 
     crf_mask = words != self.word_pad_idx
-    crf_out = self.crf.decode(fc_out, mask=crf_mask)
-    crf_loss = -self.crf(fc_out, tags=tags, mask=crf_mask) if tags is not None else None
-    return crf_out, crf_loss, attn_weight
+    crf_out = self.crf.decode(fc2_out, mask=crf_mask)
+    crf_loss = -self.crf(fc2_out, tags=tags, mask=crf_mask) if tags is not None else None
+    return crf_out, crf_loss
     # if tags is not None:
     #     mask = tags != self.tag_pad_idx
     #     crf_out = self.crf.decode(fc_out, mask=mask)
