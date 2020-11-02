@@ -155,7 +155,6 @@ class CNNSequence(nn.Module):
                  cnn_dropout
                  ):
         super().__init__()
-        self.word_pad_idx = word_pad_idx
         self.emb_to_cnn_input = nn.Linear(
             in_features = input_dim,
             out_features=cnn_out_channel
@@ -170,10 +169,10 @@ class CNNSequence(nn.Module):
                 # padding_mode = 'replicate'
             ) for k in cnn_kernels]
         )
-        self.cnn_dropout = cnn_dropout
-        self.scale = torch.sqrt(torch.FloatTensor([0.5]))
+        self.cnn_dropout = nn.Dropout(cnn_dropout)
+        self.scale = torch.sqrt(torch.cuda.FloatTensor([0.5]))
     def forward(self, words, word_features):
-        cnn_input = self.emb_to_cnn_input(self.fc_dropout(word_features))
+        cnn_input = self.emb_to_cnn_input(self.cnn_dropout(word_features))
         # word_features = (batch, embedding_dim, sentence_length)
 
         cnn_input = cnn_input.permute(1,2,0)
@@ -277,7 +276,7 @@ class Model(nn.Module):
                  attn_heads=None,
                  attn_dropout=None,
                  trf_layers=None,
-                 cnn_out_chanel=None,
+                 cnn_out_channel=None,
                  cnn_kernels=None,
                  cnn_dropout=None,
                  fc_hidden=None,
@@ -328,11 +327,11 @@ class Model(nn.Module):
             # Transformer
             self.encoder = CNNSequence(
                 input_dim=self.embeddings.output_dim,
-                cnn_out_channel=cnn_out_chanel,
+                cnn_out_channel=cnn_out_channel,
                 cnn_kernels=cnn_kernels,
                 cnn_dropout=cnn_dropout
             )
-            encoder_output_dim = self.encoder.output_dim
+            encoder_output_dim = cnn_out_channel
         else:
             raise ValueError("param `model_arch` must be either 'bilstm' or 'transformer'")
         # CRF

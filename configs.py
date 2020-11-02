@@ -43,7 +43,7 @@ def get_configs(corpus, device):
         "bilstm+w2v+charcnn+attn": {**base, **w2v, **char_cnn, **attn},
         "cnn": {**base, **cnn},
         "cnn+w2v": {**base, **cnn, **w2v},
-        "cnn+w2v+charcnn": {**base, **cnn, **w2v, **char_cnn}
-        "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
+        "cnn+w2v+charcnn": {**base, **cnn, **w2v, **char_cnn},
+        # "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
     }
     return configs
