@@ -96,6 +96,8 @@ class Trainer(object):
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
                 words = batch.word.to(self.device)
+                if words.shape[0] < 5:
+                  continue
                 chars = batch.char.to(self.device)
                 true_tags = batch.tag.to(self.device)
                 pred_tags, batch_loss = self.model(words, chars, true_tags)
