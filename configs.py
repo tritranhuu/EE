@@ -40,6 +40,10 @@ def get_configs(corpus, device):
         "cnn_out_channel": 100,
         "cnn_kernels": [3,4,5],
         "cnn_dropout": 0.25,
+        # "pos_emb_size": 200,
+        # "pos_emb_dim": 25
+    }
+    pos_emb = {
         "pos_emb_size": 200,
         "pos_emb_dim": 25
     }
@@ -60,9 +64,10 @@ def get_configs(corpus, device):
         "cnn_seq+w2v+charcnn": {**base, **cnn_seq, **w2v, **char_cnn},
 
         "cnn_trig": {**base, **cnn_trig},
-        "cnn_trig+w2v": {**base, **cnn_trig, **w2v},
-        "cnn_trig+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn},
+        # "cnn_trig+w2v": {**base, **cnn_trig, **w2v},
+        # "cnn_trig+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn},
 
+        "cnn_trig+w2v+position": {**base, **cnn_trig, **w2v, **pos_emb},
         # "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
     }
     return configs

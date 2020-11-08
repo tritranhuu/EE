@@ -10,7 +10,7 @@ from torchtext.datasets import SequenceTaggingDataset
 from torchtext.vocab import Vocab
 
 import numpy as np
-from sklearn.metrics import classification_report, f1_score
+from sklearn.metrics import classification_report, f1_score, precision_score, recall_score
 
 class Trainer(object):
 
@@ -88,7 +88,10 @@ class Trainer(object):
             true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
         # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
         epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        return epoch_loss / len(self.data.train_iter), epoch_score
+        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
+        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
+        
+        return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
     def evaluate(self, iterator):
         epoch_loss = 0
@@ -114,24 +117,24 @@ class Trainer(object):
                 pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
                 true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
         epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        # print(classification_report(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:]))
-        # print(f1_score(y_pred=np.array(y_pred), y_true=np.array(y_true), labels=list(self.data.tag_field.vocab.stoi.keys())[2:], average='micro'))
-
-        return epoch_loss / len(iterator), epoch_score
+        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
+        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
+        
+        return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
   # main training sequence
     def train_live(self, n_epochs):
         for epoch in range(n_epochs):
             start_time = time.time()
-            train_loss, train_f1 = self.epoch()
+            train_loss, train_f1, train_p1, train_r1 = self.epoch()
             end_time = time.time()
             epoch_mins, epoch_secs = Trainer.epoch_time(start_time, end_time)
             print(f"Epoch: {epoch + 1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s")
-            print(f"\tTrn Loss: {train_loss:.3f} | Trn F1: {train_f1 * 100:.2f}%")
-            val_loss, val_f1 = self.evaluate(self.data.val_iter)
-            print(f"\tVal Loss: {val_loss:.3f} | Val F1: {val_f1 * 100:.2f}%")
-        test_loss, test_f1 = self.evaluate(self.data.test_iter)
-        print(f"Test Loss: {test_loss:.3f} |  Test F1: {test_f1 * 100:.2f}%")
+            print(f"\tTrn Loss: {train_loss:.3f} | Trn P1: {train_p1 * 100:.2f}%  R1: {train_r1 * 100:.2f}% F1: {train_f1 * 100:.2f}%")
+            val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
+            print(f"\tVal Loss: {val_loss:.3f} | Val P1: {val_p1 * 100:.2f}%  R1: {val_r1 * 100:.2f}% F1: {val_f1 * 100:.2f}%")
+        test_loss, test_f1, test_p1, test_r1 = self.evaluate(self.data.test_iter)
+        print(f"Test Loss: {test_loss:.3f} |  Test P1: {test_p1 * 100:.2f}%  R1: {test_r1 * 100:.2f}% F1: {test_f1 * 100:.2f}%")
     
     def train(self, n_epochs):
         history = {
@@ -144,15 +147,15 @@ class Trainer(object):
         elapsed_train_time = 0
         for epoch in range(n_epochs):
             start_time = time.time()
-            train_loss, train_f1 = self.epoch()
+            train_loss, train_f1,_,_ = self.epoch()
             end_time = time.time()
             elapsed_train_time += end_time - start_time
             history["train_loss"].append(train_loss)
             history["train_f1"].append(train_f1)
-            val_loss, val_f1 = self.evaluate(self.data.val_iter)
+            val_loss, val_f1,_,_ = self.evaluate(self.data.val_iter)
             history["val_loss"].append(val_loss)
             history["val_f1"].append(val_f1)
-        test_loss, test_f1 = self.evaluate(self.data.test_iter)
+        test_loss, test_f1,_,_ = self.evaluate(self.data.test_iter)
         history["test_loss"] = test_loss
         history["test_f1"] = test_f1
         history["elapsed_train_time"] = elapsed_train_time

@@ -28,7 +28,7 @@ if __name__ == "__main__":
         parser.parse_args()
     )
     configs = get_configs(corpus, device)
-    # model_name = "cnn_seq+w2v"
+    # model_name = "cnn_trig+w2v"
     # model = Model(**configs[model_name])
 
     # trainer = Trainer(
@@ -39,9 +39,9 @@ if __name__ == "__main__":
     #     device = device
     #     )
 
-    # trainer.train_live(20)
+    # trainer.train_live(100)
 
-    num_epochs = 25
+    num_epochs = 20
     histories = {}
     for model_name in configs:
         print(f"Start Training: {model_name}")
@@ -70,4 +70,16 @@ if __name__ == "__main__":
     _ = axs[1].set_ylabel("F1")
     _ = axs[0].legend(loc="upper right")
     _ = axs[1].legend(loc="lower right")
-    plt.savefig('/content/drive/My Drive/EE/fig_nocrf.png')
+    plt.savefig('/content/drive/My Drive/EE/fig_nocrf2.png')
+
+    model_test_f1 = [(m, histories[m]["test_f1"]) for m in histories]
+    model_test_f1_sorted = sorted(model_test_f1, key=lambda m: m[1])
+    model_names = [m[0] for m in model_test_f1_sorted]
+    y_pos = list(range(len(model_names)))
+    f1_scores = [m[1] for m in model_test_f1_sorted]
+    fig, ax = plt.subplots()
+    _ = ax.barh(y_pos, f1_scores, align='center')
+    _ = ax.set_yticks(y_pos)
+    _ = ax.set_yticklabels(model_names)
+    _ = ax.set_title("Test F1")
+    plt.savefig('/content/drive/My Drive/EE/test.png')
