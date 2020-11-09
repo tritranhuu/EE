@@ -1,6 +1,6 @@
 from data_utils.corpus_arguments import CorpusArgument
-from models_deeplearning.event_arguments import Model_EA
-from trainer.argument_detection import Trainer
+from models_deeplearning.argument_detection import Model_EA
+from trainer.argument_detection_trainer import Trainer
 import matplotlib.pyplot as plt
 
 import torch
