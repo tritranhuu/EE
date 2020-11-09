@@ -6,6 +6,7 @@ def get_configs(corpus, device):
         "word_pad_idx": corpus.word_pad_idx,
         "tag_names": corpus.tag_field.vocab.itos,
         "device": device
+        'data': corpus
     }
     w2v = {
         "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None
@@ -69,5 +70,41 @@ def get_configs(corpus, device):
 
         "cnn_trig+w2v+position": {**base, **cnn_trig, **w2v, **pos_emb},
         # "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
+    }
+    return configs
+
+def get_configs_arguments(corpus):
+    base = {
+        "word_input_dim": len(corpus.word_field.vocab),
+        "char_pad_idx": corpus.char_pad_idx,
+        "word_pad_idx": corpus.word_pad_idx,
+        "entity_pad_idx": corpus.entity_pad_idx,
+        "event_pad_idx": corpus.event_pad_idx,
+        "argument_names": corpus.tag_field.vocab.itos,
+        "device": device
+        'data': corpus
+    }
+    char_cnn = {
+        "use_char_emb": True,
+        "char_input_dim": len(corpus.char_field.vocab),
+        "char_emb_dim": 25,
+        "char_emb_dropout": 0.25,
+        "char_cnn_filter_num": 4,
+        "char_cnn_kernel_size": 3,
+        "char_cnn_dropout": 0.25
+    }
+    w2v = {
+        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None
+    }
+    entity_emb = {
+        "entity_emb_size":len(corpus.entity_field.vocab),
+        "entity_emb_dim":25
+    }
+    event_emb = {
+        "event_emb_size":len(corpus.event_field.vocab),
+        "event_emb_dim":25
+    }
+    configs = {
+        "bilstm": {**base, **w2v, **char_cnn, **entity_emb, *event_emb},
     }
     return configs

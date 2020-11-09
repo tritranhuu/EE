@@ -228,32 +228,4 @@ class Fully_Connected(nn.Module):
         fc_out = self.fc(self.fc_dropout(word_features))
         return fc_out, "no_loss"
 
-class GraphConvolution(nn.Module):
-    def __init__(self, 
-                 input_dim,
-                 out_features,
-                 edge_types,
-                 dropout,
-                 bias,
-                 use_bn ):
-        super().__init__()
-        self.edge_types = edge_types
-        self.use_bn = use_bn
-        if self.use_bn:
-            self.bn = nn.BatchNorm1d(out_features)
-        
-        self.gates = nn.ModuleList(
-            [nn.Linear(in_features=input_dim, out_features=1, bias=bias) for _ in range(edge_types)]
-        )
 
-        self.graph_convs = nn.ModuleList(
-            [nn.Linear(in_features=input_dim, out_features=out_features, bias=bias)]
-        )
-
-
-    def forward(self, words, word_features, adj):
-        adj_ = adj.tranpose(0, 1)
-        ts = []
-        for i in range(self.edge_types):
-            gate_status = F.sigmoid(self.gates[i](word_features))
-            adj_hat_i = adj_[i]*gate_status

@@ -26,8 +26,12 @@ class Embeddings(nn.Module):
                  char_cnn_filter_num,
                  char_cnn_kernel_size,
                  char_cnn_dropout,
+                 entity_emb_size=None,
+                 entity_emb_dim=0,
+                 entity_emb_dropout=0,
                  word_pad_idx,
                  char_pad_idx,
+                 entity_pad_idx,
                  device
         ):
         super().__init__()
@@ -70,10 +74,19 @@ class Embeddings(nn.Module):
             )
             self.char_cnn_dropout = nn.Dropout(char_cnn_dropout)
             self.output_dim += char_emb_dim * char_cnn_filter_num
-        
-    def forward(self, words, chars):
+        self.entity_emb_size = entity_emb_size
+        if self.entity_emb_size != None:
+            self.entity_emb_dim = entity_emb_dim
+            self.entity_emb = nn.Embedding(
+                num_embeddings=entity_emb_size,
+                out_channels=entity_emb_dim
+            )
+            self.output_dim += entity_emb_dim
+            self.entity_emb_dropout = nn.Dropout(entity_emb_dropout)
+    def forward(self, words, chars, entities=None):
         # words = [sentence length, batch size]
         # chars = [batch size, sentence length, word length)
+        # entities = [sentence_length, batch_size]
         # tags = [sentence length, batch size]
         # embedding_out = [sentence length, batch size, embedding dim] 
         
@@ -91,4 +104,27 @@ class Embeddings(nn.Module):
         char_cnn = self.char_cnn_dropout(char_cnn_max_out)
         char_cnn_p = char_cnn.permute(1,0,2)
         word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
+        if self.entity_emb_size != None:
+            entity_out = self.entity_emb_dropout(self.entity_emb(entities))
+        word_features = torch.cat((word_features, entity_out), dim=2)
         return word_features
+
+class EventEmbedding(nn.Module):
+
+    def __init__(self,
+                 event_emb_size=None,
+                 event_emb_dim=0,
+                 event_emb_dropout=0,
+                 event_pad_idx,
+                 device
+                 ):
+        self.device = device
+
+        self.event_emb = nn.Embedding(
+            num_embeddings=event_emb_size,
+            out_channels=event_emb_dim
+        )
+        self.event_emb_dropout = nn.Dropout(event_emb_dropout)
+        self.output_dim = event_emb_dim
+    def forward(self, events):
+        return self.event_emb_dropout(self.event_emb(events))
