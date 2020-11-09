@@ -7,7 +7,7 @@ from collections import namedtuple
 from io import StringIO
 from os import path
 
-path_data = 'data/test'
+path_data = 'data/train'
 path_save = 'data/full'
 
 def parse_textbounds(f, annfn):
@@ -147,15 +147,21 @@ def relabel(lines, annotations):
 def save_conll(data, path, opt='w'):
     with open(path, opt, encoding='utf-8') as f:
         for sent in data:
+            event = {}
             for word in sent:
-                if len(word) ==4:
-                    f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ word[3] + '\t' + 'N' + '\n')
-                else:
-                    f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ word[3] + '\t')
-                    for arg in word[4]:
-                        f.write(arg + ' ')
-                    f.write('\n')
-            f.write('\n')
+                if len(word) > 4:
+                    args = {arg.split(':')[-1]:arg.split('-')[0] for arg in word[4]}
+                    # args = eval(args)
+                    args['O'] = 'O'
+                    args['word'] = word
+                    event[word[0]] = args
+            for e, args in event.items():
+                for word in sent:
+                    if word[3] in args.keys():
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[word[3]] + '\n')
+                    else:
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O' + '\n')
+                f.write('\n')
 
 
 # text_to_conll('C:/Users/dell/Downloads/Compressed/brat-v1.3_Crunchy_Frog/data/event/Phase_2/Bankruptcy/Bankruptcy_1/Bankruptcy_009.txt', './')
@@ -194,7 +200,7 @@ def brat2conll():
     count = 0
     for file, files in zip(npath_file, npath_save):
         # print(file)
-        save_conll(text_to_conll(file, files), path_save + '/test.txt', opt='a')
+        save_conll(text_to_conll(file, files), path_save + '/train.txt', opt='a')
         count +=1
         if count %100 ==0:
             print('check {} files'.format(count))

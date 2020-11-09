@@ -5,17 +5,14 @@ from torchtext.data import Field, BucketIterator, NestedField
 from torchtext.datasets import SequenceTaggingDataset
 from torchtext.vocab import Vocab
 
-class Corpus(object):
-
+class CorpusArgument(object):
 
   def __init__(self, args):
     # list all the fields
     self.word_field = Field(lower=True)
-    self.tag_field = Field(unk_token=None)
+    self.event_field = Field(unk_token=None)
     self.entity_field = Field(unk_token=None)
-
-    self.argument_id_field = Field()
-    self.argument_tag_field = Field()
+    self.argument_field = Field(unk_token=None)
     self.char_nesting_field = Field(tokenize=list)
     self.char_field = NestedField(self.char_nesting_field)
 
@@ -27,15 +24,13 @@ class Corpus(object):
         test="test.csv",
         fields=(
           (("word", "char"), (self.word_field, self.char_field)), 
-
-          ("tag", self.tag_field),
+          ("event", self.event_field),
           ("entity", self.entity_field),
-          ("argument_id", self.argument_id_field),
-          ("argument_tag", self.argument_tag_field)),
+          ("argument", self.argument_id_field),
     )
     # convert fields to vocabulary list
     # self.word_field.build_vocab(self.train_dataset.word, min_freq=min_word_freq)
-    self.tag_field.build_vocab(self.train_dataset.tag)
+    self.event_field.build_vocab(self.train_dataset.event)
     # create iterator for batch input
     
     
@@ -61,20 +56,18 @@ class Corpus(object):
     else:
         self.word_field.build_vocab(self.train_dataset.word, min_freq=args.min_word_freq)
     self.char_field.build_vocab(self.train_dataset.char)
-
     self.entity_field.build_vocab(self.train_dataset.entity)
-    self.argument_id_field.build_vocab(self.train_dataset.argument_id)
-    self.argument_tag_field.build_vocab(self.train_dataset.argument_tag)
+    self.argument_field.build_vocab(self.train_dataset.argument)
     
     self.train_iter, self.val_iter, self.test_iter = BucketIterator.splits(
         datasets=(self.train_dataset, self.val_dataset, self.test_dataset),
         batch_size=args.batch_size
     ) 
-  
+    
     # prepare padding index to be ignored during model training/evaluation
     self.word_pad_idx = self.word_field.vocab.stoi[self.word_field.pad_token]
-    self.tag_pad_idx = self.tag_field.vocab.stoi[self.tag_field.pad_token]
+    self.event_pad_idx = self.tag_field.vocab.stoi[self.event_field.pad_token]
     self.char_pad_idx = self.char_field.vocab.stoi[self.char_field.pad_token]
-
     self.entity_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]
+    self.argument_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]
     

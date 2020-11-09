@@ -14,7 +14,7 @@ from sklearn.metrics import classification_report
 from embedding.embedding import Embeddings
 from models_deeplearning.layers import *
 
-class Model(nn.Module):
+class Model_EE(nn.Module):
     def __init__(self,
                  word_input_dim,
                  word_pad_idx,
@@ -46,7 +46,8 @@ class Model(nn.Module):
                  cnn_dropout=None,
                  fc_hidden=None,
                  fc_dropout=0.25,
-                 use_crf=False):
+                 use_crf=False,
+                 data):
         super().__init__()
         self.embeddings = Embeddings(
             word_input_dim=word_input_dim,
