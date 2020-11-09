@@ -26,13 +26,13 @@ class Embeddings(nn.Module):
                  char_cnn_filter_num,
                  char_cnn_kernel_size,
                  char_cnn_dropout,
-                 entity_emb_size=None,
-                 entity_emb_dim=0,
-                 entity_emb_dropout=0,
                  word_pad_idx,
                  char_pad_idx,
                  entity_pad_idx,
-                 device
+                 device,
+                 entity_emb_size=None,
+                 entity_emb_dim=0,
+                 entity_emb_dropout=0
         ):
         super().__init__()
         self.device = device
@@ -79,7 +79,7 @@ class Embeddings(nn.Module):
             self.entity_emb_dim = entity_emb_dim
             self.entity_emb = nn.Embedding(
                 num_embeddings=entity_emb_size,
-                out_channels=entity_emb_dim
+                embedding_dim=entity_emb_dim
             )
             self.output_dim += entity_emb_dim
             self.entity_emb_dropout = nn.Dropout(entity_emb_dropout)
@@ -112,17 +112,18 @@ class Embeddings(nn.Module):
 class EventEmbedding(nn.Module):
 
     def __init__(self,
-                 event_emb_size=None,
-                 event_emb_dim=0,
-                 event_emb_dropout=0,
+                 event_emb_size,
+                 event_emb_dim,
+                 event_emb_dropout,
                  event_pad_idx,
                  device
                  ):
+        super().__init__()
         self.device = device
 
         self.event_emb = nn.Embedding(
             num_embeddings=event_emb_size,
-            out_channels=event_emb_dim
+            embedding_dim=event_emb_dim
         )
         self.event_emb_dropout = nn.Dropout(event_emb_dropout)
         self.output_dim = event_emb_dim

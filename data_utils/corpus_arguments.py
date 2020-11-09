@@ -19,14 +19,14 @@ class CorpusArgument(object):
     # create dataset using built-in parser from torchtext
     self.train_dataset, self.val_dataset, self.test_dataset = SequenceTaggingDataset.splits(
         path=args.input_folder,
-        train="train.csv",
-        validation="dev.csv",
-        test="test.csv",
+        train="train.txt",
+        validation="dev.txt",
+        test="test.txt",
         fields=(
           (("word", "char"), (self.word_field, self.char_field)), 
           ("event", self.event_field),
           ("entity", self.entity_field),
-          ("argument", self.argument_id_field),
+          ("argument", self.argument_field)),
     )
     # convert fields to vocabulary list
     # self.word_field.build_vocab(self.train_dataset.word, min_freq=min_word_freq)
@@ -66,7 +66,7 @@ class CorpusArgument(object):
     
     # prepare padding index to be ignored during model training/evaluation
     self.word_pad_idx = self.word_field.vocab.stoi[self.word_field.pad_token]
-    self.event_pad_idx = self.tag_field.vocab.stoi[self.event_field.pad_token]
+    self.event_pad_idx = self.event_field.vocab.stoi[self.event_field.pad_token]
     self.char_pad_idx = self.char_field.vocab.stoi[self.char_field.pad_token]
     self.entity_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]
     self.argument_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]

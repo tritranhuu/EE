@@ -19,7 +19,7 @@ class Trainer(object):
         self.model = model.to(self.device)
         self.data = data
         self.optimizer = optimizer_cls(model.parameters())
-        self.loss_fn = loss_fn_cls(ignore_index=self.data.tag_pad_idx)
+        self.loss_fn = loss_fn_cls(ignore_index=self.data.argument_pad_idx)
 
     @staticmethod
     def epoch_time(start_time, end_time):
@@ -33,7 +33,7 @@ class Trainer(object):
         epoch_acc = 0
         true_tags_epoch = []
         pred_tags_epoch = []
-        idx2tag = self.data.tag_field.vocab.itos
+        idx2tag = self.data.argument_field.vocab.itos
         self.model.train()
         for batch in self.data.train_iter:
         # words = [sent len, batch size]
@@ -59,9 +59,9 @@ class Trainer(object):
             pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
             true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
         # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
-        epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
+        epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
         
         return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
@@ -70,7 +70,7 @@ class Trainer(object):
         epoch_acc = 0
         true_tags_epoch = []
         pred_tags_epoch = []
-        idx2tag = self.data.tag_field.vocab.itos
+        idx2tag = self.data.argument_field.vocab.itos
         self.model.eval()
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
@@ -90,10 +90,10 @@ class Trainer(object):
                 
                 pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
                 true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
-        epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.tag_field.vocab.stoi.keys())[2:])
-        
+        epoch_score = f1_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_p1 = precision_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_r1 = recall_score(pred_tags_epoch, true_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        print(classification_report(pred_tags_epoch, true_tags_epoch,labels=list(self.data.argument_field.vocab.stoi.keys())[2:]))
         return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
   # main training sequence

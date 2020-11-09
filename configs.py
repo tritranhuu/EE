@@ -5,7 +5,7 @@ def get_configs(corpus, device):
         "char_pad_idx": corpus.char_pad_idx,
         "word_pad_idx": corpus.word_pad_idx,
         "tag_names": corpus.tag_field.vocab.itos,
-        "device": device
+        "device": device,
         'data': corpus
     }
     w2v = {
@@ -73,16 +73,15 @@ def get_configs(corpus, device):
     }
     return configs
 
-def get_configs_arguments(corpus):
+def get_configs_arguments(corpus, device):
     base = {
         "word_input_dim": len(corpus.word_field.vocab),
         "char_pad_idx": corpus.char_pad_idx,
         "word_pad_idx": corpus.word_pad_idx,
         "entity_pad_idx": corpus.entity_pad_idx,
         "event_pad_idx": corpus.event_pad_idx,
-        "argument_names": corpus.tag_field.vocab.itos,
+        "argument_names": corpus.argument_field.vocab.itos,
         "device": device
-        'data': corpus
     }
     char_cnn = {
         "use_char_emb": True,
@@ -98,13 +97,15 @@ def get_configs_arguments(corpus):
     }
     entity_emb = {
         "entity_emb_size":len(corpus.entity_field.vocab),
-        "entity_emb_dim":25
+        "entity_emb_dim":25,
+        "entity_emb_dropout":0.25
     }
     event_emb = {
         "event_emb_size":len(corpus.event_field.vocab),
-        "event_emb_dim":25
+        "event_emb_dim":25,
+        "event_emb_dropout":0.25
     }
     configs = {
-        "bilstm": {**base, **w2v, **char_cnn, **entity_emb, *event_emb},
+        "bilstm": {**base, **w2v, **char_cnn, **entity_emb, **event_emb},
     }
     return configs

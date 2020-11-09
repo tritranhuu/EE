@@ -25,6 +25,11 @@ class Model_EA(nn.Module):
                  device,
                  model_arch="bilstm",
                  word_emb_dim=300,
+                 lstm_hidden_dim=64,
+                 lstm_layers=2,
+                 lstm_dropout=0.1,
+                 attn_heads=None,
+                 attn_dropout=None,
                  word_emb_pretrained=None,
                  word_emb_dropout=0.5,
                  word_emb_froze=False,
@@ -63,10 +68,13 @@ class Model_EA(nn.Module):
             char_cnn_filter_num=char_cnn_filter_num,
             char_cnn_kernel_size=char_cnn_kernel_size,
             char_cnn_dropout=char_cnn_dropout,
-
+            entity_pad_idx=entity_pad_idx,
             word_pad_idx=word_pad_idx,
             char_pad_idx=char_pad_idx,
-            device=device
+            device=device,
+            entity_emb_size=entity_emb_size,
+            entity_emb_dim=entity_emb_dim,
+            entity_emb_dropout=entity_emb_dropout
         )
         self.events_embeddings = EventEmbedding(
             event_emb_dim=event_emb_dim,
@@ -120,8 +128,9 @@ class Model_EA(nn.Module):
     def forward(self, words, chars, entities, events, tags=None):
         word_features = self.embeddings(words, chars, entities)
         event_features = self.events_embeddings(events)
+        
         features = torch.cat((word_features, event_features), dim=2)
-        encoder_out = self.encoder(words, word_features)
+        encoder_out = self.encoder(words, features)
         # fc_out = [sentence length, batch size, output dim]
         ea_out, ea_loss = self.final_layer(words, encoder_out, tags)
         return ea_out, ea_loss
