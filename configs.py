@@ -105,7 +105,21 @@ def get_configs_arguments(corpus, device):
         "event_emb_dim":25,
         "event_emb_dropout":0.25
     }
+    cnn_trig = {
+        "model_arch": "cnn_trig",
+        "cnn_out_channel": 100,
+        "cnn_kernels": [3,4,5],
+        "cnn_dropout": 0.25,
+        # "pos_emb_size": 200,
+        # "pos_emb_dim": 25
+    }
+    pos_emb = {
+        "pos_emb_size": 200,
+        "pos_emb_dim": 25
+    }
+
     configs = {
-        "bilstm": {**base, **w2v, **char_cnn, **event_emb},
+        "bilstm": {**base, **w2v, **char_cnn, **entity_emb, **event_emb},
+        "cnn": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
     }
     return configs

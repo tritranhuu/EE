@@ -46,13 +46,22 @@ class CNN_Arg(nn.Module):
         positions = [torch.cat([position]*batch_size).resize_(batch_size, position.size(0))
                         for position in positions]
         return positions
-    
-    def forward(self, words, word_features, trigger_index):
+    def get_sentence_event_positional_features(self, batch_size, sentence_length, trigger_indexes):
+        positions = [[abs(j) for j in range(-i, sentence_length-i)] for i in range(sentence_length)]
+        positions = [torch.cuda.LongTensor(position) for position in positions]
+        # positions = [torch.cat([position]*batch_size).resize_(batch_size, position.size(0))
+        #                 for position in positions]
+        positions = torch.cat([positions[i] for i in trigger_indexes]).resize_(batch_size, sentence_length)
+        return positions
+
+    def forward(self, words, word_features, trigger_indexes=[2]*128):
         positional_sequences = self.get_sentence_positional_features(words.shape[1], words.shape[0])
+        positional_event = self.get_sentence_event_positional_features(words.shape[1], words.shape[0], trigger_indexes)
+        
         cnn_input = word_features.permute(1,0,2)
         cnn_out=[]
         for i in range(words.shape[0]):
-            x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i])], 2) if self.pos_emb is not None  else cnn_input
+            x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i]), self.pos_emb(positional_event[])], 2) 
             x = x.unsqueeze(1)
             x = [F.relu(conv(x)).squeeze(3) for conv in self.convs]
             x = [F.max_pool1d(i, i.size(2)).squeeze(2) for i in x]
