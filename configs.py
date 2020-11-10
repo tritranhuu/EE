@@ -106,6 +106,6 @@ def get_configs_arguments(corpus, device):
         "event_emb_dropout":0.25
     }
     configs = {
-        "bilstm": {**base, **w2v, **char_cnn, **entity_emb, **event_emb},
+        "bilstm": {**base, **w2v, **char_cnn, **event_emb},
     }
     return configs

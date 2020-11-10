@@ -106,7 +106,7 @@ class Embeddings(nn.Module):
         word_features = torch.cat((embedding_out, char_cnn_p), dim=2)
         if self.entity_emb_size != None:
             entity_out = self.entity_emb_dropout(self.entity_emb(entities))
-        word_features = torch.cat((word_features, entity_out), dim=2)
+            word_features = torch.cat((word_features, entity_out), dim=2)
         return word_features
 
 class EventEmbedding(nn.Module):
