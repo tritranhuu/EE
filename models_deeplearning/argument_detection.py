@@ -86,12 +86,10 @@ class Model_EA(nn.Module):
         if model_arch.lower() == "cnn_trig":
             # CNN for Trigger Candidates
             self.encoder = CNN_Arg(
-                input_dim=self.embeddings.output_dim,
+                input_dim=self.embeddings.output_dim + self.events_embeddings.output_dim,
                 cnn_out_channel=cnn_out_channel,
                 cnn_kernels=cnn_kernels,
                 cnn_dropout=cnn_dropout,
-                entity_emb_size=entity_emb_size,
-                entity_emb_dim=entity_emb_dim,
                 pos_emb_size=pos_emb_size,
                 pos_emb_dim=pos_emb_dim
             )

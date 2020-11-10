@@ -28,7 +28,7 @@ if __name__ == "__main__":
         parser.parse_args()
     )
     configs = get_configs_arguments(corpus, device)
-    model_name = "bilstm"
+    model_name = "cnn"
     model = Model_EA(**configs[model_name])
 
     trainer = Trainer(

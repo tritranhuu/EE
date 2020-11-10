@@ -26,11 +26,6 @@ class CNN_Arg(nn.Module):
             embedding_dim=pos_emb_dim
         ) 
 
-        self.entity_emb = nn.Embedding(
-            num_embeddings=entity_emb_size,
-            embedding_dim=entity_emb_dim
-        ) if entity_emb_size is not None else None
-
         self.convs = nn.ModuleList(
             [nn.Conv2d(
                 in_channels = 1,
@@ -61,7 +56,7 @@ class CNN_Arg(nn.Module):
         cnn_input = word_features.permute(1,0,2)
         cnn_out=[]
         for i in range(words.shape[0]):
-            x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i]), self.pos_emb(positional_event[])], 2) 
+            x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i]), self.pos_emb(positional_event)], 2) 
             x = x.unsqueeze(1)
             x = [F.relu(conv(x)).squeeze(3) for conv in self.convs]
             x = [F.max_pool1d(i, i.size(2)).squeeze(2) for i in x]
