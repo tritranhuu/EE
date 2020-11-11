@@ -2,3 +2,4 @@ pretrained_embedding
 *.pkl
 *pyc
 *.png
+pretrained_model

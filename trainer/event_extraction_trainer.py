@@ -23,57 +23,14 @@ class Trainer(object):
         self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.argument_pad_idx)
 
-    @staticmethod
-    def epoch_time(start_time, end_time):
-        elapsed_time = end_time - start_time
-        elapsed_mins = int(elapsed_time / 60)
-        elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
-        return elapsed_mins, elapsed_secs
-
-    def epoch(self):
-        epoch_loss = 0
-        epoch_acc = 0
-        true_tags_epoch = []
-        pred_tags_epoch = []
-        idx2tag = self.data.argument_field.vocab.itos
-        self.model.train()
-        for batch in self.data.train_iter:
-        # words = [sent len, batch size]
-            words = batch.word.to(self.device)
-            chars = batch.char.to(self.device)
-            entities = batch.entity.to(self.device)
-            events = batch.event.to(self.device)
-        # tags = [sent len, batch size]
-            true_tags = batch.argument.to(self.device)
-            self.optimizer.zero_grad()
-            pred_tags, _ = self.model(words, chars, entities, events)
-        # to calculate the loss and accuracy, we flatten both prediction and true tags
-        # flatten pred_tags to [sent len, batch size, output dim]
-            pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
-        # flatten true_tags to [sent len * batch size]
-            true_tags = true_tags.view(-1)
-            batch_loss = self.loss_fn(pred_tags, true_tags)
-           
-            batch_loss.backward()
-            self.optimizer.step()
-            epoch_loss += batch_loss.item()
-            
-            pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
-            true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
-        # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
-        epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
-        epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
-        epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
-        
-        return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
-
     def evaluate(self, iterator):
         epoch_loss = 0
         epoch_acc = 0
         true_tags_epoch = []
         pred_tags_epoch = []
         idx2tag = self.data.argument_field.vocab.itos
-        self.model.eval()
+        self.model_event.eval()
+        self.model_srg.eval()
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
@@ -85,6 +42,9 @@ class Trainer(object):
                 events = batch.event.to(self.device)
                 true_tags = batch.argument.to(self.device)
                 pred_event_tags, _ = self.model_event(words, chars)
+                pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
+                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags)
+
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
                 batch_loss = self.loss_fn(pred_tags, true_tags)
@@ -98,29 +58,11 @@ class Trainer(object):
         print(classification_report(true_tags_epoch,pred_tags_epoch,labels=list(self.data.argument_field.vocab.stoi.keys())[2:]))
         return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
-    def train_event(self, n_epochs):
-        for epoch in range(n_epochs):
-            start_time = time.time()
-            train_loss, train_f1, train_p1, train_r1 = self.epoch()
-            end_time = time.time()
-            epoch_mins, epoch_secs = Trainer.epoch_time(start_time, end_time)
-            print(f"Epoch: {epoch + 1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s")
-            print(f"\tTrn Loss: {train_loss:.3f} | Trn P1: {train_p1 * 100:.2f}%  R1: {train_r1 * 100:.2f}% F1: {train_f1 * 100:.2f}%")
-            val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
-            print(f"\tVal Loss: {val_loss:.3f} | Val P1: {val_p1 * 100:.2f}%  R1: {val_r1 * 100:.2f}% F1: {val_f1 * 100:.2f}%")
-        test_loss, test_f1, test_p1, test_r1 = self.evaluate(self.data.test_iter)
-        print(f"Test Loss: {test_loss:.3f} |  Test P1: {test_p1 * 100:.2f}%  R1: {test_r1 * 100:.2f}% F1: {test_f1 * 100:.2f}%")
-    
-    def train_argument(self, n_epochs):
-        for epoch in range(n_epochs):
-            start_time = time.time()
-            train_loss, train_f1, train_p1, train_r1 = self.epoch()
-            end_time = time.time()
-            epoch_mins, epoch_secs = Trainer.epoch_time(start_time, end_time)
-            print(f"Epoch: {epoch + 1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s")
-            print(f"\tTrn Loss: {train_loss:.3f} | Trn P1: {train_p1 * 100:.2f}%  R1: {train_r1 * 100:.2f}% F1: {train_f1 * 100:.2f}%")
-            val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
-            print(f"\tVal Loss: {val_loss:.3f} | Val P1: {val_p1 * 100:.2f}%  R1: {val_r1 * 100:.2f}% F1: {val_f1 * 100:.2f}%")
+    def test(self):
+        train, train_f1, train_p1, train_r1 = self.evaluate(self.data.val_iter)
+        print(f"\tTrn Loss: {train_loss:.3f} | Trn P1: {train_p1 * 100:.2f}%  R1: {train_r1 * 100:.2f}% F1: {train_f1 * 100:.2f}%")
+        val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
+        print(f"\tVal Loss: {val_loss:.3f} | Val P1: {val_p1 * 100:.2f}%  R1: {val_r1 * 100:.2f}% F1: {val_f1 * 100:.2f}%")
         test_loss, test_f1, test_p1, test_r1 = self.evaluate(self.data.test_iter)
         print(f"Test Loss: {test_loss:.3f} |  Test P1: {test_p1 * 100:.2f}%  R1: {test_r1 * 100:.2f}% F1: {test_f1 * 100:.2f}%")
 
