@@ -11,8 +11,9 @@ import torch.nn.functional as F
 import numpy as np
 from sklearn.metrics import classification_report
 
-from embedding.embedding import Embeddings
-from models_deeplearning.layers import *
+from embedding.embedding import Embeddings, EventEmbedding
+from models_deeplearning.layers_argument import *
+from models_deeplearning.layers_event import *
 
 class Model_EE(nn.Module):
     def __init__(self,
@@ -78,37 +79,6 @@ class Model_EE(nn.Module):
                  attn_dropout=attn_dropout
             )
             encoder_output_dim = lstm_hidden_dim * 2
-        elif model_arch.lower() == "transformer":
-            # Transformer
-            self.encoder = Transformer(
-                input_dim=self.embeddings.output_dim,
-                attn_heads=attn_heads,
-                attn_dropout=attn_dropout,
-                trf_layers=trf_layers,
-                fc_hidden=fc_hidden,
-                word_pad_idx=word_pad_idx
-            )
-            encoder_output_dim = self.encoder.output_dim   
-        elif model_arch.lower() == "cnn_seq":
-            # Transformer
-            self.encoder = CNNSequence(
-                input_dim=self.embeddings.output_dim,
-                cnn_out_channel=cnn_out_channel,
-                cnn_kernels=cnn_kernels,
-                cnn_dropout=cnn_dropout
-            )
-            encoder_output_dim = cnn_out_channel
-        elif model_arch.lower() == "cnn_trig":
-            # CNN for Trigger Candidates
-            self.encoder = CNN_TC(
-                input_dim=self.embeddings.output_dim,
-                cnn_out_channel=cnn_out_channel,
-                cnn_kernels=cnn_kernels,
-                cnn_dropout=cnn_dropout,
-                pos_emb_size=pos_emb_size,
-                pos_emb_dim=pos_emb_dim
-            )
-            encoder_output_dim = cnn_out_channel*len(cnn_kernels)
         else:
             raise ValueError("param `model_arch` unknown")
         # CRF

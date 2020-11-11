@@ -7,7 +7,7 @@ from collections import namedtuple
 from io import StringIO
 from os import path
 
-path_data = 'data/train'
+path_data = 'data/dev'
 path_save = 'data/full'
 
 def parse_textbounds(f, annfn):
@@ -158,9 +158,11 @@ def save_conll(data, path, opt='w'):
             for e, args in event.items():
                 for word in sent:
                     if word[3] in args.keys():
-                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[word[3]] + '\n')
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[word[3]] + '\tO'+'\n')
+                    elif word == args['word']:
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ 'O' + '\tE'+ '\n')
                     else:
-                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O' + '\n')
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
                 f.write('\n')
 
 
@@ -200,7 +202,7 @@ def brat2conll():
     count = 0
     for file, files in zip(npath_file, npath_save):
         # print(file)
-        save_conll(text_to_conll(file, files), path_save + '/train.txt', opt='a')
+        save_conll(text_to_conll(file, files), path_save + '/dev.txt', opt='a')
         count +=1
         if count %100 ==0:
             print('check {} files'.format(count))

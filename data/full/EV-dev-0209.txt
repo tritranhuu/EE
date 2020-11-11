@@ -1,0 +1,10 @@
+Thủ_tục	O	O	O	O
+mua	O	O	O	O
+lại	O	O	O	O
+xe	O	O	O	O
+của	O	O	O	O
+công_ty	O	ORG	Org	O
+phá_sản	End-org	O	O	E
+?	O	O	O	O
+.	O	O	O	O
+

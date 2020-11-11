@@ -1,0 +1,7 @@
+Diego_Costa	O	PER	Agent	O
+cũng	O	O	O	O
+vắng_mặt	O	O	O	O
+do	O	O	O	O
+chấn_thương	Injure	O	O	E
+.	O	O	O	O
+

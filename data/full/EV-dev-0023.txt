@@ -1,0 +1,12 @@
+Kate_Moss	O	PER	Agent	O
+mở	Start-org	O	O	E
+công_ty	O	ORG	Org	O
+quản_lý	O	ORG	Org	O
+sau	O	O	O	O
+gần	O	O	O	O
+30	O	O	O	O
+năm	O	O	O	O
+làm	O	O	O	O
+người_mẫu	O	O	O	O
+.	O	O	O	O
+

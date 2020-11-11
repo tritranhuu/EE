@@ -1,0 +1,33 @@
+Không_quân	O	PER	Attacker	O
+Nga	O	PER	Attacker	O
+diệt	Attack	O	O	E
+hơn	O	O	O	O
+3.000	O	O	O	O
+xe	O	O	O	O
+chở	O	O	O	O
+dầu	O	O	O	O
+của	O	O	O	O
+IS	O	O	O	O
+ở	O	O	O	O
+Syria	O	GPE	Place	O
+.	O	O	O	O
+
+Máy_bay	O	VEH	Instrument	O
+ném	O	VEH	Instrument	O
+bom	O	VEH	Instrument	O
+chiến_lược	O	VEH	Instrument	O
+Tu	O	VEH	Instrument	O
+-22	O	VEH	Instrument	O
+của	O	VEH	Instrument	O
+Nga	O	VEH	Instrument	O
+tấn_công	Attack	O	O	E
+các	O	O	O	O
+mục_tiêu	O	O	O	O
+của	O	O	O	O
+Nhà	O	O	O	O
+nước	O	O	O	O
+Hồi_giáo	O	O	O	O
+ở	O	O	O	O
+Syria	O	GPE	Place	O
+.	O	O	O	O
+

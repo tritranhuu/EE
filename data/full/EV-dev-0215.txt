@@ -1,0 +1,7 @@
+Những_ai	O	O	O	O
+không	O	O	O	O
+được	O	O	O	O
+bầu_cử	Elect	O	O	E
+?	O	O	O	O
+.	O	O	O	O
+
