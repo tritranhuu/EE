@@ -28,11 +28,11 @@ class Embeddings(nn.Module):
                  char_cnn_dropout,
                  word_pad_idx,
                  char_pad_idx,
-                 entity_pad_idx,
                  device,
                  entity_emb_size=None,
                  entity_emb_dim=0,
-                 entity_emb_dropout=0
+                 entity_emb_dropout=0,
+                 entity_pad_idx=None,
         ):
         super().__init__()
         self.device = device

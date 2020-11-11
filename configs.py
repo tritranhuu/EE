@@ -4,9 +4,8 @@ def get_configs(corpus, device):
         "word_input_dim": len(corpus.word_field.vocab),
         "char_pad_idx": corpus.char_pad_idx,
         "word_pad_idx": corpus.word_pad_idx,
-        "tag_names": corpus.tag_field.vocab.itos,
-        "device": device,
-        'data': corpus
+        "tag_names": corpus.event_field.vocab.itos,
+        "device": device
     }
     w2v = {
         "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None

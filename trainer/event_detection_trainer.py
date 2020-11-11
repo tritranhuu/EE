@@ -20,14 +20,14 @@ class Trainer(object):
         self.model = model.to(self.device)
         self.data = data
         self.optimizer = optimizer_cls(model.parameters())
-        self.loss_fn = loss_fn_cls(ignore_index=self.data.tag_pad_idx)
+        self.loss_fn = loss_fn_cls(ignore_index=self.data.event_pad_idx)
         self.checkpoint_path = checkpoint_path
-    @staticmethod
-    def epoch_time(start_time, end_time):
-        elapsed_time = end_time - start_time
-        elapsed_mins = int(elapsed_time / 60)
-        elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
-        return elapsed_mins, elapsed_secs
+    # @staticmethod
+    # def epoch_time(start_time, end_time):
+    #     elapsed_time = end_time - start_time
+    #     elapsed_mins = int(elapsed_time / 60)
+    #     elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
+    #     return elapsed_mins, elapsed_secs
 
     def accuracy(self, preds, y):
         preds= preds.to(self.device)
@@ -64,14 +64,14 @@ class Trainer(object):
         epoch_acc = 0
         true_tags_epoch = []
         pred_tags_epoch = []
-        idx2tag = self.data.tag_field.vocab.itos
+        idx2tag = self.data.event_field.vocab.itos
         self.model.train()
         for batch in self.data.train_iter:
         # words = [sent len, batch size]
             words = batch.word.to(self.device)
             chars = batch.char.to(self.device)
         # tags = [sent len, batch size]
-            true_tags = batch.tag.to(self.device)
+            true_tags = batch.event.to(self.device)
             self.optimizer.zero_grad()
             pred_tags, _ = self.model(words, chars)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
@@ -88,9 +88,9 @@ class Trainer(object):
             pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
             true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
         # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
-        epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
-        epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
-        epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
+        epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
+        epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
     def evaluate(self, iterator):
@@ -98,7 +98,7 @@ class Trainer(object):
         epoch_acc = 0
         true_tags_epoch = []
         pred_tags_epoch = []
-        idx2tag = self.data.tag_field.vocab.itos
+        idx2tag = self.data.event_field.vocab.itos
         self.model.eval()
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
@@ -107,7 +107,7 @@ class Trainer(object):
                 if words.shape[0] < 5:
                   continue
                 chars = batch.char.to(self.device)
-                true_tags = batch.tag.to(self.device)
+                true_tags = batch.event.to(self.device)
                 pred_tags, _ = self.model(words, chars)
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
@@ -116,7 +116,7 @@ class Trainer(object):
                 
                 pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
                 true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
-        epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
+        epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
         epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.argument_field.vocab.stoi.keys())[2:])
         
@@ -161,14 +161,14 @@ class Trainer(object):
             start_time = time.time()
             train_loss, train_f1, train_p1, train_r1 = self.epoch()
             end_time = time.time()
-            elapsed_train_ime += end_time - start_time
+            elapsed_train_time += end_time - start_time
             history['train_loss'].append(train_loss)
             history['train_f1'].append(train_f1)
             val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
             lr_scheduler.step(val_f1)
             if self.checkpoint_path and val_f1 > (1.01*best_val_f1):
                 print(f"Epoch {epoch:5d}: found better Val F1: {val_f1:.4f} (Train F1: {train_f1:.4f}), saving model...")
-                self.model.save_sate(self.checkpoint_path)
+                self.model.save_state(self.checkpoint_path)
                 best_val_f1 = val_f1
                 best_epoch = epoch
                 n_stagnant = 0

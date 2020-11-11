@@ -1,6 +1,6 @@
-from data_utils.corpus import Corpus
-from models_deeplearning.event_detections import Model
-from trainer.trainer import Trainer
+from data_utils.corpus_arguments import CorpusArgument
+from models_deeplearning.event_detections import Model_ED
+from trainer.event_detection_trainer import Trainer
 import matplotlib.pyplot as plt
 
 import torch
@@ -19,12 +19,12 @@ else:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_folder', type=str, default="./data/csv")
+    parser.add_argument('--input_folder', type=str, default="./data/arg")
     parser.add_argument('--min_word_freq', type=int, default=2)
     parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--wv_file', type=str, default='./pretrained_embedding/word2vec/baomoi.vn.model.bin')
     
-    corpus = Corpus(
+    corpus = CorpusArgument(
         parser.parse_args()
     )
     configs = get_configs(corpus, device)
@@ -40,17 +40,18 @@ if __name__ == "__main__":
     #     )
 
     # trainer.train_live(100)
-
+    model_names = ['cnn_seq+w2v']
     num_epochs = 20
     histories = {}
-    for model_name in configs:
+    for model_name in model_names:
         print(f"Start Training: {model_name}")
         trainer = Trainer(
-            model=Model(**configs[model_name]),
+            model=Model_ED(**configs[model_name]),
             data=corpus,
             optimizer_cls=Adam,
             loss_fn_cls=nn.CrossEntropyLoss,
-            device=device
+            device=device,
+            checkpoint_path=f"pretrained_model/{model_name}_ED.pt"
         )
         histories[model_name] = trainer.train(num_epochs)
         print(f"Done Training: {model_name}")
@@ -70,7 +71,7 @@ if __name__ == "__main__":
     _ = axs[1].set_ylabel("F1")
     _ = axs[0].legend(loc="upper right")
     _ = axs[1].legend(loc="lower right")
-    plt.savefig('/content/drive/My Drive/EE/fig_nocrf2.png')
+    plt.savefig('/content/drive/My Drive/EE/cnn.png')
 
     model_test_f1 = [(m, histories[m]["test_f1"]) for m in histories]
     model_test_f1_sorted = sorted(model_test_f1, key=lambda m: m[1])
@@ -82,4 +83,4 @@ if __name__ == "__main__":
     _ = ax.set_yticks(y_pos)
     _ = ax.set_yticklabels(model_names)
     _ = ax.set_title("Test F1")
-    plt.savefig('/content/drive/My Drive/EE/test.png')
+    plt.savefig('/content/drive/My Drive/EE/cnn_test.png')

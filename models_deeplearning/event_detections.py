@@ -12,7 +12,7 @@ import numpy as np
 from sklearn.metrics import classification_report
 
 from embedding.embedding import Embeddings
-from models_deeplearning.layers import *
+from models_deeplearning.layers_event import *
 
 class Model_ED(nn.Module):
     def __init__(self,
@@ -131,6 +131,11 @@ class Model_ED(nn.Module):
         # fc_out = [sentence length, batch size, output dim]
         ed_out, ed_loss = self.final_layer(words, encoder_out, tags)
         return ed_out, ed_loss
+    def save_state(self, path):
+        torch.save(self.state_dict(), path)
 
+    def load_state(self, path):
+        self.load_state_dict(torch.load(path))
+        
     def count_parameters(self):
         return sum(p.numel() for p in self.parameters() if p.requires_grad)
