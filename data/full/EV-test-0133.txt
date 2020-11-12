@@ -1,8 +1,0 @@
-Chủ_tịch	O	PER	Person	O
-tập_đoàn	O	PER	Person	O
-hoá_chất	O	PER	Person	O
-bị	O	O	O	O
-kỷ_luật	O	O	O	O
-cách_chức	End-position	O	O	E
-.	O	O	O	O
-

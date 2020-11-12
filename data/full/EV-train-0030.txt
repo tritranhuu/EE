@@ -1,7 +1,0 @@
-Hoa_hậu	O	PER	Person	O
-Mỹ	O	PER	Person	O
-2005	O	PER	Person	O
-kết_hôn	Marry	O	O	E
-đồng_tính	O	O	O	O
-.	O	O	O	O
-

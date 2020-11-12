@@ -1,8 +1,0 @@
-Nga	O	PER	Agent	O
-bắt_đầu	O	O	O	O
-rút	Transport	O	O	E
-quân	O	PER	Artifact	O
-khỏi	O	O	O	O
-Syria	O	GPE	Origin	O
-.	O	O	O	O
-

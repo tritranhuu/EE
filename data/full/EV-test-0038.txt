@@ -1,9 +1,0 @@
-Khách	O	PER	O	O
-Nhật	O	PER	O	O
-chuộng	O	O	O	O
-thuê	Transfer-ownership	O	O	E
-căn_hộ	O	FAC	O	O
-nhỏ	O	FAC	O	O
-tại	O	O	O	O
-Việt_Nam	O	GPE	O	O
-

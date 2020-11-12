@@ -1,9 +1,0 @@
-Thiếu	O	PER	O	O
-gia	O	PER	O	O
-phá_sản	Declare-bankruptcy	O	O	E
-vì	O	O	O	O
-theo_đuổi	O	O	O	O
-hot	O	O	O	O
-girl	O	O	O	O
-.	O	O	O	O
-

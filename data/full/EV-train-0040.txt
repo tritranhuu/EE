@@ -1,8 +1,0 @@
-Alfred_Riedl	O	O	O	O
-xin	O	O	O	O
-VFF	O	O	O	O
-không	O	O	O	O
-cách_chức	End-position	O	O	E
-Hữu_Thắng	O	PER	Person	O
-.	O	O	O	O
-

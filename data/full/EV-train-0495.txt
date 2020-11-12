@@ -1,9 +1,0 @@
-Lance	O	PER	O	O
-Armstrong	O	PER	O	O
-thoát	O	O	O	O
-cảnh	O	O	O	O
-phá_sản	Declare-bankruptcy	O	O	E
-nhờ	O	O	O	O
-Uber	O	ORG	O	O
-.	O	O	O	O
-

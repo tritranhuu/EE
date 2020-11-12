@@ -1,9 +1,0 @@
-Bãi_nhiệm	End-position	O	O	E
-hai	O	PER	Person	O
-hiệu	O	PER	Person	O
-phó	O	PER	Person	O
-vì	O	O	O	O
-sai_phạm	O	O	O	O
-tuyển_sinh	O	O	O	O
-.	O	O	O	O
-
