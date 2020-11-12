@@ -1,0 +1,8 @@
+MSN	O	O	O	O
+:	O	O	O	O
+Bổ_nhiệm	Nominate	O	O	E
+Phó	O	JOB	Position	O
+tổng_giám_đốc	O	JOB	Position	O
+người	O	PER	Person	O
+nước_ngoài	O	PER	Person	O
+

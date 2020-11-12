@@ -1,0 +1,30 @@
+Người	O	PER	Victim	O
+đàn_ông	O	PER	Victim	O
+chết	Die	O	O	E
+trong	O	O	O	O
+nhà_trọ	O	FAC	Place	O
+với	O	O	O	O
+nhiều	O	O	O	O
+vết_thương	O	O	O	O
+
+Người_nhà	O	O	O	O
+nạn_nhân	O	O	O	O
+cho	O	O	O	O
+biết	O	O	O	O
+,	O	O	O	O
+vào	O	O	O	O
+ngày	O	O	O	O
+29/4	O	TIME	Time	O
+,	O	O	O	O
+họ	O	O	O	O
+gọi	O	O	O	O
+điện	Phone-write	O	O	E
+liên_lạc	O	O	O	O
+với	O	O	O	O
+chị	O	O	O	O
+Trâm	O	PER	Entity	O
+nhưng	O	O	O	O
+không	O	O	O	O
+được	O	O	O	O
+.	O	O	O	O
+

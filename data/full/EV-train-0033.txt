@@ -1,0 +1,15 @@
+Xin	O	O	O	O
+hỏi	O	O	O	O
+trong	O	O	O	O
+trường_hợp	O	O	O	O
+này	O	O	O	O
+nếu	O	O	O	O
+chúng_tôi	O	O	O	O
+kết_hôn	Marry	O	O	E
+thì	O	O	O	O
+có	O	O	O	O
+vi_phạm	O	O	O	O
+pháp_luật	O	O	O	O
+không	O	O	O	O
+?	O	O	O	O
+

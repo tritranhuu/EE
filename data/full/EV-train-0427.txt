@@ -1,0 +1,40 @@
+Tử_tù	O	PER	Person	O
+được	O	O	O	O
+trả	Release-parole	O	O	E
+tự_do	Release-parole	O	O	O
+sau	O	TIME	Time	O
+45	O	TIME	Time	O
+năm	O	TIME	Time	O
+chờ	O	O	O	O
+chết	Die	O	O	O
+.	O	O	O	O
+
+Tử_tù	O	PER	O	O
+được	O	O	O	O
+trả	Release-parole	O	O	O
+tự_do	Release-parole	O	O	O
+sau	O	TIME	O	O
+45	O	TIME	O	O
+năm	O	TIME	O	O
+chờ	O	O	O	O
+chết	Die	O	O	E
+.	O	O	O	O
+
+Mục_sư	O	PER	O	O
+Brunson	O	PER	O	O
+(	O	PER	O	O
+áp	O	PER	O	O
+trắng	O	PER	O	O
+)	O	PER	O	O
+và	O	PER	O	O
+vợ	O	PER	O	O
+tới	Transport	O	O	E
+sân_bay	O	TIME	O	O
+thành_phố	O	TIME	O	O
+Izmir	O	TIME	O	O
+,	O	TIME	O	O
+Thổ_Nhĩ_Kỳ	O	TIME	O	O
+hôm	O	TIME	O	O
+12/10	O	TIME	O	O
+.	O	O	O	O
+

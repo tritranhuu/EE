@@ -1,0 +1,12 @@
+Ngân_hàng	O	ORG	Giver	O
+Vietinbank	O	ORG	Giver	O
+hỗ_trợ	O	O	O	O
+vay	Transfer-money	O	O	E
+ưu_đãi	O	O	O	O
+tối_đa	O	O	O	O
+70	O	MONEY	Money	O
+%	O	MONEY	Money	O
+giá_trị	O	MONEY	Money	O
+căn_hộ	O	MONEY	Money	O
+.	O	O	O	O
+

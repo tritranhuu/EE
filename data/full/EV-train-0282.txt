@@ -1,0 +1,35 @@
+'	O	O	O	O
+Thor	O	O	O	O
+3	O	O	O	O
+'	O	O	O	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+là	O	O	O	O
+phim	O	O	O	O
+Hollywood	O	O	O	O
+gây	O	O	O	O
+chú_ý	O	O	O	O
+nhất	O	O	O	O
+mùa	O	O	O	O
+thu	O	O	O	O
+.	O	O	O	O
+
+Câu_chuyện	O	O	O	O
+xoay	O	O	O	O
+quanh	O	O	O	O
+việc	O	O	O	O
+Thor	O	PER	Agent	O
+bị	O	O	O	O
+tước	O	O	O	O
+búa	O	O	O	O
+thần	O	O	O	O
+Mjolnir	O	O	O	O
+và	O	O	O	O
+lưu	Transport	O	O	E
+lạc	Transport	O	O	O
+đến	O	O	O	O
+thế	O	LOC	Destination	O
+giới	O	LOC	Destination	O
+khác	O	LOC	Destination	O
+.	O	O	O	O
+

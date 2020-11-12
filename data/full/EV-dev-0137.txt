@@ -1,0 +1,14 @@
+Nhà	O	ORG	Org	O
+sắp	O	O	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+,	O	O	O	O
+con_gái	O	O	O	O
+cứu	O	O	O	O
+cả	O	O	O	O
+cơ_nghiệp	O	O	O	O
+bằng	O	O	O	O
+một	O	O	O	O
+dòng	O	O	O	O
+chia_sẻ	O	O	O	O
+.	O	O	O	O
+

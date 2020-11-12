@@ -1,0 +1,47 @@
+Người	O	PER	Entity	O
+Bangladesh	O	PER	Entity	O
+biểu_tình	Demonstrate	O	O	E
+8	O	O	O	O
+ngày	O	O	O	O
+vì	O	O	O	O
+xe_buýt	O	VEH	O	O
+đâm	Attack	O	O	O
+chết	Die	O	O	O
+hai	O	PER	O	O
+thiếu_niên	O	PER	O	O
+.	O	O	O	O
+
+Người	O	PER	O	O
+Bangladesh	O	PER	O	O
+biểu_tình	Demonstrate	O	O	O
+8	O	O	O	O
+ngày	O	O	O	O
+vì	O	O	O	O
+xe_buýt	O	VEH	Instrument	O
+đâm	Attack	O	O	E
+chết	Die	O	O	O
+hai	O	PER	Target	O
+thiếu_niên	O	PER	Target	O
+.	O	O	O	O
+
+Người	O	PER	O	O
+Bangladesh	O	PER	O	O
+biểu_tình	Demonstrate	O	O	O
+8	O	O	O	O
+ngày	O	O	O	O
+vì	O	O	O	O
+xe_buýt	O	VEH	Instrument	O
+đâm	Attack	O	O	O
+chết	Die	O	O	E
+hai	O	PER	Victim	O
+thiếu_niên	O	PER	Victim	O
+.	O	O	O	O
+
+Biểu_tình	Demonstrate	O	O	E
+ở	O	O	O	O
+thủ_đô	O	GPE	Place	O
+Dhaka	O	GPE	Place	O
+hôm	O	TIME	Time	O
+5/8	O	TIME	Time	O
+.	O	O	O	O
+

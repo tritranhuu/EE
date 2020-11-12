@@ -1,0 +1,23 @@
+Liên_Hợp_Quốc	O	O	O	O
+kêu_gọi	O	O	O	O
+trả	Release-parole	O	O	E
+tự_do	Release-parole	O	O	O
+,	O	O	O	O
+bồi_thường	O	O	O	O
+cho	O	O	O	O
+chủ	O	PER	Person	O
+Wikileaks	O	PER	Person	O
+.	O	O	O	O
+
+Ngoại_trưởng	O	O	O	O
+Ecuador	O	O	O	O
+Ricardo	O	O	O	O
+Patino	O	O	O	O
+cho_rằng	O	O	O	O
+Assange	O	O	O	O
+cần	O	O	O	O
+được	O	O	O	O
+thả	Release-parole	O	O	E
+tự_do	Release-parole	O	O	O
+.	O	O	O	O
+

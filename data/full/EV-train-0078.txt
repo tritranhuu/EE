@@ -1,0 +1,6 @@
+Nhà_cung_cấp	O	ORG	Org	O
+của	O	ORG	Org	O
+Apple	O	ORG	Org	O
+phá_sản	Declare-bankruptcy	O	O	E
+.	O	O	O	O
+

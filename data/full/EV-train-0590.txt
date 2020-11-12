@@ -1,0 +1,14 @@
+Israel	O	O	O	O
+thông_báo	O	O	O	O
+cho	O	O	O	O
+Nga	O	O	O	O
+trước	O	O	O	O
+khi	O	O	O	O
+không	Attack	O	O	E
+kích	Attack	O	O	O
+căn_cứ	O	ORG	Target	O
+Iran	O	ORG	Target	O
+ở	O	O	O	O
+Syria	O	GPE	Place	O
+.	O	O	O	O
+

@@ -1,0 +1,10 @@
+Cơ_sở	O	ORG	Org	O
+sản_xuất	O	ORG	Org	O
+bao_cao_su	O	ORG	Org	O
+giả	O	ORG	Org	O
+ở	O	ORG	Org	O
+Sài_Gòn	O	ORG	Org	O
+bị	O	O	O	O
+triệt_phá	End-org	O	O	E
+.	O	O	O	O
+

@@ -1,0 +1,8 @@
+Cuộc	O	O	O	O
+bỏ_phiếu	O	O	O	O
+bầu	Elect	O	O	E
+quốc_hội	O	O	O	O
+ở	O	O	O	O
+Triều_Tiên	O	O	O	O
+.	O	O	O	O
+

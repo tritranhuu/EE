@@ -1,0 +1,19 @@
+Nó	O	O	O	O
+được	O	O	O	O
+chế_tạo	O	O	O	O
+thủ_công	O	O	O	O
+bởi	O	O	O	O
+Steve_Wozniak	O	O	O	O
+,	O	O	O	O
+giá	O	O	O	O
+bán	Transfer-ownership	O	O	E
+666,66	O	MONEY	Price	O
+USD	O	MONEY	Price	O
+(	O	MONEY	Price	O
+tương_đương	O	MONEY	Price	O
+2.772	O	MONEY	Price	O
+USD	O	MONEY	Price	O
+hiện_nay	O	MONEY	Price	O
+)	O	MONEY	Price	O
+.	O	O	O	O
+

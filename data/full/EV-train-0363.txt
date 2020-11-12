@@ -1,0 +1,9 @@
+Táo_quân	O	O	O	O
+2017	O	O	O	O
+diễn	O	O	O	O
+màn	O	O	O	O
+cách_chức	End-position	O	O	E
+quan	O	PER	Person	O
+lạm_quyền	O	PER	Person	O
+.	O	O	O	O
+

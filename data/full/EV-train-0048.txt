@@ -1,0 +1,35 @@
+Tài_tử	O	O	O	O
+'	O	O	O	O
+Nấc	O	O	O	O
+thang	O	O	O	O
+lên	O	O	O	O
+thiên_đường	O	O	O	O
+'	O	O	O	O
+kỷ_niệm	O	O	O	O
+10	O	O	O	O
+năm	O	O	O	O
+kết_hôn	Marry	O	O	E
+.	O	O	O	O
+
+Gia	O	O	O	O
+đình	O	O	O	O
+Kwon	O	O	O	O
+Sang	O	O	O	O
+Woo	O	O	O	O
+kỷ_niệm	O	O	O	O
+10	O	O	O	O
+năm	O	O	O	O
+cưới	Marry	O	O	E
+bằng	O	O	O	O
+bộ	O	O	O	O
+ảnh	O	O	O	O
+gia_đình	O	O	O	O
+,	O	O	O	O
+chụp	O	O	O	O
+ở	O	O	O	O
+đảo	O	O	O	O
+Bali	O	O	O	O
+,	O	O	O	O
+Indonesia	O	O	O	O
+.	O	O	O	O
+

@@ -1,0 +1,27 @@
+Ngân_hàng	O	O	O	O
+trung_ương	O	O	O	O
+Thuỵ_Điển	O	O	O	O
+-	O	O	O	O
+Riksbank	O	O	O	O
+đã	O	O	O	O
+bất_ngờ	O	O	O	O
+giảm	O	O	O	O
+lãi_suất	O	O	O	O
+repo	O	O	O	O
+xuống	O	O	O	O
+âm	O	O	O	O
+và	O	O	O	O
+cho_biết	O	O	O	O
+sẽ	O	O	O	O
+sớm	O	O	O	O
+mua	Transfer-ownership	O	O	E
+lại	O	O	O	O
+số	O	O	O	O
+trái_phiếu	O	O	O	O
+trị_giá	O	O	O	O
+10	O	MONEY	Price	O
+tỷ	O	MONEY	Price	O
+crown	O	MONEY	Price	O
+Thuỵ_Điển	O	MONEY	Price	O
+.	O	O	O	O
+

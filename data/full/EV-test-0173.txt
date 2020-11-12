@@ -1,0 +1,43 @@
+Hạt	O	PER	Person	O
+trưởng	O	PER	Person	O
+hạt	O	PER	Person	O
+kiểm_lâm	O	PER	Person	O
+ở	O	O	O	O
+Quảng_Nam	O	GPE	Place	O
+bị	O	O	O	O
+cách_chức	End-position	O	O	E
+.	O	O	O	O
+
+Ông	O	PER	Person	O
+Trần	O	PER	Person	O
+Lanh	O	PER	Person	O
+bị	O	O	O	O
+cách	End-position	O	O	E
+chức	End-position	O	O	O
+Hạt	O	JOB	Position	O
+trưởng	O	JOB	Position	O
+Kiểm	O	JOB	Position	O
+lâm	O	JOB	Position	O
+rừng_phòng_hộ	O	JOB	Position	O
+Nam_Sông_Bung	O	JOB	Position	O
+.	O	O	O	O
+
+Ông	O	PER	Person	O
+Trần_Lanh	O	PER	Person	O
+,	O	O	O	O
+Hạt	O	JOB	Position	O
+trưởng	O	JOB	Position	O
+Kiểm_lâm	O	JOB	Position	O
+rừng_phòng_hộ	O	JOB	Position	O
+Nam_Sông_Bung	O	JOB	Position	O
+,	O	JOB	Position	O
+kiêm	O	JOB	Position	O
+Giám_đốc	O	JOB	Position	O
+Ban	O	JOB	Position	O
+Quản_lý	O	JOB	Position	O
+rừng_phòng_hộ	O	JOB	Position	O
+Nam_Sông_Bung	O	JOB	Position	O
+bị	O	O	O	O
+cách_chức	End-position	O	O	E
+.	O	O	O	O
+

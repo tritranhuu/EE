@@ -1,0 +1,12 @@
+Người	O	O	O	O
+lính	O	O	O	O
+vực	O	O	O	O
+công_ty	O	O	O	O
+sắp	O	O	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+thành	O	O	O	O
+tập_đoàn	O	O	O	O
+nghìn	O	O	O	O
+tỷ	O	O	O	O
+.	O	O	O	O
+

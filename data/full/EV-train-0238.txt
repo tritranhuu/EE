@@ -1,0 +1,18 @@
+Cô_gái	O	PER	Person	O
+ở	O	O	O	O
+Ả	O	GPE	Place	O
+-	O	GPE	Place	O
+rập	O	GPE	Place	O
+Xê	O	GPE	Place	O
+-	O	GPE	Place	O
+út	O	GPE	Place	O
+bị	O	O	O	O
+cấm	O	O	O	O
+kết_hôn	Marry	O	O	E
+với	O	O	O	O
+người	O	PER	Person	O
+biết	O	PER	Person	O
+chơi	O	PER	Person	O
+đàn	O	PER	Person	O
+.	O	O	O	O
+

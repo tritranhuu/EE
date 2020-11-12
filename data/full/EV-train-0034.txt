@@ -1,0 +1,11 @@
+Muốn	O	O	O	O
+mở	Start-org	O	O	E
+công_ty	O	ORG	Org	O
+in_ấn	O	O	O	O
+với	O	O	O	O
+500	O	O	O	O
+triệu	O	O	O	O
+đồng	O	O	O	O
+?	O	O	O	O
+.	O	O	O	O
+

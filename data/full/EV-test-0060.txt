@@ -1,0 +1,8 @@
+Hàng	O	O	O	O
+nghìn	O	O	O	O
+người	O	O	O	O
+phản_đối	O	O	O	O
+ân_xá	Pardon	O	O	E
+Thaksin	O	PER	Defendant	O
+.	O	O	O	O
+

@@ -1,0 +1,16 @@
+Ca_sĩ	O	O	O	O
+nhạc	O	O	O	O
+Pop	O	O	O	O
+/	O	O	O	O
+R	O	O	O	O
+&	O	O	O	O
+B	O	O	O	O
+;	O	O	O	O
+Justin_Bieber	O	PER	Person	O
+sinh	Marry	O	O	E
+ngày	O	TIME	Time	O
+1/3/1994	O	TIME	Time	O
+ở	O	O	O	O
+Canada	O	GPE	Place	O
+.	O	O	O	O
+

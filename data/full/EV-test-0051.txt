@@ -1,0 +1,23 @@
+Hắn	O	O	O	O
+doạ	O	O	O	O
+sẽ	O	O	O	O
+gọi	O	O	O	O
+bọn	O	PER	Agent	O
+đầu_gấu	O	PER	Agent	O
+tới	O	O	O	O
+hãm_hiếp	O	O	O	O
+và	O	O	O	O
+giết	Die	O	O	E
+chết	Die	O	O	O
+nạn_nhân	O	PER	Victim	O
+nếu	O	O	O	O
+chúng	O	O	O	O
+dám	O	O	O	O
+ho_he	O	O	O	O
+bất_cứ	O	O	O	O
+điều	O	O	O	O
+gì	O	O	O	O
+với	O	O	O	O
+mẹ	O	O	O	O
+.	O	O	O	O
+

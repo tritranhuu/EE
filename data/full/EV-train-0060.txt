@@ -1,0 +1,8 @@
+Chủ_tịch	O	PER	Person	O
+nước	O	PER	Person	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+thế_nào	O	O	O	O
+?	O	O	O	O
+.	O	O	O	O
+

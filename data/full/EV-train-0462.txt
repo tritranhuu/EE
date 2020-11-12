@@ -1,0 +1,30 @@
+Anh	O	O	O	O
+hài_lòng	O	O	O	O
+về	O	O	O	O
+cô	O	O	O	O
+tới	O	O	O	O
+mức	O	O	O	O
+tặng	Transfer-money	O	O	E
+ngay	O	O	O	O
+10.000	O	O	O	O
+tệ	O	MONEY	Money	O
+(	O	MONEY	Money	O
+34	O	MONEY	Money	O
+triệu	O	MONEY	Money	O
+đồng	O	MONEY	Money	O
+)	O	MONEY	Money	O
+quà	O	O	O	O
+gặp_mặt	O	O	O	O
+.	O	O	O	O
+
+Hiện_tại	O	O	O	O
+,	O	O	O	O
+hai	O	O	O	O
+mẹ_con	O	PER	Person	O
+đã	O	O	O	O
+bị	O	O	O	O
+giam_giữ	Arrest-jail	O	O	E
+điều_tra	O	O	O	O
+thêm	O	O	O	O
+.	O	O	O	O
+

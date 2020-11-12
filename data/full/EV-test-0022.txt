@@ -1,0 +1,13 @@
+Nga	O	O	O	O
+điều_tra	O	O	O	O
+nguồn_gốc	O	O	O	O
+chất_nổ	O	WEA	Instrument	O
+dùng	O	O	O	O
+trong	O	O	O	O
+vụ	O	O	O	O
+tấn_công	Attack	O	O	E
+căn_cứ	O	FAC	Target	O
+ở	O	O	O	O
+Syria	O	GPE	Place	O
+.	O	O	O	O
+

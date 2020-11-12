@@ -1,0 +1,6 @@
+Obama	O	PER	Adjudicator	O
+ân_xá	Pardon	O	O	E
+cho	O	O	O	O
+gà_tây	O	O	O	O
+.	O	O	O	O
+

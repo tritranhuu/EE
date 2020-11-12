@@ -1,0 +1,34 @@
+Kepa	O	PER	Artifact	O
+là	O	PER	Artifact	O
+thủ_môn	O	PER	Artifact	O
+đắt_giá	O	PER	Artifact	O
+nhất	O	PER	Artifact	O
+hành_tinh	O	PER	Artifact	O
+,	O	O	O	O
+chuyển	Transport	O	O	E
+đến	Transport	O	O	O
+Chelsea	O	ORG	Agent	O
+hè	O	O	O	O
+2018	O	O	O	O
+với	O	O	O	O
+giá	O	O	O	O
+gần	O	O	O	O
+95	O	O	O	O
+triệu	O	O	O	O
+đôla	O	O	O	O
+.	O	O	O	O
+
+Kepa	O	PER	Entity	O
+đã	O	O	O	O
+bị	O	O	O	O
+Chelsea	O	ORG	Adjudicator	O
+phạt	Fine	O	O	E
+một	O	O	O	O
+tuần	O	O	O	O
+lương	O	O	O	O
+,	O	O	O	O
+khoảng	O	O	O	O
+250.000	O	MONEY	Money	O
+đôla	O	MONEY	Money	O
+.	O	O	O	O
+

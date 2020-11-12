@@ -1,0 +1,32 @@
+Trung_Quốc	O	GPE	Entity	O
+cách_chức	End-position	O	O	E
+Cục_trưởng	O	PER	Person	O
+Cục	O	PER	Person	O
+Năng_lượng	O	PER	Person	O
+Quốc_gia	O	PER	Person	O
+.	O	O	O	O
+
+Quan_chức	O	PER	Person	O
+này	O	PER	Person	O
+bị	O	O	O	O
+bắt	Arrest-jail	O	O	E
+ngay	O	O	O	O
+khi	O	O	O	O
+đặt_chân	O	O	O	O
+xuống	O	O	O	O
+sân_bay	O	O	O	O
+Bắc_Kinh	O	O	O	O
+sau	O	O	O	O
+chuyến	O	O	O	O
+thăm	O	O	O	O
+Nga	O	O	O	O
+để	O	O	O	O
+bàn	O	O	O	O
+kế_hoạch	O	O	O	O
+đầu_tư	O	O	O	O
+,	O	O	O	O
+Reuters	O	O	O	O
+đưa	O	O	O	O
+tin	O	O	O	O
+.	O	O	O	O
+

@@ -1,0 +1,10 @@
+Jeff	O	PER	Person	O
+Bezos	O	PER	Person	O
+lộ	O	O	O	O
+diện	O	O	O	O
+một_mình	O	O	O	O
+sau	O	O	O	O
+khi	O	O	O	O
+ly_hôn	Divorce	O	O	E
+.	O	O	O	O
+

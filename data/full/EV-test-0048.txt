@@ -1,0 +1,23 @@
+Trước	O	O	O	O
+đó	O	O	O	O
+,	O	O	O	O
+anh	O	PER	Plaintiff	O
+Nguyễn	O	PER	Plaintiff	O
+(	O	PER	Plaintiff	O
+trú	O	PER	Plaintiff	O
+xã	O	PER	Plaintiff	O
+Phong_Lộc	O	PER	Plaintiff	O
+)	O	PER	Plaintiff	O
+gửi	O	O	O	O
+đơn	O	O	O	O
+tố_giác	Sue	O	O	E
+ông	O	PER	Defendant	O
+Quân	O	PER	Defendant	O
+lén_lút	O	CRIME	Crime	O
+vào	O	CRIME	Crime	O
+nhà_nghỉ	O	CRIME	Crime	O
+cùng	O	CRIME	Crime	O
+vợ	O	CRIME	Crime	O
+mình	O	CRIME	Crime	O
+.	O	O	O	O
+

@@ -1,0 +1,22 @@
+Ông	O	O	O	O
+Raul_Castro	O	O	O	O
+(	O	O	O	O
+phải	O	O	O	O
+)	O	O	O	O
+nắm	O	O	O	O
+tay	O	O	O	O
+ông	O	PER	Person	O
+Miguel_Diaz	O	PER	Person	O
+-	O	PER	Person	O
+Canel	O	PER	Person	O
+sau	O	O	O	O
+khi	O	O	O	O
+ông	O	O	O	O
+này	O	O	O	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+làm	O	O	O	O
+Chủ_tịch	O	JOB	Position	O
+Cuba	O	JOB	Position	O
+.	O	O	O	O
+

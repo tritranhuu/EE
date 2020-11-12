@@ -1,0 +1,22 @@
+Toà	O	O	O	O
+tiếp_tục	O	O	O	O
+xử	Trial-hearing	O	O	E
+vụ	O	O	O	O
+ly_hôn	Divorce	O	O	O
+vợ_chồng	O	PER	O	O
+chủ	O	PER	O	O
+cà_phê	O	PER	O	O
+Trung_Nguyên	O	PER	O	O
+.	O	O	O	O
+
+Toà	O	O	O	O
+tiếp_tục	O	O	O	O
+xử	Trial-hearing	O	O	O
+vụ	O	O	O	O
+ly_hôn	Divorce	O	O	E
+vợ_chồng	O	PER	Person	O
+chủ	O	PER	Person	O
+cà_phê	O	PER	Person	O
+Trung_Nguyên	O	PER	Person	O
+.	O	O	O	O
+

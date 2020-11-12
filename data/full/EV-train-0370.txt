@@ -1,0 +1,31 @@
+Doanh_nghiệp	O	ORG	O	O
+nhỏ	O	ORG	O	O
+lo	O	O	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+vì	O	O	O	O
+điều_kiện	O	O	O	O
+kinh_doanh	O	O	O	O
+ngặt_nghèo	O	O	O	O
+.	O	O	O	O
+
+Các	O	ORG	Org	O
+doanh_nghiệp	O	ORG	Org	O
+gas	O	ORG	Org	O
+nhỏ	O	ORG	Org	O
+lo	O	O	O	O
+sẽ	O	O	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+nếu	O	O	O	O
+vẫn	O	O	O	O
+giữ	O	O	O	O
+nguyên	O	O	O	O
+quy_định	O	O	O	O
+về	O	O	O	O
+điều_kiện	O	O	O	O
+kinh_doanh	O	O	O	O
+khí	O	O	O	O
+tại	O	O	O	O
+Nghị_định	O	O	O	O
+19	O	O	O	O
+.	O	O	O	O
+

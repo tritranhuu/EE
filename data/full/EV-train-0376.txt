@@ -1,0 +1,9 @@
+Nhiều	O	ORG	Org	O
+trường	O	ORG	Org	O
+nghề	O	ORG	Org	O
+ở	O	ORG	Org	O
+Hải_Phòng	O	GPE	Org	O
+sắp	O	O	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+.	O	O	O	O
+

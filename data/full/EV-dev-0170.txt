@@ -1,0 +1,12 @@
+Chúng_tôi	O	O	O	O
+đang	O	O	O	O
+họp	O	O	O	O
+bàn	Meet	O	O	E
+với	O	O	O	O
+quân_đội	O	O	O	O
+và	O	ORG	Entity	O
+các	O	ORG	Entity	O
+cơ_quan	O	ORG	Entity	O
+liên_quan	O	ORG	Entity	O
+.	O	O	O	O
+

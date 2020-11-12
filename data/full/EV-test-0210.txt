@@ -1,0 +1,12 @@
+Người_thân	O	PER	Person	O
+tín	O	PER	Person	O
+của	O	PER	Person	O
+ông	O	PER	Person	O
+Tập	O	PER	Person	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+làm	O	O	O	O
+thị_trưởng	O	JOB	Position	O
+Bắc_Kinh	O	JOB	Position	O
+.	O	O	O	O
+

@@ -1,0 +1,34 @@
+Tập_Cận_Bình	O	PER	Person	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+là	O	O	O	O
+người	O	JOB	Position	O
+quyền_lực	O	JOB	Position	O
+nhất	O	JOB	Position	O
+thế_giới	O	JOB	Position	O
+2018	O	JOB	Position	O
+.	O	O	O	O
+
+Putin	O	PER	Person	O
+vẫn	O	O	O	O
+là	O	O	O	O
+người	O	O	O	O
+rất	O	O	O	O
+quyền_lực	O	O	O	O
+bởi	O	O	O	O
+ông	O	O	O	O
+vừa	O	O	O	O
+đắc_cử	Elect	O	O	E
+và	O	O	O	O
+tiếp_tục	O	O	O	O
+lãnh_đạo	O	O	O	O
+nước	O	O	O	O
+Nga	O	O	O	O
+trong	O	O	O	O
+vai_trò	O	O	O	O
+tổng_thống	O	JOB	Position	O
+lần	O	O	O	O
+thứ	O	O	O	O
+4	O	O	O	O
+.	O	O	O	O
+

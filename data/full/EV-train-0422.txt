@@ -1,0 +1,12 @@
+Người_dân	O	PER	Agent	O
+đổ	Transport	O	O	E
+ra	Transport	O	O	O
+đồng	O	LOC	Destination	O
+úp	O	O	O	O
+cá	O	O	O	O
+trong	O	O	O	O
+lễ_hội	O	O	O	O
+tại	O	O	O	O
+Ấn_Độ	O	O	O	O
+.	O	O	O	O
+

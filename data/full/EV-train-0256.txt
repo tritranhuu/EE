@@ -1,0 +1,16 @@
+Thu_Trang	O	PER	Person	O
+vào	O	O	O	O
+vai	O	O	O	O
+bà	O	O	O	O
+mẹ	O	O	O	O
+thiểu_năng	O	O	O	O
+bị	Execute	O	O	E
+xử	Execute	O	O	O
+bắn	Execute	O	O	O
+trong	O	O	O	O
+phim	O	O	O	O
+'	O	O	O	O
+Nắng	O	O	O	O
+'	O	O	O	O
+.	O	O	O	O
+

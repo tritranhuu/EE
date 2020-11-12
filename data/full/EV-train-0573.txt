@@ -1,0 +1,34 @@
+Doanh_nghiệp	O	ORG	Buyer	O
+mua	Transfer-ownership	O	O	E
+vải	O	O	O	O
+thiều	O	O	O	O
+giá	O	O	O	O
+cao	O	O	O	O
+hơn	O	O	O	O
+thương_lái	O	O	O	O
+Trung_Quốc	O	O	O	O
+
+Thương_lái	O	PER	Buyer	O
+Trung_Quốc	O	PER	Buyer	O
+đang	O	O	O	O
+lập	O	O	O	O
+một_số	O	O	O	O
+điểm	O	O	O	O
+cân	O	O	O	O
+vải	O	O	O	O
+tại	O	O	O	O
+Thanh_Hà	O	O	O	O
+(	O	O	O	O
+Hải_Dương	O	O	O	O
+)	O	O	O	O
+và	O	O	O	O
+thu_mua	Transfer-ownership	O	O	E
+với	O	O	O	O
+giá	O	O	O	O
+khoảng	O	O	O	O
+8.000	O	MONEY	Price	O
+đồng	O	MONEY	Price	O
+một	O	MONEY	Price	O
+kg	O	MONEY	Price	O
+.	O	O	O	O
+

@@ -1,0 +1,31 @@
+Đôi	O	PER	Person	O
+vợ_chồng	O	PER	Person	O
+vô_gia_cư	O	PER	Person	O
+kết_hôn	Marry	O	O	E
+dưới	O	O	O	O
+gầm	O	LOC	Place	O
+cầu	O	LOC	Place	O
+trước	O	O	O	O
+100	O	O	O	O
+khách	O	O	O	O
+mời	O	O	O	O
+.	O	O	O	O
+
+Một	O	PER	Seller	O
+phụ_nữ	O	PER	Seller	O
+Jill_Jeftha	O	PER	Seller	O
+đã	O	O	O	O
+tặng	Transfer-ownership	O	O	E
+váy	O	O	O	O
+cưới	O	O	O	O
+cho	O	O	O	O
+bà	O	PER	Beneficiary	O
+Cecilia	O	PER	Beneficiary	O
+để	O	O	O	O
+mặc	O	O	O	O
+trong	O	O	O	O
+ngày	O	O	O	O
+trọng_đại	O	O	O	O
+này	O	O	O	O
+.	O	O	O	O
+

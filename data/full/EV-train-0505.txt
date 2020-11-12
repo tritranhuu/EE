@@ -1,0 +1,10 @@
+'	O	PER	Person	O
+Lý_Mạc_Sầu	O	PER	Person	O
+'	O	PER	Person	O
+Trương_Hinh_Dư	O	PER	Person	O
+kết_hôn	Marry	O	O	E
+với	O	O	O	O
+lính	O	PER	Person	O
+đặc_công	O	PER	Person	O
+.	O	O	O	O
+

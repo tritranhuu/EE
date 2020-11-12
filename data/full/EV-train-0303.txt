@@ -1,0 +1,9 @@
+Bạn	O	O	O	O
+gái	O	O	O	O
+chia_tay	O	O	O	O
+khi	O	O	O	O
+biết	O	O	O	O
+tôi	O	PER	O	O
+phá_sản	Declare-bankruptcy	O	O	E
+.	O	O	O	O
+

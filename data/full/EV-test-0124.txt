@@ -1,0 +1,45 @@
+Nam	O	PER	Target	O
+công_an	O	PER	Target	O
+xã	O	PER	Target	O
+ở	O	PER	Target	O
+Sài_Gòn	O	PER	Target	O
+bị	O	O	O	O
+truy_sát	Attack	O	O	E
+đến	O	O	O	O
+chết	Die	O	O	O
+.	O	O	O	O
+
+Nam	O	PER	Victim	O
+công_an	O	PER	Victim	O
+xã	O	PER	Victim	O
+ở	O	PER	Victim	O
+Sài_Gòn	O	PER	Victim	O
+bị	O	O	O	O
+truy_sát	Attack	O	O	O
+đến	O	O	O	O
+chết	Die	O	O	E
+.	O	O	O	O
+
+Cảnh_sát	O	O	O	O
+tiếp_cận	O	O	O	O
+hiện_trường	O	O	O	O
+,	O	O	O	O
+khống_chế	O	O	O	O
+anh	O	O	O	O
+ta	O	PER	Artifact	O
+đưa	O	O	O	O
+về	Transport	O	O	E
+trụ_sở	O	O	O	O
+.	O	O	O	O
+
+Riêng	O	O	O	O
+nạn_nhân	O	O	O	O
+được	O	O	O	O
+đưa	O	O	O	O
+đi	Transport	O	O	E
+cấp_cứu	O	O	O	O
+nhưng	O	O	O	O
+đã	O	O	O	O
+tử_vong	O	O	O	O
+.	O	O	O	O
+

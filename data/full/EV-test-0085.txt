@@ -1,0 +1,12 @@
+Bé	O	PER	Victim	O
+gái	O	PER	Victim	O
+chăn	O	PER	Victim	O
+bò	O	PER	Victim	O
+chết	Die	O	O	E
+bên	O	LOC	Place	O
+vệ	O	LOC	Place	O
+đường	O	LOC	Place	O
+nghi	O	O	O	O
+bị	O	O	O	O
+cưỡng_hiếp	O	O	O	O
+

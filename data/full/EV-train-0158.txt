@@ -1,0 +1,18 @@
+Ngày	O	TIME	Time	O
+26/11	O	TIME	Time	O
+,	O	O	O	O
+Bộ	O	ORG	Agent	O
+Tài_chính	O	ORG	Agent	O
+khai_trương	Start-org	O	O	E
+giao_diện	O	O	O	O
+mới	O	O	O	O
+Cổng	O	ORG	Org	O
+thông_tin	O	ORG	Org	O
+điện_tử	O	ORG	Org	O
+Bộ	O	ORG	Org	O
+Tài_chính	O	ORG	Org	O
+và	O	ORG	Org	O
+Kho_bạc	O	ORG	Org	O
+Nhà_nước	O	ORG	Org	O
+.	O	O	O	O
+

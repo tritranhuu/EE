@@ -1,0 +1,19 @@
+Donald_Trump	O	PER	Person	O
+được	Elect	O	O	E
+bầu_chọn	Elect	O	O	O
+là	O	O	O	O
+Nhân_vật	O	O	O	O
+của	O	O	O	O
+năm	O	O	O	O
+.	O	O	O	O
+
+Chúng_tôi	O	PER	Agent	O
+sẽ	O	O	O	O
+đưa	Transport	O	O	E
+họ	O	PER	Artifact	O
+trở_lại	O	O	O	O
+với	O	O	O	O
+nhau	O	O	O	O
+"	O	O	O	O
+.	O	O	O	O
+

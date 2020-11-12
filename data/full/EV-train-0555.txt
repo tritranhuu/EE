@@ -1,0 +1,7 @@
+Nhà_Trắng	O	ORG	Adjudicator	O
+từ_chối	O	O	O	O
+ân_xá	Pardon	O	O	E
+cho	O	O	O	O
+Edward_Snowden	O	PER	Defendant	O
+.	O	O	O	O
+

@@ -1,0 +1,25 @@
+Số_lượng	O	O	O	O
+người_dân	O	PER	Agent	O
+đến	Transport	O	O	E
+làm_ăn	O	O	O	O
+,	O	O	O	O
+sinh_sống	O	O	O	O
+ở	O	O	O	O
+các	O	LOC	Destination	O
+thành_phố	O	LOC	Destination	O
+lớn	O	LOC	Destination	O
+là	O	O	O	O
+xu_hướng	O	O	O	O
+tất_yếu	O	O	O	O
+và	O	O	O	O
+đồng_nghĩa	O	O	O	O
+nhu_cầu	O	O	O	O
+nhập	O	O	O	O
+hộ_khẩu	O	O	O	O
+vào	O	O	O	O
+thành_phố	O	O	O	O
+hiện_nay	O	O	O	O
+rất	O	O	O	O
+lớn	O	O	O	O
+.	O	O	O	O
+

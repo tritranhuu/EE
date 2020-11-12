@@ -1,0 +1,26 @@
+Thứ_trưởng	O	PER	Person	O
+Xây_dựng	O	PER	Person	O
+được	Elect	O	O	E
+bầu	Elect	O	O	O
+làm	O	O	O	O
+Chủ_tịch	O	JOB	Position	O
+tỉnh	O	JOB	Position	O
+Yên_Bái	O	JOB	Position	O
+.	O	O	O	O
+
+Tại	O	O	O	O
+đây	O	O	O	O
+,	O	O	O	O
+ông	O	O	O	O
+Đỗ_Đức_Duy	O	PER	Person	O
+đã	O	O	O	O
+được	O	O	O	O
+bầu	Elect	O	O	E
+giữ	O	O	O	O
+chức	O	O	O	O
+Chủ_tịch	O	O	O	O
+UBND	O	JOB	Position	O
+tỉnh	O	JOB	Position	O
+Yên_Bái	O	JOB	Position	O
+.	O	O	O	O
+

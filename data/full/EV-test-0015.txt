@@ -1,0 +1,13 @@
+Tôi	O	O	O	O
+chưa	O	O	O	O
+từng	O	O	O	O
+có	O	O	O	O
+gia_đình	O	O	O	O
+,	O	O	O	O
+còn	O	O	O	O
+cô	O	PER	Person	O
+ấy	O	PER	Person	O
+đã	O	O	O	O
+ly_hôn	Divorce	O	O	E
+.	O	O	O	O
+

@@ -1,0 +1,49 @@
+Nữ	O	PER	Person	O
+tuyển_thủ	O	PER	Person	O
+Việt_Nam	O	PER	Person	O
+chuẩn_bị	O	O	O	O
+kết_hôn	Marry	O	O	E
+.	O	O	O	O
+
+Hoàng_Quỳnh	O	PER	Person	O
+sinh	Be-born	O	O	E
+năm	O	TIME	Time	O
+1992	O	TIME	Time	O
+.	O	O	O	O
+
+Năm	O	TIME	Time	O
+2015	O	TIME	Time	O
+,	O	O	O	O
+Hoàng_Quỳnh	O	PER	Artifact	O
+bỏ	O	O	O	O
+bóng_đá	O	O	O	O
+sang	Transport	O	O	E
+Nhật_Bản	O	GPE	Destination	O
+du_học	O	O	O	O
+một	O	O	O	O
+năm	O	O	O	O
+,	O	O	O	O
+nhưng	O	O	O	O
+Ngọc_Thắng	O	O	O	O
+vẫn	O	O	O	O
+âm_thầm	O	O	O	O
+theo_dõi	O	O	O	O
+và	O	O	O	O
+động_viên	O	O	O	O
+như	O	O	O	O
+một	O	O	O	O
+người	O	O	O	O
+bạn	O	O	O	O
+.	O	O	O	O
+
+Năm	O	TIME	Time	O
+2016	O	TIME	Time	O
+,	O	O	O	O
+Quỳnh	O	PER	Artifact	O
+trở_về	Transport	O	O	E
+và	O	O	O	O
+tiếp_tục	O	O	O	O
+đá	O	O	O	O
+bóng	O	O	O	O
+.	O	O	O	O
+

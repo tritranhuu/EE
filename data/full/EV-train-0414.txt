@@ -1,0 +1,43 @@
+Tôi	O	O	O	O
+28	O	O	O	O
+tuổi	O	O	O	O
+,	O	O	O	O
+hồi	O	O	O	O
+5	O	O	O	O
+tuổi	O	O	O	O
+tôi	O	PER	Artifact	O
+đã	O	O	O	O
+theo	O	O	O	O
+dì	O	O	O	O
+qua	Transport	O	O	E
+Canada	O	GPE	Destination	O
+sống	O	O	O	O
+,	O	O	O	O
+ba_mẹ	O	O	O	O
+vẫn	O	O	O	O
+ở	O	O	O	O
+Việt_Nam	O	O	O	O
+.	O	O	O	O
+
+Một	O	TIME	Time	O
+tháng	O	TIME	Time	O
+trước	O	TIME	Time	O
+tôi	O	PER	Artifact	O
+về	Transport	O	O	E
+Việt_Nam	O	GPE	Destination	O
+thăm	O	O	O	O
+ba_mẹ	O	O	O	O
+.	O	O	O	O
+
+Mẹ	O	O	O	O
+kêu	O	O	O	O
+tôi	O	PER	Artifact	O
+nên	O	O	O	O
+về	Transport	O	O	E
+Việt_Nam	O	GPE	Destination	O
+sinh_sống	O	O	O	O
+để	O	O	O	O
+gần	O	O	O	O
+gia_đình	O	O	O	O
+.	O	O	O	O
+

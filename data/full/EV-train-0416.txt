@@ -1,0 +1,30 @@
+CSGT	O	O	O	O
+buộc	O	O	O	O
+dây	O	O	O	O
+giày	O	O	O	O
+giúp	O	O	O	O
+bà	O	PER	Agent	O
+bầu	O	PER	Agent	O
+sang	Transport	O	O	E
+đường	O	O	O	O
+.	O	O	O	O
+
+-	O	O	O	O
+Đừng	O	O	O	O
+di_chuyển	Transport	O	O	E
+,	O	O	O	O
+để	O	O	O	O
+tôi	O	O	O	O
+giúp	O	O	O	O
+cho	O	O	O	O
+!	O	O	O	O
+
+-	O	O	O	O
+Ừ	O	O	O	O
+,	O	O	O	O
+sang	Transport	O	O	E
+đường	O	O	O	O
+cẩn_thận	O	O	O	O
+nhé	O	O	O	O
+!	O	O	O	O
+

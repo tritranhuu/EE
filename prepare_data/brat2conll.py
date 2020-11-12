@@ -8,7 +8,7 @@ from collections import namedtuple
 from io import StringIO
 from os import path
 
-path_data = 'data/train'
+path_data = 'data/test'
 path_save = 'data/full'
 
 def parse_textbounds(f, annfn):
@@ -170,10 +170,10 @@ def save_conll(data, path, opt='w'):
                     else:
                         f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
                 f.write('\n')
-        else:
-            for word in sent:
-                f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
-            f.write('\n')
+        # else:
+        #     for word in sent:
+        #         f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
+        #     f.write('\n')
 
 
 # text_to_conll('C:/Users/dell/Downloads/Compressed/brat-v1.3_Crunchy_Frog/data/event/Phase_2/Bankruptcy/Bankruptcy_1/Bankruptcy_009.txt', './')
@@ -212,11 +212,11 @@ def brat2conll():
     count = 0
     for file, files in zip(npath_file, npath_save):
         # print(file)
-        save_conll(text_to_conll(file, files), path_save + '/train.txt', opt='a')
+        save_conll(text_to_conll(file, files), path_save + '/test.txt', opt='a')
         count +=1
         if count %100 ==0:
             print('check {} files'.format(count))
-    for f in glob.glob("data/full/EV-train*.txt"):
-         os.system("cat "+f+" >> train.txt")
+    for f in glob.glob("data/full/EV-test*.txt"):
+         os.system("cat "+f+" >> test.txt")
 
 brat2conll()

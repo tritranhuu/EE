@@ -19,7 +19,7 @@ else:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_folder', type=str, default="./data/arg")
+    parser.add_argument('--input_folder', type=str, default="./data/event_data")
     parser.add_argument('--min_word_freq', type=int, default=2)
     parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--wv_file', type=str, default='./pretrained_embedding/word2vec/baomoi.vn.model.bin')

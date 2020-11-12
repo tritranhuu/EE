@@ -1,0 +1,11 @@
+Lãnh_đạo	O	PER	Person	O
+xã	O	PER	Person	O
+'	O	O	O	O
+ăn	O	O	O	O
+'	O	O	O	O
+đường	O	O	O	O
+bê_tông	O	O	O	O
+bị	O	O	O	O
+cách_chức	End-position	O	O	E
+.	O	O	O	O
+

@@ -1,0 +1,12 @@
+Tổng_cục_trưởng	O	PER	O	O
+Thống_kê	O	PER	O	O
+:	O	O	O	O
+Số_lượng	O	O	O	O
+doanh_nghiệp	O	ORG	Org	O
+phá_sản	Declare-bankruptcy	O	O	E
+ở	O	O	O	O
+Việt_Nam	O	GPE	Place	O
+vẫn	O	O	O	O
+thấp	O	O	O	O
+.	O	O	O	O
+
