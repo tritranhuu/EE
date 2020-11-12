@@ -10,6 +10,7 @@ from torchcrf import CRF
 import torch.nn.functional as F
 import numpy as np
 from sklearn.metrics import classification_report
+import numpy as np
 
 class CNN_Arg(nn.Module):
     def __init__(self,
@@ -42,20 +43,27 @@ class CNN_Arg(nn.Module):
                         for position in positions]
         return positions
     def get_sentence_event_positional_features(self, batch_size, sentence_length, trigger_indexes):
+        
         positions = [[abs(j) for j in range(-i, sentence_length-i)] for i in range(sentence_length)]
         positions = [torch.cuda.LongTensor(position) for position in positions]
-        # positions = [torch.cat([position]*batch_size).resize_(batch_size, position.size(0))
-        #                 for position in positions]
-        positions = torch.cat([positions[i] for i in trigger_indexes]).resize_(batch_size, sentence_length)
-        return positions
+        trig_positions = torch.cat([positions[i] for i in trigger_indexes]).resize_(batch_size, sentence_length)
+        return trig_positions
 
     def forward(self, words, word_features, trigger_indexes=[2]*128):
+       
+        trigger_pos = torch.cat([(t == 2).nonzero() for t in trigger_indexes.permute(1,0)]).tolist()
+        # trigger_pos = [0]*128
+        trig = np.append([(t == 2).nonzero().reshape(-1).cpu().numpy() for t in trigger_indexes.permute(1,0)])
+        print(trig)
+        if len(trigger_pos)<128:
+          trigger_pos.extend([1]*(128-len(trigger_pos)))
         positional_sequences = self.get_sentence_positional_features(words.shape[1], words.shape[0])
-        positional_event = self.get_sentence_event_positional_features(words.shape[1], words.shape[0], trigger_indexes)
-        
+        positional_event = self.get_sentence_event_positional_features(words.shape[1], words.shape[0], trigger_pos)
+        # print(words)
         cnn_input = word_features.permute(1,0,2)
         cnn_out=[]
         for i in range(words.shape[0]):
+            
             x = torch.cat([cnn_input, self.pos_emb(positional_sequences[i]), self.pos_emb(positional_event)], 2) 
             x = x.unsqueeze(1)
             x = [F.relu(conv(x)).squeeze(3) for conv in self.convs]

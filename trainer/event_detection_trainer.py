@@ -72,7 +72,7 @@ class Trainer(object):
             chars = batch.char.to(self.device)
         # tags = [sent len, batch size]
             true_tags = batch.event.to(self.device)
-            self.optimizer.zero_grad()
+           self.optimizer.zero_grad()
             pred_tags, _ = self.model(words, chars)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]

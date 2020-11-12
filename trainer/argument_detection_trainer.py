@@ -43,8 +43,9 @@ class Trainer(object):
             events = batch.event.to(self.device)
         # tags = [sent len, batch size]
             true_tags = batch.argument.to(self.device)
+            trig = batch.trigger_pos.to(self.device)
             self.optimizer.zero_grad()
-            pred_tags, _ = self.model(words, chars, entities, events)
+            pred_tags, _ = self.model(words, chars, entities, events, trig)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
@@ -81,8 +82,9 @@ class Trainer(object):
                 chars = batch.char.to(self.device)
                 entities = batch.entity.to(self.device)
                 events = batch.event.to(self.device)
+                trig = batch.trigger_pos.to(self.device)
                 true_tags = batch.argument.to(self.device)
-                pred_tags, _ = self.model(words, chars, entities, events)
+                pred_tags, _ = self.model(words, chars, entities, events, trig)
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
                 batch_loss = self.loss_fn(pred_tags, true_tags)

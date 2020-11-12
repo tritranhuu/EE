@@ -13,6 +13,7 @@ class CorpusArgument(object):
     self.event_field = Field(unk_token=None)
     self.entity_field = Field(unk_token=None)
     self.argument_field = Field(unk_token=None)
+    self.trigger_pos_field = Field(unk_token=None)
     self.char_nesting_field = Field(tokenize=list)
     self.char_field = NestedField(self.char_nesting_field)
 
@@ -26,7 +27,8 @@ class CorpusArgument(object):
           (("word", "char"), (self.word_field, self.char_field)), 
           ("event", self.event_field),
           ("entity", self.entity_field),
-          ("argument", self.argument_field)),
+          ("argument", self.argument_field),
+          ("trigger_pos", self.trigger_pos_field)),
     )
     # convert fields to vocabulary list
     # self.word_field.build_vocab(self.train_dataset.word, min_freq=min_word_freq)
@@ -58,7 +60,8 @@ class CorpusArgument(object):
     self.char_field.build_vocab(self.train_dataset.char)
     self.entity_field.build_vocab(self.train_dataset.entity)
     self.argument_field.build_vocab(self.train_dataset.argument)
-    
+    self.trigger_pos_field.build_vocab(self.train_dataset.trigger_pos)
+
     self.train_iter, self.val_iter, self.test_iter = BucketIterator.splits(
         datasets=(self.train_dataset, self.val_dataset, self.test_dataset),
         batch_size=args.batch_size

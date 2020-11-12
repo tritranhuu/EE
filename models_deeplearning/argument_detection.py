@@ -123,12 +123,12 @@ class Model_EA(nn.Module):
             argument_names=argument_names
         )
 
-    def forward(self, words, chars, entities, events, tags=None):
+    def forward(self, words, chars, entities, events, trigger_indexes, tags=None):
         word_features = self.embeddings(words, chars, entities)
         event_features = self.events_embeddings(events)
         
         features = torch.cat((word_features, event_features), dim=2)
-        encoder_out = self.encoder(words, features)
+        encoder_out = self.encoder(words, features, trigger_indexes=trigger_indexes)
         # fc_out = [sentence length, batch size, output dim]
         ea_out, ea_loss = self.final_layer(words, encoder_out, tags)
         return ea_out, ea_loss

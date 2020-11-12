@@ -119,6 +119,6 @@ def get_configs_arguments(corpus, device):
 
     configs = {
         "bilstm": {**base, **w2v, **char_cnn, **entity_emb, **event_emb},
-        "cnn": {**base, **cnn_trig, **w2v, **char_cnn, **event_emb}
+        "cnn": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
     }
     return configs
