@@ -3,11 +3,12 @@ from __future__ import print_function
 import os
 import re
 import sys
+import glob
 from collections import namedtuple
 from io import StringIO
 from os import path
 
-path_data = 'data/dev'
+path_data = 'data/train'
 path_save = 'data/full'
 
 def parse_textbounds(f, annfn):
@@ -116,28 +117,28 @@ def relabel(lines, annotations):
         temp_line = []
         for token in l:
             text, start, end = token
-            ntoken = [text, 'O', 'O', 'O']
+            ntoken = [text, 'O', 'O', []]
             for T in annotations:
                 infor = annotations[T]
                 if text in infor[3] and start>= infor[0] and end <= infor[1]:
                     if len(infor) >4:
                         if pre_event is None or T != pre_event:
-                            ntoken[1] = infor[2]
+                            ntoken[1] = 'B-' + infor[2]
                             pre_event = T
                         else:
                             ntoken[1] = infor[2]
 
-                        ntoken[3] = T
+                        ntoken[3].append(T)
                         ntoken.append(infor[4])
 
                     else:
                         if pre_ner is None or T != pre_ner:
                             ntoken[2] =  infor[2]
-                            ntoken[3] = T
+                            ntoken[3].append(T)
                             pre_ner = T
                         else:
                             ntoken[2] =  infor[2]
-                            ntoken[3] = T
+                            ntoken[3].append(T)
 
             temp_line.append(ntoken)
         labedlines.append(temp_line)
@@ -145,25 +146,34 @@ def relabel(lines, annotations):
     return labedlines
 
 def save_conll(data, path, opt='w'):
-    with open(path, opt, encoding='utf-8') as f:
-        for sent in data:
-            event = {}
-            for word in sent:
-                if len(word) > 4:
-                    args = {arg.split(':')[-1]:arg.split('-')[0] for arg in word[4]}
-                    # args = eval(args)
-                    args['O'] = 'O'
-                    args['word'] = word
-                    event[word[0]] = args
-            for e, args in event.items():
+    f= open(path, opt, encoding='utf-8')
+    for sent in data:
+        
+        event = {}
+        for word in sent:
+            if len(word) > 4 and word[1][:2]=='B-':
+                args = {arg.split(':')[-1]:arg.split('-')[0] for arg in word[4]}
+                # args = eval(args)
+                
+                event[word[0]] = args
+                word[1] = word[1][2:]
+                args['word'] = word
+        if len(event.keys())>0:
+            
+            for _, args in event.items():
                 for word in sent:
-                    if word[3] in args.keys():
-                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[word[3]] + '\tO'+'\n')
+                    w = list(set(word[3])&set(args.keys()))
+                    if len(w)>0:
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[w[0]] + '\tO'+'\n')
                     elif word == args['word']:
                         f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ 'O' + '\tE'+ '\n')
                     else:
                         f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
                 f.write('\n')
+        else:
+            for word in sent:
+                f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t' + 'O'  + '\tO' + '\n')
+            f.write('\n')
 
 
 # text_to_conll('C:/Users/dell/Downloads/Compressed/brat-v1.3_Crunchy_Frog/data/event/Phase_2/Bankruptcy/Bankruptcy_1/Bankruptcy_009.txt', './')
@@ -202,9 +212,11 @@ def brat2conll():
     count = 0
     for file, files in zip(npath_file, npath_save):
         # print(file)
-        save_conll(text_to_conll(file, files), path_save + '/dev.txt', opt='a')
+        save_conll(text_to_conll(file, files), path_save + '/train.txt', opt='a')
         count +=1
         if count %100 ==0:
             print('check {} files'.format(count))
+    for f in glob.glob("data/full/EV-train*.txt"):
+         os.system("cat "+f+" >> train.txt")
 
 brat2conll()
