@@ -5,6 +5,7 @@ from collections import Counter
 import torch
 from torch import nn
 from torch.optim import Adam
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torchtext.data import Field, BucketIterator, NestedField
 from torchtext.datasets import SequenceTaggingDataset
 from torchtext.vocab import Vocab
@@ -14,12 +15,13 @@ from sklearn.metrics import classification_report, f1_score, precision_score, re
 
 class Trainer(object):
 
-    def __init__(self, model, data, optimizer_cls, loss_fn_cls, device):
+    def __init__(self, model, data, optimizer_cls, loss_fn_cls, device, checkpoint_path=None):
         self.device = device
         self.model = model.to(self.device)
         self.data = data
         self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.argument_pad_idx)
+        self.checkpoint_path = checkpoint_path
 
     @staticmethod
     def epoch_time(start_time, end_time):
@@ -112,7 +114,7 @@ class Trainer(object):
         test_loss, test_f1, test_p1, test_r1 = self.evaluate(self.data.test_iter)
         print(f"Test Loss: {test_loss:.3f} |  Test P1: {test_p1 * 100:.2f}%  R1: {test_r1 * 100:.2f}% F1: {test_f1 * 100:.2f}%")
     
-    def train(self, n_epochs):
+    def train(self, max_epochs=20, no_improvement=None):
         history = {
             "num_params": self.model.count_parameters(),
             "train_loss": [],
@@ -121,17 +123,50 @@ class Trainer(object):
             "val_f1": [],
         }
         elapsed_train_time = 0
-        for epoch in range(n_epochs):
+        best_val_f1 = 0
+        best_epoch = None
+        lr_scheduler = ReduceLROnPlateau(
+            optimizer = self.optimizer,
+            patience=3,
+            factor=0.3,
+            mode='max',
+            verbose=True
+        )
+        epoch = 1
+        n_stagnant = 0
+        stop = False
+        while not stop:
             start_time = time.time()
-            train_loss, train_f1,_,_ = self.epoch()
+            train_loss, train_f1, train_p1, train_r1 = self.epoch()
             end_time = time.time()
             elapsed_train_time += end_time - start_time
-            history["train_loss"].append(train_loss)
-            history["train_f1"].append(train_f1)
-            val_loss, val_f1,_,_ = self.evaluate(self.data.val_iter)
-            history["val_loss"].append(val_loss)
-            history["val_f1"].append(val_f1)
-        test_loss, test_f1,_,_ = self.evaluate(self.data.test_iter)
+            history['train_loss'].append(train_loss)
+            history['train_f1'].append(train_f1)
+            val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
+            lr_scheduler.step(val_f1)
+            if self.checkpoint_path and val_f1 > (1.01*best_val_f1):
+                print(f"Epoch {epoch:5d}: found better Val F1: {val_f1:.4f} (Train F1: {train_f1:.4f}), saving model...")
+                self.model.save_state(self.checkpoint_path)
+                best_val_f1 = val_f1
+                best_epoch = epoch
+                n_stagnant = 0
+            else:
+                n_stagnant += 1
+            history['val_loss'].append(val_loss)
+            history['val_f1'].append(val_f1)
+            if epoch >= max_epochs:
+                print(f"Reach maximum number of epoch: {epoch}, stop training.")
+                stop = True
+            elif no_improvement is not None and n_stagnant >= no_improvement:
+                print(f"No improvement after {n_stagnant} epochs, stop training.")
+                stop = True
+            else:
+                epoch += 1
+        if self.checkpoint_path and best_val_f1 > 0:
+            self.model.load_state(self.checkpoint_path)
+        test_loss, test_f1, test_p1, test_r1 = self.evaluate(self.data.test_iter)
+        history["best_val_f1"] = best_val_f1
+        history["best_epoch"] = best_epoch
         history["test_loss"] = test_loss
         history["test_f1"] = test_f1
         history["elapsed_train_time"] = elapsed_train_time

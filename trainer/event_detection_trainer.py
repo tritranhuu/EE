@@ -22,12 +22,12 @@ class Trainer(object):
         self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.event_pad_idx)
         self.checkpoint_path = checkpoint_path
-    # @staticmethod
-    # def epoch_time(start_time, end_time):
-    #     elapsed_time = end_time - start_time
-    #     elapsed_mins = int(elapsed_time / 60)
-    #     elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
-    #     return elapsed_mins, elapsed_secs
+    @staticmethod
+    def epoch_time(start_time, end_time):
+        elapsed_time = end_time - start_time
+        elapsed_mins = int(elapsed_time / 60)
+        elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
+        return elapsed_mins, elapsed_secs
 
     def accuracy(self, preds, y):
         preds= preds.to(self.device)
@@ -72,8 +72,12 @@ class Trainer(object):
             chars = batch.char.to(self.device)
         # tags = [sent len, batch size]
             true_tags = batch.event.to(self.device)
-           self.optimizer.zero_grad()
+            self.optimizer.zero_grad()
             pred_tags, _ = self.model(words, chars)
+            x = pred_tags.argmax(dim=2).permute(1, 0)
+            # print(x.shape)
+            # print([(t>1).nonzero().reshape(-1) for t in x])
+            # print(torch.cat([(t>1).nonzero() for t in x], dim=1).shape)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             pred_tags = pred_tags.view(-1, pred_tags.shape[-1])

@@ -132,6 +132,11 @@ class Model_EA(nn.Module):
         # fc_out = [sentence length, batch size, output dim]
         ea_out, ea_loss = self.final_layer(words, encoder_out, tags)
         return ea_out, ea_loss
+    def save_state(self, path):
+        torch.save(self.state_dict(), path)
+
+    def load_state(self, path):
+        self.load_state_dict(torch.load(path))
 
     def count_parameters(self):
         return sum(p.numel() for p in self.parameters() if p.requires_grad)

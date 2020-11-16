@@ -118,12 +118,12 @@ def get_configs_arguments(corpus, device):
     }
 
     configs = {
-        "bilstm": {**base, **event_emb},
-        "bilstm+w2v": {**base, **w2v, **event_emb},
-        "bilstm+w2v+charcnn": {**base, **w2v, **char_cnn, **event_emb},
-        "bilstm+w2v+charcnn+entity": {**base, **w2v, **char_cnn, **entity_emb, **event_emb}
+        # "bilstm": {**base, **event_emb},
+        # "bilstm+w2v": {**base, **w2v, **event_emb},
+        # "bilstm+w2v+charcnn": {**base, **w2v, **char_cnn, **event_emb},
+        # "bilstm+w2v+charcnn+entity": {**base, **w2v, **char_cnn, **entity_emb, **event_emb}
         # "cnn": {**base, **cnn_trig, **event_emb},
-        # "cnn+w2v": {**base, **cnn_trig, **w2v, **event_emb},
+        "cnn+w2v": {**base, **cnn_trig, **w2v, **event_emb},
         # "cnn+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn, **event_emb},
         # "cnn+w2v+charcnn+entity": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
     }
