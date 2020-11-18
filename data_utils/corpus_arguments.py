@@ -37,24 +37,30 @@ class CorpusArgument(object):
     
     
     if args.wv_file:
-        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=True)
+        print("start loading embedding")
+        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=False)
+        print("done loading embedding")
         self.embedding_dim = self.wv_model.vector_size
         word_freq = {word: self.wv_model.wv.vocab[word].count for word in self.wv_model.wv.vocab}
         word_counter = Counter(word_freq)
         self.word_field.vocab = Vocab(word_counter, min_freq=args.min_word_freq)
             # mapping each vector/embedding from word2vec model to word_field vocabs
         vectors = []
+        print("start loading vec", len(self.word_field.vocab.stoi))
         for word, idx in self.word_field.vocab.stoi.items():
             if word in self.wv_model.wv.vocab.keys():
                 vectors.append(torch.as_tensor(self.wv_model.wv[word].tolist()))
             else:
                 vectors.append(torch.zeros(self.embedding_dim))
+        print("done loading vec")
+        del self.wv_model
         self.word_field.vocab.set_vectors(
                 stoi=self.word_field.vocab.stoi,
                 # list of vector embedding, orderred according to word_field.vocab
                 vectors=vectors,
                 dim=self.embedding_dim
             )
+        
     else:
         self.word_field.build_vocab(self.train_dataset.word, min_freq=args.min_word_freq)
     self.char_field.build_vocab(self.train_dataset.char)
@@ -64,7 +70,8 @@ class CorpusArgument(object):
 
     self.train_iter, self.val_iter, self.test_iter = BucketIterator.splits(
         datasets=(self.train_dataset, self.val_dataset, self.test_dataset),
-        batch_size=args.batch_size
+        batch_size=args.batch_size,
+        shuffle=False,
     ) 
     
     # prepare padding index to be ignored during model training/evaluation

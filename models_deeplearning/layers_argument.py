@@ -43,23 +43,18 @@ class CNN_Arg(nn.Module):
                         for position in positions]
         return positions
     def get_sentence_event_positional_features(self, batch_size, sentence_length, trigger_indexes):
-        
+        # trigger_pos = torch.cat([(t == 2).nonzero().reshape(-1) for t in trigger_indexes.permute(1,0)]).reshape(-1).tolist()
+        # if len(trigger_pos)<128:
+        #   trigger_pos.extend([1]*(128-len(trigger_pos)))
         positions = [[abs(j) for j in range(-i, sentence_length-i)] for i in range(sentence_length)]
-        positions = [torch.cuda.LongTensor(position) for position in positions]
-        trig_positions = torch.cat([positions[i] for i in trigger_indexes]).resize_(batch_size, sentence_length)
+        positions = [torch.cuda.LongTensor(position) for position in positions] + [torch.cuda.LongTensor([0]*sentence_length)]
+        trig_positions = torch.cat([positions[int(i)] for i in trigger_indexes.tolist()]).resize_(batch_size, sentence_length)
         return trig_positions
 
     def forward(self, words, word_features, trigger_indexes=[2]*128):
-       
-        trigger_pos = torch.cat([(t == 2).nonzero() for t in trigger_indexes.permute(1,0)]).reshape(-1).tolist()
-        # print(trigger_pos)
-        # trigger_pos = [0]*128
-        # trig = np.append([(t == 2).nonzero().reshape(-1).cpu().numpy() for t in trigger_indexes.permute(1,0)])
-        # print(trig)
-        if len(trigger_pos)<128:
-          trigger_pos.extend([1]*(128-len(trigger_pos)))
+
         positional_sequences = self.get_sentence_positional_features(words.shape[1], words.shape[0])
-        positional_event = self.get_sentence_event_positional_features(words.shape[1], words.shape[0], trigger_pos)
+        positional_event = self.get_sentence_event_positional_features(words.shape[1], words.shape[0], trigger_indexes)
         # print(words)
         cnn_input = word_features.permute(1,0,2)
         cnn_out=[]

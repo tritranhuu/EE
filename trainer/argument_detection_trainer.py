@@ -30,6 +30,43 @@ class Trainer(object):
         elapsed_secs = int(elapsed_time - (elapsed_mins * 60))
         return elapsed_mins, elapsed_secs
 
+    def get_trigger_pos(self, event_matrix):
+        # x = event_matrix.argmax(dim=2).permute(1, 0)
+        x = event_matrix.permute(1,0)
+        x = [(t>1).nonzero().reshape(-1) for t in x]
+        s = []
+        for i in range(len(x)):
+            a = x[i]
+            if x[i].shape[0] <=1:
+              s.append(x[i])
+            else:
+              temp = (torch.cat([torch.cuda.FloatTensor([0]), (a[1:] - a[:-1])])!=1).nonzero().reshape(-1)
+              temp = x[i][temp]
+              s.append(temp)
+        pos = []
+        i=0
+        while i<len(s):
+            if len(s[i]) == 0:
+              pos.append(torch.cuda.FloatTensor([-1]))
+            elif len(s[i]) == 1:
+              pos.append(s[i])
+            else:
+              a = s[i].reshape(-1,1)
+              pos.append(a[0])
+              for j in range(1,len(s)-i):
+                if s[i+j].shape[0] == s[i].shape[0] and torch.allclose(s[i+j],s[i]):
+                    if j<a.shape[0]:
+                      pos.append(a[j])
+                    else:
+                      pos.append(a[-1])                    
+                else:
+                  break
+              i+=(j-1)
+            i+=1
+        pos = torch.cat(pos)
+        # print(pos.shape, pos, s, len(s))
+        return pos[:len(s)]
+
     def epoch(self):
         epoch_loss = 0
         epoch_acc = 0
@@ -46,8 +83,9 @@ class Trainer(object):
         # tags = [sent len, batch size]
             true_tags = batch.argument.to(self.device)
             trig = batch.trigger_pos.to(self.device)
+            trigger_index = self.get_trigger_pos(trig)
             self.optimizer.zero_grad()
-            pred_tags, _ = self.model(words, chars, entities, events, trig)
+            pred_tags, _ = self.model(words, chars, entities, events, trigger_index)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
@@ -85,8 +123,9 @@ class Trainer(object):
                 entities = batch.entity.to(self.device)
                 events = batch.event.to(self.device)
                 trig = batch.trigger_pos.to(self.device)
+                trigger_index = self.get_trigger_pos(trig)
                 true_tags = batch.argument.to(self.device)
-                pred_tags, _ = self.model(words, chars, entities, events, trig)
+                pred_tags, _ = self.model(words, chars, entities, events, trigger_index)
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
                 batch_loss = self.loss_fn(pred_tags, true_tags)

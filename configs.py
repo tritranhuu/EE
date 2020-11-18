@@ -4,12 +4,20 @@ def get_configs(corpus, device):
         "word_input_dim": len(corpus.word_field.vocab),
         "char_pad_idx": corpus.char_pad_idx,
         "word_pad_idx": corpus.word_pad_idx,
+        "entity_pad_idx": corpus.entity_pad_idx,
         "tag_names": corpus.event_field.vocab.itos,
         "device": device
     }
     w2v = {
-        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None
+        "word_emb_pretrained": corpus.word_field.vocab.vectors 
     }
+
+    entity_emb = {
+        "entity_emb_size":len(corpus.entity_field.vocab),
+        "entity_emb_dim":25,
+        "entity_emb_dropout":0.25
+    }
+
     char_cnn = {
         "use_char_emb": True,
         "char_input_dim": len(corpus.char_field.vocab),
@@ -64,10 +72,11 @@ def get_configs(corpus, device):
         "cnn_seq+w2v+charcnn": {**base, **cnn_seq, **w2v, **char_cnn},
 
         "cnn_trig": {**base, **cnn_trig},
-        # "cnn_trig+w2v": {**base, **cnn_trig, **w2v},
-        # "cnn_trig+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn},
+        "cnn_trig+w2v": {**base, **cnn_trig, **w2v},
 
-        "cnn_trig+w2v+position": {**base, **cnn_trig, **w2v, **pos_emb},
+        "cnn_trig+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn},
+
+        "cnn_trig+w2v+position": {**base, **cnn_trig, **w2v, **char_cnn, **pos_emb, **entity_emb},
         # "transformer+w2v+cnn": {**base, **transformer, **w2v, **char_cnn, **attn}
     }
     return configs
@@ -92,7 +101,7 @@ def get_configs_arguments(corpus, device):
         "char_cnn_dropout": 0.25
     }
     w2v = {
-        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv_model else None
+        "word_emb_pretrained": corpus.word_field.vocab.vectors
     }
     entity_emb = {
         "entity_emb_size":len(corpus.entity_field.vocab),
@@ -122,8 +131,8 @@ def get_configs_arguments(corpus, device):
         # "bilstm+w2v": {**base, **w2v, **event_emb},
         # "bilstm+w2v+charcnn": {**base, **w2v, **char_cnn, **event_emb},
         # "bilstm+w2v+charcnn+entity": {**base, **w2v, **char_cnn, **entity_emb, **event_emb}
-        # "cnn": {**base, **cnn_trig, **event_emb},
-        "cnn+w2v": {**base, **cnn_trig, **w2v, **event_emb},
+        "cnn": {**base, **cnn_trig, **entity_emb, **event_emb,**char_cnn,},
+        "cnn+w2v+entity": {**base, **cnn_trig, **w2v, **entity_emb, **event_emb,**char_cnn,},
         # "cnn+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn, **event_emb},
         # "cnn+w2v+charcnn+entity": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
     }

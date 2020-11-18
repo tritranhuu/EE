@@ -83,6 +83,7 @@ class Model_EA(nn.Module):
             event_emb_dropout=event_emb_dropout,
             device=device
         )
+        print(self.embeddings.output_dim)
         if model_arch.lower() == "cnn_trig":
             # CNN for Trigger Candidates
             self.encoder = CNN_Arg(
@@ -125,6 +126,7 @@ class Model_EA(nn.Module):
 
     def forward(self, words, chars, entities, events, trigger_indexes, tags=None):
         word_features = self.embeddings(words, chars, entities)
+        # print(word_features.shape)
         event_features = self.events_embeddings(events)
         
         features = torch.cat((word_features, event_features), dim=2)

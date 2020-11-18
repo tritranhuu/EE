@@ -19,6 +19,7 @@ class Model_ED(nn.Module):
                  word_input_dim,
                  word_pad_idx,
                  char_pad_idx,
+                 entity_pad_idx,
                  tag_names,
                  device,
                  model_arch="bilstm",
@@ -29,6 +30,9 @@ class Model_ED(nn.Module):
                  use_char_emb=False,
                  pos_emb_size=None,
                  pos_emb_dim=0,
+                 entity_emb_size=None,
+                 entity_emb_dim=0,
+                 entity_emb_dropout=0,
                  char_input_dim=None,
                  char_emb_dim=None,
                  char_emb_dropout=None,
@@ -61,9 +65,13 @@ class Model_ED(nn.Module):
             char_cnn_filter_num=char_cnn_filter_num,
             char_cnn_kernel_size=char_cnn_kernel_size,
             char_cnn_dropout=char_cnn_dropout,
+            entity_pad_idx=entity_pad_idx,
             word_pad_idx=word_pad_idx,
             char_pad_idx=char_pad_idx,
-            device=device
+            device=device,
+            entity_emb_size=entity_emb_size,
+            entity_emb_dim=entity_emb_dim,
+            entity_emb_dropout=entity_emb_dropout
         )
         if model_arch.lower() == "bilstm":
             # LSTM-Attention
@@ -125,8 +133,8 @@ class Model_ED(nn.Module):
                 tag_names=tag_names
             )
 
-    def forward(self, words, chars, tags=None):
-        word_features = self.embeddings(words, chars)
+    def forward(self, words, chars, entities=None, tags=None):
+        word_features = self.embeddings(words, chars, entities)
         encoder_out = self.encoder(words, word_features)
         # fc_out = [sentence length, batch size, output dim]
         ed_out, ed_loss = self.final_layer(words, encoder_out, tags)
