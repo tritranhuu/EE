@@ -1,0 +1,88 @@
+T1	TIM 35 55	2004-11-17T11 :07:00
+T2	PER 108 119	Mark Backer
+T3	TIM 120 140	2004-11-17T11 :07:00
+T4	ORG 249 256	schools
+T5	PER 188 202	Linda Schrenko
+T6	PER 207 256	the State of Georgia 's Superintendant of schools
+T7	PER 145 185	those of you not from around these parts
+T8	PER 154 157	you
+T9	GPE 207 227	the State of Georgia
+T10	GPE 174 185	these parts
+T11	GPE 220 227	Georgia
+T12	PER 308 318	the people
+T13	TIM 276 288	recent years
+T14	NUM 376 390	over 600 grand
+T15	PER 333 347	good ole Linda
+T16	PER 358 361	her
+T17	Transfer-Money 367 375	stealing
+E1	Transfer-Money:T17 Money:T14 Recipient:T15 Time-Within:T13
+T18	NUM 473 487	the nine grand
+T19	PER 420 423	She
+T20	PER 488 491	she
+T21	PER 586 589	she
+T22	PER 603 606	her
+T23	PER 569 571	me
+T24	Charge-Indict 607 617	indictment
+E2	Charge-Indict:T24 Defendant:T22
+T25	TIM 718 731	the mid 90 's
+T26	PER 690 703	Michael Irvin
+T27	PER 644 645	I
+T28	PER 646 731	the only one that learned anything from the Michael Irvin drug trial of the mid 90 's
+T29	PER 659 663	that
+T30	Trial-Hearing 709 714	trial
+E3	Trial-Hearing:T30 Defendant:T26 Time-Within:T25
+T31	CRM 801 829	stealing large sums of money
+T32	ORG 760 765	court
+T33	PER 906 920	the common man
+T34	PER 734 737	You
+T35	PER 876 879	you
+T36	PER 890 893	you
+T37	Transfer-Money 801 809	stealing
+E4	Transfer-Money:T37 Recipient:T34
+T38	Charge-Indict 786 796	indictment
+E5	Charge-Indict:T38 Adjudicator:T32 Crime:T31 Defendant:T34
+T39	SEN 993 1009	actual jail time
+T40	PER 937 945	Schrenko
+T41	PER 949 958	a scumbag
+T42	PER 974 977	she
+T43	PER 1028 1031	she
+T44	PER 1070 1073	she
+T45	FAC 1000 1004	jail
+T46	PER 1012 1013	I
+T47	Sentence 985 988	get
+E6	Sentence:T47 Defendant:T42 Sentence:T39
+T48	Fine 1023 1027	fine
+E7	Fine:T48 Entity:T42
+T49	Transfer-Money 1074 1079	stole
+E8	Transfer-Money:T49 Recipient:T40
+T50	PER 1094 1097	she
+T51	TIM 1321 1329	ONE YEAR
+T52	NUM 1233 1244	600 million
+T53	PER 1133 1147	Michael Milken
+T54	PER 1161 1163	he
+T55	PER 1190 1193	his
+T56	PER 1260 1262	HE
+T57	PER 1284 1287	his
+T58	PER 1310 1312	he
+T59	Fine 1225 1229	fine
+E9	Fine:T59 Entity:T53 Money:T52
+T60	Fine 1268 1270	IT
+E10	Fine:T60 Entity:T56 Money:T52
+T61	PER 1354 1358	your
+T62	PER 1354 1364	your honor
+T63	NUM 1367 1376	600 large
+T64	PER 1402 1404	my
+T65	PER 1422 1424	my
+T66	PER 1390 1392	me
+T67	PER 1458 1466	Schrenko
+T68	PER 1518 1521	she
+T69	FAC 1553 1557	jail
+T70	PER 1512 1513	I
+T71	PER 1487 1501	Martha Stewart
+T72	FAC 1553 1562	jail cell
+T73	Transfer-Money 1467 1472	stole
+E11	Transfer-Money:T73 Recipient:T67
+T74	PER 1614 1622	Schrenko
+T75	FAC 1633 1638	jails
+T76	PER 1627 1632	which
+T77	PER 1602 1665	people like Schrenko for which jails were specifically designed

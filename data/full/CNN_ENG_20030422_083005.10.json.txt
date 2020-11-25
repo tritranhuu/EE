@@ -1,0 +1,27 @@
+shares	O	O	O	O
+of	O	O	O	O
+american	O	ORG	O	O
+airlines	O	ORG	O	O
+are	O	O	O	O
+falling	O	O	O	O
+sharply	O	O	O	O
+for	O	O	O	O
+the	O	TIM	O	O
+second	O	TIM	O	O
+straight	O	TIM	O	O
+day	O	TIM	O	O
+on	O	O	O	O
+the	O	O	O	O
+fears	O	O	O	O
+that	O	O	O	O
+the	O	ORG	Org	O
+company	O	ORG	Org	O
+might	O	O	O	O
+be	O	O	O	O
+forced	O	O	O	O
+to	O	O	O	O
+file	O	O	O	O
+for	O	O	O	O
+bankruptcy	Declare-Bankruptcy	O	O	E
+.	O	O	O	O
+

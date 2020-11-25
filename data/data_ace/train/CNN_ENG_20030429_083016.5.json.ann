@@ -1,0 +1,17 @@
+T1	TIM 38 57	2003-04-29 10:38:42
+T2	GPE 62 73	palestinian
+T3	PER 138 151	yasser arafat
+T4	PER 159 168	abu mazen
+T5	PER 172 186	prime minister
+T6	PER 202 204	he
+T7	GPE 228 234	israel
+T8	PER 295 312	24-member cabinet
+T9	PER 313 317	that
+T10	PER 295 304	24-member
+T11	GPE 241 252	palestinian
+T12	TIM 237 240	now
+T13	PER 318 323	mazen
+T14	PER 241 260	palestinian leaders
+T15	End-Position 285 294	september
+E1	End-Position:T15 Person:T8
+T16	PER 340 353	kelly wallace

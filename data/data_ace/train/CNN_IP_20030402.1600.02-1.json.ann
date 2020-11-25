@@ -1,0 +1,177 @@
+T1	TIM 34 61	2003-04-02T16 :00:00 -05:00
+T2	PER 112 120	WOODRUFF
+T3	GPE 225 256	the Shiite holy city of Karbala
+T4	GPE 249 256	Karbala
+T5	GPE 174 181	Baghdad
+T6	GPE 124 133	coalition
+T7	PER 229 235	Shiite
+T8	PER 124 140	coalition forces
+T9	PER 155 160	their
+T10	PER 184 188	they
+T11	Transport 161 166	march
+E1	Transport:T11 Artifact:T8 Destination:T5
+T12	PER 263 278	American troops
+T13	PER 283 288	their
+T14	GPE 360 365	there
+T15	GPE 263 271	American
+T16	Attack 351 359	fighting
+E2	Attack:T16 Place:T14
+T17	PER 387 401	British forces
+T18	PER 411 416	their
+T19	GPE 442 447	Basra
+T20	GPE 387 394	British
+T21	Attack 417 423	attack
+E3	Attack:T21 Attacker:T17 Place:T19
+T22	PER 450 477	ITN correspondent Tim Ewart
+T23	PER 450 467	ITN correspondent
+T24	ORG 450 453	ITN
+T25	PER 516 545	TIM EWART , ITN CORRESPONDENT
+T26	GPE 606 613	Karbala
+T27	GPE 629 636	Baghdad
+T28	PER 546 551	These
+T29	PER 556 636	soldiers of the U.S. 3rd Infantry , fighting near Karbala , southwest of Baghdad
+T30	ORG 568 589	the U.S. 3rd Infantry
+T31	GPE 572 576	U.S.
+T32	Attack 592 600	fighting
+E4	Attack:T32 Attacker:T29 Place:T26
+T33	PER 639 643	They
+T34	PER 655 669	Saddam Hussein
+T35	PER 692 695	his
+T36	PER 655 689	Saddam Hussein 's Republican Guard
+T37	PER 692 711	his finest soldiers
+T38	VEH 743 761	coalition aircraft
+T39	GPE 743 752	coalition
+T40	GPE 781 790	coalition
+T41	GPE 831 835	U.S.
+T42	PER 855 875	the Republican Guard
+T43	PER 879 893	a doomed force
+T44	PER 831 846	U.S. commanders
+T45	PER 896 944	BRIG. GEN. VINCENT BROOKS , U.S. CENTRAL COMMAND
+T46	GPE 962 969	Baghdad
+T47	PER 945 947	We
+T48	Transport 953 961	approach
+E5	Transport:T48 Artifact:T47 Destination:T46
+T49	WEA 972 982	The dagger
+T50	TIM 1029 1038	right now
+T51	ORG 1018 1028	the regime
+T52	ORG 1075 1085	the regime
+T53	PER 1096 1101	EWART
+T54	GPE 1139 1156	the town of Basra
+T55	GPE 1151 1156	Basra
+T56	PER 1264 1278	Iraqi fighters
+T57	GPE 1264 1269	Iraqi
+T58	PER 1159 1173	British troops
+T59	PER 1247 1251	they
+T60	GPE 1199 1207	the town
+T61	TIM 1214 1219	today
+T62	LOC 1182 1207	the outskirts of the town
+T63	FAC 1230 1278	another building they said housed Iraqi fighters
+T64	GPE 1159 1166	British
+T65	Attack 1220 1229	destroyed
+E6	Attack:T65 Attacker:T58 Target:T63 Time-Within:T61
+T66	PER 1308 1328	the Saddam loyalists
+T67	PER 1329 1332	who
+T68	GPE 1300 1304	here
+T69	GPE 1352 1357	Basra
+T70	PER 1312 1318	Saddam
+T71	PER 1365 1405	the invading troops waiting at the gates
+T72	Transport 1369 1377	invading
+E7	Transport:T72 Artifact:T71 Destination:T69
+T73	GPE 1465 1472	Baghdad
+T74	GPE 1529 1533	here
+T75	GPE 1475 1486	the British
+T76	GPE 1514 1519	their
+T77	PER 1432 1445	The Americans
+T78	Transport 1450 1456	racing
+E8	Transport:T78 Artifact:T77 Destination:T73
+T79	GPE 1560 1565	Basra
+T80	GPE 1613 1649	the capital , 250 miles to the north
+T81	Attack 1601 1609	fighting
+E9	Attack:T81 Place:T80
+T82	LOC 1675 1688	southern Iraq
+T83	PER 1652 1661	Tim Ewart
+T84	ORG 1664 1672	ITV News
+T85	PER 1717 1725	WOODRUFF
+T86	LOC 1731 1740	the south
+T87	LOC 1744 1753	the north
+T88	GPE 1825 1830	Iraqi
+T89	TIM 1841 1846	today
+T90	LOC 1757 1791	the rolling hills of northern Iraq
+T91	LOC 1778 1791	northern Iraq
+T92	GPE 1794 1803	coalition
+T93	Attack 1882 1893	bombardment
+E10	Attack:T93 Attacker:T92 Place:T90 Time-Within:T89
+T94	Attack 1808 1815	strikes
+E11	Attack:T94 Attacker:T92 Place:T90 Time-Within:T89
+T95	GPE 1916 1943	the oil-rich city of Kirkuk
+T96	GPE 1937 1943	Kirkuk
+T97	Attack 1896 1898	It
+E12	Attack:T97 Place:T95
+T98	GPE 1969 1974	there
+T99	ORG 1946 1949	CNN
+T100	PER 1946 1965	CNN 's Brent Sadler
+T101	PER 2005 2037	BRENT SADLER , CNN CORRESPONDENT
+T102	GPE 2070 2114	the heartland of northern Iraq 's oil wealth
+T103	GPE 2061 2067	Kirkuk
+T104	LOC 2087 2100	northern Iraq
+T105	FAC 2038 2114	A back road leading to Kirkuk , the heartland of northern Iraq 's oil wealth
+T106	PER 2158 2165	Kurdish
+T107	GPE 2152 2157	Iraqi
+T108	TIM 2132 2135	now
+T109	PER 2152 2172	Iraqi Kurdish forces
+T110	FAC 2117 2123	A road
+T111	FAC 2124 2128	that
+T112	GPE 2256 2262	Kirkuk
+T113	PER 2285 2298	Iraqi-Kurdish
+T114	GPE 2285 2298	Iraqi-Kurdish
+T115	FAC 2265 2274	This land
+T116	Attack 2315 2319	shot
+E13	Attack:T116
+T117	GPE 2334 2339	Iraqi
+T118	GPE 2406 2415	coalition
+T119	PER 2334 2348	Iraqi soldiers
+T120	Attack 2416 2423	bombing
+E14	Attack:T120 Attacker:T118
+T121	Transport 2349 2353	fled
+E15	Transport:T121 Artifact:T119
+T122	PER 2458 2465	Kurdish
+T123	PER 2458 2503	Kurdish forces manning this remote checkpoint
+T124	FAC 2481 2503	this remote checkpoint
+T125	PER 2536 2540	they
+T126	PER 2545 2547	us
+T127	GPE 2619 2624	Iraqi
+T128	TIM 2565 2568	now
+T129	VEH 2682 2691	warplanes
+T130	FAC 2609 2632	abandoned Iraqi bunkers
+T131	PER 2558 2560	We
+T132	Attack 2721 2728	strikes
+E16	Attack:T132 Instrument:T129
+T133	GPE 2818 2824	Kirkuk
+T134	WEA 2761 2770	artillery
+T135	PER 2780 2794	Saddam Hussein
+T136	FAC 2731 2745	This territory
+T137	PER 2780 2804	Saddam Hussein 's forces
+T138	GPE 2827 2859	The oil capital of northern Iraq
+T139	PER 2878 2880	me
+T140	LOC 2846 2859	northern Iraq
+T141	GPE 2960 2964	Iraq
+T142	FAC 2960 2986	Iraq 's precious oil field
+T143	GPE 3017 3023	Kirkuk
+T144	GPE 3156 3163	America
+T145	GPE 3060 3064	Iraq
+T146	PER 3097 3108	these Kurds
+T147	PER 3060 3084	Iraq 's armed opposition
+T148	PER 3171 3224	PRIME MINISTER BARHAM SALEH , KURDISTAN REGIONAL GOV.
+T149	GPE 3251 3255	Iraq
+T150	GPE 3301 3303	we
+T151	GPE 3301 3310	we Iraqis
+T152	GPE 3290 3294	Iraq
+T153	PER 3386 3392	SADLER
+T154	GPE 3408 3413	Iraqi
+T155	PER 3404 3424	the Iraqi opposition
+T156	Attack 3443 3446	war
+E17	Attack:T156
+T157	GPE 3475 3481	Kirkuk
+T158	ORG 3464 3467	CNN
+T159	PER 3449 3461	Brent Sadler
+T160	LOC 3485 3498	northern Iraq

@@ -1,0 +1,48 @@
+T1	TIM 38 57	2003-06-17 11:32:16
+T2	ORG 158 163	press
+T3	GPE 91 100	liverpool
+T4	PER 118 130	harry potter
+T5	PER 140 155	caroline forham
+T6	PER 158 198	press officer with the mercy side police
+T7	ORG 74 76	us
+T8	ORG 177 198	the mercy side police
+T9	TIM 62 65	now
+T10	Phone-Write 80 85	phone
+E1	Phone-Write:T10 Entity:T7 Entity:T5 Time-Holds:T9
+T11	PER 224 233	childrens
+T12	PER 279 288	childrens
+T13	PER 250 251	i
+T14	PER 327 333	people
+T15	PER 372 376	them
+T16	PER 314 315	i
+T17	PER 401 407	anyone
+T18	PER 456 460	they
+T19	CRM 422 455	selling these on the black market
+T20	PER 382 385	you
+T21	Charge-Indict 469 479	prosecuted
+E2	Charge-Indict:T21 Defendant:T18 Crime:T19
+T22	PER 494 497	you
+T23	PER 559 560	i
+T24	PER 586 590	they
+T25	PER 576 580	they
+T26	PER 652 653	i
+T27	ORG 662 681	reputable book shop
+T28	PER 727 728	i
+T29	ORG 756 769	market stores
+T30	ORG 735 737	we
+T31	TIM 785 805	the next coming days
+T32	PER 868 874	anyone
+T33	PER 816 831	police officers
+T34	ORG 808 810	we
+T35	ORG 816 822	police
+T36	CRM 880 907	selling them or buying them
+T37	Charge-Indict 858 867	prosecute
+E3	Charge-Indict:T37 Defendant:T32 Prosecutor:T34 Crime:T36
+T38	VEH 1095 1119	any truck carrying books
+T39	FAC 1149 1160	a warehouse
+T40	PER 1163 1167	they
+T41	PER 1173 1182	their own
+T42	PER 1179 1182	own
+T43	ORG 1242 1244	we
+T44	PER 1203 1207	they
+T45	PER 1217 1222	their

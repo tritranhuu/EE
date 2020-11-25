@@ -1,0 +1,32 @@
+265	O	PER	Victim	O
+people	O	PER	Victim	O
+died	Die	O	O	E
+in	O	O	O	O
+the	O	O	O	O
+november	O	TIM	Time	O
+2001	O	TIM	Time	O
+crash	O	O	O	O
+of	O	O	O	O
+flight	O	VEH	O	O
+587	O	VEH	O	O
+.	O	O	O	O
+
+that	O	O	O	O
+is	O	O	O	O
+when	O	O	O	O
+american	O	ORG	Agent	O
+airlines	O	ORG	Agent	O
+flight	O	VEH	Vehicle	O
+903	O	VEH	Vehicle	O
+ran	O	O	O	O
+into	O	O	O	O
+trouble	O	O	O	O
+on	O	O	O	O
+a	O	O	O	O
+trip	Transport	O	O	E
+from	O	O	O	O
+boston	O	GPE	Origin	O
+to	O	O	O	O
+miami	O	GPE	Destination	O
+.	O	O	O	O
+

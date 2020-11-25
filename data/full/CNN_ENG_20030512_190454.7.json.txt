@@ -1,0 +1,23 @@
+she	O	PER	Agent	O
+'s	O	O	O	O
+accused	O	O	O	O
+of	O	O	O	O
+beating	O	O	O	O
+two	O	PER	Victim	O
+of	O	PER	Victim	O
+her	O	PER	Victim	O
+three	O	PER	Victim	O
+children	O	PER	Victim	O
+to	O	O	O	O
+death	Die	O	O	E
+because	O	O	O	O
+,	O	O	O	O
+she	O	PER	O	O
+says	O	O	O	O
+,	O	O	O	O
+god	O	PER	O	O
+told	O	O	O	O
+her	O	PER	O	O
+to	O	O	O	O
+.	O	O	O	O
+

@@ -1,0 +1,138 @@
+T1	TIM 39 58	2003-03-31 19:58:50
+T2	ORG 59 61	we
+T3	TIM 84 91	tonight
+T4	PER 97 111	geraldo rivera
+T5	GPE 140 144	iraq
+T6	Transport 126 136	kicked out
+E1	Transport:T6 Artifact:T4 Origin:T5
+T7	PER 283 316	the unit he 's been embedded with
+T8	ORG 205 208	fox
+T9	LOC 267 316	the location of the unit he 's been embedded with
+T10	ORG 168 187	the central command
+T11	PER 193 224	the veteran fox news correspond
+T12	PER 252 254	he
+T13	PER 292 294	he
+T14	Transport 235 243	expelled
+E2	Transport:T14 Artifact:T11 Agent:T10
+T15	TIM 319 322	now
+T16	PER 323 359	a spokesman from the central command
+T17	PER 374 375	i
+T18	ORG 340 359	the central command
+T19	ORG 400 402	we
+T20	GPE 555 562	baghdad
+T21	PER 531 539	the unit
+T22	PER 476 483	geraldo
+T23	TIM 650 656	former
+T24	ORG 678 683	msnbc
+T25	PER 586 588	he
+T26	PER 671 674	his
+T27	PER 704 707	him
+T28	PER 570 572	he
+T29	PER 638 683	some bitter former colleagues of his at msnbc
+T30	Transport 598 606	expelled
+E3	Transport:T30 Artifact:T25
+T31	TIM 747 753	former
+T32	PER 723 725	me
+T33	PER 744 746	my
+T34	PER 800 802	me
+T35	ORG 744 761	my former network
+T36	ORG 764 767	nbc
+T37	PER 731 767	some rats at my former network , nbc
+T38	End-Position 747 753	former
+E4	End-Position:T38 Person:T33 Entity:T35
+T39	PER 898 900	me
+T40	PER 805 808	you
+T41	PER 816 820	they
+T42	PER 874 878	they
+T43	ORG 938 957	the central command
+T44	PER 981 987	rivera
+T45	PER 1027 1029	he
+T46	GPE 1011 1015	iraq
+T47	Transport 997 1007	kicked out
+E5	Transport:T47 Artifact:T44 Agent:T43 Origin:T46
+T48	TIM 1079 1082	now
+T49	PER 1113 1120	geraldo
+T50	Transport 1130 1134	goes
+E6	Transport:T50 Artifact:T49
+T51	JOB 1208 1225	war correspondent
+T52	ORG 1137 1139	we
+T53	GPE 1274 1278	iraq
+T54	PER 1192 1225	another veteran war correspondent
+T55	PER 1245 1248	his
+T56	End-Position 1235 1240	fired
+E7	End-Position:T56 Person:T54 Place:T53 Position:T51
+T57	JOB 1300 1319	freelancer reporter
+T58	ORG 1359 1374	the iraqi media
+T59	GPE 1363 1368	iraqi
+T60	PER 1300 1332	freelancer reporter peter arnett
+T61	PER 1300 1319	freelancer reporter
+T62	PER 1348 1350	he
+T63	ORG 1281 1284	nbc
+T64	End-Position 1288 1299	terminating
+E8	End-Position:T64 Person:T60 Entity:T63 Position:T57
+T65	ORG 1377 1379	we
+T66	TIM 1406 1415	yesterday
+T67	PER 1387 1390	you
+T68	GPE 1426 1439	the coalition
+T69	GPE 1480 1485	iraqi
+T70	PER 1418 1420	he
+T71	Attack 1449 1452	war
+E9	Attack:T71 Attacker:T68
+T72	TIM 1499 1504	today
+T73	PER 1505 1507	he
+T74	PER 1556 1558	he
+T75	ORG 1523 1526	nbc
+T76	GPE 1594 1613	the american people
+T77	GPE 1598 1606	american
+T78	TIM 1652 1663	the weekend
+T79	ORG 1690 1706	iraqi television
+T80	GPE 1690 1695	iraqi
+T81	PER 1571 1572	i
+T82	PER 1715 1716	i
+T83	PER 1757 1759	we
+T84	Attack 1779 1782	war
+E10	Attack:T84
+T85	GPE 1944 1961	the united states
+T86	ORG 1900 1916	iraqi television
+T87	GPE 1900 1905	iraqi
+T88	PER 1919 1920	i
+T89	PER 1977 1978	i
+T90	ORG 2033 2129	national geographic , which also fired him as tv reports were given exclusively to nbc and msnbc
+T91	ORG 2055 2060	which
+T92	ORG 2124 2129	msnbc
+T93	PER 1996 2002	arnett
+T94	PER 2072 2075	him
+T95	ORG 2116 2119	nbc
+T96	End-Position 2066 2071	fired
+E11	End-Position:T96 Person:T94 Entity:T91
+T97	JOB 2218 2246	its correspondent in baghdad
+T98	ORG 2159 2170	the tabloid
+T99	ORG 2171 2187	the daily mirror
+T100	ORG 2218 2221	its
+T101	GPE 2147 2153	london
+T102	GPE 2239 2246	baghdad
+T103	TIM 2175 2180	daily
+T104	PER 2199 2211	peter arnett
+T105	PER 2218 2246	its correspondent in baghdad
+T106	Start-Position 2193 2198	hired
+E12	Start-Position:T106 Person:T104 Place:T101 Entity:T98 Position:T97
+T107	PER 2295 2309	geraldo rivera
+T108	PER 2278 2290	peter arnett
+T109	PER 2335 2339	they
+T110	PER 2347 2352	their
+T111	PER 2363 2372	reporters
+T112	ORG 2375 2377	we
+T113	ORG 2445 2465	new york '' magazine
+T114	PER 2401 2413	michael wolf
+T115	PER 2416 2465	a contributing editor for `` new york '' magazine
+T116	PER 2468 2485	a media columnist
+T117	ORG 2470 2475	media
+T118	ORG 2560 2562	us
+T119	TIM 2563 2566	now
+T120	PER 2546 2548	he
+T121	GPE 2577 2582	qatar
+T122	PER 2593 2596	you
+T123	PER 2619 2626	michael
+T124	PER 2636 2639	you
+T125	PER 2647 2648	i
+T126	PER 2655 2656	i

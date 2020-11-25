@@ -1,0 +1,192 @@
+T1	TIM 45 65	2005-01-03T08 :54:00
+T2	PER 90 101	Lee Paulson
+T3	TIM 102 133	Mon , 3 Jan 2005 08:54:47 -0500
+T4	Marry 142 149	wedding
+E1	Marry:T4
+T5	PER 195 208	their brother
+T6	PER 158 175	Two of my nephews
+T7	PER 195 200	their
+T8	PER 241 245	they
+T9	PER 165 167	my
+T10	PER 165 175	my nephews
+T11	ORG 254 257	LDS
+T12	TIM 220 232	this weekend
+T13	Marry 212 219	wedding
+E2	Marry:T13 Person:T5 Time-Within:T12
+T14	PER 274 281	neither
+T15	PER 369 382	their brother
+T16	FAC 440 450	the temple
+T17	PER 313 317	Both
+T18	PER 359 363	they
+T19	PER 369 374	their
+T20	Marry 406 414	ceremony
+E3	Marry:T20 Person:T15
+T21	Marry 429 436	married
+E4	Marry:T21 Person:T15 Place:T16
+T22	PER 489 502	those nephews
+T23	PER 482 502	one of those nephews
+T24	PER 530 532	he
+T25	PER 459 460	I
+T26	PER 507 508	I
+T27	PER 552 561	The groom
+T28	PER 592 593	I
+T29	PER 661 670	strangers
+T30	PER 676 677	I
+T31	PER 695 698	she
+T32	PER 612 621	The bride
+T33	ORG 793 796	BYU
+T34	PER 722 730	my niece
+T35	PER 748 759	her husband
+T36	PER 764 776	a good catch
+T37	PER 780 782	RM
+T38	PER 722 724	my
+T39	PER 709 712	She
+T40	PER 736 739	she
+T41	PER 748 751	her
+T42	PER 860 909	the only people who did attend the kid 's wedding
+T43	PER 876 879	who
+T44	PER 914 945	his unmedicated bi-polar mother
+T45	PER 950 990	his father , who suffers from Alzheimers
+T46	PER 963 966	who
+T47	PER 891 898	the kid
+T48	PER 914 917	his
+T49	PER 950 953	his
+T50	PER 812 813	I
+T51	PER 849 850	I
+T52	Marry 902 909	wedding
+E5	Marry:T52 Person:T47
+T53	PER 1006 1009	Lee
+T54	PER 1029 1037	feminist
+T55	PER 1012 1021	the James
+T56	PER 1024 1026	uM
+T57	ORG 1051 1055	that
+T58	ORG 1038 1076	The religion that is afraid of science
+T59	PER 1087 1090	God
+T60	Die 1103 1110	suicide
+E6	Die:T60
+T61	PER 1113 1132	Ralph Waldo Emerson
+T62	PER 1133 1146	Peggy Tatyana
+T63	TIM 1147 1178	Mon , 3 Jan 2005 10:17:10 -0700
+T64	Marry 1192 1199	wedding
+E7	Marry:T64
+T65	PER 1222 1225	Lee
+T66	FAC 1314 1320	temple
+T67	PER 1228 1229	I
+T68	ORG 1258 1268	the church
+T69	Marry 1291 1299	ceremony
+E8	Marry:T69
+T70	FAC 1581 1591	the temple
+T71	PER 1498 1517	most church members
+T72	PER 1618 1620	my
+T73	PER 1553 1575	non-LDS family members
+T74	ORG 1553 1560	non-LDS
+T75	ORG 1503 1509	church
+T76	PER 1561 1567	family
+T77	PER 1802 1849	the stake president , who she did n't know well
+T78	PER 1824 1827	who
+T79	PER 1696 1762	a woman whose bishop , who she had been planning to have marry her
+T80	PER 1704 1709	whose
+T81	PER 1759 1762	her
+T82	PER 1792 1795	she
+T83	PER 1828 1831	she
+T84	PER 1723 1726	she
+T85	PER 1710 1762	bishop , who she had been planning to have marry her
+T86	PER 1719 1722	who
+T87	GPE 1782 1786	town
+T88	TIM 1657 1665	recently
+T89	Marry 1753 1758	marry
+E9	Marry:T89 Person:T79
+T90	FAC 1976 1986	the temple
+T91	PER 1852 1854	He
+T92	PER 1869 1871	he
+T93	PER 2001 2011	her fiance
+T94	PER 1941 1944	she
+T95	PER 2001 2004	her
+T96	ORG 2020 2023	LDS
+T97	Marry 1965 1972	married
+E10	Marry:T97 Person:T94 Person:T93 Place:T90
+T98	PER 2026 2029	She
+T99	PER 2050 2053	his
+T100	PER 2144 2156	their family
+T101	PER 2098 2110	young people
+T102	PER 2144 2149	their
+T103	TIM 2198 2219	time and all eternity
+T104	PER 2222 2223	I
+T105	PER 2293 2294	I
+T106	PER 2375 2380	Peggy
+T107	PER 2459 2462	you
+T108	PER 2490 2493	you
+T109	PER 2405 2408	you
+T110	LOC 2443 2452	the world
+T111	PER 2519 2530	Mary Oliver
+T112	PER 2531 2551	RBradfo...@kc.rr.com
+T113	CTI 2531 2551	RBradfo...@kc.rr.com
+T114	TIM 2552 2582	Mon , 03 Jan 2005 17:46:43 GMT
+T115	Marry 2596 2603	wedding
+E11	Marry:T115
+T116	FAC 2711 2717	temple
+T117	PER 2623 2624	I
+T118	PER 2672 2674	my
+T119	PER 2684 2685	I
+T120	PER 2747 2760	both families
+T121	PER 2672 2679	my wife
+T122	PER 2691 2695	both
+T123	PER 2696 2704	converts
+T124	Marry 2647 2655	ceremony
+E12	Marry:T124 Person:T117 Person:T121
+T125	FAC 2867 2873	temple
+T126	PER 2781 2787	family
+T127	TIM 2899 2911	a year later
+T128	PER 2928 2930	we
+T129	Marry 2990 2998	marriage
+E13	Marry:T129 Person:T128
+T130	PER 3014 3015	I
+T131	PER 3050 3052	we
+T132	PER 3057 3066	ourselves
+T133	PER 3123 3126	our
+T134	Marry 3127 3135	marriage
+E14	Marry:T134 Person:T133
+T135	PER 3159 3162	Who
+T136	PER 3230 3231	I
+T137	PER 3232 3238	myself
+T138	PER 3245 3246	I
+T139	PER 3252 3258	people
+T140	PER 3306 3308	my
+T141	ORG 3438 3448	the church
+T142	PER 3378 3384	ANYONE
+T143	PER 3395 3412	both our families
+T144	PER 3317 3319	we
+T145	PER 3400 3403	our
+T146	PER 3517 3519	my
+T147	PER 3534 3535	I
+T148	PER 3542 3544	we
+T149	PER 3595 3604	ourselves
+T150	Marry 3557 3565	marriage
+E15	Marry:T150 Person:T148
+T151	PER 3657 3670	Peggy Tatyana
+T152	TIM 3671 3702	Mon , 3 Jan 2005 11:34:00 -0700
+T153	Marry 3716 3723	wedding
+E16	Marry:T153
+T154	PER 3740 3741	I
+T155	PER 3793 3875	people who chose to have a civil ceremony , and went on later to be happily sealed
+T156	PER 3800 3803	who
+T157	Marry 3826 3834	ceremony
+E17	Marry:T157 Person:T155
+T158	FAC 4119 4129	the temple
+T159	PER 3878 3879	I
+T160	PER 3913 3915	my
+T161	PER 3916 3919	own
+T162	PER 3980 3982	my
+T163	ORG 4010 4020	the church
+T164	PER 3913 3927	my own parents
+T165	PER 3946 3951	their
+T166	PER 4052 4056	they
+T167	PER 3980 3989	my father
+T168	PER 4093 4095	he
+T169	TIM 4078 4129	the year until he would be able to enter the temple
+T170	Marry 3968 3975	married
+E18	Marry:T170 Person:T164
+T171	Transport 4113 4118	enter
+E19	Transport:T171 Artifact:T167 Destination:T158 Time-At-End:T169
+T172	PER 4132 4136	They
+T173	TIM 4162 4180	more than 55 years

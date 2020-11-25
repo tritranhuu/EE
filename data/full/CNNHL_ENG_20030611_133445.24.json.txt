@@ -1,0 +1,33 @@
+they	O	PER	Defendant	O
+'re	O	O	O	O
+facing	O	O	O	O
+misdemeanor	O	CRM	Crime	O
+charges	Charge-Indict	O	O	E
+.	O	O	O	O
+
+mothers	O	PER	Defendant	O
+of	O	PER	Defendant	O
+two	O	PER	Defendant	O
+of	O	PER	Defendant	O
+the	O	PER	Defendant	O
+students	O	PER	Defendant	O
+at	O	PER	Defendant	O
+glenbrook	O	PER	Defendant	O
+north	O	PER	Defendant	O
+high	O	PER	Defendant	O
+school	O	PER	Defendant	O
+have	O	O	O	O
+also	O	O	O	O
+been	O	O	O	O
+named	O	O	O	O
+on	O	O	O	O
+misdemeanor	O	CRM	Crime	O
+charges	Charge-Indict	O	O	E
+of	O	O	O	O
+supplying	O	O	O	O
+beer	O	O	O	O
+to	O	O	O	O
+the	O	PER	O	O
+teenagers	O	PER	O	O
+.	O	O	O	O
+

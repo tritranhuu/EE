@@ -1,0 +1,82 @@
+T1	TIM 41 60	2003-06-09 14:02:37
+T2	PER 155 200	black-clad nannies pushing silver cross prams
+T3	VEH 182 200	silver cross prams
+T4	GPE 96 102	london
+T5	LOC 142 151	hyde park
+T6	PER 83 121	offspring of london 's rich and famous
+T7	PER 96 121	london 's rich and famous
+T8	ORG 182 194	silver cross
+T9	TIM 71 77	a time
+T10	VEH 216 229	baby carriage
+T11	ORG 203 237	the high-end baby carriage company
+T12	PER 216 220	baby
+T13	TIM 248 257	last year
+T14	End-Org 243 247	bust
+E1	End-Org:T14 Org:T11 Time-Within:T13
+T15	VEH 305 326	the silver cross pram
+T16	PER 279 286	one man
+T17	ORG 264 274	a toymaker
+T18	ORG 309 321	silver cross
+T19	VEH 339 347	stroller
+T20	Start-Org 327 331	back
+E2	Start-Org:T20 Org:T18 Agent:T17 Agent:T16
+T21	PER 366 377	jim boulden
+T22	PER 415 423	princess
+T23	PER 391 423	a well-heeled baby like princess
+T24	PER 503 508	nanny
+T25	VEH 433 457	the distinctive karbages
+T26	GPE 471 477	london
+T27	FAC 471 498	london 's fashionable parks
+T28	ORG 540 552	silver cross
+T29	TIM 574 583	last year
+T30	End-Org 558 561	out
+E3	End-Org:T30 Org:T28 Time-Within:T29
+T31	PER 606 630	the rich and famous baby
+T32	ORG 633 646	a toy company
+T33	ORG 679 683	they
+T34	ORG 658 670	silver cross
+T35	Transfer-Ownership 647 653	bought
+E4	Transfer-Ownership:T35 Artifact:T34 Buyer:T32
+T36	VEH 771 784	the real ones
+T37	PER 715 732	one former worker
+T38	PER 762 765	him
+T39	ORG 743 754	the company
+T40	TIM 719 725	former
+T41	PER 793 794	i
+T42	PER 853 854	i
+T43	PER 834 836	my
+T44	PER 874 880	myself
+T45	TIM 837 843	future
+T46	TIM 809 818	two weeks
+T47	PER 901 902	i
+T48	TIM 982 985	now
+T49	ORG 959 971	silver cross
+T50	End-Org 975 978	end
+E5	End-Org:T50 Org:T49
+T51	PER 999 1001	he
+T52	FAC 1034 1047	a new factory
+T53	PER 1058 1081	some of the old workers
+T54	TIM 1036 1039	new
+T55	Start-Position 1050 1057	rehired
+E6	Start-Position:T55 Person:T53
+T56	VEH 1145 1163	the last programme
+T57	FAC 1184 1199	the old factory
+T58	TIM 1125 1138	near lay year
+T59	VEH 1202 1210	this one
+T60	VEH 1230 1291	the first to cull off the new line and destined for harrod 's
+T61	ORG 1282 1291	harrod 's
+T62	TIM 1256 1259	new
+T63	TIM 1399 1406	futcher
+T64	TIM 1343 1346	new
+T65	VEH 1294 1296	it
+T66	VEH 1395 1398	its
+T67	ORG 1319 1325	harrod
+T68	ORG 1326 1332	harrod
+T69	PER 1339 1362	the new chief executive
+T70	PER 1363 1374	nick paxton
+T71	PER 1375 1378	who
+T72	PER 1410 1421	anyone else
+T73	Transfer-Ownership 1306 1315	delivered
+E7	Transfer-Ownership:T73 Artifact:T65 Buyer:T68
+T74	TIM 1437 1440	now
+T75	ORG 1424 1433	the store

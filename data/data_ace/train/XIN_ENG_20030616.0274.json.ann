@@ -1,0 +1,48 @@
+T1	TIM 34 42	20030616
+T2	TIM 102 109	June 16
+T3	ORG 116 122	Xinhua
+T4	GPE 89 99	LUXEMBOURG
+T5	TIM 194 200	Monday
+T6	ORG 332 336	IAEA
+T7	ORG 287 336	the International Atomic Energy Agency -LRB- IAEA
+T8	GPE 259 263	Iran
+T9	GPE 175 177	EU
+T10	GPE 150 177	the European Union -LRB- EU
+T11	PER 206 210	they
+T12	PER 129 177	Foreign ministers of the European Union -LRB- EU
+T13	GPE 189 193	here
+T14	TIM 371 378	two-day
+T15	LOC 591 629	suspected nuclear sites in the country
+T16	GPE 425 429	Iran
+T17	GPE 618 629	the country
+T18	GPE 394 396	EU
+T19	PER 390 414	the EU foreign ministers
+T20	Meet 379 386	meeting
+E1	Meet:T20 Entity:T19 Time-Holds:T14
+T21	ORG 746 754	the IAEA
+T22	GPE 682 686	Iran
+T23	GPE 719 721	it
+T24	GPE 645 651	the EU
+T25	GPE 810 814	Iran
+T26	GPE 860 863	its
+T27	PER 1046 1085	IAEA Director-General Mohamed ElBaradei
+T28	PER 1046 1067	IAEA Director-General
+T29	PER 1103 1106	his
+T30	GPE 958 964	Greece
+T31	GPE 967 1006	the current holder of the EU presidency
+T32	TIM 971 978	current
+T33	ORG 1046 1050	IAEA
+T34	GPE 993 995	EU
+T35	PER 938 1006	foreign minister of Greece , the current holder of the EU presidency
+T36	PER 1014 1016	he
+T37	PER 918 935	George Papandreou
+T38	GPE 1192 1196	Iran
+T39	GPE 1222 1226	Iran
+T40	GPE 1129 1131	EU
+T41	PER 1129 1149	EU foreign ministers
+T42	TIM 1380 1387	Tuesday
+T43	ORG 1364 1368	IAEA
+T44	GPE 1264 1270	the EU
+T45	PER 1244 1248	They
+T46	Meet 1369 1376	meeting
+E2	Meet:T46 Entity:T43 Time-Within:T42

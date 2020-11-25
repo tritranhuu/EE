@@ -1,0 +1,87 @@
+T1	TIM 38 57	2003-05-29 13:23:41
+T2	PER 110 114	them
+T3	PER 65 70	their
+T4	TIM 115 123	50 years
+T5	TIM 71 81	15 minutes
+T6	LOC 92 101	the world
+T7	GPE 196 201	nepal
+T8	PER 142 160	sir edmund hillary
+T9	PER 142 145	sir
+T10	PER 173 201	an honorary citizen of nepal
+T11	TIM 134 139	today
+T12	LOC 234 256	the top of mt. everest
+T13	PER 212 215	his
+T14	PER 262 275	sherpa norgay
+T15	PER 262 268	sherpa
+T16	LOC 245 256	mt. everest
+T17	Transport 225 230	climb
+E1	Transport:T17 Artifact:T13 Artifact:T14 Destination:T12
+T18	LOC 304 311	everest
+T19	PER 386 388	we
+T20	PER 371 372	i
+T21	PER 401 403	we
+T22	PER 487 490	you
+T23	LOC 540 550	the planet
+T24	LOC 504 515	mt. everest
+T25	LOC 518 550	the highest summit on the planet
+T26	ORG 479 481	's
+T27	PER 579 582	you
+T28	GPE 629 633	asia
+T29	LOC 608 633	the southern part of asia
+T30	PER 649 652	you
+T31	LOC 663 677	the him la yas
+T32	ORG 636 638	we
+T33	LOC 838 846	mountain
+T34	GPE 766 772	africa
+T35	LOC 790 810	that portion of asia
+T36	LOC 755 772	a piece of africa
+T37	LOC 741 745	what
+T38	GPE 725 730	india
+T39	TIM 680 700	20 million years ago
+T40	LOC 903 906	sea
+T41	LOC 870 881	mt. everest
+T42	LOC 703 707	they
+T43	LOC 822 852	this tremendous mountain range
+T44	GPE 806 810	asia
+T45	LOC 915 943	the highest peak of them all
+T46	LOC 935 943	them all
+T47	LOC 1077 1099	the top of mt. everest
+T48	PER 1021 1024	you
+T49	PER 1070 1073	you
+T50	PER 1007 1008	i
+T51	LOC 1088 1099	mt. everest
+T52	Transport 1066 1069	get
+E2	Transport:T52 Artifact:T49 Destination:T47
+T53	PER 1180 1184	them
+T54	LOC 1276 1286	this range
+T55	LOC 1192 1203	this valley
+T56	PER 1107 1125	sir edmund hillary
+T57	PER 1107 1110	sir
+T58	PER 1207 1210	you
+T59	PER 1299 1302	you
+T60	LOC 1309 1313	here
+T61	PER 1134 1140	norgay
+T62	PER 1339 1342	you
+T63	PER 1321 1322	i
+T64	PER 1343 1345	my
+T65	LOC 1396 1411	this ridge line
+T66	PER 1500 1516	john crack cower
+T67	TIM 1517 1532	a few years ago
+T68	PER 1575 1590	a lot of people
+T69	PER 1548 1561	a lot of peek
+T70	LOC 1645 1670	the summit of mt. everest
+T71	PER 1608 1618	175 people
+T72	LOC 1659 1670	mt. everest
+T73	Transport 1639 1644	reach
+E3	Transport:T73 Artifact:T71 Destination:T70
+T74	Die 1624 1628	died
+E4	Die:T74 Victim:T71 Place:T72
+T75	PER 1690 1699	our guest
+T76	PER 1712 1721	our guest
+T77	ORG 1673 1675	we
+T78	ORG 1690 1693	our
+T79	ORG 1712 1715	our
+T80	GPE 1747 1756	kathmandu
+T81	PER 1737 1740	who
+T82	GPE 1786 1791	there
+T83	PER 1798 1801	you

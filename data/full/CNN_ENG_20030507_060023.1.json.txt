@@ -1,0 +1,13 @@
+what	O	ORG	O	O
+'s	O	O	O	O
+believed	O	O	O	O
+to	O	O	O	O
+be	O	O	O	O
+the	O	ORG	Attacker	O
+terror	Attack	ORG	Attacker	O
+cell	O	ORG	Attacker	O
+responsible	O	ORG	Attacker	O
+for	O	ORG	Attacker	O
+9/11	O	ORG	Attacker	O
+.	O	O	O	O
+

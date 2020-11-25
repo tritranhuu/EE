@@ -1,0 +1,89 @@
+T1	TIM 45 65	2004-12-01T23 :13:00
+T2	PER 84 89	Scott
+T3	TIM 90 110	2004-12-01T23 :13:00
+T4	PER 162 163	I
+T5	PER 261 262	I
+T6	WEA 284 299	ASSAULT WEAPONS
+T7	PER 235 245	six people
+T8	TIM 217 224	Nov. 21
+T9	Die 246 250	dead
+E1	Die:T9 Victim:T7 Time-Within:T8
+T10	Die 206 213	tragedy
+E2	Die:T10
+T11	PER 314 315	I
+T12	PER 392 393	I
+T13	TIM 434 446	Thanksgiving
+T14	TIM 419 428	last week
+T15	PER 576 614	the man accused of the brutal killings
+T16	PER 617 645	Chai Vang of St. Paul , Minn
+T17	GPE 630 645	St. Paul , Minn
+T18	GPE 641 645	Minn
+T19	GPE 655 668	Russian-built
+T20	WEA 653 708	a Russian-built Saiga 7.62 mm , SKS semiautomatic rifle
+T21	CRM 595 614	the brutal killings
+T22	WEA 548 563	assault weapons
+T23	Die 606 614	killings
+E3	Die:T23 Instrument:T20 Agent:T15
+T24	Charge-Indict 584 591	accused
+E4	Charge-Indict:T24 Defendant:T15 Crime:T21
+T25	WEA 780 794	banned weapons
+T26	WEA 825 851	certain `` assault weapons
+T27	PER 865 882	President Clinton
+T28	PER 865 874	President
+T29	WEA 740 747	the SKS
+T30	TIM 810 817	10-year
+T31	WEA 985 998	those weapons
+T32	WEA 974 998	any one of those weapons
+T33	PER 948 954	no one
+T34	TIM 921 945	the time of this posting
+T35	TIM 904 913	September
+T36	Die 964 970	killed
+E5	Die:T36 Instrument:T32 Victim:T33 Time-Starting:T35 Time-Ending:T34
+T37	PER 1031 1033	's
+T38	PER 1060 1061	I
+T39	PER 1099 1103	many
+T40	WEA 1118 1121	gun
+T41	Die 1152 1160	incident
+E6	Die:T41
+T42	WEA 1257 1285	the gun used in the slayings
+T43	WEA 1301 1324	a typical hunting rifle
+T44	ORG 1197 1205	military
+T45	ORG 1169 1178	the media
+T46	Die 1277 1285	slayings
+E7	Die:T46 Instrument:T42
+T47	WEA 1409 1483	the pistol I 'm displaying in the photo on the left hand side of this blog
+T48	WEA 1379 1387	10-round
+T49	PER 1420 1421	I
+T50	WEA 1327 1334	The SKS
+T51	WEA 1338 1396	a medium-powered carbine equipped with a 10-round magazine
+T52	WEA 1549 1561	my small 9mm
+T53	WEA 1519 1538	more than 10 rounds
+T54	PER 1549 1551	my
+T55	WEA 1486 1500	Banned weapons
+T56	WEA 1594 1617	an `` assault '' weapon
+T57	WEA 1564 1571	the SKS
+T58	PER 1691 1720	the person behind the trigger
+T59	WEA 1663 1670	the gun
+T60	PER 1677 1679	's
+T61	PER 1627 1629	's
+T62	PER 1641 1644	our
+T63	PER 1754 1758	Vang
+T64	GPE 1783 1792	Minnesota
+T65	FAC 1773 1779	prison
+T66	CRM 1739 1751	the killings
+T67	SEN 1765 1779	life in prison
+T68	Die 1743 1751	killings
+E8	Die:T68 Agent:T63
+T69	Convict 1726 1735	convicted
+E9	Convict:T69 Defendant:T63 Crime:T66 Place:T64
+T70	Sentence 1759 1764	faces
+E10	Sentence:T70 Defendant:T63 Place:T64 Sentence:T67 Crime:T66
+T71	PER 1846 1850	Vang
+T72	PER 1880 1907	the families of the victims
+T73	PER 1828 1829	I
+T74	PER 1869 1870	I
+T75	PER 1896 1907	the victims
+T76	Convict 1854 1864	conviction
+E11	Convict:T76 Defendant:T71
+T77	Die 1910 1914	What
+E12	Die:T77

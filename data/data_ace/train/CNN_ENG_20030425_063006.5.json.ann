@@ -1,0 +1,16 @@
+T1	TIM 38 57	2003-04-25 08:38:26
+T2	ORG 62 79	southwest airline
+T3	PER 58 86	two southwest airline pilots
+T4	End-Position 103 108	fired
+E1	End-Position:T4 Person:T3 Entity:T2
+T5	VEH 272 283	the cockpit
+T6	ORG 171 180	usa today
+T7	PER 189 199	the pilots
+T8	PER 255 260	their
+T9	End-Position 205 214	dismissed
+E2	End-Position:T9 Person:T7
+T10	PER 286 287	i
+T11	PER 326 336	the pilots
+T12	PER 404 409	their
+T13	End-Position 410 421	termination
+E3	End-Position:T13 Person:T12

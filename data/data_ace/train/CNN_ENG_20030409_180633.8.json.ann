@@ -1,0 +1,19 @@
+T1	TIM 38 57	2003-04-09 18:06:58
+T2	ORG 58 81	a federal appeals court
+T3	WEA 103 113	dirty bomb
+T4	PER 180 189	attorneys
+T5	PER 103 134	dirty bomb suspect jose padilla
+T6	PER 103 121	dirty bomb suspect
+T7	PER 163 165	he
+T8	Meet 170 174	meet
+E1	Meet:T8 Entity:T5 Entity:T4
+T9	PER 215 222	padilla
+T10	PER 226 245	an enemy combattant
+T11	PER 192 209	the u.s. attorney
+T12	GPE 196 200	u.s.
+T13	WEA 314 326	a dirty bomb
+T14	CRM 293 342	attempting to ignite a dirty bomb in this country
+T15	PER 276 278	he
+T16	GPE 330 342	this country
+T17	Charge-Indict 282 289	accused
+E2	Charge-Indict:T17 Defendant:T15 Place:T16 Crime:T14

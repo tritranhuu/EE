@@ -1,0 +1,168 @@
+T1	TIM 31 58	2003-04-14T16 :00:00 -05:00
+T2	PER 164 220	MILES O'BRIEN , CNN CORRESPONDENT -LRB- voice-over -RRB-
+T3	PER 253 269	Saddam 's family
+T4	PER 314 327	the Americans
+T5	PER 253 259	Saddam
+T6	TIM 285 299	three days ago
+T7	PER 221 241	The people of Tikrit
+T8	GPE 235 241	Tikrit
+T9	GPE 275 284	that city
+T10	Transport 328 335	arrived
+E1	Transport:T10 Artifact:T4 Destination:T9
+T11	Transport 270 274	left
+E2	Transport:T11 Time-Within:T6 Artifact:T3 Origin:T9
+T12	GPE 378 407	a small village in the desert
+T13	LOC 397 407	the desert
+T14	PER 338 352	Saddam 's clan
+T15	PER 338 344	Saddam
+T16	Transport 369 373	left
+E3	Transport:T16 Artifact:T14 Destination:T12
+T17	FAC 592 606	the structures
+T18	PER 500 515	an Army general
+T19	ORG 503 507	Army
+T20	ORG 423 426	CNN
+T21	PER 452 482	the 101st Airborne 2nd Brigade
+T22	PER 423 443	CNN 's Ryan Chilcote
+T23	TIM 410 420	12:19 p.m.
+T24	FAC 584 606	each of the structures
+T25	GPE 574 581	Karbala
+T26	FAC 529 542	chem-bio labs
+T27	FAC 489 542	11 of what an Army general describes as chem-bio labs
+T28	ORG 629 641	the military
+T29	GPE 705 709	U.S.
+T30	PER 770 778	WOODRUFF
+T31	GPE 786 793	Baghdad
+T32	GPE 797 867	a city where drinking water and working telephones are hot commodities
+T33	GPE 804 809	where
+T34	TIM 908 918	these days
+T35	GPE 922 930	the city
+T36	PER 933 935	we
+T37	ORG 997 1000	CNN
+T38	GPE 1027 1044	the Iraqi capital
+T39	PER 997 1013	CNN 's Rula Amin
+T40	GPE 1031 1036	Iraqi
+T41	PER 1075 1127	RULA AMIN , CNN CORRESPONDENT -LRB- voice-over -RRB-
+T42	PER 1128 1132	They
+T43	PER 1173 1177	they
+T44	PER 1156 1168	a journalist
+T45	PER 1189 1191	us
+T46	PER 1202 1205	our
+T47	TIM 1142 1147	hours
+T48	PER 1263 1277	their families
+T49	PER 1298 1302	them
+T50	PER 1331 1341	this woman
+T51	PER 1232 1236	They
+T52	PER 1263 1268	their
+T53	PER 1308 1310	We
+T54	FAC 1369 1408	a restaurant where journalists hang out
+T55	FAC 1382 1387	where
+T56	PER 1351 1355	they
+T57	PER 1388 1399	journalists
+T58	LOC 1344 1348	Here
+T59	PER 1415 1419	they
+T60	PER 1469 1480	this mother
+T61	PER 1483 1486	She
+T62	PER 1501 1504	her
+T63	PER 1501 1522	her pregnant daughter
+T64	PER 1563 1566	she
+T65	PER 1523 1527	Saba
+T66	GPE 1546 1552	Sweden
+T67	Be-Born 1571 1580	delivered
+E4	Be-Born:T67 Place:T66
+T68	Phone-Write 1496 1500	call
+E5	Phone-Write:T68 Entity:T61
+T69	PER 1632 1635	she
+T70	PER 1624 1626	us
+T71	PER 1605 1608	her
+T72	PER 1662 1704	a 21-year-old U.S. Marine named Jason Cook
+T73	GPE 1676 1680	U.S.
+T74	GPE 1775 1782	Houston
+T75	PER 1747 1749	He
+T76	PER 1764 1767	his
+T77	PER 1764 1771	his mom
+T78	Phone-Write 1759 1763	call
+E6	Phone-Write:T78 Entity:T75 Entity:T77
+T79	ORG 1790 1804	New York Times
+T80	PER 1785 1816	A `` New York Times '' reporter
+T81	PER 1828 1831	his
+T82	PER 1823 1827	Cook
+T83	PER 1851 1868	UNIDENTIFIED MALE
+T84	PER 1869 1870	I
+T85	PER 1886 1889	mom
+T86	PER 1876 1879	you
+T87	PER 1898 1905	old man
+T88	FAC 1968 1979	the streets
+T89	LOC 1916 1937	the middle of Baghdad
+T90	PER 1908 1909	I
+T91	GPE 1930 1937	Baghdad
+T92	PER 1982 1986	AMIN
+T93	PER 2010 2020	his family
+T94	PER 1987 1991	Cook
+T95	PER 2010 2013	his
+T96	TIM 2027 2057	Super Bowl Sunday , January 26
+T97	PER 2094 2098	they
+T98	PER 2166 2171	their
+T99	GPE 2084 2091	Baghdad
+T100	PER 2166 2182	their loved ones
+T101	FAC 2063 2091	this one sidewalk in Baghdad
+T102	Attack 2144 2147	war
+E7	Attack:T102
+T103	Phone-Write 2160 2165	reach
+E8	Phone-Write:T103 Entity:T97
+T104	PER 2185 2202	UNIDENTIFIED MALE
+T105	PER 2203 2205	My
+T106	PER 2203 2233	My mother , brother and sister
+T107	PER 2236 2262	AMIN -LRB- on camera -RRB-
+T108	PER 2275 2278	you
+T109	PER 2263 2271	How many
+T110	PER 2286 2303	UNIDENTIFIED MALE
+T111	PER 2304 2305	I
+T112	PER 2331 2358	a little brother and sister
+T113	PER 2310 2326	an older brother
+T114	PER 2361 2388	AMIN -LRB- voice-over -RRB-
+T115	PER 2389 2392	His
+T116	PER 2405 2408	him
+T117	PER 2417 2420	his
+T118	PER 2389 2399	His mother
+T119	PER 2433 2450	UNIDENTIFIED MALE
+T120	PER 2471 2472	I
+T121	PER 2451 2454	She
+T122	PER 2495 2498	her
+T123	PER 2501 2505	AMIN
+T124	PER 2506 2508	We
+T125	PER 2512 2515	our
+T126	PER 2549 2559	the mother
+T127	Phone-Write 2541 2545	call
+E9	Phone-Write:T127 Entity:T126
+T128	PER 2562 2566	Saba
+T129	Be-Born 2575 2584	delivered
+E10	Be-Born:T129
+T130	PER 2606 2616	the mother
+T131	PER 2628 2636	Everyone
+T132	Phone-Write 2647 2651	call
+E11	Phone-Write:T132 Entity:T131
+T133	PER 2654 2656	We
+T134	PER 2679 2688	everybody
+T135	PER 2713 2717	they
+T136	PER 2822 2827	their
+T137	PER 2742 2744	we
+T138	PER 2774 2776	we
+T139	PER 2791 2794	our
+T140	PER 2808 2810	we
+T141	Phone-Write 2814 2818	call
+E12	Phone-Write:T141 Entity:T140
+T142	ORG 2849 2852	CNN
+T143	GPE 2855 2862	Baghdad
+T144	PER 2837 2846	Rula Amin
+T145	PER 2891 2899	WOODRUFF
+T146	PER 2915 2919	they
+T147	PER 2965 2974	everybody
+T148	PER 2906 2909	you
+T149	PER 2986 2990	Rula
+T150	TIM 3039 3045	future
+T151	PER 3003 3025	the commander-in-chief
+T152	ORG 3104 3113	Democrats
+T153	TIM 3048 3051	Now
+T154	PER 3086 3089	his
+T155	Attack 3061 3064	war
+E13	Attack:T155

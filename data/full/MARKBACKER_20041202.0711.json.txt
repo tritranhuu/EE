@@ -1,0 +1,16 @@
+I	O	PER	O	O
+want	O	O	O	O
+to	O	O	O	O
+know	O	O	O	O
+where	O	O	O	O
+the	O	O	O	O
+Federal	O	O	O	O
+criminal	O	O	O	O
+charges	Charge-Indict	O	O	E
+against	O	O	O	O
+all	O	PER	Defendant	O
+parties	O	PER	Defendant	O
+involved	O	PER	Defendant	O
+are	O	O	O	O
+.	O	O	O	O
+

@@ -1,0 +1,199 @@
+T1	TIM 34 42	20030513
+T2	GPE 182 193	South Korea
+T3	GPE 174 193	SEOUL , South Korea
+T4	ORG 200 202	AP
+T5	GPE 261 265	U.S.
+T6	GPE 290 294	U.S.
+T7	GPE 209 220	North Korea
+T8	GPE 322 341	the communist state
+T9	GPE 350 353	its
+T10	GPE 384 390	itself
+T11	WEA 399 406	nuclear
+T12	VEH 259 276	a U.S. helicopter
+T13	PER 288 303	a U.S. official
+T14	WEA 399 414	nuclear weapons
+T15	TIM 280 285	March
+T16	TIM 309 316	Tuesday
+T17	ORG 209 232	North Korea 's military
+T18	WEA 248 255	a laser
+T19	Attack 242 247	fired
+E1	Attack:T19 Attacker:T17 Target:T12 Instrument:T18 Time-Within:T15
+T20	ORG 566 579	U.S. military
+T21	GPE 566 570	U.S.
+T22	GPE 545 559	the two Koreas
+T23	WEA 470 475	laser
+T24	VEH 417 429	The aircraft
+T25	VEH 482 484	it
+T26	PER 562 588	the U.S. military official
+T27	LOC 501 559	the heavily fortified frontier that divides the two Koreas
+T28	LOC 532 536	that
+T29	WEA 450 475	the unknown type of laser
+T30	PER 622 628	No one
+T31	Injure 633 640	injured
+E2	Injure:T31 Victim:T30
+T32	GPE 740 751	South Korea
+T33	GPE 828 845	the United States
+T34	GPE 688 699	North Korea
+T35	WEA 766 773	nuclear
+T36	WEA 766 778	nuclear arms
+T37	TIM 705 712	Tuesday
+T38	TIM 720 724	1992
+T39	LOC 782 802	the Korean Peninsula
+T40	GPE 993 997	U.S.
+T41	GPE 1031 1039	the DPRK
+T42	GPE 1061 1070	the North
+T43	LOC 877 889	inter-Korean
+T44	ORG 1061 1094	the North 's official news agency
+T45	ORG 1097 1101	KCNA
+T46	WEA 1045 1050	nukes
+T47	LOC 925 945	the Korean Peninsula
+T48	GPE 1165 1174	the North
+T49	GPE 1253 1265	South Korean
+T50	GPE 1219 1223	U.S.
+T51	GPE 1343 1354	North Korea
+T52	WEA 1358 1365	nuclear
+T53	GPE 1321 1331	Washington
+T54	TIM 1308 1317	Wednesday
+T55	PER 1219 1248	U.S. President George W. Bush
+T56	PER 1219 1233	U.S. President
+T57	PER 1253 1288	South Korean President Roh Moo-hyun
+T58	PER 1253 1275	South Korean President
+T59	Meet 1303 1307	meet
+E3	Meet:T59 Place:T53 Entity:T55 Entity:T57 Time-Within:T54
+T60	GPE 1440 1451	North Korea
+T61	WEA 1479 1485	atomic
+T62	WEA 1479 1490	atomic arms
+T63	GPE 1516 1527	North Korea
+T64	WEA 1546 1553	Nuclear
+T65	WEA 1621 1628	nuclear
+T66	WEA 1621 1636	nuclear weapons
+T67	TIM 1496 1513	January this year
+T68	NUM 1766 1781	US$ 580 million
+T69	ORG 1641 1654	U.S. military
+T70	GPE 1641 1645	U.S.
+T71	GPE 1725 1736	North Korea
+T72	WEA 1791 1799	missiles
+T73	GPE 1667 1672	Seoul
+T74	PER 1639 1672	A U.S. military official in Seoul
+T75	TIM 1717 1724	Tuesday
+T76	TIM 1883 1887	2001
+T77	GPE 1821 1826	Libya
+T78	GPE 1829 1834	Syria
+T79	GPE 1837 1842	Egypt
+T80	GPE 1845 1850	Yemen
+T81	GPE 1855 1879	the United Arab Emirates
+T82	GPE 1803 1807	Iran
+T83	GPE 1810 1818	Pakistan
+T84	Transfer-Ownership 1757 1765	exported
+E4	Transfer-Ownership:T84 Artifact:T72 Seller:T71 Price:T68 Buyer:T82 Buyer:T83 Buyer:T77 Buyer:T78 Buyer:T79 Buyer:T80 Buyer:T81 Time-Within:T76
+T85	TIM 1893 1901	December
+T86	WEA 1918 1955	North Korean missiles bound for Yemen
+T87	GPE 1918 1930	North Korean
+T88	LOC 1979 1994	the Arabian Sea
+T89	GPE 1950 1955	Yemen
+T90	Transport 1940 1949	bound for
+E5	Transport:T90 Destination:T89 Time-Within:T85
+T91	GPE 2112 2130	an `` axis of evil
+T92	GPE 2017 2034	the United States
+T93	GPE 1997 2008	North Korea
+T94	GPE 2081 2086	which
+T95	GPE 2057 2158	the communist country , which Bush has branded part of an `` axis of evil '' along with Iran and Iraq
+T96	GPE 2104 2158	part of an `` axis of evil '' along with Iran and Iraq
+T97	GPE 2154 2158	Iraq
+T98	PER 2087 2091	Bush
+T99	GPE 2145 2149	Iran
+T100	Attack 2050 2056	attack
+E6	Attack:T100 Attacker:T92
+T101	GPE 2240 2251	South Korea
+T102	GPE 2262 2273	the country
+T103	GPE 2279 2330	`` the biggest nuclear advance base in the Far East
+T104	LOC 2318 2330	the Far East
+T105	ORG 2192 2209	the U.S. military
+T106	GPE 2196 2200	U.S.
+T107	GPE 2161 2163	It
+T108	GPE 2177 2180	its
+T109	WEA 2216 2236	many nuclear weapons
+T110	WEA 2221 2228	nuclear
+T111	WEA 2294 2301	nuclear
+T112	ORG 2454 2462	military
+T113	GPE 2418 2422	U.S.
+T114	GPE 2336 2346	Washington
+T115	GPE 2352 2354	it
+T116	WEA 2392 2399	nuclear
+T117	PER 2418 2432	U.S. officials
+T118	GPE 2603 2606	its
+T119	GPE 2588 2596	the U.S.
+T120	GPE 2472 2483	North Korea
+T121	GPE 2629 2637	the DPRK
+T122	ORG 2643 2647	KCNA
+T123	LOC 2528 2548	the Korean Peninsula
+T124	ORG 2839 2964	a strong military deterrent force capable of decisively repelling any attack to be made by any types of sophisticated weapons
+T125	GPE 2667 2671	U.S.
+T126	GPE 2655 2657	It
+T127	GPE 2696 2698	it
+T128	GPE 2684 2688	Iraq
+T129	GPE 2751 2762	the country
+T130	GPE 2783 2793	the nation
+T131	GPE 2821 2830	a country
+T132	WEA 2930 2964	any types of sophisticated weapons
+T133	WEA 2943 2964	sophisticated weapons
+T134	Attack 2672 2680	invasion
+E7	Attack:T134 Attacker:T125 Place:T128
+T135	Attack 2709 2712	war
+E8	Attack:T135 Place:T129
+T136	Attack 2909 2915	attack
+E9	Attack:T136 Target:T124
+T137	GPE 2984 2996	South Korean
+T138	GPE 3079 3084	Seoul
+T139	GPE 3089 3099	Washington
+T140	GPE 3132 3141	the North
+T141	GPE 3038 3049	North Korea
+T142	WEA 3053 3060	nuclear
+T143	WEA 3110 3117	nuclear
+T144	GPE 2973 2981	New York
+T145	PER 2984 3010	South Korean President Roh
+T146	PER 2984 3006	South Korean President
+T147	PER 3016 3018	he
+T148	GPE 3213 3222	Pyongyang
+T149	GPE 3234 3237	its
+T150	GPE 3274 3325	a responsible member of the international community
+T151	PER 3331 3333	he
+T152	GPE 3378 3399	the Republic of Korea
+T153	GPE 3349 3358	the North
+T154	TIM 3603 3613	last month
+T155	GPE 3619 3623	U.S.
+T156	GPE 3531 3543	North Korean
+T157	GPE 3637 3644	Beijing
+T158	PER 3487 3499	Julianne Lee
+T159	PER 3502 3519	a Roh spokeswoman
+T160	PER 3504 3507	Roh
+T161	PER 3619 3633	U.S. officials
+T162	TIM 3868 3874	months
+T163	GPE 3677 3681	U.S.
+T164	WEA 3840 3860	several atomic bombs
+T165	GPE 3697 3708	North Korea
+T166	GPE 3717 3719	it
+T167	GPE 3765 3767	it
+T168	WEA 3738 3745	nuclear
+T169	WEA 3796 3803	nuclear
+T170	WEA 3738 3753	nuclear weapons
+T171	TIM 3720 3727	already
+T172	GPE 3667 3674	Beijing
+T173	PER 3677 3691	U.S. officials
+T174	Meet 3658 3663	talks
+E10	Meet:T174 Place:T172 Entity:T173
+T175	GPE 4006 4010	U.S.
+T176	GPE 3877 3888	North Korea
+T177	GPE 3905 3908	its
+T178	WEA 3909 3916	nuclear
+T179	PER 4006 4020	U.S. officials
+T180	WEA 3921 3928	missile
+T181	Transfer-Money 3987 3990	aid
+E11	Transfer-Money:T181 Recipient:T176
+T182	TIM 4154 4158	1994
+T183	TIM 4052 4059	October
+T184	GPE 4067 4077	Washington
+T185	GPE 4171 4181	Washington
+T186	GPE 4083 4094	North Korea
+T187	WEA 4027 4034	nuclear
+T188	WEA 4120 4127	nuclear

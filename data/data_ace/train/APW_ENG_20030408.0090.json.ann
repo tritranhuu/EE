@@ -1,0 +1,92 @@
+T1	TIM 34 42	20030408
+T2	GPE 107 112	TOKYO
+T3	ORG 119 121	AP
+T4	TIM 266 274	some day
+T5	TIM 152 159	Tuesday
+T6	PER 227 230	who
+T7	PER 176 187	Akio Toyoda
+T8	PER 251 306	a candidate to some day head Japan 's largest automaker
+T9	PER 190 306	a grandson of the company 's founder who is widely viewed as a candidate to some day head Japan 's largest automaker
+T10	PER 204 226	the company 's founder
+T11	GPE 280 285	Japan
+T12	ORG 128 146	Toyota Motor Corp.
+T13	ORG 160 162	it
+T14	ORG 204 215	the company
+T15	ORG 280 306	Japan 's largest automaker
+T16	Start-Position 275 279	head
+E1	Start-Position:T16 Person:T7 Entity:T15
+T17	JOB 309 326	Managing director
+T18	JOB 457 482	senior managing directors
+T19	TIM 576 580	June
+T20	PER 391 415	Toyota honorary chairman
+T21	PER 391 432	Toyota honorary chairman Shoichiro Toyoda
+T22	PER 447 580	one of 14 senior managing directors under a streamlined management system set to be introduced after a shareholders ' meeting in June
+T23	PER 309 333	Managing director Toyoda
+T24	PER 309 326	Managing director
+T25	PER 341 368	grandson of Kiichiro Toyoda
+T26	PER 373 432	the eldest son of Toyota honorary chairman Shoichiro Toyoda
+T27	PER 454 580	14 senior managing directors under a streamlined management system set to be introduced after a shareholders ' meeting in June
+T28	PER 550 562	shareholders
+T29	PER 353 368	Kiichiro Toyoda
+T30	ORG 583 594	the company
+T31	ORG 391 397	Toyota
+T32	Start-Position 440 446	become
+E2	Start-Position:T32 Person:T22 Entity:T30 Position:T18
+T33	Meet 565 572	meeting
+E3	Meet:T33 Entity:T27 Entity:T28 Time-Within:T19
+T34	TIM 688 692	1984
+T35	PER 617 692	Toyoda , who joined Toyota , based in Toyota city , central Japan , in 1984
+T36	PER 626 629	who
+T37	GPE 655 682	Toyota city , central Japan
+T38	LOC 669 682	central Japan
+T39	VEH 811 819	vehicles
+T40	ORG 637 682	Toyota , based in Toyota city , central Japan
+T41	ORG 707 720	the automaker
+T42	Start-Position 630 636	joined
+E4	Start-Position:T42 Person:T36 Entity:T40 Time-Within:T34
+T43	JOB 856 872	Toyota president
+T44	TIM 849 855	future
+T45	PER 833 872	a candidate for future Toyota president
+T46	PER 849 872	future Toyota president
+T47	PER 875 881	Toyoda
+T48	GPE 895 900	China
+T49	GPE 912 947	a critical market for the automaker
+T50	ORG 856 862	Toyota
+T51	ORG 934 947	the automaker
+T52	ORG 891 894	its
+T53	TIM 988 993	years
+T54	PER 950 956	Toyoda
+T55	TIM 1024 1028	2000
+T56	PER 1001 1003	he
+T57	PER 1031 1033	he
+T58	PER 1038 1057	its youngest member
+T59	PER 1011 1020	the board
+T60	PER 1038 1041	its
+T61	PER 1170 1172	27
+T62	PER 1178 1180	58
+T63	PER 1122 1150	Toyota 's board of directors
+T64	PER 1082 1101	President Fujio Cho
+T65	PER 1082 1091	President
+T66	PER 1141 1150	directors
+T67	ORG 1122 1128	Toyota
+T68	PER 1239 1243	nine
+T69	PER 1228 1233	seven
+T70	PER 1183 1208	Executive vice presidents
+T71	PER 1324 1357	Toyota spokesman Shigeru Hayakawa
+T72	PER 1324 1340	Toyota spokesman
+T73	ORG 1324 1330	Toyota
+T74	PER 1401 1423	Chairman Hiroshi Okuda
+T75	PER 1401 1409	Chairman
+T76	PER 1393 1396	Cho
+T77	ORG 1365 1371	Toyota
+T78	TIM 1484 1488	1937
+T79	PER 1443 1458	Kiichiro Toyoda
+T80	PER 1537 1540	his
+T81	PER 1537 1547	his father
+T82	ORG 1504 1547	the loom manufacturer started by his father
+T83	ORG 1467 1480	the automaker
+T84	ORG 1553 1565	an automaker
+T85	Start-Org 1459 1466	founded
+E5	Start-Org:T85 Org:T83 Agent:T79 Time-Within:T78
+T86	Start-Org 1526 1533	started
+E6	Start-Org:T86 Org:T82 Agent:T81

@@ -1,0 +1,43 @@
+T1	TIM 41 60	2003-03-12 15:15:10
+T2	PER 124 213	the 300th person executed in the state since 1982 , when texas resumed capital punishment
+T3	PER 97 109	their client
+T4	PER 61 77	lawyers in texas
+T5	PER 97 102	their
+T6	GPE 72 77	texas
+T7	GPE 153 162	the state
+T8	GPE 181 186	texas
+T9	TIM 169 173	1982
+T10	Execute 141 149	executed
+E1	Execute:T10 Person:T2 Place:T7 Agent:T8 Time-After:T9
+T11	PER 293 304	delma banks
+T12	PER 216 220	they
+T13	ORG 232 249	the supreme court
+T14	TIM 259 266	tonight
+T15	Execute 280 289	execution
+E2	Execute:T15 Person:T11 Time-Within:T14
+T16	FAC 368 374	a park
+T17	PER 307 312	banks
+T18	PER 351 364	a 16-year-old
+T19	CRM 330 382	shooting and killing a 16-year-old at a park in 1980
+T20	TIM 378 382	1980
+T21	Convict 317 326	convicted
+E3	Convict:T21 Defendant:T17 Crime:T19
+T22	Die 343 350	killing
+E4	Die:T22 Victim:T18 Agent:T17 Place:T16 Time-Within:T20
+T23	Attack 330 338	shooting
+E5	Attack:T23 Attacker:T17 Place:T16 Target:T18 Time-Within:T20
+T24	PER 470 487	african americans
+T25	PER 385 388	his
+T26	PER 401 404	his
+T27	PER 492 495	his
+T28	PER 438 453	the prosecutors
+T29	PER 385 396	his lawyers
+T30	GPE 470 477	african
+T31	PER 401 419	his trial attorney
+T32	PER 492 500	his jury
+T33	PER 503 505	he
+T34	PER 512 559	the 11th killer put to death in texas this year
+T35	GPE 544 549	texas
+T36	TIM 550 559	this year
+T37	Execute 528 540	put to death
+E6	Execute:T37 Person:T33 Person:T34 Place:T35 Time-Within:T36

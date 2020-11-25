@@ -1,0 +1,33 @@
+When	O	O	O	O
+the	O	ORG	Artifact	O
+chain	O	ORG	Artifact	O
+passed	Transfer-Ownership	O	O	E
+from	O	O	O	O
+its	O	ORG	Seller	O
+private	O	PER	Seller	O
+owners	O	PER	Seller	O
+a	O	TIM	Time	O
+few	O	TIM	Time	O
+years	O	TIM	Time	O
+ago	O	TIM	Time	O
+,	O	O	O	O
+problems	O	O	O	O
+began	O	O	O	O
+.	O	O	O	O
+
+These	O	O	O	O
+problems	O	O	O	O
+multiplied	O	O	O	O
+when	O	O	O	O
+the	O	ORG	Buyer	O
+New	O	LOC	Buyer	O
+England	O	LOC	Buyer	O
+chain	O	ORG	Buyer	O
+Stop	O	ORG	Buyer	O
+n	O	ORG	Buyer	O
+'	O	ORG	Buyer	O
+Shop	O	ORG	Buyer	O
+acquired	Transfer-Ownership	O	O	E
+Giant	O	ORG	Artifact	O
+.	O	O	O	O
+

@@ -1,0 +1,96 @@
+T1	TIM 38 57	2003-06-10 13:02:17
+T2	TIM 112 117	today
+T3	ORG 58 60	we
+T4	LOC 121 125	gaza
+T5	ORG 193 198	hamas
+T6	GPE 171 182	palestinian
+T7	VEH 140 150	helicopter
+T8	LOC 210 214	gaza
+T9	PER 171 190	palestinian targets
+T10	PER 193 214	hamas targets in gaza
+T11	GPE 132 139	israeli
+T12	Attack 155 162	strikes
+E1	Attack:T12 Attacker:T11 Place:T8 Target:T9 Target:T10 Instrument:T7
+T13	PER 217 235	a number of people
+T14	PER 278 294	two palestinians
+T15	PER 309 317	a mother
+T16	PER 322 329	a child
+T17	Die 246 252	killed
+E2	Die:T17 Victim:T13
+T18	Attack 266 275	airstrike
+E3	Attack:T18 Target:T13
+T19	Die 300 306	killed
+E4	Die:T19 Victim:T14
+T20	PER 343 357	a hamas leader
+T21	ORG 345 350	hamas
+T22	Injure 362 369	injured
+E5	Injure:T22 Victim:T20
+T23	Attack 378 384	strike
+E6	Attack:T23 Target:T20
+T24	TIM 393 396	now
+T25	PER 387 389	he
+T26	FAC 400 422	a palestinian hospital
+T27	GPE 402 413	palestinian
+T28	TIM 488 501	the past hour
+T29	TIM 517 520	now
+T30	VEH 439 456	apache helicopter
+T31	GPE 662 673	palestinian
+T32	PER 544 556	three people
+T33	ORG 510 512	we
+T34	PER 529 541	palestinians
+T35	VEH 439 445	apache
+T36	PER 564 573	33 others
+T37	PER 621 631	three dead
+T38	PER 637 646	civilians
+T39	PER 589 592	six
+T40	PER 662 681	palestinian sources
+T41	Die 557 561	died
+E7	Die:T41 Instrument:T30 Victim:T32
+T42	Die 627 631	dead
+E8	Die:T42 Instrument:T30 Victim:T32
+T43	Attack 457 466	airstrike
+E9	Attack:T43 Target:T32 Target:T36 Target:T39 Instrument:T30 Time-Within:T28
+T44	Injure 600 618	critical condition
+E10	Injure:T44 Instrument:T30 Victim:T39
+T45	Injure 579 586	wounded
+E11	Injure:T45 Instrument:T30 Victim:T36
+T46	PER 735 746	our viewers
+T47	ORG 684 686	we
+T48	ORG 735 738	our
+T49	TIM 875 884	right now
+T50	TIM 793 802	right now
+T51	ORG 749 751	we
+T52	ORG 854 874	the associated press
+T53	ORG 914 917	our
+T54	PER 887 888	i
+T55	TIM 963 984	more that seven years
+T56	FAC 988 994	prison
+T57	SEN 963 994	more that seven years in prison
+T58	NUM 1012 1023	$ 4 million
+T59	PER 1071 1078	insider
+T60	PER 930 940	sam waksal
+T61	Fine 1027 1032	fines
+E12	Fine:T61 Entity:T60 Money:T58
+T62	Sentence 950 959	sentenced
+E13	Sentence:T62 Defendant:T60 Sentence:T57
+T63	PER 1100 1103	you
+T64	PER 1111 1113	he
+T65	TIM 1154 1157	now
+T66	PER 1192 1209	the federal judge
+T67	PER 1148 1150	he
+T68	PER 1174 1177	his
+T69	Sentence 1178 1186	sentence
+E14	Sentence:T69 Adjudicator:T66 Defendant:T67
+T70	TIM 1370 1381	the morning
+T71	TIM 1212 1223	seven years
+T72	TIM 1245 1266	more than seven years
+T73	ORG 1325 1327	we
+T74	FAC 1227 1233	prison
+T75	FAC 1270 1276	prison
+T76	SEN 1212 1233	seven years in prison
+T77	NUM 1279 1290	$ 4 million
+T78	SEN 1245 1276	more than seven years in prison
+T79	Fine 1294 1299	fines
+E15	Fine:T79 Money:T77
+T80	TIM 1419 1432	the next hour
+T81	ORG 1384 1386	we

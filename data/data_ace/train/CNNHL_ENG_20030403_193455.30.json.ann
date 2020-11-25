@@ -1,0 +1,23 @@
+T1	TIM 41 60	2003-04-03 19:53:35
+T2	FAC 61 89	saddam international airport
+T3	GPE 174 183	coalition
+T4	GPE 213 224	the capital
+T5	PER 117 126	witnesses
+T6	GPE 131 136	iraqi
+T7	FAC 213 240	the capital 's main airport
+T8	PER 131 143	iraqi troops
+T9	PER 174 190	coalition troops
+T10	PER 198 203	their
+T11	Attack 165 173	fend off
+E1	Attack:T11 Attacker:T8 Place:T4 Target:T9
+T12	PER 272 310	dozens of iraqi civilians and soldiers
+T13	PER 331 340	witnesses
+T14	GPE 282 287	iraqi
+T15	PER 243 266	a reuters correspondent
+T16	WEA 361 375	u.s. artillery
+T17	ORG 245 252	reuters
+T18	GPE 361 365	u.s.
+T19	Die 316 322	killed
+E2	Die:T19 Victim:T12 Agent:T18 Place:T14 Instrument:T16 Victim:T12
+T20	Attack 350 357	barrage
+E3	Attack:T20 Attacker:T18 Target:T12 Instrument:T16

@@ -1,0 +1,162 @@
+T1	TIM 41 61	2004-12-28T09 :27:00
+T2	PER 69 73	Curt
+T3	TIM 74 94	2004-12-28T09 :27:00
+T4	PER 95 101	2Slick
+T5	GPE 132 136	Iraq
+T6	PER 110 112	me
+T7	PER 184 191	you all
+T8	PER 172 173	I
+T9	PER 225 227	he
+T10	GPE 296 302	allies
+T11	GPE 278 288	conquerors
+T12	GPE 272 274	us
+T13	PER 237 255	two Iraqi soldiers
+T14	PER 256 259	who
+T15	GPE 241 246	Iraqi
+T16	GPE 312 317	Mosul
+T17	TIM 218 224	Sunday
+T18	Attack 318 325	bombing
+E1	Attack:T18 Place:T16
+T19	WEA 337 353	The suicide bomb
+T20	FAC 395 400	Marez
+T21	FAC 391 416	the Marez dining facility
+T22	WEA 362 379	bb-like fragments
+T23	GPE 480 484	U.S.
+T24	PER 546 562	these two Iraqis
+T25	PER 478 492	a U.S. soldier
+T26	PER 497 500	his
+T27	WEA 419 440	One piece of shrapnel
+T28	Injure 441 447	sliced
+E2	Injure:T28 Victim:T25
+T29	PER 595 599	they
+T30	PER 638 648	the Iraqis
+T31	PER 617 635	the special forces
+T32	PER 767 771	They
+T33	PER 814 821	two-man
+T34	VEH 795 801	MEDVAC
+T35	PER 778 789	the soldier
+T36	VEH 793 809	a MEDVAC vehicle
+T37	Transport 772 777	moved
+E3	Transport:T37 Vehicle:T36 Artifact:T35 Agent:T32
+T38	PER 843 847	they
+T39	PER 883 897	the two Iraqis
+T40	PER 1019 1024	their
+T41	PER 901 915	one an officer
+T42	PER 905 915	an officer
+T43	FAC 950 962	the facility
+T44	PER 856 867	the soldier
+T45	VEH 871 880	the truck
+T46	PER 918 927	the other
+T47	PER 928 934	an NCO
+T48	PER 982 999	the other wounded
+T49	Transport 938 941	ran
+E4	Transport:T49 Artifact:T39 Destination:T43
+T50	Transport 848 855	hoisted
+E5	Transport:T50 Vehicle:T45 Artifact:T44 Agent:T38
+T51	FAC 1060 1073	the mess tent
+T52	PER 1095 1119	everybody who could talk
+T53	PER 1105 1108	who
+T54	PER 1141 1146	their
+T55	Transport 1083 1092	evacuated
+E6	Transport:T55 Origin:T51
+T56	PER 1180 1194	the two Iraqis
+T57	PER 1197 1213	the ING soldiers
+T58	PER 1161 1171	the medics
+T59	ORG 1201 1204	ING
+T60	PER 1238 1252	everybody else
+T61	Transport 1172 1176	came
+E7	Transport:T61 Artifact:T58
+T62	PER 1278 1282	they
+T63	PER 1291 1295	they
+T64	PER 1324 1327	our
+T65	PER 1335 1337	we
+T66	PER 1342 1348	a team
+T67	PER 1355 1357	we
+T68	PER 1371 1381	each other
+T69	PER 1392 1405	the Americans
+T70	PER 1445 1448	you
+T71	ORG 1423 1430	the MSM
+T72	PER 1461 1494	Iraqi 's who will help the allies
+T73	PER 1470 1473	who
+T74	PER 1497 1500	who
+T75	PER 1535 1540	their
+T76	PER 1590 1595	their
+T77	PER 1484 1494	the allies
+T78	PER 1522 1526	them
+T79	GPE 1590 1603	their country
+T80	Attack 1506 1511	fight
+E8	Attack:T80 Attacker:T74
+T81	PER 1635 1660	Prime Minister Tony Blair
+T82	PER 1635 1649	Prime Minister
+T83	GPE 1690 1694	Iraq
+T84	TIM 1666 1674	recently
+T85	Transport 1681 1689	visiting
+E9	Transport:T85 Artifact:T81 Destination:T83 Time-Within:T84
+T86	GPE 2044 2046	we
+T87	PER 1702 1703	I
+T88	PER 1880 1881	I
+T89	PER 2032 2033	I
+T90	PER 1709 1756	the people working alongside the United Nations
+T91	PER 1778 1783	their
+T92	PER 1809 1813	they
+T93	PER 1859 1864	their
+T94	PER 1886 1891	their
+T95	PER 1904 1909	their
+T96	PER 1938 1942	they
+T97	PER 1760 1798	Iraqis in fear of their life every day
+T98	ORG 1738 1756	the United Nations
+T99	PER 1953 2024	the vast majority of people in Iraq who want that democracy and freedom
+T100	PER 1989 1992	who
+T101	GPE 1859 1871	their people
+T102	GPE 1984 1988	Iraq
+T103	TIM 1789 1798	every day
+T104	PER 2105 2108	you
+T105	PER 2229 2310	the people who are deliberately killing anyone trying to make this country better
+T106	PER 2240 2243	who
+T107	PER 2269 2310	anyone trying to make this country better
+T108	PER 2081 2082	I
+T109	GPE 2137 2141	Iraq
+T110	GPE 2291 2303	this country
+T111	PER 2121 2141	people dying in Iraq
+T112	PER 2159 2165	people
+T113	Die 2128 2133	dying
+E10	Die:T113 Victim:T111 Place:T109
+T114	Die 2170 2175	dying
+E11	Die:T114 Place:T109 Victim:T112
+T115	Die 2261 2268	killing
+E12	Die:T115 Victim:T107 Agent:T106
+T116	GPE 2329 2332	our
+T117	GPE 2377 2380	Our
+T118	PER 2419 2432	the democrats
+T119	PER 2509 2513	them
+T120	PER 2436 2446	the people
+T121	PER 2447 2450	who
+T122	GPE 2590 2592	us
+T123	PER 2531 2532	I
+T124	LOC 2692 2701	the world
+T125	GPE 2680 2701	the rest of the world
+T126	PER 2721 2727	people
+T127	GPE 2672 2676	Iraq
+T128	PER 2620 2621	I
+T129	PER 2704 2705	I
+T130	PER 2903 2916	a lot of them
+T131	PER 2952 2956	they
+T132	PER 2795 2898	those people from that electoral commission that I described as the heroes of the new Iraq -- every day
+T133	PER 2859 2885	the heroes of the new Iraq
+T134	PER 2839 2843	that
+T135	ORG 2813 2838	that electoral commission
+T136	LOC 2935 2949	the Green Zone
+T137	TIM 2889 2898	every day
+T138	GPE 2873 2885	the new Iraq
+T139	PER 2844 2845	I
+T140	Transport 2968 2974	travel
+E13	Transport:T140 Artifact:T131 Destination:T136
+T141	PER 3039 3043	they
+T142	PER 2993 2997	They
+T143	PER 3120 3124	they
+T144	Die 3104 3109	death
+E14	Die:T144 Victim:T142
+T145	Attack 3071 3096	brutality or intimidation
+E15	Attack:T145 Target:T141
+T146	PER 3183 3188	human
+T147	GPE 3216 3218	we

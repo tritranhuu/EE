@@ -1,0 +1,61 @@
+T1	TIM 38 57	2003-04-10 18:45:02
+T2	TIM 135 142	tonight
+T3	VEH 80 122	another symbol of saddam hussein 's regime
+T4	PER 98 112	saddam hussein
+T5	ORG 98 122	saddam hussein 's regime
+T6	LOC 64 77	southern iraq
+T7	VEH 145 176	saddam hussein 's private yacht
+T8	VEH 181 194	quite a yacht
+T9	VEH 195 197	it
+T10	PER 145 159	saddam hussein
+T11	PER 283 289	iraqis
+T12	GPE 224 233	coalition
+T13	WEA 224 252	coalition bombs and missiles
+T14	VEH 210 212	it
+T15	Attack 217 220	hit
+E1	Attack:T15 Attacker:T12 Target:T14 Instrument:T13 Instrument:T13
+T16	LOC 312 321	the world
+T17	VEH 312 346	the world 's most luxurious yachts
+T18	TIM 368 385	some 20 years ago
+T19	VEH 292 300	the boat
+T20	VEH 305 385	one of the world 's most luxurious yachts when it was launched some 20 years ago
+T21	VEH 352 354	it
+T22	FAC 430 475	the arab waterway next to basra 's dock yards
+T23	FAC 456 475	basra 's dock yards
+T24	PER 434 438	arab
+T25	GPE 456 461	basra
+T26	TIM 388 391	now
+T27	VEH 392 409	the scorched hulk
+T28	GPE 488 495	baghdad
+T29	PER 478 495	people in baghdad
+T30	TIM 549 556	tonight
+T31	PER 518 556	a leader whose fate is unknown tonight
+T32	PER 527 532	whose
+T33	End-Position 510 514	fall
+E2	End-Position:T33 Person:T31
+T34	PER 559 561	we
+T35	PER 582 609	an expert on saddam hussein
+T36	PER 612 632	author andrew coburn
+T37	PER 612 618	author
+T38	LOC 692 701	the world
+T39	PER 595 609	saddam hussein
+T40	PER 647 661	saddam hussein
+T41	PER 705 707	he
+T42	LOC 683 701	where in the world
+T43	Die 665 669	dead
+E3	Die:T43 Victim:T40
+T44	GPE 797 805	american
+T45	PER 737 810	the marine who covered the statue of saddam hussein with an american flag
+T46	PER 748 751	who
+T47	PER 774 788	saddam hussein
+T48	ORG 867 873	marine
+T49	PER 813 824	bill tucker
+T50	PER 867 894	marine corporal edward chin
+T51	PER 867 882	marine corporal
+T52	PER 901 919	actress jane fonda
+T53	PER 901 908	actress
+T54	GPE 950 967	the united states
+T55	TIM 923 926	now
+T56	PER 974 977	she
+T57	PER 1021 1023	we
+T58	PER 1036 1038	us

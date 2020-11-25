@@ -1,0 +1,104 @@
+T1	TIM 38 57	2003-06-05 22:50:13
+T2	PER 127 166	those accused or suspected of terrorism
+T3	ORG 58 60	we
+T4	ORG 173 175	we
+T5	TIM 67 74	tonight
+T6	Attack 157 166	terrorism
+E1	Attack:T6 Attacker:T2
+T7	PER 240 244	some
+T8	GPE 277 292	tampa , florida
+T9	TIM 368 376	february
+T10	ORG 422 441	a palestinian group
+T11	ORG 442 455	islamic jihad
+T12	TIM 312 318	former
+T13	GPE 285 292	florida
+T14	GPE 340 347	florida
+T15	PER 295 309	samuel arianna
+T16	PER 310 347	a former college professor in florida
+T17	PER 348 351	who
+T18	PER 398 455	a north america head of a palestinian group islamic jihad
+T19	GPE 424 435	palestinian
+T20	GPE 400 413	north america
+T21	ORG 319 326	college
+T22	JOB 319 336	college professor
+T23	CRM 392 455	being a north america head of a palestinian group islamic jihad
+T24	End-Position 312 318	former
+E2	End-Position:T24 Person:T16 Place:T14 Entity:T21 Position:T22
+T25	Arrest-Jail 356 364	arrested
+E3	Arrest-Jail:T25 Person:T17 Place:T14 Crime:T23 Time-Within:T9
+T26	Charge-Indict 381 388	charged
+E4	Charge-Indict:T26 Defendant:T17 Crime:T23 Time-Within:T9
+T27	TIM 489 503	his dmai court
+T28	TIM 470 475	today
+T29	PER 458 460	he
+T30	PER 476 478	he
+T31	PER 489 492	his
+T32	FAC 498 503	court
+T33	Trial-Hearing 484 488	have
+E5	Trial-Hearing:T33 Defendant:T30 Place:T32
+T34	TIM 546 558	january 2005
+T35	TIM 511 527	his day in court
+T36	PER 511 514	his
+T37	FAC 522 527	court
+T38	Trial-Hearing 535 539	come
+E6	Trial-Hearing:T38 Defendant:T36 Place:T37 Time-Within:T34
+T39	TIM 619 633	that much time
+T40	PER 573 604	the three men arrested with him
+T41	PER 561 604	lawyers for the three men arrested with him
+T42	PER 609 613	they
+T43	PER 684 689	their
+T44	PER 601 604	him
+T45	GPE 645 659	the government
+T46	FAC 832 836	jail
+T47	PER 743 755	samiel aryan
+T48	PER 814 818	they
+T49	PER 760 775	other defendant
+T50	PER 704 720	the indicted men
+T51	PER 697 720	two of the indicted men
+T52	TIM 863 880	roughly 18 months
+T53	Arrest-Jail 780 784	held
+E7	Arrest-Jail:T53 Person:T47 Person:T49
+T54	Arrest-Jail 824 828	stay
+E8	Arrest-Jail:T54 Person:T48 Place:T46 Time-Ending:T52
+T55	Trial-Hearing 847 852	trial
+E9	Trial-Hearing:T55 Defendant:T48 Time-Starting:T52
+T56	PER 959 976	president lincoln
+T57	PER 959 968	president
+T58	PER 1014 1020	f.d.r.
+T59	TIM 1152 1163	at the time
+T60	TIM 998 1011	the civil war
+T61	TIM 1028 1040	world war ii
+T62	Attack 1034 1037	war
+E10	Attack:T62
+T63	Attack 1128 1134	attack
+E11	Attack:T63
+T64	Attack 1112 1115	war
+E12	Attack:T64
+T65	Attack 1008 1011	war
+E13	Attack:T65
+T66	ORG 1222 1224	we
+T67	TIM 1216 1219	now
+T68	PER 1276 1284	mr. barr
+T69	PER 1276 1279	mr.
+T70	PER 1239 1245	others
+T71	PER 1294 1298	them
+T72	PER 1301 1339	a republican from the state of georgia
+T73	GPE 1319 1339	the state of georgia
+T74	GPE 1332 1339	georgia
+T75	LOC 1389 1399	the planet
+T76	PER 1364 1440	about the last person on the planet that you would ever call ablying liberal
+T77	PER 1425 1440	ablying liberal
+T78	PER 1400 1404	that
+T79	PER 1342 1359	former prosecutor
+T80	PER 1405 1408	you
+T81	TIM 1342 1348	former
+T82	JOB 1349 1359	prosecutor
+T83	End-Position 1342 1348	former
+E14	End-Position:T83 Person:T79 Position:T82
+T84	PER 1443 1445	he
+T85	ORG 1452 1454	us
+T86	TIM 1455 1462	tonight
+T87	PER 1491 1494	him
+T88	ORG 1465 1467	we
+T89	PER 1497 1508	congressman
+T90	TIM 1516 1523	evening

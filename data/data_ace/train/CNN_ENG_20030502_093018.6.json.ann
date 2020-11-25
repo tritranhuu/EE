@@ -1,0 +1,194 @@
+T1	TIM 38 57	2003-05-02 11:58:32
+T2	LOC 163 166	sea
+T3	VEH 139 144	there
+T4	TIM 149 159	ten months
+T5	FAC 74 78	port
+T6	PER 96 166	these men and women on board who have been there for ten months at sea
+T7	PER 88 166	some of these men and women on board who have been there for ten months at sea
+T8	PER 125 128	who
+T9	PER 169 179	chad myers
+T10	PER 188 190	me
+T11	PER 249 268	these men and women
+T12	GPE 277 281	home
+T13	GPE 227 236	san diego
+T14	TIM 220 223	day
+T15	Transport 272 276	come
+E1	Transport:T15 Artifact:T11 Artifact:T11 Destination:T12 Time-Within:T14
+T16	GPE 339 348	san diego
+T17	GPE 295 299	l.a.
+T18	GPE 313 326	san francisco
+T19	GPE 351 353	it
+T20	GPE 357 388	a picture perfect place to live
+T21	TIM 404 424	just about every day
+T22	PER 432 435	you
+T23	GPE 451 456	there
+T24	PER 464 465	i
+T25	GPE 477 479	it
+T26	GPE 520 525	there
+T27	FAC 599 607	the dock
+T28	PER 528 529	i
+T29	VEH 619 628	this boat
+T30	PER 555 561	family
+T31	GPE 581 585	home
+T32	PER 547 585	all the family members sitting at home
+T33	Transport 629 635	coming
+E2	Transport:T33 Vehicle:T29 Destination:T31 Destination:T27
+T34	PER 662 666	they
+T35	PER 690 694	they
+T36	PER 712 716	your
+T37	PER 712 727	your loved ones
+T38	TIM 746 756	ten months
+T39	PER 762 764	he
+T40	TIM 770 775	today
+T41	PER 781 784	she
+T42	TIM 790 795	today
+T43	PER 822 847	these young men and women
+T44	PER 850 854	they
+T45	PER 859 867	children
+T46	PER 870 874	they
+T47	TIM 884 886	19
+T48	TIM 879 881	18
+T49	TIM 889 901	20 years old
+T50	PER 921 922	i
+T51	PER 938 939	i
+T52	PER 949 950	i
+T53	ORG 979 986	college
+T54	TIM 944 946	18
+T55	VEH 1012 1017	ships
+T56	PER 989 999	these guys
+T57	PER 1039 1042	you
+T58	PER 1020 1033	some of these
+T59	PER 1053 1061	children
+T60	PER 1028 1033	these
+T61	LOC 1114 1117	sea
+T62	PER 1064 1077	some of these
+T63	PER 1097 1101	they
+T64	PER 1082 1090	children
+T65	PER 1201 1205	them
+T66	GPE 1178 1182	home
+T67	PER 1072 1077	these
+T68	Be-Born 1078 1081	had
+E3	Be-Born:T68 Person:T64
+T69	Transport 1174 1177	get
+E4	Transport:T69 Artifact:T62 Destination:T66 Origin:T61
+T70	TIM 1237 1256	the past week or so
+T71	PER 1208 1210	we
+T72	PER 1314 1316	me
+T73	PER 1338 1340	we
+T74	PER 1375 1378	you
+T75	PER 1401 1413	these people
+T76	PER 1445 1449	they
+T77	LOC 1552 1561	the water
+T78	PER 1523 1527	they
+T79	TIM 1538 1548	ten months
+T80	TIM 1510 1519	five days
+T81	TIM 1473 1494	the last five minutes
+T82	GPE 1583 1587	home
+T83	Transport 1578 1582	come
+E5	Transport:T83 Destination:T82
+T84	FAC 1641 1652	those docks
+T85	PER 1665 1669	mine
+T86	ORG 1717 1721	wrba
+T87	PER 1655 1692	friend of mine in richmond , virginia
+T88	GPE 1673 1692	richmond , virginia
+T89	GPE 1711 1716	there
+T90	GPE 1684 1692	virginia
+T91	PER 1724 1731	his son
+T92	VEH 1739 1779	one of the ships that escorted a carrier
+T93	VEH 1746 1779	the ships that escorted a carrier
+T94	VEH 1756 1760	that
+T95	VEH 1770 1779	a carrier
+T96	PER 1724 1727	his
+T97	VEH 1791 1795	this
+T98	VEH 1809 1815	itself
+T99	GPE 1821 1827	hawaii
+T100	GPE 1801 1805	home
+T101	Transport 1796 1800	came
+E6	Transport:T101 Vehicle:T97 Destination:T100 Origin:T99
+T102	VEH 1882 1891	this ship
+T103	VEH 1895 1897	it
+T104	VEH 1840 1906	so many other ships out there that escort this ship as it goes out
+T105	VEH 1870 1874	that
+T106	VEH 1909 1911	it
+T107	VEH 1924 1932	one ship
+T108	PER 1939 1956	just 5,000 people
+T109	VEH 1959 1961	it
+T110	VEH 1965 1993	a battle group that goes out
+T111	VEH 1980 1984	that
+T112	Attack 1967 1973	battle
+E7	Attack:T112
+T113	VEH 2025 2036	a submarine
+T114	VEH 1996 2020	eight , nine , ten ships
+T115	VEH 2167 2171	this
+T116	VEH 2175 2189	the `` lincoln
+T117	PER 2119 2131	half of them
+T118	PER 2053 2079	these ladies and gentlemen
+T119	PER 2045 2079	some of these ladies and gentlemen
+T120	PER 2104 2109	their
+T121	PER 2127 2131	them
+T122	PER 2104 2118	their families
+T123	GPE 2228 2238	washington
+T124	GPE 2218 2238	everett , washington
+T125	GPE 2241 2245	that
+T126	GPE 2249 2271	where the home base is
+T127	FAC 2255 2268	the home base
+T128	VEH 2274 2276	it
+T129	LOC 2312 2321	the coast
+T130	Transport 2304 2308	trip
+E8	Transport:T130 Vehicle:T128 Destination:T129 Origin:T129
+T131	PER 2324 2328	they
+T132	PER 2347 2352	their
+T133	PER 2347 2363	their loved ones
+T134	TIM 2370 2377	tuesday
+T135	TIM 2381 2390	wednesday
+T136	PER 2393 2394	i
+T137	PER 2402 2405	who
+T138	PER 2472 2474	we
+T139	GPE 2538 2542	here
+T140	PER 2496 2542	the person who 's going to be getting off here
+T141	PER 2507 2510	who
+T142	TIM 2570 2592	throughout the morning
+T143	PER 2548 2551	you
+T144	PER 2595 2598	you
+T145	GPE 2672 2678	kuwait
+T146	Attack 2690 2693	war
+E9	Attack:T146
+T147	PER 2696 2701	betsy
+T148	PER 2725 2727	us
+T149	PER 2730 2733	she
+T150	PER 2752 2755	she
+T151	PER 2768 2771	her
+T152	PER 2772 2775	own
+T153	PER 2793 2809	the water skiers
+T154	PER 2778 2781	she
+T155	PER 2786 2809	one of the water skiers
+T156	PER 2827 2830	her
+T157	PER 2812 2814	we
+T158	PER 2836 2839	she
+T159	PER 2863 2865	us
+T160	PER 2868 2871	she
+T161	PER 2901 2904	you
+T162	PER 2916 2921	betsy
+T163	PER 2890 2892	we
+T164	PER 2924 2927	you
+T165	PER 2966 2969	you
+T166	PER 3013 3034	big part of our group
+T167	PER 3025 3034	our group
+T168	PER 3025 3028	our
+T169	TIM 3035 3050	the entire time
+T170	PER 3058 3061	you
+T171	PER 3064 3069	betsy
+T172	PER 3078 3081	you
+T173	PER 3084 3088	leon
+T174	PER 3091 3093	we
+T175	PER 3123 3128	betsy
+T176	PER 3139 3165	these ladies and gentlemen
+T177	PER 3131 3165	some of these ladies and gentlemen
+T178	PER 3198 3203	their
+T179	PER 3198 3212	their families
+T180	VEH 3239 3247	the ship
+T181	VEH 3273 3278	there
+T182	PER 3302 3305	you
+T183	PER 3281 3283	we
+T184	TIM 3366 3369	now
+T185	PER 3382 3384	us

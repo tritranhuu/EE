@@ -1,0 +1,19 @@
+in	O	O	O	O
+two	O	TIM	O	O
+years	O	TIM	O	O
+time	O	O	O	O
+,	O	O	O	O
+this	O	GPE	O	O
+nation	O	GPE	O	O
+has	O	O	O	O
+experienced	O	O	O	O
+war	Attack	O	O	E
+,	O	O	O	O
+a	O	O	O	O
+recession	O	O	O	O
+and	O	O	O	O
+a	O	O	O	O
+national	O	O	O	O
+emergency	O	O	O	O
+.	O	O	O	O
+

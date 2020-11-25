@@ -1,0 +1,38 @@
+T1	TIM 45 65	2004-12-26T17 :12:00
+T2	PER 77 82	Scott
+T3	TIM 83 103	2004-12-26T17 :12:00
+T4	PER 104 118	Peyton Manning
+T5	ORG 185 207	the San Diego Chargers
+T6	PER 125 135	Dan Marino
+T7	TIM 163 168	today
+T8	PER 272 279	Manning
+T9	PER 312 314	he
+T10	PER 388 390	he
+T11	ORG 362 382	the Baltimore Ravens
+T12	PER 253 254	I
+T13	TIM 302 311	last week
+T14	PER 465 472	Manning
+T15	PER 501 534	the best quarterbacks of all time
+T16	PER 537 543	Marino
+T17	TIM 571 575	1984
+T18	PER 628 640	Reggie White
+T19	PER 602 625	the Minister of Defense
+T20	PER 680 683	his
+T21	FAC 680 688	his home
+T22	TIM 664 676	this morning
+T23	TIM 692 705	the age of 43
+T24	Die 643 647	died
+E1	Die:T24 Victim:T19 Place:T21 Time-Within:T22
+T25	PER 708 713	White
+T26	ORG 761 770	Green Bay
+T27	ORG 746 758	Philadelphia
+T28	TIM 732 740	15 years
+T29	ORG 775 783	Carolina
+T30	ORG 826 829	NFL
+T31	PER 786 788	He
+T32	PER 822 857	the NFL 's all-time leader in sacks
+T33	TIM 807 811	2000
+T34	End-Position 789 796	retired
+E2	End-Position:T34 Entity:T30 Person:T31 Time-Within:T33
+T35	PER 903 914	Bruce Smith
+T36	PER 917 922	White

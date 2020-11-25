@@ -1,0 +1,28 @@
+And	O	O	O	O
+then	O	O	O	O
+MCI	O	ORG	Buyer	O
+just	O	O	O	O
+sort	O	O	O	O
+of	O	O	O	O
+accepted	O	O	O	O
+a	O	O	O	O
+Verizon	O	ORG	Seller	O
+deal	Transfer-Ownership	O	O	E
+without	O	O	O	O
+really	O	O	O	O
+bothering	O	O	O	O
+anybody	O	PER	O	O
+.	O	O	O	O
+
+And	O	O	O	O
+now	O	TIM	O	O
+,	O	O	O	O
+they	O	ORG	Artifact	O
+'re	O	O	O	O
+swallowed	Transfer-Ownership	O	O	E
+by	O	O	O	O
+Just	O	ORG	Buyer	O
+Another	O	ORG	Buyer	O
+Monolith	O	ORG	Buyer	O
+.	O	O	O	O
+

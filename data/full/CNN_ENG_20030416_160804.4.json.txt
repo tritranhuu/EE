@@ -1,0 +1,36 @@
+he	O	PER	Defendant	O
+was	O	O	O	O
+convicted	Convict	O	O	E
+of	O	O	O	O
+hijacking	Attack	CRM	Crime	O
+the	O	VEH	Crime	O
+``	O	VEH	Crime	O
+achille	O	VEH	Crime	O
+lauro	O	VEH	Crime	O
+''	O	CRM	Crime	O
+in	O	CRM	Crime	O
+1985	O	CRM	Time	O
+.	O	O	O	O
+
+he	O	PER	Attacker	O
+was	O	O	O	O
+convicted	Convict	O	O	O
+of	O	O	O	O
+hijacking	Attack	CRM	O	E
+the	O	VEH	Target	O
+``	O	VEH	Target	O
+achille	O	VEH	Target	O
+lauro	O	VEH	Target	O
+''	O	CRM	O	O
+in	O	CRM	O	O
+1985	O	CRM	Time	O
+.	O	O	O	O
+
+he	O	PER	Target	O
+was	O	O	O	O
+shot	Attack	O	O	E
+and	O	O	O	O
+thrown	O	O	O	O
+overboard	O	O	O	O
+.	O	O	O	O
+

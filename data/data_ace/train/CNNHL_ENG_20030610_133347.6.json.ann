@@ -1,0 +1,51 @@
+T1	TIM 40 59	2003-06-10 13:41:52
+T2	PER 169 176	insider
+T3	TIM 76 82	former
+T4	ORG 90 97	imclone
+T5	ORG 139 165	the pharmaceutical company
+T6	PER 60 97	the founder and former ceo of imclone
+T7	PER 127 130	his
+T8	JOB 83 86	ceo
+T9	FAC 255 269	federal prison
+T10	SEN 223 269	seven years and three months in federal prison
+T11	PER 195 205	sam waksal
+T12	Sentence 210 219	sentenced
+E1	Sentence:T12 Defendant:T11 Sentence:T10
+T13	ORG 362 395	the new york state tax commission
+T14	NUM 330 343	$ 1.2 million
+T15	NUM 295 306	$ 3 million
+T16	PER 272 274	he
+T17	Fine 289 294	fined
+E2	Fine:T17 Entity:T16 Money:T15
+T18	Fine 326 329	pay
+E3	Fine:T18 Entity:T16 Money:T14
+T19	TIM 420 429	last fall
+T20	CRM 433 519	six counts of security fraud , bank fraud , conspiracy to obstruct justice and perjury
+T21	PER 398 404	waksal
+T22	FAC 594 598	jail
+T23	PER 522 524	he
+T24	PER 546 549	his
+T25	PER 575 577	he
+T26	Release-Parole 534 542	released
+E4	Release-Parole:T26 Person:T23
+T27	Arrest-Jail 584 590	report
+E5	Arrest-Jail:T27 Person:T25 Place:T22
+T28	PER 628 640	his daughter
+T29	CRM 620 727	tipping his daughter to dump imclone stock market just ahead of a drug rejection the company was developing
+T30	ORG 649 656	imclone
+T31	ORG 701 712	the company
+T32	PER 601 607	waksal
+T33	PER 628 631	his
+T34	PER 732 734	he
+T35	NUM 792 804	$ 44 million
+T36	CRM 753 809	bank fraud by forging a signature on a $ 44 million loan
+T37	PER 855 871	waksal 's friend
+T38	PER 874 888	martha stewart
+T39	PER 906 909	her
+T40	ORG 816 823	imclone
+T41	PER 855 861	waksal
+T42	TIM 891 900	last week
+T43	TIM 928 942	the day before
+T44	CRM 906 962	her sale of the stock the day before the price collapsed
+T45	Charge-Indict 839 846	charges
+E6	Charge-Indict:T45 Defendant:T37 Defendant:T38 Crime:T44 Time-Within:T42

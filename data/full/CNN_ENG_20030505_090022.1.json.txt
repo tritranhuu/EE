@@ -1,0 +1,77 @@
+the	O	GPE	O	O
+country	O	GPE	O	O
+reported	O	O	O	O
+now	O	TIM	O	O
+160	O	O	O	O
+new	O	O	O	O
+cases	O	O	O	O
+and	O	O	O	O
+nine	O	O	O	O
+more	O	O	O	O
+deaths	Die	O	O	E
+.	O	O	O	O
+
+20	O	PER	Victim	O
+people	O	PER	Victim	O
+were	O	O	O	O
+killed	Die	O	O	E
+in	O	O	O	O
+that	O	GPE	Place	O
+state	O	GPE	Place	O
+.	O	O	O	O
+
+in	O	O	O	O
+kansas	O	GPE	Place	O
+,	O	O	O	O
+authorities	O	PER	O	O
+say	O	O	O	O
+seven	O	PER	Victim	O
+people	O	PER	Victim	O
+were	O	O	O	O
+killed	Die	O	O	E
+when	O	O	O	O
+tornadoes	O	O	O	O
+cut	O	O	O	O
+across	O	O	O	O
+the	O	LOC	O	O
+southeastern	O	LOC	O	O
+part	O	LOC	O	O
+of	O	LOC	O	O
+the	O	LOC	O	O
+state	O	LOC	O	O
+.	O	O	O	O
+
+an	O	PER	O	O
+emergency	O	PER	O	O
+official	O	PER	O	O
+tells	O	O	O	O
+cnn	O	ORG	O	O
+that	O	O	O	O
+ten	O	PER	Victim	O
+people	O	PER	Victim	O
+died	Die	O	O	E
+there	O	LOC	Place	O
+.	O	O	O	O
+
+dozens	O	PER	Victim	O
+were	O	O	O	O
+hurt	Injure	O	O	E
+.	O	O	O	O
+
+joining	O	O	O	O
+us	O	ORG	Entity	O
+on	O	O	O	O
+the	O	O	O	O
+phone	Phone-Write	O	O	E
+is	O	O	O	O
+the	O	PER	Entity	O
+mayor	O	PER	Entity	O
+of	O	PER	Entity	O
+jackson	O	GPE	Entity	O
+,	O	GPE	Entity	O
+tennessee	O	GPE	Entity	O
+,	O	O	O	O
+charles	O	PER	O	O
+farmer	O	PER	O	O
+.	O	O	O	O
+

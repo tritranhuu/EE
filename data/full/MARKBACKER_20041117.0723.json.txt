@@ -1,0 +1,21 @@
+Can	O	O	O	O
+someone	O	PER	O	O
+tell	O	O	O	O
+me	O	PER	O	O
+why	O	O	O	O
+one	O	PER	Attacker	O
+of	O	PER	Attacker	O
+my	O	PER	Attacker	O
+friends	O	PER	Attacker	O
+or	O	PER	Attacker	O
+family	O	PER	Attacker	O
+members	O	PER	Attacker	O
+has	O	O	O	O
+n't	O	O	O	O
+smacked	Attack	O	O	E
+me	O	PER	Target	O
+because	O	O	O	O
+of	O	O	O	O
+it	O	O	O	O
+?	O	O	O	O
+

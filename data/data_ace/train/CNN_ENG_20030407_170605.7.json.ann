@@ -1,0 +1,49 @@
+T1	TIM 38 57	2003-04-07 17:30:31
+T2	ORG 103 106	our
+T3	FAC 184 223	an agricultural complex in central iraq
+T4	LOC 211 223	central iraq
+T5	WEA 146 170	suspect chemical weapons
+T6	TIM 117 126	this hour
+T7	PER 78 81	you
+T8	FAC 287 295	the site
+T9	ORG 238 278	the u.s. army 's 101st airborne division
+T10	ORG 242 251	u.s. army
+T11	PER 226 278	troops from the u.s. army 's 101st airborne division
+T12	GPE 242 246	u.s.
+T13	TIM 299 305	friday
+T14	FAC 350 357	bunkers
+T15	Transport 279 283	went
+E1	Transport:T15 Artifact:T11 Destination:T8 Time-Within:T13
+T16	ORG 426 435	the 101st
+T17	PER 398 405	general
+T18	PER 394 435	the general benjamin frankly of the 101st
+T19	WEA 499 523	nerve and blister agents
+T20	TIM 441 446	today
+T21	PER 526 528	he
+T22	FAC 817 829	the facility
+T23	FAC 850 852	it
+T24	PER 741 748	general
+T25	PER 741 756	general frankly
+T26	PER 784 799	u.n. inspectors
+T27	LOC 862 881	the euphrates river
+T28	ORG 784 788	u.n.
+T29	ORG 884 886	we
+T30	TIM 943 956	a few minutes
+T31	PER 1002 1021	cnn 's gary tuchman
+T32	ORG 1002 1005	cnn
+T33	TIM 1036 1039	now
+T34	PER 1033 1035	us
+T35	FAC 1050 1079	an air base not far from iraq
+T36	GPE 1075 1079	iraq
+T37	Attack 996 999	war
+E2	Attack:T37
+T38	PER 1116 1120	gary
+T39	TIM 1106 1113	tonight
+T40	FAC 1100 1105	there
+T41	TIM 1180 1187	24-hour
+T42	GPE 1206 1213	baghdad
+T43	PER 1141 1145	wolf
+T44	ORG 1148 1161	the air force
+T45	ORG 1176 1179	its
+T46	PER 1258 1265	fighter
+T47	VEH 1237 1255	multiple warplanes

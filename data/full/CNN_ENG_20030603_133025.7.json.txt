@@ -1,0 +1,8 @@
+all	O	PER	Victim	O
+225	O	PER	Victim	O
+people	O	PER	Victim	O
+aboard	O	PER	Victim	O
+were	O	O	O	O
+killed	Die	O	O	E
+.	O	O	O	O
+

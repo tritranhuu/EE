@@ -1,0 +1,93 @@
+T1	TIM 39 58	2003-05-06 17:59:37
+T2	PER 205 219	saddam hussein
+T3	GPE 126 130	iraq
+T4	GPE 182 190	the u.s.
+T5	PER 59 61	he
+T6	PER 73 90	comic albuquerque
+T7	PER 96 107	baghdad bob
+T8	PER 136 138	he
+T9	Attack 119 122	war
+E1	Attack:T9 Place:T3
+T10	GPE 282 289	baghdad
+T11	PER 364 373	producers
+T12	PER 222 267	the minister of information or disinformation
+T13	PER 329 332	his
+T14	TIM 413 416	now
+T15	PER 422 439	cnn 's jim bolden
+T16	ORG 422 425	cnn
+T17	GPE 443 449	london
+T18	PER 463 467	they
+T19	PER 501 505	them
+T20	PER 519 521	he
+T21	PER 543 547	them
+T22	PER 561 563	he
+T23	PER 583 585	my
+T24	TIM 663 666	now
+T25	PER 625 627	he
+T26	PER 667 669	he
+T27	PER 673 679	a star
+T28	PER 748 758	benny hill
+T29	PER 682 684	we
+T30	PER 717 719	we
+T31	PER 693 695	he
+T32	PER 700 758	the funniest guy we 'd seen on television since benny hill
+T33	GPE 785 797	london-based
+T34	PER 785 813	london-based dance musicians
+T35	PER 774 813	a group of london-based dance musicians
+T36	PER 829 851	mohammed saif al sahaf
+T37	GPE 947 955	american
+T38	VEH 943 961	the american tanks
+T39	PER 921 923	he
+T40	PER 983 986	him
+T41	TIM 1063 1078	all of the time
+T42	PER 1059 1062	him
+T43	PER 1120 1123	own
+T44	PER 1110 1123	saa of 's own
+T45	PER 1133 1140	his own
+T46	PER 1137 1140	own
+T47	PER 1149 1152	his
+T48	PER 1174 1176	he
+T49	PER 1186 1194	a rapper
+T50	PER 1198 1200	he
+T51	PER 1205 1213	a rapper
+T52	PER 1214 1216	he
+T53	TIM 1286 1292	former
+T54	TIM 1331 1340	right now
+T55	GPE 1278 1282	iraq
+T56	JOB 1293 1313	information minister
+T57	PER 1278 1313	iraq 's former information minister
+T58	End-Position 1286 1292	former
+E2	End-Position:T58 Person:T57 Entity:T55 Position:T56
+T59	LOC 1357 1364	nowhere
+T60	PER 1343 1353	sal saa of
+T61	PER 1383 1386	his
+T62	PER 1469 1471	he
+T63	PER 1487 1490	his
+T64	PER 1530 1547	a loyal following
+T65	PER 1517 1519	he
+T66	ORG 1620 1648	an iraqi children 's charity
+T67	PER 1623 1637	iraqi children
+T68	GPE 1623 1628	iraqi
+T69	PER 1596 1600	they
+T70	PER 1564 1566	he
+T71	PER 1582 1585	his
+T72	Transfer-Money 1605 1611	donate
+E3	Transfer-Money:T72 Giver:T69 Beneficiary:T67 Recipient:T66
+T73	PER 1651 1661	jim bolden
+T74	ORG 1664 1667	cnn
+T75	GPE 1670 1676	london
+T76	CTI 1784 1796	cnn.com/wolf
+T77	ORG 1759 1761	we
+T78	PER 1732 1756	mohammed saeed sal sahaf
+T79	PER 1682 1685	you
+T80	LOC 1842 1862	the coast of florida
+T81	GPE 1855 1862	florida
+T82	ORG 1799 1801	we
+T83	PER 1813 1816	you
+T84	PER 1896 1908	three cubans
+T85	PER 1916 1920	they
+T86	PER 1938 1942	they
+T87	LOC 1961 1966	shore
+T88	ORG 1967 1969	we
+T89	Transport 1953 1957	swim
+E4	Transport:T89 Artifact:T86 Destination:T87

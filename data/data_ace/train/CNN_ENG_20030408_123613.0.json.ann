@@ -1,0 +1,46 @@
+T1	TIM 38 57	2003-04-08 12:34:47
+T2	GPE 72 79	germany
+T3	GPE 62 79	hamburg , germany
+T4	VEH 124 143	an a-10 tank killer
+T5	PER 103 113	the iraqis
+T6	ORG 82 97	central command
+T7	TIM 144 149	today
+T8	Attack 114 123	shot down
+E1	Attack:T8 Attacker:T5 Target:T4 Time-Within:T7
+T9	VEH 174 183	the plane
+T10	WEA 209 233	a surface to air missile
+T11	PER 152 161	officials
+T12	Attack 199 203	down
+E2	Attack:T12 Target:T9 Instrument:T10
+T13	GPE 285 289	u.s.
+T14	GPE 257 264	baghdad
+T15	FAC 253 272	the baghdad airport
+T16	FAC 273 278	which
+T17	PER 298 303	pilot
+T18	PER 309 313	they
+T19	LOC 364 384	southeastern baghdad
+T20	GPE 343 347	u.s.
+T21	TIM 385 390	today
+T22	PER 343 355	u.s. marines
+T23	Transport 356 363	entered
+E3	Transport:T23 Artifact:T22 Destination:T19 Time-Within:T21
+T24	FAC 474 495	an industrial complex
+T25	PER 457 461	they
+T26	GPE 534 554	the iraqi government
+T27	PER 563 577	1252 civilians
+T28	GPE 538 543	iraqi
+T29	Attack 598 605	the war
+E4	Attack:T29
+T30	Die 588 594	killed
+E5	Die:T30 Victim:T27
+T31	ORG 630 632	us
+T32	ORG 638 658	abu dhabi television
+T33	ORG 689 692	cnn
+T34	GPE 695 715	the iraqi government
+T35	GPE 699 704	iraqi
+T36	PER 793 805	wolf blitzer
+T37	TIM 781 784	now
+T38	ORG 810 813	our
+T39	GPE 848 852	iraq
+T40	Attack 841 844	war
+E6	Attack:T40 Place:T39

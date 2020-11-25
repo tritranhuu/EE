@@ -1,0 +1,213 @@
+T1	TIM 38 57	2003-03-20 15:56:37
+T2	PER 76 89	kelly wallace
+T3	PER 150 158	israelis
+T4	PER 97 100	she
+T5	PER 161 163	we
+T6	ORG 198 216	the jerusalem post
+T7	TIM 217 230	the other day
+T8	PER 285 299	president bush
+T9	PER 285 294	president
+T10	TIM 257 265	that day
+T11	PER 404 408	they
+T12	WEA 385 388	gas
+T13	TIM 453 461	50 years
+T14	PER 423 426	you
+T15	PER 492 496	your
+T16	Attack 477 480	war
+E1	Attack:T16 Time-Holds:T13
+T17	PER 535 547	the israelis
+T18	GPE 616 618	we
+T19	PER 625 639	president bush
+T20	PER 625 634	president
+T21	PER 647 649	he
+T22	PER 668 677	reporters
+T23	GPE 752 764	the homeland
+T24	GPE 767 770	our
+T25	GPE 767 779	our homeland
+T26	Attack 727 730	war
+E2	Attack:T26
+T27	PER 796 805	john king
+T28	ORG 886 896	government
+T29	PER 878 906	so many government officials
+T30	TIM 945 950	today
+T31	PER 953 961	reporter
+T32	ORG 999 1001	we
+T33	PER 1019 1050	senior administration officials
+T34	PER 1054 1058	they
+T35	PER 1077 1081	they
+T36	ORG 1026 1040	administration
+T37	TIM 964 980	so far , so good
+T38	LOC 1124 1132	overseas
+T39	GPE 1144 1148	iraq
+T40	ORG 1204 1232	organized terrorist networks
+T41	PER 1262 1310	people against the united states in this country
+T42	PER 1214 1223	terrorist
+T43	PER 1236 1258	sympathetic terrorists
+T44	GPE 1104 1106	we
+T45	GPE 1277 1294	the united states
+T46	GPE 1298 1310	this country
+T47	Attack 1116 1123	strikes
+E3	Attack:T47 Place:T38 Place:T39
+T48	Attack 1184 1191	strikes
+E4	Attack:T48 Attacker:T40 Attacker:T43 Attacker:T41 Place:T44
+T49	TIM 1313 1329	so far , so good
+T50	ORG 1343 1345	we
+T51	PER 1450 1463	the president
+T52	TIM 1503 1508	today
+T53	PER 1437 1475	microsoft of the president 's business
+T54	PER 1622 1644	the secretary of state
+T55	ORG 1639 1644	state
+T56	PER 1599 1617	the vice president
+T57	ORG 1562 1576	administration
+T58	PER 1517 1644	the most senior of about a handful of senior administration officials , including the vice president and the secretary of state
+T59	PER 1511 1513	he
+T60	PER 1555 1586	senior administration officials
+T61	PER 1542 1586	a handful of senior administration officials
+T62	PER 1721 1756	more than three dozen world leaders
+T63	PER 1766 1770	them
+T64	LOC 1743 1748	world
+T65	PER 1647 1676	the national security advisor
+T66	ORG 1691 1693	we
+T67	Phone-Write 1706 1711	phone
+E5	Phone-Write:T67 Entity:T65 Entity:T62
+T68	PER 1829 1842	the president
+T69	TIM 1843 1862	a bit earlier today
+T70	ORG 1807 1809	we
+T71	ORG 1865 1867	we
+T72	GPE 1872 1879	baghdad
+T73	GPE 1882 1903	a capitol under siege
+T74	Attack 1898 1903	siege
+E6	Attack:T74 Place:T73
+T75	FAC 1918 1953	the cabinet room at the white house
+T76	FAC 1938 1953	the white house
+T77	PER 1906 1914	mr. bush
+T78	PER 1906 1909	mr.
+T79	GPE 2003 2013	washington
+T80	PER 2096 2125	secretary of defense rumsfeld
+T81	PER 2096 2116	secretary of defense
+T82	PER 2140 2165	secretary of state powell
+T83	PER 2140 2158	secretary of state
+T84	PER 1922 1929	cabinet
+T85	FAC 2224 2240	the cabinet room
+T86	PER 2181 2194	the president
+T87	PER 2228 2235	cabinet
+T88	PER 2248 2250	my
+T89	PER 2278 2281	our
+T90	LOC 2303 2312	the world
+T91	PER 2248 2258	my cabinet
+T92	GPE 2337 2348	our country
+T93	GPE 2337 2340	our
+T94	GPE 2384 2387	our
+T95	GPE 2384 2396	our citizens
+T96	PER 2440 2442	we
+T97	PER 2485 2487	us
+T98	PER 2454 2518	secretary rumsfeld who briefed us on the early stages of the war
+T99	PER 2454 2463	secretary
+T100	PER 2473 2476	who
+T101	Attack 2515 2518	war
+E7	Attack:T101
+T102	GPE 2567 2570	our
+T103	GPE 2567 2579	our citizens
+T104	GPE 2542 2544	we
+T105	PER 2553 2579	the finest of our citizens
+T106	PER 2599 2603	they
+T107	GPE 2651 2653	we
+T108	PER 2660 2664	them
+T109	GPE 2667 2669	we
+T110	PER 2676 2681	their
+T111	PER 2676 2692	their loved ones
+T112	GPE 2695 2697	we
+T113	PER 2709 2714	their
+T114	PER 2727 2729	we
+T115	PER 2770 2772	us
+T116	PER 2741 2877	secretary powell who briefed us on the ever-growing coalition of the willing , nations who support our deep desire for peace and freedom
+T117	PER 2741 2750	secretary
+T118	PER 2758 2761	who
+T119	GPE 2840 2843	our
+T120	GPE 2776 2817	the ever-growing coalition of the willing
+T121	GPE 2820 2877	nations who support our deep desire for peace and freedom
+T122	GPE 2828 2831	who
+T123	GPE 2806 2817	the willing
+T124	TIM 2896 2899	now
+T125	GPE 2908 2911	our
+T126	GPE 2880 2895	over 40 nations
+T127	GPE 2922 2924	we
+T128	GPE 2942 2947	their
+T129	GPE 2964 2966	we
+T130	GPE 2997 2999	we
+T131	GPE 2978 2983	their
+T132	GPE 3008 3013	their
+T133	PER 3034 3036	we
+T134	PER 3069 3071	we
+T135	PER 3136 3138	we
+T136	PER 3201 3213	your seniors
+T137	GPE 3201 3205	your
+T138	PER 3216 3218	we
+T139	PER 3251 3279	some children in our society
+T140	GPE 3268 3271	our
+T141	PER 3294 3296	we
+T142	GPE 3345 3352	america
+T143	GPE 3328 3352	every citizen in america
+T144	PER 3355 3367	this cabinet
+T145	GPE 3401 3412	our country
+T146	GPE 3401 3404	our
+T147	TIM 3391 3397	future
+T148	PER 3415 3417	we
+T149	PER 3432 3434	we
+T150	PER 3447 3450	our
+T151	PER 3464 3465	i
+T152	PER 3482 3487	their
+T153	PER 3499 3504	their
+T154	GPE 3499 3512	their country
+T155	PER 3521 3528	you all
+T156	PER 3599 3603	bush
+T157	PER 3617 3630	the president
+T158	PER 3655 3658	his
+T159	PER 3691 3694	his
+T160	PER 3691 3702	his cabinet
+T161	GPE 3736 3753	the united states
+T162	Attack 3786 3789	war
+E8	Attack:T162
+T163	PER 3812 3825	the president
+T164	PER 3887 3900	the president
+T165	LOC 3875 3884	the world
+T166	GPE 3908 3910	it
+T167	GPE 3940 3952	40 countries
+T168	GPE 3914 3952	ever-growing coalition of 40 countries
+T169	PER 4029 4032	his
+T170	TIM 4050 4062	12 years ago
+T171	LOC 4071 4083	persian gulf
+T172	GPE 4015 4087	the coalition his father assembled 12 years ago for the persian gulf war
+T173	GPE 3963 4087	handful more nations that were actively involved in the coalition his father assembled 12 years ago for the persian gulf war
+T174	GPE 3984 3988	that
+T175	GPE 3955 3959	that
+T176	PER 4029 4039	his father
+T177	Attack 4084 4087	war
+E9	Attack:T177 Place:T171
+T178	GPE 4169 4186	the united states
+T179	GPE 4145 4159	this coalition
+T180	Attack 4222 4230	fighting
+E10	Attack:T180 Attacker:T178
+T181	GPE 4264 4274	australian
+T182	GPE 4233 4240	british
+T183	PER 4264 4281	australian troops
+T184	PER 4233 4247	british forces
+T185	PER 4360 4371	arab forces
+T186	PER 4360 4364	arab
+T187	LOC 4341 4345	gulf
+T188	PER 4352 4355	you
+T189	Attack 4346 4349	war
+E11	Attack:T189 Attacker:T185 Place:T187
+T190	GPE 4471 4477	kuwait
+T191	PER 4404 4411	syrians
+T192	PER 4414 4420	saudis
+T193	PER 4388 4401	the egyptians
+T194	ORG 4455 4477	the iraqi armiy kuwait
+T195	PER 4423 4430	qataris
+T196	WEA 4441 4445	arms
+T197	GPE 4459 4464	iraqi
+T198	PER 4525 4538	the president
+T199	PER 4650 4663	the president
+T200	LOC 4637 4646	the world
+T201	GPE 4546 4550	this
+T202	GPE 4554 4573	a growing coalition

@@ -1,0 +1,10 @@
+Iran	O	O	O	O
+To	O	O	O	O
+Continue	O	O	O	O
+Policy	O	O	O	O
+of	O	O	O	O
+Shooting-Down	Attack	O	O	E
+US	O	O	O	O
+Spy	O	O	O	O
+Drones	O	O	O	O
+

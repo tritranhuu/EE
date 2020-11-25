@@ -1,0 +1,66 @@
+It	O	O	O	O
+'s	O	O	O	O
+not	O	O	O	O
+clear	O	O	O	O
+how	O	O	O	O
+long	O	O	O	O
+the	O	PER	O	O
+bodies	O	PER	O	O
+had	O	O	O	O
+lain	O	O	O	O
+here	O	FAC	O	O
+,	O	O	O	O
+but	O	O	O	O
+they	O	PER	O	O
+were	O	O	O	O
+clearly	O	O	O	O
+not	O	O	O	O
+from	O	O	O	O
+this	O	O	O	O
+war	Attack	O	O	E
+.	O	O	O	O
+
+You	O	PER	O	O
+come	O	O	O	O
+to	O	O	O	O
+expect	O	O	O	O
+everything	O	O	O	O
+in	O	O	O	O
+war	Attack	O	O	E
+fighting	Attack	O	O	O
+.	O	O	O	O
+
+You	O	PER	O	O
+come	O	O	O	O
+to	O	O	O	O
+expect	O	O	O	O
+everything	O	O	O	O
+in	O	O	O	O
+war	Attack	O	O	O
+fighting	Attack	O	O	E
+.	O	O	O	O
+
+Most	O	PER	Victim	O
+had	O	O	O	O
+died	Die	O	O	E
+from	O	O	O	O
+gunshot	O	O	O	O
+wounds	O	O	O	O
+to	O	O	O	O
+the	O	O	O	O
+head	O	O	O	O
+.	O	O	O	O
+
+Others	O	PER	Victim	O
+were	O	O	O	O
+mutilated	Injure	O	O	E
+beyond	O	O	O	O
+recognition	O	O	O	O
+,	O	O	O	O
+their	O	PER	Victim	O
+faces	O	O	O	O
+burned	O	O	O	O
+and	O	O	O	O
+swollen	O	O	O	O
+.	O	O	O	O
+

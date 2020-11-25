@@ -1,0 +1,37 @@
+T1	TIM 39 58	2003-06-03 10:21:22
+T2	PER 102 122	several arab leaders
+T3	PER 110 114	arab
+T4	PER 59 73	president bush
+T5	PER 59 68	president
+T6	Meet 89 96	meeting
+E1	Meet:T6 Entity:T4 Entity:T2
+T7	GPE 175 194	israeli-palestinian
+T8	TIM 138 147	next hour
+T9	Meet 153 159	summit
+E2	Meet:T9
+T10	GPE 287 298	middle east
+T11	PER 214 222	mr. bush
+T12	PER 214 217	mr.
+T13	PER 254 257	his
+T14	PER 385 398	a few killers
+T15	PER 401 417	a few terrorists
+T16	PER 372 384	a few people
+T17	TIM 308 321	earlier today
+T18	PER 324 326	he
+T19	TIM 434 437	now
+T20	PER 457 472	rob sabati , ed
+T21	PER 473 522	a a an adjunct professor at georgetown university
+T22	PER 431 433	us
+T23	ORG 501 522	georgetown university
+T24	TIM 541 553	this morning
+T25	PER 537 540	you
+T26	PER 556 565	professor
+T27	TIM 633 642	this time
+T28	PER 572 575	you
+T29	PER 722 726	arab
+T30	PER 718 734	the arab leaders
+T31	PER 592 606	president bush
+T32	PER 592 601	president
+T33	Meet 755 761	summit
+E3	Meet:T33 Entity:T31 Entity:T30
+T34	TIM 764 783	2003-06-03 10:21:54

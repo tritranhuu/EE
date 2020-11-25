@@ -1,0 +1,21 @@
+This	O	O	O	O
+is	O	O	O	O
+n't	O	O	O	O
+a	O	O	O	O
+football	O	O	O	O
+game	O	O	O	O
+,	O	O	O	O
+and	O	O	O	O
+it	O	O	O	O
+'s	O	O	O	O
+not	O	O	O	O
+two	O	PER	Target	O
+drunken	O	PER	Target	O
+cousins	O	PER	Target	O
+fighting	Attack	PER	Target	O
+at	O	PER	Target	O
+a	O	PER	Target	O
+family	O	PER	Target	O
+reunion	O	PER	Target	O
+.	O	O	O	O
+

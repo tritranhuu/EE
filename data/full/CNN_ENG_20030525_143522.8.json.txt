@@ -1,0 +1,31 @@
+has	O	O	O	O
+somebody	O	PER	Entity	O
+from	O	PER	Entity	O
+your	O	PER	Entity	O
+magazine	O	PER	Entity	O
+spent	Meet	O	O	E
+time	O	O	O	O
+with	O	O	O	O
+him	O	PER	Entity	O
+?	O	O	O	O
+
+he	O	PER	Entity	O
+spent	Meet	O	O	E
+time	O	O	O	O
+with	O	O	O	O
+this	O	PER	Entity	O
+guy	O	PER	Entity	O
+and	O	O	O	O
+there	O	O	O	O
+was	O	O	O	O
+stockholm	O	GPE	O	O
+syndrome	O	O	O	O
+,	O	O	O	O
+he	O	PER	O	O
+ended	O	O	O	O
+up	O	O	O	O
+liking	O	O	O	O
+the	O	PER	O	O
+guy	O	PER	O	O
+.	O	O	O	O
+

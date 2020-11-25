@@ -1,0 +1,36 @@
+the	O	PER	O	O
+jury	O	PER	O	O
+has	O	O	O	O
+handed	O	O	O	O
+down	O	O	O	O
+a	O	O	O	O
+$	O	NUM	Money	O
+30	O	NUM	Money	O
+million	O	NUM	Money	O
+,	O	O	O	O
+a	O	PER	Adjudicator	O
+grand	O	PER	Adjudicator	O
+rapids	O	PER	Adjudicator	O
+jury	O	PER	Adjudicator	O
+saying	O	O	O	O
+taco	O	ORG	Entity	O
+bell	O	ORG	Entity	O
+has	O	O	O	O
+to	O	O	O	O
+pay	Fine	O	O	E
+the	O	PER	O	O
+true	O	PER	O	O
+creators	O	PER	O	O
+of	O	PER	O	O
+the	O	PER	O	O
+chihuahua	O	PER	O	O
+mass	O	PER	O	O
+cot	O	PER	O	O
+.	O	O	O	O
+
+taco	O	ORG	Plaintiff	O
+ball	O	ORG	Plaintiff	O
+is	O	O	O	O
+appealing	Appeal	O	O	E
+.	O	O	O	O
+

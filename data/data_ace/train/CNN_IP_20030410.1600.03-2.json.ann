@@ -1,0 +1,198 @@
+T1	TIM 34 61	2003-04-10T16 :00:00 -05:00
+T2	PER 119 127	WOODRUFF
+T3	PER 151 162	Laith Kubba
+T4	PER 166 211	an Iraqi exile who has family members in Iraq
+T5	PER 181 184	who
+T6	GPE 169 174	Iraqi
+T7	GPE 207 211	Iraq
+T8	PER 189 195	family
+T9	PER 189 211	family members in Iraq
+T10	PER 214 223	Mr. Kubba
+T11	PER 214 217	Mr.
+T12	PER 227 302	a senior fellow at a think tank called the National Endowment for Democracy
+T13	ORG 266 302	the National Endowment for Democracy
+T14	ORG 246 302	a think tank called the National Endowment for Democracy
+T15	PER 305 307	He
+T16	PER 316 397	the president of a group of Iraqi exiles , a group called the Iraq National Group
+T17	GPE 344 349	Iraqi
+T18	PER 344 356	Iraqi exiles
+T19	ORG 359 397	a group called the Iraq National Group
+T20	ORG 374 397	the Iraq National Group
+T21	ORG 333 356	a group of Iraqi exiles
+T22	TIM 412 415	now
+T23	PER 453 456	his
+T24	PER 400 402	He
+T25	GPE 421 427	London
+T26	ORG 409 411	us
+T27	GPE 453 464	his country
+T28	TIM 590 602	the last day
+T29	PER 467 476	Mr. Kubba
+T30	PER 467 470	Mr.
+T31	PER 494 498	your
+T32	PER 511 514	you
+T33	ORG 553 578	the Saddam Hussein regime
+T34	GPE 543 550	Baghdad
+T35	PER 557 571	Saddam Hussein
+T36	PER 605 616	LAITH KUBBA
+T37	PER 619 628	PRESIDENT
+T38	ORG 631 651	IRAQI NATIONAL GROUP
+T39	GPE 724 731	Baghdad
+T40	GPE 748 795	a war theater with more destruction to property
+T41	Attack 750 753	war
+E1	Attack:T41 Place:T39
+T42	PER 826 874	four million people who could have suffered more
+T43	PER 846 849	who
+T44	ORG 1004 1007	you
+T45	PER 1041 1049	WOODRUFF
+T46	TIM 1084 1087	now
+T47	PER 1054 1057	you
+T48	GPE 1091 1098	Baghdad
+T49	GPE 1110 1114	Iraq
+T50	PER 1069 1114	family members now in Baghdad and around Iraq
+T51	PER 1069 1075	family
+T52	PER 1126 1129	you
+T53	PER 1154 1158	they
+T54	PER 1183 1188	KUBBA
+T55	TIM 1203 1232	the recent three or four days
+T56	GPE 1263 1270	Baghdad
+T57	GPE 1405 1410	Najaf
+T58	PER 1343 1362	one close colleague
+T59	PER 1365 1386	Saeed Abu Naji Abhuey
+T60	LOC 1276 1295	other parts of Iraq
+T61	PER 1298 1299	I
+T62	GPE 1291 1295	Iraq
+T63	Die 1332 1339	killing
+E2	Die:T63 Victim:T58 Place:T57
+T64	TIM 1434 1440	former
+T65	ORG 1452 1467	the Baath Party
+T66	PER 1434 1467	former members of the Baath Party
+T67	PER 1413 1415	He
+T68	ORG 1487 1495	the army
+T69	PER 1471 1495	the security of the army
+T70	ORG 1510 1533	a local organized group
+T71	Die 1424 1430	killed
+E3	Die:T71 Victim:T67 Agent:T70
+T72	PER 1554 1556	me
+T73	PER 1572 1578	People
+T74	PER 1700 1701	I
+T75	PER 1679 1683	they
+T76	PER 1708 1712	they
+T77	PER 1728 1736	WOODRUFF
+T78	GPE 1802 1806	Iraq
+T79	GPE 1865 1873	the U.S.
+T80	PER 1774 1777	who
+T81	PER 1889 1894	KUBBA
+T82	PER 1902 1905	one
+T83	TIM 1963 1968	Today
+T84	ORG 1987 1999	an authority
+T85	PER 2042 2060	the British forces
+T86	GPE 2029 2037	the U.S.
+T87	GPE 2046 2053	British
+T88	PER 2162 2168	Iraqis
+T89	ORG 2192 2202	government
+T90	TIM 2290 2315	the day we have elections
+T91	PER 2205 2206	I
+T92	GPE 2298 2300	we
+T93	GPE 2213 2215	we
+T94	ORG 2337 2345	the U.N.
+T95	GPE 2318 2320	We
+T96	GPE 2348 2350	We
+T97	GPE 2387 2398	the country
+T98	GPE 2409 2420	the country
+T99	GPE 2371 2376	Iraqi
+T100	PER 2367 2398	all Iraqi forces in the country
+T101	TIM 2462 2471	every day
+T102	GPE 2427 2429	we
+T103	PER 2532 2540	WOODRUFF
+T104	PER 2558 2567	Mr. Kubba
+T105	PER 2558 2561	Mr.
+T106	ORG 2548 2550	we
+T107	ORG 2580 2607	several Iraqi exiles groups
+T108	GPE 2588 2593	Iraqi
+T109	PER 2588 2600	Iraqi exiles
+T110	ORG 2644 2648	them
+T111	ORG 2637 2648	one of them
+T112	PER 2699 2700	I
+T113	PER 2747 2818	Mr. Chalabi , who was assisted by U.S. forces in getting back into Iraq
+T114	PER 2747 2750	Mr.
+T115	PER 2761 2764	who
+T116	PER 2781 2792	U.S. forces
+T117	GPE 2814 2818	Iraq
+T118	ORG 2714 2741	the Iraqi National Congress
+T119	GPE 2781 2785	U.S.
+T120	Transport 2804 2808	back
+E4	Transport:T120 Victim:T115 Agent:T116 Place:T117
+T121	PER 2821 2826	KUBBA
+T122	GPE 2878 2888	Washington
+T123	PER 2827 2828	I
+T124	GPE 2963 2967	Iraq
+T125	GPE 3025 3035	Washington
+T126	PER 2974 2975	I
+T127	LOC 3065 3087	the ground inside Iraq
+T128	GPE 3083 3087	Iraq
+T129	PER 3104 3121	22 million people
+T130	GPE 3122 3127	there
+T131	GPE 3130 3132	It
+T132	GPE 3149 3151	It
+T133	PER 3174 3175	I
+T134	GPE 3209 3222	there in Iraq
+T135	GPE 3218 3222	Iraq
+T136	GPE 3226 3229	its
+T137	PER 3240 3248	WOODRUFF
+T138	TIM 3298 3301	now
+T139	ORG 3290 3297	another
+T140	ORG 3257 3266	one group
+T141	PER 3304 3309	KUBBA
+T142	LOC 3371 3401	different parts of the country
+T143	ORG 3337 3340	who
+T144	ORG 3320 3401	different groups who have advantage over others in different parts of the country
+T145	GPE 3390 3401	the country
+T146	ORG 3361 3401	others in different parts of the country
+T147	PER 3600 3644	representatives from provinces all over Iraq
+T148	ORG 3435 3516	a national group that can appeal to Iraqis as Iraqis within a credible voice.This
+T149	ORG 3452 3456	that
+T150	ORG 3678 3694	political groups
+T151	GPE 3621 3644	provinces all over Iraq
+T152	GPE 3584 3591	Baghdad
+T153	GPE 3594 3599	where
+T154	GPE 3420 3422	we
+T155	GPE 3640 3644	Iraq
+T156	GPE 3471 3477	Iraqis
+T157	GPE 3481 3487	Iraqis
+T158	Meet 3559 3569	conference
+E5	Meet:T158 Place:T152 Entity:T147 Entity:T150
+T159	ORG 3716 3730	a single group
+T160	PER 3756 3772	a single council
+T161	PER 3733 3752	a single leadership
+T162	GPE 3701 3703	we
+T163	PER 3779 3787	WOODRUFF
+T164	PER 3808 3819	Laith Kubba
+T165	PER 3822 3825	who
+T166	PER 3829 3869	the president of a group of Iraqi exiles
+T167	ORG 3788 3790	We
+T168	GPE 3857 3862	Iraqi
+T169	PER 3857 3869	Iraqi exiles
+T170	ORG 3846 3869	a group of Iraqi exiles
+T171	ORG 3872 3881	The group
+T172	ORG 3892 3915	the Iraq National Group
+T173	PER 3918 3927	Mr. Kubba
+T174	PER 3918 3921	Mr.
+T175	PER 3939 3942	you
+T176	GPE 3974 3980	London
+T177	ORG 3930 3932	we
+T178	ORG 3966 3968	us
+T179	PER 3983 3988	KUBBA
+T180	ORG 3995 3998	you
+T181	PER 4001 4009	WOODRUFF
+T182	ORG 4010 4012	We
+T183	PER 4029 4034	KUBBA
+T184	ORG 4041 4044	you
+T185	PER 4047 4055	WOODRUFF
+T186	ORG 4088 4116	the House of Representatives
+T187	PER 4077 4116	members of the House of Representatives
+T188	PER 4142 4165	America 's armed forces
+T189	GPE 4056 4074	Here in Washington
+T190	GPE 4064 4074	Washington
+T191	GPE 4142 4149	America
+T192	Attack 4271 4274	war
+E6	Attack:T192

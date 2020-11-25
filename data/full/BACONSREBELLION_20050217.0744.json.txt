@@ -1,0 +1,26 @@
+Former	End-Position	PER	Person	O
+Governor	O	PER	Person	O
+Gerald	O	PER	O	O
+Baliles	O	PER	O	O
+,	O	O	O	O
+in	O	O	O	O
+this	O	O	O	O
+same	O	O	O	O
+vein	O	O	O	O
+,	O	O	O	O
+has	O	O	O	O
+advocated	O	O	O	O
+a	O	O	O	O
+realignment	O	O	O	O
+of	O	O	O	O
+the	O	PER	O	O
+two	O	PER	O	O
+houses	O	PER	O	O
+in	O	O	O	O
+a	O	O	O	O
+way	O	O	O	O
+that	O	O	O	O
+serves	O	O	O	O
+commonalities	O	O	O	O
+.	O	O	O	O
+

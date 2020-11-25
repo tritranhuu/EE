@@ -1,0 +1,69 @@
+T1	TIM 39 58	2003-06-12 17:52:42
+T2	GPE 72 77	congo
+T3	Die 59 68	slaughter
+E1	Die:T3 Place:T2
+T4	TIM 125 132	a month
+T5	PER 188 198	500 people
+T6	PER 156 168	rival tribes
+T7	Attack 136 147	bloodleting
+E2	Attack:T7 Attacker:T6 Target:T6 Time-Holds:T4
+T8	Die 181 187	killed
+E3	Die:T8 Victim:T5 Agent:T6 Time-Within:T4
+T9	TIM 302 306	1998
+T10	GPE 284 295	the country
+T11	Attack 255 262	torture
+E4	Attack:T11 Place:T10 Time-Starting:T9
+T12	Die 232 240	killings
+E5	Die:T12 Place:T10 Time-Starting:T9
+T13	Attack 245 250	rapes
+E6	Attack:T13 Place:T10 Time-Starting:T9
+T14	GPE 449 453	iraq
+T15	Attack 442 445	war
+E7	Attack:T15 Place:T14
+T16	TIM 456 459	now
+T17	GPE 499 514	the middle east
+T18	Attack 487 495	conflict
+E8	Attack:T18 Place:T17
+T19	GPE 568 574	africa
+T20	Die 519 527	massacre
+E9	Die:T20 Place:T19
+T21	GPE 727 733	africa
+T22	ORG 624 651	international relief agency
+T23	PER 666 692	more than 3 million people
+T24	Die 698 702	died
+E10	Die:T24 Victim:T23 Place:T21
+T25	Die 749 752	war
+E11	Die:T25 Place:T21
+T26	TIM 841 851	five years
+T27	Attack 802 814	world war ii
+E12	Attack:T27
+T28	Die 787 795	conflict
+E13	Die:T28 Time-Holds:T26
+T29	GPE 870 874	here
+T30	LOC 881 889	the land
+T31	Attack 926 932	fought
+E14	Attack:T31 Place:T30
+T32	TIM 996 1005	every day
+T33	PER 979 982	you
+T34	GPE 1052 1057	congo
+T35	GPE 1089 1106	the united states
+T36	TIM 1153 1157	1994
+T37	TIM 1292 1300	100 days
+T38	ORG 1259 1269	opposition
+T39	GPE 1186 1200	government-led
+T40	GPE 1180 1185	where
+T41	GPE 1171 1300	rwanda , where government-led militia slaughtered an estimated 800,000 opposition , and opposition sympathizers in about 100 days
+T42	GPE 1117 1122	there
+T43	PER 1186 1208	government-led militia
+T44	PER 1221 1282	an estimated 800,000 opposition , and opposition sympathizers
+T45	Attack 1209 1220	slaughtered
+E15	Attack:T45 Attacker:T43 Place:T40 Target:T44 Target:T44 Time-Within:T36 Time-Holds:T37
+T46	Attack 1164 1167	war
+E16	Attack:T46 Attacker:T43 Place:T41 Target:T44 Target:T44 Time-Within:T36 Time-Holds:T37
+T47	Die 1113 1116	war
+E17	Die:T47 Place:T42
+T48	GPE 1309 1315	rwanda
+T49	PER 1349 1366	president clinton
+T50	PER 1349 1358	president
+T51	TIM 1429 1433	1998
+T52	PER 1418 1420	he

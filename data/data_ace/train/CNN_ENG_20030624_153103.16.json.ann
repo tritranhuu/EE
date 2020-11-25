@@ -1,0 +1,69 @@
+T1	TIM 39 58	2003-06-24 15:48:54
+T2	PER 71 107	the russian president vladimir putin
+T3	PER 71 92	the russian president
+T4	PER 141 143	he
+T5	GPE 155 161	london
+T6	PER 123 137	prince charles
+T7	PER 123 129	prince
+T8	GPE 75 82	russian
+T9	TIM 162 167	today
+T10	ORG 59 61	we
+T11	Transport 144 151	arrived
+E1	Transport:T11 Artifact:T2 Destination:T5 Time-Within:T9
+T12	PER 193 197	they
+T13	PER 266 269	his
+T14	VEH 266 283	his private plane
+T15	FAC 295 311	heathrow airport
+T16	Transport 284 291	arrived
+E2	Transport:T16 Artifact:T14 Destination:T15
+T17	PER 314 319	putin
+T18	PER 324 327	his
+T19	PER 370 373	you
+T20	LOC 397 411	central london
+T21	LOC 389 411	here in central london
+T22	PER 324 332	his wife
+T23	TIM 385 388	now
+T24	Transport 333 337	left
+E3	Transport:T24 Artifact:T17 Artifact:T22 Destination:T21
+T25	FAC 470 487	buckingham palace
+T26	PER 427 441	walter rodgers
+T27	PER 450 453	who
+T28	ORG 414 416	we
+T29	PER 527 532	roger
+T30	TIM 511 524	a few moments
+T31	ORG 494 496	's
+T32	ORG 544 546	we
+T33	PER 623 632	the queen
+T34	PER 655 672	russian president
+T35	PER 675 678	his
+T36	PER 726 738	their guests
+T37	PER 693 707	prince charles
+T38	PER 693 699	prince
+T39	PER 726 731	their
+T40	GPE 655 662	russian
+T41	PER 675 683	his wife
+T42	PER 638 649	her majesty
+T43	PER 756 781	prime minister tony blair
+T44	PER 756 770	prime minister
+T45	PER 751 755	them
+T46	FAC 810 827	buckingham palace
+T47	FAC 851 855	here
+T48	PER 784 798	walter rodgers
+T49	GPE 880 887	russian
+T50	GPE 896 901	state
+T51	GPE 911 918	britain
+T52	PER 880 901	russian head of state
+T53	Transport 905 910	visit
+E4	Transport:T53 Artifact:T52 Destination:T51
+T54	PER 970 982	alexander ii
+T55	TIM 986 990	1874
+T56	TIM 921 940	more than 130 years
+T57	PER 1093 1098	guest
+T58	PER 1078 1080	we
+T59	PER 1061 1063	's
+T60	PER 1040 1054	walter rodgers
+T61	PER 1122 1132	this group
+T62	PER 1182 1196	some gentleman
+T63	PER 1163 1164	i
+T64	PER 1278 1283	guest
+T65	PER 1257 1266	the queen

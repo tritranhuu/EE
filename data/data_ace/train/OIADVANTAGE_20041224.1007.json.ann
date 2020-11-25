@@ -1,0 +1,109 @@
+T1	TIM 36 56	2004-12-24T10 :07:00
+T2	PER 113 119	John A
+T3	TIM 120 140	2004-12-24T10 :07:00
+T4	TIM 148 155	holiday
+T5	PER 145 147	my
+T6	PER 163 164	I
+T7	GPE 252 258	Boston
+T8	TIM 217 221	1994
+T9	PER 224 225	I
+T10	PER 230 258	a graduate student in Boston
+T11	ORG 351 374	Harvard Business School
+T12	PER 261 262	I
+T13	Meet 337 347	conference
+E1	Meet:T13
+T14	ORG 429 462	Students for Responsible Business
+T15	ORG 410 462	a new group called Students for Responsible Business
+T16	Meet 381 391	conference
+E2	Meet:T16 Entity:T15
+T17	PER 483 544	a small gathering of idealistic , slightly naive MBA students
+T18	PER 504 544	idealistic , slightly naive MBA students
+T19	PER 465 466	I
+T20	FAC 564 627	a packed room of 200 intelligent , practical , driven idealists
+T21	PER 581 627	200 intelligent , practical , driven idealists
+T22	PER 552 553	I
+T23	PER 630 644	These students
+T24	FAC 743 752	that room
+T25	PER 805 834	these future business leaders
+T26	ORG 818 826	business
+T27	TIM 811 817	future
+T28	PER 736 737	I
+T29	PER 758 760	my
+T30	TIM 850 858	10 years
+T31	ORG 861 894	Students for Responsible Business
+T32	ORG 909 919	Net Impact
+T33	TIM 898 901	now
+T34	ORG 991 1038	The University of Texas McCombs Business School
+T35	ORG 964 969	their
+T36	ORG 991 1014	The University of Texas
+T37	PER 932 933	I
+T38	TIM 925 929	2004
+T39	Meet 970 980	conference
+E3	Meet:T39 Entity:T37 Time-Within:T38
+T40	PER 1073 1107	over 9,000 MBA students and alumni
+T41	ORG 1041 1051	Net Impact
+T42	PER 1110 1134	Approximately 900 people
+T43	TIM 1148 1152	2004
+T44	Meet 1153 1163	conference
+E4	Meet:T44 Entity:T42 Time-Within:T43
+T45	LOC 1394 1403	the world
+T46	PER 1302 1309	student
+T47	PER 1316 1323	student
+T48	PER 1296 1297	I
+T49	Meet 1298 1301	met
+E5	Meet:T49 Entity:T48 Entity:T46 Entity:T47
+T50	LOC 1479 1489	this world
+T51	PER 1406 1420	These students
+T52	TIM 1492 1500	Recently
+T53	ORG 1501 1517	business schools
+T54	ORG 1532 1537	their
+T55	PER 1573 1653	graduates who seem to have lost sight of their responsibility for ethical action
+T56	PER 1583 1586	who
+T57	PER 1614 1619	their
+T58	ORG 1740 1756	business schools
+T59	PER 1667 1670	you
+T60	PER 1656 1657	I
+T61	PER 1676 1677	I
+T62	PER 1798 1808	the alumni
+T63	ORG 1814 1832	the administration
+T64	PER 1781 1792	the faculty
+T65	PER 1957 1964	student
+T66	PER 1835 1851	All these groups
+T67	PER 2011 2023	the students
+T68	ORG 2045 2061	business schools
+T69	PER 2070 2082	MBA students
+T70	ORG 2186 2198	their school
+T71	PER 2116 2119	Few
+T72	PER 2146 2150	they
+T73	PER 2156 2160	they
+T74	PER 2186 2191	their
+T75	TIM 2201 2210	Right now
+T76	ORG 2223 2239	business schools
+T77	PER 2392 2400	speakers
+T78	PER 2360 2380	social entrepreneurs
+T79	FAC 2404 2410	campus
+T80	PER 2211 2239	students at business schools
+T81	PER 2342 2380	support group for social entrepreneurs
+T82	ORG 2490 2500	Net Impact
+T83	TIM 2636 2644	10 years
+T84	PER 2687 2701	these students
+T85	PER 2645 2647	we
+T86	PER 2612 2613	I
+T87	TIM 2764 2768	1776
+T88	PER 2769 2779	Adam Smith
+T89	PER 2994 3001	society
+T90	PER 2860 2862	we
+T91	PER 2964 3001	a good citizen and steward of society
+T92	PER 2891 2894	his
+T93	PER 2925 2927	he
+T94	PER 2983 3001	steward of society
+T95	PER 2842 2843	I
+T96	PER 3057 3073	business leaders
+T97	PER 3034 3073	this new generation of business leaders
+T98	PER 3004 3005	I
+T99	PER 3271 3278	student
+T100	PER 3121 3124	you
+T101	PER 3129 3143	an MBA student
+T102	ORG 3361 3380	The Aspen Institute
+T103	TIM 3389 3397	Holidays
+T104	PER 3401 3409	everyone

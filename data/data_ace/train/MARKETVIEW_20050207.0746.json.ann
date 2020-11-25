@@ -1,0 +1,27 @@
+T1	TIM 35 55	2005-02-07T07 :46:00
+T2	PER 104 109	Byrne
+T3	TIM 110 130	2005-02-07T07 :46:00
+T4	ORG 142 245	Yuganskneftegaz , which was sold to an independent buyer who turned out to be an apparatus of the state
+T5	ORG 160 165	which
+T6	ORG 409 414	which
+T7	GPE 236 245	the state
+T8	GPE 258 346	the same state that 1 -RRB- forced Yukos to do the auction , and 2 -RRB- ran the auction
+T9	GPE 273 277	that
+T10	ORG 220 245	an apparatus of the state
+T11	ORG 178 245	an independent buyer who turned out to be an apparatus of the state
+T12	ORG 199 202	who
+T13	ORG 293 298	Yukos
+T14	Transfer-Ownership 170 174	sold
+E1	Transfer-Ownership:T14 Artifact:T4 Place:T8 Buyer:T11
+T15	TIM 515 527	this morning
+T16	PER 669 725	someone in the Russian judiciary who could help them out
+T17	PER 702 705	who
+T18	ORG 680 701	the Russian judiciary
+T19	GPE 564 568	they
+T20	GPE 653 657	they
+T21	GPE 717 721	them
+T22	GPE 684 691	Russian
+T23	GPE 581 588	Chinese
+T24	PER 640 643	you
+T25	Sue 612 619	lawsuit
+E2	Sue:T25 Adjudicator:T18 Defendant:T19

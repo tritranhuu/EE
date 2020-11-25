@@ -1,0 +1,24 @@
+a	O	O	O	O
+wildfire	O	O	O	O
+in	O	O	O	O
+california	O	GPE	O	O
+forced	Transport	O	O	E
+hundreds	O	PER	Artifact	O
+of	O	PER	Artifact	O
+people	O	PER	Artifact	O
+from	O	O	O	O
+their	O	FAC	Origin	O
+homes	O	FAC	Origin	O
+.	O	O	O	O
+
+no	O	O	O	O
+injuries	Injure	O	O	E
+have	O	O	O	O
+been	O	O	O	O
+reported	O	O	O	O
+thankfully	O	O	O	O
+hat	O	O	O	O
+this	O	TIM	Time	O
+time	O	TIM	Time	O
+.	O	O	O	O
+

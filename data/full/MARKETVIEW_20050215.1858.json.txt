@@ -1,0 +1,12 @@
+Will	O	O	O	O
+we	O	PER	O	O
+have	O	O	O	O
+that	O	O	O	O
+at	O	O	O	O
+the	O	ORG	Entity	O
+Fed	O	ORG	Entity	O
+,	O	O	O	O
+when	O	O	O	O
+Greenspan	O	PER	Person	O
+leaves	End-Position	O	O	E
+

@@ -1,6 +1,14 @@
-from data_utils.corpus_arguments import CorpusArgument
-from models_deeplearning.event_detections import Model_ED
-from trainer.event_detection_trainer import Trainer
+from transformers import (
+    PreTrainedTokenizer,
+    BertForSequenceClassification, BertTokenizer, BertConfig,
+    RobertaConfig, RobertaModel,
+)
+from fairseq.data.encoders.fastbpe import fastBPE
+from fairseq.data import Dictionary
+
+from data_utils.corpus import Corpus
+from models_deeplearning.event_detections import Model_ED, Model_ED_Bert
+from trainer.bert_event_detection_trainer import Trainer
 import matplotlib.pyplot as plt
 
 import torch
@@ -17,6 +25,20 @@ if torch.cuda.is_available():
 else:
   device = torch.device("cpu")
 
+tokenizer = RobertaBPETokenizer(
+    bpe_path='/content/PhoBERT_base_transformers/bpe.codes',
+    vocab_path='/content/PhoBERT_base_transformers/dict.txt',
+)
+
+bert_config = RobertaConfig.from_pretrained(
+    '/content/PhoBERT_base_transformers/config.json'
+)
+bert_model = RobertaModel.from_pretrained(
+    pretrained_model_name_or_path='/content/PhoBERT_base_transformers/model.bin',
+    config=bert_config
+)
+bert_model.cuda()
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--input_folder', type=str, default="./data/data_ace/event_data")
@@ -24,13 +46,14 @@ if __name__ == "__main__":
     parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--wv_file', type=str, default='./pretrained_embedding/word2vec/wiki-news-300d-1M.vec')
     
-    corpus = CorpusArgument(
+    corpus = Corpus(
         parser.parse_args()
     )
 
     configs = get_configs(corpus, device)
     model_name = "cnn_trig+w2v+position"
-    model = Model_ED(**configs[model_name])
+    # model = Model_ED(**configs[model_name])
+    model = Model_ED_Bert(**configs[model_name], bert_model=bert_model)
     # model.load_state('/content/drive/My Drive/EE/pretrained_model/cnn_seq+w2v_ED.pt')
 
     trainer = Trainer(
@@ -38,7 +61,8 @@ if __name__ == "__main__":
         data=corpus,
         optimizer_cls=Adam,
         loss_fn_cls=nn.CrossEntropyLoss,
-        device = device
+        device = device,
+        tokenizer=tokenizer
         )
 
     trainer.train_live(20)

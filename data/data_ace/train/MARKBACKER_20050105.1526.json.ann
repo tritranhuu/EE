@@ -1,0 +1,157 @@
+T1	TIM 35 55	2005-01-05T15 :26:00
+T2	PER 77 88	Mark Backer
+T3	TIM 89 109	2005-01-05T15 :26:00
+T4	ORG 114 121	college
+T5	PER 170 171	I
+T6	TIM 232 252	every 15 or 20 years
+T7	ORG 225 231	Auburn
+T8	PER 366 368	me
+T9	PER 401 402	I
+T10	PER 526 527	I
+T11	TIM 372 397	the beginning of the year
+T12	ORG 356 359	you
+T13	ORG 628 638	conference
+T14	TIM 685 688	now
+T15	PER 575 582	pundits
+T16	ORG 587 589	OU
+T17	ORG 615 620	their
+T18	ORG 599 605	Auburn
+T19	ORG 667 671	ours
+T20	ORG 742 753	The Citadel
+T21	ORG 712 725	Bowling Green
+T22	ORG 767 778	the Sooners
+T23	ORG 731 733	us
+T24	PER 799 800	I
+T25	ORG 913 918	their
+T26	ORG 944 948	they
+T27	ORG 837 840	USC
+T28	FAC 852 861	the field
+T29	ORG 900 912	Choke-lahoma
+T30	ORG 913 937	their collective bitches
+T31	PER 994 995	I
+T32	PER 1022 1038	that dying hyena
+T33	PER 1039 1105	Ashlee `` no , I 'm the one with dark hair and no boobs '' Simpson
+T34	PER 1146 1147	I
+T35	ORG 1159 1163	Fark
+T36	TIM 1164 1176	this morning
+T37	PER 1223 1225	me
+T38	TIM 1226 1239	an extra hour
+T39	TIM 1323 1332	all night
+T40	PER 1301 1308	Leinert
+T41	ORG 1251 1253	We
+T42	ORG 1279 1281	we
+T43	ORG 1320 1322	us
+T44	PER 1342 1351	Our db 's
+T45	ORG 1342 1345	Our
+T46	ORG 1434 1447	a decent team
+T47	ORG 1450 1452	OU
+T48	PER 1512 1523	Jason White
+T49	PER 1624 1626	he
+T50	PER 1536 1550	Jason Voorhees
+T51	PER 1646 1654	Peterson
+T52	TIM 1679 1692	In five years
+T53	ORG 1695 1703	Oklahoma
+T54	PER 1826 1827	I
+T55	TIM 1807 1823	before this year
+T56	ORG 1799 1802	Sox
+T57	PER 1797 1806	a Sox fan
+T58	PER 1850 1851	I
+T59	VEH 1945 1977	an out of place airplane in Ohio
+T60	PER 1912 1924	one reporter
+T61	ORG 2011 2018	Alabama
+T62	GPE 1973 1977	Ohio
+T63	PER 1897 1907	Tuberville
+T64	TIM 1884 1894	A year ago
+T65	End-Position 1994 1999	fired
+E1	End-Position:T65 Person:T63 Time-Within:T64
+T66	PER 2067 2076	a booster
+T67	PER 2033 2053	the AD and President
+T68	PER 2123 2133	Tuberville
+T69	End-Position 2058 2064	canned
+E2	End-Position:T69 Person:T67 Person:T67
+T70	PER 2187 2230	his two running backs and two stellar DB 's
+T71	PER 2178 2180	He
+T72	PER 2187 2190	his
+T73	PER 2342 2345	him
+T74	PER 2427 2430	him
+T75	PER 2445 2448	him
+T76	ORG 2383 2389	Auburn
+T77	ORG 2436 2440	they
+T78	NUM 2346 2356	14 million
+T79	NUM 2449 2460	every penny
+T80	TIM 2357 2373	over seven years
+T81	Transfer-Money 2338 2341	pay
+E3	Transfer-Money:T81 Giver:T76 Money:T78 Recipient:T74
+T82	End-Position 2419 2426	letting
+E4	End-Position:T82 Person:T74 Entity:T76
+T83	PER 2463 2464	I
+T84	PER 2512 2514	He
+T85	PER 2592 2595	him
+T86	ORG 2566 2570	they
+T87	Transfer-Money 2588 2591	pay
+E5	Transfer-Money:T87 Giver:T86 Recipient:T85
+T88	ORG 2864 2874	the BCS 's
+T89	FAC 2810 2818	the road
+T90	ORG 2793 2806	three of them
+T91	ORG 2772 2790	five top ten teams
+T92	ORG 2802 2806	them
+T93	PER 2645 2656	Auburn fans
+T94	ORG 2852 2855	SEC
+T95	ORG 2645 2651	Auburn
+T96	ORG 2708 2710	we
+T97	ORG 2738 2740	We
+T98	ORG 2832 2908	the only undefeated SEC team in the BCS 's history to NOT play for the title
+T99	TIM 2667 2686	the next six months
+T100	ORG 2935 2943	Oklahoma
+T101	TIM 2960 2969	this year
+T102	TIM 2991 2995	2000
+T103	TIM 2972 2981	last year
+T104	ORG 3133 3148	your conference
+T105	ORG 2998 3001	You
+T106	ORG 3020 3023	you
+T107	ORG 3070 3073	you
+T108	ORG 3112 3115	you
+T109	ORG 3133 3137	your
+T110	TIM 3035 3053	the last two years
+T111	TIM 3009 3013	2000
+T112	TIM 3060 3069	last year
+T113	TIM 3221 3230	this year
+T114	TIM 3194 3203	last year
+T115	ORG 3173 3185	Kansas State
+T116	ORG 3151 3154	You
+T117	ORG 3190 3193	LSU
+T118	ORG 3237 3250	the little 12
+T119	ORG 3276 3283	the SEC
+T120	TIM 3352 3361	this year
+T121	ORG 3335 3345	conference
+T122	ORG 3298 3301	you
+T123	ORG 3330 3334	your
+T124	ORG 3309 3325	a four-loss team
+T125	ORG 3382 3389	the BCS
+T126	ORG 3412 3422	the Big 12
+T127	ORG 3441 3444	you
+T128	PER 3400 3422	the head of the Big 12
+T129	ORG 3550 3566	their conference
+T130	ORG 3518 3566	only two teams that did n't win their conference
+T131	ORG 3533 3537	that
+T132	ORG 3550 3555	their
+T133	TIM 3629 3633	2001
+T134	ORG 3609 3612	You
+T135	ORG 3617 3625	Nebraska
+T136	ORG 3657 3677	you two Big 12 teams
+T137	ORG 3657 3660	you
+T138	ORG 3701 3704	you
+T139	ORG 3709 3713	your
+T140	PER 3768 3770	we
+T141	ORG 3798 3801	you
+T142	ORG 3842 3845	you
+T143	PER 3949 3994	every Auburn fan in the country and the world
+T144	ORG 3848 3854	Auburn
+T145	ORG 3889 3893	they
+T146	ORG 3955 3961	Auburn
+T147	GPE 3969 3980	the country
+T148	LOC 3985 3994	the world
+T149	PER 4026 4033	someone
+T150	PER 4038 4061	the Auburn cheerleaders
+T151	ORG 4076 4079	USC
+T152	ORG 4042 4048	Auburn

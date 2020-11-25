@@ -1,0 +1,45 @@
+the	O	ORG	Plaintiff	O
+companies	O	ORG	Plaintiff	O
+settling	O	O	O	O
+a	O	O	O	O
+lawsuit	Sue	O	O	E
+.	O	O	O	O
+
+aol	O	ORG	Recipient	O
+time	O	ORG	Recipient	O
+warnerings	O	ORG	Recipient	O
+our	O	ORG	O	O
+corporate	O	ORG	O	O
+parent	O	ORG	O	O
+,	O	O	O	O
+will	O	O	O	O
+get	Transfer-Money	O	O	E
+$	O	NUM	Money	O
+750	O	NUM	Money	O
+million	O	NUM	Money	O
+from	O	O	O	O
+microsoft	O	ORG	Giver	O
+.	O	O	O	O
+
+the	O	ORG	Defendant	O
+software	O	ORG	Defendant	O
+giant	O	ORG	Defendant	O
+paying	O	O	O	O
+to	O	O	O	O
+settle	O	O	O	O
+charges	Charge-Indict	O	O	E
+it	O	ORG	Defendant	O
+used	O	CRM	Crime	O
+its	O	ORG	Crime	O
+monopoly	O	CRM	Crime	O
+power	O	CRM	Crime	O
+in	O	CRM	Crime	O
+after	O	CRM	Crime	O
+to	O	CRM	Crime	O
+block	O	CRM	Crime	O
+the	O	CRM	Crime	O
+aol	O	ORG	Crime	O
+netscape	O	CRM	Crime	O
+browser	O	CRM	Crime	O
+.	O	O	O	O
+

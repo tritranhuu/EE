@@ -1,0 +1,26 @@
+the	O	PER	Person	O
+couple	O	PER	Person	O
+is	O	O	O	O
+preparing	O	O	O	O
+to	O	O	O	O
+tie	Marry	O	O	E
+the	Marry	O	O	O
+knot	Marry	O	O	O
+at	O	O	O	O
+gracie	O	FAC	Place	O
+mansion	O	FAC	Place	O
+in	O	FAC	Place	O
+new	O	GPE	Place	O
+york	O	GPE	Place	O
+tonight	O	TIM	Time	O
+.	O	O	O	O
+
+mayor	O	PER	O	O
+michael	O	PER	O	O
+bloomberg	O	PER	O	O
+will	O	O	O	O
+perform	O	O	O	O
+the	O	O	O	O
+ceremony	Marry	O	O	E
+.	O	O	O	O
+

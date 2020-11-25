@@ -16,6 +16,7 @@ class Trainer(object):
 
     def __init__(self, model_event, model_arg, data, optimizer_cls, loss_fn_cls, device):
         self.device = device
+
         self.model_event = model_event.to(self.device)
         self.model_arg = model_arg.to(self.device)
 
@@ -25,7 +26,6 @@ class Trainer(object):
 
     def get_trigger_pos(self, event_matrix):
         x = event_matrix.argmax(dim=2).permute(1, 0)
-        # x = event_matrix.permute(1,0)
         x = [(t>1).nonzero().reshape(-1) for t in x]
         s = []
         for i in range(len(x)):
@@ -57,7 +57,6 @@ class Trainer(object):
               i+=(j-1)
             i+=1
         pos = torch.cat(pos)
-        # print(pos.shape, pos, s, len(s))
         return pos[:len(s)]
 
     def evaluate(self, iterator):
@@ -79,8 +78,11 @@ class Trainer(object):
                 events = batch.event.to(self.device)
                 true_tags = batch.argument.to(self.device)
                 pred_event_tags, _ = self.model_event(words, chars)
-                pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
-                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags)
+                
+                trigger_indexes = self.get_trigger_pos(pred_event_tags)
+
+                # pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
+                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags.argmax(dim=2), trigger_index)
 
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)

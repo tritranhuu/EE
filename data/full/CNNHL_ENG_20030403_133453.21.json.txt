@@ -1,0 +1,18 @@
+the	O	ORG	O	O
+associated	O	ORG	O	O
+press	O	ORG	O	O
+is	O	O	O	O
+reporting	O	O	O	O
+that	O	O	O	O
+u.s.	O	PER	Attacker	O
+troops	O	PER	Attacker	O
+have	O	O	O	O
+launched	O	O	O	O
+an	O	O	O	O
+attack	Attack	O	O	E
+on	O	O	O	O
+saddam	O	FAC	Target	O
+international	O	FAC	Target	O
+airport	O	FAC	Target	O
+.	O	O	O	O
+

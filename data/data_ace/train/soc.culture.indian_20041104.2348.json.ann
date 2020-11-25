@@ -1,0 +1,219 @@
+T1	TIM 44 64	2004-11-04T23 :48:00
+T2	PER 79 93	Patrick Powers
+T3	TIM 94 119	4 Nov 2004 20:48:36 -0800
+T4	ORG 120 125	Enron
+T5	GPE 128 133	India
+T6	TIM 189 192	new
+T7	TIM 221 230	currently
+T8	ORG 145 152	Bechtel
+T9	ORG 239 244	Enron
+T10	GPE 137 142	India
+T11	ORG 164 180	General Electric
+T12	ORG 185 258	the new owners of the notorious and currently defunct Enron power project
+T13	GPE 302 344	the Government of the State of Maharashtra
+T14	GPE 320 344	the State of Maharashtra
+T15	GPE 333 344	Maharashtra
+T16	ORG 265 270	Enron
+T17	ORG 352 357	Enron
+T18	GPE 428 433	India
+T19	NUM 367 385	30 billion dollars
+T20	ORG 436 441	Enron
+T21	ORG 493 495	it
+T22	GPE 523 529	Indian
+T23	PER 523 557	Indian politicians and bureaucrats
+T24	NUM 469 492	the millions of dollars
+T25	GPE 582 593	Maharashtra
+T26	ORG 564 569	Enron
+T27	GPE 606 611	India
+T28	GPE 710 721	the country
+T29	ORG 741 746	Enron
+T30	ORG 751 813	another of the Republican Party 's major campaign contributors
+T31	ORG 762 782	the Republican Party
+T32	ORG 762 813	the Republican Party 's major campaign contributors
+T33	ORG 843 848	Enron
+T34	ORG 950 955	Enron
+T35	GPE 881 895	the government
+T36	Transfer-Money 946 949	pay
+E1	Transfer-Money:T36 Giver:T35 Recipient:T34
+T37	TIM 1128 1134	a year
+T38	ORG 1099 1104	Enron
+T39	GPE 1028 1087	the government of one of the poorest countries in the world
+T40	GPE 1046 1087	one of the poorest countries in the world
+T41	NUM 1105 1127	220 million US dollars
+T42	LOC 1078 1087	the world
+T43	GPE 1053 1087	the poorest countries in the world
+T44	GPE 1117 1119	US
+T45	Transfer-Money 1092 1098	paying
+E2	Transfer-Money:T45 Giver:T39 Money:T41 Recipient:T38
+T46	ORG 1201 1208	Bechtel
+T47	ORG 1173 1178	Enron
+T48	GPE 1226 1247	the Indian Government
+T49	GPE 1230 1236	Indian
+T50	ORG 1213 1215	GE
+T51	NUM 1252 1274	5.6 billion US dollars
+T52	GPE 1264 1266	US
+T53	End-Org 1183 1189	ceased
+E3	End-Org:T53 Org:T47
+T54	Sue 1220 1225	suing
+E4	Sue:T54 Defendant:T48 Plaintiff:T46 Plaintiff:T50
+T55	ORG 1351 1356	Enron
+T56	ORG 1337 1341	they
+T57	ORG 1439 1443	they
+T58	PER 1491 1500	zztop8970
+T59	TIM 1501 1531	Fri , 05 Nov 2004 15:36:53 GMT
+T60	ORG 1537 1542	Enron
+T61	GPE 1545 1550	India
+T62	GPE 1759 1764	state
+T63	GPE 1593 1604	Maharashtra
+T64	FAC 1774 1783	the plant
+T65	PER 1593 1614	Maharashtra officials
+T66	ORG 1649 1654	Enron
+T67	GPE 1694 1700	Indian
+T68	ORG 1694 1716	Indian power producers
+T69	TIM 1860 1875	eight years ago
+T70	NUM 1892 1897	$ 3bn
+T71	FAC 1890 1924	a $ 3bn 2,182 Megawatt power plant
+T72	ORG 1841 1859	power utility MSEB
+T73	ORG 1841 1854	power utility
+T74	ORG 1792 1797	Enron
+T75	TIM 1983 2003	nearly two years ago
+T76	NUM 2248 2273	about one billion dollars
+T77	PER 2009 2031	the Indian authorities
+T78	PER 2113 2128	Enron officials
+T79	PER 2160 2164	they
+T80	PER 2190 2195	their
+T81	ORG 2067 2072	Enron
+T82	ORG 2113 2118	Enron
+T83	ORG 2220 2234	the US company
+T84	ORG 2278 2281	its
+T85	GPE 2297 2302	India
+T86	GPE 2013 2019	Indian
+T87	PER 2207 2215	analysts
+T88	GPE 2224 2226	US
+T89	ORG 2312 2314	it
+T90	ORG 2416 2421	Enron
+T91	ORG 2443 2446	its
+T92	GPE 2366 2372	Indian
+T93	ORG 2366 2409	Indian companies and financial institutions
+T94	ORG 2545 2550	Enron
+T95	ORG 2618 2623	their
+T96	GPE 2531 2537	Indian
+T97	GPE 2639 2650	the country
+T98	GPE 2670 2691	the Indian Government
+T99	GPE 2674 2680	Indian
+T100	ORG 2783 2788	Enron
+T101	GPE 2773 2778	India
+T102	PER 2755 2763	Analysts
+T103	ORG 2890 2895	Enron
+T104	ORG 2916 2918	it
+T105	GPE 2951 2962	the Indians
+T106	GPE 3046 3083	the party reneging on its obligations
+T107	GPE 3068 3071	its
+T108	GPE 3087 3113	the gov ' t of Maharashtra
+T109	GPE 3102 3113	Maharashtra
+T110	ORG 3018 3026	business
+T111	NUM 3308 3327	billions of dollars
+T112	GPE 3120 3131	Maharashtra
+T113	FAC 3255 3285	a state-of-the-art power plant
+T114	FAC 3463 3472	the plant
+T115	FAC 3499 3502	its
+T116	PER 3116 3141	The Maharashtra officials
+T117	PER 3153 3170	incompetent fools
+T118	PER 3184 3513	malicious fraudsters who conned an international comapny into building a state-of-the-art power plant for them at a cost of billions of dollars , and then refused payment , knowing the company has no legal recourse except lengthy international arbitration , and will likely sell the plant to them for a fraction of its true value
+T119	PER 3290 3294	them
+T120	PER 3476 3480	them
+T121	PER 3205 3208	who
+T122	ORG 3216 3240	an international comapny
+T123	ORG 3365 3376	the company
+T124	Transfer-Ownership 3458 3462	sell
+E5	Transfer-Ownership:T124 Artifact:T114 Seller:T123 Buyer:T120
+T125	PER 3516 3533	M. Ranjit Mathews
+T126	TIM 3534 3559	5 Nov 2004 13:51:59 -0800
+T127	ORG 3565 3570	Enron
+T128	GPE 3573 3578	India
+T129	PER 3610 3624	Patrick Powers
+T130	CTI 3579 3603	frisbieinst...@yahoo.com
+T131	PER 3675 3682	Indians
+T132	NUM 3646 3665	millions of dollars
+T133	GPE 3695 3700	India
+T134	PER 3737 3750	these Indians
+T135	PER 3707 3713	anyone
+T136	TIM 3857 3861	2000
+T137	GPE 3824 3853	Bolivia 's third-largest city
+T138	GPE 3811 3821	Cochabamba
+T139	GPE 3824 3831	Bolivia
+T140	GPE 3950 3969	the bankrupt nation
+T141	ORG 3904 3911	the IMF
+T142	ORG 3753 3774	Bechtel Corporation?s
+T143	Transfer-Money 3933 3937	loan
+E6	Transfer-Money:T143 Recipient:T140 Giver:T141
+T144	TIM 4223 4230	a month
+T145	TIM 4320 4325	month
+T146	NUM 4210 4222	$ 15 or more
+T147	NUM 4301 4315	less than $ 60
+T148	GPE 4201 4209	the city
+T149	GPE 4271 4325	a city where families live on less than $ 60 per month
+T150	GPE 4278 4283	where
+T151	ORG 4008 4070	a public company that had even managed to turn a slight profit
+T152	ORG 4025 4029	that
+T153	PER 4189 4209	the poor of the city
+T154	PER 4244 4249	their
+T155	PER 4284 4292	families
+T156	TIM 3972 4070	Within weeks after taking charge of a public company that had even managed to turn a slight profit
+T157	ORG 4138 4145	Bechtel
+T158	Transfer-Ownership 3991 3997	taking
+E7	Transfer-Ownership:T158 Artifact:T151 Buyer:T157
+T159	PER 4328 4336	The poor
+T160	PER 4367 4420	President Gonzalo Sanchez de Lozada?s security forces
+T161	PER 4367 4404	President Gonzalo Sanchez de Lozada?s
+T162	PER 4367 4376	President
+T163	Demonstrate 4337 4346	protested
+E8	Demonstrate:T163 Entity:T159
+T164	TIM 4628 4645	October 17 , 2003
+T165	GPE 4496 4503	Bolivia
+T166	GPE 4613 4624	the country
+T167	PER 4471 4482	de Lozada?s
+T168	PER 4585 4594	de Lozada
+T169	PER 4559 4582	multinational middlemen
+T170	Attack 4460 4470	opposition
+E9	Attack:T170 Time-Before:T164
+T171	End-Position 4595 4603	resigned
+E10	End-Position:T171 Person:T168 Place:T166 Time-Before:T164
+T172	Transport 4608 4612	fled
+E11	Transport:T172 Artifact:T168 Origin:T166 Time-Within:T164
+T173	GPE 4690 4700	Cochabamba
+T174	PER 4648 4658	The public
+T175	Transfer-Ownership 4672 4678	retook
+E12	Transfer-Ownership:T175 Place:T173 Buyer:T174
+T176	CRM 4744 4769	loss of potential profits
+T177	TIM 4793 4796	now
+T178	GPE 4732 4739	Bolivia
+T179	PER 4863 4871	the poor
+T180	ORG 4719 4726	Bechtel
+T181	ORG 4775 4777	it
+T182	ORG 4821 4823	it
+T183	GPE 4787 4792	India
+T184	Sue 4727 4731	sued
+E13	Sue:T184 Defendant:T178 Crime:T176 Plaintiff:T180
+T185	Sue 4781 4786	suing
+E14	Sue:T185 Defendant:T183 Plaintiff:T182
+T186	PER 4965 4975	the public
+T187	ORG 4988 4998	WORLD BANK
+T188	ORG 4978 5007	SECRETIVE WORLD BANK TRIBUNAL
+T189	PER 5013 5019	PUBLIC
+T190	ORG 5024 5029	MEDIA
+T191	ORG 5047 5054	BECHTEL
+T192	Sue 5055 5062	LAWSUIT
+E15	Sue:T192 Plaintiff:T191
+T193	TIM 5158 5167	last week
+T194	ORG 5175 5198	a secretive trade court
+T195	ORG 5214 5216	it
+T196	GPE 5325 5346	the people of Bolivia
+T197	GPE 5339 5346	Bolivia
+T198	PER 5233 5243	the public
+T199	ORG 5247 5252	media
+T200	ORG 5104 5127	The Bechtel Corporation
+T201	ORG 5308 5315	Bechtel
+T202	GPE 5086 5101	Washington , DC
+T203	Sue 5319 5324	suing
+E16	Sue:T203 Adjudicator:T194 Defendant:T196 Plaintiff:T201

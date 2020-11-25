@@ -1,0 +1,14 @@
+i	O	PER	Person	O
+was	O	O	O	O
+born	Be-Born	O	O	E
+four	O	TIM	Time	O
+years	O	TIM	Time	O
+too	O	TIM	Time	O
+late	O	TIM	Time	O
+to	O	TIM	Time	O
+have	O	TIM	Time	O
+slept	O	TIM	Time	O
+with	O	TIM	Time	O
+jfk	O	TIM	Time	O
+?	O	O	O	O
+

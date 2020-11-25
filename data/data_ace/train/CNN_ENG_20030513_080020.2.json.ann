@@ -1,0 +1,88 @@
+T1	TIM 38 57	2003-05-13 10:12:41
+T2	PER 75 78	our
+T3	GPE 87 102	the middle east
+T4	GPE 193 200	lebanon
+T5	PER 123 159	a massive assembly of shiite muslims
+T6	GPE 184 190	beirut
+T7	TIM 163 166	now
+T8	TIM 58 67	right now
+T9	GPE 317 321	iran
+T10	PER 251 255	they
+T11	GPE 269 274	there
+T12	PER 290 297	khatami
+T13	PER 300 321	the president of iran
+T14	Transport 279 286	arrival
+E1	Transport:T14 Artifact:T12 Destination:T11
+T15	PER 354 357	you
+T16	PER 480 489	the crowd
+T17	PER 330 332	he
+T18	PER 362 365	him
+T19	PER 377 380	his
+T20	PER 430 433	his
+T21	TIM 324 327	now
+T22	Transport 345 349	trip
+E2	Transport:T22 Artifact:T17 Time-Within:T21
+T23	PER 625 635	this crowd
+T24	GPE 516 522	beirut
+T25	GPE 544 548	here
+T26	PER 492 509	president khatami
+T27	PER 492 501	president
+T28	PER 594 596	he
+T29	PER 612 614	he
+T30	GPE 638 642	iran
+T31	GPE 666 674	the u.s.
+T32	ORG 701 710	hezbollah
+T33	TIM 643 646	now
+T34	GPE 751 758	lebanon
+T35	GPE 841 846	saudi
+T36	GPE 884 896	that country
+T37	PER 818 830	peter bergen
+T38	ORG 841 856	saudi hezbollah
+T39	ORG 857 896	an organization working in that country
+T40	PER 795 804	terrorist
+T41	ORG 713 722	hezbollah
+T42	ORG 726 813	an organization based in lebanon that has beenify dn dn been tied to terrorist activity
+T43	ORG 759 763	that
+T44	Attack 805 813	activity
+E3	Attack:T44 Attacker:T42
+T45	PER 1014 1028	president bush
+T46	PER 1014 1023	president
+T47	ORG 1071 1080	hezbollah
+T48	PER 942 949	khatami
+T49	PER 976 978	he
+T50	PER 1128 1130	we
+T51	GPE 1153 1160	mideast
+T52	GPE 1183 1195	palestinians
+T53	GPE 1200 1208	israelis
+T54	PER 1219 1221	we
+T55	GPE 1293 1303	the region
+T56	GPE 1466 1477	that region
+T57	GPE 1337 1342	there
+T58	PER 1320 1342	regional leaders there
+T59	PER 1396 1405	terrorist
+T60	PER 1238 1269	secretary of state colin powell
+T61	PER 1238 1256	secretary of state
+T62	GPE 1367 1383	the palestinians
+T63	GPE 1442 1447	their
+T64	ORG 1251 1256	state
+T65	Attack 1406 1416	activities
+E4	Attack:T65 Place:T56
+T66	Transport 1275 1284	traveling
+E5	Transport:T66 Artifact:T60 Destination:T55
+T67	PER 1480 1482	we
+T68	GPE 1568 1575	lebanon
+T69	GPE 1559 1575	beirut , lebanon
+T70	PER 1523 1540	president khatami
+T71	PER 1523 1532	president
+T72	Transport 1544 1549	visit
+E6	Transport:T72 Artifact:T70 Destination:T69 Destination:T68
+T73	PER 1590 1604	president bush
+T74	PER 1590 1599	president
+T75	TIM 1613 1618	today
+T76	GPE 1717 1729	saudi arabia
+T77	PER 1784 1786	us
+T78	PER 1759 1772	the president
+T79	GPE 1792 1804	indianapolis
+T80	PER 1732 1743	chris burns
+T81	PER 1775 1777	he
+T82	PER 1812 1817	chris

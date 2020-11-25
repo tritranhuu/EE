@@ -1,0 +1,63 @@
+T1	TIM 38 57	2003-06-04 10:40:48
+T2	ORG 93 109	an islamic court
+T3	PER 96 103	islamic
+T4	GPE 61 90	the african nation of nigeria
+T5	GPE 83 90	nigeria
+T6	GPE 65 72	african
+T7	PER 132 169	a woman condemned to death by stoning
+T8	SEN 153 169	death by stoning
+T9	Appeal 122 128	appeal
+E1	Appeal:T9 Place:T4 Adjudicator:T2 Plaintiff:T7
+T10	Sentence 140 149	condemned
+E2	Sentence:T10 Defendant:T7 Sentence:T8
+T11	ORG 187 189	it
+T12	ORG 172 181	the court
+T13	TIM 220 231	late august
+T14	Trial-Hearing 199 203	hear
+E3	Trial-Hearing:T14 Adjudicator:T11 Time-Within:T13
+T15	PER 234 265	the 31-year-old mother of three
+T16	PER 260 265	three
+T17	CRM 292 322	having sex outside of marriage
+T18	TIM 283 288	march
+T19	TIM 238 249	31-year-old
+T20	Convict 270 279	convicted
+E4	Convict:T20 Defendant:T15 Crime:T17 Time-Within:T18
+T21	PER 325 346	three other nigerians
+T22	SEN 357 371	stoning deaths
+T23	CRM 376 390	the same crime
+T24	Sentence 352 356	face
+E5	Sentence:T24 Defendant:T21 Sentence:T22 Crime:T23
+T25	PER 467 470	you
+T26	CRM 412 442	premarital or extramarital sex
+T27	Charge-Indict 397 408	prosecution
+E6	Charge-Indict:T27 Crime:T26
+T28	PER 485 512	our next guest this morning
+T29	GPE 552 560	pakistan
+T30	ORG 485 488	our
+T31	SEN 519 529	100 lashes
+T32	TIM 500 512	this morning
+T33	CRM 534 548	premarital sex
+T34	Sentence 513 518	faced
+E7	Sentence:T34 Defendant:T28 Place:T29 Sentence:T31 Crime:T33
+T35	PER 563 566	she
+T36	PER 580 592	a journalist
+T37	GPE 571 576	there
+T38	TIM 612 616	9/11
+T39	Attack 617 624	attacks
+E8	Attack:T39 Time-Within:T38
+T40	PER 649 652	her
+T41	PER 627 630	she
+T42	PER 727 760	a traveling reporter now on leave
+T43	PER 782 785	her
+T44	ORG 771 773	us
+T45	TIM 748 751	now
+T46	PER 800 803	you
+T47	ORG 837 839	us
+T48	PER 845 846	i
+T49	PER 863 866	you
+T50	PER 871 874	you
+T51	SEN 901 911	100 lashes
+T52	Sentence 889 897	sentence
+E9	Sentence:T52 Defendant:T50 Sentence:T51
+T53	Sentence 931 940	sentenced
+E10	Sentence:T53 Defendant:T50
