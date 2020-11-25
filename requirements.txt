@@ -1,0 +1,5 @@
+transformers
+fastBPE
+fairseq
+pytorch-crf
+vncorenlp

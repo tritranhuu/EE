@@ -20,7 +20,7 @@ def get_configs(corpus, device):
 
     char_cnn = {
         "use_char_emb": True,
-        "char_input_dim": len(corpus.char_field.vocab),
+        "char_input_dim": 89,
         "char_emb_dim": 37,
         "char_emb_dropout": 0.25,
         "char_cnn_filter_num": 4,
@@ -110,13 +110,13 @@ def get_configs_arguments(corpus, device):
     }
     event_emb = {
         "event_emb_size":len(corpus.event_field.vocab),
-        "event_emb_dim":25,
+        "event_emb_dim":50,
         "event_emb_dropout":0.25
     }
     cnn_trig = {
         "model_arch": "cnn_trig",
         "cnn_out_channel": 100,
-        "cnn_kernels": [3,4,5],
+        "cnn_kernels": [2,3,4,5],
         "cnn_dropout": 0.25,
         "pos_emb_size": 200,
         "pos_emb_dim": 25
@@ -131,9 +131,9 @@ def get_configs_arguments(corpus, device):
         # "bilstm+w2v": {**base, **w2v, **event_emb},
         # "bilstm+w2v+charcnn": {**base, **w2v, **char_cnn, **event_emb},
         # "bilstm+w2v+charcnn+entity": {**base, **w2v, **char_cnn, **entity_emb, **event_emb}
-        "cnn": {**base, **cnn_trig, **entity_emb, **event_emb,**char_cnn,},
-        "cnn+w2v+entity": {**base, **cnn_trig, **w2v, **entity_emb, **event_emb,**char_cnn,},
-        # "cnn+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn, **event_emb},
-        # "cnn+w2v+charcnn+entity": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
+        "cnn": {**base, **cnn_trig, **event_emb},
+        "cnn+w2v": {**base, **cnn_trig, **w2v, **event_emb},
+        "cnn+w2v+charcnn": {**base, **cnn_trig, **w2v, **char_cnn, **event_emb},
+        "cnn+w2v+charcnn+entity": {**base, **cnn_trig, **w2v, **char_cnn, **entity_emb, **event_emb}
     }
     return configs

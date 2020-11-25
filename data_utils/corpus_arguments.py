@@ -38,7 +38,7 @@ class CorpusArgument(object):
     
     if args.wv_file:
         print("start loading embedding")
-        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=False)
+        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=True)
         print("done loading embedding")
         self.embedding_dim = self.wv_model.vector_size
         word_freq = {word: self.wv_model.wv.vocab[word].count for word in self.wv_model.wv.vocab}

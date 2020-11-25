@@ -16,16 +16,16 @@ class Trainer(object):
 
     def __init__(self, model_event, model_arg, data, optimizer_cls, loss_fn_cls, device):
         self.device = device
+
         self.model_event = model_event.to(self.device)
         self.model_arg = model_arg.to(self.device)
 
         self.data = data
-        self.optimizer = optimizer_cls(model.parameters())
+        # self.optimizer = optimizer_cls(model.parameters())
         self.loss_fn = loss_fn_cls(ignore_index=self.data.argument_pad_idx)
 
     def get_trigger_pos(self, event_matrix):
         x = event_matrix.argmax(dim=2).permute(1, 0)
-        # x = event_matrix.permute(1,0)
         x = [(t>1).nonzero().reshape(-1) for t in x]
         s = []
         for i in range(len(x)):
@@ -57,7 +57,6 @@ class Trainer(object):
               i+=(j-1)
             i+=1
         pos = torch.cat(pos)
-        # print(pos.shape, pos, s, len(s))
         return pos[:len(s)]
 
     def evaluate(self, iterator):
@@ -67,7 +66,7 @@ class Trainer(object):
         pred_tags_epoch = []
         idx2tag = self.data.argument_field.vocab.itos
         self.model_event.eval()
-        self.model_srg.eval()
+        self.model_arg.eval()
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
@@ -78,9 +77,12 @@ class Trainer(object):
                 entities = batch.entity.to(self.device)
                 events = batch.event.to(self.device)
                 true_tags = batch.argument.to(self.device)
-                pred_event_tags, _ = self.model_event(words, chars)
-                pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
-                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags)
+                pred_event_tags, _ = self.model_event(words, chars, entities)
+                
+                trigger_indexes = self.get_trigger_pos(pred_event_tags)
+
+                # pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
+                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags.argmax(dim=2), trigger_indexes)
 
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)
@@ -96,7 +98,7 @@ class Trainer(object):
         return epoch_loss / len(self.data.train_iter), epoch_score, epoch_p1, epoch_r1
 
     def test(self):
-        train, train_f1, train_p1, train_r1 = self.evaluate(self.data.val_iter)
+        train_loss, train_f1, train_p1, train_r1 = self.evaluate(self.data.train_iter)
         print(f"\tTrn Loss: {train_loss:.3f} | Trn P1: {train_p1 * 100:.2f}%  R1: {train_r1 * 100:.2f}% F1: {train_f1 * 100:.2f}%")
         val_loss, val_f1, val_p1, val_r1 = self.evaluate(self.data.val_iter)
         print(f"\tVal Loss: {val_loss:.3f} | Val P1: {val_p1 * 100:.2f}%  R1: {val_r1 * 100:.2f}% F1: {val_f1 * 100:.2f}%")
