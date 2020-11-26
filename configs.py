@@ -9,7 +9,7 @@ def get_configs(corpus, device):
         "device": device
     }
     w2v = {
-        "word_emb_pretrained": corpus.word_field.vocab.vectors 
+        "word_emb_pretrained": None 
     }
 
     entity_emb = {
