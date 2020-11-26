@@ -77,12 +77,20 @@ class Trainer(object):
                 entities = batch.entity.to(self.device)
                 events = batch.event.to(self.device)
                 true_tags = batch.argument.to(self.device)
+<<<<<<< HEAD
                 pred_event_tags, _ = self.model_event(words, chars, entities)
+=======
+                pred_event_tags, _ = self.model_event(words, chars)
+>>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
                 
                 trigger_indexes = self.get_trigger_pos(pred_event_tags)
 
                 # pred_event_tags = pred_event_tags.view(-1, pred_event_tags.shape[-1])
+<<<<<<< HEAD
                 pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags.argmax(dim=2), trigger_indexes)
+=======
+                pred_tags, _ = self.model_arg(words, chars, entities, pred_event_tags.argmax(dim=2), trigger_index)
+>>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
 
                 pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
                 true_tags = true_tags.view(-1)

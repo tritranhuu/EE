@@ -9,7 +9,11 @@ def get_configs(corpus, device):
         "device": device
     }
     w2v = {
+<<<<<<< HEAD
         "word_emb_pretrained": None 
+=======
+        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv!=None else None
+>>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
     }
 
     entity_emb = {
@@ -101,7 +105,7 @@ def get_configs_arguments(corpus, device):
         "char_cnn_dropout": 0.25
     }
     w2v = {
-        "word_emb_pretrained": corpus.word_field.vocab.vectors
+        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv!=None else None
     }
     entity_emb = {
         "entity_emb_size":len(corpus.entity_field.vocab),
