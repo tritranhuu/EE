@@ -1,0 +1,228 @@
+T1	TIM 35 55	2005-01-30T10 :06:00
+T2	PER 91 108	gould0...@aol.com
+T3	TIM 109 135	30 Jan 2005 10:06:08 -0800
+T4	ORG 141 151	Republican
+T5	GPE 196 207	the country
+T6	GPE 210 212	we
+T7	GPE 171 207	Here on the left edge of the country
+T8	LOC 179 207	the left edge of the country
+T9	Elect 242 250	election
+E1	Elect:T9
+T10	PER 306 368	one of the three major forces vying for control of the country
+T11	GPE 266 270	Iraq
+T12	GPE 357 368	the country
+T13	PER 313 368	the three major forces vying for control of the country
+T14	Elect 276 284	election
+E2	Elect:T14 Place:T11
+T15	PER 380 392	A few people
+T16	PER 417 425	somebody
+T17	Elect 411 416	elect
+E3	Elect:T17 Person:T16 Entity:T15
+T18	GPE 498 512	Imperial Japan
+T19	GPE 518 534	Washington State
+T20	GPE 537 540	our
+T21	JOB 541 549	governor
+T22	TIM 579 593	months to come
+T23	PER 687 711	the democratic candidate
+T24	ORG 691 701	democratic
+T25	GPE 666 671	state
+T26	Elect 712 715	won
+E4	Elect:T26 Person:T23 Place:T25
+T27	NUM 831 865	a few ten thousands of one percent
+T28	PER 948 956	somebody
+T29	ORG 1021 1030	the demos
+T30	GPE 1397 1413	Washington State
+T31	JOB 1373 1381	governor
+T32	LOC 1083 1095	some regions
+T33	PER 1153 1185	large portions of the population
+T34	PER 1115 1121	people
+T35	GPE 1171 1185	the population
+T36	TIM 1290 1315	a great day for democracy
+T37	PER 1033 1315	The same group of people who have said `` even if some regions are too unsafe for people to go to the polls and even if large portions of the population will not recognize the legitimacy of the outcome , some election is better than no election , and it 's a great day for democracy
+T38	PER 1051 1315	people who have said `` even if some regions are too unsafe for people to go to the polls and even if large portions of the population will not recognize the legitimacy of the outcome , some election is better than no election , and it 's a great day for democracy
+T39	PER 1058 1061	who
+T40	Elect 1385 1393	election
+E5	Elect:T40 Place:T30 Position:T31
+T41	Elect 1269 1277	election
+E6	Elect:T41
+T42	Sue 1335 1340	suing
+E7	Sue:T42 Plaintiff:T37
+T43	Elect 1242 1250	election
+E8	Elect:T43
+T44	ORG 1518 1523	court
+T45	PER 1474 1478	They
+T46	PER 1506 1510	they
+T47	PER 1597 1601	they
+T48	GPE 1808 1824	Washington State
+T49	GPE 1748 1750	we
+T50	NUM 1875 1892	0.0000001 percent
+T51	GPE 1737 1741	Iraq
+T52	PER 1855 1860	human
+T53	Elect 1796 1804	election
+E9	Elect:T53 Place:T48
+T54	Elect 1704 1712	election
+E10	Elect:T54
+T55	GPE 1898 1914	Washington State
+T56	Elect 1921 1929	election
+E11	Elect:T56 Place:T55
+T57	ORG 2087 2092	their
+T58	ORG 2008 2023	the Republicans
+T59	GPE 2047 2055	WA State
+T60	PER 2087 2102	their candidate
+T61	Elect 2056 2064	election
+E12	Elect:T61 Place:T59
+T62	PER 2256 2268	Bert Robbins
+T63	TIM 2269 2301	Sun , 30 Jan 2005 13:52:34 -0500
+T64	ORG 2307 2317	Republican
+T65	GPE 2337 2339	We
+T66	GPE 2350 2359	our state
+T67	GPE 2350 2353	our
+T68	PER 2407 2410	you
+T69	PER 2427 2430	you
+T70	PER 2443 2446	you
+T71	FAC 2488 2499	a warehouse
+T72	PER 2608 2650	one of three protected classes within Iraq
+T73	PER 2615 2650	three protected classes within Iraq
+T74	GPE 2646 2650	Iraq
+T75	PER 2566 2600	The ones that are `` opting '' out
+T76	PER 2575 2579	that
+T77	PER 2653 2674	The protected classes
+T78	PER 2679 2686	Kurd 's
+T79	PER 2689 2697	Sunni 's
+T80	PER 2702 2707	Women
+T81	PER 2748 2758	both sides
+T82	GPE 2820 2836	Washington State
+T83	ORG 2925 2938	the Democrats
+T84	GPE 2952 3020	King County that had `` counted '' more votes than registered voters
+T85	GPE 2964 2968	that
+T86	PER 3003 3020	registered voters
+T87	PER 3176 3181	Snafu
+T88	TIM 3182 3214	Sun , 30 Jan 2005 15:26:13 -0800
+T89	ORG 3225 3235	Republican
+T90	PER 3329 3332	you
+T91	PER 3255 3256	I
+T92	PER 3260 3270	a Democrat
+T93	PER 3273 3282	a liberal
+T94	PER 3344 3346	me
+T95	GPE 3433 3447	a dictatorship
+T96	GPE 3451 3462	a democracy
+T97	GPE 3411 3427	their government
+T98	PER 3373 3379	people
+T99	PER 3411 3416	their
+T100	PER 3349 3350	I
+T101	PER 3465 3473	Everyone
+T102	PER 3524 3529	their
+T103	LOC 3476 3486	everywhere
+T104	GPE 3524 3540	their government
+T105	Elect 3518 3523	elect
+E13	Elect:T105 Place:T103 Entity:T104
+T106	Elect 3565 3573	election
+E14	Elect:T106
+T107	GPE 3702 3708	the US
+T108	GPE 3732 3749	a foreign country
+T109	GPE 3758 3765	another
+T110	PER 3799 3818	a reasonable person
+T111	Elect 3777 3786	elections
+E15	Elect:T111 Place:T109
+T112	Elect 3848 3856	election
+E16	Elect:T112
+T113	Attack 3750 3757	invaded
+E17	Attack:T113 Attacker:T108 Place:T109
+T114	PER 3915 3946	the German occupiers in Holland
+T115	GPE 3919 3925	German
+T116	GPE 3939 3946	Holland
+T117	GPE 3974 3979	Dutch
+T118	PER 3974 3990	Dutch candidates
+T119	TIM 3904 3908	1942
+T120	Elect 3959 3968	elections
+E18	Elect:T120 Place:T116 Time-Within:T119
+T121	PER 4069 4083	the candidates
+T122	PER 4065 4088	who the candidates were
+T123	PER 4011 4021	candidates
+T124	ORG 4028 4045	political parties
+T125	PER 4049 4052	you
+T126	PER 4103 4106	you
+T127	GPE 4166 4172	the US
+T128	LOC 4237 4246	the world
+T129	PER 4143 4146	you
+T130	PER 4149 4155	John H
+T131	PER 4215 4218	you
+T132	PER 4225 4246	the rest of the world
+T133	GPE 4201 4205	Iraq
+T134	Elect 4188 4197	elections
+E19	Elect:T134 Place:T133
+T135	PER 4298 4303	JohnH
+T136	TIM 4304 4336	Sun , 30 Jan 2005 20:10:39 -0500
+T137	ORG 4347 4357	Republican
+T138	PER 4418 4423	Snafu
+T139	TIM 4380 4412	Sun , 30 Jan 2005 15:26:13 -0800
+T140	PER 4554 4556	me
+T141	PER 4430 4439	Lou Dobbs
+T142	ORG 4445 4448	CNN
+T143	TIM 4454 4466	6:10 Eastern
+T144	Elect 4487 4495	election
+E20	Elect:T144
+T145	PER 4568 4609	Chris -LRB- Kerry 's my man -RRB- Mathews
+T146	PER 4655 4667	Our soldiers
+T147	GPE 4655 4658	Our
+T148	PER 4711 4715	they
+T149	LOC 4748 4759	most places
+T150	PER 4811 4825	Brian Williams
+T151	PER 4873 4875	he
+T152	GPE 4896 4898	US
+T153	PER 4847 4852	Chris
+T154	PER 4950 4955	Brian
+T155	PER 4920 4923	You
+T156	PER 4998 5001	you
+T157	PER 5029 5032	you
+T158	GPE 5038 5043	there
+T159	PER 5084 5104	people who are there
+T160	PER 5091 5094	who
+T161	GPE 5099 5104	there
+T162	PER 5110 5113	you
+T163	PER 5129 5132	you
+T164	PER 5178 5190	Bert Robbins
+T165	TIM 5191 5223	Sun , 30 Jan 2005 20:26:26 -0500
+T166	ORG 5234 5244	Republican
+T167	ORG 5320 5338	a legislative body
+T168	PER 5264 5267	You
+T169	GPE 5367 5371	Iraq
+T170	Elect 5301 5309	election
+E21	Elect:T170 Place:T169
+T171	Elect 5383 5391	election
+E22	Elect:T171
+T172	GPE 5447 5458	our country
+T173	GPE 5447 5450	our
+T174	PER 5481 5486	JohnH
+T175	TIM 5487 5519	Mon , 31 Jan 2005 08:38:01 -0500
+T176	ORG 5530 5540	Republican
+T177	TIM 5563 5589	Sun , 30 Jan 2005 21:38:22
+T178	PER 5604 5606	my
+T179	PER 5627 5642	The US soldiers
+T180	GPE 5631 5633	US
+T181	PER 5726 5730	They
+T182	ORG 5788 5813	the Iraqi police and Army
+T183	GPE 5792 5797	Iraqi
+T184	TIM 5965 5969	5 am
+T185	PER 5848 5849	I
+T186	PER 5981 5993	a real dummy
+T187	PER 6034 6045	US soldiers
+T188	GPE 6034 6036	US
+T189	PER 6004 6005	I
+T190	PER 6080 6103	a lot of Iraqi soldiers
+T191	PER 6066 6067	I
+T192	GPE 6089 6094	Iraqi
+T193	GPE 6121 6123	US
+T194	PER 6173 6177	they
+T195	WEA 6149 6170	the different weapons
+T196	PER 6236 6251	the US soldiers
+T197	GPE 6240 6242	US
+T198	PER 6228 6251	some of the US soldiers
+T199	WEA 6266 6271	AK 's
+T200	PER 6213 6214	I
+T201	PER 6287 6293	John H
+T202	VEH 6297 6331	the ` PocoLoco ' out of Deale , MD
+T203	GPE 6321 6331	Deale , MD
+T204	GPE 6329 6331	MD
+T205	LOC 6337 6365	the beautiful Chesapeake Bay
+T206	PER 6461 6475	Rene Descartes

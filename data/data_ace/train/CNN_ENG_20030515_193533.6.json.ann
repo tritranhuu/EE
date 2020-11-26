@@ -1,0 +1,51 @@
+T1	TIM 38 57	2003-05-15 21:01:42
+T2	ORG 140 151	white house
+T3	PER 174 177	jfk
+T4	PER 83 102	a 60-year-old woman
+T5	PER 116 119	she
+T6	PER 124 177	the 19-year-old white house intern who slept with jfk
+T7	PER 159 162	who
+T8	TIM 61 66	today
+T9	TIM 128 139	19-year-old
+T10	TIM 85 96	60-year-old
+T11	ORG 189 199	the papers
+T12	PER 180 183	she
+T13	PER 205 206	i
+T14	PER 210 218	the mimi
+T15	PER 224 225	i
+T16	PER 294 296	my
+T17	PER 272 280	the mimi
+T18	PER 310 311	i
+T19	PER 344 345	i
+T20	PER 366 372	myself
+T21	PER 323 326	you
+T22	PER 391 392	i
+T23	PER 408 411	jfk
+T24	PER 414 415	i
+T25	PER 419 431	the anderson
+T26	PER 434 435	i
+T27	PER 484 487	jfk
+T28	TIM 445 487	four years too late to have slept with jfk
+T29	Be-Born 440 444	born
+E1	Be-Born:T29 Person:T26 Time-Within:T28
+T30	PER 577 580	you
+T31	PER 597 600	jfk
+T32	PER 609 611	me
+T33	PER 603 606	who
+T34	PER 638 641	you
+T35	PER 619 620	i
+T36	PER 669 672	you
+T37	PER 683 684	i
+T38	PER 819 826	the jfk
+T39	GPE 746 749	our
+T40	GPE 746 774	our camelot obsessed society
+T41	GPE 778 788	each of us
+T42	GPE 792 795	our
+T43	GPE 792 799	our own
+T44	GPE 839 841	we
+T45	GPE 856 865	ourselves
+T46	GPE 886 894	a nation
+T47	TIM 944 951	tonight
+T48	ORG 976 978	us
+T49	TIM 979 986	tonight
+T50	ORG 999 1002	cnn

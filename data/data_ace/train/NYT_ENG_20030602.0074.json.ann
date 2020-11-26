@@ -1,0 +1,78 @@
+T1	TIM 34 42	20030602
+T2	GPE 76 98	EAST RUTHERFORD , N.J.
+T3	GPE 94 98	N.J.
+T4	ORG 187 209	the Philadelphia 76ers
+T5	ORG 285 289	Nets
+T6	TIM 163 169	Monday
+T7	PER 300 303	who
+T8	PER 283 356	a Nets assistant who interviewed for that same position earlier this week
+T9	PER 268 280	Eddie Jordan
+T10	PER 99 142	Portland Trail Blazers coach Maurice Cheeks
+T11	PER 99 127	Portland Trail Blazers coach
+T12	TIM 339 356	earlier this week
+T13	ORG 99 121	Portland Trail Blazers
+T14	ORG 409 421	Philadelphia
+T15	ORG 377 383	Sixers
+T16	JOB 487 492	coach
+T17	JOB 522 554	the coach of the Detroit Pistons
+T18	PER 409 554	Philadelphia 's top choice to replace Larry Brown , who resigned last week as coach and was introduced Monday as the coach of the Detroit Pistons
+T19	PER 359 365	Cheeks
+T20	PER 368 388	a former Sixers star
+T21	PER 447 554	Larry Brown , who resigned last week as coach and was introduced Monday as the coach of the Detroit Pistons
+T22	PER 461 464	who
+T23	PER 522 554	the coach of the Detroit Pistons
+T24	PER 487 492	coach
+T25	ORG 535 554	the Detroit Pistons
+T26	TIM 512 518	Monday
+T27	TIM 370 376	former
+T28	TIM 474 483	last week
+T29	Start-Position 501 511	introduced
+E1	Start-Position:T29 Person:T22 Position:T17 Time-Starting:T26 Entity:T25
+T30	End-Position 465 473	resigned
+E2	End-Position:T30 Person:T21 Entity:T14 Position:T16 Time-Within:T28
+T31	ORG 617 627	the Sixers
+T32	ORG 645 651	league
+T33	PER 579 585	Cheeks
+T34	PER 643 688	a league source familiar with the discussions
+T35	ORG 557 565	Portland
+T36	JOB 754 765	their coach
+T37	PER 740 750	Paul Silas
+T38	PER 754 765	their coach
+T39	ORG 691 714	The Cleveland Cavaliers
+T40	ORG 754 759	their
+T41	TIM 766 772	Monday
+T42	Start-Position 729 739	introduced
+E3	Start-Position:T42 Entity:T39 Person:T37 Position:T36 Time-Starting:T41
+T43	ORG 791 801	the Sixers
+T44	PER 827 858	a person close to the situation
+T45	PER 775 781	Jordan
+T46	TIM 805 811	Sunday
+T47	Meet 782 785	met
+E4	Meet:T47 Entity:T45 Entity:T43 Time-Within:T46
+T48	PER 861 867	Jordan
+T49	ORG 999 1011	Philadelphia
+T50	PER 916 922	Jordan
+T51	PER 946 979	a candidate for a number of spots
+T52	PER 1032 1035	him
+T53	ORG 987 994	Toronto
+T54	ORG 1170 1178	the Nets
+T55	PER 1038 1043	Brown
+T56	ORG 1055 1178	a team that won an Eastern Conference-leading 50 games and advajcuf to the conference finals before being swept by the Nets
+T57	ORG 1062 1066	that
+T58	ORG 1130 1140	conference
+T59	ORG 1074 1100	Eastern Conference-leading
+T60	Start-Position 1044 1054	takes over
+E5	Start-Position:T60 Person:T55 Entity:T56
+T61	ORG 1226 1229	NBA
+T62	ORG 1181 1188	Detroit
+T63	TIM 1217 1225	upcoming
+T64	TIM 1302 1308	future
+T65	PER 1312 1334	the high school phenom
+T66	PER 1312 1347	the high school phenom LeBron James
+T67	PER 1238 1243	Silas
+T68	ORG 1259 1347	a team that lost 65 games and will pin its future on the high school phenom LeBron James
+T69	ORG 1266 1270	that
+T70	ORG 1298 1301	its
+T71	ORG 1316 1327	high school
+T72	Start-Position 1247 1258	taking over
+E6	Start-Position:T72 Person:T67 Entity:T68

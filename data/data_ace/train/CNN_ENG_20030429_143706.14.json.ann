@@ -1,0 +1,68 @@
+T1	TIM 39 58	2003-04-29 16:01:23
+T2	PER 101 104	our
+T3	TIM 59 62	now
+T4	FAC 157 165	his home
+T5	PER 168 189	many of his relatives
+T6	PER 176 189	his relatives
+T7	GPE 206 213	baghdad
+T8	PER 122 131	ali abbas
+T9	PER 132 135	who
+T10	PER 146 149	his
+T11	PER 157 160	his
+T12	PER 176 179	his
+T13	Injure 136 140	lost
+E1	Injure:T13 Victim:T8 Place:T7
+T14	Attack 195 202	bombing
+E2	Attack:T14
+T15	PER 219 222	you
+T16	PER 239 242	his
+T17	ORG 316 319	itn
+T18	ORG 338 340	us
+T19	PER 300 312	mark webster
+T20	PER 343 351	reporter
+T21	PER 380 383	his
+T22	FAC 424 432	hospital
+T23	PER 437 440	ali
+T24	TIM 411 420	two weeks
+T25	GPE 571 578	baghdad
+T26	PER 542 561	the pain-racked boy
+T27	PER 562 565	who
+T28	PER 496 499	his
+T29	PER 518 521	his
+T30	Transport 566 570	left
+E3	Transport:T30 Artifact:T26 Origin:T25
+T31	PER 607 618	his doctors
+T32	PER 621 623	we
+T33	PER 607 610	his
+T34	PER 632 635	him
+T35	Meet 624 631	visited
+E4	Meet:T35 Entity:T32 Entity:T34
+T36	PER 665 669	they
+T37	PER 684 686	he
+T38	PER 827 829	we
+T39	PER 716 717	i
+T40	PER 800 803	you
+T41	GPE 814 820	kuwait
+T42	PER 727 729	he
+T43	PER 787 789	he
+T44	PER 835 838	him
+T45	PER 909 912	his
+T46	TIM 764 780	three weeks time
+T47	TIM 948 954	future
+T48	Transport 735 739	come
+E5	Transport:T48 Artifact:T42 Destination:T41 Time-At-End:T46
+T49	PER 962 970	reporter
+T50	PER 1011 1013	we
+T51	PER 979 982	ali
+T52	PER 986 1008	an ardent football fan
+T53	PER 1019 1022	him
+T54	ORG 1025 1042	manchester united
+T55	PER 1069 1084	all the players
+T56	PER 1161 1169	everyone
+T57	PER 1109 1112	his
+T58	PER 1175 1178	his
+T59	PER 1109 1128	his favorite player
+T60	PER 1131 1144	david beckham
+T61	PER 1147 1150	who
+T62	PER 1196 1199	you
+T63	PER 1212 1220	reporter

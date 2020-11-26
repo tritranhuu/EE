@@ -1,0 +1,25 @@
+he	O	PER	Attacker	O
+pleaded	O	O	O	O
+not	O	O	O	O
+guilty	O	O	O	O
+to	O	O	O	O
+bombing	Attack	CRM	O	E
+a	O	FAC	Target	O
+birmingham	O	GPE	Target	O
+women	O	PER	Target	O
+'s	O	FAC	Target	O
+clinic	O	FAC	Target	O
+in	O	O	O	O
+1998	O	TIM	Time	O
+.	O	O	O	O
+
+he	O	PER	Attacker	O
+is	O	O	O	O
+also	O	O	O	O
+suspected	O	O	O	O
+in	O	O	O	O
+three	O	O	O	O
+atlanta-area	O	GPE	Place	O
+bombings	Attack	O	O	E
+.	O	O	O	O
+

@@ -1,0 +1,19 @@
+T1	TIM 39 58	2003-05-28 17:28:10
+T2	PER 135 149	saddam hussein
+T3	GPE 201 220	the american public
+T4	GPE 205 213	american
+T5	GPE 230 239	europeans
+T6	PER 59 73	president bush
+T7	PER 59 68	president
+T8	PER 157 160	his
+T9	PER 270 283	the president
+T10	GPE 82 89	the g-8
+T11	TIM 110 116	friday
+T12	GPE 100 106	france
+T13	Meet 90 96	summit
+E1	Meet:T13 Place:T12 Entity:T10 Time-Within:T11
+T14	Transport 74 78	head
+E2	Transport:T14 Artifact:T6 Destination:T12 Time-Within:T11
+T15	ORG 286 289	our
+T16	PER 286 329	our senior political analyst bill schneider
+T17	PER 286 314	our senior political analyst

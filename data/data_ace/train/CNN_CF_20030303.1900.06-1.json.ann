@@ -1,0 +1,91 @@
+T1	TIM 34 61	2003-03-03T19 :00:00 -05:00
+T2	PER 135 140	NOVAK
+T3	PER 172 183	the viewers
+T4	PER 197 199	us
+T5	PER 292 296	Paul
+T6	GPE 236 246	California
+T7	PER 307 309	we
+T8	PER 202 246	Joshua Hosford of Newport Beach , California
+T9	PER 299 300	I
+T10	GPE 250 254	that
+T11	GPE 220 246	Newport Beach , California
+T12	PER 348 370	Khalid Shaikh Mohammed
+T13	PER 391 398	someone
+T14	PER 436 437	I
+T15	Phone-Write 457 464	talking
+E1	Phone-Write:T15 Entity:T14
+T16	PER 507 513	Joshua
+T17	PER 516 519	you
+T18	PER 568 569	I
+T19	PER 592 598	BEGALA
+T20	GPE 616 626	our allies
+T21	GPE 655 657	us
+T22	GPE 616 619	our
+T23	PER 631 634	Mr.
+T24	PER 631 643	Mr. Mohammed
+T25	GPE 660 662	We
+T26	GPE 668 674	allies
+T27	GPE 704 722	every ally we have
+T28	GPE 715 717	we
+T29	PER 681 685	Bush
+T30	GPE 739 759	Baden , Pennsylvania
+T31	GPE 747 759	Pennsylvania
+T32	ORG 796 804	al Qaeda
+T33	PER 792 829	the al Qaeda chief operations officer
+T34	PER 772 776	Bush
+T35	PER 725 759	Dan Snyder of Baden , Pennsylvania
+T36	Attack 784 791	torture
+E2	Attack:T36 Attacker:T33 Target:T34
+T37	TIM 870 879	two years
+T38	GPE 856 865	Americans
+T39	PER 832 836	Bush
+T40	PER 893 901	this guy
+T41	PER 955 960	NOVAK
+T42	PER 965 966	I
+T43	PER 985 986	I
+T44	ORG 1015 1027	the Redskins
+T45	PER 975 977	he
+T46	PER 995 997	he
+T47	GPE 1081 1094	New York City
+T48	PER 1065 1094	Frank Mastro of New York City
+T49	PER 1100 1109	Mr. Novak
+T50	PER 1100 1103	Mr.
+T51	PER 1112 1113	I
+T52	PER 1252 1256	they
+T53	PER 1192 1202	Mr. Begala
+T54	PER 1192 1195	Mr.
+T55	PER 1207 1219	Mr. Carville
+T56	PER 1207 1210	Mr.
+T57	Transfer-Money 1225 1231	donate
+E3	Transfer-Money:T57 Giver:T53 Giver:T55
+T58	PER 1352 1355	who
+T59	PER 1288 1322	all the rich millionaire Democrats
+T60	PER 1301 1312	millionaire
+T61	PER 1274 1275	I
+T62	PER 1343 1349	Begala
+T63	PER 1330 1338	Carville
+T64	PER 1395 1401	BEGALA
+T65	ORG 1418 1431	the Democrats
+T66	PER 1402 1403	I
+T67	Transfer-Money 1408 1414	donate
+E4	Transfer-Money:T67 Giver:T66 Recipient:T65
+T68	PER 1459 1468	everybody
+T69	ORG 1434 1438	They
+T70	PER 1450 1454	Bush
+T71	PER 1513 1549	David Horn of Long Island , New York
+T72	GPE 1527 1549	Long Island , New York
+T73	GPE 1541 1549	New York
+T74	PER 1572 1576	Bush
+T75	PER 1581 1583	he
+T76	GPE 1627 1630	our
+T77	GPE 1672 1712	other countries ' democratic governments
+T78	PER 1627 1640	our president
+T79	PER 1603 1605	He
+T80	PER 1647 1649	he
+T81	PER 1718 1721	his
+T82	PER 1733 1736	his
+T83	Sue 1613 1616	sue
+E5	Sue:T83 Plaintiff:T80
+T84	TIM 1777 1784	1930 's
+T85	GPE 1777 1792	1930 's Chicago
+T86	PER 1756 1758	he

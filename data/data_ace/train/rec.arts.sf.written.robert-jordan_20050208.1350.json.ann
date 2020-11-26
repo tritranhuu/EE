@@ -1,0 +1,164 @@
+T1	TIM 59 79	2005-02-08T13 :50:00
+T2	PER 103 115	Mark Erikson
+T3	TIM 116 141	8 Feb 2005 10:50:23 -0800
+T4	Release-Parole 158 164	Parole
+E1	Release-Parole:T4
+T5	PER 200 201	I
+T6	PER 265 267	my
+T7	GPE 251 258	America
+T8	GPE 289 297	American
+T9	FAC 218 222	jail
+T10	FAC 298 302	jail
+T11	PER 312 313	I
+T12	PER 378 379	I
+T13	Release-Parole 413 419	parole
+E2	Release-Parole:T13
+T14	PER 425 428	you
+T15	Release-Parole 440 446	parole
+E3	Release-Parole:T15 Person:T14
+T16	PER 534 537	you
+T17	PER 548 551	you
+T18	PER 576 579	you
+T19	PER 630 634	your
+T20	FAC 538 542	home
+T21	PER 524 527	who
+T22	PER 630 649	your parole officer
+T23	TIM 650 662	the next day
+T24	FAC 563 567	jail
+T25	Transport 528 533	takes
+E4	Transport:T25 Artifact:T16 Agent:T21 Destination:T20
+T26	Release-Parole 552 559	get out
+E5	Release-Parole:T26 Person:T17
+T27	Release-Parole 635 641	parole
+E6	Release-Parole:T27 Person:T19
+T28	CRM 843 860	selling marijuana
+T29	TIM 912 923	three years
+T30	TIM 864 879	12-14 year olds
+T31	TIM 813 830	eighteen year old
+T32	GPE 733 738	state
+T33	PER 864 879	12-14 year olds
+T34	PER 810 830	an eighteen year old
+T35	PER 957 959	he
+T36	PER 754 755	I
+T37	PER 715 716	I
+T38	Arrest-Jail 891 899	put away
+E7	Arrest-Jail:T38 Person:T34 Crime:T28
+T39	Release-Parole 977 983	parole
+E8	Release-Parole:T39 Person:T35 Crime:T28
+T40	PER 1026 1038	Mark Erikson
+T41	PER 1039 1047	Vinny R.
+T42	TIM 1048 1080	Tue , 08 Feb 2005 14:22:50 -0500
+T43	Release-Parole 1102 1108	Parole
+E9	Release-Parole:T43
+T44	Release-Parole 1124 1130	parole
+E10	Release-Parole:T44
+T45	PER 1193 1196	you
+T46	PER 1244 1247	you
+T47	PER 1288 1291	you
+T48	PER 1339 1342	you
+T49	PER 1365 1369	your
+T50	PER 1428 1431	you
+T51	PER 1365 1384	your parole officer
+T52	PER 1410 1411	I
+T53	GPE 1263 1272	the state
+T54	GPE 1311 1328	the state gov ` t
+T55	PER 1418 1422	they
+T56	Release-Parole 1370 1376	parole
+E11	Release-Parole:T56 Person:T49
+T57	Transport 1257 1262	leave
+E12	Transport:T57 Origin:T53 Artifact:T45
+T58	Arrest-Jail 1301 1307	jailed
+E13	Arrest-Jail:T58 Agent:T54 Person:T47
+T59	PER 1465 1468	you
+T60	PER 1451 1452	I
+T61	PER 1554 1557	you
+T62	FAC 1577 1605	a specific ` halfway ' house
+T63	PER 1742 1746	your
+T64	PER 1700 1701	I
+T65	PER 1762 1763	I
+T66	Sentence 1747 1755	sentence
+E14	Sentence:T66 Defendant:T63
+T67	PER 1796 1799	you
+T68	PER 1830 1833	you
+T69	PER 1842 1845	you
+T70	PER 1809 1816	someone
+T71	PER 1869 1870	I
+T72	VEH 1862 1868	a taxi
+T73	Phone-Write 1804 1808	call
+E15	Phone-Write:T73 Entity:T67 Entity:T70
+T74	PER 1905 1910	judge
+T75	PER 1917 1921	jury
+T76	GPE 1888 1902	state-specific
+T77	CRM 1996 2019	selling drugs to minors
+T78	PER 1977 1978	I
+T79	PER 2035 2039	jury
+T80	PER 2013 2019	minors
+T81	Trial-Hearing 2040 2045	trial
+E16	Trial-Hearing:T81 Adjudicator:T79 Crime:T77
+T82	PER 2095 2109	the judge/jury
+T83	PER 2175 2188	the defendant
+T84	PER 2193 2201	Vinny R.
+T85	PER 2202 2213	Kate Nepveu
+T86	TIM 2214 2244	Wed , 09 Feb 2005 01:11:36 GMT
+T87	Release-Parole 2266 2272	Parole
+E17	Release-Parole:T87
+T88	GPE 2311 2319	New York
+T89	PER 2294 2296	my
+T90	PER 2322 2325	You
+T91	PER 2367 2370	you
+T92	FAC 2342 2361	a planned residence
+T93	PER 2407 2417	a relative
+T94	Release-Parole 2390 2396	parole
+E18	Release-Parole:T94 Person:T91
+T95	PER 2476 2480	your
+T96	Sentence 2481 2489	sentence
+E19	Sentence:T96 Defendant:T95
+T97	PER 2498 2501	You
+T98	PER 2556 2560	your
+T99	PER 2600 2604	your
+T100	FAC 2517 2523	prison
+T101	Arrest-Jail 2506 2513	go back
+E20	Arrest-Jail:T101 Person:T97
+T102	Sentence 2605 2613	sentence
+E21	Sentence:T102 Defendant:T99
+T103	Release-Parole 2561 2567	parole
+E22	Release-Parole:T103 Person:T98
+T104	Release-Parole 2625 2631	Parole
+E23	Release-Parole:T104
+T105	CTI 2707 2729	knep...@steelypips.org
+T106	PER 2686 2697	Kate Nepveu
+T107	PER 2748 2759	Kate Nepveu
+T108	TIM 2760 2790	Thu , 10 Feb 2005 02:53:42 GMT
+T109	Release-Parole 2812 2818	Parole
+E24	Release-Parole:T109
+T110	GPE 2844 2852	New York
+T111	PER 3082 3093	such inmate
+T112	PER 3108 3110	he
+T113	PER 3180 3183	his
+T114	PER 3285 3288	his
+T115	Release-Parole 3184 3191	release
+E25	Release-Parole:T115 Person:T113
+T116	Release-Parole 3097 3105	released
+E26	Release-Parole:T116 Person:T111
+T117	Release-Parole 2888 2895	release
+E27	Release-Parole:T117 Person:T111
+T118	Release-Parole 2899 2905	parole
+E28	Release-Parole:T118 Person:T111
+T119	GPE 3332 3336	N.Y.
+T120	PER 3443 3447	your
+T121	TIM 3443 3471	your parole eligibility date
+T122	Release-Parole 3448 3454	parole
+E29	Release-Parole:T122 Person:T120
+T123	Release-Parole 3548 3554	parole
+E30	Release-Parole:T123
+T124	Release-Parole 3555 3562	release
+E31	Release-Parole:T124
+T125	PER 3576 3580	Rich
+T126	TIM 3581 3607	15 Feb 2005 22:29:04 -0800
+T127	Release-Parole 3629 3635	Parole
+E32	Release-Parole:T127
+T128	PER 3672 3676	Kate
+T129	PER 3698 3708	the inmate
+T130	PER 3727 3734	himself
+T131	FAC 3781 3787	prison
+T132	PER 3793 3797	Rich

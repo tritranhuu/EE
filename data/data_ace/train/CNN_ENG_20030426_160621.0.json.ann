@@ -1,0 +1,77 @@
+T1	TIM 38 57	2003-04-26 17:05:32
+T2	VEH 62 88	the `` uss abraham lincoln
+T3	VEH 94 96	it
+T4	VEH 100 126	a guided missile destroyer
+T5	WEA 109 116	missile
+T6	PER 129 133	they
+T7	GPE 185 190	iraqi
+T8	WEA 144 164	50 tomahawk missiles
+T9	Attack 134 139	fired
+E1	Attack:T9 Attacker:T6 Instrument:T8
+T10	VEH 237 246	this ship
+T11	PER 204 207	you
+T12	VEH 272 274	it
+T13	ORG 347 357	his regime
+T14	PER 328 342	saddam hussein
+T15	PER 347 350	his
+T16	PER 392 409	illegal smugglers
+T17	PER 360 364	they
+T18	VEH 437 446	the ships
+T19	VEH 462 471	this ship
+T20	VEH 554 556	it
+T21	VEH 627 629	it
+T22	PER 641 646	enemy
+T23	WEA 641 664	enemy radar or missiles
+T24	WEA 677 681	them
+T25	PER 694 698	they
+T26	GPE 731 736	iraqi
+T27	PER 780 789	everybody
+T28	PER 750 753	you
+T29	GPE 793 797	home
+T30	PER 800 807	friends
+T31	PER 812 818	family
+T32	TIM 860 880	almost 10 months now
+T33	PER 846 856	each other
+T34	PER 883 893	14 fathers
+T35	PER 908 913	their
+T36	PER 908 920	their babies
+T37	PER 946 960	their families
+T38	PER 923 927	they
+T39	PER 946 951	their
+T40	Meet 932 940	reunited
+E2	Meet:T40 Entity:T38 Entity:T37
+T41	PER 986 1001	one such family
+T42	ORG 963 965	we
+T43	Meet 973 980	meet up
+E3	Meet:T43 Entity:T42 Entity:T41
+T44	PER 1032 1050	the galetta family
+T45	PER 1036 1043	galetta
+T46	PER 1016 1019	you
+T47	ORG 1004 1006	we
+T48	PER 1087 1095	anderson
+T49	TIM 1071 1084	christmas day
+T50	PER 1053 1058	katie
+T51	Be-Born 1063 1067	born
+E4	Be-Born:T51 Person:T50 Time-Within:T49
+T52	PER 1121 1124	her
+T53	PER 1144 1147	her
+T54	PER 1160 1163	her
+T55	PER 1121 1131	her father
+T56	PER 1175 1177	he
+T57	GPE 1206 1211	iraqi
+T58	TIM 1299 1315	nearly 10 months
+T59	LOC 1271 1275	land
+T60	PER 1225 1355	130 sailors really excited to be home back on land after being at sea for nearly 10 months carrying out `` operation iraqi freedom
+T61	LOC 1291 1294	sea
+T62	GPE 1342 1347	iraqi
+T63	GPE 1258 1262	home
+T64	TIM 1405 1408	now
+T65	PER 1411 1454	a sailor seeing his baby for the first time
+T66	PER 1427 1430	his
+T67	PER 1427 1435	his baby
+T68	ORG 1387 1389	we
+T69	TIM 1527 1532	today
+T70	PER 1475 1488	kyra phillips
+T71	PER 1505 1508	you
+T72	ORG 1491 1493	we
+T73	ORG 1524 1526	us

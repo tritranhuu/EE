@@ -1,0 +1,26 @@
+80,000	O	PER	Entity	O
+people	O	PER	Entity	O
+with	O	PER	Entity	O
+a	O	PER	Entity	O
+shared	O	PER	Entity	O
+love	O	PER	Entity	O
+of	O	PER	Entity	O
+music	O	PER	Entity	O
+converge	Meet	O	O	E
+on	O	O	O	O
+a	O	LOC	Place	O
+tennessee	O	GPE	Place	O
+pasture	O	LOC	Place	O
+for	O	O	O	O
+three	O	TIM	Time	O
+days	O	TIM	Time	O
+of	O	O	O	O
+good	O	O	O	O
+vibes	O	O	O	O
+and	O	O	O	O
+who	O	PER	O	O
+knows	O	O	O	O
+what	O	O	O	O
+else	O	O	O	O
+.	O	O	O	O
+

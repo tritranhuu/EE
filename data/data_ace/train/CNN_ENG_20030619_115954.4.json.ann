@@ -1,0 +1,62 @@
+T1	TIM 38 57	2003-06-19 12:20:57
+T2	LOC 189 198	west bank
+T3	LOC 185 204	the west bank board
+T4	TIM 125 130	today
+T5	GPE 142 149	israeli
+T6	GPE 167 173	israel
+T7	FAC 134 173	a small israeli grocery store in israel
+T8	ORG 70 83	islamic jihad
+T9	Attack 117 124	bombing
+E1	Attack:T9 Attacker:T8 Place:T3 Target:T7 Time-Within:T4
+T10	PER 230 252	the palestinian bomber
+T11	PER 207 225	the store 's owner
+T12	GPE 234 245	palestinian
+T13	FAC 207 216	the store
+T14	Die 258 264	killed
+E2	Die:T14 Agent:T10 Place:T13 Victim:T11 Victim:T10
+T15	FAC 267 276	the store
+T16	PER 484 486	he
+T17	PER 492 499	himself
+T18	PER 367 397	the palestinian suicide bomber
+T19	PER 295 307	the israelis
+T20	GPE 371 382	palestinian
+T21	TIM 310 318	63 years
+T22	FAC 478 483	there
+T23	FAC 330 339	the store
+T24	PER 411 424	more israelis
+T25	PER 459 477	any other israelis
+T26	Attack 487 491	blew
+E3	Attack:T26 Attacker:T18
+T27	Die 383 390	suicide
+E4	Die:T27 Victim:T19 Victim:T18 Agent:T18 Place:T23
+T28	ORG 562 575	islamic jihad
+T29	ORG 634 639	state
+T30	GPE 734 745	palestinian
+T31	PER 734 755	palestinian militants
+T32	PER 621 652	secretary of state colin powell
+T33	PER 621 639	secretary of state
+T34	GPE 825 834	jerusalem
+T35	GPE 817 821	here
+T36	GPE 790 804	southeast asia
+T37	TIM 835 851	tomorrow morning
+T38	PER 898 918	the foreign minister
+T39	GPE 871 878	israeli
+T40	PER 867 893	the israeli prime minister
+T41	PER 758 764	powell
+T42	PER 807 809	he
+T43	Transport 813 816	due
+E5	Transport:T43 Artifact:T41 Origin:T36 Destination:T34 Time-At-Beginning:T37
+T44	Meet 856 861	talks
+E6	Meet:T44 Place:T34 Entity:T41 Entity:T40 Entity:T38 Time-Within:T37
+T45	Transport 782 786	trip
+E7	Transport:T45 Artifact:T41 Destination:T36
+T46	LOC 972 985	the west bank
+T47	GPE 1003 1014	palestinian
+T48	PER 999 1043	the palestinian prime minister mahmoud abbas
+T49	PER 1003 1029	palestinian prime minister
+T50	GPE 961 968	jericho
+T51	PER 929 931	he
+T52	Meet 989 993	meet
+E8	Meet:T52 Place:T50 Entity:T51 Entity:T48
+T53	Transport 947 957	helicopter
+E9	Transport:T53 Artifact:T51 Destination:T50

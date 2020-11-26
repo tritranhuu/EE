@@ -1,0 +1,123 @@
+T1	TIM 34 42	20030610
+T2	GPE 126 133	Vietnam
+T3	ORG 140 142	AP
+T4	GPE 118 123	HANOI
+T5	PER 320 336	a court official
+T6	GPE 254 264	government
+T7	GPE 185 192	Vietnam
+T8	PER 236 274	two former senior government officials
+T9	PER 149 274	Seven people convicted last week in Vietnam 's biggest-ever criminal trial , including two former senior government officials
+T10	ORG 322 327	court
+T11	TIM 342 349	Tuesday
+T12	TIM 172 181	last week
+T13	TIM 240 246	former
+T14	Trial-Hearing 218 223	trial
+E1	Trial-Hearing:T14 Defendant:T9 Defendant:T8
+T15	Convict 162 171	convicted
+E2	Convict:T15 Defendant:T9 Defendant:T8 Place:T7 Adjudicator:T10 Time-Within:T12
+T16	Appeal 295 301	appeal
+E3	Appeal:T16 Place:T7 Plaintiff:T9 Plaintiff:T8
+T17	CRM 488 504	receiving bribes
+T18	ORG 377 388	state radio
+T19	PER 507 525	the court official
+T20	GPE 377 382	state
+T21	GPE 428 436	national
+T22	PER 352 361	The seven
+T23	ORG 511 516	court
+T24	PER 470 474	both
+T25	TIM 370 376	former
+T26	TIM 416 422	former
+T27	PER 370 397	former state radio director
+T28	PER 370 411	former state radio director Tran Mai Hanh
+T29	PER 416 453	former vice national chief prosecutor
+T30	PER 416 467	former vice national chief prosecutor Pham Sy Chien
+T31	Convict 475 484	convicted
+E4	Convict:T31 Defendant:T28 Defendant:T30 Crime:T17
+T32	GPE 626 650	the communist government
+T33	GPE 574 590	Ho Chi Minh City
+T34	ORG 572 596	a Ho Chi Minh City court
+T35	Trial-Hearing 563 568	trial
+E5	Trial-Hearing:T35 Adjudicator:T34
+T36	PER 695 733	The `` godfather '' of organized crime
+T37	PER 736 750	Truong Van Cam
+T38	PER 769 776	Nam Cam
+T39	CRM 821 827	murder
+T40	ORG 718 733	organized crime
+T41	Convict 783 792	convicted
+E6	Convict:T41 Defendant:T36 Crime:T39
+T42	SEN 850 869	face a firing squad
+T43	PER 830 832	He
+T44	PER 876 879	his
+T45	PER 896 898	he
+T46	PER 876 886	his lawyer
+T47	PER 855 869	a firing squad
+T48	Appeal 913 919	appeal
+E7	Appeal:T48 Plaintiff:T45
+T49	Sentence 837 846	sentenced
+E8	Sentence:T49 Defendant:T43 Sentence:T42
+T50	PER 1054 1061	Nam Cam
+T51	PER 1082 1096	the crime boss
+T52	TIM 936 942	former
+T53	CRM 1019 1137	receiving US$ 8,500 in bribes from Nam Cam 's family to secure the crime boss ' early release from labor camp in 1990s
+T54	TIM 1132 1137	1990s
+T55	FAC 1118 1128	labor camp
+T56	PER 1054 1071	Nam Cam 's family
+T57	ORG 966 981	Communist Party
+T58	ORG 953 999	the powerful Communist Party Central Committee
+T59	PER 922 926	Hanh
+T60	PER 934 999	a former member of the powerful Communist Party Central Committee
+T61	NUM 1029 1038	US$ 8,500
+T62	Release-Parole 1105 1112	release
+E9	Release-Parole:T62 Person:T51 Place:T55 Time-Within:T54
+T63	Transfer-Money 1019 1028	receiving
+E10	Transfer-Money:T63 Giver:T56 Money:T61 Recipient:T59
+T64	Convict 1006 1015	convicted
+E11	Convict:T64 Defendant:T59 Crime:T53 Time-Within:T54
+T65	TIM 1162 1170	10 years
+T66	SEN 1162 1178	10 years in jail
+T67	FAC 1174 1178	jail
+T68	PER 1140 1144	Hanh
+T69	Sentence 1149 1158	sentenced
+E12	Sentence:T69 Defendant:T68 Sentence:T66
+T70	PER 1276 1283	Nam Cam
+T71	TIM 1311 1320	six years
+T72	SEN 1311 1328	six years in jail
+T73	CRM 1204 1293	receiving a stereo set worth 27 million dong -LRB- US$ 1,750 -RRB- from Nam Cam 's family
+T74	FAC 1324 1328	jail
+T75	PER 1276 1293	Nam Cam 's family
+T76	PER 1181 1186	Chien
+T77	NUM 1233 1264	27 million dong -LRB- US$ 1,750
+T78	Convict 1191 1200	convicted
+E13	Convict:T78 Defendant:T76 Crime:T73
+T79	Sentence 1298 1307	sentenced
+E14	Sentence:T79 Defendant:T76 Sentence:T72 Crime:T73
+T80	TIM 1374 1384	five years
+T81	CRM 1425 1441	receiving bribes
+T82	CRM 1412 1420	gambling
+T83	SEN 1368 1392	up to five years in jail
+T84	PER 1468 1480	the official
+T85	PER 1331 1441	Five other people who were sentenced up to five years in jail for crimes such as gambling and receiving bribes
+T86	PER 1349 1352	who
+T87	FAC 1388 1392	jail
+T88	Sentence 1358 1367	sentenced
+E15	Sentence:T88 Defendant:T85 Sentence:T83 Crime:T82 Crime:T81
+T89	Appeal 1458 1465	appeals
+E16	Appeal:T89 Crime:T82 Crime:T81 Plaintiff:T85
+T90	TIM 1537 1549	three months
+T91	PER 1499 1513	155 defendants
+T92	Trial-Hearing 1520 1525	trial
+E17	Trial-Hearing:T92 Defendant:T91 Time-Holds:T90
+T93	PER 1567 1579	All but five
+T94	Convict 1585 1594	convicted
+E18	Convict:T94 Defendant:T93
+T95	ORG 1633 1642	the court
+T96	ORG 1673 1679	police
+T97	PER 1597 1610	One defendant
+T98	Acquit 1615 1624	acquitted
+E19	Acquit:T98 Defendant:T97
+T99	PER 1731 1744	the convicted
+T100	PER 1768 1773	their
+T101	GPE 1714 1724	Vietnamese
+T102	TIM 1750 1757	15 days
+T103	Appeal 1761 1767	appeal
+E20	Appeal:T103 Plaintiff:T99

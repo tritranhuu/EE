@@ -1,0 +1,28 @@
+T1	TIM 41 61	2004-11-14T12 :40:00
+T2	PER 79 83	Curt
+T3	TIM 84 104	2004-11-14T12 :40:00
+T4	GPE 255 261	Mexico
+T5	GPE 243 249	the US
+T6	WEA 232 237	nukes
+T7	ORG 136 144	al-Qaeda
+T8	ORG 193 197	they
+T9	PER 134 154	a al-Qaeda operative
+T10	ORG 105 109	Time
+T11	TIM 123 128	today
+T12	Arrest-Jail 159 167	captured
+E1	Arrest-Jail:T12 Person:T9 Time-Before:T11
+T13	Transport 224 231	smuggle
+E2	Transport:T13 Origin:T4 Destination:T5 Agent:T8
+T14	PER 293 296	god
+T15	GPE 311 314	our
+T16	PER 336 337	I
+T17	PER 297 301	Bush
+T18	PER 311 324	our president
+T19	PER 361 364	him
+T20	PER 368 371	his
+T21	TIM 372 375	new
+T22	GPE 463 466	our
+T23	PER 439 448	the enemy
+T24	LOC 463 474	our borders
+T25	Transport 452 455	get
+E3	Transport:T25 Artifact:T23 Destination:T24

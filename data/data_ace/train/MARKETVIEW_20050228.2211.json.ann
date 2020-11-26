@@ -1,0 +1,45 @@
+T1	TIM 35 55	2005-02-28T22 :11:00
+T2	PER 72 77	Byrne
+T3	TIM 78 98	2005-02-28T22 :11:00
+T4	ORG 205 215	Mylan labs
+T5	ORG 136 147	Blockbuster
+T6	ORG 152 161	Hollywood
+T7	PER 99 102	You
+T8	PER 112 114	he
+T9	PER 168 178	Carl Icahn
+T10	ORG 283 294	the company
+T11	PER 218 219	I
+T12	PER 308 321	his own board
+T13	PER 333 343	management
+T14	PER 402 406	they
+T15	PER 257 259	he
+T16	PER 308 311	his
+T17	PER 412 415	him
+T18	PER 425 427	he
+T19	Transfer-Ownership 273 278	offer
+E1	Transfer-Ownership:T19 Artifact:T10 Buyer:T15
+T20	Transfer-Money 407 411	paid
+E2	Transfer-Money:T20 Giver:T14 Recipient:T17
+T21	Nominate 297 307	nominating
+E3	Nominate:T21 Person:T12 Agent:T15
+T22	PER 496 507	an opponent
+T23	ORG 733 737	they
+T24	ORG 634 639	Mylan
+T25	PER 609 611	he
+T26	PER 687 689	he
+T27	ORG 634 661	Mylan 's acquisition target
+T28	ORG 664 684	King Pharmaceuticals
+T29	Transfer-Ownership 643 654	acquisition
+E4	Transfer-Ownership:T29 Artifact:T27 Buyer:T24
+T30	Transfer-Ownership 745 752	acquire
+E5	Transfer-Ownership:T30 Artifact:T27 Buyer:T23
+T31	ORG 778 783	Mylan
+T32	ORG 801 805	they
+T33	PER 791 794	him
+T34	ORG 847 867	King Pharmaceuticals
+T35	Transfer-Ownership 784 790	bought
+E6	Transfer-Ownership:T35 Beneficiary:T33 Buyer:T31
+T36	Transfer-Ownership 835 843	purchase
+E7	Transfer-Ownership:T36 Artifact:T34 Buyer:T31 Buyer:T32
+T37	PER 883 885	he
+T38	PER 925 928	his

@@ -1,0 +1,122 @@
+T1	TIM 39 58	2003-04-24 13:00:00
+T2	GPE 161 166	iraqi
+T3	GPE 64 68	u.s.
+T4	GPE 106 110	home
+T5	PER 59 75	some u.s. troops
+T6	PER 117 121	they
+T7	Phone-Write 101 105	call
+E1	Phone-Write:T7 Place:T4 Entity:T5
+T8	Transport 127 135	deployed
+E2	Transport:T8 Artifact:T6
+T9	PER 233 238	their
+T10	PER 184 194	some wives
+T11	PER 213 222	strangers
+T12	PER 249 259	beth basin
+T13	PER 282 298	jamie 's husband
+T14	PER 299 303	jack
+T15	TIM 317 338	a couple of weeks ago
+T16	PER 282 287	jamie
+T17	PER 409 412	him
+T18	PER 426 428	he
+T19	PER 349 361	her daughter
+T20	PER 362 368	jordan
+T21	PER 341 344	she
+T22	PER 349 352	her
+T23	PER 548 550	he
+T24	PER 561 563	he
+T25	PER 458 469	her husband
+T26	PER 458 461	her
+T27	PER 539 542	she
+T28	PER 436 439	she
+T29	ORG 514 519	delta
+T30	PER 512 536	a delta flight attendant
+T31	LOC 555 560	where
+T32	LOC 452 457	where
+T33	TIM 473 476	now
+T34	Transport 551 554	got
+E3	Transport:T34 Artifact:T23 Destination:T31
+T35	PER 603 606	him
+T36	PER 576 579	she
+T37	PER 722 726	jack
+T38	PER 660 680	the flight attendant
+T39	PER 703 706	she
+T40	Phone-Write 689 695	letter
+E4	Phone-Write:T40 Entity:T38
+T41	GPE 756 763	georgia
+T42	Transport 748 752	trip
+E5	Transport:T42 Destination:T41
+T43	PER 789 791	he
+T44	PER 842 847	jamie
+T45	LOC 811 834	an undisclosed location
+T46	PER 877 895	a flight attendant
+T47	Transport 801 807	flight
+E6	Transport:T47 Artifact:T43 Destination:T45
+T48	Phone-Write 867 871	call
+E7	Phone-Write:T48 Entity:T44 Entity:T46
+T49	PER 898 900	he
+T50	PER 938 940	he
+T51	PER 972 974	he
+T52	PER 918 921	you
+T53	PER 929 932	you
+T54	PER 955 958	she
+T55	PER 964 966	us
+T56	PER 1042 1048	family
+T57	PER 999 1002	our
+T58	PER 907 909	us
+T59	PER 999 1007	our kids
+T60	Phone-Write 913 917	call
+E8	Phone-Write:T60 Entity:T58 Entity:T52
+T61	PER 1081 1086	jamie
+T62	PER 1094 1148	the only military wife who received a photo and letter
+T63	PER 1117 1120	who
+T64	ORG 1103 1111	military
+T65	Phone-Write 1142 1148	letter
+E9	Phone-Write:T65 Entity:T62
+T66	PER 1151 1154	her
+T67	PER 1151 1161	her friend
+T68	PER 1162 1166	anna
+T69	Phone-Write 1176 1179	one
+E10	Phone-Write:T69 Entity:T68
+T70	PER 1239 1243	jack
+T71	PER 1192 1196	anna
+T72	PER 1192 1207	anna 's husband
+T73	PER 1273 1277	anna
+T74	PER 1384 1408	the rest of the military
+T75	ORG 1396 1408	the military
+T76	PER 1335 1352	someone out there
+T77	PER 1319 1321	me
+T78	PER 1369 1371	my
+T79	PER 1369 1379	my husband
+T80	PER 1522 1526	they
+T81	PER 1531 1535	they
+T82	PER 1463 1483	neither of the women
+T83	PER 1498 1519	the flight attendants
+T84	PER 1553 1558	their
+T85	Meet 1494 1497	met
+E11	Meet:T85 Entity:T82 Entity:T83
+T86	ORG 1577 1579	we
+T87	ORG 1609 1612	our
+T88	PER 1609 1620	our viewers
+T89	TIM 1621 1630	every day
+T90	Phone-Write 1597 1603	e-mail
+E12	Phone-Write:T90 Entity:T86 Entity:T88 Time-Within:T89
+T91	PER 1646 1657	some of you
+T92	ORG 1679 1682	our
+T93	PER 1654 1657	you
+T94	ORG 1776 1778	us
+T95	PER 1725 1732	william
+T96	Phone-Write 1733 1739	writes
+E13	Phone-Write:T96 Entity:T95
+T97	Phone-Write 1767 1772	write
+E14	Phone-Write:T97 Entity:T94
+T98	ORG 1781 1783	we
+T99	PER 1802 1805	you
+T100	Phone-Write 1789 1796	hearing
+E15	Phone-Write:T100 Entity:T98 Entity:T99
+T101	ORG 1819 1822	our
+T102	CTI 1833 1845	cnn.com/wolf
+T103	ORG 1848 1850	we
+T104	PER 1863 1867	your
+T105	Phone-Write 1868 1874	e-mail
+E16	Phone-Write:T105 Entity:T103 Entity:T104
+T106	GPE 1899 1911	the new iraq

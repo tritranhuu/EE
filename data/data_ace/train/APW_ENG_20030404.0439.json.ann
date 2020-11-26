@@ -1,0 +1,40 @@
+T1	TIM 34 42	20030404
+T2	GPE 104 110	MOSCOW
+T3	ORG 117 119	AP
+T4	GPE 126 132	Russia
+T5	ORG 164 174	World Bank
+T6	ORG 282 292	World Bank
+T7	PER 282 302	World Bank officials
+T8	NUM 148 163	US$ 150 million
+T9	TIM 269 279	four years
+T10	TIM 308 314	Friday
+T11	Transfer-Money 175 179	loan
+E1	Transfer-Money:T11 Giver:T5 Money:T8 Recipient:T4
+T12	ORG 317 331	The World Bank
+T13	TIM 358 362	1999
+T14	Transfer-Money 350 354	loan
+E2	Transfer-Money:T14 Giver:T12 Time-Within:T13
+T15	GPE 425 431	Russia
+T16	ORG 444 454	World Bank
+T17	ORG 521 535	the World Bank
+T18	PER 489 518	patients receiving medication
+T19	ORG 656 670	the World Bank
+T20	PER 571 595	President Vladimir Putin
+T21	PER 571 580	President
+T22	TIM 644 653	this year
+T23	Transfer-Money 614 618	loan
+E3	Transfer-Money:T23 Beneficiary:T19 Recipient:T20 Time-Starting:T22
+T24	GPE 681 687	Russia
+T25	LOC 737 746	the world
+T26	ORG 864 874	World Bank
+T27	PER 846 859	Olesoji Adeyi
+T28	PER 862 892	a World Bank health specialist
+T29	PER 935 937	he
+T30	PER 1063 1065	he
+T31	PER 957 1010	people with immune systems weakened by the AIDS virus
+T32	GPE 1135 1141	Russia
+T33	TIM 1116 1131	relatively late
+T34	PER 1241 1250	Officials
+T35	PER 1307 1321	health experts
+T36	GPE 1462 1468	Russia
+T37	FAC 1462 1491	Russia 's overcrowded prisons

@@ -1,0 +1,152 @@
+T1	TIM 40 60	2005-01-27T10 :17:00
+T2	PER 99 109	Will Vehrs
+T3	TIM 110 130	2005-01-27T10 :17:00
+T4	ORG 262 271	D-Fairfax
+T5	GPE 328 336	Virginia
+T6	ORG 131 153	The Augusta Free Press
+T7	ORG 171 174	Our
+T8	GPE 262 271	D-Fairfax
+T9	PER 215 227	Chris Graham
+T10	PER 239 243	Del.
+T11	PER 239 271	Del. . Chap Peterson , D-Fairfax
+T12	TIM 371 385	for five years
+T13	PER 463 475	Lt. Governor
+T14	PER 417 425	Peterson
+T15	PER 443 486	a candidate for the Lt. Governor nomination
+T16	Nominate 476 486	nomination
+E1	Nominate:T16 Person:T15
+T17	PER 571 619	former Congresswoman and State Sen. Leslie Byrne
+T18	PER 682 683	I
+T19	PER 571 606	former Congresswoman and State Sen.
+T20	PER 543 568	one of Peterson 's rivals
+T21	GPE 596 601	State
+T22	PER 550 568	Peterson 's rivals
+T23	JOB 578 591	Congresswoman
+T24	JOB 602 606	Sen.
+T25	PER 489 495	Graham
+T26	TIM 571 577	former
+T27	TIM 721 724	now
+T28	PER 550 558	Peterson
+T29	End-Position 571 577	former
+E2	End-Position:T29 Person:T19 Entity:T21 Position:T23 Position:T24
+T30	ORG 730 774	The Virginia Economic Developers Association
+T31	ORG 816 832	the organization
+T32	PER 816 846	the organization 's leadership
+T33	TIM 867 875	tomorrow
+T34	Meet 862 866	meet
+E3	Meet:T34 Entity:T32 Time-Within:T33
+T35	PER 981 985	them
+T36	PER 966 967	I
+T37	PER 1004 1011	anybody
+T38	ORG 1245 1267	The Augusta Free Press
+T39	ORG 1271 1304	the best thing since sliced bread
+T40	PER 1182 1195	Steven Sisson
+T41	PER 1139 1179	One of our Bacons Rebellion contributors
+T42	PER 1146 1149	our
+T43	PER 1146 1179	our Bacons Rebellion contributors
+T44	PER 1352 1361	Jim Bacon
+T45	TIM 1362 1387	???? - ?? - ?? T12 :26:00
+T46	GPE 1431 1439	Virginia
+T47	ORG 1498 1522	the Allen administration
+T48	PER 1502 1507	Allen
+T49	PER 1391 1392	I
+T50	ORG 1633 1636	you
+T51	GPE 1741 1749	Virginia
+T52	PER 1704 1712	Peterson
+T53	PER 1806 1819	Steven Sisson
+T54	TIM 1820 1845	???? - ?? - ?? T18 :02:00
+T55	PER 1846 1857	Will Verhrs
+T56	PER 1923 1947	a certifiable Blogophile
+T57	PER 1914 1915	I
+T58	PER 1957 1959	my
+T59	PER 2074 2075	I
+T60	PER 2055 2057	me
+T61	PER 2130 2134	Chap
+T62	GPE 2265 2274	statewide
+T63	ORG 2317 2327	Democratic
+T64	TIM 2260 2264	2005
+T65	TIM 2472 2474	04
+T66	ORG 2374 2394	manufacturing plants
+T67	PER 2173 2195	Delegate Chap Petersen
+T68	PER 2173 2181	Delegate
+T69	PER 2411 2421	John Kerry
+T70	End-Org 2395 2402	closing
+E4	End-Org:T70 Org:T66
+T71	GPE 2515 2543	the commonwealth of Virginia
+T72	GPE 2535 2543	Virginia
+T73	LOC 2636 2642	global
+T74	GPE 2560 2570	the nation
+T75	PER 2494 2570	Residents throughout the commonwealth of Virginia and the rest of the nation
+T76	GPE 2548 2570	the rest of the nation
+T77	ORG 2657 2669	both parties
+T78	PER 2793 2797	both
+T79	PER 2776 2788	Leslie Byrne
+T80	GPE 2984 2994	Virginians
+T81	PER 2732 2744	Lt. Governor
+T82	PER 2798 2814	good politicians
+T83	PER 2732 2771	Lt. Governor candidate 's Chap Peterson
+T84	PER 2732 2754	Lt. Governor candidate
+T85	GPE 3037 3039	VA
+T86	ORG 3084 3086	GA
+T87	PER 3004 3005	I
+T88	PER 3084 3094	GA members
+T89	PER 2997 3001	Will
+T90	PER 3017 3021	your
+T91	PER 3070 3094	a majority of GA members
+T92	TIM 3123 3129	5-year
+T93	PER 3306 3321	business owners
+T94	GPE 3528 3544	The Commonwealth
+T95	GPE 3911 3913	VA
+T96	GPE 3800 3805	state
+T97	TIM 3833 3836	new
+T98	ORG 3779 3797	lending institutes
+T99	PER 3911 3922	VA employee
+T100	GPE 3971 3974	our
+T101	PER 3975 3988	consumer-base
+T102	GPE 4057 4065	Virginia
+T103	PER 4122 4130	employee
+T104	PER 4135 4160	the corporate stockowners
+T105	GPE 4226 4241	the third world
+T106	PER 4167 4171	lets
+T107	GPE 4251 4259	Virginia
+T108	LOC 4368 4374	global
+T109	PER 4251 4272	Virginia 's employees
+T110	PER 4309 4313	they
+T111	PER 4449 4465	Phil Rodokanakis
+T112	TIM 4466 4491	???? - ?? - ?? T19 :33:00
+T113	PER 4559 4571	Leslie Byrne
+T114	PER 4492 4504	Steve Sisson
+T115	PER 4515 4527	Lt. Governor
+T116	PER 4581 4597	good politicians
+T117	PER 4515 4554	Lt. Governor candidate 's Chap Peterson
+T118	PER 4515 4537	Lt. Governor candidate
+T119	PER 4623 4643	a `` good politician
+T120	ORG 4703 4721	the Democart party
+T121	PER 4737 4742	Byrne
+T122	PER 4652 4655	one
+T123	PER 4816 4821	Byrne
+T124	PER 4779 4787	Peterson
+T125	PER 4854 4855	I
+T126	PER 4872 4894	tax and spend liberals
+T127	PER 4898 4914	good politicians
+T128	PER 4987 5013	irresponsible big spenders
+T129	ORG 4933 4953	the Republican Party
+T130	ORG 4974 4977	its
+T131	TIM 5079 5083	2005
+T132	PER 5030 5042	some of them
+T133	PER 5038 5042	them
+T134	PER 5124 5125	I
+T135	PER 5166 5176	incumbents
+T136	PER 5146 5155	Democrats
+T137	PER 5212 5217	Scott
+T138	TIM 5218 5243	???? - ?? - ?? T10 :42:00
+T139	GPE 5305 5313	Richmond
+T140	PER 5273 5274	I
+T141	PER 5280 5286	Wilder
+T142	PER 5326 5328	we
+T143	ORG 5385 5405	Richmond Renaissance
+T144	ORG 5414 5418	VPAF
+T145	ORG 5350 5418	public-private ' partnerships like Richmond Renaissance and now VPAF
+T146	TIM 5410 5413	now
+T147	PER 5421 5422	I
+T148	ORG 5461 5487	the shady Broad Street CDA

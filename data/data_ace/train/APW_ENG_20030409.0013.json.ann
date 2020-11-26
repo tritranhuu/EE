@@ -1,0 +1,329 @@
+T1	TIM 34 42	20030409
+T2	GPE 127 141	BAGHDAD , Iraq
+T3	GPE 137 141	Iraq
+T4	ORG 148 150	AP
+T5	GPE 201 208	Baghdad
+T6	GPE 220 228	the city
+T7	GPE 157 161	U.S.
+T8	ORG 275 283	military
+T9	PER 305 312	snipers
+T10	PER 317 342	Republican Guard fighters
+T11	FAC 273 291	a military airport
+T12	ORG 317 333	Republican Guard
+T13	PER 179 184	their
+T14	PER 157 168	U.S. forces
+T15	Transport 211 219	entering
+E1	Transport:T15 Artifact:T14 Destination:T6
+T16	Attack 296 304	battling
+E2	Attack:T16 Attacker:T14 Attacker:T9 Attacker:T10 Place:T6
+T17	Transfer-Ownership 265 272	seizing
+E3	Transfer-Ownership:T17 Artifact:T11 Buyer:T14 Place:T5
+T18	GPE 361 365	U.S.
+T19	ORG 357 374	the U.S. military
+T20	PER 423 448	three foreign journalists
+T21	Attack 402 410	assaults
+E4	Attack:T21 Attacker:T19 Target:T20
+T22	Die 416 422	killed
+E5	Die:T22 Victim:T20 Agent:T19
+T23	GPE 570 592	a Baghdad neighborhood
+T24	TIM 475 482	Tuesday
+T25	TIM 593 607	the day before
+T26	PER 451 469	Pentagon officials
+T27	PER 483 487	they
+T28	GPE 572 579	Baghdad
+T29	PER 509 539	Iraqi President Saddam Hussein
+T30	PER 509 524	Iraqi President
+T31	ORG 451 459	Pentagon
+T32	GPE 552 556	U.S.
+T33	GPE 509 514	Iraqi
+T34	Die 540 544	died
+E6	Die:T34 Agent:T32 Place:T23 Time-Within:T25 Victim:T29
+T35	Attack 557 566	airstrike
+E7	Attack:T35 Place:T28
+T36	FAC 631 650	three nearby houses
+T37	PER 662 681	at least two people
+T38	Attack 614 620	strike
+E8	Attack:T38 Target:T36 Target:T37
+T39	Die 655 661	killed
+E9	Die:T39 Victim:T37
+T40	GPE 740 751	the capital
+T41	PER 684 696	U.S. Marines
+T42	PER 716 720	they
+T43	GPE 684 688	U.S.
+T44	PER 705 712	snipers
+T45	Attack 697 704	battled
+E10	Attack:T45 Attacker:T41 Place:T40 Target:T44
+T46	Attack 721 727	fought
+E11	Attack:T46 Attacker:T41 Attacker:T44 Place:T40
+T47	PER 768 772	They
+T48	PER 835 860	an estimated 3,000 troops
+T49	FAC 780 799	the Rasheed Airport
+T50	WEA 813 860	enough ammunition for an estimated 3,000 troops
+T51	Transfer-Ownership 773 779	seized
+E12	Transfer-Ownership:T51 Artifact:T49 Artifact:T50 Buyer:T47
+T52	Transfer-Ownership 804 812	captured
+E13	Transfer-Ownership:T52 Artifact:T50 Buyer:T47
+T53	PER 875 879	they
+T54	PER 905 909	they
+T55	GPE 984 992	American
+T56	GPE 916 920	U.S.
+T57	WEA 939 955	chemical weapons
+T58	PER 984 997	American POWs
+T59	FAC 890 997	a prison where they found U.S. Army uniforms and chemical weapons suits possibly belonging to American POWs
+T60	FAC 899 904	where
+T61	ORG 916 925	U.S. Army
+T62	Transfer-Ownership 885 889	took
+E14	Transfer-Ownership:T62 Artifact:T59 Buyer:T53
+T63	GPE 1082 1093	the capital
+T64	GPE 1023 1028	Iraqi
+T65	FAC 1043 1093	a Republican Guard headquarters inside the capital
+T66	PER 1023 1037	Iraqi fighters
+T67	ORG 1045 1061	Republican Guard
+T68	ORG 1005 1009	army
+T69	PER 1000 1015	Some army units
+T70	Transport 1016 1022	routed
+E15	Transport:T70 Artifact:T66 Origin:T65
+T71	LOC 1139 1145	a cave
+T72	FAC 1116 1123	12-room
+T73	PER 1096 1102	Others
+T74	FAC 1114 1206	a 12-room complex inside a cave , complete with white marble floors and fluorescent lighting
+T75	TIM 1257 1260	new
+T76	GPE 1279 1286	Baghdad
+T77	GPE 1224 1228	U.S.
+T78	PER 1209 1244	Members of the U.S. Army 's V Corps
+T79	ORG 1220 1233	the U.S. Army
+T80	PER 1220 1244	the U.S. Army 's V Corps
+T81	Transport 1270 1278	entering
+E16	Transport:T81 Artifact:T78 Destination:T76
+T82	Attack 1261 1266	front
+E17	Attack:T82 Attacker:T78 Place:T76
+T83	TIM 1332 1396	four days after Americans first penetrated the Baghdad outskirts
+T84	GPE 1379 1386	Baghdad
+T85	GPE 1316 1321	Iraqi
+T86	LOC 1375 1396	the Baghdad outskirts
+T87	PER 1316 1331	Iraqi civilians
+T88	PER 1348 1357	Americans
+T89	Transport 1364 1374	penetrated
+E18	Transport:T89 Artifact:T88 Destination:T86
+T90	GPE 1449 1456	Baghdad
+T91	ORG 1414 1443	the World Health Organization
+T92	FAC 1449 1469	Baghdad 's hospitals
+T93	Injure 1547 1555	injuries
+E19	Injure:T93 Place:T90
+T94	Injure 1529 1535	wounds
+E20	Injure:T94 Place:T90
+T95	Attack 1570 1578	fighting
+E21	Attack:T95
+T96	Injure 1512 1517	burns
+E22	Injure:T96 Place:T90
+T97	GPE 1675 1683	American
+T98	GPE 1581 1586	Iraqi
+T99	GPE 1635 1639	Iraq
+T100	ORG 1696 1700	They
+T101	PER 1635 1649	Iraq 's forces
+T102	PER 1581 1596	Iraqi officials
+T103	PER 1725 1745	Information Minister
+T104	PER 1746 1770	Mohammed Saeed al-Sahhaf
+T105	PER 1675 1690	American forces
+T106	Injure 1709 1714	burnt
+E23	Injure:T106
+T107	GPE 1866 1874	American
+T108	PER 1794 1813	a Reuters cameraman
+T109	LOC 1776 1791	central Baghdad
+T110	FAC 1889 1908	the Palestine Hotel
+T111	GPE 1834 1839	Spain
+T112	ORG 1834 1852	Spain 's Telecinco
+T113	ORG 1796 1803	Reuters
+T114	PER 1818 1852	a cameraman for Spain 's Telecinco
+T115	VEH 1863 1879	an American tank
+T116	Die 1853 1857	died
+E24	Die:T116 Instrument:T115 Victim:T114 Agent:T107
+T117	Attack 1880 1885	fired
+E25	Attack:T117 Place:T109 Target:T108 Target:T114 Target:T110 Instrument:T115
+T118	GPE 2092 2099	Baghdad
+T119	GPE 1984 1988	U.S.
+T120	FAC 2026 2036	this hotel
+T121	FAC 2040 2099	the main base for almost all foreign journalists in Baghdad
+T122	ORG 2105 2112	Reuters
+T123	PER 2058 2099	almost all foreign journalists in Baghdad
+T124	PER 2105 2128	Reuters Editor-in-Chief
+T125	PER 2129 2144	Geert Linnebank
+T126	PER 1970 1995	the advancing U.S. troops
+T127	PER 1996 1999	who
+T128	GPE 2210 2214	U.S.
+T129	VEH 2208 2223	a U.S. warplane
+T130	ORG 2185 2195	Al-Jazeera
+T131	PER 2152 2164	Tareq Ayyoub
+T132	PER 2167 2195	a journalist with Al-Jazeera
+T133	FAC 2231 2279	the Arab-language satellite television 's office
+T134	Die 2198 2202	died
+E26	Die:T134 Instrument:T129 Victim:T131 Place:T133
+T135	Attack 2224 2230	bombed
+E27	Attack:T135 Attacker:T128 Target:T133 Instrument:T129
+T136	GPE 2308 2315	Baghdad
+T137	ORG 2285 2297	Abu Dhabi TV
+T138	FAC 2282 2315	An Abu Dhabi TV office in Baghdad
+T139	Attack 2325 2328	hit
+E28	Attack:T139 Place:T136 Target:T138
+T140	GPE 2372 2379	Baghdad
+T141	GPE 2428 2432	U.S.
+T142	GPE 2404 2409	Iraqi
+T143	PER 2404 2416	Iraqi forces
+T144	ORG 2331 2341	Al-Jazeera
+T145	ORG 2368 2371	its
+T146	FAC 2368 2386	its Baghdad bureau
+T147	PER 2428 2439	U.S. troops
+T148	Attack 2420 2424	fire
+E29	Attack:T148 Target:T147
+T149	GPE 2514 2518	U.S.
+T150	FAC 2498 2507	the hotel
+T151	FAC 2565 2580	those buildings
+T152	ORG 2442 2462	U.S. Central Command
+T153	ORG 2468 2470	it
+T154	FAC 2480 2493	the TV office
+T155	PER 2514 2525	U.S. forces
+T156	Attack 2555 2559	fire
+E30	Attack:T156 Place:T151 Target:T155
+T157	Attack 2471 2476	fired
+E31	Attack:T157 Attacker:T153 Target:T154 Target:T150 Target:T151
+T158	FAC 2713 2723	the bridge
+T159	VEH 2677 2691	American tanks
+T160	GPE 2677 2685	American
+T161	FAC 2647 2673	the top floor of the hotel
+T162	FAC 2664 2673	the hotel
+T163	ORG 2583 2599	Associated Press
+T164	PER 2583 2625	Associated Press photographer Jerome Delay
+T165	PER 2583 2612	Associated Press photographer
+T166	PER 2631 2633	he
+T167	FAC 2766 2776	the bridge
+T168	LOC 2788 2797	the river
+T169	GPE 2809 2813	U.S.
+T170	PER 2836 2838	he
+T171	PER 2809 2820	U.S. forces
+T172	Attack 2737 2745	shooting
+E32	Attack:T172 Place:T167 Place:T168 Target:T171
+T173	GPE 2941 2972	an upscale Baghdad neighborhood
+T174	PER 2871 2887	any Iraqi leader
+T175	GPE 2952 2959	Baghdad
+T176	PER 2931 2937	Saddam
+T177	GPE 2875 2880	Iraqi
+T178	Die 2897 2903	killed
+E33	Die:T178 Place:T173 Victim:T174
+T179	Attack 2911 2920	airstrike
+E34	Attack:T179 Place:T173 Target:T176
+T180	PER 3068 3070	14
+T181	PER 2975 2995	Iraqi rescue workers
+T182	PER 3003 3013	two bodies
+T183	GPE 2975 2980	Iraqi
+T184	Die 3043 3047	toll
+E35	Die:T184 Victim:T180
+T185	PER 3191 3224	British Prime Minister Tony Blair
+T186	PER 3191 3213	British Prime Minister
+T187	GPE 3191 3198	British
+T188	PER 3076 3077	I
+T189	PER 3115 3143	U.S President George W. Bush
+T190	PER 3115 3128	U.S President
+T191	PER 3098 3100	he
+T192	PER 3152 3158	Saddam
+T193	GPE 3115 3118	U.S
+T194	Meet 3175 3185	conference
+E36	Meet:T194 Entity:T189 Entity:T185
+T195	PER 3245 3246	I
+T196	PER 3260 3262	he
+T197	TIM 3335 3342	Tuesday
+T198	PER 3310 3327	Mohammed Al-Douri
+T199	PER 3343 3345	he
+T200	PER 3387 3395	al-Douri
+T201	PER 3409 3411	he
+T202	PER 3284 3307	Iraq 's U.N. ambassador
+T203	ORG 3292 3296	U.N.
+T204	PER 3360 3366	Saddam
+T205	GPE 3438 3445	Baghdad
+T206	GPE 3284 3288	Iraq
+T207	PER 3457 3462	Blair
+T208	PER 3448 3452	Bush
+T209	GPE 3535 3539	Iraq
+T210	PER 3482 3487	their
+T211	GPE 3505 3508	who
+T212	ORG 3566 3570	U.N.
+T213	PER 3542 3547	Blair
+T214	PER 3581 3585	Bush
+T215	ORG 3622 3630	the U.N.
+T216	PER 3666 3671	Blair
+T217	GPE 3656 3660	Iraq
+T218	GPE 3702 3706	Iraq
+T219	GPE 3737 3742	Iraqi
+T220	GPE 3733 3749	the Iraqi people
+T221	TIM 3827 3834	Tuesday
+T222	GPE 3877 3882	Iraqi
+T223	GPE 3817 3823	Kirkuk
+T224	PER 3774 3781	Kurdish
+T225	LOC 3758 3771	northern Iraq
+T226	PER 3774 3788	Kurdish forces
+T227	PER 3799 3804	their
+T228	GPE 3853 3862	coalition
+T229	Attack 3863 3873	airstrikes
+E37	Attack:T229
+T230	LOC 3924 3940	Sekamian plateau
+T231	GPE 3994 4000	Kirkuk
+T232	PER 3892 3899	Kurdish
+T233	PER 4003 4010	Kurdish
+T234	PER 3892 3907	Kurdish militia
+T235	ORG 4003 4016	Kurdish media
+T236	GPE 4102 4106	Iraq
+T237	LOC 4102 4126	Iraq 's No. 2 oil region
+T238	LOC 4028 4036	The area
+T239	GPE 4066 4074	the city
+T240	FAC 4079 4126	the vast oil fields of Iraq 's No. 2 oil region
+T241	GPE 4133 4137	U.S.
+T242	ORG 4129 4146	The U.S. military
+T243	VEH 4152 4162	two planes
+T244	WEA 4294 4325	an Iraqi surface-to-air missile
+T245	GPE 4229 4236	Baghdad
+T246	GPE 4297 4302	Iraqi
+T247	VEH 4254 4345	the first fixed-wing aircraft downed by an Iraqi surface-to-air missile since the war began
+T248	VEH 4179 4209	An A-10 `` Warthog '' warplane
+T249	VEH 4182 4197	A-10 `` Warthog
+T250	Attack 4214 4223	shot down
+E38	Attack:T250 Place:T245 Target:T248 Instrument:T244
+T251	Attack 4336 4339	war
+E39	Attack:T251
+T252	PER 4374 4383	the pilot
+T253	ORG 4348 4368	U.S. Central Command
+T254	PER 4411 4424	ground forces
+T255	TIM 4579 4586	Tuesday
+T256	TIM 4493 4505	early Monday
+T257	PER 4537 4553	its two-man crew
+T258	PER 4541 4548	two-man
+T259	VEH 4453 4477	A U.S. F-15E jet fighter
+T260	VEH 4537 4540	its
+T261	VEH 4460 4465	F-15E
+T262	GPE 4455 4459	U.S.
+T263	ORG 4556 4568	the military
+T264	VEH 4619 4628	the plane
+T265	PER 4589 4598	Officials
+T266	Attack 4633 4642	shot down
+E40	Attack:T266 Target:T264
+T267	TIM 4816 4882	the day after British soldiers claimed Iraq 's second largest city
+T268	GPE 4669 4676	British
+T269	GPE 4830 4837	British
+T270	GPE 4855 4859	Iraq
+T271	PER 4830 4846	British soldiers
+T272	PER 4669 4700	British forces in southern Iraq
+T273	LOC 4687 4700	southern Iraq
+T274	FAC 4728 4763	the heavily looted streets of Basra
+T275	GPE 4758 4763	Basra
+T276	GPE 4855 4882	Iraq 's second largest city
+T277	PER 4769 4787	desperate citizens
+T278	VEH 4796 4815	water tanker trucks
+T279	GPE 4885 4892	British
+T280	GPE 4924 4935	the country
+T281	PER 5017 5082	an administrative committee representing the groups in the region
+T282	LOC 5072 5082	the region
+T283	PER 4885 4899	British forces
+T284	TIM 4968 4975	Tuesday
+T285	PER 4987 5000	a local sheik
+T286	ORG 4924 4967	the country 's first postwar administration
+T287	PER 5058 5082	the groups in the region
+T288	Start-Org 4911 4923	establishing
+E41	Start-Org:T288 Agent:T283 Time-Starting:T284

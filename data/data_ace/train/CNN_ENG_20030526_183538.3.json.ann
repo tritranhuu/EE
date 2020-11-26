@@ -1,0 +1,192 @@
+T1	TIM 38 57	2003-05-26 19:58:55
+T2	VEH 80 118	the flight deck of this carrier at war
+T3	VEH 99 118	this carrier at war
+T4	Attack 115 118	war
+E1	Attack:T4 Instrument:T3
+T5	VEH 174 182	the ship
+T6	TIM 132 155	dawn on this fourth day
+T7	TIM 140 155	this fourth day
+T8	TIM 121 155	soon after dawn on this fourth day
+T9	Attack 192 198	strike
+E2	Attack:T9 Instrument:T5 Time-Before:T8
+T10	LOC 285 289	here
+T11	VEH 275 279	ship
+T12	TIM 201 238	fourth day of combat operations today
+T13	TIM 233 238	today
+T14	PER 254 289	the air wing and the ship team here
+T15	Attack 215 221	combat
+E3	Attack:T15 Attacker:T14 Attacker:T14 Time-Within:T13
+T16	LOC 402 421	eastern afghanistan
+T17	WEA 318 336	laser-guided bombs
+T18	VEH 339 344	f-18s
+T19	WEA 350 379	joint direct attack munitions
+T20	WEA 383 396	j-dam weapons
+T21	WEA 383 388	j-dam
+T22	TIM 422 427	today
+T23	PER 478 480	we
+T24	PER 500 503	our
+T25	PER 292 294	we
+T26	VEH 299 312	f-14 aircraft
+T27	VEH 299 303	f-14
+T28	Attack 470 477	strikes
+E4	Attack:T28 Attacker:T23
+T29	Attack 345 349	drop
+E5	Attack:T29 Place:T16 Instrument:T18 Instrument:T19 Time-Within:T22
+T30	Attack 313 317	drop
+E6	Attack:T30 Attacker:T25 Place:T16 Instrument:T26 Instrument:T17 Time-Within:T22
+T31	LOC 678 682	here
+T32	PER 548 552	they
+T33	PER 651 655	they
+T34	PER 707 710	you
+T35	WEA 777 791	their ordnance
+T36	PER 818 856	a convoy near the afghan city of choft
+T37	VEH 752 768	the fighter jets
+T38	VEH 777 782	their
+T39	GPE 832 856	the afghan city of choft
+T40	GPE 851 856	choft
+T41	GPE 836 842	afghan
+T42	Attack 809 814	atack
+E7	Attack:T42 Target:T36 Instrument:T37 Instrument:T35
+T43	PER 892 919	taliban and al qaeda troops
+T44	PER 877 887	the convoy
+T45	ORG 859 871	the pentagon
+T46	ORG 892 899	taliban
+T47	ORG 904 912	al qaeda
+T48	PER 945 1022	a convoy of leadership that was identified through various intelligence means
+T49	PER 968 972	that
+T50	PER 957 967	leadership
+T51	Attack 935 941	attack
+E8	Attack:T51 Target:T48
+T52	TIM 1046 1063	the last 24 hours
+T53	Attack 1085 1092	strikes
+E9	Attack:T53
+T54	PER 1132 1142	the convoy
+T55	PER 1147 1149	it
+T56	PER 1154 1249	a group of elders on their way to the inaugural ceremony for interim afghan leader hamid karzai
+T57	PER 1175 1180	their
+T58	GPE 1223 1229	afghan
+T59	PER 1165 1171	elders
+T60	PER 1215 1249	interim afghan leader hamid karzai
+T61	PER 1215 1236	interim afghan leader
+T62	PER 1115 1142	local afghans in the convoy
+T63	PER 1269 1289	some tribal warlords
+T64	GPE 1318 1326	american
+T65	GPE 1400 1404	u.s.
+T66	PER 1351 1367	rife aal leaders
+T67	PER 1252 1260	analysts
+T68	ORG 1377 1384	taliban
+T69	PER 1459 1510	someone who is friendly or nonparticipant in combat
+T70	PER 1467 1470	who
+T71	Injure 1451 1458	hurting
+E10	Injure:T71 Victim:T69
+T72	Injure 1439 1447	injuring
+E11	Injure:T72 Victim:T69
+T73	PER 1551 1553	we
+T74	TIM 1673 1678	today
+T75	WEA 1664 1672	ordnance
+T76	PER 1648 1650	we
+T77	Attack 1656 1663	dropped
+E12	Attack:T77 Attacker:T76 Instrument:T75 Time-Within:T74
+T78	PER 1685 1686	i
+T79	WEA 1719 1727	ordnance
+T80	PER 1695 1697	we
+T81	Attack 1714 1718	drop
+E13	Attack:T81 Attacker:T80 Instrument:T79
+T82	LOC 1929 1944	the arabian sea
+T83	TIM 1897 1944	its first week of operations in the arabian sea
+T84	VEH 1866 1888	the `` john c. stennis
+T85	VEH 1897 1900	its
+T86	VEH 2011 2021	the chapel
+T87	PER 2050 2058	the crew
+T88	PER 2085 2090	their
+T89	TIM 2075 2082	workday
+T90	TIM 2119 2138	another three weeks
+T91	TIM 2085 2104	their first day off
+T92	PER 1990 1997	a choir
+T93	PER 2163 2165	me
+T94	TIM 2147 2158	another day
+T95	LOC 2182 2186	here
+T96	PER 2173 2174	i
+T97	PER 2189 2190	i
+T98	PER 2219 2220	i
+T99	PER 2245 2246	i
+T100	PER 2364 2402	sailors who earned a promotion in rank
+T101	PER 2372 2375	who
+T102	VEH 2310 2318	the smip
+T103	PER 2506 2515	this crew
+T104	PER 2473 2476	you
+T105	PER 2490 2493	you
+T106	PER 2548 2559	one another
+T107	PER 2530 2534	they
+T108	PER 2560 2579	the whole community
+T109	PER 2595 2599	they
+T110	PER 2629 2633	they
+T111	PER 2619 2625	a team
+T112	PER 2650 2656	a team
+T113	PER 2682 2686	them
+T114	PER 2703 2713	themselves
+T115	PER 2663 2664	i
+T116	PER 2727 2731	they
+T117	PER 2747 2757	themselves
+T118	ORG 2828 2830	we
+T119	PER 2835 2846	this sailor
+T120	PER 2847 2849	he
+T121	VEH 2872 2881	the ghali
+T122	TIM 2818 2827	last time
+T123	PER 2888 2890	he
+T124	TIM 2884 2887	now
+T125	PER 2914 2975	pilots sarah `` clutch '' joiner and russ `` gladys '' knight
+T126	PER 2914 2920	pilots
+T127	PER 2980 2985	their
+T128	PER 3023 3025	's
+T129	VEH 3058 3072	a cargo flight
+T130	VEH 3077 3095	the `` uss stennis
+T131	GPE 3113 3117	home
+T132	PER 3101 3105	they
+T133	LOC 3153 3157	here
+T134	TIM 3162 3183	four and a half years
+T135	PER 3142 3143	i
+T136	TIM 3201 3211	time to go
+T137	PER 3234 3238	them
+T138	PER 3218 3219	i
+T139	PER 3262 3271	my family
+T140	PER 3287 3316	my family away from my family
+T141	PER 3241 3245	they
+T142	TIM 3272 3281	right now
+T143	PER 3307 3316	my family
+T144	PER 3262 3264	my
+T145	PER 3287 3289	my
+T146	PER 3307 3309	my
+T147	VEH 3398 3408	the flight
+T148	VEH 3360 3368	the ship
+T149	PER 3371 3387	commander knight
+T150	PER 3371 3380	commander
+T151	TIM 3339 3356	every last minute
+T152	TIM 3409 3444	only seconds before the door closes
+T153	PER 3471 3473	my
+T154	PER 3533 3535	my
+T155	ORG 3493 3501	the navy
+T156	TIM 3481 3489	19 years
+T157	PER 3570 3578	the crew
+T158	TIM 3590 3606	five more months
+T159	PER 3558 3578	the rest of the crew
+T160	GPE 3660 3667	america
+T161	VEH 3702 3728	the `` uss john c. stennis
+T162	PER 3638 3644	no one
+T163	Attack 3682 3691	terrorism
+E14	Attack:T163 Attacker:T160
+T164	Attack 3743 3749	battle
+E15	Attack:T164 Instrument:T161
+T165	Attack 3675 3678	war
+E16	Attack:T165 Attacker:T160
+T166	VEH 3772 3788	a carrier at war
+T167	Attack 3785 3788	war
+E17	Attack:T167 Instrument:T166
+T168	TIM 3855 3859	date
+T169	PER 3791 3793	we
+T170	PER 3838 3840	we
+T171	PER 3862 3864	we
+T172	VEH 3938 3947	your ship
+T173	PER 3921 3924	you
+T174	PER 3938 3942	your
+T175	PER 3963 3973	yourselves

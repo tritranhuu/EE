@@ -8,7 +8,7 @@ from collections import namedtuple
 from io import StringIO
 from os import path
 
-path_data = 'data/test'
+path_data = 'data/data_ace/train'
 path_save = 'data/full'
 
 def parse_textbounds(f, annfn):
@@ -83,7 +83,7 @@ def get_annotations(annfn):
 def text_to_conll(ftext, path_s):
     """Convert plain text into CoNLL format."""
     fspl = ftext.split('/')
-    fann = ftext[: -len(fspl[-1])] + fspl[-1].split('.')[0] + '.ann'
+    fann = ftext[: -len(fspl[-1])] + '.'.join(fspl[-1].split('.')[:-1]) + '.ann'
     with open(ftext, encoding='utf8') as f:
         sentences = f.read().split('\n')
     lines = []
@@ -164,7 +164,7 @@ def save_conll(data, path, opt='w'):
                 for word in sent:
                     w = list(set(word[3])&set(args.keys()))
                     if len(w)>0:
-                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[w[0]] + '\tO'+'\n')
+                        f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ args[w[0]].split(':')[0] + '\tO'+'\n')
                     elif word == args['word']:
                         f.write(word[0] + '\t' + word[1] + '\t' + word[2] + '\t'+ 'O' + '\tE'+ '\n')
                     else:
@@ -212,11 +212,15 @@ def brat2conll():
     count = 0
     for file, files in zip(npath_file, npath_save):
         # print(file)
-        save_conll(text_to_conll(file, files), path_save + '/test.txt', opt='a')
+        save_conll(text_to_conll(file, files), path_save + '/test.txt', opt='w')
+        
         count +=1
         if count %100 ==0:
             print('check {} files'.format(count))
-    for f in glob.glob("data/full/EV-test*.txt"):
-         os.system("cat "+f+" >> test.txt")
-
+    
+        #  os.system("cat "+f+" >> test.txt")
+    with open('train.txt', 'w') as outfile:
+        for f in glob.glob("data/full/*.json.txt"):
+            with open(f) as infile:
+                outfile.write(infile.read())
 brat2conll()

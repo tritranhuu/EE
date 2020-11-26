@@ -1,0 +1,63 @@
+T1	TIM 38 57	2003-06-18 15:22:40
+T2	PER 78 85	priests
+T3	GPE 210 219	st. louis
+T4	PER 183 190	bishops
+T5	PER 224 229	their
+T6	GPE 129 146	the united states
+T7	TIM 198 206	tomorrow
+T8	ORG 106 146	the catholic church in the united states
+T9	TIM 230 240	semiannual
+T10	Meet 241 248	meeting
+E1	Meet:T10 Place:T3 Entity:T5 Time-Within:T7
+T11	Attack 69 74	abuse
+E2	Attack:T11 Attacker:T2
+T12	PER 407 425	public authorities
+T13	PER 396 403	a minor
+T14	TIM 276 285	last year
+T15	ORG 335 342	diocese
+T16	PER 335 352	diocese officials
+T17	ORG 289 332	the national conference of catholic bishops
+T18	Attack 387 392	abuse
+E3	Attack:T18 Target:T13
+T19	ORG 503 515	the ministry
+T20	PER 469 476	a minor
+T21	TIM 435 442	present
+T22	TIM 446 452	future
+T23	TIM 428 432	past
+T24	End-Position 490 497	removal
+E4	End-Position:T24 Person:T20 Entity:T19
+T25	Attack 460 465	abuse
+E5	Attack:T25 Target:T20 Time-Within:T22 Time-Within:T23 Time-Within:T21
+T26	PER 518 565	no priest or deacons who sexually abuse a minor
+T27	PER 558 565	a minor
+T28	PER 539 542	who
+T29	ORG 588 602	another desies
+T30	Attack 552 557	abuse
+E6	Attack:T30 Attacker:T28 Target:T27
+T31	Start-Position 573 584	transferred
+E7	Start-Position:T31 Person:T26 Person:T26 Entity:T29
+T32	GPE 792 799	detroit
+T33	ORG 732 766	the survivors network in st. louis
+T34	PER 784 786	us
+T35	PER 812 849	the founder of a priest support group
+T36	PER 800 809	joe mayor
+T37	PER 701 714	barbara blain
+T38	PER 717 766	the founder of the survivors network in st. louis
+T39	PER 610 612	me
+T40	PER 640 647	o'brien
+T41	TIM 613 616	now
+T42	PER 736 745	survivors
+T43	PER 829 835	priest
+T44	ORG 827 849	a priest support group
+T45	GPE 757 766	st. louis
+T46	ORG 686 696	the church
+T47	PER 852 859	barbara
+T48	PER 865 868	you
+T49	PER 944 947	you
+T50	TIM 929 937	tomorrow
+T51	PER 880 891	the bishops
+T52	PER 963 967	they
+T53	Meet 921 928	meeting
+E8	Meet:T53 Entity:T51 Time-Within:T50
+T54	Attack 1022 1027	abuse
+E9	Attack:T54

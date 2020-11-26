@@ -1,0 +1,102 @@
+T1	TIM 34 42	20030416
+T2	GPE 108 114	MOSCOW
+T3	ORG 121 123	AP
+T4	ORG 155 163	military
+T5	GPE 147 154	Russian
+T6	CRM 188 195	treason
+T7	TIM 314 331	earlier this year
+T8	TIM 212 221	Wednesday
+T9	PER 130 195	The lawyer for a Russian military journalist convicted of treason
+T10	PER 274 277	his
+T11	ORG 334 347	news agencies
+T12	PER 145 195	a Russian military journalist convicted of treason
+T13	PER 274 331	his client , who was released on parole earlier this year
+T14	PER 287 290	who
+T15	Convict 175 184	convicted
+E1	Convict:T15 Defendant:T12 Crime:T6
+T16	Appeal 205 211	appeal
+E2	Appeal:T16 Crime:T6 Plaintiff:T13 Time-Within:T8
+T17	Release-Parole 295 303	released
+E3	Release-Parole:T17 Person:T14 Crime:T6 Time-Within:T7
+T18	Release-Parole 307 313	parole
+E4	Release-Parole:T18 Person:T14 Crime:T6 Time-Within:T7
+T19	ORG 459 468	ITAR-Tass
+T20	ORG 442 482	the Interfax and ITAR-Tass news agencies
+T21	ORG 418 439	Russian Supreme Court
+T22	ORG 446 454	Interfax
+T23	PER 383 395	Genri Reznik
+T24	PER 359 382	Grigory Pasko 's lawyer
+T25	PER 359 372	Grigory Pasko
+T26	Appeal 406 412	appeal
+E5	Appeal:T26 Adjudicator:T21 Plaintiff:T25
+T27	ORG 587 591	they
+T28	ORG 503 512	the court
+T29	PER 494 496	He
+T30	PER 579 584	Pasko
+T31	Convict 531 538	verdict
+E6	Convict:T31 Defendant:T30 Adjudicator:T28
+T32	ORG 701 709	military
+T33	PER 697 720	top military commanders
+T34	SEN 622 642	four years in prison
+T35	TIM 646 659	December 2001
+T36	CRM 664 743	illegally attending a meeting of top military commanders and taking notes there
+T37	PER 599 604	Pasko
+T38	Meet 686 693	meeting
+E7	Meet:T38 Entity:T37 Entity:T33 Time-Within:T35
+T39	Sentence 609 618	sentenced
+E8	Sentence:T39 Defendant:T37 Sentence:T34 Crime:T36 Time-Within:T35
+T40	ORG 748 756	military
+T41	ORG 801 840	Japanese media with which he had worked
+T42	ORG 821 826	which
+T43	GPE 801 809	Japanese
+T44	ORG 746 762	A military court
+T45	PER 768 770	he
+T46	PER 827 829	he
+T47	SEN 875 886	time served
+T48	PER 843 848	Pasko
+T49	PER 851 856	whose
+T50	TIM 905 912	January
+T51	Sentence 857 865	sentence
+E9	Sentence:T51 Defendant:T48 Sentence:T47
+T52	Sentence 973 981	sentence
+E10	Sentence:T52 Defendant:T48 Sentence:T47
+T53	Release-Parole 893 901	released
+E11	Release-Parole:T53 Person:T48 Time-Within:T50
+T54	ORG 1025 1037	the military
+T55	GPE 1097 1104	Russian
+T56	LOC 1160 1167	the sea
+T57	ORG 1093 1109	the Russian navy
+T58	PER 984 986	He
+T59	PER 1002 1005	his
+T60	PER 1052 1055	him
+T61	ORG 1265 1282	the Supreme Court
+T62	ORG 1298 1306	Interfax
+T63	PER 1248 1282	the presidium of the Supreme Court
+T64	PER 1170 1176	Reznik
+T65	PER 1200 1202	he
+T66	PER 1218 1223	Pasko
+T67	TIM 1210 1233	the day Pasko was freed
+T68	Appeal 1193 1199	appeal
+E12	Appeal:T68 Adjudicator:T63 Plaintiff:T66
+T69	Release-Parole 1228 1233	freed
+E13	Release-Parole:T69 Person:T66 Time-Within:T67
+T70	ORG 1338 1346	military
+T71	ORG 1325 1334	the court
+T72	PER 1325 1352	the court 's military board
+T73	PER 1309 1319	The lawyer
+T74	Appeal 1394 1400	appeal
+E14	Appeal:T74 Adjudicator:T72
+T75	Trial-Hearing 1375 1386	proceedings
+E15	Trial-Hearing:T75 Adjudicator:T71
+T76	ORG 1536 1544	military
+T77	ORG 1567 1575	military
+T78	PER 1455 1477	Supreme Court Chairman
+T79	PER 1455 1496	Supreme Court Chairman Vyacheslav Lebedev
+T80	ORG 1455 1468	Supreme Court
+T81	PER 1536 1551	military judges
+T82	ORG 1640 1648	Interfax
+T83	PER 1403 1409	Reznik
+T84	PER 1415 1417	he
+T85	PER 1629 1634	Pasko
+T86	Appeal 1436 1442	appeal
+E16	Appeal:T86 Adjudicator:T79

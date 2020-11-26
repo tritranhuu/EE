@@ -1,0 +1,238 @@
+T1	TIM 31 58	2003-04-08T16 :00:00 -05:00
+T2	PER 64 72	WOODRUFF
+T3	PER 141 186	U.S. troops trying to take control of Baghdad
+T4	GPE 179 186	Baghdad
+T5	GPE 141 145	U.S.
+T6	PER 80 95	the journalists
+T7	Die 98 103	death
+E1	Die:T7 Victim:T6 Agent:T3
+T8	PER 232 246	our colleagues
+T9	PER 224 246	many of our colleagues
+T10	PER 277 282	their
+T11	PER 232 235	our
+T12	PER 189 193	They
+T13	TIM 301 310	every day
+T14	Attack 261 264	war
+E2	Attack:T14
+T15	PER 351 369	our senior analyst
+T16	PER 372 387	Jeff Greenfield
+T17	ORG 351 354	our
+T18	TIM 327 330	now
+T19	PER 418 476	JEFF GREENFIELD , CNN SR. . ANALYST -LRB- voice-over -RRB-
+T20	ORG 485 497	Al - Jazeera
+T21	ORG 526 537	the network
+T22	ORG 546 548	it
+T23	PER 570 580	U.S. force
+T24	GPE 570 574	U.S.
+T25	PER 482 506	an Al - Jazeera reporter
+T26	TIM 518 523	today
+T27	Die 511 517	killed
+E3	Die:T27 Victim:T25 Agent:T23 Time-Within:T26
+T28	FAC 653 658	where
+T29	FAC 645 652	a hotel
+T30	ORG 659 670	the network
+T31	PER 611 621	its forces
+T32	ORG 611 614	its
+T33	ORG 583 598	Central Command
+T34	Attack 635 639	fire
+E4	Attack:T34 Attacker:T31
+T35	PER 760 767	another
+T36	PER 704 725	two other journalists
+T37	FAC 687 701	a nearby hotel
+T38	ORG 748 755	Reuters
+T39	PER 728 755	a photographer from Reuters
+T40	GPE 826 835	coalition
+T41	PER 826 842	coalition forces
+T42	ORG 773 785	Tele 5 Spain
+T43	ORG 808 815	CENTCOM
+T44	Die 786 790	died
+E5	Die:T44 Victim:T36 Victim:T39 Victim:T35 Agent:T41 Place:T37
+T45	Attack 853 857	fire
+E6	Attack:T45 Attacker:T41 Place:T37
+T46	LOC 922 931	the north
+T47	GPE 891 895	U.S.
+T48	PER 862 869	Kurdish
+T49	PER 860 880	A Kurdish journalist
+T50	Die 881 885	died
+E7	Die:T50 Victim:T49 Agent:T47 Place:T46
+T51	Attack 896 909	friendly-fire
+E8	Attack:T51 Attacker:T47 Place:T46 Target:T49
+T52	ORG 969 984	Washington Post
+T53	GPE 941 949	American
+T54	PER 938 963	an American writer/editor
+T55	PER 969 1021	Washington Post '' editorial columnist Michael Kelly
+T56	PER 969 1007	Washington Post '' editorial columnist
+T57	PER 1040 1043	his
+T58	VEH 1040 1050	his Humvee
+T59	GPE 1086 1091	Iraqi
+T60	LOC 1064 1071	a canal
+T61	Die 1028 1034	killed
+E9	Die:T61 Victim:T55
+T62	Attack 1092 1096	fire
+E10	Attack:T62 Attacker:T59 Target:T55
+T63	Attack 1163 1170	wartime
+E11	Attack:T63
+T64	PER 1289 1297	a sniper
+T65	LOC 1314 1325	the Pacific
+T66	LOC 1301 1325	an island in the Pacific
+T67	PER 1236 1274	Famed World War II reporter Ernie Pyle
+T68	PER 1242 1263	World War II reporter
+T69	Die 1279 1285	killed
+E12	Die:T69 Victim:T67 Agent:T64 Place:T66
+T70	Attack 1242 1254	World War II
+E13	Attack:T70
+T71	LOC 1479 1488	Indochina
+T72	WEA 1464 1475	a land mine
+T73	PER 1328 1443	Famed combat photographer Robert Capa , who took a classic photo of a fighter 's death during the Spanish Civil War
+T74	PER 1334 1353	combat photographer
+T75	PER 1368 1371	who
+T76	PER 1446 1453	himself
+T77	PER 1396 1405	a fighter
+T78	Attack 1440 1443	War
+E14	Attack:T78
+T79	Die 1409 1414	death
+E15	Die:T79 Victim:T77
+T80	Die 1454 1458	died
+E16	Die:T80 Instrument:T72 Victim:T73 Place:T71
+T81	PER 1511 1539	the famous actor Errol Flynn
+T82	PER 1511 1527	the famous actor
+T83	PER 1491 1501	Sean Flynn
+T84	PER 1504 1539	son of the famous actor Errol Flynn
+T85	GPE 1557 1565	Cambodia
+T86	TIM 1569 1573	1970
+T87	LOC 1631 1645	Southeast Asia
+T88	PER 1576 1622	More than 65 journalists of many nationalities
+T89	Die 1623 1627	died
+E17	Die:T89 Victim:T88
+T90	PER 1648 1678	ABC News producer David Kaplan
+T91	PER 1648 1665	ABC News producer
+T92	ORG 1648 1656	ABC News
+T93	PER 1693 1699	sniper
+T94	GPE 1708 1719	the Balkans
+T95	TIM 1723 1727	1992
+T96	Attack 1700 1704	fire
+E18	Attack:T96 Attacker:T93 Place:T94 Target:T90 Time-Within:T95
+T97	Die 1683 1689	killed
+E19	Die:T97 Victim:T90 Agent:T93 Place:T94 Time-Within:T95
+T98	ORG 1760 1783	The Wall Street Journal
+T99	PER 1760 1801	The Wall Street Journal '' 's Danny Pearl
+T100	PER 1740 1749	reporters
+T101	Die 1804 1807	die
+E20	Die:T101 Victim:T100 Victim:T99
+T102	PER 1868 1878	terrorists
+T103	PER 1846 1851	Pearl
+T104	GPE 1882 1890	Pakistan
+T105	Die 1856 1864	murdered
+E21	Die:T105 Victim:T103 Agent:T102 Place:T104
+T106	Die 1897 1905	casualty
+E22	Die:T106
+T107	GPE 2028 2036	American
+T108	PER 2028 2051	American troops in Iraq
+T109	PER 2091 2119	the troops they are covering
+T110	PER 1994 2051	The 600 journalists embedded with American troops in Iraq
+T111	PER 2102 2106	they
+T112	GPE 2047 2051	Iraq
+T113	Attack 2083 2087	fire
+E23	Attack:T113 Target:T110 Target:T109
+T114	PER 2165 2177	those troops
+T115	PER 2122 2127	Their
+T116	PER 2137 2142	their
+T117	Attack 2196 2205	firefight
+E24	Attack:T117
+T118	PER 2261 2265	they
+T119	Attack 2311 2314	war
+E25	Attack:T119
+T120	ORG 2372 2380	CBS News
+T121	PER 2372 2405	CBS News President Andrew Heyward
+T122	PER 2372 2390	CBS News President
+T123	PER 2485 2486	I
+T124	ORG 2338 2369	broadcasting and cable magazine
+T125	GPE 2542 2546	U.S.
+T126	PER 2563 2565	We
+T127	PER 2591 2615	the ones with the troops
+T128	PER 2570 2588	American reporters
+T129	PER 2605 2615	the troops
+T130	GPE 2570 2578	American
+T131	PER 2769 2777	civilian
+T132	PER 2670 2681	journalists
+T133	ORG 2712 2720	military
+T134	Die 2778 2788	casualties
+E26	Die:T134 Victim:T131
+T135	PER 2908 2932	the people running a war
+T136	PER 2791 2828	Reporters who ignore or distort facts
+T137	PER 2801 2804	who
+T138	PER 2843 2848	their
+T139	Attack 2929 2932	war
+E27	Attack:T139
+T140	GPE 2974 2986	Nazi Germany
+T141	GPE 2950 2970	the old Soviet Union
+T142	GPE 2990 3002	South Africa
+T143	PER 3052 3062	a reporter
+T144	PER 3072 3075	his
+T145	ORG 2974 2978	Nazi
+T146	GPE 3006 3010	Iraq
+T147	GPE 3123 3131	New York
+T148	PER 3099 3114	Jeff Greenfield
+T149	ORG 3117 3120	CNN
+T150	PER 3160 3168	WOODRUFF
+T151	PER 3329 3354	journalists in a war zone
+T152	PER 3208 3247	Al-Jazeera correspondent Omar Al Issawi
+T153	PER 3208 3232	Al-Jazeera correspondent
+T154	PER 3286 3289	his
+T155	PER 3261 3266	Larry
+T156	ORG 3208 3218	Al-Jazeera
+T157	PER 3286 3299	his colleague
+T158	TIM 3173 3180	tonight
+T159	Attack 3346 3349	war
+E28	Attack:T159
+T160	Die 3277 3282	death
+E29	Die:T160 Victim:T157
+T161	TIM 3365 3408	tonight at 9:00 p.m. Eastern , 6:00 Pacific
+T162	PER 3438 3441	you
+T163	PER 3594 3627	British Prime Minister Tony Blair
+T164	PER 3594 3616	British Prime Minister
+T165	PER 3738 3756	the prime minister
+T166	GPE 3853 3868	the Middle East
+T167	GPE 3594 3601	British
+T168	PER 3731 3733	he
+T169	PER 3496 3510	President Bush
+T170	PER 3496 3505	President
+T171	PER 3547 3550	his
+T172	PER 3630 3643	the president
+T173	FAC 3454 3476	Andrews Air Force Base
+T174	LOC 3561 3577	Northern Ireland
+T175	LOC 3907 3923	Northern Ireland
+T176	GPE 3721 3728	Belfast
+T177	GPE 3581 3588	Belfast
+T178	TIM 3680 3687	two-day
+T179	GPE 3652 3660	American
+T180	GPE 3524 3541	the United States
+T181	TIM 3482 3493	moments ago
+T182	ORG 3422 3424	we
+T183	GPE 3793 3797	Iraq
+T184	TIM 3695 3712	less than two-day
+T185	TIM 3416 3419	now
+T186	Attack 3786 3789	war
+E30	Attack:T186 Place:T183
+T187	Transport 3713 3717	trip
+E31	Transport:T187 Artifact:T169 Destination:T177 Time-Holds:T184
+T188	Meet 3551 3557	summit
+E32	Meet:T188 Place:T174 Entity:T169 Entity:T163 Time-Within:T178
+T189	Transport 3511 3520	returning
+E33	Transport:T189 Artifact:T169 Origin:T174 Destination:T173
+T190	PER 3926 3939	The president
+T191	PER 4030 4032	he
+T192	VEH 3973 3987	the helicopter
+T193	VEH 3960 3970	Marine One
+T194	FAC 4006 4021	the White House
+T195	FAC 4024 4029	where
+T196	Transport 3990 4002	heading back
+E34	Transport:T196 Vehicle:T193 Artifact:T190 Destination:T194
+T197	LOC 4080 4089	the world
+T198	GPE 4113 4117	Iraq
+T199	Attack 4106 4109	war
+E35	Attack:T199 Place:T198
+T200	PER 4137 4154	our Richard Quest
+T201	ORG 4125 4127	we
+T202	ORG 4137 4140	our
+T203	ORG 4180 4182	us

@@ -1,0 +1,34 @@
+T1	TIM 41 60	2003-04-25 19:39:19
+T2	TIM 159 173	september 11th
+T3	TIM 126 131	today
+T4	VEH 120 125	a bus
+T5	PER 153 181	a key september 11th suspect
+T6	GPE 89 97	lebanese
+T7	GPE 61 67	german
+T8	PER 79 104	a teenage lebanese gunman
+T9	PER 107 110	who
+T10	PER 61 74	german police
+T11	VEH 223 230	the bus
+T12	PER 278 287	16 people
+T13	GPE 234 265	the north german city of bremen
+T14	GPE 259 265	bremen
+T15	PER 184 194	the gunman
+T16	LOC 238 250	north german
+T17	PER 313 319	police
+T18	FAC 331 343	the autobahn
+T19	TIM 472 481	last year
+T20	TIM 437 451	september 11th
+T21	PER 362 364	he
+T22	GPE 485 493	pakistan
+T23	PER 416 432	ramzi binalshibh
+T24	PER 435 493	a september 11th suspect apprehended last year in pakistan
+T25	PER 389 493	four prisoners , including ramzi binalshibh , a september 11th suspect apprehended last year in pakistan
+T26	PER 346 357	negotiators
+T27	Release-Parole 378 385	release
+E1	Release-Parole:T27 Person:T23 Entity:T26
+T28	TIM 516 527	17-year-old
+T29	PER 512 545	the 17-year-old hijacking suspect
+T30	PER 496 502	police
+T31	Attack 563 567	shot
+E2	Attack:T31 Target:T29 Attacker:T30
+T32	PER 570 582	all hostages

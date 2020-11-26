@@ -1,0 +1,83 @@
+T1	TIM 48 68	2004-12-06T18 :35:00
+T2	PER 128 138	Harry Hope
+T3	TIM 139 169	Mon , 06 Dec 2004 23:35:23 GMT
+T4	PER 222 228	Leader
+T5	PER 193 210	Our Great Fuehrer
+T6	ORG 170 183	Clear Channel
+T7	GPE 193 196	Our
+T8	PER 451 465	George W. Bush
+T9	ORG 311 319	military
+T10	PER 253 279	a good totalitarian leader
+T11	PER 382 386	your
+T12	PER 539 547	yourself
+T13	PER 585 601	Our Great Leader
+T14	PER 602 604	he
+T15	PER 630 637	himself
+T16	PER 648 650	he
+T17	PER 721 724	him
+T18	ORG 658 707	one of the biggest media companies in the country
+T19	GPE 585 588	Our
+T20	GPE 696 707	the country
+T21	ORG 677 682	media
+T22	ORG 665 707	the biggest media companies in the country
+T23	ORG 789 852	over 1,200 radio stations and 57 television stations in America
+T24	PER 769 781	Sean Hannity
+T25	PER 751 764	Rush Limbaugh
+T26	ORG 743 781	home to Rush Limbaugh and Sean Hannity
+T27	ORG 727 740	Clear Channel
+T28	GPE 845 852	America
+T29	ORG 855 859	They
+T30	PER 944 950	nobody
+T31	ORG 909 913	they
+T32	ORG 922 927	their
+T33	PER 1034 1046	DUer davhill
+T34	LOC 1014 1030	downtown Orlando
+T35	FAC 1001 1004	I-4
+T36	PER 1101 1140	any candidate or candidate 's committee
+T37	PER 1118 1127	candidate
+T38	ORG 1196 1209	Clear Channel
+T39	PER 1189 1192	you
+T40	Phone-Write 1170 1177	message
+E1	Phone-Write:T40 Entity:T39 Entity:T38
+T41	ORG 1233 1282	one of the largest media companies in the country
+T42	GPE 1271 1282	the country
+T43	PER 1219 1222	you
+T44	PER 1315 1318	you
+T45	ORG 1252 1257	media
+T46	ORG 1240 1282	the largest media companies in the country
+T47	Phone-Write 1347 1355	messages
+E2	Phone-Write:T47 Entity:T41 Entity:T44
+T48	PER 1361 1363	Me
+T49	ORG 1466 1479	Clear Channel
+T50	ORG 1525 1538	Clear Channel
+T51	PER 1387 1389	we
+T52	PER 1442 1444	we
+T53	ORG 1525 1554	Clear Channel Outdoor markets
+T54	PER 1578 1592	Local managers
+T55	PER 1665 1678	an advertiser
+T56	ORG 1714 1727	Clear Channel
+T57	ORG 1811 1824	Clear Channel
+T58	GPE 1905 1912	Arizona
+T59	GPE 1786 1864	the only state to suffer Clear Channel 's `` political public service messages
+T60	GPE 1771 1778	Florida
+T61	ORG 1921 1924	you
+T62	ORG 1927 1940	liberal media
+T63	PER 1948 1970	Democratic Underground
+T64	PER 1971 1976	Harry
+T65	PER 1977 1979	CB
+T66	TIM 1980 2011	Mon , 6 Dec 2004 19:06:38 -0500
+T67	PER 2038 2045	Fuehrer
+T68	PER 2052 2057	Harry
+T69	PER 2012 2015	You
+T70	ORG 2084 2097	Clear Channel
+T71	PER 2058 2061	You
+T72	PER 2071 2081	a cry baby
+T73	PER 2129 2150	Rightards_R_Parasites
+T74	TIM 2151 2182	Mon , 6 Dec 2004 19:00:30 -0800
+T75	PER 2211 2228	Our Great Fuehrer
+T76	PER 2240 2246	Leader
+T77	ORG 2188 2201	Clear Channel
+T78	GPE 2211 2214	Our
+T79	PER 2287 2317	any of the rightards out there
+T80	PER 2247 2250	You
+T81	PER 2294 2317	the rightards out there

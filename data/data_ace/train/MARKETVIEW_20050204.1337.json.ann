@@ -1,0 +1,35 @@
+T1	TIM 35 55	2005-02-04T13 :37:00
+T2	PER 85 90	Byrne
+T3	TIM 91 111	2005-02-04T13 :37:00
+T4	ORG 129 155	usually reliable CNN/Money
+T5	ORG 244 248	they
+T6	PER 234 235	I
+T7	PER 454 471	foreign investors
+T8	GPE 484 490	the US
+T9	PER 625 639	everybody else
+T10	PER 559 614	US consumers -LRB- who control about 20 % of global GDP
+T11	PER 578 581	who
+T12	GPE 559 561	US
+T13	GPE 685 687	US
+T14	NUM 596 600	20 %
+T15	NUM 722 726	75 %
+T16	GPE 1013 1033	developing countries
+T17	GPE 1088 1092	they
+T18	GPE 861 870	ourselves
+T19	GPE 951 980	a better place for investment
+T20	GPE 937 939	we
+T21	GPE 828 830	we
+T22	GPE 835 890	consumers bent on gorging ourselves with imported goods
+T23	GPE 1177 1179	we
+T24	GPE 1292 1296	Asia
+T25	ORG 1273 1296	the major banks in Asia
+T26	PER 1469 1472	you
+T27	PER 1547 1563	non-US investors
+T28	GPE 1338 1340	We
+T29	GPE 1485 1488	our
+T30	GPE 1547 1553	non-US
+T31	GPE 1595 1602	America
+T32	GPE 1705 1710	Asian
+T33	ORG 1705 1724	Asian central banks
+T34	PER 1625 1628	who
+T35	PER 1687 1688	I

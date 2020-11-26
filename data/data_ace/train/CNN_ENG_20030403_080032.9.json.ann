@@ -1,0 +1,78 @@
+T1	TIM 38 57	2003-04-03 09:29:44
+T2	PER 135 148	jessica lynch
+T3	GPE 102 115	west virginia
+T4	GPE 58 62	that
+T5	GPE 90 115	palestine , west virginia
+T6	GPE 177 181	home
+T7	GPE 66 115	the very joyous town of palestine , west virginia
+T8	Transport 172 176	come
+E1	Transport:T8 Artifact:T2 Destination:T6
+T9	PER 189 208	a brave young woman
+T10	PER 243 246	she
+T11	PER 215 218	you
+T12	Injure 234 242	injuries
+E2	Injure:T12 Victim:T10
+T13	PER 289 292	she
+T14	PER 263 266	you
+T15	Attack 282 288	firing
+E3	Attack:T15 Attacker:T13
+T16	PER 299 302	she
+T17	Attack 316 321	fight
+E4	Attack:T17 Attacker:T16
+T18	Die 329 334	death
+E5	Die:T18 Victim:T16
+T19	PER 337 340	she
+T20	PER 358 361	she
+T21	PER 366 382	one tough cookie
+T22	PER 408 412	here
+T23	PER 419 422	she
+T24	TIM 543 550	morning
+T25	GPE 503 510	america
+T26	ORG 466 468	we
+T27	GPE 553 563	home front
+T28	GPE 596 600	iraq
+T29	Attack 589 592	war
+E6	Attack:T29 Place:T28
+T30	GPE 615 623	oklahoma
+T31	ORG 603 605	we
+T32	PER 686 704	her first daughter
+T33	PER 660 671	cass apd ra
+T34	PER 686 689	her
+T35	Be-Born 677 682	birth
+E7	Be-Born:T35 Person:T32
+T36	PER 707 725	alexis jane denise
+T37	PER 740 743	her
+T38	PER 740 751	her husband
+T39	PER 754 769	john scottsdale
+T40	GPE 795 799	iraq
+T41	PER 802 803	i
+T42	PER 870 876	alexis
+T43	PER 835 838	her
+T44	PER 835 846	her husband
+T45	Be-Born 879 884	birth
+E8	Be-Born:T45 Person:T42
+T46	PER 928 951	their new granddaughter
+T47	PER 986 994	daughter
+T48	PER 975 981	mother
+T49	PER 887 898	his parents
+T50	PER 928 933	their
+T51	PER 887 890	his
+T52	GPE 1022 1029	america
+T53	GPE 1089 1098	coalition
+T54	PER 1085 1106	the coalition members
+T55	TIM 1033 1042	a morning
+T56	TIM 1158 1167	yesterday
+T57	PER 1144 1157	jessica lynch
+T58	PER 1113 1116	you
+T59	PER 1122 1157	the family members of jessica lynch
+T60	PER 1126 1132	family
+T61	PER 1170 1174	they
+T62	PER 1215 1249	the first american prisoner of war
+T63	GPE 1225 1233	american
+T64	ORG 1284 1288	they
+T65	PER 1350 1351	i
+T66	PER 1429 1432	her
+T67	PER 1429 1439	her father
+T68	PER 1419 1422	you
+T69	PER 1455 1462	jeffrey
+T70	PER 1474 1476	he

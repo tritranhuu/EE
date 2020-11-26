@@ -1,0 +1,31 @@
+T1	TIM 40 60	2005-02-06T13 :45:00
+T2	PER 80 90	Will Vehrs
+T3	TIM 91 111	2005-02-06T13 :45:00
+T4	JOB 119 126	Senator
+T5	PER 112 137	Former Senator Chuck Robb
+T6	PER 112 126	Former Senator
+T7	TIM 162 168	lately
+T8	TIM 112 118	Former
+T9	End-Position 112 118	Former
+E1	End-Position:T9 Person:T5 Position:T4
+T10	ORG 229 335	the Commission on the Intelligence Capabilities of the United States Regarding Weapons of Mass Destruction
+T11	PER 195 197	us
+T12	PER 209 211	he
+T13	PER 215 335	a co-chair of the Commission on the Intelligence Capabilities of the United States Regarding Weapons of Mass Destruction
+T14	TIM 198 203	today
+T15	ORG 338 342	They
+T16	TIM 358 366	March 31
+T17	PER 369 370	I
+T18	ORG 433 446	the Committee
+T19	PER 379 382	Rob
+T20	TIM 398 413	after that date
+T21	PER 559 565	public
+T22	PER 506 574	so many respected foreign policy and security policy public servants
+T23	GPE 478 486	Virginia
+T24	TIM 586 593	present
+T25	TIM 577 581	past
+T26	PER 596 600	Paul
+T27	TIM 616 626	T16 :38:00
+T28	PER 627 646	Good old Chuck Robb
+T29	PER 651 652	I
+T30	PER 660 676	everyone on here

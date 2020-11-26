@@ -1,0 +1,61 @@
+T1	TIM 38 57	2003-04-18 07:37:50
+T2	PER 58 72	general brooks
+T3	PER 58 65	general
+T4	GPE 334 342	the u.s.
+T5	PER 229 251	the kurds in the north
+T6	LOC 242 251	the north
+T7	GPE 194 201	baghdad
+T8	LOC 190 210	the baghdad district
+T9	PER 130 139	number 24
+T10	PER 161 210	samir who is responsible for the baghdad district
+T11	PER 167 170	who
+T12	PER 259 267	this man
+T13	PER 284 351	number 4 out of that playing card deck of 55 that the u.s. is after
+T14	PER 276 280	this
+T15	Arrest-Jail 119 126	capture
+E1	Arrest-Jail:T15 Person:T9 Agent:T5
+T16	PER 354 373	top leaders in iraq
+T17	GPE 369 373	iraq
+T18	WEA 386 390	bomb
+T19	GPE 399 406	baghdad
+T20	TIM 411 438	about a week and a half ago
+T21	LOC 441 461	the mansour district
+T22	Attack 407 410	hit
+E2	Attack:T22 Place:T19 Instrument:T18 Time-Within:T20
+T23	PER 497 511	general brooks
+T24	PER 497 504	general
+T25	PER 464 474	no remains
+T26	PER 610 624	saddam hussein
+T27	PER 632 635	his
+T28	FAC 660 673	that building
+T29	FAC 679 681	it
+T30	PER 632 644	his two sons
+T31	WEA 693 708	coalition bombs
+T32	GPE 693 702	coalition
+T33	Attack 686 689	hit
+E3	Attack:T33 Place:T28 Place:T29 Instrument:T31
+T34	Attack 741 748	bombing
+E4	Attack:T34 Attacker:T32 Target:T28 Instrument:T31
+T35	Transport 723 727	left
+E5	Transport:T35 Artifact:T26 Artifact:T30 Origin:T28 Origin:T29
+T36	TIM 805 814	right now
+T37	LOC 820 829	the north
+T38	PER 832 835	you
+T39	TIM 885 890	today
+T40	LOC 938 947	the north
+T41	PER 999 1001	we
+T42	PER 1052 1054	we
+T43	LOC 981 994	that location
+T44	PER 950 960	jane arraf
+T45	PER 970 973	her
+T46	PER 1008 1011	her
+T47	PER 1070 1074	jane
+T48	TIM 1030 1047	about an hour ago
+T49	PER 1083 1085	we
+T50	PER 1166 1168	we
+T51	TIM 1183 1198	the coming days
+T52	PER 1129 1139	the iraqis
+T53	ORG 1260 1263	cnn
+T54	ORG 1213 1220	centcom
+T55	PER 1233 1270	fredricka whitfield at the cnn center
+T56	FAC 1256 1270	the cnn center

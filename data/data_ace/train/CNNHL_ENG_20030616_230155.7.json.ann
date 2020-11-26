@@ -1,0 +1,28 @@
+T1	TIM 40 59	2003-06-16 23:10:08
+T2	PER 64 68	bush
+T3	ORG 60 83	the bush administration
+T4	GPE 144 148	iran
+T5	Demonstrate 126 140	demonstrations
+E1	Demonstrate:T5 Place:T4
+T6	ORG 225 244	the clerical regime
+T7	PER 214 244	backers of the clerical regime
+T8	PER 203 209	police
+T9	PER 168 178	protesters
+T10	TIM 155 165	a week now
+T11	GPE 248 254	tehran
+T12	Attack 189 197	clashing
+E2	Attack:T12 Place:T11 Target:T9 Target:T8 Target:T7 Time-Holds:T10 Attacker:T9 Attacker:T8 Attacker:T7
+T13	PER 306 310	bush
+T14	ORG 302 325	the bush administration
+T15	PER 359 373	the protesters
+T16	GPE 267 289	the iranian government
+T17	GPE 271 278	iranian
+T18	GPE 531 535	u.s.
+T19	GPE 489 497	the u.s.
+T20	ORG 380 396	state department
+T21	GPE 441 445	iran
+T22	GPE 450 458	iranians
+T23	PER 504 506	he
+T24	PER 376 406	the state department spokesman
+T25	Demonstrate 416 430	demonstrations
+E3	Demonstrate:T25

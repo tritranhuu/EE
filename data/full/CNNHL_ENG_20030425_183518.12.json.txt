@@ -1,0 +1,37 @@
+negotiators	O	PER	Entity	O
+say	O	O	O	O
+he	O	PER	O	O
+demanded	O	O	O	O
+the	O	O	O	O
+release	Release-Parole	O	O	E
+of	O	O	O	O
+four	O	PER	O	O
+prisoners	O	PER	O	O
+,	O	PER	O	O
+including	O	PER	O	O
+ramzi	O	PER	Person	O
+binalshibh	O	PER	Person	O
+,	O	PER	O	O
+a	O	PER	O	O
+september	O	PER	O	O
+11th	O	PER	O	O
+suspect	O	PER	O	O
+apprehended	O	PER	O	O
+last	O	PER	O	O
+year	O	PER	O	O
+in	O	PER	O	O
+pakistan	O	PER	O	O
+.	O	O	O	O
+
+police	O	PER	Attacker	O
+captured	O	O	O	O
+the	O	PER	Target	O
+17-year-old	O	PER	Target	O
+hijacking	O	PER	Target	O
+suspect	O	PER	Target	O
+without	O	O	O	O
+firing	O	O	O	O
+a	O	O	O	O
+shot	Attack	O	O	E
+.	O	O	O	O
+

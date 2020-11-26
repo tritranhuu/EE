@@ -1,0 +1,162 @@
+T1	TIM 57 77	2005-01-10T05 :57:00
+T2	PER 107 128	JBELLU...@COMCAST.NET
+T3	TIM 129 161	Mon , 10 Jan 2005 02:57:20 -0800
+T4	PER 175 190	Jo-Ann Bellucci
+T5	TIM 223 234	5 years ago
+T6	PER 191 193	My
+T7	PER 240 241	I
+T8	PER 297 298	I
+T9	PER 352 354	my
+T10	TIM 468 485	the good old days
+T11	PER 407 408	I
+T12	TIM 513 516	now
+T13	FAC 585 691	a lovely two family house I bought as an investment with my boss , my 9 year old Yorkshire Terrier , Teddy
+T14	PER 594 604	two family
+T15	GPE 525 539	Watertown , MA
+T16	GPE 537 539	MA
+T17	GPE 556 562	Boston
+T18	FAC 556 579	Boston 's Logan airport
+T19	PER 652 654	my
+T20	PER 611 612	I
+T21	PER 511 512	I
+T22	PER 642 644	my
+T23	TIM 655 665	9 year old
+T24	Transfer-Ownership 613 619	bought
+E1	Transfer-Ownership:T24 Artifact:T13 Buyer:T20
+T25	TIM 721 735	this Christmas
+T26	TIM 708 720	50 years old
+T27	PER 694 695	I
+T28	TIM 783 798	for a few years
+T29	TIM 803 807	then
+T30	TIM 879 885	5 year
+T31	ORG 816 830	my own company
+T32	ORG 833 862	Pinnacle Business Enterprises
+T33	ORG 764 782	a software company
+T34	PER 1025 1031	people
+T35	PER 1073 1077	them
+T36	ORG 910 933	PriceWaterhouoseCoopers
+T37	PER 743 744	I
+T38	PER 758 759	I
+T39	PER 816 818	my
+T40	Start-Org 808 815	started
+E2	Start-Org:T40 Org:T31 Agent:T38 Time-Within:T29
+T41	PER 1088 1092	them
+T42	PER 1119 1124	their
+T43	PER 1148 1152	them
+T44	PER 1189 1193	them
+T45	PER 1201 1206	their
+T46	PER 1235 1240	their
+T47	TIM 1331 1342	in a minute
+T48	PER 1249 1250	I
+T49	PER 1373 1399	Those of you in Louisianna
+T50	PER 1382 1385	you
+T51	GPE 1389 1399	Louisianna
+T52	FAC 1423 1458	what used to be The Akzo Salt Mines
+T53	FAC 1439 1458	The Akzo Salt Mines
+T54	TIM 1479 1486	one day
+T55	PER 1504 1508	they
+T56	PER 1466 1472	client
+T57	LOC 1559 1573	the mine shaft
+T58	PER 1517 1519	me
+T59	PER 1551 1553	me
+T60	TIM 1770 1783	in the winter
+T61	PER 1647 1649	we
+T62	PER 1704 1707	our
+T63	GPE 1743 1762	the northern cities
+T64	PER 1576 1577	I
+T65	PER 1599 1600	I
+T66	PER 1792 1793	I
+T67	PER 1821 1823	my
+T68	PER 1845 1846	I
+T69	LOC 1872 1895	the manufacturing sites
+T70	VEH 2131 2139	backhoes
+T71	VEH 2088 2143	those types of trucks -LRB- erath movers , backhoes etc
+T72	VEH 2103 2109	trucks
+T73	VEH 2116 2128	erath movers
+T74	PER 1908 1910	we
+T75	VEH 1933 1980	those Yellow Tonka trucks little boys play with
+T76	LOC 2053 2064	UNDERGROUND
+T77	ORG 1946 1951	Tonka
+T78	PER 1898 1899	I
+T79	LOC 2043 2188	an ENTIRE UNDERGROUND CITY with a variety of those types of trucks -LRB- erath movers , backhoes etc -RRB- EXCEPT the tires alone are 8 foot tall
+T80	PER 1959 1970	little boys
+T81	LOC 2000 2009	one place
+T82	LOC 2013 2020	another
+T83	PER 2252 2255	you
+T84	PER 2205 2206	I
+T85	PER 2299 2304	Chris
+T86	PER 2330 2333	you
+T87	PER 2342 2344	me
+T88	PER 2357 2358	I
+T89	PER 2399 2400	I
+T90	PER 2362 2381	an excellent dancer
+T91	PER 2414 2415	I
+T92	ORG 2627 2692	several of both trendy and elegant boutique and department stores
+T93	ORG 2638 2692	both trendy and elegant boutique and department stores
+T94	PER 2544 2546	my
+T95	PER 2557 2558	I
+T96	PER 2612 2613	I
+T97	TIM 2722 2729	One day
+T98	PER 2741 2744	you
+T99	PER 2730 2731	I
+T100	PER 2745 2747	my
+T101	PER 2808 2817	my father
+T102	PER 2822 2850	an avid hunter and sportsman
+T103	TIM 2778 2790	at that time
+T104	LOC 2773 2803	what at that time was rural NJ
+T105	LOC 2795 2803	rural NJ
+T106	PER 2760 2761	I
+T107	PER 2808 2810	my
+T108	VEH 3054 3065	a speedboat
+T109	PER 2853 2862	My father
+T110	PER 2878 2881	his
+T111	PER 2890 2893	his
+T112	PER 2909 2935	an equal oportunty thinker
+T113	PER 3110 3115	Chris
+T114	PER 3130 3133	you
+T115	PER 2853 2855	My
+T116	PER 2952 2953	I
+T117	PER 3100 3101	I
+T118	PER 3009 3016	a child
+T119	PER 2988 3005	a champion archer
+T120	PER 3118 3119	I
+T121	PER 3162 3163	I
+T122	PER 3224 3225	I
+T123	PER 3242 3243	I
+T124	GPE 3322 3334	ALL AMERICAN
+T125	PER 3297 3298	I
+T126	PER 3308 3314	myself
+T127	PER 3315 3339	and `` ALL AMERICAN GIRL
+T128	PER 3450 3459	teenagers
+T129	PER 3520 3524	they
+T130	PER 3529 3590	some of the most interesting , difficult people you can teach
+T131	PER 3606 3610	them
+T132	PER 3630 3634	them
+T133	PER 3637 3641	they
+T134	PER 3493 3496	God
+T135	PER 3537 3590	the most interesting , difficult people you can teach
+T136	PER 3577 3580	you
+T137	PER 3620 3623	you
+T138	PER 3401 3402	I
+T139	PER 3419 3420	I
+T140	PER 3599 3600	I
+T141	GPE 3680 3686	Boston
+T142	PER 3658 3660	my
+T143	GPE 3673 3675	NJ
+T144	PER 3706 3713	friends
+T145	PER 3718 3744	those who would be friends
+T146	PER 3724 3727	who
+T147	PER 3737 3744	friends
+T148	FAC 3653 3686	Both my houses , in NJ and Boston
+T149	TIM 3751 3754	now
+T150	PER 3784 3789	Chris
+T151	PER 3755 3756	I
+T152	PER 3774 3775	I
+T153	PER 3812 3814	me
+T154	PER 3826 3828	My
+T155	PER 3905 3907	me
+T156	PER 3924 3925	I
+T157	PER 3844 3859	Jo-Ann Bellucci
+T158	CTI 3882 3894	888-616-3404
+T159	CTI 3860 3881	jbellu...@comcast.net
+T160	LOC 3918 3923	where

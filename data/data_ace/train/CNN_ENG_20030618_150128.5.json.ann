@@ -1,0 +1,25 @@
+T1	TIM 38 57	2003-06-18 15:22:21
+T2	JOB 113 119	bishop
+T3	PER 58 110	the head of the catholic church in phoenix , arizona
+T4	PER 113 134	bishop thomas o'brien
+T5	PER 113 119	bishop
+T6	GPE 103 110	arizona
+T7	ORG 70 110	the catholic church in phoenix , arizona
+T8	ORG 74 82	catholic
+T9	GPE 93 110	phoenix , arizona
+T10	End-Position 139 147	resigned
+E1	End-Position:T10 Position:T2 Person:T3 Entity:T7
+T11	CRM 188 196	a felony
+T12	TIM 150 196	just one day after being charged with a felony
+T13	Charge-Indict 175 182	charged
+E2	Charge-Indict:T13 Crime:T11
+T14	PER 199 201	he
+T15	Die 239 244	fatal
+E3	Die:T15
+T16	CRM 317 373	his handling of sexual abuse allegations against priests
+T17	TIM 264 274	this month
+T18	PER 366 373	priests
+T19	PER 275 282	o'brien
+T20	PER 317 320	his
+T21	Trial-Hearing 300 311	prosecution
+E4	Trial-Hearing:T21 Defendant:T19 Defendant:T20 Crime:T16 Time-Within:T17

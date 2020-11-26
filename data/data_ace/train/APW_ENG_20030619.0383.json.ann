@@ -1,0 +1,103 @@
+T1	TIM 34 42	20030619
+T2	ORG 140 142	AP
+T3	GPE 118 133	ATHENS , Greece
+T4	GPE 127 133	Greece
+T5	PER 234 239	rebel
+T6	PER 149 262	A retired navy officer facing life in prison over a failed effort to protect Kurdish rebel leader Abdullah Ocalan
+T7	PER 287 289	he
+T8	PER 307 310	his
+T9	PER 226 262	Kurdish rebel leader Abdullah Ocalan
+T10	PER 226 246	Kurdish rebel leader
+T11	FAC 187 193	prison
+T12	ORG 159 163	navy
+T13	TIM 323 327	1999
+T14	ORG 270 277	a court
+T15	TIM 278 286	Thursday
+T16	SEN 179 193	life in prison
+T17	GPE 226 233	Kurdish
+T18	PER 338 339	I
+T19	PER 370 385	Andonis Naxakis
+T20	PER 398 401	his
+T21	TIM 402 410	two-hour
+T22	PER 434 512	one of 13 people on trial for bringing the fugitive guerrilla leader to Greece
+T23	PER 423 430	Naxakis
+T24	GPE 506 512	Greece
+T25	PER 486 495	guerrilla
+T26	PER 473 502	the fugitive guerrilla leader
+T27	CRM 464 512	bringing the fugitive guerrilla leader to Greece
+T28	PER 441 512	13 people on trial for bringing the fugitive guerrilla leader to Greece
+T29	Transport 464 472	bringing
+E1	Transport:T29 Artifact:T26 Destination:T24 Agent:T28
+T30	Trial-Hearing 454 459	trial
+E2	Trial-Hearing:T30 Defendant:T28 Crime:T27
+T31	GPE 535 549	the government
+T32	GPE 553 556	its
+T33	FAC 557 564	embassy
+T34	FAC 553 627	its embassy compound in Kenya , where he was captured by Turkish commandos
+T35	FAC 585 590	where
+T36	PER 610 627	Turkish commandos
+T37	GPE 577 582	Kenya
+T38	GPE 610 617	Turkish
+T39	PER 515 521	Ocalan
+T40	PER 591 593	he
+T41	Transport 526 531	moved
+E3	Transport:T41 Artifact:T39 Destination:T34 Agent:T31
+T42	PER 630 655	The retired Greek officer
+T43	PER 661 663	he
+T44	GPE 642 647	Greek
+T45	PER 687 693	Ocalan
+T46	GPE 731 738	Kurdish
+T47	PER 723 748	a large Kurdish community
+T48	GPE 697 712	The Netherlands
+T49	GPE 715 748	home to a large Kurdish community
+T50	Transport 683 686	get
+E4	Transport:T50 Artifact:T45 Destination:T48 Agent:T43
+T51	PER 751 753	He
+T52	PER 762 764	he
+T53	GPE 789 803	the government
+T54	PER 809 810	I
+T55	PER 819 820	I
+T56	PER 950 952	he
+T57	GPE 900 914	the government
+T58	GPE 854 857	its
+T59	GPE 938 944	Turkey
+T60	PER 923 929	Ocalan
+T61	PER 972 1007	two of Ocalan 's Kurdish associates
+T62	PER 960 967	Naxakis
+T63	PER 979 1007	Ocalan 's Kurdish associates
+T64	PER 979 985	Ocalan
+T65	CRM 1047 1076	endangering national security
+T66	GPE 989 996	Kurdish
+T67	Trial-Hearing 1018 1023	tried
+E5	Trial-Hearing:T67 Defendant:T62 Defendant:T61 Crime:T65
+T68	Charge-Indict 1036 1043	charges
+E6	Charge-Indict:T68 Defendant:T62 Defendant:T61 Crime:T65
+T69	GPE 1140 1151	the country
+T70	PER 1079 1111	Ocalan , being tried in absentia
+T71	CRM 1131 1161	entering the country illegally
+T72	Transport 1131 1139	entering
+E7	Transport:T72 Destination:T69 Artifact:T70
+T73	Trial-Hearing 1094 1099	tried
+E8	Trial-Hearing:T73 Defendant:T70
+T74	Charge-Indict 1118 1126	indicted
+E9	Charge-Indict:T74 Defendant:T70 Crime:T71
+T75	GPE 1268 1274	Turkey
+T76	GPE 1316 1327	the country
+T77	PER 1338 1351	37,000 people
+T78	ORG 1199 1226	the Kurdistan Workers Party
+T79	ORG 1232 1235	PKK
+T80	PER 1189 1235	leader of the Kurdistan Workers Party , or PKK
+T81	PER 1180 1186	Ocalan
+T82	CRM 1279 1356	leading a 15-year insurgency against the country that left 37,000 people dead
+T83	SEN 1251 1255	life
+T84	TIM 1289 1296	15-year
+T85	Sentence 1256 1264	sentence
+E10	Sentence:T85 Defendant:T81 Place:T75 Sentence:T83 Crime:T82
+T86	Arrest-Jail 1241 1248	serving
+E11	Arrest-Jail:T86 Person:T80 Place:T75 Crime:T82
+T87	Die 1352 1356	dead
+E12	Die:T87 Victim:T77
+T88	GPE 1380 1386	Greece
+T89	PER 1359 1361	He
+T90	Trial-Hearing 1371 1376	tried
+E13	Trial-Hearing:T90 Defendant:T89 Place:T88

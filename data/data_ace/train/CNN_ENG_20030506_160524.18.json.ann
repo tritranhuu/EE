@@ -1,0 +1,157 @@
+T1	TIM 39 58	2003-05-06 17:29:53
+T2	PER 59 61	we
+T3	GPE 120 127	florida
+T4	LOC 107 127	key largo in florida
+T5	PER 134 136	's
+T6	PER 242 253	journalists
+T7	GPE 235 239	iraq
+T8	Attack 228 231	war
+E1	Attack:T8 Place:T7 Target:T6
+T9	Die 285 291	killed
+E2	Die:T9 Agent:T6 Place:T7
+T10	PER 345 360	two journalists
+T11	GPE 294 301	israeli
+T12	TIM 376 394	the past two weeks
+T13	PER 294 308	israeli troops
+T14	Die 361 367	killed
+E3	Die:T14 Victim:T10 Place:T11 Time-Within:T12
+T15	ORG 405 408	cnn
+T16	PER 405 423	cnn 's cly wallace
+T17	PER 472 484	a journalist
+T18	PER 502 505	his
+T19	LOC 453 467	the gaza strip
+T20	TIM 437 449	friday night
+T21	Die 497 501	lose
+E4	Die:T21 Victim:T17 Place:T19 Time-Within:T20
+T22	WEA 639 646	weapons
+T23	FAC 614 646	a tunnel used to smuggle weapons
+T24	GPE 595 607	the israelis
+T25	GPE 554 561	israeli
+T26	VEH 551 571	an israeli bulldozer
+T27	Attack 535 540	shots
+E5	Attack:T27
+T28	PER 665 720	three journalists who were covering that israeli action
+T29	PER 683 686	who
+T30	GPE 706 713	israeli
+T31	PER 787 794	another
+T32	PER 730 733	one
+T33	PER 848 852	they
+T34	PER 925 940	the journalists
+T35	Attack 957 964	gunshot
+E6	Attack:T35
+T36	PER 1013 1028	someone in pain
+T37	Attack 991 995	shot
+E7	Attack:T37 Target:T36
+T38	PER 1031 1074	34-year-old british journalist james miller
+T39	PER 1031 1061	34-year-old british journalist
+T40	PER 1124 1127	his
+T41	PER 1134 1161	the israeli defense sources
+T42	GPE 1099 1106	israeli
+T43	GPE 1138 1145	israeli
+T44	PER 1099 1115	israeli soldiers
+T45	GPE 1043 1050	british
+T46	Die 1075 1079	died
+E8	Die:T46 Victim:T38
+T47	PER 1169 1171	he
+T48	PER 1190 1193	his
+T49	ORG 1252 1255	cnn
+T50	GPE 1298 1309	afghanistan
+T51	ORG 1282 1289	taliban
+T52	LOC 1265 1274	the world
+T53	ORG 1316 1355	the foreign press association in israel
+T54	GPE 1349 1355	israel
+T55	TIM 1312 1315	now
+T56	PER 1402 1407	james
+T57	PER 1429 1431	he
+T58	PER 1445 1462	somebody shooting
+T59	Attack 1416 1424	shooting
+E9	Attack:T59 Attacker:T56
+T60	ORG 1508 1510	we
+T61	PER 1609 1615	miller
+T62	PER 1650 1652	he
+T63	GPE 1676 1687	palestinian
+T64	PER 1676 1694	palestinian gunmen
+T65	PER 1569 1579	its forces
+T66	GPE 1541 1563	the israeli government
+T67	GPE 1569 1572	its
+T68	GPE 1545 1552	israeli
+T69	Attack 1620 1624	shot
+E10	Attack:T69 Target:T61
+T70	Attack 1595 1599	fire
+E11	Attack:T70 Attacker:T65 Attacker:T64
+T71	Attack 1669 1672	hit
+E12	Attack:T71 Attacker:T64 Target:T61
+T72	PER 1753 1770	israeli personnel
+T73	VEH 1742 1778	an armored israeli personnel carrier
+T74	PER 1697 1718	those close to miller
+T75	PER 1712 1718	miller
+T76	PER 1727 1729	he
+T77	GPE 1753 1760	israeli
+T78	Attack 1734 1738	shot
+E13	Attack:T78 Attacker:T72 Target:T76 Instrument:T73
+T79	ORG 1781 1783	we
+T80	PER 1789 1801	the israelis
+T81	Attack 1802 1807	fired
+E14	Attack:T81 Attacker:T80
+T82	PER 1825 1827	he
+T83	ORG 1859 1861	we
+T84	GPE 1840 1848	israelis
+T85	TIM 1881 1890	this time
+T86	Attack 1832 1836	shot
+E15	Attack:T86 Attacker:T84 Target:T82
+T87	PER 1893 1899	miller
+T88	PER 1908 2002	the second journalist in just two weeks to be killed covering the israeli-palestinian conflict
+T89	GPE 1974 1993	israeli-palestinian
+T90	TIM 1938 1947	two weeks
+T91	Die 1954 1960	killed
+E16	Die:T91 Victim:T88 Time-Within:T90
+T92	GPE 2010 2021	palestinian
+T93	GPE 2056 2063	israeli
+T94	LOC 2075 2088	the west bank
+T95	PER 2053 2071	an israeli soldier
+T96	PER 2010 2031	palestinian cameramen
+T97	TIM 2092 2101	mid-april
+T98	Die 2043 2049	killed
+E17	Die:T98 Victim:T96 Agent:T95 Place:T94 Time-Within:T97
+T99	Attack 2034 2038	shot
+E18	Attack:T99 Attacker:T95 Place:T94 Target:T96 Time-Within:T97
+T100	PER 2147 2202	at least seven journalists killed covering the conflict
+T101	TIM 2206 2235	the past two and a half years
+T102	Die 2174 2180	killed
+E19	Die:T102 Victim:T100 Time-Within:T101
+T103	Die 2122 2128	deaths
+E20	Die:T103 Victim:T100 Time-Within:T101
+T104	GPE 2278 2285	israeli
+T105	PER 2264 2265	i
+T106	ORG 2274 2290	the israeli army
+T107	GPE 2540 2551	palestinian
+T108	GPE 2359 2366	israeli
+T109	GPE 2355 2377	the israeli government
+T110	GPE 2386 2389	its
+T111	GPE 2521 2528	israeli
+T112	PER 2540 2558	palestinian gunmen
+T113	PER 2521 2535	israeli forces
+T114	LOC 2466 2558	places where there could be live fire exchange between israeli forces and palestinian gunmen
+T115	LOC 2473 2478	where
+T116	PER 2440 2558	journalists who travel to places where there could be live fire exchange between israeli forces and palestinian gunmen
+T117	PER 2452 2455	who
+T118	PER 2386 2398	its soldiers
+T119	PER 2417 2428	journalists
+T120	Attack 2494 2512	live fire exchange
+E21	Attack:T120 Attacker:T113 Attacker:T112 Place:T115
+T121	Transport 2456 2462	travel
+E22	Transport:T121 Artifact:T116 Destination:T114
+T122	Attack 2407 2416	targeting
+E23	Attack:T122 Attacker:T118 Target:T119
+T123	LOC 2665 2670	there
+T124	PER 2611 2615	they
+T125	Die 2690 2695	death
+E24	Die:T125
+T126	PER 2708 2716	soldiers
+T127	PER 2746 2751	their
+T128	PER 2752 2755	own
+T129	PER 2779 2783	they
+T130	GPE 2819 2826	israeli
+T131	PER 2842 2853	the soldier
+T132	PER 2815 2836	the israeli spokesman
+T133	PER 2888 2899	journalists

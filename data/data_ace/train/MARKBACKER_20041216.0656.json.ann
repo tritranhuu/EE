@@ -1,0 +1,106 @@
+T1	TIM 35 55	2004-12-16T06 :56:00
+T2	PER 72 83	Mark Backer
+T3	TIM 84 104	2004-12-16T06 :56:00
+T4	ORG 118 122	ESPN
+T5	PER 220 224	Shaq
+T6	PER 242 245	him
+T7	PER 263 266	him
+T8	TIM 123 135	this morning
+T9	PER 105 106	I
+T10	PER 141 142	I
+T11	PER 175 186	Kobe Bryant
+T12	PER 192 194	he
+T13	PER 270 272	my
+T14	Meet 206 209	sit
+E1	Meet:T14 Entity:T12 Entity:T5
+T15	PER 384 387	him
+T16	PER 397 400	him
+T17	PER 450 453	his
+T18	TIM 319 332	December 25th
+T19	TIM 348 358	a good day
+T20	PER 287 293	Bryant
+T21	PER 309 311	he
+T22	PER 362 364	me
+T23	PER 401 402	I
+T24	PER 558 598	the crazy white towel clerk at his hotel
+T25	PER 481 484	You
+T26	ORG 589 598	his hotel
+T27	PER 497 501	Kobe
+T28	PER 530 532	he
+T29	PER 589 592	his
+T30	PER 601 603	he
+T31	PER 630 638	his wife
+T32	PER 715 718	her
+T33	NUM 641 660	four million dollar
+T34	PER 620 622	He
+T35	PER 630 633	his
+T36	PER 706 708	he
+T37	PER 725 727	he
+T38	PER 777 784	himself
+T39	PER 865 874	the women
+T40	ORG 798 807	the media
+T41	PER 838 842	Shaq
+T42	PER 790 792	he
+T43	PER 813 815	he
+T44	Transfer-Money 861 864	pay
+E2	Transfer-Money:T44 Giver:T43 Recipient:T39
+T45	PER 911 917	O'neal
+T46	NUM 927 957	upwards of one million dollars
+T47	TIM 984 998	over the years
+T48	PER 888 892	Kobe
+T49	Transfer-Money 922 926	paid
+E3	Transfer-Money:T49 Giver:T45 Money:T46
+T50	PER 1001 1005	Shaq
+T51	PER 1115 1134	the NBA 's `` stars
+T52	ORG 1115 1122	the NBA
+T53	PER 1265 1293	not very nice or good people
+T54	PER 1190 1255	guys like Kemp and Bryant and Iverson and the entire Blazers team
+T55	PER 1168 1187	Good players or not
+T56	PER 1220 1227	Iverson
+T57	PER 1200 1204	Kemp
+T58	ORG 1243 1250	Blazers
+T59	PER 1232 1255	the entire Blazers team
+T60	PER 1209 1215	Bryant
+T61	ORG 1299 1309	the league
+T62	PER 1337 1338	I
+T63	PER 1400 1404	Shaq
+T64	TIM 1444 1457	December 25th
+T65	ORG 1375 1389	Kobe 's Lakers
+T66	ORG 1400 1418	Shaq 's Miami Heat
+T67	PER 1375 1379	Kobe
+T68	PER 1552 1568	any other person
+T69	PER 1487 1491	Kobe
+T70	PER 1528 1530	he
+T71	PER 1572 1579	his own
+T72	PER 1639 1662	the 340-pound Shaquille
+T73	PER 1667 1670	his
+T74	TIM 1757 1770	Christmas Day
+T75	TIM 1731 1770	48 pain-filled minutes on Christmas Day
+T76	PER 1667 1680	his teammates
+T77	PER 1722 1726	Kobe
+T78	PER 1787 1790	you
+T79	PER 1773 1774	I
+T80	PER 1833 1835	me
+T81	PER 1815 1826	Kobe Bryant
+T82	PER 1851 1854	his
+T83	PER 1870 1873	his
+T84	PER 1889 1891	he
+T85	PER 1907 1916	a cheater
+T86	PER 1921 1927	a liar
+T87	PER 1932 1938	a punk
+T88	ORG 1960 1963	NBA
+T89	ORG 1978 1988	the league
+T90	ORG 2001 2003	it
+T91	PER 2098 2102	Shaq
+T92	TIM 2041 2054	December 25th
+T93	PER 1993 2014	most of it 's players
+T94	ORG 2115 2123	the Heat
+T95	PER 1941 1942	I
+T96	PER 2022 2024	me
+T97	PER 2031 2032	I
+T98	PER 2066 2068	my
+T99	PER 2147 2151	Shaq
+T100	NUM 2162 2187	a million dollars or more
+T101	TIM 2134 2141	the day
+T102	PER 2195 2199	Kobe
+T103	PER 2195 2211	Kobe 's punk-ass

@@ -1,0 +1,37 @@
+T1	TIM 34 42	20030624
+T2	TIM 102 109	June 24
+T3	ORG 116 122	Xinhua
+T4	GPE 94 99	JINAN
+T5	TIM 329 335	a year
+T6	TIM 135 149	late this year
+T7	GPE 211 222	Yantai City
+T8	GPE 129 134	China
+T9	GPE 226 257	east China 's Shandong Province
+T10	LOC 226 236	east China
+T11	LOC 547 584	other parts of the Shandong Peninsula
+T12	GPE 534 542	the city
+T13	ORG 478 496	Qinghua University
+T14	ORG 353 426	the Development Planning Commission of the Shandong provincial government
+T15	PER 338 426	Officials with the Development Planning Commission of the Shandong provincial government
+T16	GPE 562 584	the Shandong Peninsula
+T17	GPE 392 426	the Shandong provincial government
+T18	GPE 396 404	Shandong
+T19	LOC 598 621	other parts of Shandong
+T20	TIM 672 684	recent years
+T21	GPE 587 593	Yantai
+T22	GPE 613 621	Shandong
+T23	ORG 736 779	the State Development and Reform Commission
+T24	GPE 856 858	US
+T25	NUM 837 866	nearly 200 million US dollars
+T26	NUM 814 830	1.6 billion yuan
+T27	ORG 901 982	the Nuclear Energy Technology and Design Institute attached to Qinghua University
+T28	PER 875 886	Zhang Zuoyi
+T29	PER 889 982	director of the Nuclear Energy Technology and Design Institute attached to Qinghua University
+T30	NUM 1098 1107	3.75 yuan
+T31	ORG 1009 1029	Beijing Evening News
+T32	ORG 964 982	Qinghua University
+T33	TIM 999 1005	Monday
+T34	ORG 1257 1270	the institute
+T35	ORG 1286 1295	the paper
+T36	ORG 1355 1357	it
+T37	TIM 1348 1352	2007

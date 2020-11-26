@@ -1,0 +1,61 @@
+T1	TIM 35 55	2004-12-15T21 :28:00
+T2	PER 92 97	Byrne
+T3	TIM 98 118	2004-12-15T21 :28:00
+T4	TIM 127 134	the day
+T5	ORG 290 297	casinos
+T6	ORG 212 321	the gaming equipment manufacturers , who rode a wave of heavy reinvestment in casinos to produce huge profits
+T7	ORG 249 252	who
+T8	TIM 141 150	2000-2003
+T9	ORG 420 432	the industry
+T10	PER 610 612	we
+T11	ORG 499 516	the big companies
+T12	ORG 672 687	Las Vegas Sands
+T13	ORG 699 702	its
+T14	ORG 853 857	they
+T15	ORG 866 871	their
+T16	PER 641 644	You
+T17	NUM 878 882	$ 20
+T18	TIM 699 720	its first trading day
+T19	NUM 885 889	$ 22
+T20	NUM 815 819	$ 24
+T21	NUM 822 826	$ 26
+T22	NUM 728 732	60 %
+T23	NUM 788 792	$ 29
+T24	TIM 1204 1210	future
+T25	PER 1044 1053	investors
+T26	ORG 970 982	Wynn Resorts
+T27	ORG 985 1081	another owner of the lucrative Macau license that captured investors 's attention during the IPO
+T28	ORG 1128 1139	the company
+T29	ORG 1189 1200	his company
+T30	GPE 1016 1021	Macau
+T31	GPE 1214 1227	Atlantic City
+T32	PER 1115 1125	Steve Wynn
+T33	PER 1128 1150	the company 's founder
+T34	PER 1182 1184	he
+T35	PER 1189 1192	his
+T36	TIM 1465 1478	the same time
+T37	NUM 1430 1441	$ 2 million
+T38	TIM 1322 1338	just a few years
+T39	NUM 1253 1266	$ 160 million
+T40	NUM 1299 1312	$ 440 million
+T41	PER 1485 1493	they all
+T42	PER 1235 1244	investors
+T43	NUM 1445 1457	$ 75 million
+T44	PER 1249 1252	his
+T45	PER 1342 1345	his
+T46	ORG 1617 1630	those casinos
+T47	PER 1539 1552	everyone else
+T48	PER 1524 1528	Wynn
+T49	PER 1566 1568	he
+T50	TIM 1640 1655	the early 90 's
+T51	End-Org 1603 1616	near-collapse
+E1	End-Org:T51 Org:T46 Time-Within:T50
+T52	ORG 1697 1770	the casinos raising such spectacular sums for your broad-scoped ambitions
+T53	PER 1743 1747	your
+T54	PER 1800 2011	the newly-minted shareholders , who will doubtless see some eye-popping returns in the right direction for a little while and then face a long road back to the reality that is a price around half the current one
+T55	PER 1832 1835	who
+T56	TIM 2000 2007	current
+T57	ORG 2082 2088	Google
+T58	PER 2058 2059	I
+T59	PER 2111 2112	I
+T60	PER 2107 2110	God

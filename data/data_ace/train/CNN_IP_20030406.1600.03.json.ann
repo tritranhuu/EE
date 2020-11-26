@@ -1,0 +1,136 @@
+T1	TIM 31 58	2003-04-06T16 :00:00 -05:00
+T2	PER 71 79	WOODRUFF
+T3	LOC 118 131	northern Iraq
+T4	PER 160 175	Kurdish leaders
+T5	PER 160 167	Kurdish
+T6	PER 181 183	we
+T7	Attack 101 105	fire
+E1	Attack:T7 Place:T3 Target:T4
+T8	PER 200 215	Eighteen people
+T9	TIM 220 223	now
+T10	Die 233 237	dead
+E2	Die:T10 Victim:T8
+T11	PER 272 286	the 45 wounded
+T12	PER 295 346	the brother and a son of a Kurdish political leader
+T13	PER 320 346	a Kurdish political leader
+T14	PER 322 329	Kurdish
+T15	LOC 384 397	Northern Iraq
+T16	ORG 366 369	ITN
+T17	PER 349 369	Julian Manyon of ITN
+T18	ORG 444 447	ITN
+T19	PER 428 441	JULIAN MANYON
+T20	PER 444 461	ITN CORRESPONDENT
+T21	Attack 508 512	fire
+E3	Attack:T21
+T22	VEH 566 703	a convoy carrying high officials of the Kurdish Peshmerga forces , which have been fighting alongside the Americans on the northern front
+T23	WEA 539 555	an American bomb
+T24	GPE 542 550	American
+T25	PER 602 703	the Kurdish Peshmerga forces , which have been fighting alongside the Americans on the northern front
+T26	PER 633 638	which
+T27	PER 584 703	high officials of the Kurdish Peshmerga forces , which have been fighting alongside the Americans on the northern front
+T28	PER 668 681	the Americans
+T29	PER 606 623	Kurdish Peshmerga
+T30	TIM 524 536	This morning
+T31	Attack 556 565	destroyed
+E4	Attack:T31 Target:T22 Instrument:T23 Time-Within:T30
+T32	Attack 649 657	fighting
+E5	Attack:T32 Attacker:T26 Attacker:T28
+T33	PER 718 725	Kurdish
+T34	PER 706 736	At least 17 Kurdish commanders
+T35	PER 741 746	their
+T36	PER 779 813	an interpreter working for the BBC
+T37	PER 741 753	their guards
+T38	ORG 806 813	the BBC
+T39	Die 759 765	killed
+E6	Die:T39 Victim:T34 Victim:T37 Victim:T36
+T40	PER 816 828	More than 40
+T41	Injure 834 841	injured
+E7	Injure:T41 Victim:T40
+T42	PER 899 911	their leader
+T43	PER 914 928	Massud Barzani
+T44	ORG 848 856	military
+T45	ORG 866 881	the Kurdish KDP
+T46	ORG 899 904	their
+T47	PER 844 881	The military chief of the Kurdish KDP
+T48	PER 884 911	the brother of their leader
+T49	PER 870 877	Kurdish
+T50	Injure 958 962	hurt
+E8	Injure:T50 Victim:T47
+T51	PER 1035 1075	a few hundred U.S. Special Forces troops
+T52	ORG 1049 1068	U.S. Special Forces
+T53	GPE 1049 1053	U.S.
+T54	PER 1080 1125	the poorly armed Kurdish Peshmerga guerrillas
+T55	PER 1097 1114	Kurdish Peshmerga
+T56	GPE 1242 1247	Iraqi
+T57	GPE 1222 1230	American
+T58	Attack 1231 1238	bombing
+E9	Attack:T58 Attacker:T57
+T59	TIM 1264 1269	today
+T60	PER 1338 1340	we
+T61	VEH 1363 1372	U.S. jets
+T62	VEH 1393 1398	their
+T63	WEA 1393 1404	their bombs
+T64	GPE 1363 1367	U.S.
+T65	Attack 1384 1392	dropping
+E10	Attack:T65 Instrument:T61 Instrument:T63
+T66	FAC 1444 1452	the road
+T67	Attack 1420 1430	explosions
+E11	Attack:T67
+T68	ORG 1602 1616	the Iraqi army
+T69	PER 1528 1544	Kurdish fighters
+T70	PER 1548 1552	they
+T71	VEH 1479 1544	another convoy of U.S. Special Forces troops and Kurdish fighters
+T72	PER 1497 1523	U.S. Special Forces troops
+T73	GPE 1606 1611	Iraqi
+T74	PER 1465 1467	we
+T75	ORG 1497 1516	U.S. Special Forces
+T76	GPE 1497 1501	U.S.
+T77	LOC 1581 1616	country abandoned by the Iraqi army
+T78	PER 1528 1535	Kurdish
+T79	PER 1645 1660	American troops
+T80	GPE 1645 1653	American
+T81	PER 1713 1722	the Kurds
+T82	PER 1740 1750	the Iraqis
+T83	Attack 1751 1760	opened up
+E12	Attack:T83 Attacker:T82
+T84	GPE 1818 1823	Iraqi
+T85	PER 1791 1793	we
+T86	PER 1850 1853	our
+T87	WEA 1818 1828	Iraqi guns
+T88	WEA 1832 1836	they
+T89	TIM 1787 1790	Now
+T90	Attack 1837 1841	fire
+E13	Attack:T90 Target:T86 Instrument:T88 Time-Within:T89
+T91	PER 1880 1889	the Kurds
+T92	TIM 1866 1877	All morning
+T93	WEA 1933 1942	the shell
+T94	Attack 1943 1952	going off
+E14	Attack:T94 Instrument:T93
+T95	GPE 1984 1989	Iraqi
+T96	PER 2012 2015	our
+T97	PER 2028 2030	we
+T98	PER 1980 1997	The Iraqi gunners
+T99	FAC 2046 2069	an abandoned farm house
+T100	PER 2072 2089	UNIDENTIFIED MALE
+T101	PER 2112 2118	MANYON
+T102	PER 2119 2121	We
+T103	VEH 2152 2155	car
+T104	GPE 2178 2183	Iraqi
+T105	LOC 2166 2175	the north
+T106	LOC 2158 2175	Here in the north
+T107	GPE 2226 2234	American
+T108	VEH 2178 2198	Iraqi tanks and guns
+T109	WEA 2178 2198	Iraqi tanks and guns
+T110	Attack 2209 2215	firing
+E15	Attack:T110 Place:T106 Instrument:T108 Instrument:T109
+T111	PER 2271 2284	Julian Manyon
+T112	ORG 2287 2295	ITV News
+T113	PER 2348 2356	WOODRUFF
+T114	GPE 2439 2446	Baghdad
+T115	PER 2357 2370	Julian Manyon
+T116	PER 2407 2409	we
+T117	TIM 2450 2455	night
+T118	TIM 2422 2426	live
+T119	PER 2458 2460	We
+T120	PER 2487 2490	our
+T121	TIM 2491 2495	live

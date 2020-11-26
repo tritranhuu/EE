@@ -1,0 +1,16 @@
+T1	TIM 38 57	2003-06-12 17:38:25
+T2	WEA 85 92	anthrax
+T3	LOC 74 80	a pond
+T4	GPE 105 113	maryland
+T5	WEA 319 326	anthrax
+T6	LOC 199 270	the pond located just outside fredrick , not far from washington , d.c.
+T7	PER 140 153	investigators
+T8	TIM 338 354	the fall of 2001
+T9	PER 364 375	five people
+T10	GPE 253 270	washington , d.c.
+T11	GPE 229 237	fredrick
+T12	GPE 266 270	d.c.
+T13	Die 381 387	killed
+E1	Die:T13 Instrument:T5 Victim:T9
+T14	Attack 327 334	attacks
+E2	Attack:T14 Instrument:T5 Time-Within:T8

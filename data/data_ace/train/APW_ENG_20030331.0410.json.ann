@@ -1,0 +1,129 @@
+T1	TIM 34 42	20030331
+T2	GPE 116 136	COPENHAGEN , Denmark
+T3	ORG 143 145	AP
+T4	GPE 129 136	Denmark
+T5	CRM 219 226	assault
+T6	SEN 253 279	a four-month jail sentence
+T7	ORG 282 296	Denmark 's TV2
+T8	TIM 306 312	Monday
+T9	FAC 266 270	jail
+T10	TIM 255 265	four-month
+T11	TIM 152 158	Former
+T12	PER 152 179	Former Danish international
+T13	PER 202 205	his
+T14	PER 152 193	Former Danish international Stig Toefting
+T15	GPE 159 165	Danish
+T16	GPE 282 289	Denmark
+T17	Convict 227 237	conviction
+E1	Convict:T17 Defendant:T14 Crime:T5
+T18	Sentence 271 279	sentence
+E2	Sentence:T18 Defendant:T14 Sentence:T6 Crime:T5
+T19	Attack 219 226	assault
+E3	Attack:T19 Attacker:T14
+T20	Appeal 206 212	appeal
+E4	Appeal:T20 Crime:T5 Plaintiff:T13
+T21	CRM 357 473	assaulting a pair of restaurant workers during a night out with national squad teammates in the capital , Copenhagen
+T22	GPE 449 460	the capital
+T23	GPE 463 473	Copenhagen
+T24	ORG 421 435	national squad
+T25	ORG 378 388	restaurant
+T26	PER 421 445	national squad teammates
+T27	TIM 341 353	October 2002
+T28	PER 368 396	a pair of restaurant workers
+T29	TIM 404 411	a night
+T30	PER 315 323	Toefting
+T31	Convict 328 337	convicted
+E5	Convict:T31 Defendant:T30 Crime:T21 Time-Within:T27
+T32	Attack 357 367	assaulting
+E6	Attack:T32 Attacker:T30 Target:T28 Time-Within:T29
+T33	SEN 496 517	four months in prison
+T34	FAC 511 517	prison
+T35	TIM 496 507	four months
+T36	PER 476 478	He
+T37	Sentence 483 492	sentenced
+E7	Sentence:T37 Defendant:T36 Sentence:T33
+T38	Appeal 524 532	appealed
+E8	Appeal:T38 Plaintiff:T36
+T39	TIM 565 573	April 10
+T40	Trial-Hearing 539 546	hearing
+E9	Trial-Hearing:T40 Time-Within:T39
+T41	TIM 644 655	33-year-old
+T42	PER 590 622	Toefting 's lawyer Anders Nemeth
+T43	PER 590 608	Toefting 's lawyer
+T44	ORG 576 579	TV2
+T45	TIM 699 710	immediately
+T46	PER 590 598	Toefting
+T47	PER 639 666	that 33-year-old midfielder
+T48	PER 686 689	his
+T49	Sentence 690 698	sentence
+E10	Sentence:T49 Defendant:T48 Time-Within:T45
+T50	TIM 745 756	immediately
+T51	PER 733 739	Nemeth
+T52	PER 721 729	Toefting
+T53	ORG 816 850	English Premier League club Bolton
+T54	ORG 816 843	English Premier League club
+T55	ORG 816 838	English Premier League
+T56	TIM 781 799	Earlier this month
+T57	PER 802 810	Toefting
+T58	PER 855 858	him
+T59	PER 865 867	he
+T60	GPE 816 823	English
+T61	End-Position 859 861	go
+E11	End-Position:T61 Person:T57 Entity:T53 Time-Within:T56
+T62	Appeal 890 896	appeal
+E12	Appeal:T62 Plaintiff:T59
+T63	ORG 947 953	Bolton
+T64	PER 922 930	Toefting
+T65	PER 968 971	his
+T66	Sentence 972 980	sentence
+E13	Sentence:T66 Defendant:T65
+T67	Start-Position 937 943	return
+E14	Start-Position:T67 Person:T64 Entity:T63
+T68	ORG 983 991	The club
+T69	ORG 997 999	it
+T70	PER 1017 1025	Toefting
+T71	PER 1046 1049	his
+T72	Appeal 1050 1056	appeal
+E15	Appeal:T72 Plaintiff:T71
+T73	ORG 1083 1089	Bolton
+T74	ORG 1112 1131	German club Hamburg
+T75	ORG 1112 1123	German club
+T76	TIM 1093 1106	February 2002
+T77	PER 1059 1067	Toefting
+T78	GPE 1112 1118	German
+T79	Start-Position 1068 1079	transferred
+E16	Start-Position:T79 Person:T77 Entity:T73 Time-Within:T76
+T80	TIM 1162 1168	before
+T81	PER 1134 1142	Toefting
+T82	Convict 1152 1161	convicted
+E17	Convict:T82 Defendant:T81 Time-Within:T80
+T83	CRM 1224 1294	assaulting a fan who berated him for playing with German club Duisburg
+T84	SEN 1194 1219	20-day suspended sentence
+T85	TIM 1194 1200	20-day
+T86	TIM 1174 1178	1999
+T87	PER 1179 1181	he
+T88	PER 1253 1256	him
+T89	ORG 1274 1294	German club Duisburg
+T90	ORG 1274 1285	German club
+T91	GPE 1274 1280	German
+T92	PER 1235 1294	a fan who berated him for playing with German club Duisburg
+T93	PER 1241 1244	who
+T94	Attack 1224 1234	assaulting
+E18	Attack:T94 Attacker:T87 Target:T92
+T95	Sentence 1211 1219	sentence
+E19	Sentence:T95 Defendant:T87 Sentence:T84 Crime:T83
+T96	ORG 1415 1439	Denmark 's national team
+T97	ORG 1446 1448	it
+T98	TIM 1492 1496	2002
+T99	PER 1297 1399	The popular player _ known for his temperament and the words `` No Regret '' tattooed across his chest
+T100	PER 1328 1331	his
+T101	PER 1390 1393	his
+T102	GPE 1415 1422	Denmark
+T103	End-Position 1402 1409	retired
+E20	End-Position:T103 Person:T99 Entity:T96 Time-Within:T98
+T104	ORG 1525 1541	the Danish squad
+T105	TIM 1545 1549	1993
+T106	PER 1509 1517	Toefting
+T107	GPE 1529 1535	Danish
+T108	Start-Position 1518 1524	joined
+E21	Start-Position:T108 Person:T106 Entity:T104 Time-Within:T105

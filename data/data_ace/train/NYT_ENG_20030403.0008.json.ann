@@ -1,0 +1,269 @@
+T1	TIM 34 42	20030403
+T2	TIM 98 119	04-03-03 02:16:00 EST
+T3	TIM 141 145	2003
+T4	ORG 297 317	U.S. Army and Marine
+T5	GPE 363 368	Iraqi
+T6	ORG 224 240	Republican Guard
+T7	GPE 170 180	WASHINGTON
+T8	GPE 263 270	Baghdad
+T9	GPE 359 376	the Iraqi capital
+T10	GPE 297 301	U.S.
+T11	GPE 444 448	U.S.
+T12	PER 297 324	U.S. Army and Marine forces
+T13	PER 206 294	severely depleted Republican Guard divisions that formed Baghdad 's outer defensive ring
+T14	PER 251 255	that
+T15	Attack 449 456	assault
+E1	Attack:T15 Attacker:T11
+T16	Attack 190 205	punched through
+E2	Attack:T16 Attacker:T12 Target:T13
+T17	GPE 519 544	Saddam Hussein 's capital
+T18	GPE 483 487	U.S.
+T19	PER 519 533	Saddam Hussein
+T20	PER 479 494	the U.S. troops
+T21	PER 459 464	Their
+T22	ORG 557 572	Central Command
+T23	GPE 687 692	where
+T24	GPE 665 747	the city of 5 million where Hussein 's regime has gathered its most-trusted forces
+T25	FAC 814 830	street-to-street
+T26	PER 693 700	Hussein
+T27	PER 557 596	Central Command chief Gen. Tommy Franks
+T28	PER 601 604	his
+T29	PER 557 578	Central Command chief
+T30	PER 579 583	Gen.
+T31	PER 601 621	his field commanders
+T32	ORG 693 710	Hussein 's regime
+T33	ORG 724 727	its
+T34	PER 724 747	its most-trusted forces
+T35	PER 677 686	5 million
+T36	Attack 771 774	war
+E3	Attack:T36
+T37	Attack 837 845	fighting
+E4	Attack:T37 Place:T25
+T38	Transport 655 659	rush
+E5	Transport:T38 Destination:T24
+T39	FAC 962 974	the Pentagon
+T40	TIM 975 982	Tuesday
+T41	ORG 851 853	We
+T42	PER 930 953	Gen. Stanley McChrystal
+T43	PER 930 934	Gen.
+T44	Attack 913 918	fight
+E6	Attack:T44
+T45	GPE 1023 1030	Baghdad
+T46	GPE 1050 1052	it
+T47	ORG 988 990	We
+T48	Transport 1012 1017	drive
+E7	Transport:T48 Agent:T47 Destination:T45
+T49	PER 1149 1204	British forces outside the southern Iraqi city of Basra
+T50	GPE 1149 1156	British
+T51	GPE 1172 1204	the southern Iraqi city of Basra
+T52	GPE 1199 1204	Basra
+T53	LOC 1176 1190	southern Iraqi
+T54	PER 1090 1098	analysts
+T55	GPE 1106 1123	the United States
+T56	Attack 1080 1087	assault
+E8	Attack:T56 Attacker:T55
+T57	PER 1232 1253	small probing patrols
+T58	GPE 1294 1299	Iraqi
+T59	GPE 1259 1267	the city
+T60	GPE 1207 1211	They
+T61	Transport 1226 1231	mount
+E9	Transport:T61 Artifact:T57 Destination:T59
+T62	PER 1316 1329	these patrols
+T63	PER 1355 1374	thousands of troops
+T64	GPE 1391 1399	the city
+T65	Transport 1381 1385	rush
+E10	Transport:T65 Artifact:T63 Destination:T64
+T66	PER 1492 1573	4th Mechanized Infantry Division , which will soon start moving north from Kuwait
+T67	PER 1527 1532	which
+T68	GPE 1567 1573	Kuwait
+T69	ORG 1441 1445	Army
+T70	ORG 1450 1456	Marine
+T71	GPE 1405 1415	the Iraqis
+T72	PER 1437 1462	the Army and Marine units
+T73	Transport 1549 1555	moving
+E11	Transport:T73 Artifact:T66 Origin:T68
+T74	LOC 1678 1700	where Hussein might be
+T75	GPE 1634 1639	Iraqi
+T76	GPE 1665 1673	the city
+T77	PER 1684 1691	Hussein
+T78	PER 1706 1708	he
+T79	PER 1582 1586	they
+T80	PER 1594 1604	the forces
+T81	PER 1857 1870	Lawrence Korb
+T82	PER 1873 1919	an analyst at the Council on Foreign Relations
+T83	PER 1920 1923	who
+T84	PER 1928 1992	assistant defense secretary under former President Ronald Reagan
+T85	ORG 1887 1919	the Council on Foreign Relations
+T86	PER 1784 1787	you
+T87	PER 1825 1846	civilians in the city
+T88	PER 1962 1992	former President Ronald Reagan
+T89	PER 1962 1978	former President
+T90	GPE 1733 1738	Basra
+T91	GPE 1838 1846	the city
+T92	TIM 1962 1968	former
+T93	PER 2212 2214	he
+T94	PER 2048 2051	you
+T95	PER 2102 2105	you
+T96	PER 2146 2158	Iraqi forces
+T97	PER 2197 2206	civilians
+T98	PER 2119 2122	who
+T99	GPE 2146 2151	Iraqi
+T100	GPE 2126 2131	there
+T101	Attack 2032 2039	assault
+E12	Attack:T101
+T102	PER 2285 2300	Iraqi civilians
+T103	ORG 2222 2240	The administration
+T104	ORG 2250 2252	it
+T105	GPE 2285 2290	Iraqi
+T106	GPE 2319 2326	British
+T107	GPE 2345 2350	Basra
+T108	PER 2365 2377	the analysts
+T109	PER 2427 2438	1.5 million
+T110	PER 2385 2396	The British
+T111	GPE 2415 2438	the city of 1.5 million
+T112	TIM 2439 2459	for more than a week
+T113	GPE 2494 2502	the city
+T114	GPE 2612 2620	the city
+T115	PER 2462 2483	Thousands of refugees
+T116	LOC 2578 2620	military and Baath Party sites in the city
+T117	ORG 2578 2586	military
+T118	ORG 2591 2602	Baath Party
+T119	GPE 2541 2552	the British
+T120	Transport 2489 2493	fled
+E13	Transport:T120 Artifact:T115 Origin:T113
+T121	Attack 2569 2574	raids
+E14	Attack:T121 Target:T116
+T122	GPE 2715 2722	Baghdad
+T123	GPE 2768 2776	the city
+T124	TIM 2890 2895	daily
+T125	ORG 2827 2877	the Center for Strategic and International Studies
+T126	LOC 2680 2722	the key regime centers of power in Baghdad
+T127	LOC 2734 2738	them
+T128	LOC 2798 2802	them
+T129	GPE 2657 2665	the U.S.
+T130	ORG 2688 2694	regime
+T131	PER 2886 2889	his
+T132	PER 2818 2877	atman of the Center for Strategic and International Studies
+T133	Attack 2757 2762	fight
+E15	Attack:T133 Attacker:T129 Place:T123
+T134	Attack 2727 2733	attack
+E16	Attack:T134 Attacker:T129 Place:T123 Target:T127
+T135	Attack 2896 2899	war
+E17	Attack:T135
+T136	GPE 3027 3034	Baghdad
+T137	PER 2909 2925	U.S. strategists
+T138	PER 2984 2994	his forces
+T139	GPE 3075 3079	U.S.
+T140	GPE 2909 2913	U.S.
+T141	PER 2935 2942	Hussein
+T142	PER 2948 2950	he
+T143	PER 2984 2987	his
+T144	Injure 3080 3090	casualties
+E18	Injure:T144 Place:T136
+T145	Attack 3017 3023	battle
+E19	Attack:T145 Place:T136
+T146	Attack 3048 3056	fighting
+E20	Attack:T146 Place:T136
+T147	GPE 3293 3300	Baghdad
+T148	GPE 3134 3151	the United States
+T149	GPE 3158 3161	its
+T150	PER 3093 3096	His
+T151	PER 3253 3260	Hussein
+T152	PER 3265 3268	his
+T153	PER 3265 3275	his family
+T154	PER 3195 3209	President Bush
+T155	PER 3195 3204	President
+T156	Injure 3177 3183	losses
+E21	Injure:T156
+T157	ORG 3397 3413	Republican Guard
+T158	GPE 3356 3366	Washington
+T159	GPE 3491 3499	the city
+T160	PER 3439 3446	Hussein
+T161	PER 3469 3471	he
+T162	PER 3307 3366	Michael O'Hanlon of the Brookings Institution in Washington
+T163	ORG 3327 3366	the Brookings Institution in Washington
+T164	GPE 3538 3542	Iraq
+T165	ORG 3557 3573	Republican Guard
+T166	GPE 3508 3512	U.S.
+T167	PER 3538 3583	Iraq 's half-dozen Republican Guard divisions
+T168	PER 3641 3707	30,000 Special Republican Guard , fedayeen , and related personnel
+T169	PER 3766 3768	he
+T170	PER 3508 3519	U.S. forces
+T171	Attack 3602 3608	battle
+E22	Attack:T171 Target:T168 Target:T168 Target:T168 Attacker:T170
+T172	ORG 3786 3791	guard
+T173	PER 3843 3855	three others
+T174	LOC 3859 3875	the Baghdad area
+T175	GPE 3863 3870	Baghdad
+T176	PER 3782 3801	two guard divisions
+T177	Attack 3823 3830	smashed
+E23	Attack:T177 Target:T176
+T178	PER 3878 3885	A sixth
+T179	LOC 3897 3910	northern Iraq
+T180	GPE 3995 4000	Iraqi
+T181	ORG 3983 4050	the regular Iraqi army , which is generally viewed as less reliable
+T182	ORG 4008 4013	which
+T183	PER 3937 3947	the guards
+T184	PER 3972 4050	units from the regular Iraqi army , which is generally viewed as less reliable
+T185	PER 3913 3922	Cordesman
+T186	GPE 4068 4073	Iraqi
+T187	ORG 4064 4082	the Iraqi military
+T188	PER 4105 4107	he
+T189	ORG 4118 4138	The Republican Guard
+T190	TIM 4191 4194	now
+T191	PER 4266 4268	he
+T192	Attack 4159 4168	hammering
+E24	Attack:T192 Target:T189
+T193	GPE 4276 4286	The Iraqis
+T194	GPE 4397 4404	Baghdad
+T195	WEA 4307 4323	chemical weapons
+T196	PER 4338 4350	many experts
+T197	GPE 4378 4382	U.S.
+T198	PER 4374 4389	the U.S. troops
+T199	Attack 4363 4370	attacks
+E25	Attack:T199 Instrument:T195 Attacker:T193
+T200	PER 4407 4506	Korb , who 's convinced Hussein has stocks of chemical weapons he never reported to U.N. inspectors
+T201	PER 4414 4417	who
+T202	PER 4514 4516	he
+T203	WEA 4453 4469	chemical weapons
+T204	WEA 4564 4568	them
+T205	PER 4491 4506	U.N. inspectors
+T206	ORG 4491 4495	U.N.
+T207	PER 4431 4438	Hussein
+T208	PER 4470 4472	he
+T209	PER 4543 4550	Hussein
+T210	PER 4575 4577	he
+T211	WEA 4608 4612	them
+T212	WEA 4665 4677	such weapons
+T213	LOC 4642 4651	the world
+T214	GPE 4626 4628	us
+T215	PER 4593 4595	He
+T216	PER 4652 4654	he
+T217	PER 4687 4691	Bush
+T218	Attack 4692 4699	invaded
+E26	Attack:T218 Attacker:T217
+T219	ORG 4820 4828	the Army
+T220	PER 4820 4864	the Army 's 3rd Mechanized Infantry Division
+T221	GPE 4768 4775	Baghdad
+T222	PER 4778 4815	the 1st Marine Division from the east
+T223	GPE 4742 4746	U.S.
+T224	PER 4738 4864	The U.S. forces zeroing in on Baghdad _ the 1st Marine Division from the east and the Army 's 3rd Mechanized Infantry Division
+T225	GPE 5065 5071	a city
+T226	PER 5088 5096	civilian
+T227	PER 4936 4940	they
+T228	PER 4991 4996	their
+T229	Attack 4925 4933	fighting
+E27	Attack:T229 Attacker:T227
+T230	Die 5097 5107	casualties
+E28	Die:T230 Victim:T226 Place:T225
+T231	Attack 5054 5061	bombing
+E29	Attack:T231 Place:T225
+T232	FAC 5208 5220	side streets
+T233	GPE 5152 5163	Los Angeles
+T234	FAC 5166 5238	wide , straight boulevards intersected by side streets in a grid pattern
+T235	GPE 5120 5127	Baghdad
+T236	GPE 5244 5247	Our
+T237	PER 5244 5254	Our forces
+T238	PER 5360 5364	Korb
+T239	Die 5331 5341	casualties
+E30	Die:T239

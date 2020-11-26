@@ -1,0 +1,260 @@
+T1	TIM 34 42	20030410
+T2	FAC 109 123	UNITED NATIONS
+T3	ORG 130 132	AP
+T4	PER 267 295	Secretary-General Kofi Annan
+T5	PER 267 284	Secretary-General
+T6	GPE 139 143	Iraq
+T7	GPE 193 198	Iraqi
+T8	PER 139 180	Iraq 's U.N. Ambassador Mohammed Al-Douri
+T9	PER 183 245	the first Iraqi official to concede defeat in the U.S.-led war
+T10	PER 139 162	Iraq 's U.N. Ambassador
+T11	PER 336 338	he
+T12	ORG 147 151	U.N.
+T13	GPE 361 369	New York
+T14	GPE 233 241	U.S.-led
+T15	Transport 355 360	leave
+E1	Transport:T15 Artifact:T11 Origin:T13
+T16	Meet 248 251	met
+E2	Meet:T16 Entity:T8 Entity:T4
+T17	Attack 242 245	war
+E3	Attack:T17
+T18	PER 375 376	I
+T19	PER 391 393	he
+T20	PER 611 632	the secretary-general
+T21	FAC 559 576	U.N. headquarters
+T22	FAC 532 554	his New York residence
+T23	PER 516 519	him
+T24	PER 532 535	his
+T25	PER 596 599	his
+T26	PER 635 638	his
+T27	PER 450 452	my
+T28	PER 475 477	he
+T29	ORG 559 563	U.N.
+T30	PER 493 504	journalists
+T31	TIM 520 528	Thursday
+T32	TIM 639 645	future
+T33	GPE 536 544	New York
+T34	PER 505 508	who
+T35	PER 483 504	hordes of journalists
+T36	PER 466 469	you
+T37	Meet 600 605	talks
+E4	Meet:T37 Entity:T25 Entity:T20
+T38	GPE 684 688	Iraq
+T39	PER 691 699	Al-Douri
+T40	PER 710 711	I
+T41	PER 746 751	Annan
+T42	PER 805 813	Al-Douri
+T43	TIM 780 788	Thursday
+T44	Meet 792 799	meeting
+E5	Meet:T44 Entity:T41 Entity:T42 Time-Within:T43
+T45	GPE 922 927	Iraqi
+T46	GPE 918 934	the Iraqi people
+T47	GPE 833 840	Baghdad
+T48	PER 853 861	Al-Douri
+T49	TIM 841 850	Wednesday
+T50	TIM 940 943	now
+T51	GPE 1009 1016	Baghdad
+T52	PER 971 973	He
+T53	PER 979 981	he
+T54	PER 1039 1044	Annan
+T55	PER 1143 1152	diplomats
+T56	PER 1127 1138	ambassadors
+T57	PER 1047 1055	Al-Douri
+T58	TIM 1062 1075	several hours
+T59	TIM 1104 1113	afternoon
+T60	TIM 1087 1099	late morning
+T61	FAC 1156 1178	the Delegate 's Lounge
+T62	Meet 1026 1033	meeting
+E6	Meet:T62 Entity:T54 Entity:T57
+T63	PER 1241 1262	the secretary-general
+T64	PER 1401 1406	Annan
+T65	PER 1193 1196	him
+T66	PER 1230 1232	he
+T67	PER 1280 1283	his
+T68	PER 1364 1372	Al-Douri
+T69	GPE 1305 1316	Arab League
+T70	PER 1184 1185	I
+T71	PER 1211 1212	I
+T72	PER 1305 1345	Arab League Secretary-General Amr Moussa
+T73	PER 1305 1334	Arab League Secretary-General
+T74	PER 1348 1351	who
+T75	PER 1380 1383	his
+T76	Meet 1388 1395	meeting
+E7	Meet:T76 Entity:T75 Entity:T64
+T77	Meet 1352 1358	talked
+E8	Meet:T77 Entity:T74 Entity:T68
+T78	PER 1469 1477	Al-Douri
+T79	PER 1483 1485	he
+T80	ORG 1511 1529	the United Nations
+T81	TIM 1451 1466	Wednesday night
+T82	ORG 1430 1450	The Associated Press
+T83	Meet 1415 1424	interview
+E9	Meet:T83 Entity:T82 Entity:T78 Time-Within:T81
+T84	PER 1584 1587	who
+T85	PER 1593 1595	he
+T86	GPE 1615 1629	the government
+T87	PER 1607 1608	I
+T88	GPE 1670 1675	Iraqi
+T89	GPE 1670 1686	Iraqi government
+T90	PER 1712 1717	Annan
+T91	PER 1885 1887	me
+T92	PER 1755 1763	Al-Douri
+T93	PER 1785 1794	the envoy
+T94	PER 1807 1809	he
+T95	PER 1870 1872	he
+T96	PER 1902 1905	his
+T97	TIM 1723 1737	early Thursday
+T98	TIM 1795 1801	Monday
+T99	Meet 1774 1779	talks
+E10	Meet:T99 Entity:T90 Entity:T93 Time-Within:T98
+T100	Meet 1747 1754	meeting
+E11	Meet:T100 Entity:T90 Entity:T92 Time-After:T97
+T101	PER 2010 2015	Annan
+T102	PER 1921 1923	We
+T103	Meet 1928 1932	talk
+E12	Meet:T103 Entity:T102
+T104	GPE 2062 2073	his country
+T105	GPE 2152 2156	Iraq
+T106	PER 2023 2037	The ambassador
+T107	PER 2062 2065	his
+T108	ORG 2128 2132	U.N.
+T109	TIM 2078 2084	months
+T110	GPE 2088 2105	the United States
+T111	GPE 2110 2113	its
+T112	GPE 2110 2120	its allies
+T113	Attack 2145 2148	war
+E13	Attack:T113 Place:T105
+T114	PER 2195 2198	him
+T115	PER 2202 2225	a respectable colleague
+T116	ORG 2176 2180	U.N.
+T117	PER 2171 2190	many U.N. diplomats
+T118	GPE 2301 2308	Britain
+T119	PER 2249 2252	his
+T120	PER 2283 2290	himself
+T121	ORG 2312 2316	U.N.
+T122	PER 2231 2232	I
+T123	PER 2301 2345	Britain 's U.N. Ambassador Jeremy Greenstock
+T124	PER 2301 2327	Britain 's U.N. Ambassador
+T125	FAC 2521 2550	U.N. headquarters in New York
+T126	PER 2348 2356	Al-Douri
+T127	PER 2438 2448	a diplomat
+T128	ORG 2521 2525	U.N.
+T129	TIM 2452 2456	1999
+T130	TIM 2507 2517	early 2001
+T131	TIM 2408 2421	over 30 years
+T132	GPE 2542 2550	New York
+T133	GPE 2490 2496	Geneva
+T134	FAC 2468 2496	the United Nations in Geneva
+T135	JOB 2440 2448	diplomat
+T136	Start-Position 2429 2437	becoming
+E14	Start-Position:T136 Person:T126 Place:T134 Place:T125 Entity:T128 Position:T135 Time-Starting:T129 Time-Holds:T130
+T137	PER 2553 2555	He
+T138	PER 2581 2583	he
+T139	PER 2629 2631	he
+T140	ORG 2651 2669	the United Nations
+T141	TIM 2625 2628	now
+T142	ORG 2568 2570	AP
+T143	Meet 2571 2580	interview
+E15	Meet:T143 Entity:T137 Entity:T142
+T144	PER 2715 2717	he
+T145	TIM 2702 2709	one day
+T146	GPE 2812 2828	the Iraqi people
+T147	GPE 2779 2790	the country
+T148	GPE 2816 2821	Iraqi
+T149	PER 2733 2734	I
+T150	TIM 2798 2811	in the future
+T151	Attack 2876 2880	wars
+E16	Attack:T151 Place:T147 Time-Within:T150
+T152	PER 2911 2913	my
+T153	GPE 2989 3002	Oklahoma City
+T154	GPE 2963 2967	Iraq
+T155	PER 3088 3096	Al-Douri
+T156	PER 3129 3138	the envoy
+T157	PER 3176 3178	he
+T158	TIM 2984 2988	1995
+T159	PER 2940 2947	lawyers
+T160	PER 2948 2951	who
+T161	PER 3160 3164	they
+T162	FAC 3051 3078	a federal court in New York
+T163	PER 3040 3078	a judge at a federal court in New York
+T164	PER 3023 3033	168 people
+T165	GPE 3070 3078	New York
+T166	GPE 3190 3201	the country
+T167	Attack 3003 3010	bombing
+E17	Attack:T167 Place:T153 Target:T164 Time-Within:T158
+T168	Die 3016 3022	killed
+E18	Die:T168 Victim:T164 Time-Within:T158 Place:T153
+T169	Transport 3185 3189	flee
+E19	Transport:T169 Artifact:T157 Origin:T166
+T170	Trial-Hearing 3115 3119	case
+E20	Trial-Hearing:T170 Adjudicator:T163 Place:T165
+T171	GPE 3283 3287	Iraq
+T172	PER 3283 3301	Iraq 's ambassador
+T173	PER 3241 3249	Al-Douri
+T174	ORG 3208 3212	U.N.
+T175	PER 3208 3235	U.N. spokesman Fred Eckhard
+T176	PER 3208 3222	U.N. spokesman
+T177	ORG 3397 3417	the General Assembly
+T178	GPE 3329 3334	Iraqi
+T179	GPE 3377 3388	the country
+T180	ORG 3310 3314	U.N.
+T181	ORG 3323 3345	a new Iraqi government
+T182	GPE 3455 3459	Iraq
+T183	PER 3443 3445	He
+T184	PER 3455 3495	Iraq 's ambassador at the United Nations
+T185	ORG 3477 3495	the United Nations
+T186	GPE 3545 3555	Washington
+T187	PER 3501 3536	White House spokesman Ari Fleischer
+T188	PER 3501 3522	White House spokesman
+T189	GPE 3501 3512	White House
+T190	ORG 3599 3607	the U.N.
+T191	PER 3689 3696	victims
+T192	PER 3709 3712	who
+T193	PER 3672 3708	14 survivors and victims ' relatives
+T194	GPE 3764 3768	Iraq
+T195	PER 3832 3840	Al-Douri
+T196	PER 3885 3887	he
+T197	TIM 3852 3860	March 26
+T198	TIM 3865 3873	March 28
+T199	GPE 3772 3782	Washington
+T200	ORG 3639 3653	Judicial Watch
+T201	ORG 3656 3661	which
+T202	ORG 3790 3806	his organization
+T203	PER 3627 3653	chairman of Judicial Watch
+T204	PER 3611 3624	Larry Klayman
+T205	PER 3790 3793	his
+T206	NUM 3726 3739	$ 1.5 billion
+T207	Sue 3748 3755	lawsuit
+E21	Sue:T207 Defendant:T194 Place:T199 Plaintiff:T193 Plaintiff:T193
+T208	TIM 3996 4005	next week
+T209	PER 3908 3942	U.S. District Judge John S. Martin
+T210	PER 3908 3927	U.S. District Judge
+T211	GPE 3908 3912	U.S.
+T212	Trial-Hearing 3984 3991	hearing
+E22	Trial-Hearing:T212 Adjudicator:T209 Time-Within:T208
+T213	FAC 4041 4078	the Alfred P. Murrah federal building
+T214	TIM 4012 4027	April 19 , 1995
+T215	GPE 4117 4130	American soil
+T216	GPE 4117 4125	American
+T217	Attack 4030 4037	bombing
+E23	Attack:T217 Place:T215 Target:T213 Time-Within:T214
+T218	GPE 4161 4166	Iraqi
+T219	PER 4208 4240	convicted bomber Timothy McVeigh
+T220	PER 4208 4224	convicted bomber
+T221	PER 4161 4176	Iraqi officials
+T222	PER 4245 4270	conspirator Terry Nichols
+T223	PER 4245 4256	conspirator
+T224	Sue 4149 4153	suit
+E24	Sue:T224
+T225	Convict 4208 4217	convicted
+E25	Convict:T225 Defendant:T219
+T226	Transfer-Money 4177 4191	provided money
+E26	Transfer-Money:T226 Giver:T221 Recipient:T219 Recipient:T222
+T227	PER 4273 4280	McVeigh
+T228	PER 4308 4315	Nichols
+T229	TIM 4297 4301	2001
+T230	SEN 4327 4342	a life sentence
+T231	Sentence 4319 4326	serving
+E27	Sentence:T231 Defendant:T228 Sentence:T230
+T232	Execute 4285 4293	executed
+E28	Execute:T232 Person:T227 Time-Within:T229

@@ -1,0 +1,226 @@
+T1	TIM 34 42	20030408
+T2	GPE 105 122	BELFAST , Britain
+T3	GPE 115 122	Britain
+T4	ORG 139 145	Xinhua
+T5	TIM 125 132	April 8
+T6	PER 177 210	British Prime Minister Tony Blair
+T7	PER 177 199	British Prime Minister
+T8	PER 215 227	US President
+T9	PER 215 242	US President George W. Bush
+T10	GPE 249 253	here
+T11	ORG 311 313	UN
+T12	GPE 215 217	US
+T13	GPE 356 362	US-led
+T14	GPE 177 184	British
+T15	GPE 267 281	both countries
+T16	GPE 333 337	Iraq
+T17	GPE 375 386	the country
+T18	TIM 154 161	two-day
+T19	TIM 254 261	Tuesday
+T20	Attack 363 366	war
+E1	Attack:T20 Attacker:T13
+T21	Meet 162 168	summit
+E2	Meet:T21 Place:T10 Entity:T6 Time-Ending:T18 Time-Within:T19
+T22	PER 503 508	Blair
+T23	PER 513 517	Bush
+T24	GPE 585 598	post-war Iraq
+T25	ORG 563 581	the United Nations
+T26	GPE 404 410	US-led
+T27	GPE 458 465	Baghdad
+T28	GPE 411 420	coalition
+T29	GPE 481 486	Iraqi
+T30	GPE 470 500	the second Iraqi city of Basra
+T31	GPE 495 500	Basra
+T32	PER 400 427	the US-led coalition troops
+T33	Attack 585 593	post-war
+E3	Attack:T33 Place:T24
+T34	Transport 443 452	thrusting
+E4	Transport:T34 Artifact:T32 Destination:T27 Destination:T30
+T35	PER 659 664	Blair
+T36	PER 792 797	Blair
+T37	PER 669 673	Bush
+T38	PER 758 762	Bush
+T39	GPE 738 750	postwar Iraq
+T40	FAC 646 656	Camp David
+T41	PER 608 613	their
+T42	ORG 706 724	the United Nations
+T43	ORG 824 826	UN
+T44	TIM 634 642	March 27
+T45	Attack 620 623	war
+E5	Attack:T45
+T46	Attack 738 745	postwar
+E6	Attack:T46 Place:T39
+T47	Meet 624 630	summit
+E7	Meet:T47 Place:T40 Entity:T35 Entity:T37 Time-Within:T44 Entity:T41
+T48	PER 871 874	who
+T49	PER 863 1021	Blair , who analysts say has been pursuing a special relationship with Washington in order to restore Britain 's traditional role as a transatlantic `` bridge
+T50	PER 1050 1053	his
+T51	PER 875 883	analysts
+T52	FAC 844 854	Camp David
+T53	GPE 934 944	Washington
+T54	GPE 965 972	Britain
+T55	GPE 996 1021	a transatlantic `` bridge
+T56	Meet 855 860	talks
+E8	Meet:T56 Place:T52
+T57	PER 1061 1066	Blair
+T58	PER 1071 1075	Bush
+T59	GPE 1224 1255	Hillsborough , south of Belfast
+T60	PER 1178 1191	some analysts
+T61	GPE 1248 1255	Belfast
+T62	GPE 1162 1175	post-war Iraq
+T63	PER 1100 1105	their
+T64	ORG 1151 1153	UN
+T65	TIM 1308 1316	March 20
+T66	Attack 1162 1170	post-war
+E9	Attack:T66
+T67	Attack 1291 1294	war
+E10	Attack:T67 Time-Starting:T65
+T68	Meet 1214 1220	summit
+E11	Meet:T68 Entity:T57 Entity:T58 Place:T59
+T69	ORG 1381 1383	UN
+T70	GPE 1350 1364	the two allies
+T71	ORG 1381 1400	UN Security Council
+T72	GPE 1423 1427	Iraq
+T73	GPE 1543 1547	Iraq
+T74	ORG 1487 1547	an `` appropriate '' post - conflict administration for Iraq
+T75	PER 1665 1683	the people of Iraq
+T76	PER 1625 1713	a special adviser for Iraq to work with the people of Iraq and coalition representatives
+T77	PER 1583 1621	the United Nations Secretary - General
+T78	ORG 1587 1601	United Nations
+T79	GPE 1553 1555	We
+T80	PER 1688 1713	coalition representatives
+T81	GPE 1688 1697	coalition
+T82	GPE 1647 1651	Iraq
+T83	GPE 1679 1683	Iraq
+T84	Start-Position 1568 1579	appointment
+E12	Start-Position:T84 Person:T76 Entity:T78
+T85	PER 1987 2003	the Iraqi people
+T86	PER 1839 1844	Blair
+T87	PER 1887 1890	his
+T88	PER 1902 1906	Bush
+T89	ORG 1741 1759	The United Nations
+T90	ORG 1921 1923	UN
+T91	PER 1850 1859	reporters
+T92	GPE 1960 1971	the country
+T93	GPE 1991 1996	Iraqi
+T94	GPE 1814 1818	Iraq
+T95	PER 2063 2079	the Iraqi people
+T96	PER 2085 2090	Blair
+T97	GPE 2124 2126	US
+T98	GPE 2112 2119	British
+T99	PER 2112 2133	British and US forces
+T100	GPE 2025 2029	Iraq
+T101	GPE 2067 2072	Iraqi
+T102	GPE 2152 2163	the country
+T103	TIM 2167 2172	a day
+T104	PER 2322 2325	who
+T105	PER 2314 2407	Blair , who was believed to be in favor of a stronger UN role in post-conflict Iraq than Bush
+T106	PER 2403 2407	Bush
+T107	GPE 2379 2397	post-conflict Iraq
+T108	ORG 2288 2306	the United Nations
+T109	ORG 2368 2370	UN
+T110	PER 2268 2284	coalition forces
+T111	GPE 2268 2277	coalition
+T112	GPE 2246 2250	Iraq
+T113	Attack 2379 2392	post-conflict
+E13	Attack:T113 Place:T107
+T114	PER 2418 2423	Blair
+T115	PER 2426 2430	Bush
+T116	GPE 2479 2492	post-war Iraq
+T117	ORG 2436 2442	the UN
+T118	GPE 2561 2565	Iraq
+T119	GPE 2672 2683	the country
+T120	PER 2641 2683	Iraqis from inside and outside the country
+T121	ORG 2520 2546	a future interim authority
+T122	ORG 2609 2683	an interim authority made up of Iraqis from inside and outside the country
+T123	TIM 2522 2528	future
+T124	Attack 2479 2487	post-war
+E14	Attack:T124 Place:T116
+T125	PER 2750 2754	Bush
+T126	ORG 2731 2733	UN
+T127	PER 2818 2855	people to staff the interim authority
+T128	GPE 2868 2872	Iraq
+T129	ORG 2834 2855	the interim authority
+T130	TIM 2758 2765	Tuesday
+T131	PER 2898 2900	we
+T132	PER 2941 2943	we
+T133	ORG 2920 2938	the United Nations
+T134	ORG 2964 2982	the United Nations
+T135	ORG 3083 3103	an interim authority
+T136	PER 3106 3122	The Iraqi people
+T137	PER 3183 3187	Bush
+T138	PER 3135 3138	who
+T139	GPE 3110 3115	Iraqi
+T140	GPE 3149 3154	Iraqi
+T141	ORG 3145 3172	the Iraqi interim authority
+T142	PER 3190 3194	Bush
+T143	PER 3268 3270	he
+T144	ORG 3228 3246	the United Nations
+T145	GPE 3313 3315	US
+T146	GPE 3284 3294	Washington
+T147	PER 3313 3325	US officials
+T148	PER 3336 3342	Iraqis
+T149	ORG 3346 3372	the interim administration
+T150	PER 3440 3448	analysts
+T151	GPE 3408 3425	the United States
+T152	GPE 3567 3573	US-led
+T153	GPE 3430 3437	Britain
+T154	PER 3565 3612	a US-led group of generals and former diplomats
+T155	GPE 3482 3486	Iraq
+T156	GPE 3518 3523	Iraqi
+T157	GPE 3636 3647	the country
+T158	ORG 3507 3538	an interim Iraqi administration
+T159	TIM 3596 3602	former
+T160	PER 3596 3612	former diplomats
+T161	PER 3583 3591	generals
+T162	GPE 3803 3810	Germany
+T163	GPE 3794 3800	France
+T164	PER 3656 3664	analysts
+T165	GPE 3691 3708	the United States
+T166	GPE 3679 3686	Britain
+T167	GPE 3714 3719	their
+T168	GPE 3815 3821	Russia
+T169	GPE 3769 3821	anti-war nations such as France , Germany and Russia
+T170	Attack 3739 3746	postwar
+E15	Attack:T170
+T171	PER 4156 4172	the Iraqi people
+T172	PER 4054 4059	Blair
+T173	PER 4009 4013	Bush
+T174	GPE 3827 3829	We
+T175	GPE 3992 4003	the country
+T176	GPE 4160 4165	Iraqi
+T177	PER 3956 4003	Iraqis from both inside and outside the country
+T178	ORG 3923 4003	an interim authority composed of Iraqis from both inside and outside the country
+T179	ORG 4074 4095	the interim authority
+T180	ORG 4114 4136	a permanent government
+T181	GPE 4192 4196	Iraq
+T182	PER 4417 4421	Bush
+T183	ORG 4362 4367	which
+T184	ORG 4341 4411	the United Nations , which will have a vital role to play in this task
+T185	GPE 4269 4271	We
+T186	ORG 4302 4328	international institutions
+T187	PER 4430 4435	Blair
+T188	ORG 4571 4573	UN
+T189	GPE 4521 4525	Iraq
+T190	GPE 4588 4592	Iraq
+T191	TIM 4511 4517	future
+T192	Attack 4611 4614	war
+E16	Attack:T192
+T193	GPE 4617 4702	France and Germany , which were most vocal in opposing this US - led war against Iraq
+T194	GPE 4792 4805	post-war Iraq
+T195	ORG 4730 4748	the United Nations
+T196	GPE 4677 4679	US
+T197	GPE 4698 4702	Iraq
+T198	GPE 4638 4643	which
+T199	Attack 4686 4689	war
+E17	Attack:T199 Attacker:T196
+T200	Attack 4792 4800	post-war
+E18	Attack:T200 Place:T194
+T201	PER 4888 4893	Blair
+T202	PER 4944 4946	he
+T203	PER 4873 4881	analysts
+T204	GPE 4842 4848	Europe
+T205	GPE 4853 4870	the United States
+T206	GPE 4973 5038	the United States , which Britain can not afford to fall out with
+T207	GPE 4993 4998	which
+T208	GPE 4999 5006	Britain

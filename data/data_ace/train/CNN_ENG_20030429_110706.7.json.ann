@@ -1,0 +1,73 @@
+T1	TIM 38 57	2003-04-29 12:23:16
+T2	PER 73 75	we
+T3	ORG 112 117	press
+T4	FAC 96 111	the white house
+T5	PER 202 211	reporters
+T6	FAC 169 178	west wing
+T7	FAC 165 192	the west wing briefing room
+T8	PER 129 142	ari fleischer
+T9	Transport 155 159	come
+E1	Transport:T9 Artifact:T8 Destination:T7
+T10	PER 244 246	we
+T11	PER 312 353	the homeland security secretary tom ridge
+T12	PER 312 343	the homeland security secretary
+T13	ORG 316 333	homeland security
+T14	FAC 386 414	the international press club
+T15	TIM 415 457	around 1:00 eastern at the top of the hour
+T16	PER 460 462	we
+T17	TIM 637 643	former
+T18	PER 482 513	the homeland security secretary
+T19	PER 804 825	his wife and daughter
+T20	GPE 710 714	u.s.
+T21	GPE 770 787	the united states
+T22	GPE 762 766	here
+T23	ORG 486 503	homeland security
+T24	PER 528 650	the iraqi lawyer who provided information that helped in the rescue op private first class jessica lynch the former p.o.w.
+T25	PER 545 548	who
+T26	PER 678 681	who
+T27	PER 804 807	his
+T28	PER 658 737	this iraqi lawyer , who provided the information to u.s. military authority ies
+T29	GPE 532 537	iraqi
+T30	GPE 663 668	iraqi
+T31	PER 633 650	the former p.o.w.
+T32	PER 599 632	private first class jessica lynch
+T33	PER 599 618	private first class
+T34	PER 710 737	u.s. military authority ies
+T35	ORG 710 723	u.s. military
+T36	TIM 837 846	currently
+T37	GPE 867 871	d.c.
+T38	GPE 854 871	washington , d.c.
+T39	LOC 850 876	the washington , d.c. area
+T40	PER 828 832	they
+T41	PER 897 900	our
+T42	PER 897 931	our justice producer terry frieden
+T43	PER 897 917	our justice producer
+T44	PER 879 890	an official
+T45	TIM 1073 1086	the next hour
+T46	PER 998 1017	secretary tom ridge
+T47	PER 998 1007	secretary
+T48	PER 1023 1025	he
+T49	FAC 1055 1069	the press club
+T50	PER 1089 1091	we
+T51	PER 1125 1127	we
+T52	GPE 1187 1194	baghdad
+T53	PER 1299 1339	iraqies who had been demonstrating there
+T54	PER 1307 1310	who
+T55	PER 1283 1294	u.s. troops
+T56	GPE 1237 1339	fallujah where there was h a shootout between u.s. troops and iraqies who had been demonstrating there
+T57	GPE 1246 1251	where
+T58	GPE 1334 1339	there
+T59	GPE 1226 1233	baghdad
+T60	GPE 1283 1287	u.s.
+T61	Attack 1266 1274	shootout
+E2	Attack:T61 Attacker:T55 Attacker:T53 Place:T56 Target:T55 Target:T53
+T62	Demonstrate 1320 1333	demonstrating
+E3	Demonstrate:T62 Place:T56 Entity:T53
+T63	PER 1366 1368	us
+T64	PER 1342 1354	karl penhaul
+T65	Phone-Write 1358 1365	joining
+E4	Phone-Write:T65 Entity:T64 Entity:T63
+T66	PER 1414 1418	karl
+T67	PER 1421 1436	how many iraqis
+T68	Die 1442 1448	killed
+E5	Die:T68 Victim:T67

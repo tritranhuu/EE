@@ -1,0 +1,288 @@
+T1	TIM 34 61	2003-04-02T16 :00:00 -05:00
+T2	PER 134 142	WOODRUFF
+T3	GPE 189 196	Baghdad
+T4	ORG 199 211	the military
+T5	GPE 148 152	U.S.
+T6	PER 148 159	U.S. forces
+T7	Transport 160 167	rolling
+E1	Transport:T7 Artifact:T6 Destination:T3
+T8	Attack 249 252	war
+E2	Attack:T8
+T9	Attack 335 341	battle
+E3	Attack:T9
+T10	FAC 388 409	an air base near Iraq
+T11	PER 348 350	's
+T12	PER 365 384	CNN 's Gary Tuchman
+T13	ORG 365 368	CNN
+T14	GPE 405 409	Iraq
+T15	PER 412 416	Gary
+T16	PER 417 420	you
+T17	PER 468 500	GARY TUCHMAN , CNN CORRESPONDENT
+T18	PER 524 528	Judy
+T19	ORG 620 630	the Iraqis
+T20	TIM 534 567	two weeks after the air war began
+T21	Attack 558 561	war
+E4	Attack:T21 Attacker:T19 Time-Holds:T20
+T22	VEH 692 773	more 200 coalition aircraft either over Iraq , flying to Iraq or flying from Iraq
+T23	TIM 665 679	any given time
+T24	GPE 749 753	Iraq
+T25	GPE 732 736	Iraq
+T26	GPE 769 773	Iraq
+T27	ORG 646 659	the Air Force
+T28	Transport 739 745	flying
+E5	Transport:T28 Artifact:T22 Destination:T24
+T29	Transport 757 763	flying
+E6	Transport:T29 Artifact:T22 Origin:T26
+T30	FAC 796 824	a base near the Iraqi border
+T31	PER 776 778	We
+T32	LOC 808 824	the Iraqi border
+T33	GPE 812 817	Iraqi
+T34	PER 787 790	you
+T35	PER 882 884	me
+T36	PER 827 838	Many pilots
+T37	VEH 850 884	these A-10 attack planes behind me
+T38	PER 887 891	They
+T39	VEH 901 906	F-16s
+T40	FAC 960 969	this base
+T41	VEH 924 937	Marine FA-18s
+T42	ORG 924 930	Marine
+T43	ORG 942 948	Marine
+T44	VEH 942 956	Marine Heriers
+T45	FAC 1012 1021	this base
+T46	PER 972 974	We
+T47	GPE 1056 1060	Iraq
+T48	PER 984 987	you
+T49	PER 993 1021	a lot of pilots of this base
+T50	FAC 1040 1060	another base in Iraq
+T51	Transport 1030 1036	flying
+E7	Transport:T51 Artifact:T49 Destination:T50
+T52	TIM 1113 1122	last week
+T53	GPE 1099 1112	the coalition
+T54	FAC 1063 1065	It
+T55	FAC 1069 1122	a base that was taken over by the coalition last week
+T56	FAC 1076 1080	that
+T57	Transfer-Ownership 1085 1095	taken over
+E8	Transfer-Ownership:T57 Artifact:T55 Buyer:T53
+T58	TIM 1138 1153	part of the day
+T59	PER 1129 1131	we
+T60	FAC 1157 1166	that base
+T61	PER 1227 1241	Saddam Hussein
+T62	PER 1178 1181	you
+T63	PER 1197 1200	you
+T64	FAC 1189 1194	there
+T65	Transport 1182 1188	arrive
+E9	Transport:T65 Artifact:T62 Destination:T64
+T66	PER 1272 1279	TUCHMAN
+T67	GPE 1296 1300	Iraq
+T68	GPE 1280 1284	This
+T69	GPE 1288 1300	Talil , Iraq
+T70	FAC 1303 1321	The Talil Air Base
+T71	TIM 1392 1401	last week
+T72	GPE 1358 1371	the coalition
+T73	PER 1336 1355	no more Iraqis here
+T74	FAC 1382 1391	this base
+T75	FAC 1351 1355	here
+T76	Transfer-Ownership 1372 1381	took over
+E10	Transfer-Ownership:T76 Artifact:T74 Buyer:T72 Time-Within:T71
+T77	TIM 1410 1413	now
+T78	FAC 1404 1406	It
+T79	FAC 1414 1435	a major staging point
+T80	GPE 1458 1462	Iraq
+T81	PER 1537 1551	Saddam Hussein
+T82	PER 1438 1441	You
+T83	PER 1447 1450	you
+T84	PER 1468 1471	you
+T85	FAC 1483 1512	the road coming into the base
+T86	FAC 1504 1512	the base
+T87	PER 1572 1616	the military personnel who have arrived here
+T88	PER 1595 1598	who
+T89	PER 1632 1637	their
+T90	ORG 1576 1584	military
+T91	PER 1674 1688	Saddam Hussein
+T92	FAC 1612 1616	here
+T93	Transport 1604 1611	arrived
+E11	Transport:T93 Destination:T92 Artifact:T88
+T94	TIM 1786 1800	April 1 , 2003
+T95	GPE 1777 1779	we
+T96	PER 1703 1706	You
+T97	PER 1816 1819	you
+T98	PER 1838 1870	a lot of security personnel here
+T99	FAC 1866 1870	here
+T100	VEH 1913 1934	the military vehicles
+T101	LOC 1886 1896	over there
+T102	ORG 1917 1925	military
+T103	PER 1873 1876	You
+T104	PER 1901 1904	you
+T105	ORG 1947 1956	Air Force
+T106	WEA 1978 1990	their rifles
+T107	PER 1937 1942	These
+T108	PER 1947 1990	Air Force Security Forces with their rifles
+T109	PER 1978 1983	their
+T110	LOC 2047 2056	this area
+T111	Attack 2035 2043	fighting
+E12	Attack:T111 Place:T110
+T112	GPE 2071 2091	the town of Nasiriya
+T113	GPE 2083 2091	Nasiriya
+T114	PER 2059 2061	We
+T115	TIM 2108 2111	now
+T116	GPE 2177 2190	the coalition
+T117	FAC 2098 2107	this base
+T118	FAC 2148 2150	it
+T119	FAC 2151 2190	a major staging point for the coalition
+T120	PER 2219 2226	TUCHMAN
+T121	FAC 2268 2277	this base
+T122	TIM 2227 2243	A short time ago
+T123	PER 2257 2309	a pilot at this base who has been to that Iraqi base
+T124	PER 2278 2281	who
+T125	PER 2314 2316	he
+T126	PER 2326 2328	he
+T127	PER 2244 2246	we
+T128	GPE 2299 2304	Iraqi
+T129	PER 2360 2374	Saddam Hussein
+T130	FAC 2294 2309	that Iraqi base
+T131	TIM 2472 2490	the last two weeks
+T132	PER 2391 2393	he
+T133	PER 2418 2421	him
+T134	PER 2429 2432	his
+T135	PER 2448 2450	he
+T136	PER 2502 2505	him
+T137	PER 2511 2513	he
+T138	PER 2554 2557	him
+T139	WEA 2525 2538	any artillery
+T140	PER 2409 2411	we
+T141	PER 2493 2495	we
+T142	PER 2399 2401	us
+T143	Attack 2545 2550	fired
+E13	Attack:T143 Target:T138 Instrument:T139 Time-Within:T131
+T144	PER 2589 2606	UNIDENTIFIED MALE
+T145	GPE 2640 2647	Baghdad
+T146	TIM 2607 2616	Yesterday
+T147	PER 2617 2618	I
+T148	WEA 2691 2696	SA-6s
+T149	WEA 2701 2704	AAA
+T150	PER 2664 2666	we
+T151	WEA 2681 2686	SA-2s
+T152	Attack 2672 2680	fighting
+E14	Attack:T152 Place:T145 Target:T147 Target:T150 Instrument:T151 Instrument:T148 Instrument:T149 Time-Within:T146
+T153	PER 2724 2728	they
+T154	PER 2794 2796	we
+T155	PER 2817 2819	we
+T156	Attack 2809 2814	fight
+E15	Attack:T156 Attacker:T154
+T157	PER 2861 2878	the Medina forces
+T158	PER 2851 2853	we
+T159	NUM 2887 2907	less than 50 percent
+T160	PER 2945 2949	them
+T161	ORG 2959 2967	the Army
+T162	ORG 2972 2983	the Marines
+T163	PER 2919 2921	we
+T164	PER 2926 2929	our
+T165	Attack 2936 2941	punch
+E16	Attack:T165 Attacker:T163 Attacker:T161 Attacker:T162 Target:T160
+T166	PER 3070 3077	TUCHMAN
+T167	PER 3078 3101	Lieutenant Colonel Webb
+T168	PER 3078 3096	Lieutenant Colonel
+T169	PER 3131 3133	he
+T170	TIM 3148 3165	this very evening
+T171	PER 3128 3130	us
+T172	TIM 3236 3248	this morning
+T173	TIM 3253 3269	tomorrow morning
+T174	TIM 3228 3269	between this morning and tomorrow morning
+T175	PER 3168 3170	We
+T176	PER 3220 3222	us
+T177	GPE 3303 3307	Iraq
+T178	PER 3184 3187	you
+T179	ORG 3188 3201	the Air Force
+T180	ORG 3272 3274	it
+T181	Transport 3280 3283	fly
+E17	Transport:T181 Agent:T179 Destination:T177 Time-Within:T174 Time-Starting:T172 Time-Ending:T173
+T182	TIM 3323 3345	the last two weeks now
+T183	PER 3382 3384	we
+T184	PER 3405 3407	we
+T185	PER 3421 3424	you
+T186	PER 3503 3505	us
+T187	PER 3449 3464	Military people
+T188	ORG 3449 3457	Military
+T189	FAC 3520 3540	this particular base
+T190	FAC 3512 3516	Here
+T191	PER 3541 3545	they
+T192	PER 3550 3555	their
+T193	PER 3563 3568	their
+T194	PER 3578 3583	their
+T195	PER 3635 3638	you
+T196	PER 3650 3653	you
+T197	PER 3672 3675	you
+T198	PER 3658 3662	your
+T199	FAC 3734 3743	this base
+T200	FAC 3726 3730	here
+T201	PER 3833 3843	the people
+T202	PER 3710 3743	a lot of people here at this base
+T203	PER 3754 3759	their
+T204	PER 3825 3843	many of the people
+T205	PER 3858 3863	their
+T206	PER 3873 3877	They
+T207	PER 3916 3921	their
+T208	PER 3932 3937	their
+T209	PER 4005 4008	you
+T210	PER 4011 4015	Judy
+T211	PER 4026 4029	you
+T212	PER 4032 4040	WOODRUFF
+T213	PER 4048 4049	I
+T214	PER 4053 4127	one of those who thinks that we need to pay attention to our superstitions
+T215	PER 4060 4127	those who thinks that we need to pay attention to our superstitions
+T216	PER 4066 4069	who
+T217	PER 4082 4084	we
+T218	PER 4110 4113	our
+T219	PER 4130 4134	Gary
+T220	PER 4168 4171	you
+T221	PER 4193 4209	coalition forces
+T222	GPE 4241 4249	Nasiriya
+T223	TIM 4215 4218	now
+T224	GPE 4193 4202	coalition
+T225	FAC 4174 4249	That air base that coalition forces have now taken control of near Nasiriya
+T226	FAC 4188 4192	that
+T227	Transfer-Ownership 4219 4232	taken control
+E18	Transfer-Ownership:T227 Artifact:T225 Buyer:T221 Place:T222 Time-Before:T223
+T228	PER 4256 4259	you
+T229	PER 4278 4282	they
+T230	FAC 4298 4300	it
+T231	FAC 4328 4330	it
+T232	PER 4333 4340	TUCHMAN
+T233	PER 4397 4399	me
+T234	PER 4363 4367	Judy
+T235	PER 4346 4350	they
+T236	VEH 4370 4399	some of these A-10s behind me
+T237	VEH 4378 4399	these A-10s behind me
+T238	FAC 4403 4408	there
+T239	Transport 4400 4402	go
+E19	Transport:T239 Vehicle:T236 Destination:T238
+T240	PER 4582 4604	somebody on the ground
+T241	PER 4457 4461	They
+T242	PER 4553 4557	they
+T243	VEH 4471 4494	these HH-60 helicopters
+T244	VEH 4477 4482	HH-60
+T245	VEH 4497 4501	they
+T246	VEH 4506 4604	the search and rescue helicopters used in case they have to search and find somebody on the ground
+T247	PER 4607 4611	They
+T248	FAC 4618 4623	there
+T249	VEH 4653 4665	none of them
+T250	VEH 4661 4665	them
+T251	TIM 4641 4650	right now
+T252	FAC 4688 4693	there
+T253	PER 4749 4757	WOODRUFF
+T254	PER 4770 4782	Gary Tuchman
+T255	PER 4810 4813	him
+T256	PER 4802 4805	You
+T257	ORG 4870 4908	the Senate Foreign Relations Committee
+T258	PER 4827 4828	I
+T259	PER 4850 4908	a ranking member of the Senate Foreign Relations Committee
+T260	PER 4911 4918	Senator
+T261	PER 4948 4951	his
+T262	PER 4911 4928	Senator Joe Biden
+T263	Attack 4968 4971	war
+E20	Attack:T263
+T264	PER 4989 4999	Tony Blair
+T265	PER 5043 5059	some in Congress
+T266	ORG 5051 5059	Congress
+T267	GPE 5078 5085	British
+T268	PER 5074 5100	the British prime minister

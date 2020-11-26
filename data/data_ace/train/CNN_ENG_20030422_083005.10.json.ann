@@ -1,0 +1,32 @@
+T1	TIM 39 58	2003-04-22 10:50:03
+T2	PER 59 60	i
+T3	PER 64 78	allan chernoff
+T4	FAC 82 109	the new york stock exchange
+T5	ORG 132 164	a second major union at american
+T6	ORG 112 129	american airlines
+T7	ORG 156 164	american
+T8	ORG 191 202	the company
+T9	ORG 231 241	the unions
+T10	ORG 333 342	the union
+T11	PER 277 291	top executives
+T12	TIM 412 422	last night
+T13	PER 469 482	his employees
+T14	ORG 368 395	the transport brokers union
+T15	PER 438 445	the ceo
+T16	PER 469 472	his
+T17	PER 372 389	transport brokers
+T18	PER 507 520	the employees
+T19	PER 485 490	carty
+T20	PER 496 498	he
+T21	PER 560 574	the executives
+T22	ORG 575 587	that company
+T23	PER 680 689	employees
+T24	PER 594 596	he
+T25	ORG 663 667	they
+T26	TIM 764 787	the second straight day
+T27	ORG 722 739	american airlines
+T28	ORG 806 817	the company
+T29	Declare-Bankruptcy 846 856	bankruptcy
+E1	Declare-Bankruptcy:T29 Org:T28
+T30	TIM 947 952	today
+T31	TIM 1070 1079	right now

@@ -3,3 +3,4 @@ pretrained_embedding
 *pyc
 *.png
 pretrained_model
+PhoBERT*
