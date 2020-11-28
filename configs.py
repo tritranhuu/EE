@@ -9,11 +9,7 @@ def get_configs(corpus, device):
         "device": device
     }
     w2v = {
-<<<<<<< HEAD
         "word_emb_pretrained": None 
-=======
-        "word_emb_pretrained": corpus.word_field.vocab.vectors if corpus.wv!=None else None
->>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
     }
 
     entity_emb = {

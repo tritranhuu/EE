@@ -223,6 +223,7 @@ class Fully_Connected(nn.Module):
         super().__init__()
         self.fc_dropout = nn.Dropout(fc_dropout)
         self.fc = nn.Linear(input_dim, len(tag_names))
+        
     
     def forward(self, words, word_features, tags):
         fc_out = self.fc(self.fc_dropout(word_features))

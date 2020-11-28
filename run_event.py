@@ -1,14 +1,15 @@
 from transformers import (
     PreTrainedTokenizer,
-    BertForSequenceClassification, BertTokenizer, BertConfig,
+    BertForSequenceClassification, BertTokenizer, BertConfig, BertModel, 
     RobertaConfig, RobertaModel,
 )
-from fairseq.data.encoders.fastbpe import fastBPE
-from fairseq.data import Dictionary
+
+from bert_support import RobertaBPETokenizer
 
 from data_utils.corpus import Corpus
 from models_deeplearning.event_detections import Model_ED, Model_ED_Bert
 from trainer.bert_event_detection_trainer import Trainer
+# from trainer.event_detection_trainer import Trainer
 import matplotlib.pyplot as plt
 
 import torch
@@ -25,25 +26,35 @@ if torch.cuda.is_available():
 else:
   device = torch.device("cpu")
 
-tokenizer = RobertaBPETokenizer(
-    bpe_path='/content/PhoBERT_base_transformers/bpe.codes',
-    vocab_path='/content/PhoBERT_base_transformers/dict.txt',
-)
 
-bert_config = RobertaConfig.from_pretrained(
-    '/content/PhoBERT_base_transformers/config.json'
-)
-bert_model = RobertaModel.from_pretrained(
-    pretrained_model_name_or_path='/content/PhoBERT_base_transformers/model.bin',
-    config=bert_config
-)
-bert_model.cuda()
+
 
 if __name__ == "__main__":
+    # tokenizer = RobertaBPETokenizer(
+    #   bpe_path='./PhoBERT_base_transformers/bpe.codes',
+    #   vocab_path='./PhoBERT_base_transformers/dict.txt',
+    #   )
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+    # bert_config = RobertaConfig.from_pretrained(
+    #   './PhoBERT_base_transformers/config.json'
+    #   )
+    # bert_model = RobertaModel.from_pretrained(
+    #   pretrained_model_name_or_path='./PhoBERT_base_transformers/model.bin',
+    #   config=bert_config
+    #   )
+
+    bert_model = BertModel.from_pretrained('bert-base-uncased',
+      output_hidden_states = False,
+      )
+
+    
+    bert_model.cuda()
+
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_folder', type=str, default="./data/event_data")
+    parser.add_argument('--input_folder', type=str, default="./data/data_ace/arg_data")
     parser.add_argument('--min_word_freq', type=int, default=2)
-    parser.add_argument('--batch_size', type=int, default=64)
+    parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--wv_file', type=str, default=None)
     
     corpus = Corpus(
@@ -51,7 +62,7 @@ if __name__ == "__main__":
     )
 
     configs = get_configs(corpus, device)
-    model_name = "cnn_trig+w2v+position"
+    model_name = "bilstm"
     # model = Model_ED(**configs[model_name])
     model = Model_ED_Bert(**configs[model_name], bert_model=bert_model)
     # model.load_state('/content/drive/My Drive/EE/pretrained_model/cnn_seq+w2v_ED.pt')
@@ -65,7 +76,7 @@ if __name__ == "__main__":
         tokenizer=tokenizer
         )
 
-    trainer.train_live(50)
+    trainer.train_live(20)
     # model_names = ['cnn_seq+w2v']
     # num_epochs = 20
     # histories = {}

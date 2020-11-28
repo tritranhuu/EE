@@ -73,23 +73,26 @@ class Trainer(object):
         for sent in t:
             len_words = []
             tokens = []
+            word_mask = []
             for word in sent:
                 subwords = self.tokenizer.tokenize(word)
                 tokens.append(subwords)
                 len_words.append(len(subwords))
+                word_mask.extend([1] + [0]*(len(subwords)-1))
             n_words = len(np.where(np.cumsum(len_words) <= (self.tokenizer.max_len - 2))[0])
             tokens = [self.tokenizer.cls_token, *(sum(tokens[:n_words], [])), self.tokenizer.sep_token]
             token_ids = self.tokenizer.convert_tokens_to_ids(tokens)
-            batch_iter.append((token_ids, n_words, torch.tensor(len_words)))
+            batch_iter.append((torch.LongTensor(token_ids), n_words, torch.tensor([0] + word_mask + [0])))
         max_length = np.max([x[0].size() for x in batch_iter])
         batch_tokens = torch.ones(len(batch_iter), max_length).long()
-        batch_len_words = torch.ones(len(batch_iter), max_length).long()
+        # batch_len_words = torch.ones(len(batch_iter), max_length).long()
+        batch_word_mask = torch.zeros(len(batch_iter), max_length).long()
         for i, c in enumerate(batch_iter):
             batch_tokens[i][:c[0].size(0)] = c[0]
-            batch_len_words[i][:c[2].size(0)] = c[2]
+            batch_word_mask[i][:c[2].size(0)] = c[2]
         _, n_words, _ = zip(*batch_iter)
         batch_n_words = torch.tensor(list(n_words))
-        return batch_tokens, batch_n_words, batch_len_words
+        return batch_tokens, batch_n_words, batch_word_mask.reshape(len(batch_iter), -1, 1)
 
     def epoch(self):
         epoch_loss = 0
@@ -100,18 +103,22 @@ class Trainer(object):
         self.model.train()
         for batch in self.data.train_iter:
         # words = [sent len, batch size]
-            words = batch.word.to(self.device)
-            tokens = self.get_bert_tokens(words)
+            words = batch.word
+            # print(words.shape)
+            tokens, n_words, word_mask = self.get_bert_tokens(words)
         # tags = [sent len, batch size]
-            true_tags = batch.event.to(self.device)
+            true_tags = batch.event.T.to(self.device)
             self.optimizer.zero_grad()
-            pred_tags, _ = self.model(tokens)
+            pred_tags, _ = self.model(words.to(self.device), tokens.to(self.device), n_words.to(self.device), word_mask.to(self.device))
+            # print(pred_tags, pred_tags.shape)
             # self.get_trigger_pos(true_tags)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
-            pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
+            # pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
+            # print(pred_tags, pred_tags.shape)
         # flatten true_tags to [sent len * batch size]
-            true_tags = true_tags.view(-1)
+            true_tags = true_tags[true_tags!=0].view(-1)
+            # print(pred_tags.shape, true_tags.shape)
             batch_loss = self.loss_fn(pred_tags, true_tags)
            
             batch_loss.backward()
@@ -121,6 +128,7 @@ class Trainer(object):
             pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
             true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
         # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
+        
         epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
@@ -136,19 +144,19 @@ class Trainer(object):
         with torch.no_grad():
           # similar to epoch() but model is in evaluation mode and no backprop
             for batch in iterator:
-                words = batch.word.to(self.device)
+                words = batch.word
                 if words.shape[0] < 5:
                   continue
-                tokens = self.get_bert_tokens(words)
+                tokens, n_words, len_words = self.get_bert_tokens(words)
                 true_tags = batch.event.to(self.device)
-                pred_tags, _ = self.model(tokens)
-                pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
-                true_tags = true_tags.view(-1)
+                pred_tags, _ = self.model(words.to(self.device), tokens.to(self.device), n_words.to(self.device), len_words.to(self.device))
+                # pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
+                true_tags = true_tags[true_tags!=0].view(-1)
                 batch_loss = self.loss_fn(pred_tags, true_tags)
                 epoch_loss += batch_loss.item()
-                
                 pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
                 true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
+        print(np.unique(pred_tags_epoch))
         epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])

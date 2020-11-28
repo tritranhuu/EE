@@ -136,6 +136,7 @@ class Model_ED(nn.Module):
 
     def forward(self, words, chars, entities=None, tags=None):
         word_features = self.embeddings(words, chars, entities)
+        print(word_features[0])
         encoder_out = self.encoder(words, word_features)
         # fc_out = [sentence length, batch size, output dim]
         ed_out, ed_loss = self.final_layer(words, encoder_out, tags)
@@ -157,7 +158,7 @@ class Model_ED_Bert(nn.Module):
                  char_pad_idx,
                  entity_pad_idx,
                  tag_names,
-                 bert_model
+                 bert_model,
                  device,
                  model_arch="bilstm",
                  word_emb_dim=300,
@@ -190,7 +191,7 @@ class Model_ED_Bert(nn.Module):
                  use_crf=False):
         super().__init__()
         self.embeddings = BertTransformer(bert_model, device)
-        self.fc_hidden = nn.Linear(self.embeddings.output_dim, fc_hidden)
+        self.fc_hidden = nn.Linear(self.embeddings.output_dim, len(tag_names))
         self.fc_hidden_dropout = nn.Dropout(fc_dropout)
         if model_arch.lower() == "bilstm":
             # LSTM-Attention
@@ -240,14 +241,26 @@ class Model_ED_Bert(nn.Module):
                 fc_dropout=fc_dropout,
                 tag_names=tag_names
             )
+    def token_reduction(self, x, n_words, word_mask):
+      batch_size, _, hidden_size = x.size()
+      max_sent_length = n_words.max().item()
+      output = torch.zeros(size=(batch_size, max_sent_length, hidden_size), dtype=x.dtype, device=x.device)
+      for i in range(batch_size):
+        mask = word_mask[i].nonzero().reshape(-1)[:max_sent_length]
+        output[i][:mask.size(0)] = x[i][mask]
+      return output.permute(1, 0, 2)
 
-    def forward(self, tokens, tags=None):
-        word_features = self.embeddings(tokens)
-        word_features = self.fc_hidden(self.fc_dropout(word_features))
+    def forward(self, words, tokens, n_words, len_words, tags=None):
+        word_features = self.embeddings(tokens, n_words, len_words)
+        # ed_out = self.fc_hidden(self.fc_hidden_dropout(word_features))
+        # print(word_features.shape)
         encoder_out = self.encoder(words, word_features)
         # fc_out = [sentence length, batch size, output dim]
         ed_out, ed_loss = self.final_layer(words, encoder_out, tags)
-        return ed_out, ed_loss
+        ed_out_ = ed_out.permute(1, 0, 2) * len_words
+        ed_out_ = ed_out_[ed_out_.sum(dim=-1)!=0]
+        # print(ed_out_.shape, ed_out.shape)
+        return ed_out_, 'ed_loss'
         
     def save_state(self, path):
         torch.save(self.state_dict(), path)

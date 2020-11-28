@@ -5,12 +5,7 @@ from torchtext.data import Field, BucketIterator, NestedField
 from torchtext.datasets import SequenceTaggingDataset
 from torchtext.vocab import Vocab
 
-
-<<<<<<< HEAD
-=======
 class Corpus(object):
-
->>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
   def __init__(self, args):
     # list all the fields
     self.word_field = Field(lower=True)
@@ -43,11 +38,7 @@ class Corpus(object):
     
     if args.wv_file:
         print("start loading embedding")
-<<<<<<< HEAD
         self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=True)
-=======
-        self.wv_model = gensim.models.KeyedVectors.load_word2vec_format(args.wv_file, binary=False)
->>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393
         print("done loading embedding")
         self.embedding_dim = self.wv_model.vector_size
         word_freq = {word: self.wv_model.wv.vocab[word].count for word in self.wv_model.wv.vocab}
@@ -89,8 +80,3 @@ class Corpus(object):
     self.char_pad_idx = self.char_field.vocab.stoi[self.char_field.pad_token]
     self.entity_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]
     self.argument_pad_idx = self.entity_field.vocab.stoi[self.entity_field.pad_token]
-<<<<<<< HEAD
-    
-=======
-    
->>>>>>> 3d27548e79eadf93f2a7cd1dab32a8b9d8e50393

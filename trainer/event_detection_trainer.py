@@ -112,20 +112,22 @@ class Trainer(object):
             true_tags = batch.event.to(self.device)
             self.optimizer.zero_grad()
             pred_tags, _ = self.model(words, chars, entities=entities)
+            # print(true_tags)
             # self.get_trigger_pos(true_tags)
         # to calculate the loss and accuracy, we flatten both prediction and true tags
         # flatten pred_tags to [sent len, batch size, output dim]
             pred_tags = pred_tags.view(-1, pred_tags.shape[-1])
         # flatten true_tags to [sent len * batch size]
             true_tags = true_tags.view(-1)
+            idx_nopad = true_tags.nonzero().reshape(-1).cpu().numpy()
             batch_loss = self.loss_fn(pred_tags, true_tags)
            
             batch_loss.backward()
             self.optimizer.step()
             epoch_loss += batch_loss.item()
             
-            pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
-            true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
+            pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()[idx_nopad]])
+            true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()[idx_nopad]])
         # epoch_score = self.f1_positive(pred_tags_epoch, true_tags_epoch)
         epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
@@ -156,6 +158,7 @@ class Trainer(object):
                 
                 pred_tags_epoch.extend([idx2tag[i] for i in pred_tags.argmax(dim=1).cpu().numpy()])
                 true_tags_epoch.extend([idx2tag[i] for i in true_tags.cpu().numpy()])
+        
         epoch_score = f1_score(true_tags_epoch, pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_p1 = precision_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
         epoch_r1 = recall_score(true_tags_epoch,pred_tags_epoch, average="micro",labels=list(self.data.event_field.vocab.stoi.keys())[2:])
